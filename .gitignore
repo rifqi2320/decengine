@@ -1,0 +1,33 @@
+/target/
+/dist/
+/build/
+**/target/
+**/build/
+/blog/
+/.venv/
+/.pytest_cache/
+/.mypy_cache/
+/.ruff_cache/
+/.coverage
+coverage.xml
+**/__pycache__/
+**/*.py[cod]
+*.dylib
+*.so
+*.dll
+*.profraw
+*.profdata
+*.log
+.DS_Store
+.env
+.decengine/
+models/downloads/
+benchmarks/results/
+
+# Generated research artifacts are retained locally, not committed. Publish reviewed
+# subsets through a release or LFS rather than adding model/checkpoint data to source.
+results/**/*.features.jsonl
+results/**/features/
+results/**/*.safetensors
+results/**/memory.jsonl
+results/**/steps.jsonl
