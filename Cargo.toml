@@ -1,0 +1,50 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/decengine-core",
+    "crates/decengine-engine",
+    "crates/decengine-engine-mlx",
+    "crates/decengine-models",
+    "crates/decengine-compiler",
+    "crates/decengine-runtime",
+    "crates/decengine-protocol",
+    "crates/decengine-ffi",
+    "crates/decengine-server",
+    "crates/decengine-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+license = "MIT"
+repository = "https://example.invalid/decengine"
+
+[workspace.dependencies]
+anyhow = "=1.0.100"
+axum = "=0.8.4"
+clap = { version = "=4.5.48", features = ["derive", "env"] }
+hex = "=0.4.3"
+libc = "=0.2.175"
+parking_lot = "=0.12.4"
+reqwest = { version = "=0.12.23", default-features = false, features = ["json", "rustls-tls", "stream"] }
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = "=1.0.145"
+sha2 = "=0.10.9"
+tempfile = "=3.22.0"
+thiserror = "=2.0.16"
+tokio = { version = "=1.47.1", features = ["macros", "net", "rt-multi-thread", "signal", "sync"] }
+tower = { version = "=0.5.2", features = ["util"] }
+tracing = "=0.1.41"
+tracing-subscriber = { version = "=0.3.20", features = ["env-filter", "fmt"] }
+uuid = { version = "=1.18.1", features = ["serde", "v4"] }
+
+[workspace.lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
+unused_must_use = "deny"
+
+[workspace.lints.clippy]
+all = { level = "deny", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+module_name_repetitions = "allow"
+must_use_candidate = "allow"
