@@ -1,0 +1,1826 @@
+{
+  "slices": {
+    "new210": {
+      "qwen": {
+        "per_question": {
+          "owner": {
+            "correct": 96,
+            "total": 210,
+            "accuracy": 0.45714285714285713,
+            "wilson_95_ci": [
+              0.39113991955756666,
+              0.5246855705075147
+            ],
+            "per_class": {
+              "account_access": {
+                "support": 28,
+                "precision": 0.7142857142857143,
+                "recall": 0.35714285714285715,
+                "f1": 0.4761904761904762,
+                "accuracy_within_class": 0.35714285714285715,
+                "accuracy_wilson_95_ci": [
+                  0.2070582950773768,
+                  0.5416969348557219
+                ]
+              },
+              "billing": {
+                "support": 30,
+                "precision": 0.56,
+                "recall": 0.9333333333333333,
+                "f1": 0.7000000000000001,
+                "accuracy_within_class": 0.9333333333333333,
+                "accuracy_wilson_95_ci": [
+                  0.7867654163738308,
+                  0.9815229762087295
+                ]
+              },
+              "operations": {
+                "support": 30,
+                "precision": 0.36764705882352944,
+                "recall": 0.8333333333333334,
+                "f1": 0.5102040816326531,
+                "accuracy_within_class": 0.8333333333333334,
+                "accuracy_wilson_95_ci": [
+                  0.6643564949358398,
+                  0.9266345762815145
+                ]
+              },
+              "other": {
+                "support": 29,
+                "precision": 0.37037037037037035,
+                "recall": 0.6896551724137931,
+                "f1": 0.48192771084337355,
+                "accuracy_within_class": 0.6896551724137931,
+                "accuracy_wilson_95_ci": [
+                  0.5076986576690685,
+                  0.8272438325551679
+                ]
+              },
+              "safety_compliance": {
+                "support": 32,
+                "precision": 0.625,
+                "recall": 0.3125,
+                "f1": 0.4166666666666667,
+                "accuracy_within_class": 0.3125,
+                "accuracy_wilson_95_ci": [
+                  0.17952541633609734,
+                  0.4856667830095541
+                ]
+              },
+              "sales": {
+                "support": 30,
+                "precision": 1.0,
+                "recall": 0.03333333333333333,
+                "f1": 0.06451612903225806,
+                "accuracy_within_class": 0.03333333333333333,
+                "accuracy_wilson_95_ci": [
+                  0.005908590381612455,
+                  0.16670390991409173
+                ]
+              },
+              "technical_support": {
+                "support": 31,
+                "precision": 0.2857142857142857,
+                "recall": 0.06451612903225806,
+                "f1": 0.10526315789473685,
+                "accuracy_within_class": 0.06451612903225806,
+                "accuracy_wilson_95_ci": [
+                  0.017874783521914572,
+                  0.20718636736298127
+                ]
+              }
+            }
+          },
+          "urgent": {
+            "correct": 96,
+            "total": 210,
+            "accuracy": 0.45714285714285713,
+            "wilson_95_ci": [
+              0.39113991955756666,
+              0.5246855705075147
+            ],
+            "per_class": {
+              "False": {
+                "support": 114,
+                "precision": null,
+                "recall": 0.0,
+                "f1": null,
+                "accuracy_within_class": 0.0,
+                "accuracy_wilson_95_ci": [
+                  0.0,
+                  0.03259853415884162
+                ]
+              },
+              "True": {
+                "support": 96,
+                "precision": 0.45714285714285713,
+                "recall": 1.0,
+                "f1": 0.6274509803921569,
+                "accuracy_within_class": 1.0,
+                "accuracy_wilson_95_ci": [
+                  0.9615244121423243,
+                  1.0
+                ]
+              }
+            }
+          },
+          "impact": {
+            "correct": 58,
+            "total": 210,
+            "accuracy": 0.2761904761904762,
+            "wilson_95_ci": [
+              0.22014982147883067,
+              0.3402721821943724
+            ],
+            "per_class": {
+              "high": {
+                "support": 58,
+                "precision": 0.2761904761904762,
+                "recall": 1.0,
+                "f1": 0.43283582089552247,
+                "accuracy_within_class": 1.0,
+                "accuracy_wilson_95_ci": [
+                  0.9378821442127971,
+                  1.0
+                ]
+              },
+              "low": {
+                "support": 70,
+                "precision": null,
+                "recall": 0.0,
+                "f1": null,
+                "accuracy_within_class": 0.0,
+                "accuracy_wilson_95_ci": [
+                  0.0,
+                  0.05202306241026692
+                ]
+              },
+              "moderate": {
+                "support": 82,
+                "precision": null,
+                "recall": 0.0,
+                "f1": null,
+                "accuracy_within_class": 0.0,
+                "accuracy_wilson_95_ci": [
+                  0.0,
+                  0.04475062369010033
+                ]
+              }
+            }
+          }
+        },
+        "complete_case": {
+          "correct": 26,
+          "total": 210,
+          "accuracy": 0.12380952380952381,
+          "wilson_95_ci": [
+            0.08590847051514082,
+            0.1752263867227961
+          ]
+        },
+        "overall_question_mean_accuracy": 0.3968253968253968
+      },
+      "harrier": {
+        "per_question": {
+          "owner": {
+            "correct": 98,
+            "total": 210,
+            "accuracy": 0.4666666666666667,
+            "wilson_95_ci": [
+              0.40039685691135823,
+              0.5341340798059274
+            ],
+            "per_class": {
+              "account_access": {
+                "support": 28,
+                "precision": 0.8,
+                "recall": 0.5714285714285714,
+                "f1": 0.6666666666666666,
+                "accuracy_within_class": 0.5714285714285714,
+                "accuracy_wilson_95_ci": [
+                  0.3907078562746876,
+                  0.734914528758763
+                ]
+              },
+              "billing": {
+                "support": 30,
+                "precision": 0.5434782608695652,
+                "recall": 0.8333333333333334,
+                "f1": 0.6578947368421053,
+                "accuracy_within_class": 0.8333333333333334,
+                "accuracy_wilson_95_ci": [
+                  0.6643564949358398,
+                  0.9266345762815145
+                ]
+              },
+              "operations": {
+                "support": 30,
+                "precision": 0.4230769230769231,
+                "recall": 0.36666666666666664,
+                "f1": 0.3928571428571428,
+                "accuracy_within_class": 0.36666666666666664,
+                "accuracy_wilson_95_ci": [
+                  0.21873920806100708,
+                  0.5448643634520511
+                ]
+              },
+              "other": {
+                "support": 29,
+                "precision": null,
+                "recall": 0.0,
+                "f1": null,
+                "accuracy_within_class": 0.0,
+                "accuracy_wilson_95_ci": [
+                  0.0,
+                  0.11696979849974075
+                ]
+              },
+              "safety_compliance": {
+                "support": 32,
+                "precision": 0.6666666666666666,
+                "recall": 0.0625,
+                "f1": 0.11428571428571428,
+                "accuracy_within_class": 0.0625,
+                "accuracy_wilson_95_ci": [
+                  0.017310567031640967,
+                  0.2014712314415458
+                ]
+              },
+              "sales": {
+                "support": 30,
+                "precision": 0.4642857142857143,
+                "recall": 0.8666666666666667,
+                "f1": 0.6046511627906976,
+                "accuracy_within_class": 0.8666666666666667,
+                "accuracy_wilson_95_ci": [
+                  0.703186733179637,
+                  0.9469034451594526
+                ]
+              },
+              "technical_support": {
+                "support": 31,
+                "precision": 0.3050847457627119,
+                "recall": 0.5806451612903226,
+                "f1": 0.4000000000000001,
+                "accuracy_within_class": 0.5806451612903226,
+                "accuracy_wilson_95_ci": [
+                  0.4076626249536972,
+                  0.7358445693268778
+                ]
+              }
+            }
+          },
+          "urgent": {
+            "correct": 96,
+            "total": 210,
+            "accuracy": 0.45714285714285713,
+            "wilson_95_ci": [
+              0.39113991955756666,
+              0.5246855705075147
+            ],
+            "per_class": {
+              "False": {
+                "support": 114,
+                "precision": null,
+                "recall": 0.0,
+                "f1": null,
+                "accuracy_within_class": 0.0,
+                "accuracy_wilson_95_ci": [
+                  0.0,
+                  0.03259853415884162
+                ]
+              },
+              "True": {
+                "support": 96,
+                "precision": 0.45714285714285713,
+                "recall": 1.0,
+                "f1": 0.6274509803921569,
+                "accuracy_within_class": 1.0,
+                "accuracy_wilson_95_ci": [
+                  0.9615244121423243,
+                  1.0
+                ]
+              }
+            }
+          },
+          "impact": {
+            "correct": 86,
+            "total": 210,
+            "accuracy": 0.4095238095238095,
+            "wilson_95_ci": [
+              0.345220366159241,
+              0.47707789064481976
+            ],
+            "per_class": {
+              "high": {
+                "support": 58,
+                "precision": 0.2765957446808511,
+                "recall": 0.22413793103448276,
+                "f1": 0.24761904761904763,
+                "accuracy_within_class": 0.22413793103448276,
+                "accuracy_wilson_95_ci": [
+                  0.1359366061140974,
+                  0.3466111763891869
+                ]
+              },
+              "low": {
+                "support": 70,
+                "precision": 0.6333333333333333,
+                "recall": 0.2714285714285714,
+                "f1": 0.38,
+                "accuracy_within_class": 0.2714285714285714,
+                "accuracy_wilson_95_ci": [
+                  0.1811959968818828,
+                  0.38544311736281056
+                ]
+              },
+              "moderate": {
+                "support": 82,
+                "precision": 0.40601503759398494,
+                "recall": 0.6585365853658537,
+                "f1": 0.5023255813953488,
+                "accuracy_within_class": 0.6585365853658537,
+                "accuracy_wilson_95_ci": [
+                  0.5508773979511824,
+                  0.7520065506348835
+                ]
+              }
+            }
+          }
+        },
+        "complete_case": {
+          "correct": 15,
+          "total": 210,
+          "accuracy": 0.07142857142857142,
+          "wilson_95_ci": [
+            0.04376128147898465,
+            0.11449361917182957
+          ]
+        },
+        "overall_question_mean_accuracy": 0.4444444444444444
+      },
+      "jev": {
+        "per_question": {
+          "owner": {
+            "correct": 169,
+            "total": 210,
+            "accuracy": 0.8047619047619048,
+            "wilson_95_ci": [
+              0.7458784590069235,
+              0.8526958338636087
+            ],
+            "per_class": {
+              "account_access": {
+                "support": 28,
+                "precision": 0.8620689655172413,
+                "recall": 0.8928571428571429,
+                "f1": 0.8771929824561403,
+                "accuracy_within_class": 0.8928571428571429,
+                "accuracy_wilson_95_ci": [
+                  0.7280414845132785,
+                  0.9628816331707
+                ]
+              },
+              "billing": {
+                "support": 30,
+                "precision": 0.8125,
+                "recall": 0.8666666666666667,
+                "f1": 0.8387096774193549,
+                "accuracy_within_class": 0.8666666666666667,
+                "accuracy_wilson_95_ci": [
+                  0.703186733179637,
+                  0.9469034451594526
+                ]
+              },
+              "operations": {
+                "support": 30,
+                "precision": 0.6052631578947368,
+                "recall": 0.7666666666666667,
+                "f1": 0.676470588235294,
+                "accuracy_within_class": 0.7666666666666667,
+                "accuracy_wilson_95_ci": [
+                  0.5907167384187784,
+                  0.8820761185551049
+                ]
+              },
+              "other": {
+                "support": 29,
+                "precision": 0.9166666666666666,
+                "recall": 0.3793103448275862,
+                "f1": 0.5365853658536586,
+                "accuracy_within_class": 0.3793103448275862,
+                "accuracy_wilson_95_ci": [
+                  0.2268802210080984,
+                  0.5599745579401147
+                ]
+              },
+              "safety_compliance": {
+                "support": 32,
+                "precision": 0.8285714285714286,
+                "recall": 0.90625,
+                "f1": 0.8656716417910447,
+                "accuracy_within_class": 0.90625,
+                "accuracy_wilson_95_ci": [
+                  0.7578184527161212,
+                  0.9675984487016337
+                ]
+              },
+              "sales": {
+                "support": 30,
+                "precision": 0.84375,
+                "recall": 0.9,
+                "f1": 0.870967741935484,
+                "accuracy_within_class": 0.9,
+                "accuracy_wilson_95_ci": [
+                  0.7437891742081593,
+                  0.9654001112526658
+                ]
+              },
+              "technical_support": {
+                "support": 31,
+                "precision": 0.875,
+                "recall": 0.9032258064516129,
+                "f1": 0.8888888888888888,
+                "accuracy_within_class": 0.9032258064516129,
+                "accuracy_wilson_95_ci": [
+                  0.7510006155660716,
+                  0.9665353558368026
+                ]
+              }
+            }
+          },
+          "urgent": {
+            "correct": 194,
+            "total": 210,
+            "accuracy": 0.9238095238095239,
+            "wilson_95_ci": [
+              0.8798317637393371,
+              0.9525606122837467
+            ],
+            "per_class": {
+              "False": {
+                "support": 114,
+                "precision": 0.9711538461538461,
+                "recall": 0.8859649122807017,
+                "f1": 0.926605504587156,
+                "accuracy_within_class": 0.8859649122807017,
+                "accuracy_wilson_95_ci": [
+                  0.8146312620197502,
+                  0.9321347817874597
+                ]
+              },
+              "True": {
+                "support": 96,
+                "precision": 0.8773584905660378,
+                "recall": 0.96875,
+                "f1": 0.9207920792079208,
+                "accuracy_within_class": 0.96875,
+                "accuracy_wilson_95_ci": [
+                  0.9121132067546303,
+                  0.989315929628799
+                ]
+              }
+            }
+          },
+          "impact": {
+            "correct": 174,
+            "total": 210,
+            "accuracy": 0.8285714285714286,
+            "wilson_95_ci": [
+              0.7718116285173587,
+              0.8735262809836838
+            ],
+            "per_class": {
+              "high": {
+                "support": 58,
+                "precision": 0.8431372549019608,
+                "recall": 0.7413793103448276,
+                "f1": 0.7889908256880734,
+                "accuracy_within_class": 0.7413793103448276,
+                "accuracy_wilson_95_ci": [
+                  0.6162261423525959,
+                  0.8365445479570304
+                ]
+              },
+              "low": {
+                "support": 70,
+                "precision": 0.9375,
+                "recall": 0.8571428571428571,
+                "f1": 0.8955223880597014,
+                "accuracy_within_class": 0.8571428571428571,
+                "accuracy_wilson_95_ci": [
+                  0.7566158011633325,
+                  0.920510582829334
+                ]
+              },
+              "moderate": {
+                "support": 82,
+                "precision": 0.7473684210526316,
+                "recall": 0.8658536585365854,
+                "f1": 0.8022598870056497,
+                "accuracy_within_class": 0.8658536585365854,
+                "accuracy_wilson_95_ci": [
+                  0.7755498725711748,
+                  0.9234130857043615
+                ]
+              }
+            }
+          }
+        },
+        "complete_case": {
+          "correct": 134,
+          "total": 210,
+          "accuracy": 0.638095238095238,
+          "wilson_95_ci": [
+            0.5711584018888832,
+            0.7000705745680765
+          ]
+        },
+        "overall_question_mean_accuracy": 0.8523809523809525
+      },
+      "probe-qwen": {
+        "per_question": {
+          "owner": {
+            "correct": 134,
+            "total": 210,
+            "accuracy": 0.638095238095238,
+            "wilson_95_ci": [
+              0.5711584018888832,
+              0.7000705745680765
+            ],
+            "per_class": {
+              "account_access": {
+                "support": 28,
+                "precision": 0.7096774193548387,
+                "recall": 0.7857142857142857,
+                "f1": 0.7457627118644068,
+                "accuracy_within_class": 0.7857142857142857,
+                "accuracy_wilson_95_ci": [
+                  0.6046141434627812,
+                  0.8978753966710211
+                ]
+              },
+              "billing": {
+                "support": 30,
+                "precision": 0.65,
+                "recall": 0.8666666666666667,
+                "f1": 0.7428571428571429,
+                "accuracy_within_class": 0.8666666666666667,
+                "accuracy_wilson_95_ci": [
+                  0.703186733179637,
+                  0.9469034451594526
+                ]
+              },
+              "operations": {
+                "support": 30,
+                "precision": 0.36585365853658536,
+                "recall": 0.5,
+                "f1": 0.4225352112676056,
+                "accuracy_within_class": 0.5,
+                "accuracy_wilson_95_ci": [
+                  0.33154125640533766,
+                  0.6684587435946623
+                ]
+              },
+              "other": {
+                "support": 29,
+                "precision": 0.8888888888888888,
+                "recall": 0.27586206896551724,
+                "f1": 0.42105263157894735,
+                "accuracy_within_class": 0.27586206896551724,
+                "accuracy_wilson_95_ci": [
+                  0.14698755102087954,
+                  0.45717132416865935
+                ]
+              },
+              "safety_compliance": {
+                "support": 32,
+                "precision": 0.5454545454545454,
+                "recall": 0.5625,
+                "f1": 0.5538461538461538,
+                "accuracy_within_class": 0.5625,
+                "accuracy_wilson_95_ci": [
+                  0.3932559113685198,
+                  0.7183466888495963
+                ]
+              },
+              "sales": {
+                "support": 30,
+                "precision": 0.8666666666666667,
+                "recall": 0.8666666666666667,
+                "f1": 0.8666666666666667,
+                "accuracy_within_class": 0.8666666666666667,
+                "accuracy_wilson_95_ci": [
+                  0.703186733179637,
+                  0.9469034451594526
+                ]
+              },
+              "technical_support": {
+                "support": 31,
+                "precision": 0.7307692307692307,
+                "recall": 0.6129032258064516,
+                "f1": 0.6666666666666667,
+                "accuracy_within_class": 0.6129032258064516,
+                "accuracy_wilson_95_ci": [
+                  0.4382410861966073,
+                  0.7626689857961975
+                ]
+              }
+            }
+          },
+          "urgent": {
+            "correct": 165,
+            "total": 210,
+            "accuracy": 0.7857142857142857,
+            "wilson_95_ci": [
+              0.7253467198794229,
+              0.8358166796867009
+            ],
+            "per_class": {
+              "False": {
+                "support": 114,
+                "precision": 0.8,
+                "recall": 0.8070175438596491,
+                "f1": 0.8034934497816594,
+                "accuracy_within_class": 0.8070175438596491,
+                "accuracy_wilson_95_ci": [
+                  0.7250573655529112,
+                  0.8689610783846421
+                ]
+              },
+              "True": {
+                "support": 96,
+                "precision": 0.7684210526315789,
+                "recall": 0.7604166666666666,
+                "f1": 0.7643979057591621,
+                "accuracy_within_class": 0.7604166666666666,
+                "accuracy_wilson_95_ci": [
+                  0.6660761768160148,
+                  0.834717787841446
+                ]
+              }
+            }
+          },
+          "impact": {
+            "correct": 128,
+            "total": 210,
+            "accuracy": 0.6095238095238096,
+            "wilson_95_ci": [
+              0.5421392213087839,
+              0.6729734151915636
+            ],
+            "per_class": {
+              "high": {
+                "support": 58,
+                "precision": 0.47674418604651164,
+                "recall": 0.7068965517241379,
+                "f1": 0.5694444444444444,
+                "accuracy_within_class": 0.7068965517241379,
+                "accuracy_wilson_95_ci": [
+                  0.5798709910321587,
+                  0.808218172090378
+                ]
+              },
+              "low": {
+                "support": 70,
+                "precision": 0.8,
+                "recall": 0.6285714285714286,
+                "f1": 0.7040000000000001,
+                "accuracy_within_class": 0.6285714285714286,
+                "accuracy_wilson_95_ci": [
+                  0.5114720115842711,
+                  0.7322934866530887
+                ]
+              },
+              "moderate": {
+                "support": 82,
+                "precision": 0.6231884057971014,
+                "recall": 0.524390243902439,
+                "f1": 0.5695364238410596,
+                "accuracy_within_class": 0.524390243902439,
+                "accuracy_wilson_95_ci": [
+                  0.4176473297995616,
+                  0.6289502007521409
+                ]
+              }
+            }
+          }
+        },
+        "complete_case": {
+          "correct": 76,
+          "total": 210,
+          "accuracy": 0.3619047619047619,
+          "wilson_95_ci": [
+            0.29992942543192347,
+            0.42884159811111666
+          ]
+        },
+        "overall_question_mean_accuracy": 0.6777777777777777
+      },
+      "probe-harrier": {
+        "per_question": {
+          "owner": {
+            "correct": 131,
+            "total": 210,
+            "accuracy": 0.6238095238095238,
+            "wilson_95_ci": [
+              0.5566193190611918,
+              0.686551487417462
+            ],
+            "per_class": {
+              "account_access": {
+                "support": 28,
+                "precision": 0.9047619047619048,
+                "recall": 0.6785714285714286,
+                "f1": 0.7755102040816326,
+                "accuracy_within_class": 0.6785714285714286,
+                "accuracy_wilson_95_ci": [
+                  0.49338843180857617,
+                  0.8206675307750504
+                ]
+              },
+              "billing": {
+                "support": 30,
+                "precision": 0.6190476190476191,
+                "recall": 0.8666666666666667,
+                "f1": 0.7222222222222222,
+                "accuracy_within_class": 0.8666666666666667,
+                "accuracy_wilson_95_ci": [
+                  0.703186733179637,
+                  0.9469034451594526
+                ]
+              },
+              "operations": {
+                "support": 30,
+                "precision": 0.34782608695652173,
+                "recall": 0.5333333333333333,
+                "f1": 0.4210526315789474,
+                "accuracy_within_class": 0.5333333333333333,
+                "accuracy_wilson_95_ci": [
+                  0.36142299619873297,
+                  0.6976761109230025
+                ]
+              },
+              "other": {
+                "support": 29,
+                "precision": 0.875,
+                "recall": 0.2413793103448276,
+                "f1": 0.3783783783783784,
+                "accuracy_within_class": 0.2413793103448276,
+                "accuracy_wilson_95_ci": [
+                  0.12218422442520088,
+                  0.42107601617811335
+                ]
+              },
+              "safety_compliance": {
+                "support": 32,
+                "precision": 0.6111111111111112,
+                "recall": 0.6875,
+                "f1": 0.6470588235294118,
+                "accuracy_within_class": 0.6875,
+                "accuracy_wilson_95_ci": [
+                  0.5143332169904459,
+                  0.8204745836639026
+                ]
+              },
+              "sales": {
+                "support": 30,
+                "precision": 0.8214285714285714,
+                "recall": 0.7666666666666667,
+                "f1": 0.793103448275862,
+                "accuracy_within_class": 0.7666666666666667,
+                "accuracy_wilson_95_ci": [
+                  0.5907167384187784,
+                  0.8820761185551049
+                ]
+              },
+              "technical_support": {
+                "support": 31,
+                "precision": 0.6206896551724138,
+                "recall": 0.5806451612903226,
+                "f1": 0.6000000000000001,
+                "accuracy_within_class": 0.5806451612903226,
+                "accuracy_wilson_95_ci": [
+                  0.4076626249536972,
+                  0.7358445693268778
+                ]
+              }
+            }
+          },
+          "urgent": {
+            "correct": 174,
+            "total": 210,
+            "accuracy": 0.8285714285714286,
+            "wilson_95_ci": [
+              0.7718116285173587,
+              0.8735262809836838
+            ],
+            "per_class": {
+              "False": {
+                "support": 114,
+                "precision": 0.8145161290322581,
+                "recall": 0.8859649122807017,
+                "f1": 0.8487394957983193,
+                "accuracy_within_class": 0.8859649122807017,
+                "accuracy_wilson_95_ci": [
+                  0.8146312620197502,
+                  0.9321347817874597
+                ]
+              },
+              "True": {
+                "support": 96,
+                "precision": 0.8488372093023255,
+                "recall": 0.7604166666666666,
+                "f1": 0.802197802197802,
+                "accuracy_within_class": 0.7604166666666666,
+                "accuracy_wilson_95_ci": [
+                  0.6660761768160148,
+                  0.834717787841446
+                ]
+              }
+            }
+          },
+          "impact": {
+            "correct": 150,
+            "total": 210,
+            "accuracy": 0.7142857142857143,
+            "wilson_95_ci": [
+              0.6497654334710847,
+              0.7711071162035081
+            ],
+            "per_class": {
+              "high": {
+                "support": 58,
+                "precision": 0.6285714285714286,
+                "recall": 0.7586206896551724,
+                "f1": 0.6875,
+                "accuracy_within_class": 0.7586206896551724,
+                "accuracy_wilson_95_ci": [
+                  0.6347001974698658,
+                  0.8504112564333051
+                ]
+              },
+              "low": {
+                "support": 70,
+                "precision": 0.8709677419354839,
+                "recall": 0.7714285714285715,
+                "f1": 0.8181818181818182,
+                "accuracy_within_class": 0.7714285714285715,
+                "accuracy_wilson_95_ci": [
+                  0.6604966840601509,
+                  0.8541193677742756
+                ]
+              },
+              "moderate": {
+                "support": 82,
+                "precision": 0.6666666666666666,
+                "recall": 0.6341463414634146,
+                "f1": 0.6499999999999999,
+                "accuracy_within_class": 0.6341463414634146,
+                "accuracy_wilson_95_ci": [
+                  0.52607266837636,
+                  0.7302137496580033
+                ]
+              }
+            }
+          }
+        },
+        "complete_case": {
+          "correct": 85,
+          "total": 210,
+          "accuracy": 0.40476190476190477,
+          "wilson_95_ci": [
+            0.3406624293852357,
+            0.472283104092723
+          ]
+        },
+        "overall_question_mean_accuracy": 0.7222222222222223
+      }
+    },
+    "pooled300": {
+      "qwen": {
+        "per_question": {
+          "owner": {
+            "correct": 134,
+            "total": 300,
+            "accuracy": 0.44666666666666666,
+            "wilson_95_ci": [
+              0.39143715496049114,
+              0.503244761970127
+            ],
+            "per_class": {
+              "account_access": {
+                "support": 38,
+                "precision": 0.6666666666666666,
+                "recall": 0.3157894736842105,
+                "f1": 0.42857142857142855,
+                "accuracy_within_class": 0.3157894736842105,
+                "accuracy_wilson_95_ci": [
+                  0.1908460367559618,
+                  0.4745575989060954
+                ]
+              },
+              "billing": {
+                "support": 40,
+                "precision": 0.5138888888888888,
+                "recall": 0.925,
+                "f1": 0.6607142857142857,
+                "accuracy_within_class": 0.925,
+                "accuracy_wilson_95_ci": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ]
+              },
+              "operations": {
+                "support": 41,
+                "precision": 0.35106382978723405,
+                "recall": 0.8048780487804879,
+                "f1": 0.4888888888888889,
+                "accuracy_within_class": 0.8048780487804879,
+                "accuracy_wilson_95_ci": [
+                  0.6598641481293658,
+                  0.8976556261484198
+                ]
+              },
+              "other": {
+                "support": 39,
+                "precision": 0.34615384615384615,
+                "recall": 0.6923076923076923,
+                "f1": 0.46153846153846156,
+                "accuracy_within_class": 0.6923076923076923,
+                "accuracy_wilson_95_ci": [
+                  0.5357874562585069,
+                  0.8143406769308886
+                ]
+              },
+              "safety_compliance": {
+                "support": 60,
+                "precision": 0.75,
+                "recall": 0.35,
+                "f1": 0.4772727272727271,
+                "accuracy_within_class": 0.35,
+                "accuracy_wilson_95_ci": [
+                  0.24167774406017556,
+                  0.47637381158245135
+                ]
+              },
+              "sales": {
+                "support": 39,
+                "precision": 1.0,
+                "recall": 0.02564102564102564,
+                "f1": 0.05,
+                "accuracy_within_class": 0.02564102564102564,
+                "accuracy_wilson_95_ci": [
+                  0.004540703100990098,
+                  0.13180990169850076
+                ]
+              },
+              "technical_support": {
+                "support": 43,
+                "precision": 0.3333333333333333,
+                "recall": 0.06976744186046512,
+                "f1": 0.11538461538461539,
+                "accuracy_within_class": 0.06976744186046512,
+                "accuracy_wilson_95_ci": [
+                  0.024011589577214484,
+                  0.18608986901241975
+                ]
+              }
+            }
+          },
+          "urgent": {
+            "correct": 127,
+            "total": 300,
+            "accuracy": 0.42333333333333334,
+            "wilson_95_ci": [
+              0.3687385228107271,
+              0.47986673277703656
+            ],
+            "per_class": {
+              "False": {
+                "support": 173,
+                "precision": null,
+                "recall": 0.0,
+                "f1": null,
+                "accuracy_within_class": 0.0,
+                "accuracy_wilson_95_ci": [
+                  0.0,
+                  0.02172261440451652
+                ]
+              },
+              "True": {
+                "support": 127,
+                "precision": 0.42333333333333334,
+                "recall": 1.0,
+                "f1": 0.594847775175644,
+                "accuracy_within_class": 1.0,
+                "accuracy_wilson_95_ci": [
+                  0.9706403547062367,
+                  1.0
+                ]
+              }
+            }
+          },
+          "impact": {
+            "correct": 88,
+            "total": 300,
+            "accuracy": 0.29333333333333333,
+            "wilson_95_ci": [
+              0.24468634082804494,
+              0.34720608727810065
+            ],
+            "per_class": {
+              "high": {
+                "support": 88,
+                "precision": 0.29333333333333333,
+                "recall": 1.0,
+                "f1": 0.45360824742268036,
+                "accuracy_within_class": 1.0,
+                "accuracy_wilson_95_ci": [
+                  0.9581729333351078,
+                  0.9999999999999999
+                ]
+              },
+              "low": {
+                "support": 93,
+                "precision": null,
+                "recall": 0.0,
+                "f1": null,
+                "accuracy_within_class": 0.0,
+                "accuracy_wilson_95_ci": [
+                  0.0,
+                  0.03966750261173514
+                ]
+              },
+              "moderate": {
+                "support": 119,
+                "precision": null,
+                "recall": 0.0,
+                "f1": null,
+                "accuracy_within_class": 0.0,
+                "accuracy_wilson_95_ci": [
+                  0.0,
+                  0.031271680241939506
+                ]
+              }
+            }
+          }
+        },
+        "complete_case": {
+          "correct": 37,
+          "total": 300,
+          "accuracy": 0.12333333333333334,
+          "wilson_95_ci": [
+            0.09081731429366795,
+            0.1653737240288234
+          ]
+        },
+        "overall_question_mean_accuracy": 0.3877777777777778
+      },
+      "harrier": {
+        "per_question": {
+          "owner": {
+            "correct": 135,
+            "total": 300,
+            "accuracy": 0.45,
+            "wilson_95_ci": [
+              0.394689901646408,
+              0.5065743954760465
+            ],
+            "per_class": {
+              "account_access": {
+                "support": 38,
+                "precision": 0.7096774193548387,
+                "recall": 0.5789473684210527,
+                "f1": 0.6376811594202899,
+                "accuracy_within_class": 0.5789473684210527,
+                "accuracy_wilson_95_ci": [
+                  0.42192345343670545,
+                  0.7214749884224129
+                ]
+              },
+              "billing": {
+                "support": 40,
+                "precision": 0.5483870967741935,
+                "recall": 0.85,
+                "f1": 0.6666666666666665,
+                "accuracy_within_class": 0.85,
+                "accuracy_wilson_95_ci": [
+                  0.709276756335103,
+                  0.9293881228267964
+                ]
+              },
+              "operations": {
+                "support": 41,
+                "precision": 0.47058823529411764,
+                "recall": 0.3902439024390244,
+                "f1": 0.4266666666666667,
+                "accuracy_within_class": 0.3902439024390244,
+                "accuracy_wilson_95_ci": [
+                  0.2565614506012352,
+                  0.5427314306587621
+                ]
+              },
+              "other": {
+                "support": 39,
+                "precision": null,
+                "recall": 0.0,
+                "f1": null,
+                "accuracy_within_class": 0.0,
+                "accuracy_wilson_95_ci": [
+                  0.0,
+                  0.08966685370757144
+                ]
+              },
+              "safety_compliance": {
+                "support": 60,
+                "precision": 0.6666666666666666,
+                "recall": 0.03333333333333333,
+                "f1": 0.06349206349206349,
+                "accuracy_within_class": 0.03333333333333333,
+                "accuracy_wilson_95_ci": [
+                  0.009189319256197877,
+                  0.113637742743086
+                ]
+              },
+              "sales": {
+                "support": 39,
+                "precision": 0.44871794871794873,
+                "recall": 0.8974358974358975,
+                "f1": 0.5982905982905983,
+                "accuracy_within_class": 0.8974358974358975,
+                "accuracy_wilson_95_ci": [
+                  0.7642114553714348,
+                  0.9593866865533163
+                ]
+              },
+              "technical_support": {
+                "support": 43,
+                "precision": 0.2826086956521739,
+                "recall": 0.6046511627906976,
+                "f1": 0.3851851851851852,
+                "accuracy_within_class": 0.6046511627906976,
+                "accuracy_wilson_95_ci": [
+                  0.45579063062873904,
+                  0.7363468524170255
+                ]
+              }
+            }
+          },
+          "urgent": {
+            "correct": 127,
+            "total": 300,
+            "accuracy": 0.42333333333333334,
+            "wilson_95_ci": [
+              0.3687385228107271,
+              0.47986673277703656
+            ],
+            "per_class": {
+              "False": {
+                "support": 173,
+                "precision": null,
+                "recall": 0.0,
+                "f1": null,
+                "accuracy_within_class": 0.0,
+                "accuracy_wilson_95_ci": [
+                  0.0,
+                  0.02172261440451652
+                ]
+              },
+              "True": {
+                "support": 127,
+                "precision": 0.42333333333333334,
+                "recall": 1.0,
+                "f1": 0.594847775175644,
+                "accuracy_within_class": 1.0,
+                "accuracy_wilson_95_ci": [
+                  0.9706403547062367,
+                  1.0
+                ]
+              }
+            }
+          },
+          "impact": {
+            "correct": 127,
+            "total": 300,
+            "accuracy": 0.42333333333333334,
+            "wilson_95_ci": [
+              0.3687385228107271,
+              0.47986673277703656
+            ],
+            "per_class": {
+              "high": {
+                "support": 88,
+                "precision": 0.3235294117647059,
+                "recall": 0.25,
+                "f1": 0.2820512820512821,
+                "accuracy_within_class": 0.25,
+                "accuracy_wilson_95_ci": [
+                  0.17128323377232502,
+                  0.34963029956012115
+                ]
+              },
+              "low": {
+                "support": 93,
+                "precision": 0.5957446808510638,
+                "recall": 0.3010752688172043,
+                "f1": 0.4,
+                "accuracy_within_class": 0.3010752688172043,
+                "accuracy_wilson_95_ci": [
+                  0.21726302757387256,
+                  0.40066920464800065
+                ]
+              },
+              "moderate": {
+                "support": 119,
+                "precision": 0.41621621621621624,
+                "recall": 0.6470588235294118,
+                "f1": 0.506578947368421,
+                "accuracy_within_class": 0.6470588235294118,
+                "accuracy_wilson_95_ci": [
+                  0.5578268493809073,
+                  0.7270932446655811
+                ]
+              }
+            }
+          }
+        },
+        "complete_case": {
+          "correct": 15,
+          "total": 300,
+          "accuracy": 0.05,
+          "wilson_95_ci": [
+            0.03053164062934728,
+            0.08084703347274415
+          ]
+        },
+        "overall_question_mean_accuracy": 0.43222222222222223
+      },
+      "jev": {
+        "per_question": {
+          "owner": {
+            "correct": 244,
+            "total": 300,
+            "accuracy": 0.8133333333333334,
+            "wilson_95_ci": [
+              0.7653812201652491,
+              0.8533625178673686
+            ],
+            "per_class": {
+              "account_access": {
+                "support": 38,
+                "precision": 0.8536585365853658,
+                "recall": 0.9210526315789473,
+                "f1": 0.8860759493670887,
+                "accuracy_within_class": 0.9210526315789473,
+                "accuracy_wilson_95_ci": [
+                  0.7920062854222853,
+                  0.9727854044930122
+                ]
+              },
+              "billing": {
+                "support": 40,
+                "precision": 0.8333333333333334,
+                "recall": 0.875,
+                "f1": 0.8536585365853658,
+                "accuracy_within_class": 0.875,
+                "accuracy_wilson_95_ci": [
+                  0.738878801611489,
+                  0.945404997490546
+                ]
+              },
+              "operations": {
+                "support": 41,
+                "precision": 0.6153846153846154,
+                "recall": 0.7804878048780488,
+                "f1": 0.6881720430107527,
+                "accuracy_within_class": 0.7804878048780488,
+                "accuracy_wilson_95_ci": [
+                  0.6329499401177383,
+                  0.8799682522178243
+                ]
+              },
+              "other": {
+                "support": 39,
+                "precision": 0.8888888888888888,
+                "recall": 0.41025641025641024,
+                "f1": 0.5614035087719298,
+                "accuracy_within_class": 0.41025641025641024,
+                "accuracy_wilson_95_ci": [
+                  0.27079310000725176,
+                  0.5658137711710304
+                ]
+              },
+              "safety_compliance": {
+                "support": 60,
+                "precision": 0.8833333333333333,
+                "recall": 0.8833333333333333,
+                "f1": 0.8833333333333333,
+                "accuracy_within_class": 0.8833333333333333,
+                "accuracy_wilson_95_ci": [
+                  0.7782121197582914,
+                  0.9423227935994396
+                ]
+              },
+              "sales": {
+                "support": 39,
+                "precision": 0.8536585365853658,
+                "recall": 0.8974358974358975,
+                "f1": 0.875,
+                "accuracy_within_class": 0.8974358974358975,
+                "accuracy_wilson_95_ci": [
+                  0.7642114553714348,
+                  0.9593866865533163
+                ]
+              },
+              "technical_support": {
+                "support": 43,
+                "precision": 0.8260869565217391,
+                "recall": 0.8837209302325582,
+                "f1": 0.853932584269663,
+                "accuracy_within_class": 0.8837209302325582,
+                "accuracy_wilson_95_ci": [
+                  0.7552083818991787,
+                  0.9492957226019584
+                ]
+              }
+            }
+          },
+          "urgent": {
+            "correct": 273,
+            "total": 300,
+            "accuracy": 0.91,
+            "wilson_95_ci": [
+              0.8722229892013517,
+              0.9374097743945206
+            ],
+            "per_class": {
+              "False": {
+                "support": 173,
+                "precision": 0.967948717948718,
+                "recall": 0.8728323699421965,
+                "f1": 0.9179331306990882,
+                "accuracy_within_class": 0.8728323699421965,
+                "accuracy_wilson_95_ci": [
+                  0.814966861730172,
+                  0.9145000905346681
+                ]
+              },
+              "True": {
+                "support": 127,
+                "precision": 0.8472222222222222,
+                "recall": 0.9606299212598425,
+                "f1": 0.9003690036900368,
+                "accuracy_within_class": 0.9606299212598425,
+                "accuracy_wilson_95_ci": [
+                  0.9111437777951378,
+                  0.9830682025247811
+                ]
+              }
+            }
+          },
+          "impact": {
+            "correct": 256,
+            "total": 300,
+            "accuracy": 0.8533333333333334,
+            "wilson_95_ci": [
+              0.8088374877749912,
+              0.8888948125596631
+            ],
+            "per_class": {
+              "high": {
+                "support": 88,
+                "precision": 0.8987341772151899,
+                "recall": 0.8068181818181818,
+                "f1": 0.8502994011976047,
+                "accuracy_within_class": 0.8068181818181818,
+                "accuracy_wilson_95_ci": [
+                  0.7122293318676104,
+                  0.8757404226789328
+                ]
+              },
+              "low": {
+                "support": 93,
+                "precision": 0.9294117647058824,
+                "recall": 0.8494623655913979,
+                "f1": 0.8876404494382023,
+                "accuracy_within_class": 0.8494623655913979,
+                "accuracy_wilson_95_ci": [
+                  0.7630419028021121,
+                  0.9081582297810838
+                ]
+              },
+              "moderate": {
+                "support": 119,
+                "precision": 0.7794117647058824,
+                "recall": 0.8907563025210085,
+                "f1": 0.8313725490196079,
+                "accuracy_within_class": 0.8907563025210085,
+                "accuracy_wilson_95_ci": [
+                  0.82203580506135,
+                  0.9350375876907479
+                ]
+              }
+            }
+          }
+        },
+        "complete_case": {
+          "correct": 195,
+          "total": 300,
+          "accuracy": 0.65,
+          "wilson_95_ci": [
+            0.5944391111549903,
+            0.7017679974776458
+          ]
+        },
+        "overall_question_mean_accuracy": 0.8588888888888889
+      },
+      "probe-qwen": {
+        "per_question": {
+          "owner": {
+            "correct": 198,
+            "total": 300,
+            "accuracy": 0.66,
+            "wilson_95_ci": [
+              0.604674453304638,
+              0.7112797959035073
+            ],
+            "per_class": {
+              "account_access": {
+                "support": 38,
+                "precision": 0.7441860465116279,
+                "recall": 0.8421052631578947,
+                "f1": 0.7901234567901234,
+                "accuracy_within_class": 0.8421052631578947,
+                "accuracy_wilson_95_ci": [
+                  0.6958318822077686,
+                  0.9255613658484106
+                ]
+              },
+              "billing": {
+                "support": 40,
+                "precision": 0.6481481481481481,
+                "recall": 0.875,
+                "f1": 0.7446808510638299,
+                "accuracy_within_class": 0.875,
+                "accuracy_wilson_95_ci": [
+                  0.738878801611489,
+                  0.945404997490546
+                ]
+              },
+              "operations": {
+                "support": 41,
+                "precision": 0.42592592592592593,
+                "recall": 0.5609756097560976,
+                "f1": 0.4842105263157895,
+                "accuracy_within_class": 0.5609756097560976,
+                "accuracy_wilson_95_ci": [
+                  0.4104052722210608,
+                  0.7010986826344964
+                ]
+              },
+              "other": {
+                "support": 39,
+                "precision": 0.631578947368421,
+                "recall": 0.3076923076923077,
+                "f1": 0.41379310344827586,
+                "accuracy_within_class": 0.3076923076923077,
+                "accuracy_wilson_95_ci": [
+                  0.18565932306911137,
+                  0.4642125437414931
+                ]
+              },
+              "safety_compliance": {
+                "support": 60,
+                "precision": 0.6727272727272727,
+                "recall": 0.6166666666666667,
+                "f1": 0.6434782608695652,
+                "accuracy_within_class": 0.6166666666666667,
+                "accuracy_wilson_95_ci": [
+                  0.49017595824099924,
+                  0.7291172762591798
+                ]
+              },
+              "sales": {
+                "support": 39,
+                "precision": 0.8421052631578947,
+                "recall": 0.8205128205128205,
+                "f1": 0.8311688311688312,
+                "accuracy_within_class": 0.8205128205128205,
+                "accuracy_wilson_95_ci": [
+                  0.6733195433811838,
+                  0.9102273452678089
+                ]
+              },
+              "technical_support": {
+                "support": 43,
+                "precision": 0.7297297297297297,
+                "recall": 0.627906976744186,
+                "f1": 0.675,
+                "accuracy_within_class": 0.627906976744186,
+                "accuracy_wilson_95_ci": [
+                  0.47859809159688477,
+                  0.7562366099034943
+                ]
+              }
+            }
+          },
+          "urgent": {
+            "correct": 241,
+            "total": 300,
+            "accuracy": 0.8033333333333333,
+            "wilson_95_ci": [
+              0.7546412316550143,
+              0.8443553658020945
+            ],
+            "per_class": {
+              "False": {
+                "support": 173,
+                "precision": 0.8275862068965517,
+                "recall": 0.8323699421965318,
+                "f1": 0.8299711815561961,
+                "accuracy_within_class": 0.8323699421965318,
+                "accuracy_wilson_95_ci": [
+                  0.7696244292835868,
+                  0.8806755669215034
+                ]
+              },
+              "True": {
+                "support": 127,
+                "precision": 0.7698412698412699,
+                "recall": 0.7637795275590551,
+                "f1": 0.766798418972332,
+                "accuracy_within_class": 0.7637795275590551,
+                "accuracy_wilson_95_ci": [
+                  0.6828431511873713,
+                  0.8292269572009584
+                ]
+              }
+            }
+          },
+          "impact": {
+            "correct": 192,
+            "total": 300,
+            "accuracy": 0.64,
+            "wilson_95_ci": [
+              0.584229303230313,
+              0.6922306648268142
+            ],
+            "per_class": {
+              "high": {
+                "support": 88,
+                "precision": 0.5491803278688525,
+                "recall": 0.7613636363636364,
+                "f1": 0.638095238095238,
+                "accuracy_within_class": 0.7613636363636364,
+                "accuracy_wilson_95_ci": [
+                  0.662573550326628,
+                  0.8382895739167237
+                ]
+              },
+              "low": {
+                "support": 93,
+                "precision": 0.75,
+                "recall": 0.6451612903225806,
+                "f1": 0.6936416184971099,
+                "accuracy_within_class": 0.6451612903225806,
+                "accuracy_wilson_95_ci": [
+                  0.5439349596804137,
+                  0.7348712492387599
+                ]
+              },
+              "moderate": {
+                "support": 119,
+                "precision": 0.6632653061224489,
+                "recall": 0.5462184873949579,
+                "f1": 0.5990783410138247,
+                "accuracy_within_class": 0.5462184873949579,
+                "accuracy_wilson_95_ci": [
+                  0.45672085452377353,
+                  0.63282546074798
+                ]
+              }
+            }
+          }
+        },
+        "complete_case": {
+          "correct": 113,
+          "total": 300,
+          "accuracy": 0.37666666666666665,
+          "wilson_95_ci": [
+            0.3237203650702255,
+            0.4327315678318291
+          ]
+        },
+        "overall_question_mean_accuracy": 0.7011111111111111
+      },
+      "probe-harrier": {
+        "per_question": {
+          "owner": {
+            "correct": 183,
+            "total": 300,
+            "accuracy": 0.61,
+            "wilson_95_ci": [
+              0.553748567961591,
+              0.6634699783690088
+            ],
+            "per_class": {
+              "account_access": {
+                "support": 38,
+                "precision": 0.875,
+                "recall": 0.7368421052631579,
+                "f1": 0.7999999999999999,
+                "accuracy_within_class": 0.7368421052631579,
+                "accuracy_wilson_95_ci": [
+                  0.5799115381253364,
+                  0.8502837874520186
+                ]
+              },
+              "billing": {
+                "support": 40,
+                "precision": 0.6140350877192983,
+                "recall": 0.875,
+                "f1": 0.7216494845360825,
+                "accuracy_within_class": 0.875,
+                "accuracy_wilson_95_ci": [
+                  0.738878801611489,
+                  0.945404997490546
+                ]
+              },
+              "operations": {
+                "support": 41,
+                "precision": 0.3387096774193548,
+                "recall": 0.5121951219512195,
+                "f1": 0.4077669902912621,
+                "accuracy_within_class": 0.5121951219512195,
+                "accuracy_wilson_95_ci": [
+                  0.3648450865154381,
+                  0.6574557044556734
+                ]
+              },
+              "other": {
+                "support": 39,
+                "precision": 0.6153846153846154,
+                "recall": 0.20512820512820512,
+                "f1": 0.3076923076923077,
+                "accuracy_within_class": 0.20512820512820512,
+                "accuracy_wilson_95_ci": [
+                  0.10779718230710382,
+                  0.35533968013582296
+                ]
+              },
+              "safety_compliance": {
+                "support": 60,
+                "precision": 0.7017543859649122,
+                "recall": 0.6666666666666666,
+                "f1": 0.6837606837606838,
+                "accuracy_within_class": 0.6666666666666666,
+                "accuracy_wilson_95_ci": [
+                  0.5405686645211968,
+                  0.7727073847647731
+                ]
+              },
+              "sales": {
+                "support": 39,
+                "precision": 0.7941176470588235,
+                "recall": 0.6923076923076923,
+                "f1": 0.7397260273972601,
+                "accuracy_within_class": 0.6923076923076923,
+                "accuracy_wilson_95_ci": [
+                  0.5357874562585069,
+                  0.8143406769308886
+                ]
+              },
+              "technical_support": {
+                "support": 43,
+                "precision": 0.5333333333333333,
+                "recall": 0.5581395348837209,
+                "f1": 0.5454545454545454,
+                "accuracy_within_class": 0.5581395348837209,
+                "accuracy_wilson_95_ci": [
+                  0.41107614452824104,
+                  0.6956669016082949
+                ]
+              }
+            }
+          },
+          "urgent": {
+            "correct": 257,
+            "total": 300,
+            "accuracy": 0.8566666666666667,
+            "wilson_95_ci": [
+              0.8124994228503402,
+              0.8918152576761502
+            ],
+            "per_class": {
+              "False": {
+                "support": 173,
+                "precision": 0.8532608695652174,
+                "recall": 0.9075144508670521,
+                "f1": 0.8795518207282914,
+                "accuracy_within_class": 0.9075144508670521,
+                "accuracy_wilson_95_ci": [
+                  0.855055007958445,
+                  0.9422693352147525
+                ]
+              },
+              "True": {
+                "support": 127,
+                "precision": 0.8620689655172413,
+                "recall": 0.7874015748031497,
+                "f1": 0.823045267489712,
+                "accuracy_within_class": 0.7874015748031497,
+                "accuracy_wilson_95_ci": [
+                  0.7083518505150559,
+                  0.8495752825050644
+                ]
+              }
+            }
+          },
+          "impact": {
+            "correct": 226,
+            "total": 300,
+            "accuracy": 0.7533333333333333,
+            "wilson_95_ci": [
+              0.7015546972961404,
+              0.7987061972834228
+            ],
+            "per_class": {
+              "high": {
+                "support": 88,
+                "precision": 0.71,
+                "recall": 0.8068181818181818,
+                "f1": 0.7553191489361702,
+                "accuracy_within_class": 0.8068181818181818,
+                "accuracy_wilson_95_ci": [
+                  0.7122293318676104,
+                  0.8757404226789328
+                ]
+              },
+              "low": {
+                "support": 93,
+                "precision": 0.8571428571428571,
+                "recall": 0.7741935483870968,
+                "f1": 0.8135593220338982,
+                "accuracy_within_class": 0.7741935483870968,
+                "accuracy_wilson_95_ci": [
+                  0.6793354933632197,
+                  0.8472984568174416
+                ]
+              },
+              "moderate": {
+                "support": 119,
+                "precision": 0.7155172413793104,
+                "recall": 0.6974789915966386,
+                "f1": 0.7063829787234043,
+                "accuracy_within_class": 0.6974789915966386,
+                "accuracy_wilson_95_ci": [
+                  0.6098386197143355,
+                  0.7727683637195202
+                ]
+              }
+            }
+          }
+        },
+        "complete_case": {
+          "correct": 126,
+          "total": 300,
+          "accuracy": 0.42,
+          "wilson_95_ci": [
+            0.3655060253806384,
+            0.4765168500152888
+          ]
+        },
+        "overall_question_mean_accuracy": 0.7399999999999999
+      }
+    }
+  },
+  "sources": {
+    "earlier90": "immutable pre-existing baseline",
+    "new210": "fresh predictions for test-091..test-300",
+    "pooled300": "earlier90 + new210"
+  },
+  "new210_latency": {
+    "qwen": {
+      "n": 210,
+      "errors": 0,
+      "mean_ms": 89.8141679095238,
+      "median_ms": 84.517521,
+      "p95_ms": 104.407333
+    },
+    "harrier": {
+      "n": 210,
+      "errors": 0,
+      "mean_ms": 83.25212656666666,
+      "median_ms": 81.03902099999999,
+      "p95_ms": 92.966917
+    },
+    "jev": {
+      "n": 210,
+      "errors": 0,
+      "mean_ms": 441.0263470142857,
+      "median_ms": 421.89324999999997,
+      "p95_ms": 580.321
+    }
+  }
+}

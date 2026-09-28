@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "run_id": "qwen-local-lowmem-v2",
+  "train_only_selection_frozen": true,
+  "reference_accessed": false,
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "source_freeze_manifest_sha256": "5f7dd19638df1f7bdcb56ecd44a9371ae5a0ac32a6314538146e324ac8a2e48f",
+  "text_compiler_sha256": "3392fadabc4c7cc6d69acb31f152ab6e73ab83c12c16664b06f3ac6f46053d8e",
+  "evaluator_sha256": "1f65bc41365acf99dc8340c6eca0de8c05169167be02e04a64db10cd425311ed",
+  "comparison_script_sha256": "54db4e064fc19056db1e96e2ad4feb0141caaeee1fecaa313f232d3a920fddd8",
+  "train_only_selection": {
+    "method": "minimum aggregate mean objective loss on the same grouped 200-question dev split; no hyperparameter sweep",
+    "scope": "train/dev only; no heldout/test labels, predictions, or hashes accessed",
+    "status": "train_dev_complete",
+    "heldout_accessed": false,
+    "completed_steps": 1380,
+    "selected_epoch": 1,
+    "best_dev_loss": 0.9594359870254994
+  },
+  "training_profile": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "profile_version": "1",
+    "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+    "text_version": "decengine-varied-pair-text-v2-generic-types"
+  },
+  "sha256": {
+    "config": "649bc8842bf9f95a32003b152463e2aac731676dfe8039cc9a238db93568a9a6",
+    "best_weights": "092f809f33c18921daa8460b68a6eb93174586c1ba8ebe742a1aaa528d11d9ca",
+    "best_record": "67dd9966ef238ee6ef453676c16c1d0c231e0c19b6619a23ae135921e9a47905",
+    "summary": "a2ec618d00485033ec52200f8e5a5b86243e4405bdc14e91313355fa7ef9cf2c"
+  },
+  "evaluation_policy_sha256": "d1fb0c2e142c066e135705cdd7d77a313d65e5eb730d2b4ed6459f7ee044a32c",
+  "evaluation_policy_id": "lora-fresh60-inference-extrapolation-512-v1"
+}

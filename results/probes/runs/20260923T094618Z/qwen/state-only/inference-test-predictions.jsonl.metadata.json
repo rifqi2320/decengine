@@ -1,0 +1,51 @@
+{
+  "artifact_directory": "results/probes/runs/20260923T094618Z/qwen/state-only",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "feature_mode": "state-only",
+  "feature_keys_by_task": {
+    "owner": "state",
+    "urgent": "state",
+    "impact": "state"
+  },
+  "case_count": 90,
+  "input_sha256": "89cd447bf8b733cfe9bc40df8d4e81c96540cd0f4eb7c91beab96a0037153588",
+  "manifest_path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/probe-features/Qwen-Qwen3-Embedding-0-6B-test90.jsonl.manifest.json",
+  "manifest_sha256": "33c9e3ab34f1b1935cb346955152b22dd4edd2ff254be226ccb10ea83beff83c",
+  "manifest": {
+    "schema_version": 1,
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "profile_version": "1",
+    "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+    "text_version": "decengine-probe-text-v1",
+    "embedding_dimensions": 1024,
+    "checkpoint_files": [
+      {
+        "path": "config.json",
+        "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+        "size": 727
+      },
+      {
+        "path": "model.safetensors",
+        "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+        "size": 1191586416
+      },
+      {
+        "path": "tokenizer.json",
+        "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "size": 11423705
+      },
+      {
+        "path": "tokenizer_config.json",
+        "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+        "size": 9706
+      }
+    ]
+  },
+  "artifacts_sha256": {
+    "results/probes/runs/20260923T094618Z/qwen/state-only/metadata.json": "ed943dba6901ad8dd06359a398e41d368cc0eff4caae9526c468689c8febdaab",
+    "results/probes/runs/20260923T094618Z/qwen/state-only/models.json": "1557ed83fd10b4ebc11df111ae0e3ac0719a15a95d838b477874b9b6a4ed5688"
+  },
+  "predictor_script_sha256": "14ced071fb41b94e9ed5f3810f27b32a15adec64fa102e61384f37cbcdbd1b1a",
+  "output_sha256": "5b133bed1aefc9f1dd6b023beee09615c51dc6fb590ae2d5af0446f57ad4175b",
+  "inference": "saved coefficients/scaler only; no fitting, labels, references, or tuning"
+}

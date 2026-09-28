@@ -1,0 +1,51 @@
+{
+  "artifact_directory": "results/probes/runs/20260923T094618Z/harrier/state-only",
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "feature_mode": "state-only",
+  "feature_keys_by_task": {
+    "owner": "state",
+    "urgent": "state",
+    "impact": "state"
+  },
+  "case_count": 90,
+  "input_sha256": "5efe6f50440771091228dc4f4c34ab7e7347d1a48e286ff6a82daccea02fbbd9",
+  "manifest_path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/probe-features/microsoft-harrier-oss-v1-0-6b-test90.jsonl.manifest.json",
+  "manifest_sha256": "e8cfffb6b8cd614267c08980a08ea1620eba0ac478de2b49ea2575df6fab009e",
+  "manifest": {
+    "schema_version": 1,
+    "model": "microsoft/harrier-oss-v1-0.6b",
+    "profile_version": "2",
+    "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+    "text_version": "decengine-probe-text-v1",
+    "embedding_dimensions": 1024,
+    "checkpoint_files": [
+      {
+        "path": "config.json",
+        "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+        "size": 1355
+      },
+      {
+        "path": "model.safetensors",
+        "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+        "size": 1192133232
+      },
+      {
+        "path": "tokenizer.json",
+        "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "size": 11423705
+      },
+      {
+        "path": "tokenizer_config.json",
+        "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+        "size": 5404
+      }
+    ]
+  },
+  "artifacts_sha256": {
+    "results/probes/runs/20260923T094618Z/harrier/state-only/metadata.json": "08548b4db454c6d471b0ab2ffddd7f6c8731807109beb28d44822c3f011bb7c0",
+    "results/probes/runs/20260923T094618Z/harrier/state-only/models.json": "b7b18fb08e2d53e64c861704f4ae3f8da423e200a23247554f84a53410952e84"
+  },
+  "predictor_script_sha256": "14ced071fb41b94e9ed5f3810f27b32a15adec64fa102e61384f37cbcdbd1b1a",
+  "output_sha256": "452c4986948211b9d69d4a55a8c7fe0fd11dd62f56b9f23c6309374602b396e8",
+  "inference": "saved coefficients/scaler only; no fitting, labels, references, or tuning"
+}

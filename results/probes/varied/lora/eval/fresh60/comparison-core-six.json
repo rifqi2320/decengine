@@ -1,0 +1,876 @@
+{
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "case_count": 60,
+  "overall": {
+    "qwen_lora": {
+      "choice": {
+        "correct": 15,
+        "total": 60,
+        "accuracy": 0.25
+      },
+      "noul": {
+        "correct": 30,
+        "total": 60,
+        "accuracy": 0.5
+      },
+      "score": {
+        "correct": 20,
+        "total": 60,
+        "accuracy": 0.3333333333333333
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 60,
+        "accuracy": 0.0
+      },
+      "score_expected_value_mae": 30.13156473158907,
+      "score_ordinal_level_mae": 0.9333333333333333
+    },
+    "harrier_lora": {
+      "choice": {
+        "correct": 15,
+        "total": 60,
+        "accuracy": 0.25
+      },
+      "noul": {
+        "correct": 30,
+        "total": 60,
+        "accuracy": 0.5
+      },
+      "score": {
+        "correct": 20,
+        "total": 60,
+        "accuracy": 0.3333333333333333
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 60,
+        "accuracy": 0.0
+      },
+      "score_expected_value_mae": 30.160841837361662,
+      "score_ordinal_level_mae": 0.9333333333333333
+    },
+    "qwen_frozen_baseline_full660": {
+      "choice": {
+        "correct": 20,
+        "total": 60,
+        "accuracy": 0.3333333333333333
+      },
+      "noul": {
+        "correct": 37,
+        "total": 60,
+        "accuracy": 0.6166666666666667
+      },
+      "score": {
+        "correct": 10,
+        "total": 60,
+        "accuracy": 0.16666666666666666
+      },
+      "all_three": {
+        "correct": 2,
+        "total": 60,
+        "accuracy": 0.03333333333333333
+      },
+      "score_expected_value_mae": 52.076417317809096,
+      "score_ordinal_level_mae": 1.5833333333333333
+    },
+    "harrier_frozen_baseline_full660": {
+      "choice": {
+        "correct": 16,
+        "total": 60,
+        "accuracy": 0.26666666666666666
+      },
+      "noul": {
+        "correct": 37,
+        "total": 60,
+        "accuracy": 0.6166666666666667
+      },
+      "score": {
+        "correct": 16,
+        "total": 60,
+        "accuracy": 0.26666666666666666
+      },
+      "all_three": {
+        "correct": 2,
+        "total": 60,
+        "accuracy": 0.03333333333333333
+      },
+      "score_expected_value_mae": 38.11294726348642,
+      "score_ordinal_level_mae": 1.2666666666666666
+    },
+    "qwen_headonly_same460": {
+      "choice": {
+        "correct": 21,
+        "total": 60,
+        "accuracy": 0.35
+      },
+      "noul": {
+        "correct": 37,
+        "total": 60,
+        "accuracy": 0.6166666666666667
+      },
+      "score": {
+        "correct": 6,
+        "total": 60,
+        "accuracy": 0.1
+      },
+      "all_three": {
+        "correct": 2,
+        "total": 60,
+        "accuracy": 0.03333333333333333
+      },
+      "score_expected_value_mae": 44.82473074381608,
+      "score_ordinal_level_mae": 1.5
+    },
+    "harrier_headonly_same460": {
+      "choice": {
+        "correct": 17,
+        "total": 60,
+        "accuracy": 0.2833333333333333
+      },
+      "noul": {
+        "correct": 35,
+        "total": 60,
+        "accuracy": 0.5833333333333334
+      },
+      "score": {
+        "correct": 20,
+        "total": 60,
+        "accuracy": 0.3333333333333333
+      },
+      "all_three": {
+        "correct": 3,
+        "total": 60,
+        "accuracy": 0.05
+      },
+      "score_expected_value_mae": 35.8733066492198,
+      "score_ordinal_level_mae": 1.1333333333333333
+    }
+  },
+  "per_domain_counts": {
+    "arts colleges": {
+      "qwen_lora": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 2,
+        "score": 2
+      },
+      "harrier_lora": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 2,
+        "score": 2
+      },
+      "qwen_frozen_baseline_full660": {
+        "all_three": 1,
+        "choice": 3,
+        "noul": 4,
+        "score": 1
+      },
+      "harrier_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 3,
+        "score": 0
+      },
+      "qwen_headonly_same460": {
+        "all_three": 0,
+        "choice": 3,
+        "noul": 2,
+        "score": 0
+      },
+      "harrier_headonly_same460": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 3,
+        "score": 0
+      }
+    },
+    "coastal research": {
+      "qwen_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 2
+      },
+      "harrier_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 2
+      },
+      "qwen_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 3,
+        "score": 1
+      },
+      "harrier_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 4,
+        "score": 1
+      },
+      "qwen_headonly_same460": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 0
+      },
+      "harrier_headonly_same460": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 4,
+        "score": 2
+      }
+    },
+    "community clinics": {
+      "qwen_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 1
+      },
+      "harrier_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 1
+      },
+      "qwen_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 3,
+        "score": 2
+      },
+      "harrier_frozen_baseline_full660": {
+        "all_three": 1,
+        "choice": 1,
+        "noul": 4,
+        "score": 3
+      },
+      "qwen_headonly_same460": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 4,
+        "score": 2
+      },
+      "harrier_headonly_same460": {
+        "all_three": 1,
+        "choice": 1,
+        "noul": 3,
+        "score": 3
+      }
+    },
+    "community energy": {
+      "qwen_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 2
+      },
+      "harrier_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 2
+      },
+      "qwen_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 0
+      },
+      "harrier_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 0
+      },
+      "qwen_headonly_same460": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 2,
+        "score": 0
+      },
+      "harrier_headonly_same460": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 0
+      }
+    },
+    "credit unions": {
+      "qwen_lora": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 2,
+        "score": 2
+      },
+      "harrier_lora": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 2,
+        "score": 2
+      },
+      "qwen_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 3,
+        "score": 0
+      },
+      "harrier_frozen_baseline_full660": {
+        "all_three": 1,
+        "choice": 2,
+        "noul": 4,
+        "score": 1
+      },
+      "qwen_headonly_same460": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 4,
+        "score": 0
+      },
+      "harrier_headonly_same460": {
+        "all_three": 1,
+        "choice": 2,
+        "noul": 4,
+        "score": 1
+      }
+    },
+    "food cooperatives": {
+      "qwen_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 1
+      },
+      "harrier_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 1
+      },
+      "qwen_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 3,
+        "score": 1
+      },
+      "harrier_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 4,
+        "score": 1
+      },
+      "qwen_headonly_same460": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 3,
+        "score": 0
+      },
+      "harrier_headonly_same460": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 3,
+        "score": 1
+      }
+    },
+    "municipal permitting": {
+      "qwen_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 2
+      },
+      "harrier_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 2
+      },
+      "qwen_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 4,
+        "score": 0
+      },
+      "harrier_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 1
+      },
+      "qwen_headonly_same460": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 4,
+        "score": 1
+      },
+      "harrier_headonly_same460": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 1
+      }
+    },
+    "museum conservation": {
+      "qwen_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 2
+      },
+      "harrier_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 2
+      },
+      "qwen_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 4,
+        "score": 0
+      },
+      "harrier_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 2
+      },
+      "qwen_headonly_same460": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 3,
+        "score": 0
+      },
+      "harrier_headonly_same460": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 2
+      }
+    },
+    "public libraries": {
+      "qwen_lora": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 2,
+        "score": 1
+      },
+      "harrier_lora": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 2,
+        "score": 1
+      },
+      "qwen_frozen_baseline_full660": {
+        "all_three": 1,
+        "choice": 2,
+        "noul": 3,
+        "score": 2
+      },
+      "harrier_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 2,
+        "score": 2
+      },
+      "qwen_headonly_same460": {
+        "all_three": 1,
+        "choice": 1,
+        "noul": 2,
+        "score": 1
+      },
+      "harrier_headonly_same460": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 3,
+        "score": 2
+      }
+    },
+    "regional farms": {
+      "qwen_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 2
+      },
+      "harrier_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 2
+      },
+      "qwen_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 1
+      },
+      "harrier_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 4,
+        "score": 1
+      },
+      "qwen_headonly_same460": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 1
+      },
+      "harrier_headonly_same460": {
+        "all_three": 1,
+        "choice": 2,
+        "noul": 3,
+        "score": 3
+      }
+    },
+    "regional transit": {
+      "qwen_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 2
+      },
+      "harrier_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 2
+      },
+      "qwen_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 1
+      },
+      "harrier_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 3,
+        "score": 2
+      },
+      "qwen_headonly_same460": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 3,
+        "score": 0
+      },
+      "harrier_headonly_same460": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 3
+      }
+    },
+    "small manufacturers": {
+      "qwen_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 1
+      },
+      "harrier_lora": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 3,
+        "score": 1
+      },
+      "qwen_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 2,
+        "noul": 2,
+        "score": 1
+      },
+      "harrier_frozen_baseline_full660": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 2
+      },
+      "qwen_headonly_same460": {
+        "all_three": 1,
+        "choice": 3,
+        "noul": 4,
+        "score": 1
+      },
+      "harrier_headonly_same460": {
+        "all_three": 0,
+        "choice": 1,
+        "noul": 2,
+        "score": 2
+      }
+    }
+  },
+  "timing_scopes_and_compute_assumptions": {
+    "timings": {
+      "qwen_lora": {
+        "question_inference_ms": {
+          "scope": "sequential individual text backbone forwards + typed scorer; tokenizer/compilation and load excluded",
+          "n": 180,
+          "p50": 126.77335400000001,
+          "p95": 164.87324199999998
+        },
+        "three_question_case_sum_ms": {
+          "scope": "sum of three question inference scopes; tokenizer/compilation and model load excluded",
+          "n": 60,
+          "p50": 397.7869375,
+          "p95": 439.153886
+        }
+      },
+      "harrier_lora": {
+        "question_inference_ms": {
+          "scope": "sequential individual text backbone forwards + typed scorer; tokenizer/compilation and load excluded",
+          "n": 180,
+          "p50": 126.2561255,
+          "p95": 164.3975771
+        },
+        "three_question_case_sum_ms": {
+          "scope": "sum of three question inference scopes; tokenizer/compilation and model load excluded",
+          "n": 60,
+          "p50": 397.29279199999996,
+          "p95": 436.4980312
+        }
+      },
+      "qwen_frozen_baseline_full660": {
+        "case_total_ms": {
+          "n": 60,
+          "p50": 320.93535399999996,
+          "p95": 344.7769281,
+          "scope": "sum of 3 question calls/case; excludes model load; warmup excluded"
+        },
+        "question_total_ms": {
+          "n": 180,
+          "p50": 101.9993335,
+          "p95": 127.45909585,
+          "scope": "tokenization + query/candidate embedding + Metal scorer; excludes model load; warmup excluded"
+        }
+      },
+      "harrier_frozen_baseline_full660": {
+        "case_total_ms": {
+          "n": 60,
+          "p50": 320.5260425,
+          "p95": 344.91560695,
+          "scope": "sum of 3 question calls/case; excludes model load; warmup excluded"
+        },
+        "question_total_ms": {
+          "n": 180,
+          "p50": 102.05947950000001,
+          "p95": 126.91669404999999,
+          "scope": "tokenization + query/candidate embedding + Metal scorer; excludes model load; warmup excluded"
+        }
+      },
+      "qwen_headonly_same460": {
+        "case_total_ms": {
+          "n": 60,
+          "p50": 322.0725,
+          "p95": 348.1571077,
+          "scope": "three-question per-case sum; excludes model load/warmup"
+        },
+        "question_total_ms": {
+          "n": 180,
+          "p50": 103.05431250000001,
+          "p95": 128.70307499999998,
+          "scope": "tokenization+query/candidate embedding+Metal scorer; excludes model load/warmup"
+        }
+      },
+      "harrier_headonly_same460": {
+        "case_total_ms": {
+          "n": 60,
+          "p50": 322.578001,
+          "p95": 347.6380812499999,
+          "scope": "three-question per-case sum; excludes model load/warmup"
+        },
+        "question_total_ms": {
+          "n": 180,
+          "p50": 103.010125,
+          "p95": 128.83049194999998,
+          "scope": "tokenization+query/candidate embedding+Metal scorer; excludes model load/warmup"
+        }
+      }
+    },
+    "provenance": {
+      "qwen_lora": {
+        "run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/eval/fresh60/predictions/qwen-lora",
+        "predictions_sha256": "c47fb09e32e0ce9bbac2cda44cc016d587adbef8aa0e024ad9791f80397be2cc",
+        "metadata_sha256": "ff415654d64c3a2e75de6f4b4ab9e361810db0aaa07557868b1cada335764cbf",
+        "runtime": "MLX/Metal",
+        "device": "Device(gpu, 0)",
+        "dtype": null,
+        "compute_assumptions": {
+          "forward_policy": "one query/candidate text forward individually; no batching",
+          "candidate_count": "fixture supplied 2-5 per question",
+          "flops": "not estimated; no hardware-normalized compute claim"
+        },
+        "resource_guard": {
+          "monitor": "external footprint + vm.swapusage sampled during process",
+          "baseline_swap_bytes": 1087635456,
+          "max_swap_bytes": 1087635456,
+          "swap_never_above_baseline": true,
+          "swap_samples": 69,
+          "max_process_peak_footprint_bytes": 5712676712,
+          "early_stop_bytes": 6442450944,
+          "absolute_cap_bytes": 8589934592,
+          "peak_below_early_stop": true,
+          "samples": 69
+        },
+        "baseline_protocol": null,
+        "training_question_count": null,
+        "inference_policy_id": "lora-fresh60-inference-extrapolation-512-v1",
+        "inference_policy_sha256": "d1fb0c2e142c066e135705cdd7d77a313d65e5eb730d2b4ed6459f7ee044a32c",
+        "unseen_length_extrapolation": {
+          "authorized": true,
+          "inputs_over_training_limit": 180,
+          "maximum_compiled_token_count": 375,
+          "truncation": false
+        }
+      },
+      "harrier_lora": {
+        "run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/eval/fresh60/predictions/harrier-lora",
+        "predictions_sha256": "e7ce1c8c7912ad896d38cae6cb7d7a0ca6ad29318d7d2d52b37a5746d01bc3b9",
+        "metadata_sha256": "063d5acc8a350f1f5d4d74551b4f655b4c6e6d1f55c109dbed41cf20a3a5ed2d",
+        "runtime": "MLX/Metal",
+        "device": "Device(gpu, 0)",
+        "dtype": null,
+        "compute_assumptions": {
+          "forward_policy": "one query/candidate text forward individually; no batching",
+          "candidate_count": "fixture supplied 2-5 per question",
+          "flops": "not estimated; no hardware-normalized compute claim"
+        },
+        "resource_guard": {
+          "monitor": "external footprint + vm.swapusage sampled during process",
+          "baseline_swap_bytes": 1087635456,
+          "max_swap_bytes": 1087635456,
+          "swap_never_above_baseline": true,
+          "swap_samples": 69,
+          "max_process_peak_footprint_bytes": 5715199848,
+          "early_stop_bytes": 6442450944,
+          "absolute_cap_bytes": 8589934592,
+          "peak_below_early_stop": true,
+          "samples": 69
+        },
+        "baseline_protocol": null,
+        "training_question_count": null,
+        "inference_policy_id": "lora-fresh60-inference-extrapolation-512-v1",
+        "inference_policy_sha256": "d1fb0c2e142c066e135705cdd7d77a313d65e5eb730d2b4ed6459f7ee044a32c",
+        "unseen_length_extrapolation": {
+          "authorized": true,
+          "inputs_over_training_limit": 180,
+          "maximum_compiled_token_count": 375,
+          "truncation": false
+        }
+      },
+      "qwen_frozen_baseline_full660": {
+        "run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/eval/fresh60/predictions/qwen-frozen-baseline-full660",
+        "predictions_sha256": "1baeb0cd61470529e80d33473a7908bd4a71e1eae6269f97632b09221aef1e12",
+        "metadata_sha256": "8e371f592439136b008f0a832e1170243b737af7da1e4e9b047f48a6a32e29ad",
+        "runtime": "decengine varied-metal (MLX/Metal)",
+        "device": "Apple M4 Pro (freeze record)",
+        "dtype": "profile-native MLX inference",
+        "compute_assumptions": {
+          "batching": "varied-metal native protocol",
+          "execution": "query/candidate embeddings and pair scorer on MLX/Metal",
+          "flops": "not estimated"
+        },
+        "resource_guard": {
+          "baseline_swap_bytes": 1112801280,
+          "guard_samples": 21,
+          "limit_absolute_bytes": 8589934592,
+          "limit_early_stop_bytes": 6442450944,
+          "max_process_peak_footprint_bytes": 3991783248,
+          "max_swap_bytes": 1112801280,
+          "process_peak_below_early_stop": true,
+          "swap_unchanged": true
+        },
+        "baseline_protocol": "historical frozen typed scorer fit/selected on full 660 training questions; not same split as 460-question LoRA train subset",
+        "training_question_count": null,
+        "inference_policy_id": null,
+        "inference_policy_sha256": null,
+        "unseen_length_extrapolation": null
+      },
+      "harrier_frozen_baseline_full660": {
+        "run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/eval/fresh60/predictions/harrier-frozen-baseline-full660",
+        "predictions_sha256": "b86bc07f2bd3ff1f5fc119a1e8cc59e630398a01dc164a790c3a8a396f1d2754",
+        "metadata_sha256": "f54901bdff5158aa1fe05c23a5a0bbf65b52e0ecb7c297081e66d43e1c86a2fe",
+        "runtime": "decengine varied-metal (MLX/Metal)",
+        "device": "Apple M4 Pro (freeze record)",
+        "dtype": "profile-native MLX inference",
+        "compute_assumptions": {
+          "batching": "varied-metal native protocol",
+          "execution": "query/candidate embeddings and pair scorer on MLX/Metal",
+          "flops": "not estimated"
+        },
+        "resource_guard": {
+          "baseline_swap_bytes": 1112801280,
+          "guard_samples": 22,
+          "limit_absolute_bytes": 8589934592,
+          "limit_early_stop_bytes": 6442450944,
+          "max_process_peak_footprint_bytes": 3986884408,
+          "max_swap_bytes": 1112801280,
+          "process_peak_below_early_stop": true,
+          "swap_unchanged": true
+        },
+        "baseline_protocol": "historical frozen typed scorer fit/selected on full 660 training questions; not same split as 460-question LoRA train subset",
+        "training_question_count": null,
+        "inference_policy_id": null,
+        "inference_policy_sha256": null,
+        "unseen_length_extrapolation": null
+      },
+      "qwen_headonly_same460": {
+        "run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/eval/fresh60/predictions/qwen-headonly-same460",
+        "predictions_sha256": "a704c39005e5fe0cbec4f78331d0238a625e27fd436fd6b2af70c7692fb46ae8",
+        "metadata_sha256": "d4931dbacba19860466ad39d1adf8a5ff983996d495585b98086822ec10d5681",
+        "runtime": "decengine varied-metal (MLX/Metal)",
+        "device": "Apple M4 Pro",
+        "dtype": "profile-native MLX inference",
+        "compute_assumptions": "not provided",
+        "resource_guard": {
+          "absolute_cap_bytes": 8589934592,
+          "baseline_swap_bytes": 1112801280,
+          "early_stop_bytes": 6442450944,
+          "max_process_peak_footprint_bytes": 3985753912,
+          "max_swap_bytes": 1112801280,
+          "sample_count": 22,
+          "swap_unchanged": true
+        },
+        "baseline_protocol": "new controlled head-only C=1.0 fit on exactly frozen 460 train indices; no dev or holdout labels used in fit",
+        "training_question_count": 460,
+        "inference_policy_id": null,
+        "inference_policy_sha256": null,
+        "unseen_length_extrapolation": null
+      },
+      "harrier_headonly_same460": {
+        "run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/eval/fresh60/predictions/harrier-headonly-same460",
+        "predictions_sha256": "798491a9741934fe5c35d04ba22fdf7400e5c72f36ec4672ed452ad9ee9463c9",
+        "metadata_sha256": "b5c815264efa52f1b3c871ec04614bd7c1adea7f31b2de51ec802f875b4fac4e",
+        "runtime": "decengine varied-metal (MLX/Metal)",
+        "device": "Apple M4 Pro",
+        "dtype": "profile-native MLX inference",
+        "compute_assumptions": "not provided",
+        "resource_guard": {
+          "absolute_cap_bytes": 8589934592,
+          "baseline_swap_bytes": 1112801280,
+          "early_stop_bytes": 6442450944,
+          "max_process_peak_footprint_bytes": 3986474808,
+          "max_swap_bytes": 1112801280,
+          "sample_count": 22,
+          "swap_unchanged": true
+        },
+        "baseline_protocol": "new controlled head-only C=1.0 fit on exactly frozen 460 train indices; no dev or holdout labels used in fit",
+        "training_question_count": 460,
+        "inference_policy_id": null,
+        "inference_policy_sha256": null,
+        "unseen_length_extrapolation": null
+      }
+    }
+  },
+  "scoring": "strict exact typed label; score expected-value MAE compares probability-weighted rubric values to reference numeric value; ordinal level MAE uses ordered rubric labels",
+  "optional_bundles_not_supplied": [
+    "jev",
+    "laya_mlx"
+  ],
+  "network_or_api_calls": false
+}

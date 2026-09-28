@@ -1,0 +1,15 @@
+{
+  "freeze_manifest_sha256": "5f7dd19638df1f7bdcb56ecd44a9371ae5a0ac32a6314538146e324ac8a2e48f",
+  "attestations": [
+    {
+      "model": "qwen",
+      "profile": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/eval/fresh60/freeze/qwen-profile.json",
+      "attestation": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/eval/fresh60/freeze/qwen-freeze-attestation.json"
+    },
+    {
+      "model": "harrier",
+      "profile": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/eval/fresh60/freeze/harrier-profile.json",
+      "attestation": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/eval/fresh60/freeze/harrier-freeze-attestation.json"
+    }
+  ]
+}

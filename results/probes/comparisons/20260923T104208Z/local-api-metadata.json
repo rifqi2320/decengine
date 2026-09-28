@@ -1,0 +1,5 @@
+{
+  "started_at": "2026-09-23T10:43:16.076213+00:00",
+  "case_count": 210,
+  "scope": "test-091..test-300 only; prior 90 baseline files are read-only"
+}

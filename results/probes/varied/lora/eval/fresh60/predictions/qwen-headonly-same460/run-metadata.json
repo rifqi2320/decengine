@@ -1,0 +1,61 @@
+{
+  "C": 1.0,
+  "baseline_protocol": "new controlled head-only C=1.0 fit on exactly frozen 460 train indices; no dev or holdout labels used in fit",
+  "baseline_selection_freeze_sha256": "9c6f8dbf2fc5c60c5c9d5da2a9e4251dd44b73e111de55363261ae1b8bcf3487",
+  "comparison_script_sha256": "54db4e064fc19056db1e96e2ad4feb0141caaeee1fecaa313f232d3a920fddd8",
+  "dev_labels_used_for_fit": false,
+  "device": "Apple M4 Pro",
+  "dtype": "profile-native MLX inference",
+  "evaluator_source_sha256": "1f65bc41365acf99dc8340c6eca0de8c05169167be02e04a64db10cd425311ed",
+  "fit_metadata_sha256": "1a4904820ddc2b5eabc44b53404e455167172205324504b46c0f32cdb4f392ce",
+  "fit_script_sha256": "57e215f1fc4bfd48272f7021f22bde41dc138c75d87e0cafb09afbe8258ef794",
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "frozen_config_sha256": "fd21cd842b1876abcbcc4473edcc902d24d7f2f7ec0b4a7e92b98f08852dbb51",
+  "headonly_fit_metadata_sha256": "1a4904820ddc2b5eabc44b53404e455167172205324504b46c0f32cdb4f392ce",
+  "headonly_fit_models_sha256": "2d4d9f9a55b342af102a9c2442cf96ae5944b0738cfbbf97738aaec21db49a09",
+  "headonly_frozen_config_sha256": "fd21cd842b1876abcbcc4473edcc902d24d7f2f7ec0b4a7e92b98f08852dbb51",
+  "headonly_selection_freeze_sha256": "9c6f8dbf2fc5c60c5c9d5da2a9e4251dd44b73e111de55363261ae1b8bcf3487",
+  "holdout_labels_used_for_fit": false,
+  "lora_selection_freeze_manifest_sha256": "5f7dd19638df1f7bdcb56ecd44a9371ae5a0ac32a6314538146e324ac8a2e48f",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "models_sha256": "2d4d9f9a55b342af102a9c2442cf96ae5944b0738cfbbf97738aaec21db49a09",
+  "predictions_sha256": "a704c39005e5fe0cbec4f78331d0238a625e27fd436fd6b2af70c7692fb46ae8",
+  "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+  "profile_version": "1",
+  "reference_scoring_performed": false,
+  "resource_guard": {
+    "absolute_cap_bytes": 8589934592,
+    "baseline_swap_bytes": 1112801280,
+    "early_stop_bytes": 6442450944,
+    "max_process_peak_footprint_bytes": 3985753912,
+    "max_swap_bytes": 1112801280,
+    "sample_count": 22,
+    "swap_unchanged": true
+  },
+  "runtime": "decengine varied-metal (MLX/Metal)",
+  "selection_status": "frozen before test inference",
+  "system_id": "qwen_headonly_same460",
+  "text_version": "decengine-varied-pair-text-v2-generic-types",
+  "timing_scopes": {
+    "case_total_ms": {
+      "n": 60,
+      "p50": 322.0725,
+      "p95": 348.1571077,
+      "scope": "three-question per-case sum; excludes model load/warmup"
+    },
+    "question_total_ms": {
+      "n": 180,
+      "p50": 103.05431250000001,
+      "p95": 128.70307499999998,
+      "scope": "tokenization+query/candidate embedding+Metal scorer; excludes model load/warmup"
+    }
+  },
+  "training_question_count": 460,
+  "training_questions_by_type": {
+    "choice": 140,
+    "noul": 160,
+    "score": 160
+  },
+  "varied_metal_raw_sha256": "d4b99aa873949e137eb2394e3d94237ff007093c2774eceac20da22d3655fabb",
+  "varied_metal_source_sha256": "4ae8ec7e85bc70954a645471c2f49cfc00a5fdac80fb4887c62f920543e79303"
+}

@@ -1,0 +1,12 @@
+utc=2026-09-23T15:41:09Z
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=47710307)	47%; charging; 1:43 remaining present: true
+23:41  up  9:07, 3 users, load averages: 2.91 3.31 3.24
+  743  69.2 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds
+ 2719  10.3 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)
+  788   9.1 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer
+ 2542   8.0 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)
+ 1031   7.7 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds_stores
+ 1654   6.9 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal
+ 9237   4.4 /Users/IDSP35241/.opencode/bin/opencode
+ 2563   2.3 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (GPU).app/Contents/MacOS/Beekeeper Studio Helper (GPU)

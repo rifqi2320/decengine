@@ -1,0 +1,3 @@
+{"dev": {"exact_accuracy": 0.395, "loss": 0.9483493425697088, "n": 200}, "epoch": 1, "steps": 460, "train_loss": 0.690395373057412}
+{"dev": {"exact_accuracy": 0.41, "loss": 0.9698144472762942, "n": 200}, "epoch": 2, "steps": 920, "train_loss": 0.6014260856191749}
+{"dev": {"exact_accuracy": 0.415, "loss": 0.9719915977120399, "n": 200}, "epoch": 3, "steps": 1380, "train_loss": 0.5909883503640152}

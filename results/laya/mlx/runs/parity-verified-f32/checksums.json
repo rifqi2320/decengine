@@ -1,0 +1,10 @@
+{
+  "run-metadata.json": "6906e7cc4e0256e8611ed23e8f8887dd8bbbb4e7f4266a7b61777c1ff0f60bd5",
+  "metrics.json": "9d1c27399682555e41d0262693a6ad230dfc17b06f6a21279ae83a68227005f1",
+  "parity.json": "deec926b09f634cb1bcf8fb271fbe37b615607fcda24478e13597e11eb5b1620",
+  "latency-summary.json": "ee96b9cddbdbba6dd80b2e83f32e98d67007abe5385c884a6ebd4174334ac787",
+  "timings.jsonl": "a7e0463ce58559a8017b52a585dbaffdf1a775fd1cfdec8c3c90452853a30a2f",
+  "laya-mlx-predictions.jsonl": "132fcde65f79549586aa93349baf028f9946edb173896f714768db718686687f",
+  "raw-results.jsonl": "e2ebb5f3788157b102feee12c154ad8a7c90f7c9842abf740f5ed94f1f71deb9",
+  "flops-estimate.json": "09b9a324e3100e147f8bd8f64a5e575d51725b2ce51e0a4c09f119e8427506c4"
+}

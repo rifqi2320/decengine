@@ -1,0 +1,71 @@
+{
+  "run_id": "20260923T090928722184Z",
+  "started_at": "2026-09-23T09:09:28.722815+00:00",
+  "fixture": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/decision-cases-holdout.jsonl",
+  "fixture_sha256": "6139c028f6604a36c61db80484762a9e69ad56ca9a130507c01167823e5fe124",
+  "case_count": 1,
+  "full_holdout_case_count": 60,
+  "qwen_baseline": "/Users/IDSP35241/Documents/Code/decengine/results/qwen-holdout/20260923T090609039852Z/baseline.jsonl",
+  "qwen_baseline_sha256": "5bbf0159ff4d229aa5e9d56f9f090f17b9e255b7c1fb4028d390ed67d0dab006",
+  "qwen_baseline_reused_without_inference": true,
+  "harrier_model": "microsoft/harrier-oss-v1-0.6b",
+  "harrier_engine": "mlx",
+  "jev_model": "jev-latest",
+  "jev_url": "https://api.typesafe.ai/v1/systemone",
+  "model_store": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/decengine-model-store",
+  "install_record": {
+    "model_id": "microsoft/harrier-oss-v1-0.6b",
+    "profile_version": "2",
+    "installed_at_unix": 1790153261,
+    "files": [
+      {
+        "path": "config.json",
+        "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+        "size": 1355
+      },
+      {
+        "path": "model.safetensors",
+        "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+        "size": 1192133232
+      },
+      {
+        "path": "tokenizer.json",
+        "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "size": 11423705
+      },
+      {
+        "path": "tokenizer_config.json",
+        "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+        "size": 5404
+      }
+    ]
+  },
+  "profile": {
+    "schema_version": 1,
+    "id": "microsoft/harrier-oss-v1-0.6b",
+    "family": "qwen3-0.6b",
+    "architecture": "Qwen3Model",
+    "pooling": "last_token",
+    "normalize": "l2",
+    "padding_side": "left",
+    "query_template": "Instruct: {instruction}\nQuery: {text}",
+    "candidate_template": "{text}",
+    "temperature": 0.05,
+    "max_length": 32768,
+    "profile_version": "2",
+    "required_files": [
+      "config.json",
+      "tokenizer.json",
+      "tokenizer_config.json"
+    ]
+  },
+  "profile_sha256": "91b4e508f494a16fa74ca4544a77d0e9826e56d69ffce30d8024ce39834bdc80",
+  "native_library": "target/release/libdecengine.dylib",
+  "native_library_sha256": "35676c48ac282ba1f6b86fe05bae55f7970d3cb6ebe454d6704e20b5db1871c8",
+  "python": "3.12.12",
+  "platform": "darwin",
+  "calls_per_case": {
+    "harrier_mlx": 1,
+    "jev_api": 1
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "protocol": "one shared learned scorer per generic type (choice/noul/score); one prediction row per named question",
+  "train_case_count": 420,
+  "train_question_count": 660,
+  "test_case_count": 60,
+  "test_question_count": 180,
+  "train_family_count": 15,
+  "test_family_count": 10,
+  "family_overlap_count": 0,
+  "train_test_family_overlap": [],
+  "train_families": [
+    "qf-00000006",
+    "qf-00000007",
+    "qf-00000008",
+    "qf-00000009",
+    "qf-0000000a",
+    "qf-0000000b",
+    "qf-0000000c",
+    "qf-0000000d",
+    "qf-0000000e",
+    "qf-0000000f",
+    "qf-00000010",
+    "qf-00000011",
+    "qf-00000012",
+    "qf-00000013",
+    "qf-00000014"
+  ],
+  "test_families": [
+    "qf-00000015",
+    "qf-00000016",
+    "qf-00000017",
+    "qf-00000018",
+    "qf-00000019",
+    "qf-0000001a",
+    "qf-0000001b",
+    "qf-0000001c",
+    "qf-0000001d",
+    "qf-0000001e"
+  ],
+  "domain_overlap_allowed": [],
+  "domain_overlap_count": 0,
+  "cv_component_count": 9,
+  "cv": "5-fold deterministic CV grouped by connected family and case components; train-only",
+  "selected_C": 0.1,
+  "cv_results": [
+    {
+      "C": 0.01,
+      "held_out_accuracy": [
+        0.53,
+        0.45,
+        0.575,
+        0.425,
+        0.6888888888888889
+      ],
+      "held_out_accuracy_by_type": [
+        {
+          "choice": 0.35,
+          "noul": 0.7666666666666667,
+          "score": 0.625
+        },
+        {
+          "noul": 0.5,
+          "score": 0.4
+        },
+        {
+          "choice": 0.5125,
+          "noul": 0.6666666666666666,
+          "score": 0.5666666666666667
+        },
+        {
+          "noul": 0.7,
+          "score": 0.15
+        },
+        {
+          "choice": 0.7,
+          "noul": 0.7666666666666667,
+          "score": 0.6
+        }
+      ],
+      "mean_accuracy": 0.5337777777777777
+    },
+    {
+      "C": 0.1,
+      "held_out_accuracy": [
+        0.565,
+        0.45,
+        0.62,
+        0.375,
+        0.6777777777777778
+      ],
+      "held_out_accuracy_by_type": [
+        {
+          "choice": 0.37,
+          "noul": 0.8333333333333334,
+          "score": 0.65
+        },
+        {
+          "noul": 0.5,
+          "score": 0.4
+        },
+        {
+          "choice": 0.5125,
+          "noul": 0.8,
+          "score": 0.5833333333333334
+        },
+        {
+          "noul": 0.6,
+          "score": 0.15
+        },
+        {
+          "choice": 0.6833333333333333,
+          "noul": 0.7666666666666667,
+          "score": 0.5833333333333334
+        }
+      ],
+      "mean_accuracy": 0.5375555555555556
+    },
+    {
+      "C": 1.0,
+      "held_out_accuracy": [
+        0.57,
+        0.425,
+        0.625,
+        0.35,
+        0.6777777777777778
+      ],
+      "held_out_accuracy_by_type": [
+        {
+          "choice": 0.38,
+          "noul": 0.8333333333333334,
+          "score": 0.65
+        },
+        {
+          "noul": 0.5,
+          "score": 0.35
+        },
+        {
+          "choice": 0.5375,
+          "noul": 0.7833333333333333,
+          "score": 0.5833333333333334
+        },
+        {
+          "noul": 0.55,
+          "score": 0.15
+        },
+        {
+          "choice": 0.7,
+          "noul": 0.7666666666666667,
+          "score": 0.5666666666666667
+        }
+      ],
+      "mean_accuracy": 0.5295555555555556
+    },
+    {
+      "C": 10.0,
+      "held_out_accuracy": [
+        0.57,
+        0.425,
+        0.615,
+        0.35,
+        0.6833333333333333
+      ],
+      "held_out_accuracy_by_type": [
+        {
+          "choice": 0.39,
+          "noul": 0.8333333333333334,
+          "score": 0.625
+        },
+        {
+          "noul": 0.5,
+          "score": 0.35
+        },
+        {
+          "choice": 0.525,
+          "noul": 0.7833333333333333,
+          "score": 0.5666666666666667
+        },
+        {
+          "noul": 0.55,
+          "score": 0.15
+        },
+        {
+          "choice": 0.7,
+          "noul": 0.7833333333333333,
+          "score": 0.5666666666666667
+        }
+      ],
+      "mean_accuracy": 0.5286666666666667
+    }
+  ],
+  "inputs_sha256": {
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300.jsonl": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+    "results/probes/varied/runs/multi-harrier/train-clean-300.features.jsonl": "29f2a7df1db1b298597db790203ca53e8c93102e94e7c4eaeded211b40858b84",
+    "benchmarks/cases/varied/multi/train-120.jsonl": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+    "results/probes/varied/runs/multi-harrier/train-120.features.jsonl": "6b8db357097a06b4933cd186439dc494a6b5728aa5e097eb8324eb604190819e",
+    "benchmarks/cases/varied/multi/test-60.jsonl": "66a858680dd1e6e16bf12859ac18d67b24db11accb0efe23542a9b9c81fbbac3",
+    "results/probes/varied/runs/multi-harrier/test-60.features.jsonl": "ef1803af09f3f0e4e9497672d8bf346684e02e55c3f35992f29e034148f735d9",
+    "benchmarks/cases/varied/test-200.jsonl": "40bca19c7ccea48b93d16e32a555b6de0c2aebb11de00e946b60986845c9a18d",
+    "results/probes/varied/runs/multi-harrier/test-200.features.jsonl": "6e53f28a23b1fc70e52f399fa2f999f82e61e1aa2602c5c917ca922372345114"
+  },
+  "outputs_sha256": {
+    "predictions.jsonl": "c54ee865eb92529df6095815d49259139e3913b9740a6ae109d2b87e7c67ca3a",
+    "question_outcomes.jsonl": "5ae5cc6defc3ef70e1cee2c3ba30f3dc9146950248cb47ea6c6693f4a27dacb5",
+    "case_outcomes.jsonl": "9533dd95624dbb5c29956b58100da4ed7221fd577f67d8ffe6d140305e7ca996",
+    "metrics.json": "1e5394755ca3dfee899f77fcefb19ce154bdb9bcc4551fd2e339fde8761f9104",
+    "models.json": "37d0a4bc8a1ce680811c7557d9d008448bdcdc8a5e386bf54b5f0b497810715a"
+  },
+  "model_parameter_sha256": {
+    "choice": "f31ae2e06b412f2e8a6a98a226d720a1183354b2537706a566088cc5d75b2793",
+    "noul": "c8f929d4c53bc646b334a4c28907aba4f113d41d666bbff59a31ae824f95b8ca",
+    "score": "fde994cbf7ba7863c5006299864118dce0265c16c7816d4937bffc2b6a058d43"
+  },
+  "models_file_sha256": "37d0a4bc8a1ce680811c7557d9d008448bdcdc8a5e386bf54b5f0b497810715a",
+  "export_manifest_sha256": {
+    "single_train": "5c23de079518c3e149027d4e2b15a0bff14b585f91a71c7b9a5396383a38402b",
+    "multi_train": "f90085c994a0669db1a9e5db98172e6463edbba0504347b92d67dd9d89b4f983",
+    "multi_test": "5947292d34f857a000e9e8cd790635b9ddc605e3153704d6f4d5327a8e6c433f",
+    "single_test": "a298b1b9a03b280255f26bcf705b5f5d3d6e772cec040dbb030e95f27d15570b"
+  },
+  "reference_policy": "train labels used for fitting/CV; test references read only after raw predictions.jsonl written",
+  "single_test_policy": "existing single-question test200 is intentionally not used; evaluate separately",
+  "candidate_cardinality_policy": "wire-generic; choice 2..6 (including legacy clean300 six-option choices), noul 2, score 2..5",
+  "invariance_checks": {
+    "candidate_permutation_logits": true,
+    "candidate_permutation_probabilities": true,
+    "noul_bool_polarity_checked": true,
+    "score_expected_value_from_probabilities": true
+  },
+  "runtime_seconds": 8.619994958,
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "numpy": "2.0.2",
+  "trainer_sha256": "09799416fc2678be2511549637dd6176867de172e7d8433e9312baa757ee6a5d",
+  "single_test200": {
+    "case_count": 200,
+    "question_count": 200,
+    "family_count": 10,
+    "train_family_overlap_count": 0,
+    "artifacts_sha256": {
+      "predictions.jsonl": "e3c9be4db472cde1ca55448fa23eee783ce8cbe6276ee4aa51e7a06b7663e35f",
+      "question_outcomes.jsonl": "366ee72ec77df39933ed39e74455f8a100abf1d9cad546e8451dc38c80132d52",
+      "metrics.json": "a0a0876d2562c1d8e84c3747a0c4e9e3eb242eab9a65d3a37b18d049da2752b5"
+    }
+  }
+}

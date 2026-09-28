@@ -1,0 +1,25 @@
+{
+  "selection_status": "frozen",
+  "selection_id": "train-only-baseline-typed-c-2026-09-23",
+  "selection_policy": "train-only frozen-config; no matched data or labels used; exact canonical frozen-config SHA checked",
+  "approved_runs": {
+    "qwen": {
+      "model": "Qwen/Qwen3-Embedding-0.6B",
+      "run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/matched/frozen-qwen",
+      "models_sha256": "7ce3ecae127696bd1bbc929e84893f2e4ddb740106346910f43c84fe4cff6eb5",
+      "metadata_sha256": "3003fa351ad1e4e92fbbf14002136fad11fdbe8c3a5c690c2920e30e0a89f1d0",
+      "selection_status": "frozen",
+      "C": 1.0,
+      "frozen_config_sha256": "e92149799df56666251533333aa2518ad93ec66f4397a81bc24a66b003087b54"
+    },
+    "harrier": {
+      "model": "microsoft/harrier-oss-v1-0.6b",
+      "run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/matched/frozen-harrier",
+      "models_sha256": "077962ae2a20dea890ee8e6566c4730023b1a3d11ff2ca1be567aa8e1462b32f",
+      "metadata_sha256": "3e37da1c7454e3401150d9a14e5e0c0cdb924284b24a3e6bc0160c9adce7b90d",
+      "selection_status": "frozen",
+      "C": 0.1,
+      "frozen_config_sha256": "02d233c8a32020e96bbb8d1f41684ec81dba75007fb8db196c76281b5701738d"
+    }
+  }
+}

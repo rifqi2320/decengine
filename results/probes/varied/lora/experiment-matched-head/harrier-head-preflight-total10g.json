@@ -1,0 +1,22 @@
+{
+  "freeze_manifest_sha256": "ecb46f3a952d48a78a9004ad0213e70e57da0e9bd84e183fda31a5b63186eb1f",
+  "policy_sha256": "1a9414f4647570f1f06de9e9e6ee8710caa0e9a4aff63fbbcfc14c2042b7ab11",
+  "preflight": {
+    "model": "microsoft/harrier-oss-v1-0.6b",
+    "run_key": "harrier-head",
+    "arm": "head",
+    "case_count": 60,
+    "question_count": 180,
+    "compiled_text_count": 750,
+    "training_token_limit": 288,
+    "observed_training_max_tokens": 266,
+    "inference_token_limit": 512,
+    "compiled_text_max_tokens": 375,
+    "compiled_text_min_tokens": 16,
+    "over_training_limit_text_count": 180,
+    "over_inference_limit": [],
+    "compiled_text_sha256": "ee356707e34ef9fd9c4c33951858d8770e40fdfeb8e99f02703c3c736afb340f",
+    "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+    "references_or_targets_read": false
+  }
+}

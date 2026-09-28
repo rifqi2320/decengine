@@ -1,0 +1,21 @@
+{
+  "status": "pre-reference secondary prediction parity; no references opened",
+  "models": {
+    "qwen": {
+      "baseline_predicted_questions": 180,
+      "exact_labels": 180,
+      "probability_rows_within_1e-12": 180,
+      "max_probability_abs_diff": 0.0,
+      "primary_predictions_sha256": "98dd334f7ece0e052c9c6d5aa2fda2f58bb094951aeba98f125f8b11368afe27",
+      "secondary_predictions_sha256": "cf7143d61654bcee021562843498d542dd6efdfff0c7cd702f3486c4b904b200"
+    },
+    "harrier": {
+      "baseline_predicted_questions": 180,
+      "exact_labels": 180,
+      "probability_rows_within_1e-12": 180,
+      "max_probability_abs_diff": 0.0,
+      "primary_predictions_sha256": "c8c8ac19b3351e91577e8ab50077679b53c304e97ec756a6914a6433fe8219b6",
+      "secondary_predictions_sha256": "61499d71e4064e4d1cbefe8b375143b4b034b03a2a945be17ca27c6e1b6527f7"
+    }
+  }
+}

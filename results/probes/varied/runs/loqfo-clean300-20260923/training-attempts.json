@@ -1,0 +1,36 @@
+{
+  "dirty_400_run": {
+    "status": "none",
+    "note": "No full-data 400-row exploratory model artifacts were created in this session; the initial interrupted attempt used the clean 300-row subset."
+  },
+  "attempts": [
+    {
+      "model": "Qwen",
+      "status": "interrupted before prediction",
+      "stage": "legacy gradient-descent grouped CV",
+      "note": "Previous session observed >13 minutes and interrupted before any held-out predictions; replaced optimizer with bounded L-BFGS."
+    },
+    {
+      "model": "Qwen",
+      "status": "fit rejected before predictions",
+      "stage": "initial L-BFGS grouped CV",
+      "note": "One fit stopped at gradient norm 1.8e-5 versus overly strict tolerance; accepted bounded tolerance 1e-4 and subsequent full run succeeded."
+    },
+    {
+      "model": "Harrier",
+      "status": "argument validation failure before fitting",
+      "stage": "model resolution",
+      "note": "Initial alias had a colon and did not match exporter model ID; rerun with exact microsoft/harrier-oss-v1-0.6b succeeded."
+    },
+    {
+      "model": "Qwen",
+      "status": "success",
+      "artifact_directory": "results/probes/varied/runs/loqfo-clean300-20260923/qwen-final"
+    },
+    {
+      "model": "Harrier",
+      "status": "success",
+      "artifact_directory": "results/probes/varied/runs/loqfo-clean300-20260923/harrier-final"
+    }
+  ]
+}

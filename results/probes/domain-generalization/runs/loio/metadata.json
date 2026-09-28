@@ -1,0 +1,107 @@
+{
+  "inputs": {
+    "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/probe-train-300.jsonl": "ae8c3cbbd58b1a38db65e72ff638728bd5e5bae7df8be5a78b2ebed9c9aba434",
+    "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/probe-test-300.jsonl": "04d3eeb4b45709ac28c177961763a03cf036296466faf779a062e1303c30ff30",
+    "/Users/IDSP35241/Documents/Code/decengine/results/probes/domain-generalization/folds.json": "19c1a7381def3399e13608c84d6e11ffbf27ce5d3a9120ac29b187d8e99a19a2",
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/probe-features/Qwen-Qwen3-Embedding-0-6B-train300.jsonl": "1458cdd430a045735a367f4c4f519403cde5a4a3b70012f5d1fcf868623968b3",
+    "/Users/IDSP35241/Documents/Code/decengine/results/probes/comparisons/20260923T104208Z/features/qwen-test300.jsonl": "19579864feae49561be48fb929e003abbd61c5baf35fc3f8147bff7b7d523416",
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/probe-features/microsoft-harrier-oss-v1-0-6b-train300.jsonl": "79d15b67904c759cae4237ef366991add97d83981f24f7cc6da2ed8d7958c33a",
+    "/Users/IDSP35241/Documents/Code/decengine/results/probes/comparisons/20260923T104208Z/features/harrier-test300.jsonl": "a1f2597819783eccccf0a86cc957789593fa3459eaeea03fb9a1a3f9fdfecda5"
+  },
+  "embedding_manifests": {
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/probe-features/Qwen-Qwen3-Embedding-0-6B-train300.jsonl.manifest.json": "33c9e3ab34f1b1935cb346955152b22dd4edd2ff254be226ccb10ea83beff83c",
+    "/Users/IDSP35241/Documents/Code/decengine/results/probes/comparisons/20260923T104208Z/features/qwen-test300.jsonl.manifest.json": "33c9e3ab34f1b1935cb346955152b22dd4edd2ff254be226ccb10ea83beff83c",
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/probe-features/microsoft-harrier-oss-v1-0-6b-train300.jsonl.manifest.json": "e8cfffb6b8cd614267c08980a08ea1620eba0ac478de2b49ea2575df6fab009e",
+    "/Users/IDSP35241/Documents/Code/decengine/results/probes/comparisons/20260923T104208Z/features/harrier-test300.jsonl.manifest.json": "e8cfffb6b8cd614267c08980a08ea1620eba0ac478de2b49ea2575df6fab009e"
+  },
+  "fold_manifest_sha256": "19c1a7381def3399e13608c84d6e11ffbf27ce5d3a9120ac29b187d8e99a19a2",
+  "fold_id_sha256": {
+    "education": {
+      "fit_train_ids": "bec948a059dae5473059ee8aee6d4572cc1f323b745f0c4326956435f797c590",
+      "development_validation_ids": "f5dc6868b4d6738e705f028725db2c07ef499b6237062707e96e597a9b97cf8d",
+      "sealed_test_ids": "107ea0df04f67abeae116c4df77eed774bb0a225ce1c9cb860cab820582a5a4e"
+    },
+    "energy_utilities": {
+      "fit_train_ids": "6ca3033c329e7f84cc7997af314dcaf39ef8fb14e44c398b05a3402a56c01294",
+      "development_validation_ids": "b0f59ca464c0c94d4cbbf9b1905ce0b1e3ee5222ab31c3b83f7be914b8085a31",
+      "sealed_test_ids": "b7b18b06d12c8b00cbf7c575c3e731a24f3c7ffff8a7a370e2cc57fea5fdfb71"
+    },
+    "financial_services": {
+      "fit_train_ids": "c6c0f2f66816d185a3577013d34fba6d5ec7fb2536f5192079f808df37b44f2c",
+      "development_validation_ids": "95216f74ed139d4f5721748172b5f7e46248fd88a1577c8be838f5e266eb0743",
+      "sealed_test_ids": "90e14be4f3fd60b3a3a2d19c7e34b8264c103c925a30bf1ba6d5484194e3b7f4"
+    },
+    "healthcare": {
+      "fit_train_ids": "ed45889a001dd22b29f012a1b80a14f34d7e57c62142a0f06277cd89e4700211",
+      "development_validation_ids": "4af3345121b6bafebc9f4ef5dc814e38044b0dbd209355898868f7454beb30f7",
+      "sealed_test_ids": "f2c0664cbc9d43282ae9bb87e66395ab8cefb9fd97c30d956779dfee51856be7"
+    },
+    "hospitality": {
+      "fit_train_ids": "271f078f38770ca3f093543170b01fe5d7b72be9f557a7a26261528c57280722",
+      "development_validation_ids": "3131da525e84d4d9f465704fdc67b900cdb238e796ece93d29220faca0775bcc",
+      "sealed_test_ids": "f747ad2da96d6f91529c74755ab61032897509e1f20525fb25c2e9999e7b62dc"
+    },
+    "manufacturing": {
+      "fit_train_ids": "527e76caa1f9514a32edd84ca97949cdebbb16b59a526aedc7310787fd0f8405",
+      "development_validation_ids": "2ab4a9fb09e61bf52ad432fb96667cb859e50fad17b85a4a81c3252bb2e8bda5",
+      "sealed_test_ids": "2c15d48fb51de80660f127b0dd4275a3e4476d486a493b12541794555a5cd1f1"
+    },
+    "public_services": {
+      "fit_train_ids": "8776d0b3c846c21c32c1664b41bfedcf7f7c4788989f456bdfbcc176453629f1",
+      "development_validation_ids": "9077b0fa835ebe6a72c1c422ebbed694db98014c9b94ac9e7efb207557296ece",
+      "sealed_test_ids": "25d01bef42d6b7a509c25db77b908960c4a6e29577983309542f66fdd38612fa"
+    },
+    "retail_ecommerce": {
+      "fit_train_ids": "383b60597b3cee3a1c90cb708e98bb68461155542290340529aa1f8cdc577d7a",
+      "development_validation_ids": "667f1cfd7c6050a3e1a0c207b6cc5697ab77c6e2b711a79dc0d18b02ab82a3b0",
+      "sealed_test_ids": "9acc8657f8cd0111221d3aa9b58cd51b0a4351e11326a5681885663a18e19fc2"
+    },
+    "software_saas": {
+      "fit_train_ids": "dd0a8c7a7f5133a5005215836222fbe5fa18b8ac5a087df78f39bc3ddb07e39e",
+      "development_validation_ids": "1921666fe18036c16b6001e6662df72f195033d1af93e7c7b11309512d6f26fa",
+      "sealed_test_ids": "70dda035f711ca64009dd068ebc8e0ff80521cedcbf461244eeb7ea112f2718c"
+    },
+    "transport_logistics": {
+      "fit_train_ids": "cd405ccbf7bc9c9da6a2342c6f0527c05d2b3516cb6b861055e6081d8668150c",
+      "development_validation_ids": "a30c7620bf117857f9b4019b90d3dab943ca44a2d307e2e68810cd23cd683303",
+      "sealed_test_ids": "ad8b12621dfc460cfc2c6d19732a248b6792d89209f4270bbf928524b8e01733"
+    }
+  },
+  "model_ids": {
+    "qwen": "Qwen/Qwen3-Embedding-0.6B",
+    "harrier": "microsoft/harrier-oss-v1-0.6b"
+  },
+  "feature_dimensions": {
+    "qwen": {
+      "owner": 1024,
+      "urgent": 1024,
+      "impact": 1024
+    },
+    "harrier": {
+      "owner": 1024,
+      "urgent": 1024,
+      "impact": 1024
+    }
+  },
+  "python": "3.12.12 (main, Feb 12 2026, 00:42:34) [Clang 21.1.4 ]",
+  "platform": "macOS-26.7-arm64-arm-64bit",
+  "numpy": "2.3.1",
+  "scikit_learn": "1.7.2",
+  "runner_sha256": "40da225cd41708ac56bd741827e3dad856525403fb9547e5b971bffcb14154a3",
+  "seed": 271828,
+  "C_grid": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "selection": "mean train-only grouped stratified CV macro-F1; tie favors smaller C",
+  "transform": "StandardScaler fitted within each CV fit split and again on the full non-heldout train fold",
+  "failures": [],
+  "heldout_leakage_control": "heldout industry's train validation and sealed test IDs excluded from fitting and CV; outer C selected using fit_train_ids only",
+  "saved_probe_weights_used": false,
+  "heldout_labels_used_for_tuning": false,
+  "caveat": "Cases are synthetic benchmark cases and may encode template/source-style artifacts; LOIO tests only the declared industries, not arbitrary domains or deployment populations."
+}

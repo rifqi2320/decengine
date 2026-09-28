@@ -1,0 +1,19 @@
+all-MLX joint-context-candidate/qwen: 60 cases 180 questions; bundle=9b3dbb67cf006ea0d1dc15b32cd9d28a00663e12e354ccf9462ec7b641c580b8 fixture=316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f
+       57.72 real         4.86 user         2.71 sys
+          1409155072  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              166251  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  77  voluntary context switches
+               42521  involuntary context switches
+         96959898939  instructions retired
+         27884078766  cycles elapsed
+          9786492992  peak memory footprint

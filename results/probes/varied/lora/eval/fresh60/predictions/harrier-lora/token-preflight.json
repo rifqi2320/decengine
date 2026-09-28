@@ -1,0 +1,16 @@
+{
+  "case_count": 60,
+  "question_count": 180,
+  "compiled_text_count": 750,
+  "compiled_text_max_tokens": 375,
+  "compiled_text_min_tokens": 16,
+  "training_token_limit": 288,
+  "inference_token_limit": 512,
+  "all_compiled_text_within_limit": true,
+  "compiled_text_sha256": "ee356707e34ef9fd9c4c33951858d8770e40fdfeb8e99f02703c3c736afb340f",
+  "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+  "overflow_count": 0,
+  "overflow_samples": [],
+  "overflow_count_by_role": {},
+  "input_fields": "request.state and request.questions only; references not used"
+}

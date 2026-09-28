@@ -1,0 +1,197 @@
+{
+  "protocol": "shared question-conditioned candidate scorer; independently train one model per embedding model",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "train_count": 300,
+  "test_count": 200,
+  "train_family_count": 15,
+  "train_ids_sha256": "59c15b34f988696ffa144ae43bc56d812d6d5f1d9994bb7432a532f935a3cc3e",
+  "test_ids_sha256": "6d3f48f6c5142b9a3f3c540c5569af73c19c20dfa103cdd817d01dcdc232f449",
+  "train_test_split_audit": {
+    "family_overlap_count": 0,
+    "scenario_near_duplicate_threshold": 0.88,
+    "cross_split_scenario_near_duplicate_count": 0,
+    "within_train_cross_family_context_links": [],
+    "within_train_cv_component_count": 15,
+    "within_train_cross_family_context_link_count": 0,
+    "train_domain_count": 28,
+    "test_domain_count": 59,
+    "domain_overlap": [
+      "online retail",
+      "telecommunications"
+    ],
+    "domain_overlap_count": 2,
+    "domain_policy": "allowed by LOQFO design; this is not leave-one-domain-out evaluation"
+  },
+  "input_sha256": {
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300.jsonl": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+    "benchmarks/cases/varied/test-200.jsonl": "40bca19c7ccea48b93d16e32a555b6de0c2aebb11de00e946b60986845c9a18d",
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300-qwen.jsonl": "22a5ecfd3180f892e0e83e32be1bcb17aa6807e93c46a78553ab38da7d1a694f",
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-test-qwen.jsonl": "1c804b5a7d372bbbcacc55a4822fbabd725980e23a48a9377b0b5449e7584a8c"
+  },
+  "output_sha256": {
+    "predictions.jsonl": "b858c1babd0d8ade99f9f11d74908997e11df24ff371343345dd01b73808fb54",
+    "metrics.json": "851adc3e147b775d988b175fbcd3768ffd7254c4e44682d3cc795bdce90799e3",
+    "models.json": "662beca9ff0a414b0f1c90c8d3cf52ce3b569f29e7085ac151bbc577824f72c7"
+  },
+  "embedding_manifests": {
+    "train": {
+      "path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300-qwen.jsonl.manifest.json",
+      "sha256": "65415dbf1272a01075315b80dced088b7e59d3a4bb34c12f790ebea86e6a1ff0",
+      "contents": {
+        "backend": "MLX/Metal",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ],
+        "embedding_dimensions": 1024,
+        "feature_transfer": "host vectors for offline training; not Metal-resident classifier",
+        "input_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+        "max_token_length": 32768,
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "normalization": "L2",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "profile_version": "1",
+        "record_count": 300,
+        "schema_version": 1,
+        "serialization": "UTF-8 JSON; state canonicalized with serde_json compact sorted-key map order; query=profile.query_template(instruction=profile.query_instruction_template(prompt, kind_instruction), text='Decision: {prompt}\\nState: {canonical_state}'); candidate=profile.candidate_template(profile-specific candidate template). Choice/score preserve candidate order as serialized by JSON object/array; binary candidates contain the complete prompt proposition. Reference, target, rationale, and domain are never read into feature text.",
+        "text_lengths": "Exact tokenizer.json token counts and UTF-8 byte lengths are recorded for each query and candidate; each is checked nonempty and <= frozen profile max_length.",
+        "text_version": "decengine-varied-pair-text-v1",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "derived_filter": {
+          "source_embeddings_path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-train-qwen.jsonl",
+          "source_embeddings_sha256": "b2d133c2d57656e8e495fbc38ce6d85e30aef4170ff83b86101f9bc59e2a7810",
+          "retained_ids_sha256": "59c15b34f988696ffa144ae43bc56d812d6d5f1d9994bb7432a532f935a3cc3e",
+          "excluded_families": [
+            "qf-00000001",
+            "qf-00000002",
+            "qf-00000003",
+            "qf-00000004",
+            "qf-00000005"
+          ],
+          "method": "retain only records whose id is present in filtered train-clean-300 fixture; no embeddings recomputed"
+        }
+      }
+    },
+    "test": {
+      "path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-test-qwen.jsonl.manifest.json",
+      "sha256": "678044c08ef362e5d8e958ea20bd1e97c521260f155b848a3d7e90ef27ea40e4",
+      "contents": {
+        "backend": "MLX/Metal",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ],
+        "embedding_dimensions": 1024,
+        "feature_transfer": "host vectors for offline training; not Metal-resident classifier",
+        "input_sha256": "7e4076ef9d1e7188c618b2393a70703f74554161505c15b9917b15b0e1195a85",
+        "max_token_length": 32768,
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "normalization": "L2",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "profile_version": "1",
+        "record_count": 200,
+        "schema_version": 1,
+        "serialization": "UTF-8 JSON; state canonicalized with serde_json compact sorted-key map order; query=profile.query_template(instruction=profile.query_instruction_template(prompt, kind_instruction), text='Decision: {prompt}\\nState: {canonical_state}'); candidate=profile.candidate_template(profile-specific candidate template). Choice/score preserve candidate order as serialized by JSON object/array; binary candidates contain the complete prompt proposition. Reference, target, rationale, and domain are never read into feature text.",
+        "text_lengths": "Exact tokenizer.json token counts and UTF-8 byte lengths are recorded for each query and candidate; each is checked nonempty and <= frozen profile max_length.",
+        "text_version": "decengine-varied-pair-text-v1",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a"
+      }
+    }
+  },
+  "trainer_sha256": "e39ba21a977d5497edabeb6e9da03e67fcf26ddefc1e133c07abc86a561b1a71",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "numpy": "2.0.2",
+  "selected_C": 1.0,
+  "cv": [
+    {
+      "C": 0.01,
+      "held_out_family_accuracy": [
+        0.48333333333333334,
+        0.6833333333333333,
+        0.36666666666666664,
+        0.31666666666666665,
+        0.4166666666666667
+      ],
+      "mean_family_accuracy": 0.4533333333333333
+    },
+    {
+      "C": 0.1,
+      "held_out_family_accuracy": [
+        0.6,
+        0.7,
+        0.38333333333333336,
+        0.35,
+        0.4166666666666667
+      ],
+      "mean_family_accuracy": 0.48999999999999994
+    },
+    {
+      "C": 1.0,
+      "held_out_family_accuracy": [
+        0.6333333333333333,
+        0.7,
+        0.4166666666666667,
+        0.3333333333333333,
+        0.4166666666666667
+      ],
+      "mean_family_accuracy": 0.5
+    },
+    {
+      "C": 10.0,
+      "held_out_family_accuracy": [
+        0.6166666666666667,
+        0.6833333333333333,
+        0.4166666666666667,
+        0.3333333333333333,
+        0.4166666666666667
+      ],
+      "mean_family_accuracy": 0.49333333333333335
+    }
+  ],
+  "cv_protocol": "deterministic shuffled 5-fold grouped CV; family groups connected by exact/near-duplicate state+prompt context are kept intact; C selected by mean held-out-fold exact-match accuracy",
+  "expected_count_enforced": true,
+  "complete_case": {
+    "one_question_per_case": true,
+    "test_question_count": 200,
+    "test_case_count": 200,
+    "all_test_cases_scored": true
+  },
+  "uncertainty": "reported metrics are point estimates; no interval with reliable family/domain inference is claimed at this sample size",
+  "limitations": "test family slices are held out; domains are intentionally shared under LOQFO and not a LODO estimate; one question per case; no claim fixed heads generalize; test labels used only for post-prediction metrics"
+}

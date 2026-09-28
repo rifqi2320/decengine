@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-09-23T11:23:37.926534+00:00",
+  "device": {
+    "platform": "macOS-26.7-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "encoder_backend": "MLX/Metal via decengine CLI",
+    "classifier_backend": "NumPy CPU"
+  },
+  "fixture": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/probe-test-300.jsonl",
+  "fixture_sha256": "04d3eeb4b45709ac28c177961763a03cf036296466faf779a062e1303c30ff30",
+  "case_count": 300,
+  "reproduction_command": "python results/probes/benchmark_probe.py --model all --out results/probes/benchmarks/<unique-run-id>",
+  "classifier_inference": "saved scaler/logistic parameters only; per-case three task classifiers, no fitting",
+  "latency_scope": "saved classifier has per-case timings; encoder has whole-process wall only. End-to-end p50/p95 unavailable without exporter instrumentation. Four-vector encoder run includes unused state embedding, model loading and warmup.",
+  "runs": {
+    "qwen": {
+      "model": "Qwen/Qwen3-Embedding-0.6B",
+      "case_count": 300,
+      "embedding_calls_per_case": 4,
+      "state_embedding": true,
+      "timings": {
+        "classifier_ms": {
+          "p50_ms": 0.38145850000000003,
+          "p95_ms": 0.406709,
+          "mean_ms": 0.38572375
+        },
+        "encoder_process_wall_ms_including_model_load": 36399.658792,
+        "encoder_process_wall_amortized_per_case_ms_including_load": 121.33219597333334,
+        "end_to_end_case_wall_ms": null,
+        "limitation": "existing CLI exposes no per-case encoder timers; do not interpret amortized whole-run cost as p50/p95 case latency"
+      },
+      "prediction_match": {
+        "archive": "/Users/IDSP35241/Documents/Code/decengine/results/probes/comparisons/20260923T104208Z/probe-qwen-predictions-all300.jsonl",
+        "labels_exact": true,
+        "probabilities_max_abs_diff": 6.328271240363392e-15,
+        "compared_probabilities": 3600
+      },
+      "input_sha256": "04d3eeb4b45709ac28c177961763a03cf036296466faf779a062e1303c30ff30",
+      "features_sha256": "19579864feae49561be48fb929e003abbd61c5baf35fc3f8147bff7b7d523416",
+      "features_manifest_sha256": "33c9e3ab34f1b1935cb346955152b22dd4edd2ff254be226ccb10ea83beff83c",
+      "manifest": {
+        "schema_version": 1,
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "profile_version": "1",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "text_version": "decengine-probe-text-v1",
+        "embedding_dimensions": 1024,
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ]
+      },
+      "artifacts_sha256": {
+        "metadata": "625c019755394f5d520ae3495bdb4970d59c935dd64fdc1b1de889e2b59245d1",
+        "models": "83c48674f747dbc4376a2cec10211485fec568ec7a56d47f883888349a25fcf4"
+      },
+      "archive_sha256": "4e087124cab7223ec96736709c2867bf243a5220ef683b8303b1c203361cd257",
+      "predictions_sha256": "5b78e66878bc273db787be193b875c53cc54f31ae890abb6dae681b921db4655",
+      "predictor_sha256": "14ced071fb41b94e9ed5f3810f27b32a15adec64fa102e61384f37cbcdbd1b1a",
+      "export_process_wall_ms_including_model_load_and_warmup": 36399.658792,
+      "warmup": "none exposed by existing CLI; model load, first-call warmup, and output serialization included in encoder process wall time",
+      "child_process_maxrss_bytes_cumulative_high_water": 1360936960,
+      "classifier_timing_note": "CPU-only replay over saved vectors in a separate pass; per-case timings in case-timings.jsonl; not simultaneous with MLX model export.",
+      "case_timings_sha256": "4b3d5242e2f6180216b9138d36eac8b78291715aa0bb0ec026cd79b7c14c881f"
+    },
+    "harrier": {
+      "model": "microsoft/harrier-oss-v1-0.6b",
+      "case_count": 300,
+      "embedding_calls_per_case": 4,
+      "state_embedding": true,
+      "timings": {
+        "classifier_ms": {
+          "p50_ms": 0.3763335,
+          "p95_ms": 0.42525,
+          "mean_ms": 0.3812672166666667
+        },
+        "encoder_process_wall_ms_including_model_load": 31074.845541,
+        "encoder_process_wall_amortized_per_case_ms_including_load": 103.58281846999999,
+        "end_to_end_case_wall_ms": null,
+        "limitation": "existing CLI exposes no per-case encoder timers; do not interpret amortized whole-run cost as p50/p95 case latency"
+      },
+      "prediction_match": {
+        "archive": "/Users/IDSP35241/Documents/Code/decengine/results/probes/comparisons/20260923T104208Z/probe-harrier-predictions-all300.jsonl",
+        "labels_exact": true,
+        "probabilities_max_abs_diff": 2.886579864025407e-15,
+        "compared_probabilities": 3600
+      },
+      "input_sha256": "04d3eeb4b45709ac28c177961763a03cf036296466faf779a062e1303c30ff30",
+      "features_sha256": "a1f2597819783eccccf0a86cc957789593fa3459eaeea03fb9a1a3f9fdfecda5",
+      "features_manifest_sha256": "e8cfffb6b8cd614267c08980a08ea1620eba0ac478de2b49ea2575df6fab009e",
+      "manifest": {
+        "schema_version": 1,
+        "model": "microsoft/harrier-oss-v1-0.6b",
+        "profile_version": "2",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "text_version": "decengine-probe-text-v1",
+        "embedding_dimensions": 1024,
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+            "size": 1355
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+            "size": 1192133232
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+            "size": 5404
+          }
+        ]
+      },
+      "artifacts_sha256": {
+        "metadata": "af769520f32edf359756d5fc77a2d62bf2a3c7877491225a92672b653c038615",
+        "models": "857945f64754e51dc842d64dbcfbdad19ffbaec86b44bc297f02f84dc95fd422"
+      },
+      "archive_sha256": "a3d20808178d88cda7b2c4fac0bbc2a740ae017b93db8f57850d2d2658172dd4",
+      "predictions_sha256": "98e17a9ac4a8b565096bbf999ff661ce11d0a8769264dcb6fd268775796cf28c",
+      "predictor_sha256": "14ced071fb41b94e9ed5f3810f27b32a15adec64fa102e61384f37cbcdbd1b1a",
+      "export_process_wall_ms_including_model_load_and_warmup": 31074.845541,
+      "warmup": "none exposed by existing CLI; model load, first-call warmup, and output serialization included in encoder process wall time",
+      "classifier_timing_note": "CPU-only replay over saved vectors in a separate pass; per-case timings in case-timings.jsonl; not simultaneous with MLX model export.",
+      "case_timings_sha256": "7dfa3c87fc77f72527cde453d6a74f515ef397e4a2b61e4d8be343a74d9eaf18",
+      "child_process_maxrss_bytes_cumulative_high_water": 1366638592
+    }
+  },
+  "comparisons": {
+    "Laya_3_call_p50_ms": {
+      "value": 95.7,
+      "label": "reported reference; not measured in this run"
+    },
+    "original_cosine_new210_medians": {
+      "qwen_ms": 84.517521,
+      "harrier_ms": 81.039021,
+      "source": "results/probes/comparisons/20260923T104208Z/metrics.json",
+      "label": "210-case end-to-end full local cosine-decision medians; different workload, not equivalent to saved-probe inference"
+    }
+  },
+  "benchmark_script_sha256": "15d063000253ef540ae655dca1cf6690981cb120f34fb5008ed1120b7002fcb7"
+}

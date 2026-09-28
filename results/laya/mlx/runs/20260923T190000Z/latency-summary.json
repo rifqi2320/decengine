@@ -1,0 +1,51 @@
+{
+  "owner": {
+    "n": 300,
+    "p50_ms": 35.472021,
+    "p95_ms": 44.98277260000001,
+    "mean_ms": 39.162456256666665
+  },
+  "urgent": {
+    "n": 300,
+    "p50_ms": 24.989541000000003,
+    "p95_ms": 31.074687200000007,
+    "mean_ms": 26.65227471
+  },
+  "impact": {
+    "n": 300,
+    "p50_ms": 35.1179165,
+    "p95_ms": 39.32830415,
+    "mean_ms": 38.27486098333333
+  },
+  "three_call_case": {
+    "n": 300,
+    "p50_ms": 95.71125,
+    "p95_ms": 123.58572315000013,
+    "mean_ms": 104.08959195
+  },
+  "comparison_new210_latency": {
+    "qwen": {
+      "n": 210,
+      "errors": 0,
+      "mean_ms": 89.8141679095238,
+      "median_ms": 84.517521,
+      "p95_ms": 104.407333
+    },
+    "harrier": {
+      "n": 210,
+      "errors": 0,
+      "mean_ms": 83.25212656666666,
+      "median_ms": 81.03902099999999,
+      "p95_ms": 92.966917
+    },
+    "jev": {
+      "n": 210,
+      "errors": 0,
+      "mean_ms": 441.0263470142857,
+      "median_ms": 421.89324999999997,
+      "p95_ms": 580.321
+    },
+    "source": "/Users/IDSP35241/Documents/Code/decengine/results/probes/comparisons/20260923T104208Z/metrics.json",
+    "note": "Existing Qwen/Harrier/JEV measurements on test-091..test-300, as recorded by the probe comparator; not strictly hardware/mode equivalent to these three separate Laya forwards."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "best_dev_loss": Infinity,
+  "best_epoch": -1,
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "note": "No epoch checkpoint or model selection emitted for a partial epoch.",
+  "status": "pilot_stopped_in_epoch",
+  "steps": 20
+}

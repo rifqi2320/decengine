@@ -1,0 +1,124 @@
+{
+  "fixture_sha256": "4cb002e1c29f5273ecc23fcdf742b093cb5433d661f5df0b50d209a534fb1409",
+  "frozen_models": {
+    "harrier": "077962ae2a20dea890ee8e6566c4730023b1a3d11ff2ca1be567aa8e1462b32f",
+    "qwen": "7ce3ecae127696bd1bbc929e84893f2e4ddb740106346910f43c84fe4cff6eb5"
+  },
+  "models": {
+    "harrier": {
+      "all_three_case_parity": true,
+      "all_three_question_predictions_exact_cases": 60,
+      "max_probability_abs_diff_overall": 5.150104859241722e-07,
+      "max_score_expected_value_abs_diff": 7.922561703566089e-06,
+      "per_type": {
+        "choice": {
+          "exact_label_or_boolean_count": 60,
+          "exact_score_argmax_count": 0,
+          "exact_selected_count": 60,
+          "max_probability_abs_diff": 1.925307133721077e-07,
+          "n": 60,
+          "probability_parity_tolerance_claimed": false
+        },
+        "noul": {
+          "exact_label_or_boolean_count": 60,
+          "exact_score_argmax_count": 0,
+          "exact_selected_count": 60,
+          "max_probability_abs_diff": 5.150104859241722e-07,
+          "n": 60,
+          "probability_parity_tolerance_claimed": false
+        },
+        "score": {
+          "exact_label_or_boolean_count": 60,
+          "exact_score_argmax_count": 60,
+          "exact_selected_count": 60,
+          "max_probability_abs_diff": 4.0486628838376504e-07,
+          "n": 60,
+          "probability_parity_tolerance_claimed": false
+        }
+      },
+      "question_count": 180,
+      "runtime": {
+        "backend": "MLX/Metal Device(gpu, 0)",
+        "conditions": "utc=2026-09-23T15:43:37Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t49%; charging; 1:43 remaining present: true\n23:43  up  9:09, 3 users, load averages: 4.34 3.95 3.52\n  788  39.0 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n 1654  12.2 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n 2542   8.1 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n 9237   5.6 /Users/IDSP35241/.opencode/bin/opencode\n 2719   4.9 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n 2563   2.0 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (GPU).app/Contents/MacOS/Beekeeper Studio Helper (GPU)\n  789   1.8 /System/Library/PrivateFrameworks/TCC.framework/Support/tccd\n  847   1.8 /usr/libexec/syspolicyd\n",
+        "process_including_load_warmup": {
+          "maximum_resident_set_bytes": 1418379264,
+          "peak_memory_footprint_bytes": 3934619568,
+          "real_seconds": 26.24,
+          "system_seconds": 1.42,
+          "user_seconds": 5.98
+        }
+      },
+      "sha256": {
+        "cpu_predictions": "692ed5f294ab5e4bddf8a1d06cf201157c545fe5d85360011b46ae95dd52ad9a",
+        "fixture": "4cb002e1c29f5273ecc23fcdf742b093cb5433d661f5df0b50d209a534fb1409",
+        "gpu_case_timings": "d2da5bb3a3c700545c3766d03fba35cd5550f8950fda0f4a64fc705f655fc68a",
+        "gpu_predictions": "6622990baf9c47e112f3e7ac43b875c0738f3e49c512b9a401dc81892f7339b3",
+        "gpu_question_timings": "cbe49423bb10c058906ca6b13abe619c81adc73cc93c726e1b720ed9aa82d002",
+        "run_metadata": "dae9b5674cdd81cac00e1b29ee7e46cca9173f58783902ce7643384d419d647c"
+      },
+      "three_question_case_total_ms": {
+        "p50": 377.19764599999996,
+        "p95": 400.16041879999995
+      },
+      "timing_scope": "synchronized GPU embedding + GPU scorer over three questions; excludes model load and one per-type warmup"
+    },
+    "qwen": {
+      "all_three_case_parity": true,
+      "all_three_question_predictions_exact_cases": 60,
+      "max_probability_abs_diff_overall": 8.431314895140929e-07,
+      "max_score_expected_value_abs_diff": 2.4914283706323204e-05,
+      "per_type": {
+        "choice": {
+          "exact_label_or_boolean_count": 60,
+          "exact_score_argmax_count": 0,
+          "exact_selected_count": 60,
+          "max_probability_abs_diff": 3.558849520635121e-07,
+          "n": 60,
+          "probability_parity_tolerance_claimed": false
+        },
+        "noul": {
+          "exact_label_or_boolean_count": 60,
+          "exact_score_argmax_count": 0,
+          "exact_selected_count": 60,
+          "max_probability_abs_diff": 5.170253253306001e-07,
+          "n": 60,
+          "probability_parity_tolerance_claimed": false
+        },
+        "score": {
+          "exact_label_or_boolean_count": 60,
+          "exact_score_argmax_count": 60,
+          "exact_selected_count": 60,
+          "max_probability_abs_diff": 8.431314895140929e-07,
+          "n": 60,
+          "probability_parity_tolerance_claimed": false
+        }
+      },
+      "question_count": 180,
+      "runtime": {
+        "backend": "MLX/Metal Device(gpu, 0)",
+        "conditions": "utc=2026-09-23T15:43:10Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t49%; charging; 1:43 remaining present: true\n23:43  up  9:09, 3 users, load averages: 4.88 3.97 3.51\n 1654  23.1 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n 9237  19.2 /Users/IDSP35241/.opencode/bin/opencode\n39045  16.6 /Users/IDSP35241/.opencode/bin/opencode\n  788  13.5 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n 2542  11.3 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n 2719   4.9 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n 2491   3.4 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper.app/Contents/MacOS/SeaTalk Helper\n  992   3.1 /opt/cisco/secureclient/bin/vpnagentd\n",
+        "process_including_load_warmup": {
+          "maximum_resident_set_bytes": 1430405120,
+          "peak_memory_footprint_bytes": 3938731904,
+          "real_seconds": 27.27,
+          "system_seconds": 1.87,
+          "user_seconds": 7.9
+        }
+      },
+      "sha256": {
+        "cpu_predictions": "d183dc3b5a4cfb325bf4224f9b63dc1e2eee0847b6874507d54195d65ea3e85c",
+        "fixture": "4cb002e1c29f5273ecc23fcdf742b093cb5433d661f5df0b50d209a534fb1409",
+        "gpu_case_timings": "ef6bd8c0d7f34ea290be7b06c8c63e6d39fa8d69000b3aea69fa097cda67f01f",
+        "gpu_predictions": "0da63e224a6132b6fd791e1b2bef399dc308306152e8e656f0a29cb5be7d3775",
+        "gpu_question_timings": "81a0ea1b1e89067046d65c7f3ee0e7df3bf11fca61979fee305d52b9a82099f2",
+        "run_metadata": "b39aa0d55c7904c42559f969b1557428c8495259e6fdd8386279529df3755e1f"
+      },
+      "three_question_case_total_ms": {
+        "p50": 393.89124949999996,
+        "p95": 422.8515979
+      },
+      "timing_scope": "synchronized GPU embedding + GPU scorer over three questions; excludes model load and one per-type warmup"
+    }
+  },
+  "scope": "all-MLX explicit60 predictions compared only to archived CPU prediction outputs; no labels/references opened"
+}

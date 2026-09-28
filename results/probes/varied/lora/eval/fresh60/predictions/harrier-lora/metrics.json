@@ -1,0 +1,1871 @@
+{
+  "overall": {
+    "per_type": {
+      "choice": {
+        "correct": 15,
+        "total": 60,
+        "accuracy": 0.25
+      },
+      "noul": {
+        "correct": 30,
+        "total": 60,
+        "accuracy": 0.5
+      },
+      "score": {
+        "correct": 20,
+        "total": 60,
+        "accuracy": 0.3333333333333333,
+        "ordinal_level_mae": 0.9333333333333333,
+        "within_one_level": 44,
+        "normalized_value_mae": 0.32266666666666666
+      }
+    },
+    "all_three": {
+      "correct": 0,
+      "total": 60,
+      "accuracy": 0.0
+    }
+  },
+  "per_domain": {
+    "arts colleges": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        },
+        "noul": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        },
+        "score": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4,
+          "ordinal_level_mae": 0.8,
+          "within_one_level": 4,
+          "normalized_value_mae": 0.368
+        }
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      }
+    },
+    "coastal research": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        },
+        "noul": {
+          "correct": 3,
+          "total": 5,
+          "accuracy": 0.6
+        },
+        "score": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4,
+          "ordinal_level_mae": 0.8,
+          "within_one_level": 4,
+          "normalized_value_mae": 0.25
+        }
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      }
+    },
+    "community clinics": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        },
+        "noul": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        },
+        "score": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2,
+          "ordinal_level_mae": 1.2,
+          "within_one_level": 3,
+          "normalized_value_mae": 0.35
+        }
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      }
+    },
+    "community energy": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        },
+        "noul": {
+          "correct": 3,
+          "total": 5,
+          "accuracy": 0.6
+        },
+        "score": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4,
+          "ordinal_level_mae": 0.8,
+          "within_one_level": 4,
+          "normalized_value_mae": 0.368
+        }
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      }
+    },
+    "credit unions": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        },
+        "noul": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        },
+        "score": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4,
+          "ordinal_level_mae": 0.8,
+          "within_one_level": 4,
+          "normalized_value_mae": 0.25
+        }
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      }
+    },
+    "food cooperatives": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        },
+        "noul": {
+          "correct": 3,
+          "total": 5,
+          "accuracy": 0.6
+        },
+        "score": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2,
+          "ordinal_level_mae": 1.2,
+          "within_one_level": 3,
+          "normalized_value_mae": 0.35
+        }
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      }
+    },
+    "municipal permitting": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        },
+        "noul": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        },
+        "score": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4,
+          "ordinal_level_mae": 0.8,
+          "within_one_level": 4,
+          "normalized_value_mae": 0.368
+        }
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      }
+    },
+    "museum conservation": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        },
+        "noul": {
+          "correct": 3,
+          "total": 5,
+          "accuracy": 0.6
+        },
+        "score": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4,
+          "ordinal_level_mae": 0.8,
+          "within_one_level": 4,
+          "normalized_value_mae": 0.25
+        }
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      }
+    },
+    "public libraries": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        },
+        "noul": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        },
+        "score": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2,
+          "ordinal_level_mae": 1.2,
+          "within_one_level": 3,
+          "normalized_value_mae": 0.35
+        }
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      }
+    },
+    "regional farms": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        },
+        "noul": {
+          "correct": 3,
+          "total": 5,
+          "accuracy": 0.6
+        },
+        "score": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4,
+          "ordinal_level_mae": 0.8,
+          "within_one_level": 4,
+          "normalized_value_mae": 0.368
+        }
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      }
+    },
+    "regional transit": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        },
+        "noul": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        },
+        "score": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4,
+          "ordinal_level_mae": 0.8,
+          "within_one_level": 4,
+          "normalized_value_mae": 0.25
+        }
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      }
+    },
+    "small manufacturers": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        },
+        "noul": {
+          "correct": 3,
+          "total": 5,
+          "accuracy": 0.6
+        },
+        "score": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2,
+          "ordinal_level_mae": 1.2,
+          "within_one_level": 3,
+          "normalized_value_mae": 0.35
+        }
+      },
+      "all_three": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "score_ordinal": "exact ordered level-label match; ordinal level MAE and within-one-level; normalized numeric-value MAE",
+  "per_case": [
+    {
+      "id": "mq-lora-fresh-001",
+      "domain": "arts colleges",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_1",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "untraceable",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-002",
+      "domain": "arts colleges",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_1",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-003",
+      "domain": "arts colleges",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_4",
+          "reference": "plan_1",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-004",
+      "domain": "arts colleges",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_5",
+          "reference": "plan_1",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-005",
+      "domain": "arts colleges",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_2",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-006",
+      "domain": "coastal research",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_3",
+          "reference": "plan_2",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "untraceable",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-007",
+      "domain": "coastal research",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_4",
+          "reference": "plan_2",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-008",
+      "domain": "coastal research",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_3",
+          "reference": "plan_2",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-009",
+      "domain": "coastal research",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_1",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "strong",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-010",
+      "domain": "coastal research",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_3",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-011",
+      "domain": "community clinics",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_3",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "untraceable",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-012",
+      "domain": "community clinics",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_3",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-013",
+      "domain": "community clinics",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_2",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-014",
+      "domain": "community clinics",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_1",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "strong",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-015",
+      "domain": "community clinics",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_4",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "complete",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-016",
+      "domain": "community energy",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_4",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "untraceable",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-017",
+      "domain": "community energy",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_1",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-018",
+      "domain": "community energy",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_2",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-019",
+      "domain": "community energy",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_4",
+          "reference": "plan_1",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-020",
+      "domain": "community energy",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_5",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-021",
+      "domain": "credit unions",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_2",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "untraceable",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-022",
+      "domain": "credit unions",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_3",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-023",
+      "domain": "credit unions",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_2",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-024",
+      "domain": "credit unions",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_3",
+          "reference": "plan_1",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "strong",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-025",
+      "domain": "credit unions",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_1",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-026",
+      "domain": "food cooperatives",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_3",
+          "reference": "plan_1",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "untraceable",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-027",
+      "domain": "food cooperatives",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_3",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-028",
+      "domain": "food cooperatives",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_3",
+          "reference": "plan_2",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-029",
+      "domain": "food cooperatives",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_2",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "strong",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-030",
+      "domain": "food cooperatives",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_3",
+          "reference": "plan_2",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "complete",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-031",
+      "domain": "municipal permitting",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_4",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "untraceable",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-032",
+      "domain": "municipal permitting",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_5",
+          "reference": "plan_3",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-033",
+      "domain": "municipal permitting",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_1",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-034",
+      "domain": "municipal permitting",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_3",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-035",
+      "domain": "municipal permitting",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_3",
+          "reference": "plan_1",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-036",
+      "domain": "museum conservation",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_4",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "untraceable",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-037",
+      "domain": "museum conservation",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_2",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-038",
+      "domain": "museum conservation",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_1",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-039",
+      "domain": "museum conservation",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_2",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "strong",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-040",
+      "domain": "museum conservation",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_4",
+          "reference": "plan_5",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-041",
+      "domain": "public libraries",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_1",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "untraceable",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-042",
+      "domain": "public libraries",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_3",
+          "reference": "plan_2",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-043",
+      "domain": "public libraries",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_4",
+          "reference": "plan_3",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-044",
+      "domain": "public libraries",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_5",
+          "reference": "plan_1",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "strong",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-045",
+      "domain": "public libraries",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_2",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "complete",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-046",
+      "domain": "regional farms",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_3",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "untraceable",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-047",
+      "domain": "regional farms",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_4",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-048",
+      "domain": "regional farms",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_5",
+          "reference": "plan_2",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-049",
+      "domain": "regional farms",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_1",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-050",
+      "domain": "regional farms",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_3",
+          "reference": "plan_1",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-051",
+      "domain": "regional transit",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_4",
+          "reference": "plan_1",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "untraceable",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-052",
+      "domain": "regional transit",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_3",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-053",
+      "domain": "regional transit",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_2",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-054",
+      "domain": "regional transit",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_2",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "strong",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-055",
+      "domain": "regional transit",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_3",
+          "reference": "plan_2",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-056",
+      "domain": "small manufacturers",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_3",
+          "reference": "plan_4",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "untraceable",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-057",
+      "domain": "small manufacturers",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_1",
+          "correct": true
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "limited",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-058",
+      "domain": "small manufacturers",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_2",
+          "reference": "plan_3",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "workable",
+          "correct": true
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-059",
+      "domain": "small manufacturers",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_3",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": true,
+          "correct": false
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "strong",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    },
+    {
+      "id": "mq-lora-fresh-060",
+      "domain": "small manufacturers",
+      "decisions": {
+        "response_plan": {
+          "type": "choice",
+          "prediction": "plan_1",
+          "reference": "plan_5",
+          "correct": false
+        },
+        "immediate_intervention": {
+          "type": "noul",
+          "prediction": false,
+          "reference": false,
+          "correct": true
+        },
+        "record_auditability": {
+          "type": "score",
+          "prediction": "workable",
+          "reference": "complete",
+          "correct": false
+        }
+      },
+      "all_three_correct": false
+    }
+  ],
+  "score_expected_value_mae": 30.160841837361662
+}

@@ -1,0 +1,10 @@
+{
+  "C": 1.0,
+  "dev_indices_used": false,
+  "holdout_used": false,
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+  "selection_id": "lora-same460-head-only-c1-train-only",
+  "train_indices_sha256": "076174d33744ab1930435f4fc1611e0c3159f9f50ce453501365617ab32c5ff3",
+  "train_question_count": 460
+}

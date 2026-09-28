@@ -1,0 +1,12 @@
+utc=2026-09-23T15:40:26Z
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=47710307)	47%; charging; 1:43 remaining present: true
+23:40  up  9:06, 3 users, load averages: 3.79 3.49 3.30
+  788  40.9 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer
+ 1416  25.2 /System/Library/CoreServices/ControlCenter.app/Contents/MacOS/ControlCenter
+ 1654  17.1 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal
+39045  13.5 /Users/IDSP35241/.opencode/bin/opencode
+ 9237  12.3 /Users/IDSP35241/.opencode/bin/opencode
+ 2542   9.0 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)
+  804   7.4 /usr/sbin/coreaudiod
+ 2719   6.8 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)

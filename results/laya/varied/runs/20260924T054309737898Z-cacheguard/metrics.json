@@ -1,0 +1,42 @@
+{
+  "per_question_type": {
+    "choice": {
+      "correct": 18,
+      "total": 60,
+      "accuracy": 0.3
+    },
+    "noul": {
+      "correct": 33,
+      "total": 60,
+      "accuracy": 0.55
+    },
+    "score": {
+      "correct": 19,
+      "total": 60,
+      "accuracy": 0.31666666666666665
+    }
+  },
+  "all_three_correct": {
+    "correct": 1,
+    "total": 60,
+    "accuracy": 0.016666666666666666
+  },
+  "case_latency_ms": {
+    "scope": "runner wall time from before the first question through case completion; includes forwards/evaluation, per-call footprint+swap sampling, cache cleanup/GC, and incremental artifact writes; excludes model load",
+    "n": 60,
+    "p50": 494.821063,
+    "p95": 520.7280187499999,
+    "mean": 494.00033820000004
+  },
+  "guard_summary": {
+    "early_stop_bytes": 6442450944,
+    "absolute_stop_bytes": 8589934592,
+    "max_swap_growth_bytes_exclusive": 268435456,
+    "max_process_peak_footprint_bytes": 4298246880,
+    "max_swap_growth_observed_bytes": 0
+  },
+  "error_count": 0,
+  "completed_cases": 60,
+  "completed_decisions": 180,
+  "scored_after_freeze": true
+}

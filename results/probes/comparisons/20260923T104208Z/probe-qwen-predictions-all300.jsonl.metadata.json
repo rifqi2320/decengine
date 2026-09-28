@@ -1,0 +1,51 @@
+{
+  "artifact_directory": "/Users/IDSP35241/Documents/Code/decengine/results/probes/runs/20260923T094618Z/qwen/task-specific",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "feature_mode": "task-specific",
+  "feature_keys_by_task": {
+    "owner": "owner",
+    "urgent": "urgent",
+    "impact": "impact"
+  },
+  "case_count": 300,
+  "input_sha256": "19579864feae49561be48fb929e003abbd61c5baf35fc3f8147bff7b7d523416",
+  "manifest_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/comparisons/20260923T104208Z/features/qwen-test300.jsonl.manifest.json",
+  "manifest_sha256": "33c9e3ab34f1b1935cb346955152b22dd4edd2ff254be226ccb10ea83beff83c",
+  "manifest": {
+    "schema_version": 1,
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "profile_version": "1",
+    "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+    "text_version": "decengine-probe-text-v1",
+    "embedding_dimensions": 1024,
+    "checkpoint_files": [
+      {
+        "path": "config.json",
+        "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+        "size": 727
+      },
+      {
+        "path": "model.safetensors",
+        "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+        "size": 1191586416
+      },
+      {
+        "path": "tokenizer.json",
+        "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "size": 11423705
+      },
+      {
+        "path": "tokenizer_config.json",
+        "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+        "size": 9706
+      }
+    ]
+  },
+  "artifacts_sha256": {
+    "/Users/IDSP35241/Documents/Code/decengine/results/probes/runs/20260923T094618Z/qwen/task-specific/metadata.json": "625c019755394f5d520ae3495bdb4970d59c935dd64fdc1b1de889e2b59245d1",
+    "/Users/IDSP35241/Documents/Code/decengine/results/probes/runs/20260923T094618Z/qwen/task-specific/models.json": "83c48674f747dbc4376a2cec10211485fec568ec7a56d47f883888349a25fcf4"
+  },
+  "predictor_script_sha256": "14ced071fb41b94e9ed5f3810f27b32a15adec64fa102e61384f37cbcdbd1b1a",
+  "output_sha256": "4e087124cab7223ec96736709c2867bf243a5220ef683b8303b1c203361cd257",
+  "inference": "saved coefficients/scaler only; no fitting, labels, references, or tuning"
+}

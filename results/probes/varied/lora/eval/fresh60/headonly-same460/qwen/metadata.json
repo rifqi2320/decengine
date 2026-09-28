@@ -1,0 +1,35 @@
+{
+  "C": 1.0,
+  "dev_targets_used": false,
+  "fit_method": "bounded per-type pairwise softmax fit, same implementation as train-only comparator",
+  "holdout_accessed": false,
+  "metadata_note": "No dev targets, sealed holdout, or test predictions were read/used.",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+  "profile_version": "1",
+  "selection_id": "lora-same460-head-only-c1-train-only",
+  "selection_or_sweep": "none; C=1.0 predeclared comparator",
+  "text_version": "decengine-varied-pair-text-v2-generic-types",
+  "train_fixture_sha256": [
+    "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+    "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50"
+  ],
+  "train_indices_sha256": "076174d33744ab1930435f4fc1611e0c3159f9f50ce453501365617ab32c5ff3",
+  "trainer_config_sha256": "649bc8842bf9f95a32003b152463e2aac731676dfe8039cc9a238db93568a9a6",
+  "trainer_sha256": "24cf1e2808e4f22fa043a0c83d8fa693e5e1cced77aadcad496e6735257a7564",
+  "training_feature_sha256": [
+    "844944b2028ce1cfe434b6a523316e39562e829277bb5c511aca28178151e069",
+    "41af828d6b883f7d1987064ec5b8d0b52463d1de824c4be50c54f20d88b2a058"
+  ],
+  "training_manifest_sha256": [
+    "a7438e125ef024d3c28ae35e8b34d39974b9e827f4e224b786d7bc8fc29693fe",
+    "85b635315ef6896d0411727156089645f14ba02833291c306a4923060073a2c1"
+  ],
+  "training_question_count": 460,
+  "training_questions_by_type": {
+    "choice": 140,
+    "noul": 160,
+    "score": 160
+  },
+  "training_scope": "exact 460 config.train_indices only"
+}

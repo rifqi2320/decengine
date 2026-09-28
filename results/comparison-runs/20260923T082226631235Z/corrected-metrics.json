@@ -1,0 +1,1026 @@
+{
+  "audit_note": "This derived file does not modify cases.jsonl, judgments.jsonl, or summary.json.",
+  "case_count": 100,
+  "fixture": "benchmarks/cases/decision-cases-100.jsonl",
+  "judgment_integrity_checks": {
+    "marked_correct_but_prediction_differs_from_reference": {
+      "jev": {
+        "impact": [],
+        "owner": [],
+        "urgent": []
+      },
+      "mlx": {
+        "impact": [],
+        "owner": [],
+        "urgent": [
+          "case-056",
+          "case-057",
+          "case-073",
+          "case-074",
+          "case-078",
+          "case-080",
+          "case-088"
+        ]
+      }
+    },
+    "marked_indeterminate_but_prediction_matches_reference": {
+      "jev": {
+        "impact": [],
+        "owner": [],
+        "urgent": []
+      },
+      "mlx": {
+        "impact": [
+          "case-074"
+        ],
+        "owner": [],
+        "urgent": []
+      }
+    }
+  },
+  "method": {
+    "basis": "raw archived engine responses compared exactly to benchmark fixture references",
+    "case_winner": "engine with more exact matches over owner, urgent, impact; equal counts are a tie",
+    "normalization": {
+      "impact": "label with maximum archived score probability; JEV probability keys are fixture level indices",
+      "owner": "choice label",
+      "urgent": "supported/true iff raw scalar >= 0.5"
+    },
+    "subjective_winners": "separately counted from judgment ledger comparison.outcome; not derived from exact-match counts"
+  },
+  "objective_exact_match_case_winners": {
+    "jev": 70,
+    "mlx": 7,
+    "tie": 23
+  },
+  "overall_exact_matches": {
+    "jev": {
+      "decisions": 300,
+      "exact_matches": 258
+    },
+    "mlx": {
+      "decisions": 300,
+      "exact_matches": 141
+    }
+  },
+  "per_case": {
+    "case-001": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-002": {
+      "exact_matches_out_of_3": {
+        "jev": 1,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-003": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-004": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-005": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-006": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-007": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-008": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-009": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-010": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-011": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-012": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-013": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-014": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-015": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-016": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-017": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-018": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-019": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "mlx"
+    },
+    "case-020": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-021": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-022": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-023": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-024": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-025": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-026": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-027": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-028": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-029": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-030": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-031": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-032": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-033": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-034": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-035": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-036": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-037": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-038": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-039": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-040": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-041": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-042": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-043": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-044": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-045": {
+      "exact_matches_out_of_3": {
+        "jev": 1,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-046": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-047": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-048": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-049": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-050": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-051": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-052": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-053": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-054": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-055": {
+      "exact_matches_out_of_3": {
+        "jev": 1,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "mlx"
+    },
+    "case-056": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-057": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-058": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-059": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-060": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-061": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-062": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-063": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "mlx"
+    },
+    "case-064": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-065": {
+      "exact_matches_out_of_3": {
+        "jev": 0,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "mlx"
+    },
+    "case-066": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-067": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-068": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-069": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-070": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-071": {
+      "exact_matches_out_of_3": {
+        "jev": 1,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "mlx"
+    },
+    "case-072": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-073": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-074": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-075": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-076": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-077": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-078": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-079": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-080": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-081": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-082": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-083": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-084": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-085": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-086": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-087": {
+      "exact_matches_out_of_3": {
+        "jev": 1,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "mlx"
+    },
+    "case-088": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-089": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-090": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-091": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-092": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-093": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 1
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-094": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 2
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-095": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-096": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-097": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "tie"
+    },
+    "case-098": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    },
+    "case-099": {
+      "exact_matches_out_of_3": {
+        "jev": 2,
+        "mlx": 3
+      },
+      "objective_exact_match_winner": "mlx"
+    },
+    "case-100": {
+      "exact_matches_out_of_3": {
+        "jev": 3,
+        "mlx": 0
+      },
+      "objective_exact_match_winner": "jev"
+    }
+  },
+  "question_exact_matches": {
+    "impact": {
+      "jev": {
+        "case_count": 100,
+        "exact_matches": 81,
+        "exact_mismatches": 19,
+        "mismatch_case_ids": [
+          "case-001",
+          "case-002",
+          "case-004",
+          "case-014",
+          "case-032",
+          "case-043",
+          "case-044",
+          "case-045",
+          "case-047",
+          "case-054",
+          "case-055",
+          "case-058",
+          "case-065",
+          "case-071",
+          "case-072",
+          "case-074",
+          "case-080",
+          "case-087",
+          "case-098"
+        ]
+      },
+      "mlx": {
+        "case_count": 100,
+        "exact_matches": 50,
+        "exact_mismatches": 50,
+        "mismatch_case_ids": [
+          "case-004",
+          "case-006",
+          "case-008",
+          "case-009",
+          "case-010",
+          "case-011",
+          "case-012",
+          "case-014",
+          "case-018",
+          "case-020",
+          "case-021",
+          "case-027",
+          "case-028",
+          "case-030",
+          "case-035",
+          "case-038",
+          "case-040",
+          "case-041",
+          "case-042",
+          "case-045",
+          "case-046",
+          "case-048",
+          "case-049",
+          "case-050",
+          "case-052",
+          "case-057",
+          "case-058",
+          "case-059",
+          "case-060",
+          "case-067",
+          "case-068",
+          "case-069",
+          "case-070",
+          "case-072",
+          "case-073",
+          "case-076",
+          "case-077",
+          "case-078",
+          "case-080",
+          "case-082",
+          "case-083",
+          "case-084",
+          "case-086",
+          "case-088",
+          "case-089",
+          "case-092",
+          "case-093",
+          "case-096",
+          "case-098",
+          "case-100"
+        ]
+      }
+    },
+    "owner": {
+      "jev": {
+        "case_count": 100,
+        "exact_matches": 82,
+        "exact_mismatches": 18,
+        "mismatch_case_ids": [
+          "case-002",
+          "case-019",
+          "case-020",
+          "case-026",
+          "case-036",
+          "case-037",
+          "case-039",
+          "case-046",
+          "case-063",
+          "case-065",
+          "case-071",
+          "case-073",
+          "case-076",
+          "case-078",
+          "case-087",
+          "case-090",
+          "case-093",
+          "case-099"
+        ]
+      },
+      "mlx": {
+        "case_count": 100,
+        "exact_matches": 45,
+        "exact_mismatches": 55,
+        "mismatch_case_ids": [
+          "case-001",
+          "case-002",
+          "case-005",
+          "case-007",
+          "case-013",
+          "case-014",
+          "case-015",
+          "case-018",
+          "case-020",
+          "case-022",
+          "case-023",
+          "case-024",
+          "case-025",
+          "case-026",
+          "case-027",
+          "case-028",
+          "case-029",
+          "case-035",
+          "case-036",
+          "case-037",
+          "case-039",
+          "case-040",
+          "case-041",
+          "case-042",
+          "case-043",
+          "case-045",
+          "case-047",
+          "case-050",
+          "case-055",
+          "case-057",
+          "case-059",
+          "case-060",
+          "case-062",
+          "case-065",
+          "case-068",
+          "case-069",
+          "case-071",
+          "case-072",
+          "case-073",
+          "case-075",
+          "case-077",
+          "case-078",
+          "case-079",
+          "case-081",
+          "case-084",
+          "case-085",
+          "case-086",
+          "case-087",
+          "case-089",
+          "case-090",
+          "case-092",
+          "case-093",
+          "case-096",
+          "case-098",
+          "case-100"
+        ]
+      }
+    },
+    "urgent": {
+      "jev": {
+        "case_count": 100,
+        "exact_matches": 95,
+        "exact_mismatches": 5,
+        "mismatch_case_ids": [
+          "case-027",
+          "case-045",
+          "case-055",
+          "case-065",
+          "case-067"
+        ]
+      },
+      "mlx": {
+        "case_count": 100,
+        "exact_matches": 46,
+        "exact_mismatches": 54,
+        "mismatch_case_ids": [
+          "case-002",
+          "case-004",
+          "case-006",
+          "case-008",
+          "case-010",
+          "case-012",
+          "case-014",
+          "case-016",
+          "case-018",
+          "case-020",
+          "case-022",
+          "case-023",
+          "case-026",
+          "case-027",
+          "case-028",
+          "case-030",
+          "case-032",
+          "case-034",
+          "case-036",
+          "case-038",
+          "case-040",
+          "case-042",
+          "case-044",
+          "case-046",
+          "case-048",
+          "case-050",
+          "case-052",
+          "case-054",
+          "case-056",
+          "case-057",
+          "case-059",
+          "case-060",
+          "case-062",
+          "case-064",
+          "case-066",
+          "case-067",
+          "case-069",
+          "case-070",
+          "case-072",
+          "case-073",
+          "case-074",
+          "case-076",
+          "case-078",
+          "case-080",
+          "case-082",
+          "case-084",
+          "case-086",
+          "case-088",
+          "case-089",
+          "case-092",
+          "case-094",
+          "case-096",
+          "case-098",
+          "case-100"
+        ]
+      }
+    }
+  },
+  "run_id": "20260923T082226631235Z",
+  "schema_version": 1,
+  "subjective_judgment_case_winners": {
+    "jev": 68,
+    "mlx": 7,
+    "tie": 25
+  }
+}

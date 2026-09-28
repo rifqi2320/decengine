@@ -1,0 +1,66 @@
+{
+  "base_checkpoint_sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+  "base_model_manifest_sha256": "91b4e508f494a16fa74ca4544a77d0e9826e56d69ffce30d8024ce39834bdc80",
+  "baseline_protocol": "historical frozen typed scorer fit/selected on full 660 training questions; not same split as 460-question LoRA train subset",
+  "baseline_selection_freeze_manifest_sha256": "8323dbbf30c94fe561a6b0363bc709265f73e623db9b060ae43ecd6856083bf0",
+  "c_value": 0.1,
+  "comparison_script_sha256": "54db4e064fc19056db1e96e2ad4feb0141caaeee1fecaa313f232d3a920fddd8",
+  "compiler_source_sha256": "4ae8ec7e85bc70954a645471c2f49cfc00a5fdac80fb4887c62f920543e79303",
+  "compute_assumptions": {
+    "batching": "varied-metal native protocol",
+    "execution": "query/candidate embeddings and pair scorer on MLX/Metal",
+    "flops": "not estimated"
+  },
+  "device": "Apple M4 Pro (freeze record)",
+  "dtype": "profile-native MLX inference",
+  "evaluator_source_sha256": "1f65bc41365acf99dc8340c6eca0de8c05169167be02e04a64db10cd425311ed",
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "frozen_config_sha256": "02d233c8a32020e96bbb8d1f41684ec81dba75007fb8db196c76281b5701738d",
+  "frozen_metadata_sha256": "3e37da1c7454e3401150d9a14e5e0c0cdb924284b24a3e6bc0160c9adce7b90d",
+  "frozen_models_sha256": "077962ae2a20dea890ee8e6566c4730023b1a3d11ff2ca1be567aa8e1462b32f",
+  "input_access": "request state/questions only; varied-metal implementation does not access references/targets/rationales",
+  "lora_selection_freeze_manifest_sha256": "5f7dd19638df1f7bdcb56ecd44a9371ae5a0ac32a6314538146e324ac8a2e48f",
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "predictions_sha256": "b86bc07f2bd3ff1f5fc119a1e8cc59e630398a01dc164a790c3a8a396f1d2754",
+  "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+  "profile_version": "2",
+  "reference_scoring_performed": false,
+  "resource_guard": {
+    "baseline_swap_bytes": 1112801280,
+    "guard_samples": 22,
+    "limit_absolute_bytes": 8589934592,
+    "limit_early_stop_bytes": 6442450944,
+    "max_process_peak_footprint_bytes": 3986884408,
+    "max_swap_bytes": 1112801280,
+    "process_peak_below_early_stop": true,
+    "swap_unchanged": true
+  },
+  "runtime": "decengine varied-metal (MLX/Metal)",
+  "runtime_versions": {
+    "mlx": "0.29.3",
+    "mlx_lm": "0.29.1",
+    "numpy": "2.0.2",
+    "python": "3.9.6",
+    "tokenizers": "0.22.2"
+  },
+  "same460_comparator": false,
+  "selected_variant": "baseline",
+  "selection_status": "frozen",
+  "system_id": "harrier_frozen_baseline_full660",
+  "text_version": "decengine-varied-pair-text-v2-generic-types",
+  "timing_scopes": {
+    "case_total_ms": {
+      "n": 60,
+      "p50": 320.5260425,
+      "p95": 344.91560695,
+      "scope": "sum of 3 question calls/case; excludes model load; warmup excluded"
+    },
+    "question_total_ms": {
+      "n": 180,
+      "p50": 102.05947950000001,
+      "p95": 126.91669404999999,
+      "scope": "tokenization + query/candidate embedding + Metal scorer; excludes model load; warmup excluded"
+    }
+  },
+  "varied_metal_raw_sha256": "16fbd7e68d3f19738c048e35cb70523577a286f13f26071ad290f3ef1c6497ae"
+}

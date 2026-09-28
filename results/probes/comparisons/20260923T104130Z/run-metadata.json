@@ -1,0 +1,36 @@
+{
+  "run_id": "20260923T104130Z",
+  "started_at": "2026-09-23T10:41:30.613114+00:00",
+  "fixture": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/probe-test-300.jsonl",
+  "fixture_sha256": "04d3eeb4b45709ac28c177961763a03cf036296466faf779a062e1303c30ff30",
+  "case_count": 300,
+  "baseline_directory": "/Users/IDSP35241/Documents/Code/decengine/results/probes/baselines/20260923T094641685361000Z",
+  "baseline_files_sha256": {
+    "qwen-predictions.jsonl": "7b53a98ee3c256af938fde2762d6144b2b417d0f4a5c096a8653956d1964c71e",
+    "harrier-predictions.jsonl": "f7a808c85345adaffcf4ea85421cd3fb452fc0562b0d1bfa9ba3ddce2b8f2ec0",
+    "jev-predictions.jsonl": "ad908fe488bdde4bbb5f0c51f2ae53148d0eb0ea8287c671739ad04bbe9246be"
+  },
+  "probe_artifacts": "/Users/IDSP35241/Documents/Code/decengine/results/probes/runs/20260923T094618Z",
+  "locked_probe_parameters": {
+    "qwen": {
+      "metadata_sha256": "625c019755394f5d520ae3495bdb4970d59c935dd64fdc1b1de889e2b59245d1",
+      "models_sha256": "83c48674f747dbc4376a2cec10211485fec568ec7a56d47f883888349a25fcf4",
+      "selected_C": {
+        "owner": 10.0,
+        "urgent": 10.0,
+        "impact": 0.001
+      }
+    },
+    "harrier": {
+      "metadata_sha256": "af769520f32edf359756d5fc77a2d62bf2a3c7877491225a92672b653c038615",
+      "models_sha256": "857945f64754e51dc842d64dbcfbdad19ffbaec86b44bc297f02f84dc95fd422",
+      "selected_C": {
+        "owner": 0.1,
+        "urgent": 0.01,
+        "impact": 0.01
+      }
+    }
+  },
+  "hyperparameters": "loaded from locked models.json; no fitting/tuning",
+  "scope": "JEV and local cosine baselines called only for test-091..test-300"
+}

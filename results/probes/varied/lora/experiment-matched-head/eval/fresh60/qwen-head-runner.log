@@ -1,0 +1,12 @@
+/Users/IDSP35241/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/evaluate_frozen.py", line 1349, in <module>
+    raise SystemExit(main())
+  File "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/evaluate_frozen.py", line 876, in main
+    return run_matched_frozen(args)
+  File "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/evaluate_frozen.py", line 773, in run_matched_frozen
+    guard_resources(snap, swap_baseline, args.out)
+  File "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/evaluate_frozen.py", line 248, in guard_resources
+    raise MemoryError(f"{violation}: {snapshot}")
+MemoryError: system swap increased above evaluation baseline: {'pid': 87681, 'process_footprint_bytes': 2353202952, 'process_peak_footprint_bytes': 2353235720, 'system_swap_used_bytes': 1333914501, 'mlx_active_bytes': 1194724968, 'mlx_peak_bytes': 1596531252}

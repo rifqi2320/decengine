@@ -1,0 +1,61 @@
+{
+  "C": 1.0,
+  "baseline_protocol": "new controlled head-only C=1.0 fit on exactly frozen 460 train indices; no dev or holdout labels used in fit",
+  "baseline_selection_freeze_sha256": "9c6f8dbf2fc5c60c5c9d5da2a9e4251dd44b73e111de55363261ae1b8bcf3487",
+  "comparison_script_sha256": "54db4e064fc19056db1e96e2ad4feb0141caaeee1fecaa313f232d3a920fddd8",
+  "dev_labels_used_for_fit": false,
+  "device": "Apple M4 Pro",
+  "dtype": "profile-native MLX inference",
+  "evaluator_source_sha256": "1f65bc41365acf99dc8340c6eca0de8c05169167be02e04a64db10cd425311ed",
+  "fit_metadata_sha256": "a9da966de3622ec92438e271125af0f9e228b77900ef4f50e6a56076d916dabb",
+  "fit_script_sha256": "57e215f1fc4bfd48272f7021f22bde41dc138c75d87e0cafb09afbe8258ef794",
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "frozen_config_sha256": "6b47c976d02ddb97386740d1cd47ce914793f59d4f9fbfd7e6d12bf178f65551",
+  "headonly_fit_metadata_sha256": "a9da966de3622ec92438e271125af0f9e228b77900ef4f50e6a56076d916dabb",
+  "headonly_fit_models_sha256": "092a29103348659299fdeec50b6634d5963a88d58774459c06ba2e526dec27c4",
+  "headonly_frozen_config_sha256": "6b47c976d02ddb97386740d1cd47ce914793f59d4f9fbfd7e6d12bf178f65551",
+  "headonly_selection_freeze_sha256": "9c6f8dbf2fc5c60c5c9d5da2a9e4251dd44b73e111de55363261ae1b8bcf3487",
+  "holdout_labels_used_for_fit": false,
+  "lora_selection_freeze_manifest_sha256": "5f7dd19638df1f7bdcb56ecd44a9371ae5a0ac32a6314538146e324ac8a2e48f",
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "models_sha256": "092a29103348659299fdeec50b6634d5963a88d58774459c06ba2e526dec27c4",
+  "predictions_sha256": "798491a9741934fe5c35d04ba22fdf7400e5c72f36ec4672ed452ad9ee9463c9",
+  "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+  "profile_version": "2",
+  "reference_scoring_performed": false,
+  "resource_guard": {
+    "absolute_cap_bytes": 8589934592,
+    "baseline_swap_bytes": 1112801280,
+    "early_stop_bytes": 6442450944,
+    "max_process_peak_footprint_bytes": 3986474808,
+    "max_swap_bytes": 1112801280,
+    "sample_count": 22,
+    "swap_unchanged": true
+  },
+  "runtime": "decengine varied-metal (MLX/Metal)",
+  "selection_status": "frozen before test inference",
+  "system_id": "harrier_headonly_same460",
+  "text_version": "decengine-varied-pair-text-v2-generic-types",
+  "timing_scopes": {
+    "case_total_ms": {
+      "n": 60,
+      "p50": 322.578001,
+      "p95": 347.6380812499999,
+      "scope": "three-question per-case sum; excludes model load/warmup"
+    },
+    "question_total_ms": {
+      "n": 180,
+      "p50": 103.010125,
+      "p95": 128.83049194999998,
+      "scope": "tokenization+query/candidate embedding+Metal scorer; excludes model load/warmup"
+    }
+  },
+  "training_question_count": 460,
+  "training_questions_by_type": {
+    "choice": 140,
+    "noul": 160,
+    "score": 160
+  },
+  "varied_metal_raw_sha256": "2b88ce1266c63a1dbc834a4a047ecf9b4ca5c41cceb35871a4e65bf2e2232143",
+  "varied_metal_source_sha256": "4ae8ec7e85bc70954a645471c2f49cfc00a5fdac80fb4887c62f920543e79303"
+}

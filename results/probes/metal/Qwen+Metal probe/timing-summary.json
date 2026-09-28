@@ -1,0 +1,36 @@
+{
+  "system": "Qwen+Metal probe",
+  "case_count": 300,
+  "scope": "300 unique cases after model load and one warmup per task; synchronized GPU stages",
+  "units": "milliseconds",
+  "stages": {
+    "end_to_end": {
+      "mean": 80.03191470666665,
+      "p50": 79.167792,
+      "p95": 89.527625
+    },
+    "tokenization": {
+      "mean": 0.4036832000000001,
+      "p50": 0.387749,
+      "p95": 0.529417
+    },
+    "embedding": {
+      "mean": 78.86438946000001,
+      "p50": 78.02125,
+      "p95": 88.29975
+    },
+    "classifier": {
+      "mean": 0.6815445133333338,
+      "p50": 0.671791,
+      "p95": 0.792043
+    }
+  },
+  "process_resources": {
+    "measurement": "whole CLI invocation including model load and warmup; process memory on macOS unified memory; not a GPU-only allocation counter",
+    "elapsed_seconds_including_load_warmup": 26.7,
+    "user_seconds": 4.51,
+    "system_seconds": 1.2,
+    "maximum_resident_set_bytes": 1366556672,
+    "peak_memory_footprint_bytes": 3868935848
+  }
+}

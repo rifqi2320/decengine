@@ -1,0 +1,142 @@
+{
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "model_argument": "qwen",
+  "embedding_dimensions": {
+    "state": 1024,
+    "owner": 1024,
+    "urgent": 1024,
+    "impact": 1024
+  },
+  "feature_mode": "state-only",
+  "feature_keys_by_task": {
+    "owner": "state",
+    "urgent": "state",
+    "impact": "state"
+  },
+  "seed": 271828,
+  "train_count": 300,
+  "test_count": 90,
+  "train_ids_sha256": "4819948066f6e61ebdf9de13a13696cf6cb2002adf1e133cd2502989150a52e1",
+  "test_ids_sha256": "ac9df5599f59f6b24dc86c7e88173c3e6d36fe232d0546bff8ea435020e0c8cd",
+  "train_test_ids_overlap": false,
+  "training_group_count": 300,
+  "training_records_in_repeated_groups": 0,
+  "inputs": {
+    "benchmarks/cases/probe-train-300.jsonl": "ae8c3cbbd58b1a38db65e72ff638728bd5e5bae7df8be5a78b2ebed9c9aba434",
+    "benchmarks/cases/probe-test-90.jsonl": "1ded62e864666e324a3154d86114ade18a816a2453b5e2ace1593a2c77d3f587",
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/probe-features/Qwen-Qwen3-Embedding-0-6B-train300.jsonl": "1458cdd430a045735a367f4c4f519403cde5a4a3b70012f5d1fcf868623968b3",
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/probe-features/Qwen-Qwen3-Embedding-0-6B-test90.jsonl": "89cd447bf8b733cfe9bc40df8d4e81c96540cd0f4eb7c91beab96a0037153588",
+    "results/probes/baselines/20260923T094641685361000Z/qwen-predictions.jsonl": "7b53a98ee3c256af938fde2762d6144b2b417d0f4a5c096a8653956d1964c71e"
+  },
+  "embedding_manifests": {
+    "train": {
+      "path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/probe-features/Qwen-Qwen3-Embedding-0-6B-train300.jsonl.manifest.json",
+      "sha256": "33c9e3ab34f1b1935cb346955152b22dd4edd2ff254be226ccb10ea83beff83c",
+      "contents": {
+        "schema_version": 1,
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "profile_version": "1",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "text_version": "decengine-probe-text-v1",
+        "embedding_dimensions": 1024,
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ]
+      }
+    },
+    "test": {
+      "path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/probe-features/Qwen-Qwen3-Embedding-0-6B-test90.jsonl.manifest.json",
+      "sha256": "33c9e3ab34f1b1935cb346955152b22dd4edd2ff254be226ccb10ea83beff83c",
+      "contents": {
+        "schema_version": 1,
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "profile_version": "1",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "text_version": "decengine-probe-text-v1",
+        "embedding_dimensions": 1024,
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ]
+      }
+    }
+  },
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "numpy": "2.0.2",
+  "scikit_learn": "1.6.1",
+  "trainer_script_sha256": "da8cb33b64cca1db0b6e4c8598b21a03952810d0985e2261950a4680a44d0219",
+  "requirements_sha256": "daebeb579607c29b776e4315eb5bb21bc576bfb70d0072eb8585eb6fb4af6b9e",
+  "argv": [
+    "results/probes/train_probe.py",
+    "--train",
+    "benchmarks/cases/probe-train-300.jsonl",
+    "--test",
+    "benchmarks/cases/probe-test-90.jsonl",
+    "--train-embeddings",
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/probe-features/Qwen-Qwen3-Embedding-0-6B-train300.jsonl",
+    "--test-embeddings",
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/probe-features/Qwen-Qwen3-Embedding-0-6B-test90.jsonl",
+    "--model",
+    "qwen",
+    "--state-only",
+    "--expected-counts",
+    "--previous-predictions",
+    "results/probes/baselines/20260923T094641685361000Z/qwen-predictions.jsonl",
+    "--out",
+    "results/probes/runs/20260923T094618Z/qwen/state-only"
+  ],
+  "features": "frozen exported embeddings; train-fitted StandardScaler per classifier, no encoder tuning",
+  "leakage_audit": "train/test exact and >=0.88 token-Jaccard duplicates rejected; grouped CV",
+  "numerical_validation": "all fitted coefficients/intercepts, probabilities and CV scores checked finite; finite-result BLAS matmul runtime warnings suppressed during sklearn calls",
+  "hyperparameter_search": {
+    "C_values": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "max_iter": 5000,
+    "metric": "mean stratified train-only CV macro-F1"
+  }
+}

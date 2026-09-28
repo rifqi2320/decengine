@@ -1,0 +1,39 @@
+{
+  "backend": "MLX/Metal",
+  "checkpoint_files": [
+    {
+      "path": "config.json",
+      "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+      "size": 1355
+    },
+    {
+      "path": "model.safetensors",
+      "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+      "size": 1192133232
+    },
+    {
+      "path": "tokenizer.json",
+      "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+      "size": 11423705
+    },
+    {
+      "path": "tokenizer_config.json",
+      "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+      "size": 5404
+    }
+  ],
+  "embedding_dimensions": 1024,
+  "feature_transfer": "host vectors for offline training; not Metal-resident classifier",
+  "input_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+  "max_token_length": 32768,
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "normalization": "L2",
+  "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+  "profile_version": "2",
+  "question_record_count": 300,
+  "schema_version": 1,
+  "serialization": "UTF-8 JSONL, one row per named question; state canonicalized with serde_json compact sorted-key map order; query=profile.query_template(instruction=profile.query_instruction_template(prompt, kind_instruction), text='Decision: {prompt}\\nState: {canonical_state}'); candidate=profile.candidate_template(profile-specific candidate template). Choice/score preserve candidate order as serialized by JSON object/array; binary candidates contain the complete prompt proposition. Reference, target, rationale, and domain are never read into feature text.",
+  "text_lengths": "Exact tokenizer.json token counts and UTF-8 byte lengths are recorded for each query and candidate; each is checked nonempty and <= frozen profile max_length.",
+  "text_version": "decengine-varied-pair-text-v2-generic-types",
+  "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a"
+}

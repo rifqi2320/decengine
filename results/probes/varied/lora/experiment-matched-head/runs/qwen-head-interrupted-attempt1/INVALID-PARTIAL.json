@@ -1,0 +1,7 @@
+{
+  "status": "INVALID_PARTIAL_NOT_SELECTED",
+  "reason": "This pre-correction attempt completed epoch 1 / 460 steps, then was interrupted while the global L2 gradient-clipping geometry was reviewed/corrected. Preserve logs/checkpoints for provenance, do not compare or resume.",
+  "interruption": "SIGTERM after committed epoch 1; partial epoch 2 discarded",
+  "affected_arm": "Qwen head-only",
+  "restart_policy": "All four corrected full arms restarted from the matched seed into fresh run directories."
+}

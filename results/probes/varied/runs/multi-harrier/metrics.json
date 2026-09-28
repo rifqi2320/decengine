@@ -1,0 +1,33 @@
+{
+  "per_question_type": {
+    "choice": {
+      "n": 60,
+      "accuracy": 0.36666666666666664,
+      "variable_candidate_counts": [
+        3,
+        4,
+        5
+      ]
+    },
+    "noul": {
+      "n": 60,
+      "accuracy": 0.4166666666666667,
+      "variable_candidate_counts": [
+        2
+      ]
+    },
+    "score": {
+      "n": 60,
+      "accuracy": 0.2,
+      "variable_candidate_counts": [
+        3
+      ],
+      "expected_value_mae": 2.65340066167504,
+      "label_argmax_accuracy": 0.2
+    }
+  },
+  "question_count": 180,
+  "case_count": 60,
+  "all_three_correct_case_count": 1,
+  "all_test_cases_have_three_questions": true
+}

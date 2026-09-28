@@ -1,0 +1,16 @@
+{
+  "status": "raw_predictions_unchanged_and_hashed_before_final_rescore",
+  "frozen_at": "2026-09-24T04:24:31.016733+00:00",
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "case_count": 60,
+  "request_count": 60,
+  "normalized_outcome_count": 180,
+  "errors": 0,
+  "artifact_sha256": {
+    "raw-results.jsonl": "752a74eb96bade88c9e5adbad3ddcdd200c0721e134ddb072bc3b29df12bfff4",
+    "jev-predictions.jsonl": "b0f8e192e1b0effa0f9c7e5c665ccdd09a719dc6f1abe7188cf353e1693fa86f",
+    "timings.jsonl": "35f02474783f3769257fdaf2f062b762c35c3ddb79395113bf2f1d7cccfb0239",
+    "run-metadata.json": "e2d245d3661bd62123a9aa42c86f3644525a73c308551d91129b0845b9564235"
+  },
+  "scoring_stage": "Initial scoring had already completed before this freeze was added; reported metrics were then deterministically regenerated after the freeze from unchanged prediction files. No inference was repeated and no labels were used for tuning."
+}

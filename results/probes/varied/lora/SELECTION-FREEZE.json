@@ -1,0 +1,1680 @@
+{
+  "created_date": "2026-09-24",
+  "invalid_prior_runs": [
+    {
+      "path": "results/probes/varied/lora/runs/qwen",
+      "reason": "stopped after two committed epochs at 17.3 GB process peak; not final"
+    },
+    {
+      "path": "results/probes/varied/lora/runs/qwen-capped",
+      "reason": "10 updates; crossed 6 GiB early stop; no committed epoch"
+    },
+    {
+      "path": "results/probes/varied/lora/runs/pilot-qwen-lowmem-v2",
+      "reason": "20-step safety pilot; intentionally incomplete epoch and no model selection"
+    },
+    {
+      "path": "results/probes/varied/lora/runs/smoke-qwen-budget",
+      "reason": "one-minibatch gradient/loss smoke only"
+    },
+    {
+      "path": "results/probes/varied/lora/runs/smoke-harrier-budget",
+      "reason": "one-minibatch gradient/loss smoke only"
+    }
+  ],
+  "models": {
+    "harrier": {
+      "adapter_sha256": "58614beb9551fd30c1458c68313e27ccf0b926b5522b620c6d2a3e24878e4edd",
+      "artifacts": {
+        "best.json": {
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/best.json",
+          "sha256": "3e0a378f57776e6dc6822b68b8afa4c029a5a04259660ec89a00036cffed4dd1",
+          "size_bytes": 142
+        },
+        "best.safetensors": {
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/best.safetensors",
+          "sha256": "d6c240bc4860cd73b9d74b0e25a6bd9643936e74bd24271746ccbdf5bcd2ab1e",
+          "size_bytes": 3190876,
+          "tensors": {
+            "backbone.model.layers.27.self_attn.q_proj.lora_a": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.q_proj.lora_b": {
+              "count": 4096,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 4096,
+              "shape": [
+                2048,
+                2
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_a": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_b": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                1024,
+                2
+              ]
+            },
+            "head.choice.bias": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.choice.weight": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.noul.bias": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.noul.weight": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.proj.bias": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                192
+              ]
+            },
+            "head.proj.weight": {
+              "count": 786432,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 786432,
+              "shape": [
+                192,
+                4096
+              ]
+            },
+            "head.score.bias": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.score.weight": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            }
+          }
+        },
+        "config.json": {
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/config.json",
+          "sha256": "7088d7e77e374343240ae09e3b29068c8d7fdb9cb28077e1a48ee357889cea23",
+          "size_bytes": 16779
+        },
+        "epochs.jsonl": {
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/epochs.jsonl",
+          "sha256": "3975204ec4bb990c1c923d5271faff2b536dcfef0f19484673af2bb82e1d5c5b",
+          "size_bytes": 398
+        },
+        "head-only-baseline.json": {
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/head-only-baseline.json",
+          "sha256": "72ed385119250c0fb941cf923d340c668f0ed19a3ec73a515e609e3691d29d6b",
+          "size_bytes": 680
+        },
+        "latest.json": {
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/latest.json",
+          "sha256": "d745922d6d173e3815f5a00f585909457bd3b959a7ebbf14c5010b34a5ffae53",
+          "size_bytes": 43
+        },
+        "latest.safetensors": {
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/latest.safetensors",
+          "sha256": "c4fb8cebeeaa73a983ad6f9ba99e3b3659f94dbd88c7c167b5317934ec5d76d5",
+          "size_bytes": 3190876,
+          "tensors": {
+            "backbone.model.layers.27.self_attn.q_proj.lora_a": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.q_proj.lora_b": {
+              "count": 4096,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 4096,
+              "shape": [
+                2048,
+                2
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_a": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_b": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                1024,
+                2
+              ]
+            },
+            "head.choice.bias": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.choice.weight": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.noul.bias": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.noul.weight": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.proj.bias": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                192
+              ]
+            },
+            "head.proj.weight": {
+              "count": 786432,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 786432,
+              "shape": [
+                192,
+                4096
+              ]
+            },
+            "head.score.bias": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.score.weight": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            }
+          }
+        },
+        "memory.jsonl": {
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/memory.jsonl",
+          "sha256": "20635bf07cf3186a11dab5205c238d2455838ee0f518342068d68431aae71f1e",
+          "size_bytes": 536291
+        },
+        "optimizer.safetensors": {
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/optimizer.safetensors",
+          "sha256": "2bf67de53e85aa736410864551b8c43f6e4d7b80e798c9ee85633140673dfb94",
+          "size_bytes": 6381928,
+          "tensors": {
+            "backbone.model.layers.27.self_attn.q_proj.lora_a.m": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.q_proj.lora_a.v": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.q_proj.lora_b.m": {
+              "count": 4096,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 4096,
+              "shape": [
+                2048,
+                2
+              ]
+            },
+            "backbone.model.layers.27.self_attn.q_proj.lora_b.v": {
+              "count": 4096,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 4096,
+              "shape": [
+                2048,
+                2
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_a.m": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_a.v": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_b.m": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                1024,
+                2
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_b.v": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                1024,
+                2
+              ]
+            },
+            "head.choice.bias.m": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.choice.bias.v": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.choice.weight.m": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.choice.weight.v": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.noul.bias.m": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.noul.bias.v": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.noul.weight.m": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.noul.weight.v": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.proj.bias.m": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                192
+              ]
+            },
+            "head.proj.bias.v": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                192
+              ]
+            },
+            "head.proj.weight.m": {
+              "count": 786432,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 784128,
+              "shape": [
+                192,
+                4096
+              ]
+            },
+            "head.proj.weight.v": {
+              "count": 786432,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 784128,
+              "shape": [
+                192,
+                4096
+              ]
+            },
+            "head.score.bias.m": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.score.bias.v": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.score.weight.m": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.score.weight.v": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "learning_rate": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": []
+            },
+            "step": {
+              "count": 1,
+              "dtype": "U64",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": []
+            }
+          }
+        },
+        "steps.jsonl": {
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/steps.jsonl",
+          "sha256": "b1e61019262e75817325e4d447d34ad0d6371a3b2861132c30a5898be8ffcf13",
+          "size_bytes": 535863
+        },
+        "summary.json": {
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/summary.json",
+          "sha256": "8123e9a80b9e8a9d21f49597a4d4de7e1831082df5c3de9b0e24d2b67e30192d",
+          "size_bytes": 214
+        }
+      },
+      "base_model_manifest": {
+        "path": "models/manifests/harrier-oss-v1-0.6b.json",
+        "sha256": "91b4e508f494a16fa74ca4544a77d0e9826e56d69ffce30d8024ce39834bdc80"
+      },
+      "best_dev": {
+        "exact_accuracy": 0.395,
+        "loss": 0.9483493425697088,
+        "n": 200
+      },
+      "best_epoch": 1,
+      "checkpoint_files": {
+        "config.json": {
+          "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+          "size_bytes": 1355
+        },
+        "model.safetensors": {
+          "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+          "size_bytes": 1192133232
+        },
+        "tokenizer.json": {
+          "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "size_bytes": 11423705
+        },
+        "tokenizer_config.json": {
+          "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+          "size_bytes": 5404
+        }
+      },
+      "comparison_caveat": {
+        "best_epoch_selected_by": "aggregate dev objective loss, not exact accuracy",
+        "difference_lora_minus_head_only": -0.17499999999999993,
+        "head_only_question_weighted_exact_accuracy": 0.57,
+        "lora_best_dev_overall_exact_accuracy": 0.395,
+        "lora_dev_per_type_exact_accuracy": "not saved; no inference run during audit"
+      },
+      "dev_accuracy_by_epoch": [
+        {
+          "accuracy": 0.395,
+          "epoch": 1,
+          "loss": 0.9483493425697088
+        },
+        {
+          "accuracy": 0.41,
+          "epoch": 2,
+          "loss": 0.9698144472762942
+        },
+        {
+          "accuracy": 0.415,
+          "epoch": 3,
+          "loss": 0.9719915977120399
+        }
+      ],
+      "epoch_history": [
+        {
+          "dev": {
+            "exact_accuracy": 0.395,
+            "loss": 0.9483493425697088,
+            "n": 200
+          },
+          "epoch": 1,
+          "steps": 460,
+          "train_loss": 0.690395373057412
+        },
+        {
+          "dev": {
+            "exact_accuracy": 0.41,
+            "loss": 0.9698144472762942,
+            "n": 200
+          },
+          "epoch": 2,
+          "steps": 920,
+          "train_loss": 0.6014260856191749
+        },
+        {
+          "dev": {
+            "exact_accuracy": 0.415,
+            "loss": 0.9719915977120399,
+            "n": 200
+          },
+          "epoch": 3,
+          "steps": 1380,
+          "train_loss": 0.5909883503640152
+        }
+      ],
+      "feature_exports": {
+        "clean300": {
+          "feature_jsonl_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/runs/multi-harrier/train-clean-300.features.jsonl",
+          "feature_jsonl_sha256": "29f2a7df1db1b298597db790203ca53e8c93102e94e7c4eaeded211b40858b84",
+          "input_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+          "manifest_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/runs/multi-harrier/train-clean-300.features.jsonl.manifest.json",
+          "manifest_sha256": "5c23de079518c3e149027d4e2b15a0bff14b585f91a71c7b9a5396383a38402b",
+          "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+          "profile_version": "2",
+          "text_version": "decengine-varied-pair-text-v2-generic-types",
+          "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a"
+        },
+        "multi120": {
+          "feature_jsonl_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/runs/multi-harrier/train-120.features.jsonl",
+          "feature_jsonl_sha256": "6b8db357097a06b4933cd186439dc494a6b5728aa5e097eb8324eb604190819e",
+          "input_sha256": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+          "manifest_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/runs/multi-harrier/train-120.features.jsonl.manifest.json",
+          "manifest_sha256": "f90085c994a0669db1a9e5db98172e6463edbba0504347b92d67dd9d89b4f983",
+          "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+          "profile_version": "2",
+          "text_version": "decengine-varied-pair-text-v2-generic-types",
+          "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a"
+        }
+      },
+      "grouped_split": {
+        "case_ids_disjoint": true,
+        "dev_case_id_set_sha256": "1ca0248e65034125a50a650c41931a6044efba5c33c649d5cc970ccb36a55fac",
+        "dev_case_ids": 120,
+        "dev_family_ids": 4,
+        "dev_family_set_sha256": "f494ffe5d58f0693e696a78377491c2360f15d0469f1c5066c23f56321b23f71",
+        "dev_questions": 200,
+        "family_ids_disjoint": true,
+        "train_case_id_set_sha256": "5145c3ac926f596936cad1556ddbd7b7a2e24ce9d5f05f71a88370f7af375bc5",
+        "train_case_ids": 300,
+        "train_family_ids": 11,
+        "train_family_set_sha256": "0a68ecacce20eb7e4062d9a6219e4e6fdffe0909e04cf61766224ac103b51419",
+        "train_questions": 460
+      },
+      "head_only_baseline_same_split": {
+        "baseline": "explicit_cached_embedding_pairwise_linear_C1",
+        "dev_n": 200,
+        "macro_accuracy_by_type": 0.6211111111111111,
+        "per_type": {
+          "choice": {
+            "accuracy": 0.38,
+            "cross_entropy": 2.205921680536738,
+            "n": 100
+          },
+          "noul": {
+            "accuracy": 0.8333333333333334,
+            "cross_entropy": 0.3167040288589845,
+            "n": 60
+          },
+          "score": {
+            "accuracy": 0.65,
+            "cross_entropy": 1.063134587596792,
+            "n": 40,
+            "normalized_rubric_expected_value_mae": 0.18555737654773768
+          }
+        },
+        "question_weighted_exact_accuracy": 0.57,
+        "scope": "head-only comparator; cached embeddings are not used by LoRA training",
+        "split": "same grouped train/dev",
+        "training_n": 460
+      },
+      "learned_lora_tensors_nonzero": true,
+      "model_id": "microsoft/harrier-oss-v1-0.6b",
+      "optimizer_step_and_moments_present": true,
+      "per_type_lora_dev_metrics": "not saved; no model inference performed during audit",
+      "resource": {
+        "absolute_cap_bytes": 8589934592,
+        "device": "Apple M4 Pro",
+        "early_stop_bytes": 6442450944,
+        "host_memory_bytes": 25769803776,
+        "memory_samples": 1384,
+        "mlx_active_peak_bytes": 1208081552,
+        "mlx_allocator_peak_bytes": 2076421280,
+        "process_current_max_bytes": 1838483112,
+        "process_peak_bytes": 5379278480,
+        "process_peak_gib": 5.009843483567238,
+        "swap_baseline_bytes": 1121189888,
+        "swap_end_bytes": 1121189888,
+        "swap_max_bytes": 1121189888,
+        "swap_min_bytes": 1121189888
+      },
+      "resume_schema": {
+        "latest_checkpoint": {
+          "completed_epoch": 3,
+          "global_step": 1380,
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/latest.safetensors",
+          "sha256": "c4fb8cebeeaa73a983ad6f9ba99e3b3659f94dbd88c7c167b5317934ec5d76d5"
+        },
+        "optimizer_checkpoint": {
+          "has_adam_first_and_second_moments": true,
+          "path": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/optimizer.safetensors",
+          "sha256": "2bf67de53e85aa736410864551b8c43f6e4d7b80e798c9ee85633140673dfb94",
+          "step": 1380,
+          "tensor_count": 26
+        },
+        "restore_contract": "trainer --resume requires exact config.json match; model.load_weights(latest.safetensors), tree_unflatten(optimizer.safetensors), then starts next epoch; no model was instantiated in this audit"
+      },
+      "resume_state": "latest.safetensors + optimizer.safetensors committed at epoch 3 / step 1380; config exact-source check required to resume",
+      "run_config_sha256": "7088d7e77e374343240ae09e3b29068c8d7fdb9cb28077e1a48ee357889cea23",
+      "run_dir": "results/probes/varied/lora/runs/harrier-local-lowmem-v2",
+      "run_source_hashes": {
+        "adapter": "58614beb9551fd30c1458c68313e27ccf0b926b5522b620c6d2a3e24878e4edd",
+        "checkpoint": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+        "clean": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+        "clean_feature_text_source": "29f2a7df1db1b298597db790203ca53e8c93102e94e7c4eaeded211b40858b84",
+        "multi_feature_text_source": "6b8db357097a06b4933cd186439dc494a6b5728aa5e097eb8324eb604190819e",
+        "multi_train": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50"
+      },
+      "selected_weight_hashes": {
+        "best.safetensors": "d6c240bc4860cd73b9d74b0e25a6bd9643936e74bd24271746ccbdf5bcd2ab1e",
+        "latest.safetensors": "c4fb8cebeeaa73a983ad6f9ba99e3b3659f94dbd88c7c167b5317934ec5d76d5",
+        "optimizer.safetensors": "2bf67de53e85aa736410864551b8c43f6e4d7b80e798c9ee85633140673dfb94"
+      },
+      "selection_rule": "minimum aggregate mean objective loss on the same grouped 200-question dev split; no hyperparameter sweep",
+      "status": "train_dev_complete",
+      "step_metrics": {
+        "all_1380_steps_have_finite_nonzero_lora_gradient": true,
+        "count": 1380,
+        "first_loss": 1.3871691226959229,
+        "first_loss_after_update": 1.3607103824615479,
+        "last_loss": 0.37618952989578247,
+        "lora_gradient_norm_max": 4.284001057772251,
+        "lora_gradient_norm_min": 0.00011965654474914492
+      },
+      "text_profile": {
+        "compiled_train_text_sha256": "ee105d64a5141391c4b83030bbf4bc82e70dfcb987c67af2759a8cae3825aca6",
+        "lora_input_policy": "profile-compiled train query/candidate text only; cached feature vectors stripped before LoRA input; embeddings are used only by the explicit head-only comparator.",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "profile_version": "2",
+        "text_count": 660,
+        "text_version": "decengine-varied-pair-text-v2-generic-types",
+        "token_count_distribution": {
+          "guard": 288,
+          "max": 266,
+          "min": 9,
+          "n": 2788,
+          "overflow": "reject; no truncation",
+          "p50": 24.0,
+          "p90": 167.0,
+          "p95": 179.0,
+          "p99": 257.0
+        }
+      },
+      "trainer_sha256": "24cf1e2808e4f22fa043a0c83d8fa693e5e1cced77aadcad496e6735257a7564"
+    },
+    "qwen": {
+      "adapter_sha256": "58614beb9551fd30c1458c68313e27ccf0b926b5522b620c6d2a3e24878e4edd",
+      "artifacts": {
+        "best.json": {
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/best.json",
+          "sha256": "67dd9966ef238ee6ef453676c16c1d0c231e0c19b6619a23ae135921e9a47905",
+          "size_bytes": 143
+        },
+        "best.safetensors": {
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/best.safetensors",
+          "sha256": "092f809f33c18921daa8460b68a6eb93174586c1ba8ebe742a1aaa528d11d9ca",
+          "size_bytes": 3190876,
+          "tensors": {
+            "backbone.model.layers.27.self_attn.q_proj.lora_a": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.q_proj.lora_b": {
+              "count": 4096,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 4096,
+              "shape": [
+                2048,
+                2
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_a": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_b": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                1024,
+                2
+              ]
+            },
+            "head.choice.bias": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.choice.weight": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.noul.bias": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.noul.weight": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.proj.bias": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                192
+              ]
+            },
+            "head.proj.weight": {
+              "count": 786432,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 786432,
+              "shape": [
+                192,
+                4096
+              ]
+            },
+            "head.score.bias": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.score.weight": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            }
+          }
+        },
+        "config.json": {
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/config.json",
+          "sha256": "649bc8842bf9f95a32003b152463e2aac731676dfe8039cc9a238db93568a9a6",
+          "size_bytes": 16769
+        },
+        "epochs.jsonl": {
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/epochs.jsonl",
+          "sha256": "667bf2c8e5377772653ef085f96525ae8600ed600ae2e7c6d273963bbe77888e",
+          "size_bytes": 400
+        },
+        "head-only-baseline.json": {
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/head-only-baseline.json",
+          "sha256": "365923afadf22b1bedd0ab4af7a930754024a69f2f1942a769c3874aa39cef19",
+          "size_bytes": 667
+        },
+        "latest.json": {
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/latest.json",
+          "sha256": "d745922d6d173e3815f5a00f585909457bd3b959a7ebbf14c5010b34a5ffae53",
+          "size_bytes": 43
+        },
+        "latest.safetensors": {
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/latest.safetensors",
+          "sha256": "0f9350ad3017bc224ffc1091afe74937bdb6ee725bc2433b1e70f5e783e44718",
+          "size_bytes": 3190876,
+          "tensors": {
+            "backbone.model.layers.27.self_attn.q_proj.lora_a": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.q_proj.lora_b": {
+              "count": 4096,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 4096,
+              "shape": [
+                2048,
+                2
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_a": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_b": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                1024,
+                2
+              ]
+            },
+            "head.choice.bias": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.choice.weight": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.noul.bias": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.noul.weight": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.proj.bias": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                192
+              ]
+            },
+            "head.proj.weight": {
+              "count": 786432,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 786432,
+              "shape": [
+                192,
+                4096
+              ]
+            },
+            "head.score.bias": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.score.weight": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            }
+          }
+        },
+        "memory.jsonl": {
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/memory.jsonl",
+          "sha256": "e78260c466dbbede73dfa76b96c91daf14f14c3c7330afd0378ed30ea22ab054",
+          "size_bytes": 536291
+        },
+        "optimizer.safetensors": {
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/optimizer.safetensors",
+          "sha256": "5510163f018f8a8fa27deac0d2c06fe66acac810897fe37fa602f3d29d78f9c4",
+          "size_bytes": 6381928,
+          "tensors": {
+            "backbone.model.layers.27.self_attn.q_proj.lora_a.m": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.q_proj.lora_a.v": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.q_proj.lora_b.m": {
+              "count": 4096,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 4096,
+              "shape": [
+                2048,
+                2
+              ]
+            },
+            "backbone.model.layers.27.self_attn.q_proj.lora_b.v": {
+              "count": 4096,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 4096,
+              "shape": [
+                2048,
+                2
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_a.m": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_a.v": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                2,
+                1024
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_b.m": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                1024,
+                2
+              ]
+            },
+            "backbone.model.layers.27.self_attn.v_proj.lora_b.v": {
+              "count": 2048,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 2048,
+              "shape": [
+                1024,
+                2
+              ]
+            },
+            "head.choice.bias.m": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.choice.bias.v": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.choice.weight.m": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.choice.weight.v": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.noul.bias.m": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.noul.bias.v": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.noul.weight.m": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.noul.weight.v": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.proj.bias.m": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                192
+              ]
+            },
+            "head.proj.bias.v": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                192
+              ]
+            },
+            "head.proj.weight.m": {
+              "count": 786432,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 786431,
+              "shape": [
+                192,
+                4096
+              ]
+            },
+            "head.proj.weight.v": {
+              "count": 786432,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 786432,
+              "shape": [
+                192,
+                4096
+              ]
+            },
+            "head.score.bias.m": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.score.bias.v": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": [
+                1
+              ]
+            },
+            "head.score.weight.m": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "head.score.weight.v": {
+              "count": 192,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 192,
+              "shape": [
+                1,
+                192
+              ]
+            },
+            "learning_rate": {
+              "count": 1,
+              "dtype": "F32",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": []
+            },
+            "step": {
+              "count": 1,
+              "dtype": "U64",
+              "finite": true,
+              "nonzero_count": 1,
+              "shape": []
+            }
+          }
+        },
+        "steps.jsonl": {
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/steps.jsonl",
+          "sha256": "d9276e58adfcf1b8f54733d9630531e804c8c7ede2a862ee9480499153fcbab8",
+          "size_bytes": 536053
+        },
+        "summary.json": {
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/summary.json",
+          "sha256": "a2ec618d00485033ec52200f8e5a5b86243e4405bdc14e91313355fa7ef9cf2c",
+          "size_bytes": 210
+        }
+      },
+      "base_model_manifest": {
+        "path": "models/manifests/qwen3-embedding-0.6b.json",
+        "sha256": "2d77cfc9ff671884683718a42407fbe7d7e8bd7fb649efe5ca838e7a387b3033"
+      },
+      "best_dev": {
+        "exact_accuracy": 0.385,
+        "loss": 0.9594359870254994,
+        "n": 200
+      },
+      "best_epoch": 1,
+      "checkpoint_files": {
+        "config.json": {
+          "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+          "size_bytes": 727
+        },
+        "model.safetensors": {
+          "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+          "size_bytes": 1191586416
+        },
+        "tokenizer.json": {
+          "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "size_bytes": 11423705
+        },
+        "tokenizer_config.json": {
+          "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+          "size_bytes": 9706
+        }
+      },
+      "comparison_caveat": {
+        "best_epoch_selected_by": "aggregate dev objective loss, not exact accuracy",
+        "difference_lora_minus_head_only": -0.09499999999999997,
+        "head_only_question_weighted_exact_accuracy": 0.48,
+        "lora_best_dev_overall_exact_accuracy": 0.385,
+        "lora_dev_per_type_exact_accuracy": "not saved; no inference run during audit"
+      },
+      "dev_accuracy_by_epoch": [
+        {
+          "accuracy": 0.385,
+          "epoch": 1,
+          "loss": 0.9594359870254994
+        },
+        {
+          "accuracy": 0.415,
+          "epoch": 2,
+          "loss": 1.0042646253108978
+        },
+        {
+          "accuracy": 0.445,
+          "epoch": 3,
+          "loss": 1.0134622272849083
+        }
+      ],
+      "epoch_history": [
+        {
+          "dev": {
+            "exact_accuracy": 0.385,
+            "loss": 0.9594359870254994,
+            "n": 200
+          },
+          "epoch": 1,
+          "steps": 460,
+          "train_loss": 0.6872833994095741
+        },
+        {
+          "dev": {
+            "exact_accuracy": 0.415,
+            "loss": 1.0042646253108978,
+            "n": 200
+          },
+          "epoch": 2,
+          "steps": 920,
+          "train_loss": 0.6029635652373342
+        },
+        {
+          "dev": {
+            "exact_accuracy": 0.445,
+            "loss": 1.0134622272849083,
+            "n": 200
+          },
+          "epoch": 3,
+          "steps": 1380,
+          "train_loss": 0.6120317771059015
+        }
+      ],
+      "feature_exports": {
+        "clean300": {
+          "feature_jsonl_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/runs/multi-qwen/train-clean-300.features.jsonl",
+          "feature_jsonl_sha256": "844944b2028ce1cfe434b6a523316e39562e829277bb5c511aca28178151e069",
+          "input_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+          "manifest_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/runs/multi-qwen/train-clean-300.features.jsonl.manifest.json",
+          "manifest_sha256": "a7438e125ef024d3c28ae35e8b34d39974b9e827f4e224b786d7bc8fc29693fe",
+          "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+          "profile_version": "1",
+          "text_version": "decengine-varied-pair-text-v2-generic-types",
+          "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a"
+        },
+        "multi120": {
+          "feature_jsonl_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/runs/multi-qwen/train-120.features.jsonl",
+          "feature_jsonl_sha256": "41af828d6b883f7d1987064ec5b8d0b52463d1de824c4be50c54f20d88b2a058",
+          "input_sha256": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+          "manifest_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/runs/multi-qwen/train-120.features.jsonl.manifest.json",
+          "manifest_sha256": "85b635315ef6896d0411727156089645f14ba02833291c306a4923060073a2c1",
+          "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+          "profile_version": "1",
+          "text_version": "decengine-varied-pair-text-v2-generic-types",
+          "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a"
+        }
+      },
+      "grouped_split": {
+        "case_ids_disjoint": true,
+        "dev_case_id_set_sha256": "1ca0248e65034125a50a650c41931a6044efba5c33c649d5cc970ccb36a55fac",
+        "dev_case_ids": 120,
+        "dev_family_ids": 4,
+        "dev_family_set_sha256": "f494ffe5d58f0693e696a78377491c2360f15d0469f1c5066c23f56321b23f71",
+        "dev_questions": 200,
+        "family_ids_disjoint": true,
+        "train_case_id_set_sha256": "5145c3ac926f596936cad1556ddbd7b7a2e24ce9d5f05f71a88370f7af375bc5",
+        "train_case_ids": 300,
+        "train_family_ids": 11,
+        "train_family_set_sha256": "0a68ecacce20eb7e4062d9a6219e4e6fdffe0909e04cf61766224ac103b51419",
+        "train_questions": 460
+      },
+      "head_only_baseline_same_split": {
+        "baseline": "explicit_cached_embedding_pairwise_linear_C1",
+        "dev_n": 200,
+        "macro_accuracy_by_type": 0.5316666666666667,
+        "per_type": {
+          "choice": {
+            "accuracy": 0.27,
+            "cross_entropy": 2.697777177220209,
+            "n": 100
+          },
+          "noul": {
+            "accuracy": 0.8,
+            "cross_entropy": 0.6250483333552239,
+            "n": 60
+          },
+          "score": {
+            "accuracy": 0.525,
+            "cross_entropy": 1.6820095522466545,
+            "n": 40,
+            "normalized_rubric_expected_value_mae": 0.24425351265173142
+          }
+        },
+        "question_weighted_exact_accuracy": 0.48,
+        "scope": "head-only comparator; cached embeddings are not used by LoRA training",
+        "split": "same grouped train/dev",
+        "training_n": 460
+      },
+      "learned_lora_tensors_nonzero": true,
+      "model_id": "Qwen/Qwen3-Embedding-0.6B",
+      "optimizer_step_and_moments_present": true,
+      "per_type_lora_dev_metrics": "not saved; no model inference performed during audit",
+      "resource": {
+        "absolute_cap_bytes": 8589934592,
+        "device": "Apple M4 Pro",
+        "early_stop_bytes": 6442450944,
+        "host_memory_bytes": 25769803776,
+        "memory_samples": 1384,
+        "mlx_active_peak_bytes": 1207540880,
+        "mlx_allocator_peak_bytes": 2075880608,
+        "process_current_max_bytes": 1838499520,
+        "process_peak_bytes": 5375329984,
+        "process_peak_gib": 5.006166160106659,
+        "swap_baseline_bytes": 1121189888,
+        "swap_end_bytes": 1121189888,
+        "swap_max_bytes": 1121189888,
+        "swap_min_bytes": 1121189888
+      },
+      "resume_schema": {
+        "latest_checkpoint": {
+          "completed_epoch": 3,
+          "global_step": 1380,
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/latest.safetensors",
+          "sha256": "0f9350ad3017bc224ffc1091afe74937bdb6ee725bc2433b1e70f5e783e44718"
+        },
+        "optimizer_checkpoint": {
+          "has_adam_first_and_second_moments": true,
+          "path": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/optimizer.safetensors",
+          "sha256": "5510163f018f8a8fa27deac0d2c06fe66acac810897fe37fa602f3d29d78f9c4",
+          "step": 1380,
+          "tensor_count": 26
+        },
+        "restore_contract": "trainer --resume requires exact config.json match; model.load_weights(latest.safetensors), tree_unflatten(optimizer.safetensors), then starts next epoch; no model was instantiated in this audit"
+      },
+      "resume_state": "latest.safetensors + optimizer.safetensors committed at epoch 3 / step 1380; config exact-source check required to resume",
+      "run_config_sha256": "649bc8842bf9f95a32003b152463e2aac731676dfe8039cc9a238db93568a9a6",
+      "run_dir": "results/probes/varied/lora/runs/qwen-local-lowmem-v2",
+      "run_source_hashes": {
+        "adapter": "58614beb9551fd30c1458c68313e27ccf0b926b5522b620c6d2a3e24878e4edd",
+        "checkpoint": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+        "clean": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+        "clean_feature_text_source": "844944b2028ce1cfe434b6a523316e39562e829277bb5c511aca28178151e069",
+        "multi_feature_text_source": "41af828d6b883f7d1987064ec5b8d0b52463d1de824c4be50c54f20d88b2a058",
+        "multi_train": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50"
+      },
+      "selected_weight_hashes": {
+        "best.safetensors": "092f809f33c18921daa8460b68a6eb93174586c1ba8ebe742a1aaa528d11d9ca",
+        "latest.safetensors": "0f9350ad3017bc224ffc1091afe74937bdb6ee725bc2433b1e70f5e783e44718",
+        "optimizer.safetensors": "5510163f018f8a8fa27deac0d2c06fe66acac810897fe37fa602f3d29d78f9c4"
+      },
+      "selection_rule": "minimum aggregate mean objective loss on the same grouped 200-question dev split; no hyperparameter sweep",
+      "status": "train_dev_complete",
+      "step_metrics": {
+        "all_1380_steps_have_finite_nonzero_lora_gradient": true,
+        "count": 1380,
+        "first_loss": 1.3830037117004395,
+        "first_loss_after_update": 1.3539799451828003,
+        "last_loss": 0.3846951723098755,
+        "lora_gradient_norm_max": 5.63092974599953,
+        "lora_gradient_norm_min": 0.00033898071635886314
+      },
+      "text_profile": {
+        "compiled_train_text_sha256": "f54a1e27bfbd70cc48f2ea087cefa02eee4491ff11350fdf00b389b8f19b1c58",
+        "lora_input_policy": "profile-compiled train query/candidate text only; cached feature vectors stripped before LoRA input; embeddings are used only by the explicit head-only comparator.",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "profile_version": "1",
+        "text_count": 660,
+        "text_version": "decengine-varied-pair-text-v2-generic-types",
+        "token_count_distribution": {
+          "guard": 288,
+          "max": 266,
+          "min": 9,
+          "n": 2788,
+          "overflow": "reject; no truncation",
+          "p50": 24.0,
+          "p90": 167.0,
+          "p95": 179.0,
+          "p99": 257.0
+        }
+      },
+      "trainer_sha256": "24cf1e2808e4f22fa043a0c83d8fa693e5e1cced77aadcad496e6735257a7564"
+    }
+  },
+  "schema_version": 1,
+  "scope": "train/dev only; no heldout/test labels, predictions, or hashes accessed",
+  "shared": {
+    "code_sha256": {
+      "results/probes/varied/lora/checkpoint_adapter.py": "58614beb9551fd30c1458c68313e27ccf0b926b5522b620c6d2a3e24878e4edd",
+      "results/probes/varied/lora/train.py": "24cf1e2808e4f22fa043a0c83d8fa693e5e1cced77aadcad496e6735257a7564",
+      "results/probes/varied/multi_train_pairwise.py": "09799416fc2678be2511549637dd6176867de172e7d8433e9312baa757ee6a5d",
+      "results/probes/varied/train_pairwise.py": "fd8702c5684d8f8c81433400ccb48909e1ab01522e1a50d9c2c0530edf906097"
+    },
+    "evaluator_handoff": {
+      "baseline_coefficients_status": "not saved by training; per-type metrics only. Separate agent must fit/freeze same-C1 head on exact 460 train questions and hash it before fresh60 inference.",
+      "best_checkpoint_sha256": {
+        "harrier": "d6c240bc4860cd73b9d74b0e25a6bd9643936e74bd24271746ccbdf5bcd2ab1e",
+        "qwen": "092f809f33c18921daa8460b68a6eb93174586c1ba8ebe742a1aaa528d11d9ca"
+      },
+      "freeze_then_evaluate": [
+        "freeze run config, best checkpoint hashes, prompts/profiles, candidate ordering, evaluator code hashes and all system revisions before opening references",
+        "generate predictions for all systems on the same 60 cases",
+        "hash and freeze prediction JSONL per system before opening test references",
+        "only then score per-type accuracy, macro accuracy, score normalized-rubric MAE, and all-questions-correct case count"
+      ],
+      "frozen_baseline_protocol": "Fit same C=1.0 head-only scorer using only the exact 460-question training subset; persist/hash coefficients before opening fresh60. Do not use the historical 660-question frozen probe as an equivalent same-split baseline.",
+      "known_blocker": "The same-split head-only baseline JSON stores dev metrics only, not coefficients. A separate evaluator must fit and hash the C=1 baseline coefficients on the frozen 460 train subset before evaluating, never on the sealed 60.",
+      "label_access_protocol": "No references/targets/rationales in prediction phase. Hash/freeze every system output and evaluator code before opening fresh60 references for scoring.",
+      "prediction_files": {
+        "final_report": "report.md",
+        "harrier_frozen_baseline": "harrier-frozen-baseline.jsonl",
+        "harrier_lora": "harrier-lora.jsonl",
+        "jev": "jev.jsonl",
+        "laya": "laya.jsonl",
+        "qwen_frozen_baseline": "qwen-frozen-baseline.jsonl",
+        "qwen_lora": "qwen-lora.jsonl",
+        "scored_summary": "scores.json"
+      },
+      "prediction_output_dir": "results/probes/varied/lora/eval/fresh60/predictions/",
+      "prediction_schema": {
+        "must_not_include_before_freeze": [
+          "reference",
+          "target",
+          "rationale",
+          "gold_label"
+        ],
+        "required_fields": [
+          "system_id",
+          "id",
+          "question_name",
+          "question_type",
+          "status",
+          "candidate_keys",
+          "probabilities",
+          "selected",
+          "expected_value",
+          "run_config_sha256",
+          "model_or_adapter_sha256"
+        ]
+      },
+      "required_prediction_count": 180,
+      "same_input_for_all_systems": "benchmarks/cases/varied/multi/test-lora-fresh-60.jsonl",
+      "selected_adapter_paths": {
+        "harrier": "results/probes/varied/lora/runs/harrier-local-lowmem-v2/best.safetensors",
+        "qwen": "results/probes/varied/lora/runs/qwen-local-lowmem-v2/best.safetensors"
+      },
+      "systems": [
+        "Qwen LoRA best epoch 1",
+        "Harrier LoRA best epoch 1",
+        "frozen Qwen baseline",
+        "frozen Harrier baseline",
+        "Laya",
+        "JEV"
+      ]
+    },
+    "holdout": {
+      "expected_case_count": 60,
+      "expected_named_question_count": 180,
+      "hash_read": false,
+      "labels_read": false,
+      "path": "benchmarks/cases/varied/multi/test-lora-fresh-60.jsonl",
+      "predictions_read": false,
+      "status": "SEALED_NOT_ACCESSED"
+    },
+    "runtime_versions": {
+      "mlx": "0.29.3",
+      "mlx_lm": "0.29.1",
+      "numpy": "2.0.2",
+      "python": "3.9.6",
+      "tokenizers": "0.22.2"
+    },
+    "selection_caveat": "This LoRA run fitted 460 of 660 questions and selected epoch by a grouped 200-question dev set. Historical frozen embedding probes used/OOF-scored all 660 questions; their metrics are not directly comparable.",
+    "selection_note": "The frozen epoch is the min aggregate dev objective-loss epoch. Exact dev accuracy is lower there than the C=1 head-only weighted exact accuracy on this same split; this is a train/dev result only and should be disclosed to the orchestrator before any holdout opening.",
+    "training_fixtures": {
+      "clean300": {
+        "path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300.jsonl",
+        "sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a"
+      },
+      "multi_train120": {
+        "path": "benchmarks/cases/varied/multi/train-120.jsonl",
+        "sha256": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50"
+      }
+    }
+  },
+  "status": "TRAIN_DEV_SELECTION_FROZEN"
+}

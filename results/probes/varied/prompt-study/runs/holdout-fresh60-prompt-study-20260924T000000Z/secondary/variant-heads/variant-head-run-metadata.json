@@ -1,0 +1,624 @@
+{
+  "status": "secondary per-variant heads frozen before secondary target scoring",
+  "scope": "pre-existing train-only scorer bundles only; no refit",
+  "fixture_sha256": "316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f",
+  "primary_pre_reference_freeze_sha256": "a420edc7a85ced72c055ec59a82ab5b7658a26326757cce4132875ceb6ef32a0",
+  "primary_prompt_only_report_sha256": "7d33e28158e82fac4b49740dc0c4486901ee906d07a23b6fb8250590ebc244d2",
+  "first_reference_score_file_mtime_utc": "2026-09-23T16:53:03.212262+00:00",
+  "models": {
+    "qwen": {
+      "model_id": "Qwen/Qwen3-Embedding-0.6B",
+      "variants": {
+        "v2-baseline": {
+          "head_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/qwen/v2-baseline.json",
+          "sha256": "5b7260f04f0b66784504b09526447b30a9f020a554abf611c57eb971f9fabd79",
+          "sidecar_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/qwen/v2-baseline.sha256",
+          "C": 1.0,
+          "mtime_utc": "2026-09-23T16:46:56.073937+00:00",
+          "sidecar_mtime_utc": "2026-09-23T16:46:56.074832+00:00",
+          "precedes_first_reference_score": true,
+          "baseline_bit_exact_to_selected_frozen_head": true,
+          "provenance": {
+            "models_sha256": "ce4873347a6fd0de6df98f9becc2f045d27af0308c189186a8dd73d4a89b27af",
+            "multi_features_sha256": "41af828d6b883f7d1987064ec5b8d0b52463d1de824c4be50c54f20d88b2a058",
+            "multi_manifest_sha256": "8ec059d16f905271f0244c779b2935ac0a21f19c9cbe4617c5992ca7c224c726",
+            "multi_train_case_sha256": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+            "optimizer_protocol": "train_cv.fit_variant baseline/per_type deterministic bounded L-BFGS, fixed C from that variant's frozen train-only CV config",
+            "optimizer_script_sha256": "742fd95473f26781a50b7df972b414f8574727d310294c3d8307e848cfb11528",
+            "selection_sha256": "b528c6dc71cad42b623d1e15bfbc758b7be0f91682aba811cf91adb2d2c9c386",
+            "single_features_sha256": "844944b2028ce1cfe434b6a523316e39562e829277bb5c511aca28178151e069",
+            "single_manifest_sha256": "dd4ee2e8b5fe23f44328f99600f5211e4542fa09d6b2022fc914b69fade9c2aa",
+            "train_case_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+            "variant_cv_config_sha256": "8148d2cf797608f9c5bfdea30b469ae9aecbf4cbcd91bd2b890da5e1011606b4"
+          },
+          "normalization_and_weights": {
+            "choice": {
+              "mean_sha256": "cb06c84c386ced730ec7c924fb07379338efb67be08687822edb4f5513387b2f",
+              "scale_sha256": "8f74543df2a3ec2f87a97b25343de3ba59fe3c56ed34ed7fa46b0e77c51b1a4c",
+              "weights_sha256": "9f0cc58d977350190da70286417a4dc5584cbfd7bc2cb8fbcfebe7e254eed6e9",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 1.0,
+                "expanded_case_count": 240,
+                "iterations": 145,
+                "relative_gradient_norm": 0.0008384205138505922
+              }
+            },
+            "noul": {
+              "mean_sha256": "3a11d6e43cee1c7bbbc6fa9ca1960d1874a6c731457659bd270593a810085951",
+              "scale_sha256": "0d54e61f2509c69611cf94356becee866b7f64009eea13623faeba4656aa0727",
+              "weights_sha256": "de6ee8119b46e418e6290e6824a377f99e3faf7893b118363a7fa30120d6adbe",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 1.0,
+                "expanded_case_count": 220,
+                "iterations": 79,
+                "relative_gradient_norm": 0.0006682947091019812
+              }
+            },
+            "score": {
+              "mean_sha256": "1400dadb639f9cc87eaa9e6c40d24d33438d2102d1da842ce5ca5033e15bdd83",
+              "scale_sha256": "9521450e634ce2ddbfd7dbabf2a72aff9c7dcd7a7ede4f8d4ce1370690a69997",
+              "weights_sha256": "ce70dd69e1e05a054e80e88782e3b02817812d236cc00531f447bc9618d0d8e4",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 1.0,
+                "expanded_case_count": 200,
+                "iterations": 181,
+                "relative_gradient_norm": 0.0008881476981245575
+              }
+            }
+          },
+          "feature_sha256": "c90d772b30297b1531dd4c1b914697e14c7121cee886546d13517267945dc748",
+          "feature_manifest_sha256": "4c1aa7348b609cb2f0c3d5ba6e38e4d9195fb0d8b1500a40d4f93aef1ca9d334",
+          "embedding_calls_reused": 750,
+          "query_plus_candidate_tokens_reused": 69829,
+          "permutation_checked": 180,
+          "noul_polarity_checked": 60,
+          "prediction_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/qwen/v2-baseline.jsonl",
+          "predictions_sha256": "cf7143d61654bcee021562843498d542dd6efdfff0c7cd702f3486c4b904b200",
+          "prediction_count": 60
+        },
+        "readable-state": {
+          "head_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/qwen/readable-state.json",
+          "sha256": "b3d19ab873b2ffa90a4f8af63833a3b3195e1d17a8976a107021aafa259e8436",
+          "sidecar_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/qwen/readable-state.sha256",
+          "C": 1.0,
+          "mtime_utc": "2026-09-23T16:46:57.087278+00:00",
+          "sidecar_mtime_utc": "2026-09-23T16:46:57.088172+00:00",
+          "precedes_first_reference_score": true,
+          "baseline_bit_exact_to_selected_frozen_head": false,
+          "provenance": {
+            "models_sha256": "ce4873347a6fd0de6df98f9becc2f045d27af0308c189186a8dd73d4a89b27af",
+            "multi_features_sha256": "5d2896203272faf46076d440fbf5d1513be2c3f954af8f996c15b2840ddc0910",
+            "multi_manifest_sha256": "31fe6058e4773f05cfa34131b02ce9f7e443f9dac9f9efc828aafa1e6ed02735",
+            "multi_train_case_sha256": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+            "optimizer_protocol": "train_cv.fit_variant baseline/per_type deterministic bounded L-BFGS, fixed C from that variant's frozen train-only CV config",
+            "optimizer_script_sha256": "742fd95473f26781a50b7df972b414f8574727d310294c3d8307e848cfb11528",
+            "selection_sha256": "b528c6dc71cad42b623d1e15bfbc758b7be0f91682aba811cf91adb2d2c9c386",
+            "single_features_sha256": "715e166816ddfc8bbfca4a20c4588101c3ce5846e566e8d78aa0fae7ff72eb2f",
+            "single_manifest_sha256": "c40fc156ab37b9e15445c0f1bf2e8942188e102d553e651bfda3e7cd0fe570db",
+            "train_case_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+            "variant_cv_config_sha256": "f4dba8e10c050c5788c29c7125c9820928f9e11bf0cb8326e1e881f82c826c5f"
+          },
+          "normalization_and_weights": {
+            "choice": {
+              "mean_sha256": "f9a4aa72d7e820f952b3f8c8405b7618c6798915b15c956fc9ad8f0bf98e8a77",
+              "scale_sha256": "bb39f35f825fb4f59a7ccdba373284ce61608b2038de309d129b0e9f2c655967",
+              "weights_sha256": "720fa1267d610be3a2b7d88c086bf527c06c49dce849a5fb456f66aeabe181a5",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 1.0,
+                "expanded_case_count": 240,
+                "iterations": 121,
+                "relative_gradient_norm": 0.0009399594035790986
+              }
+            },
+            "noul": {
+              "mean_sha256": "a030ae92a56f2513cd6199cbf6ee9335dd1198cc157db8679dbcc2e1d6e3ead2",
+              "scale_sha256": "2866415fe628b0f31fdf7c38484c05a3a154b8880c516e9b820b52921294e39f",
+              "weights_sha256": "ec8d808df8e9584cc9f21a374dee53ee28067f865d59a6ddc61f7de5578f69c7",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 1.0,
+                "expanded_case_count": 220,
+                "iterations": 64,
+                "relative_gradient_norm": 0.0009644131430552055
+              }
+            },
+            "score": {
+              "mean_sha256": "c45b3323520e50cc8ebd89e04b8bf1b9038815fd3452c8c8873aec15d0308cc5",
+              "scale_sha256": "0461405dd7d3d25f21c31af5e7469310db26c822233e50b327ddc0fbcba90dcc",
+              "weights_sha256": "150b4c1ffc19f65de24ee354c9f0e5f2bf915eeecb5d389aca7ad82e40738515",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 1.0,
+                "expanded_case_count": 200,
+                "iterations": 173,
+                "relative_gradient_norm": 0.0008544477989193279
+              }
+            }
+          },
+          "feature_sha256": "85b4684a07ad105f1731fe86651c9b550761a625c4e6f70c04fc9fedd0a75891",
+          "feature_manifest_sha256": "5b441b7845943006ceffab632ee58cb8f6a57928350d9a39706779a96b6869ff",
+          "embedding_calls_reused": 750,
+          "query_plus_candidate_tokens_reused": 71089,
+          "permutation_checked": 180,
+          "noul_polarity_checked": 60,
+          "prediction_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/qwen/readable-state.jsonl",
+          "predictions_sha256": "7557d2dcf7a8b98513c17911d6166036636814dae223715337c9173a61d1814c",
+          "prediction_count": 60
+        },
+        "rule-in-candidate": {
+          "head_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/qwen/rule-in-candidate.json",
+          "sha256": "62a8f7f663465f082231c885de0e6fc439d734901bc51e90aafe23eb4685f9ca",
+          "sidecar_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/qwen/rule-in-candidate.sha256",
+          "C": 0.01,
+          "mtime_utc": "2026-09-23T16:46:57.845801+00:00",
+          "sidecar_mtime_utc": "2026-09-23T16:46:57.846750+00:00",
+          "precedes_first_reference_score": true,
+          "baseline_bit_exact_to_selected_frozen_head": false,
+          "provenance": {
+            "models_sha256": "ce4873347a6fd0de6df98f9becc2f045d27af0308c189186a8dd73d4a89b27af",
+            "multi_features_sha256": "0cf183919159b12753088f31edbe8e99635edb9b0cff6626f32ffa7220cab594",
+            "multi_manifest_sha256": "468fff642137145e806a37739534732e1b6fe97b454234d75c5cd771c9b21194",
+            "multi_train_case_sha256": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+            "optimizer_protocol": "train_cv.fit_variant baseline/per_type deterministic bounded L-BFGS, fixed C from that variant's frozen train-only CV config",
+            "optimizer_script_sha256": "742fd95473f26781a50b7df972b414f8574727d310294c3d8307e848cfb11528",
+            "selection_sha256": "b528c6dc71cad42b623d1e15bfbc758b7be0f91682aba811cf91adb2d2c9c386",
+            "single_features_sha256": "a5c09da2edff64683c29b46015f2b24fad614ffc142b72fbe77700c73c915dda",
+            "single_manifest_sha256": "905afcf8c3e338354fd77ce51519af4cf7d5f3c44dee73dc6e2beb892cb9c562",
+            "train_case_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+            "variant_cv_config_sha256": "947fe6f62a798ac33e34d11fe7a8d6e33990f0d4a4020a0f960c03dd7673ba02"
+          },
+          "normalization_and_weights": {
+            "choice": {
+              "mean_sha256": "5798e0db33a9dafe2de913875eb106616da38dab5a4a756b3cb4b26061859fa7",
+              "scale_sha256": "350360e0c34d393e03859970c3d645ac5df345e07d40c4871912788d7f9692ee",
+              "weights_sha256": "3ddb9c3c14af9d327a2675cde235a9d4c3875773509011de3afeb295529f9d92",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.01,
+                "expanded_case_count": 240,
+                "iterations": 66,
+                "relative_gradient_norm": 0.0007292669781958594
+              }
+            },
+            "noul": {
+              "mean_sha256": "b8668c62840f02bbfcaef11ef72abbd7fe0885493ae5b69a8b94df274ff46320",
+              "scale_sha256": "eefa9e687db207377259fd390968932b226c85e848f61e832d93b44e6c94a244",
+              "weights_sha256": "5d4c39d172ef244dba5ef9992fb200baec6df95b6350c8345dcc24037e92c9ba",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.01,
+                "expanded_case_count": 220,
+                "iterations": 20,
+                "relative_gradient_norm": 0.0007201235284482179
+              }
+            },
+            "score": {
+              "mean_sha256": "2a9562a7bd31e5010d5b76867c4488d1195c161a018bdba6252dd2d463ec36b0",
+              "scale_sha256": "8bf4ea79b48df22de57f0e522221e19351c35184a9dcd5bee55ca24830449f88",
+              "weights_sha256": "b6f86bb5c930e815b4f9c1cdd24080cbe2959fa1ee20a9d640c4181edb90ef4e",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.01,
+                "expanded_case_count": 200,
+                "iterations": 77,
+                "relative_gradient_norm": 0.0007195907481482167
+              }
+            }
+          },
+          "feature_sha256": "7a0ca6bf05f462a92123e6aedb70282fbf4d39642fc45b03dd85505a28923ea6",
+          "feature_manifest_sha256": "68f022b17ec6be231c7cb33a3b105837572a2dc2007391f50f89ffb3ad0831a8",
+          "embedding_calls_reused": 750,
+          "query_plus_candidate_tokens_reused": 99908,
+          "permutation_checked": 180,
+          "noul_polarity_checked": 60,
+          "prediction_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/qwen/rule-in-candidate.jsonl",
+          "predictions_sha256": "b0c2e28f58de37dda7d13c27b6668dc0297b48657c11afad414f846c4d451394",
+          "prediction_count": 60
+        },
+        "joint-context-candidate": {
+          "head_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/qwen/joint-context-candidate.json",
+          "sha256": "35fa698c58583def77da4db762a9b2504ebb0adacd8bfa63471128eed23daa54",
+          "sidecar_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/qwen/joint-context-candidate.sha256",
+          "C": 0.01,
+          "mtime_utc": "2026-09-23T16:46:58.596414+00:00",
+          "sidecar_mtime_utc": "2026-09-23T16:46:58.597260+00:00",
+          "precedes_first_reference_score": true,
+          "baseline_bit_exact_to_selected_frozen_head": false,
+          "provenance": {
+            "models_sha256": "ce4873347a6fd0de6df98f9becc2f045d27af0308c189186a8dd73d4a89b27af",
+            "multi_features_sha256": "e483276b746d6ddea89346424eb755c0e13d08fc1e92547cc7a276af35f35947",
+            "multi_manifest_sha256": "83e054ff708f60e241c6e81fd9fae913c0a00e80d282f4d24f9eb874b7e3a42e",
+            "multi_train_case_sha256": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+            "optimizer_protocol": "train_cv.fit_variant baseline/per_type deterministic bounded L-BFGS, fixed C from that variant's frozen train-only CV config",
+            "optimizer_script_sha256": "742fd95473f26781a50b7df972b414f8574727d310294c3d8307e848cfb11528",
+            "selection_sha256": "b528c6dc71cad42b623d1e15bfbc758b7be0f91682aba811cf91adb2d2c9c386",
+            "single_features_sha256": "0f739510fe3fbb05c25fb54a2c5a4943cab22984f1fe8790cf0a4978a8777661",
+            "single_manifest_sha256": "43b4e125c98939ebec08441841d2abe356eda6701d07d21c2d37e8df20fcc019",
+            "train_case_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+            "variant_cv_config_sha256": "c78f8a738d63300dd2b930a775d4f27a20a7e4085f8c253ee5e2c1fb4eb9cf9c"
+          },
+          "normalization_and_weights": {
+            "choice": {
+              "mean_sha256": "694152791ccfacd14dfdffebdb9c3374e393ebe086199220fe08538be6710f63",
+              "scale_sha256": "f5f898f1b4f35965c01370e2fce80dba5677b52c731e690b164b4d50ffe02970",
+              "weights_sha256": "04e0930a4b00ab3c40fbb221a7a7d4b6976b878409725f66c64142278861e3a7",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.01,
+                "expanded_case_count": 240,
+                "iterations": 54,
+                "relative_gradient_norm": 0.0008346930510396899
+              }
+            },
+            "noul": {
+              "mean_sha256": "65a5e73836f3fb413a8fe716b4e5c668bc23d75bb4a4acf015f2fda447d92a3e",
+              "scale_sha256": "f819d47214b7b5c7792c829ec6703139df9aea31b9b1e366b429bd377d8c5283",
+              "weights_sha256": "32219a83ce7e335bc689159a8fd38542e3d7db8a7b360c0da779c3c085bfa74e",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.01,
+                "expanded_case_count": 220,
+                "iterations": 27,
+                "relative_gradient_norm": 0.0007297531234855539
+              }
+            },
+            "score": {
+              "mean_sha256": "00e9cf92bef8d7e9f198da713dff0a0754127c14a9dddbc7abe9f3e8d4179206",
+              "scale_sha256": "53c7fa476ec1e83ddbfd2aa7f7a81880020317805e5b22bb00f8c179e446d72d",
+              "weights_sha256": "a3696bb3e6472c71db8e06716e9113e0f25ddde2b34f245c0afd4db12e855de5",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.01,
+                "expanded_case_count": 200,
+                "iterations": 72,
+                "relative_gradient_norm": 0.0008480229875174331
+              }
+            }
+          },
+          "feature_sha256": "169c5ae029099758e53a5a1053136f97980777baabf22b9c529982a3e26ccd21",
+          "feature_manifest_sha256": "e1423bbdf43288199424757840dbfc0648a8a2db598e3450b3b297eedd30260f",
+          "embedding_calls_reused": 750,
+          "query_plus_candidate_tokens_reused": 251813,
+          "permutation_checked": 180,
+          "noul_polarity_checked": 60,
+          "prediction_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/qwen/joint-context-candidate.jsonl",
+          "predictions_sha256": "62001dc59dcf5623db6205f69e9ed1bfe414d62f619668f13c26635d2208b58a",
+          "prediction_count": 60
+        }
+      }
+    },
+    "harrier": {
+      "model_id": "microsoft/harrier-oss-v1-0.6b",
+      "variants": {
+        "v2-baseline": {
+          "head_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/harrier/v2-baseline.json",
+          "sha256": "5fb0727296cc89d41c9ebcec1664a7ef3a99e5c08c6da424d267f02ea6c22d30",
+          "sidecar_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/harrier/v2-baseline.sha256",
+          "C": 0.1,
+          "mtime_utc": "2026-09-23T16:46:59.625593+00:00",
+          "sidecar_mtime_utc": "2026-09-23T16:46:59.627388+00:00",
+          "precedes_first_reference_score": true,
+          "baseline_bit_exact_to_selected_frozen_head": true,
+          "provenance": {
+            "models_sha256": "66fa11995f0c032d2c3169126071636bca6d2d3aca68a5df9a44ee7ef9ee1421",
+            "multi_features_sha256": "6b8db357097a06b4933cd186439dc494a6b5728aa5e097eb8324eb604190819e",
+            "multi_manifest_sha256": "d4792f43c2672df54c8ee46e2df65953dfc254f2b8df0de4503aef00b77acfa5",
+            "multi_train_case_sha256": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+            "optimizer_protocol": "train_cv.fit_variant baseline/per_type deterministic bounded L-BFGS, fixed C from that variant's frozen train-only CV config",
+            "optimizer_script_sha256": "742fd95473f26781a50b7df972b414f8574727d310294c3d8307e848cfb11528",
+            "selection_sha256": "f2cc2545ae684f6ce301a70bb0c7b7364133f9377882b5ce1492cecc26968a0f",
+            "single_features_sha256": "29f2a7df1db1b298597db790203ca53e8c93102e94e7c4eaeded211b40858b84",
+            "single_manifest_sha256": "2cf4020c9fbbe52e5ab830aabc51722762c0147ae9c0a2f154910c08a10e7f5f",
+            "train_case_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+            "variant_cv_config_sha256": "2f52efd6bf1b15f31768d87bd454e5dcb059b4770649896433e5d46dac0af088"
+          },
+          "normalization_and_weights": {
+            "choice": {
+              "mean_sha256": "f7108f356b46afd46649b44e484c89b3e79a2cf715c7d0895980f97f21288399",
+              "scale_sha256": "4c5167b5530114b6bbf41d84d59dbd0c41a0505348a7166f1d9c50f834e7cbfe",
+              "weights_sha256": "6c5f48198078d7cca6bee62c0a454eaacc1d1824a9c4c33b70a682757c811934",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.1,
+                "expanded_case_count": 240,
+                "iterations": 118,
+                "relative_gradient_norm": 0.0009686055826305572
+              }
+            },
+            "noul": {
+              "mean_sha256": "978f933d842208ea2ea9d754f3ccc4380af993ae5b7928697adb268feca7198d",
+              "scale_sha256": "03cff8c2069f4707a9af53edb589577657da43a3ed8b6ef0a3743044e319a9d5",
+              "weights_sha256": "457c613b88aeda109756acd2c97d9e8086de4602290af3f0d6c1215101fefd5c",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.1,
+                "expanded_case_count": 220,
+                "iterations": 55,
+                "relative_gradient_norm": 0.0006503858093099753
+              }
+            },
+            "score": {
+              "mean_sha256": "1e274727ca4c6a898892f1a340aa0c5c946a876d872c3b52abe971607f07447b",
+              "scale_sha256": "25d2f45dde826f5e5eb269ae07d5b2674d6d93bad92e8db2dd1991e899ba0397",
+              "weights_sha256": "a540b19a17dae00495702275a9525489ee8bf8e9e922ae6de60479ac8d37c819",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.1,
+                "expanded_case_count": 200,
+                "iterations": 214,
+                "relative_gradient_norm": 0.0008939663748149141
+              }
+            }
+          },
+          "feature_sha256": "840b909a89aa43a98796be7d479bd77dd2c2e9049f649be56c6ba3fc18ac0ced",
+          "feature_manifest_sha256": "3e268ba59927e70f8b3e5763d4798e1af9b618b1ed927216df71f55602fc6d40",
+          "embedding_calls_reused": 750,
+          "query_plus_candidate_tokens_reused": 69829,
+          "permutation_checked": 180,
+          "noul_polarity_checked": 60,
+          "prediction_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/harrier/v2-baseline.jsonl",
+          "predictions_sha256": "61499d71e4064e4d1cbefe8b375143b4b034b03a2a945be17ca27c6e1b6527f7",
+          "prediction_count": 60
+        },
+        "readable-state": {
+          "head_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/harrier/readable-state.json",
+          "sha256": "831a1558e197e3a949b02e667887abf8824c4196c2c31ab58ddb60ab1c83f49f",
+          "sidecar_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/harrier/readable-state.sha256",
+          "C": 1.0,
+          "mtime_utc": "2026-09-23T16:47:00.708952+00:00",
+          "sidecar_mtime_utc": "2026-09-23T16:47:00.710476+00:00",
+          "precedes_first_reference_score": true,
+          "baseline_bit_exact_to_selected_frozen_head": false,
+          "provenance": {
+            "models_sha256": "66fa11995f0c032d2c3169126071636bca6d2d3aca68a5df9a44ee7ef9ee1421",
+            "multi_features_sha256": "fa3f66d55f07a4b32e94771a1c723d8babdab69103fb824632454e5c8e547a48",
+            "multi_manifest_sha256": "35f2922aededfca194d8ce0be54b9626054cf40f833292ce20b19aeac5121e8c",
+            "multi_train_case_sha256": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+            "optimizer_protocol": "train_cv.fit_variant baseline/per_type deterministic bounded L-BFGS, fixed C from that variant's frozen train-only CV config",
+            "optimizer_script_sha256": "742fd95473f26781a50b7df972b414f8574727d310294c3d8307e848cfb11528",
+            "selection_sha256": "f2cc2545ae684f6ce301a70bb0c7b7364133f9377882b5ce1492cecc26968a0f",
+            "single_features_sha256": "50084037757c7dad1ab3065eeb04ecda0f20cb1e604bf15280a0e790637fdd55",
+            "single_manifest_sha256": "9f294351de1c77e3b15c8962c03e60d9cf66324541049e0cd270d2ce08675596",
+            "train_case_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+            "variant_cv_config_sha256": "12957497b07a6208db518ef39a7e2ba04a62d1034bb7d180eb0b7dfe32fd0040"
+          },
+          "normalization_and_weights": {
+            "choice": {
+              "mean_sha256": "d4dcb29ea328d8e9238f87f1206a94cd27965e7495aa84c4cd333dadbb5b9cf8",
+              "scale_sha256": "0209222b576d74ced914ad6e4b626be079f961aef6ddfce6863fbbeb831551a6",
+              "weights_sha256": "ff7ffe8b23315e0794e5399f562fe7faae5c247717c5d1d713aefc8996df02e6",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 1.0,
+                "expanded_case_count": 240,
+                "iterations": 130,
+                "relative_gradient_norm": 0.0008567401088790383
+              }
+            },
+            "noul": {
+              "mean_sha256": "7ef34484189ac105179ab4df7be7447fdd35694623f040c29a81272d833a10e8",
+              "scale_sha256": "97897828a471a6cc0d95a73c37b5265d6d3bce8eb6709cdccf8c7f875147fed9",
+              "weights_sha256": "49e68365cf09ccb4fdf256306637b0ea3899dc9be65719f6b788a6784c556ea2",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 1.0,
+                "expanded_case_count": 220,
+                "iterations": 73,
+                "relative_gradient_norm": 0.000753687678079055
+              }
+            },
+            "score": {
+              "mean_sha256": "aeaf830ccfa435cd4a44afe4858d6ea0f23b4cd696b2ef07439450e061cc604a",
+              "scale_sha256": "c474c96b2b786af1245c2e53d0e0021e2d8dc6752245efe7c79c2cfc8430f3c2",
+              "weights_sha256": "ac96c72589d7f92680de84d094d2052b3d76e44a417542570716773c4916ec7f",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 1.0,
+                "expanded_case_count": 200,
+                "iterations": 227,
+                "relative_gradient_norm": 0.0006498203965339486
+              }
+            }
+          },
+          "feature_sha256": "87c9ed67b602e8583a0fa48e15c28d53929516ae77d3201fc4414af79d0af014",
+          "feature_manifest_sha256": "c7df286f1f5fd6e0472adf81de2d980d1639fbd3cd15dd86ace750ae637f9fc9",
+          "embedding_calls_reused": 750,
+          "query_plus_candidate_tokens_reused": 71089,
+          "permutation_checked": 180,
+          "noul_polarity_checked": 60,
+          "prediction_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/harrier/readable-state.jsonl",
+          "predictions_sha256": "fb30af991ac4aa2a52983d327b72ba3b47f1e3a55c0d776ef7ffb43adf90bd19",
+          "prediction_count": 60
+        },
+        "rule-in-candidate": {
+          "head_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/harrier/rule-in-candidate.json",
+          "sha256": "c8b38381b695dc71269139171d1b4d83c6db641d8e6be4e581484b5d7b71ed4a",
+          "sidecar_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/harrier/rule-in-candidate.sha256",
+          "C": 0.1,
+          "mtime_utc": "2026-09-23T16:47:01.621507+00:00",
+          "sidecar_mtime_utc": "2026-09-23T16:47:01.623641+00:00",
+          "precedes_first_reference_score": true,
+          "baseline_bit_exact_to_selected_frozen_head": false,
+          "provenance": {
+            "models_sha256": "66fa11995f0c032d2c3169126071636bca6d2d3aca68a5df9a44ee7ef9ee1421",
+            "multi_features_sha256": "c5a09a92b19942e9e669a6a7b7998ed86c1ad044a6dd7916d9f53108c6b96f17",
+            "multi_manifest_sha256": "f4e570c7700b3b42af52d601868f36d0f6d512fd5836fcca22ae666892498a65",
+            "multi_train_case_sha256": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+            "optimizer_protocol": "train_cv.fit_variant baseline/per_type deterministic bounded L-BFGS, fixed C from that variant's frozen train-only CV config",
+            "optimizer_script_sha256": "742fd95473f26781a50b7df972b414f8574727d310294c3d8307e848cfb11528",
+            "selection_sha256": "f2cc2545ae684f6ce301a70bb0c7b7364133f9377882b5ce1492cecc26968a0f",
+            "single_features_sha256": "2096bc01a3761cbebcc96751e9b29fa5cd47cd7a49c48dd7c0f55f1dda2bf2a7",
+            "single_manifest_sha256": "aa5e123689d076e89f76e825f3421c42853dbb0eca7738ad805ba8a05a0ea384",
+            "train_case_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+            "variant_cv_config_sha256": "a5e368976f98e95ea5acbb5923421c7b684a1cbb64610b402f89457f1483a6cb"
+          },
+          "normalization_and_weights": {
+            "choice": {
+              "mean_sha256": "52f72c05efb35a6f10902b748c6b742ffe87e4003dc2f96ff781255ba47536d1",
+              "scale_sha256": "15e9c21fd484214e25cb1de1eaa48680a16d289ce71bb5c40f16d8db5f50defb",
+              "weights_sha256": "ffa1916c83708d0d24341b4d0d1e4c74ef5970d5647029b0f57afeb1c781a442",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.1,
+                "expanded_case_count": 240,
+                "iterations": 89,
+                "relative_gradient_norm": 0.0008554665867237595
+              }
+            },
+            "noul": {
+              "mean_sha256": "edeedce558c7d1e76aceeef00ba230d7d93b771cc78407ac5f902b2656e31d85",
+              "scale_sha256": "99f4aebe354c1748fcac49eb9d7985c3ef7443368fdcb40f0163503460881db0",
+              "weights_sha256": "bc297804a77865c7e05d3edb87284fd53563ba34eaa39ab9e158d9de4657b9a9",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.1,
+                "expanded_case_count": 220,
+                "iterations": 57,
+                "relative_gradient_norm": 0.0009720320197861316
+              }
+            },
+            "score": {
+              "mean_sha256": "45ac2ea317bacd74235f94bd80c389ad980859c34b426bb0d7d6a07e296b2475",
+              "scale_sha256": "faae9ee78500a88b35bd67b846e4f239100c07c654ae21e1aaeca194ca1134ba",
+              "weights_sha256": "7ecac9106beb75dce9fa253d53d3d05800266a0ce2a3035db7c20c1ccaede46c",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.1,
+                "expanded_case_count": 200,
+                "iterations": 131,
+                "relative_gradient_norm": 0.0009382820502048071
+              }
+            }
+          },
+          "feature_sha256": "515f5334cdf93f212142fe397a691e9f74d64f35af4a881f7d2a27ca9532be2a",
+          "feature_manifest_sha256": "50a23e0208f798c309c8063f32d2576dae4f22b9cb350435729f78fdf65b9a42",
+          "embedding_calls_reused": 750,
+          "query_plus_candidate_tokens_reused": 99908,
+          "permutation_checked": 180,
+          "noul_polarity_checked": 60,
+          "prediction_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/harrier/rule-in-candidate.jsonl",
+          "predictions_sha256": "c75ad66ad87f7a90fb38ebee9e508c380d23163ed3add15f04411a6dd5486e0f",
+          "prediction_count": 60
+        },
+        "joint-context-candidate": {
+          "head_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/harrier/joint-context-candidate.json",
+          "sha256": "9673793192b590b964e1384ea29a45a554625f68cb4868b00210991c7981c8f5",
+          "sidecar_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/frozen-scorers/harrier/joint-context-candidate.sha256",
+          "C": 0.1,
+          "mtime_utc": "2026-09-23T16:47:02.497133+00:00",
+          "sidecar_mtime_utc": "2026-09-23T16:47:02.498045+00:00",
+          "precedes_first_reference_score": true,
+          "baseline_bit_exact_to_selected_frozen_head": false,
+          "provenance": {
+            "models_sha256": "66fa11995f0c032d2c3169126071636bca6d2d3aca68a5df9a44ee7ef9ee1421",
+            "multi_features_sha256": "0d5bd6364c80131c932788c31de5f31949e514f9094f9ce25c620f296e218fd6",
+            "multi_manifest_sha256": "8e9fddcf5d907e8428bdb442b802b4aad406a339ac8509755350a81057f68332",
+            "multi_train_case_sha256": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+            "optimizer_protocol": "train_cv.fit_variant baseline/per_type deterministic bounded L-BFGS, fixed C from that variant's frozen train-only CV config",
+            "optimizer_script_sha256": "742fd95473f26781a50b7df972b414f8574727d310294c3d8307e848cfb11528",
+            "selection_sha256": "f2cc2545ae684f6ce301a70bb0c7b7364133f9377882b5ce1492cecc26968a0f",
+            "single_features_sha256": "779e1fa486d004b909e5cfaa04b552c2ea5990951540b1509fda96a52b28b5b8",
+            "single_manifest_sha256": "d9473f02b7b052e82fceefbfb63ef4b86668447a5f36a2316e87e96e589d9e31",
+            "train_case_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+            "variant_cv_config_sha256": "bc553c893429e3642535389ab5016b95804b4b0ac421e4a71cded5691d4f475b"
+          },
+          "normalization_and_weights": {
+            "choice": {
+              "mean_sha256": "569ecc668df6f382c0cd18488591e683bc751ae34b047d6fb70ca4bbea2cd496",
+              "scale_sha256": "d1e0857af0257a001e4409fe4c4f2dfe5ebec31b17834f799ad154ee78d73ef4",
+              "weights_sha256": "1168a962c7d4ad6b0394277042b2a33a756b09d42756780048ce1b1e208cdb2a",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.1,
+                "expanded_case_count": 240,
+                "iterations": 88,
+                "relative_gradient_norm": 0.000889644368178036
+              }
+            },
+            "noul": {
+              "mean_sha256": "2d6a2b0748f1f52e8a1cc1159f5b03e7a2e48e0bda5f2adf079690053d15c769",
+              "scale_sha256": "2d798d46ee436d274de7b280a8457985ed61579f8a6f03895a2accdc27d94e79",
+              "weights_sha256": "b8e04732fd5a1a1f18f4ff80150c96304a668290f0058d4ebcc7812a5cd1cde2",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.1,
+                "expanded_case_count": 220,
+                "iterations": 71,
+                "relative_gradient_norm": 0.0007462138641965052
+              }
+            },
+            "score": {
+              "mean_sha256": "7ec575bc0b9c2bcb42f6b856fa46c7c33f84f4c3dd545aea5f71ba6bbd85acc5",
+              "scale_sha256": "ce195798da41810e1f7fbf0c0d6cc2e6d560f536107308765eee091b780f0402",
+              "weights_sha256": "fa72076f99fbaa2cd6d0b0d696124312cb6afdcdd8c653a37635f99b75e0b07c",
+              "dimension": 4096,
+              "fit_diagnostics": {
+                "converged": true,
+                "effective_C": 0.1,
+                "expanded_case_count": 200,
+                "iterations": 96,
+                "relative_gradient_norm": 0.0009926958009342745
+              }
+            }
+          },
+          "feature_sha256": "5cb19d077781382e50b8e357d39b6ad3270d4435c74f5940b00e16c5be0036a6",
+          "feature_manifest_sha256": "ace22b203fecbe40cfeb68b3b19702b55dd34109d5ded2701c56caf2b66ed6a2",
+          "embedding_calls_reused": 750,
+          "query_plus_candidate_tokens_reused": 251813,
+          "permutation_checked": 180,
+          "noul_polarity_checked": 60,
+          "prediction_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/harrier/joint-context-candidate.jsonl",
+          "predictions_sha256": "6b6de98b596aed8f0a8f9e32b3c8effd9ec251035442a380b01ca26a5adfabe8",
+          "prediction_count": 60
+        }
+      }
+    }
+  },
+  "prediction_paths": {
+    "qwen/v2-baseline": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/qwen/v2-baseline.jsonl",
+    "qwen/readable-state": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/qwen/readable-state.jsonl",
+    "qwen/rule-in-candidate": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/qwen/rule-in-candidate.jsonl",
+    "qwen/joint-context-candidate": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/qwen/joint-context-candidate.jsonl",
+    "harrier/v2-baseline": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/harrier/v2-baseline.jsonl",
+    "harrier/readable-state": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/harrier/readable-state.jsonl",
+    "harrier/rule-in-candidate": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/harrier/rule-in-candidate.jsonl",
+    "harrier/joint-context-candidate": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/secondary/variant-heads/predictions/harrier/joint-context-candidate.jsonl"
+  },
+  "prediction_hashes": {
+    "qwen/v2-baseline": "cf7143d61654bcee021562843498d542dd6efdfff0c7cd702f3486c4b904b200",
+    "qwen/readable-state": "7557d2dcf7a8b98513c17911d6166036636814dae223715337c9173a61d1814c",
+    "qwen/rule-in-candidate": "b0c2e28f58de37dda7d13c27b6668dc0297b48657c11afad414f846c4d451394",
+    "qwen/joint-context-candidate": "62001dc59dcf5623db6205f69e9ed1bfe414d62f619668f13c26635d2208b58a",
+    "harrier/v2-baseline": "61499d71e4064e4d1cbefe8b375143b4b034b03a2a945be17ca27c6e1b6527f7",
+    "harrier/readable-state": "fb30af991ac4aa2a52983d327b72ba3b47f1e3a55c0d776ef7ffb43adf90bd19",
+    "harrier/rule-in-candidate": "c75ad66ad87f7a90fb38ebee9e508c380d23163ed3add15f04411a6dd5486e0f",
+    "harrier/joint-context-candidate": "6b6de98b596aed8f0a8f9e32b3c8effd9ec251035442a380b01ca26a5adfabe8"
+  }
+}

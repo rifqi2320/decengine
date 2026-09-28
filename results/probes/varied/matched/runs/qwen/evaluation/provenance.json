@@ -1,0 +1,58 @@
+{
+  "protocol": "frozen saved typed scorer; evaluation-only; no fitting/C selection",
+  "run_key": "qwen",
+  "selection_id": "train-only-baseline-typed-c-2026-09-23",
+  "approved_variant": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/matched/frozen-qwen",
+    "models_sha256": "7ce3ecae127696bd1bbc929e84893f2e4ddb740106346910f43c84fe4cff6eb5",
+    "metadata_sha256": "3003fa351ad1e4e92fbbf14002136fad11fdbe8c3a5c690c2920e30e0a89f1d0",
+    "selection_status": "frozen",
+    "C": 1.0,
+    "frozen_config_sha256": "e92149799df56666251533333aa2518ad93ec66f4397a81bc24a66b003087b54"
+  },
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "run_metadata_sha256": "3003fa351ad1e4e92fbbf14002136fad11fdbe8c3a5c690c2920e30e0a89f1d0",
+  "models_sha256": "7ce3ecae127696bd1bbc929e84893f2e4ddb740106346910f43c84fe4cff6eb5",
+  "selection_freeze_sha256": "8323dbbf30c94fe561a6b0363bc709265f73e623db9b060ae43ecd6856083bf0",
+  "fixture_sha256": "48a057dd3ebedc6d76b7ca55f0782069f49cd31151576c2bc01932744a6ed614",
+  "features_sha256": "f3951f2dd2b934107189317d559b1844bc5fe960948dfa09193e62c7198d9ae2",
+  "feature_manifest_sha256": "e97d9019d2db7c7bcd5975d9d8af173497f621c8eb620e9cb1a740e90bbb6f46",
+  "feature_manifest_identity": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "profile_version": "1",
+    "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+    "text_version": "decengine-varied-pair-text-v2-generic-types",
+    "embedding_dimensions": 1024,
+    "normalization": "L2"
+  },
+  "raw_predictions_sha256": "6983bfe6f1a3237bdede0ac3ddd56e43300ebd8d8bc9661dfaddc92fe1ea7fdf",
+  "train_family_count": 15,
+  "family_overlap_count": 0,
+  "latency": {
+    "n": 180,
+    "unit": "seconds per question",
+    "scope": "numpy frozen-scorer only; excludes MLX export, file IO, feature parsing, reference scoring",
+    "mean": 6.628444444444246e-06,
+    "p50": 6.10449999999263e-06,
+    "p95": 7.540999999999798e-06
+  },
+  "run_wall_seconds": 0.168805375,
+  "outputs_sha256": {
+    "predictions.jsonl": "6983bfe6f1a3237bdede0ac3ddd56e43300ebd8d8bc9661dfaddc92fe1ea7fdf",
+    "question_outcomes.jsonl": "f0162dd87fb640a0dca4e0a23ef02f910b35af8ff65ff30dc702830bf0d08b4d",
+    "case_outcomes.jsonl": "81413fd3303094198dc160b38f3e7f782039110e9bcbd82123ceec37ff17a19f",
+    "metrics.json": "ebdab89dc85af1e0684ab0735268e54c29ad6f5ce7ed433fe581c86829b94206"
+  },
+  "parity_checks": {
+    "candidate_permutation_logits": true,
+    "candidate_permutation_probabilities": true,
+    "unknown_type_fails_closed": true,
+    "noul_polarity_checked": true,
+    "score_label_argmax_and_expected_value": true
+  },
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "numpy": "2.0.2",
+  "runner_sha256": "92e791c9e1f105c43214316a9a92db64e710c53a9484bbef2b20ffd421e0d6ff",
+  "reference_policy": "references/labels were not accessed until raw predictions.jsonl had been written"
+}

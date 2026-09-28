@@ -1,0 +1,19 @@
+all-MLX rule-in-candidate/harrier: 60 cases 180 questions; bundle=9373dc9a5fd72bb54549b18b15f34dbccc2756d1a218962e8ee3f502d44ef0fd fixture=316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f
+       27.17 real         4.36 user         1.03 sys
+          1426669568  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              164484  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+               39274  involuntary context switches
+         73032875446  instructions retired
+         20022026120  cycles elapsed
+          4201351088  peak memory footprint

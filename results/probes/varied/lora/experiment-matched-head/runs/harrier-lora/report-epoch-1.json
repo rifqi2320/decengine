@@ -1,0 +1,59 @@
+{
+  "dev": {
+    "n": 200,
+    "per_type": {
+      "choice": {
+        "exact_accuracy": 0.36,
+        "mean_objective_loss": 1.3293977323174477,
+        "mean_selected_confidence": 0.39536511272192,
+        "n": 100,
+        "predicted_candidate_index_hist": {
+          "0": 12,
+          "1": 45,
+          "2": 31,
+          "3": 11,
+          "4": 1
+        }
+      },
+      "noul": {
+        "exact_accuracy": 0.5333333333333333,
+        "mean_objective_loss": 0.6884048779805502,
+        "mean_selected_confidence": 0.5195226003726323,
+        "n": 60,
+        "predicted_candidate_index_hist": {
+          "0": 60
+        }
+      },
+      "score": {
+        "exact_accuracy": 0.325,
+        "mean_objective_loss": 0.3917732797563076,
+        "mean_selected_confidence": 0.2853296838700771,
+        "n": 40,
+        "predicted_candidate_index_hist": {
+          "2": 40
+        }
+      }
+    },
+    "primary_macro_exact_accuracy": 0.4061111111111111,
+    "score_normalized_expected_value_mae": 0.328482935919116,
+    "secondary_mean_objective_loss": 0.9495749855041504
+  },
+  "epoch": 1,
+  "global_step": 460,
+  "mean_head_grad_norm": 0.18410286317426847,
+  "mean_lora_grad_norm": 0.09860087410289879,
+  "train_mean_objective_loss_by_type": {
+    "choice": {
+      "mean_loss": 1.0431614912514175,
+      "n": 140
+    },
+    "noul": {
+      "mean_loss": 0.6908459555357694,
+      "n": 160
+    },
+    "score": {
+      "mean_loss": 0.3830617455765605,
+      "n": 160
+    }
+  }
+}

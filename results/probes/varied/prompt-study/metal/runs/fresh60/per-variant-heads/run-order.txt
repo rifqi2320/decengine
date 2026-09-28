@@ -1,0 +1,10 @@
+Protocol: each per-variant full-train head; original bundle SHA and all per-type weights/mean/scale fingerprints verified against GPU-VARIANT-HEAD-HANDOFF.json. Wrapper bundles add only explicit head-mode and exact fixture/checkpoint/profile provenance; scorer arrays remain byte-equivalent JSON values to original bundles.
+Two preliminary launches were rejected by pre-inference hash/provenance guards before model load; logs are preserved under preflight-failures. Eight timed GPU executions below ran once each sequentially, no concurrent MLX loads; one warmup per typed scorer per process:
+1 harrier/v2-baseline
+2 qwen/v2-baseline
+3 qwen/readable-state
+4 harrier/readable-state
+5 harrier/rule-in-candidate
+6 qwen/rule-in-candidate
+7 qwen/joint-context-candidate
+8 harrier/joint-context-candidate

@@ -1,0 +1,1011 @@
+{
+  "laya_mlx": {
+    "per_question_type": {
+      "choice": {
+        "correct": 31,
+        "total": 60,
+        "accuracy": 0.5166666666666667
+      },
+      "noul": {
+        "correct": 31,
+        "total": 60,
+        "accuracy": 0.5166666666666667
+      },
+      "score": {
+        "correct": 19,
+        "total": 60,
+        "accuracy": 0.31666666666666665
+      }
+    },
+    "all_three_correct": {
+      "correct": 4,
+      "total": 60,
+      "accuracy": 0.06666666666666667
+    }
+  },
+  "jev": {
+    "per_question_type": {
+      "choice": {
+        "correct": 46,
+        "total": 60,
+        "accuracy": 0.7666666666666667
+      },
+      "noul": {
+        "correct": 51,
+        "total": 60,
+        "accuracy": 0.85
+      },
+      "score": {
+        "correct": 33,
+        "total": 60,
+        "accuracy": 0.55
+      }
+    },
+    "all_three_correct": {
+      "correct": 24,
+      "total": 60,
+      "accuracy": 0.4
+    }
+  },
+  "per_domain": {
+    "arts colleges": {
+      "case_count": 5,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          },
+          "noul": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          },
+          "score": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          }
+        },
+        "all_three_correct": {
+          "correct": 0,
+          "total": 5,
+          "accuracy": 0.0
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "score": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          }
+        },
+        "all_three_correct": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        }
+      }
+    },
+    "coastal research": {
+      "case_count": 5,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          },
+          "noul": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "score": {
+            "correct": 1,
+            "total": 5,
+            "accuracy": 0.2
+          }
+        },
+        "all_three_correct": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "score": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          }
+        },
+        "all_three_correct": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        }
+      }
+    },
+    "community clinics": {
+      "case_count": 5,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          },
+          "score": {
+            "correct": 1,
+            "total": 5,
+            "accuracy": 0.2
+          }
+        },
+        "all_three_correct": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          },
+          "noul": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "score": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          }
+        },
+        "all_three_correct": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        }
+      }
+    },
+    "community energy": {
+      "case_count": 5,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          },
+          "noul": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          },
+          "score": {
+            "correct": 1,
+            "total": 5,
+            "accuracy": 0.2
+          }
+        },
+        "all_three_correct": {
+          "correct": 0,
+          "total": 5,
+          "accuracy": 0.0
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "score": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          }
+        },
+        "all_three_correct": {
+          "correct": 3,
+          "total": 5,
+          "accuracy": 0.6
+        }
+      }
+    },
+    "credit unions": {
+      "case_count": 5,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          },
+          "noul": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          },
+          "score": {
+            "correct": 1,
+            "total": 5,
+            "accuracy": 0.2
+          }
+        },
+        "all_three_correct": {
+          "correct": 0,
+          "total": 5,
+          "accuracy": 0.0
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "score": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          }
+        },
+        "all_three_correct": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        }
+      }
+    },
+    "food cooperatives": {
+      "case_count": 5,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          },
+          "noul": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          },
+          "score": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          }
+        },
+        "all_three_correct": {
+          "correct": 0,
+          "total": 5,
+          "accuracy": 0.0
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "score": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          }
+        },
+        "all_three_correct": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        }
+      }
+    },
+    "municipal permitting": {
+      "case_count": 5,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          },
+          "noul": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          },
+          "score": {
+            "correct": 1,
+            "total": 5,
+            "accuracy": 0.2
+          }
+        },
+        "all_three_correct": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          },
+          "score": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          }
+        },
+        "all_three_correct": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        }
+      }
+    },
+    "museum conservation": {
+      "case_count": 5,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          },
+          "noul": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          },
+          "score": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          }
+        },
+        "all_three_correct": {
+          "correct": 0,
+          "total": 5,
+          "accuracy": 0.0
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          },
+          "noul": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "score": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          }
+        },
+        "all_three_correct": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        }
+      }
+    },
+    "public libraries": {
+      "case_count": 5,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          },
+          "noul": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          },
+          "score": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          }
+        },
+        "all_three_correct": {
+          "correct": 0,
+          "total": 5,
+          "accuracy": 0.0
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "score": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          }
+        },
+        "all_three_correct": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        }
+      }
+    },
+    "regional farms": {
+      "case_count": 5,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          },
+          "score": {
+            "correct": 1,
+            "total": 5,
+            "accuracy": 0.2
+          }
+        },
+        "all_three_correct": {
+          "correct": 0,
+          "total": 5,
+          "accuracy": 0.0
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "score": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          }
+        },
+        "all_three_correct": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        }
+      }
+    },
+    "regional transit": {
+      "case_count": 5,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 1,
+            "total": 5,
+            "accuracy": 0.2
+          },
+          "noul": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          },
+          "score": {
+            "correct": 2,
+            "total": 5,
+            "accuracy": 0.4
+          }
+        },
+        "all_three_correct": {
+          "correct": 0,
+          "total": 5,
+          "accuracy": 0.0
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          },
+          "score": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          }
+        },
+        "all_three_correct": {
+          "correct": 3,
+          "total": 5,
+          "accuracy": 0.6
+        }
+      }
+    },
+    "small manufacturers": {
+      "case_count": 5,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 1,
+            "total": 5,
+            "accuracy": 0.2
+          },
+          "noul": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          },
+          "score": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          }
+        },
+        "all_three_correct": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          },
+          "score": {
+            "correct": 3,
+            "total": 5,
+            "accuracy": 0.6
+          }
+        },
+        "all_three_correct": {
+          "correct": 3,
+          "total": 5,
+          "accuracy": 0.6
+        }
+      }
+    }
+  },
+  "by_choice_option_count": {
+    "2": {
+      "case_count": 15,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 9,
+            "total": 15,
+            "accuracy": 0.6
+          },
+          "noul": {
+            "correct": 14,
+            "total": 15,
+            "accuracy": 0.9333333333333333
+          },
+          "score": {
+            "correct": 5,
+            "total": 15,
+            "accuracy": 0.3333333333333333
+          }
+        },
+        "all_three_correct": {
+          "correct": 2,
+          "total": 15,
+          "accuracy": 0.13333333333333333
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 11,
+            "total": 15,
+            "accuracy": 0.7333333333333333
+          },
+          "noul": {
+            "correct": 13,
+            "total": 15,
+            "accuracy": 0.8666666666666667
+          },
+          "score": {
+            "correct": 6,
+            "total": 15,
+            "accuracy": 0.4
+          }
+        },
+        "all_three_correct": {
+          "correct": 4,
+          "total": 15,
+          "accuracy": 0.26666666666666666
+        }
+      }
+    },
+    "3": {
+      "case_count": 15,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 8,
+            "total": 15,
+            "accuracy": 0.5333333333333333
+          },
+          "noul": {
+            "correct": 2,
+            "total": 15,
+            "accuracy": 0.13333333333333333
+          },
+          "score": {
+            "correct": 5,
+            "total": 15,
+            "accuracy": 0.3333333333333333
+          }
+        },
+        "all_three_correct": {
+          "correct": 0,
+          "total": 15,
+          "accuracy": 0.0
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 12,
+            "total": 15,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 12,
+            "total": 15,
+            "accuracy": 0.8
+          },
+          "score": {
+            "correct": 10,
+            "total": 15,
+            "accuracy": 0.6666666666666666
+          }
+        },
+        "all_three_correct": {
+          "correct": 7,
+          "total": 15,
+          "accuracy": 0.4666666666666667
+        }
+      }
+    },
+    "4": {
+      "case_count": 15,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 6,
+            "total": 15,
+            "accuracy": 0.4
+          },
+          "noul": {
+            "correct": 13,
+            "total": 15,
+            "accuracy": 0.8666666666666667
+          },
+          "score": {
+            "correct": 4,
+            "total": 15,
+            "accuracy": 0.26666666666666666
+          }
+        },
+        "all_three_correct": {
+          "correct": 1,
+          "total": 15,
+          "accuracy": 0.06666666666666667
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 11,
+            "total": 15,
+            "accuracy": 0.7333333333333333
+          },
+          "noul": {
+            "correct": 14,
+            "total": 15,
+            "accuracy": 0.9333333333333333
+          },
+          "score": {
+            "correct": 9,
+            "total": 15,
+            "accuracy": 0.6
+          }
+        },
+        "all_three_correct": {
+          "correct": 7,
+          "total": 15,
+          "accuracy": 0.4666666666666667
+        }
+      }
+    },
+    "5": {
+      "case_count": 15,
+      "laya_mlx": {
+        "per_question_type": {
+          "choice": {
+            "correct": 8,
+            "total": 15,
+            "accuracy": 0.5333333333333333
+          },
+          "noul": {
+            "correct": 2,
+            "total": 15,
+            "accuracy": 0.13333333333333333
+          },
+          "score": {
+            "correct": 5,
+            "total": 15,
+            "accuracy": 0.3333333333333333
+          }
+        },
+        "all_three_correct": {
+          "correct": 1,
+          "total": 15,
+          "accuracy": 0.06666666666666667
+        }
+      },
+      "jev": {
+        "per_question_type": {
+          "choice": {
+            "correct": 12,
+            "total": 15,
+            "accuracy": 0.8
+          },
+          "noul": {
+            "correct": 12,
+            "total": 15,
+            "accuracy": 0.8
+          },
+          "score": {
+            "correct": 8,
+            "total": 15,
+            "accuracy": 0.5333333333333333
+          }
+        },
+        "all_three_correct": {
+          "correct": 6,
+          "total": 15,
+          "accuracy": 0.4
+        }
+      }
+    }
+  },
+  "scored_after_prediction_files": true,
+  "timings": {
+    "laya_decision_ms": {
+      "response_plan": {
+        "n": 60,
+        "mean": 205.7198431333333,
+        "min": 91.61025,
+        "max": 4697.303334
+      },
+      "immediate_intervention": {
+        "n": 60,
+        "mean": 305.5812367,
+        "min": 90.986625,
+        "max": 2817.389166
+      },
+      "record_auditability": {
+        "n": 60,
+        "mean": 117.07498196666667,
+        "min": 90.980417,
+        "max": 136.653583
+      }
+    },
+    "jev_request_ms": {
+      "n": 60,
+      "mean": 416.76176610000005,
+      "min": 320.020625,
+      "max": 1412.61075
+    },
+    "case_scoped_latency_ms": {
+      "laya_three_calls_per_case": {
+        "n": 60,
+        "p50": 405.73199999999997,
+        "p95": 1626.9376738999995
+      },
+      "jev_single_request_per_case": {
+        "n": 60,
+        "p50": 387.207271,
+        "p95": 538.84601075
+      }
+    }
+  },
+  "comparison_context": {
+    "paired_matched_baseline_run": "20260923T151228074560Z",
+    "note": "Paired authored clarity intervention against the exact matched source cases; not an independent holdout or generalization claim."
+  },
+  "paired_flips_vs_matched_baseline": {
+    "laya_mlx": {
+      "per_question": {
+        "response_plan": {
+          "prediction_flips": 25,
+          "unchanged": 35,
+          "baseline_correct": 19,
+          "explicit_correct": 31,
+          "correct_to_incorrect": 3,
+          "incorrect_to_correct": 15,
+          "accuracy_delta_cases": 12
+        },
+        "immediate_intervention": {
+          "prediction_flips": 18,
+          "unchanged": 42,
+          "baseline_correct": 31,
+          "explicit_correct": 31,
+          "correct_to_incorrect": 9,
+          "incorrect_to_correct": 9,
+          "accuracy_delta_cases": 0
+        },
+        "record_auditability": {
+          "prediction_flips": 7,
+          "unchanged": 53,
+          "baseline_correct": 19,
+          "explicit_correct": 19,
+          "correct_to_incorrect": 3,
+          "incorrect_to_correct": 3,
+          "accuracy_delta_cases": 0
+        }
+      },
+      "all_three_correct": {
+        "baseline": 3,
+        "explicit": 4,
+        "correct_to_incorrect": 1,
+        "incorrect_to_correct": 2,
+        "net_change_cases": 1
+      },
+      "cases_with_any_prediction_flip": 39,
+      "total_cases": 60
+    },
+    "jev": {
+      "per_question": {
+        "response_plan": {
+          "prediction_flips": 27,
+          "unchanged": 33,
+          "baseline_correct": 20,
+          "explicit_correct": 46,
+          "correct_to_incorrect": 0,
+          "incorrect_to_correct": 26,
+          "accuracy_delta_cases": 26
+        },
+        "immediate_intervention": {
+          "prediction_flips": 30,
+          "unchanged": 30,
+          "baseline_correct": 29,
+          "explicit_correct": 51,
+          "correct_to_incorrect": 4,
+          "incorrect_to_correct": 26,
+          "accuracy_delta_cases": 22
+        },
+        "record_auditability": {
+          "prediction_flips": 19,
+          "unchanged": 41,
+          "baseline_correct": 23,
+          "explicit_correct": 33,
+          "correct_to_incorrect": 1,
+          "incorrect_to_correct": 11,
+          "accuracy_delta_cases": 10
+        }
+      },
+      "all_three_correct": {
+        "baseline": 4,
+        "explicit": 24,
+        "correct_to_incorrect": 1,
+        "incorrect_to_correct": 21,
+        "net_change_cases": 20
+      },
+      "cases_with_any_prediction_flip": 47,
+      "total_cases": 60
+    },
+    "integrity": {
+      "same_questions_and_targets": true,
+      "source_fixture_sha256": "48a057dd3ebedc6d76b7ca55f0782069f49cd31151576c2bc01932744a6ed614",
+      "paired_baseline_run": "20260923T151228074560Z",
+      "paired_baseline_laya_predictions_sha256": "46fdc5a9c8443682fe0d947f0f7f9327d13af4e52c15a47d79991424d43ac66c",
+      "paired_baseline_jev_predictions_sha256": "6982051e7c8b90da59949233a1d5ab8796bb21f89fa5386f73b8c776a012aa61",
+      "evaluation_metadata_passed_to_models": false,
+      "validation": "benchmarks/cases/varied/multi/validate_explicit.py passed after predictions were saved"
+    }
+  },
+  "error_counts": {
+    "laya": 0,
+    "jev": 0
+  },
+  "total_errors": 0
+}

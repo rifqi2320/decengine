@@ -1,0 +1,45 @@
+{
+  "purpose": "train-only runtime/CV and invariance smoke test before full 300/200 evaluations",
+  "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+  "training_cases": 60,
+  "training_question_families": 3,
+  "test_data_or_labels_used": false,
+  "grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "grouped_cv_folds": 3,
+  "fit_count": 12,
+  "runtime_seconds": 0.386,
+  "fold_accuracy": {
+    "0.01": [
+      0.45,
+      0.65,
+      0.3
+    ],
+    "0.1": [
+      0.45,
+      0.55,
+      0.2
+    ],
+    "1.0": [
+      0.45,
+      0.55,
+      0.15
+    ],
+    "10.0": [
+      0.45,
+      0.55,
+      0.1
+    ]
+  },
+  "permutation_invariance": {
+    "check": "reverse candidate row order for a train-only case and compare selected key and key-indexed probabilities",
+    "result": "passed",
+    "max_probability_delta": 0.0,
+    "probability_tolerance": 1e-12
+  },
+  "solver": "bounded-memory L-BFGS, max 300 iterations, max 24 Armijo backtracking steps, checked finite logits/gradient"
+}

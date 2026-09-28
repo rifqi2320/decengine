@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "system_id": "harrier_head",
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "arm": "head",
+  "selected_epoch": 9,
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "fixture_manifest_sha256": "2fdb7dc1a09e1530be3c06e22e31de9fce4a6a98f5256eb0aadf8ac19fc06aa7",
+  "freeze_manifest_sha256": "ecb46f3a952d48a78a9004ad0213e70e57da0e9bd84e183fda31a5b63186eb1f",
+  "freeze_manifest_path": "results/probes/varied/lora/experiment-matched-head/TRAIN-ONLY-FREEZE.json",
+  "inference_policy_sha256": "57455ae8d88322ea7703d4d67b1ee317ad198b57071b35ebc57be29a01f1a590",
+  "inference_policy_path": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/experiment-matched-head/MATCHED-INFERENCE-POLICY-512-TOTAL10G-FINAL.json",
+  "predictions_sha256": "253bfd899c352060eb1f49bd75f445cb3f7ef7c8687de5f4fb7bf667e8f9e157",
+  "raw_predictions_sha256": "f741aac17d391c525f397b49967a3c8278636a22733dbe1291e3f3a4e94e6778",
+  "run_config_sha256": "807ead191a4eb81c2337ad52fe677a81e0f5676e7263f7506ac02e5b5fbb355e",
+  "best_checkpoint_sha256": "92145ec36c4eeec1d89e70818313f57a758bd696b121ddcd20d8cd1153b59c28",
+  "best_record_sha256": "20082bbfb00483ae113e9bf10bc09a9781052531ddff5d00bcb101c657f7d2a5",
+  "training_summary_sha256": "662257b8554ac5e88581ebe3a9a796214b855cc19bd089a8f3a0e2d3f1442d15",
+  "matched_trainer_sha256": "37245f34f0f54d546163fc9dad144c2a24617b7bb93b5ae371128b77c008519a",
+  "shared_trainer_sha256": "24cf1e2808e4f22fa043a0c83d8fa693e5e1cced77aadcad496e6735257a7564",
+  "adapter_sha256": "58614beb9551fd30c1458c68313e27ccf0b926b5522b620c6d2a3e24878e4edd",
+  "base_weights_sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+  "base_config_sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+  "backbone_max_position_embeddings": 32768,
+  "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+  "profile_version": "2",
+  "text_version": "decengine-varied-pair-text-v2-generic-types",
+  "text_compiler_sha256": "3392fadabc4c7cc6d69acb31f152ab6e73ab83c12c16664b06f3ac6f46053d8e",
+  "training_token_guard": 288,
+  "observed_train_max_tokens": 266,
+  "inference_token_limit": 512,
+  "input_truncation": false,
+  "test_max_compiled_tokens": 375,
+  "over_training_limit_text_count": 180,
+  "candidate_position_distribution": {
+    "choice": {
+      "0": 14,
+      "1": 29,
+      "2": 4,
+      "3": 7,
+      "4": 6
+    },
+    "noul": {
+      "0": 60
+    },
+    "score": {
+      "2": 40,
+      "4": 16,
+      "3": 4
+    }
+  },
+  "collapsed_prediction_warning": {
+    "choice": false,
+    "noul": true,
+    "score": false
+  },
+  "runtime": "MLX/Metal",
+  "mlx_version": "0.29.3",
+  "device_actual": "Device(gpu, 0)",
+  "timing_scopes": {
+    "question_inference_ms": {
+      "scope": "sequential individual text forwards plus typed scorer; excludes model load, preflight and reference scoring",
+      "n": 180,
+      "p50": 123.892458,
+      "p95": 160.61943749999998
+    },
+    "three_question_case_sum_ms": {
+      "scope": "sum of 3 question forwards per case; excludes model load, preflight and reference scoring",
+      "n": 60,
+      "p50": 614.991104,
+      "p95": 655.8660249999999
+    }
+  },
+  "compute_assumptions": {
+    "batching": "no batching; one query/candidate at a time",
+    "flops": "not estimated"
+  },
+  "resources": {
+    "baseline_swap_bytes": 2289041408,
+    "max_process_peak_bytes": 2377189152,
+    "max_positive_swap_growth_observed_bytes": 0,
+    "max_process_peak_plus_swap_growth_bytes": 2377189152,
+    "early_stop_bytes": 6442450944,
+    "absolute_stop_bytes": 8589934592,
+    "standalone_swap_growth_stop_bytes": null,
+    "combined_stop_bytes": 10737418240,
+    "swap_zero_growth_required": false
+  },
+  "reference_access_during_inference": false,
+  "fixture_reused_previously_scored": true,
+  "interpretation": "exploratory reused holdout; no test-driven tuning"
+}

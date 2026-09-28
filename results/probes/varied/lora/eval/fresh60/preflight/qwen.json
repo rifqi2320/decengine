@@ -1,0 +1,143 @@
+{
+  "freeze_manifest_sha256": "5f7dd19638df1f7bdcb56ecd44a9371ae5a0ac32a6314538146e324ac8a2e48f",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+  "preflight": {
+    "case_count": 60,
+    "question_count": 180,
+    "compiled_text_count": 750,
+    "compiled_text_max_tokens": 375,
+    "compiled_text_min_tokens": 16,
+    "token_limit": 288,
+    "all_compiled_text_within_limit": false,
+    "compiled_text_sha256": "46384363513563bf933c4d5111fbcc00ed27291815ffef1a239864255c522495",
+    "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+    "overflow_count": 180,
+    "overflow_samples": [
+      {
+        "id": "mq-lora-fresh-001",
+        "question_name": "response_plan",
+        "role": "query",
+        "token_count": 335
+      },
+      {
+        "id": "mq-lora-fresh-001",
+        "question_name": "immediate_intervention",
+        "role": "query",
+        "token_count": 335
+      },
+      {
+        "id": "mq-lora-fresh-001",
+        "question_name": "record_auditability",
+        "role": "query",
+        "token_count": 353
+      },
+      {
+        "id": "mq-lora-fresh-002",
+        "question_name": "response_plan",
+        "role": "query",
+        "token_count": 340
+      },
+      {
+        "id": "mq-lora-fresh-002",
+        "question_name": "immediate_intervention",
+        "role": "query",
+        "token_count": 340
+      },
+      {
+        "id": "mq-lora-fresh-002",
+        "question_name": "record_auditability",
+        "role": "query",
+        "token_count": 358
+      },
+      {
+        "id": "mq-lora-fresh-003",
+        "question_name": "response_plan",
+        "role": "query",
+        "token_count": 335
+      },
+      {
+        "id": "mq-lora-fresh-003",
+        "question_name": "immediate_intervention",
+        "role": "query",
+        "token_count": 335
+      },
+      {
+        "id": "mq-lora-fresh-003",
+        "question_name": "record_auditability",
+        "role": "query",
+        "token_count": 353
+      },
+      {
+        "id": "mq-lora-fresh-004",
+        "question_name": "response_plan",
+        "role": "query",
+        "token_count": 344
+      },
+      {
+        "id": "mq-lora-fresh-004",
+        "question_name": "immediate_intervention",
+        "role": "query",
+        "token_count": 344
+      },
+      {
+        "id": "mq-lora-fresh-004",
+        "question_name": "record_auditability",
+        "role": "query",
+        "token_count": 362
+      },
+      {
+        "id": "mq-lora-fresh-005",
+        "question_name": "response_plan",
+        "role": "query",
+        "token_count": 328
+      },
+      {
+        "id": "mq-lora-fresh-005",
+        "question_name": "immediate_intervention",
+        "role": "query",
+        "token_count": 328
+      },
+      {
+        "id": "mq-lora-fresh-005",
+        "question_name": "record_auditability",
+        "role": "query",
+        "token_count": 346
+      },
+      {
+        "id": "mq-lora-fresh-006",
+        "question_name": "response_plan",
+        "role": "query",
+        "token_count": 343
+      },
+      {
+        "id": "mq-lora-fresh-006",
+        "question_name": "immediate_intervention",
+        "role": "query",
+        "token_count": 343
+      },
+      {
+        "id": "mq-lora-fresh-006",
+        "question_name": "record_auditability",
+        "role": "query",
+        "token_count": 361
+      },
+      {
+        "id": "mq-lora-fresh-007",
+        "question_name": "response_plan",
+        "role": "query",
+        "token_count": 354
+      },
+      {
+        "id": "mq-lora-fresh-007",
+        "question_name": "immediate_intervention",
+        "role": "query",
+        "token_count": 354
+      }
+    ],
+    "overflow_count_by_role": {
+      "query": 180
+    },
+    "input_fields": "request.state and request.questions only; references not used"
+  }
+}

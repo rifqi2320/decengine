@@ -1,0 +1,988 @@
+{
+  "per_question_type": {
+    "choice": {
+      "n": 60,
+      "accuracy": 0.36666666666666664,
+      "candidate_counts": {
+        "2": 15,
+        "3": 15,
+        "4": 15,
+        "5": 15
+      },
+      "calibration": {
+        "n": 60,
+        "ece_10_bins": 0.41626306512401795,
+        "brier_score": 0.9402642481788411,
+        "mean_log_loss": 2.0292945564561733,
+        "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+        "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+      }
+    },
+    "noul": {
+      "n": 60,
+      "accuracy": 0.45,
+      "candidate_counts": {
+        "2": 60
+      },
+      "calibration": {
+        "n": 60,
+        "ece_10_bins": 0.20062050768290196,
+        "brier_score": 0.5734533362835847,
+        "mean_log_loss": 0.7874426747529004,
+        "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+        "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+      }
+    },
+    "score": {
+      "n": 60,
+      "accuracy": 0.36666666666666664,
+      "candidate_counts": {
+        "3": 39,
+        "4": 18,
+        "5": 3
+      },
+      "calibration": {
+        "n": 60,
+        "ece_10_bins": 0.3845098036437469,
+        "brier_score": 0.9770257482781345,
+        "mean_log_loss": 1.951410993901296,
+        "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+        "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+      },
+      "label_argmax_accuracy": 0.36666666666666664,
+      "expected_value_mae": 5.982991219781007
+    }
+  },
+  "per_domain": {
+    "arts colleges": {
+      "case_count": 5,
+      "question_count": 15,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.6,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.4839146749590199,
+            "brier_score": 0.6312098597609849,
+            "mean_log_loss": 1.0333398503286104,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.8,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.35654052428375915,
+            "brier_score": 0.491308268341273,
+            "mean_log_loss": 0.7498531409378189,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.6,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.24703244531051766,
+            "brier_score": 0.6340506169395103,
+            "mean_log_loss": 1.776479187733301,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          },
+          "label_argmax_accuracy": 0.6,
+          "expected_value_mae": 4.139761918435134
+        }
+      },
+      "all_three_correct_case_count": 2,
+      "case_outcomes": [
+        {
+          "id": "mq-test-matched-056",
+          "question_count": 3,
+          "correct_count": 3,
+          "all_questions_correct": true
+        },
+        {
+          "id": "mq-test-matched-057",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-058",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-059",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-060",
+          "question_count": 3,
+          "correct_count": 3,
+          "all_questions_correct": true
+        }
+      ]
+    },
+    "coastal research": {
+      "case_count": 5,
+      "question_count": 15,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.310760866065936,
+            "brier_score": 0.6739821337374992,
+            "mean_log_loss": 1.0534065874543281,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.0,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.6217522700166653,
+            "brier_score": 0.7824024294628881,
+            "mean_log_loss": 0.9881532195393236,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.0,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.7123407329527583,
+            "brier_score": 1.307727728258726,
+            "mean_log_loss": 2.6632800512827757,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          },
+          "label_argmax_accuracy": 0.0,
+          "expected_value_mae": 8.643719135632304
+        }
+      },
+      "all_three_correct_case_count": 0,
+      "case_outcomes": [
+        {
+          "id": "mq-test-matched-021",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-022",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-023",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-024",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-025",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        }
+      ]
+    },
+    "community clinics": {
+      "case_count": 5,
+      "question_count": 15,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.2,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.5510081675859199,
+            "brier_score": 1.0821202494863573,
+            "mean_log_loss": 2.914414405290958,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.6,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.20407025576073254,
+            "brier_score": 0.49584655192604077,
+            "mean_log_loss": 0.6895035128466521,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.2362876144013598,
+            "brier_score": 0.9449409731145503,
+            "mean_log_loss": 2.2130675926060177,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          },
+          "label_argmax_accuracy": 0.4,
+          "expected_value_mae": 6.7153559547010655
+        }
+      },
+      "all_three_correct_case_count": 0,
+      "case_outcomes": [
+        {
+          "id": "mq-test-matched-001",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-002",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-003",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-004",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-005",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        }
+      ]
+    },
+    "community energy": {
+      "case_count": 5,
+      "question_count": 15,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.26753537575393393,
+            "brier_score": 1.0066367310160769,
+            "mean_log_loss": 2.5434143838525682,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.6,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.20427105094965523,
+            "brier_score": 0.5437499203463347,
+            "mean_log_loss": 0.7505854364919765,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.2,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.4803313871750068,
+            "brier_score": 1.0963825596156598,
+            "mean_log_loss": 2.3903297943283572,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          },
+          "label_argmax_accuracy": 0.2,
+          "expected_value_mae": 7.493859863032043
+        }
+      },
+      "all_three_correct_case_count": 0,
+      "case_outcomes": [
+        {
+          "id": "mq-test-matched-046",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-047",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-048",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-049",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-050",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        }
+      ]
+    },
+    "credit unions": {
+      "case_count": 5,
+      "question_count": 15,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.44376088951882653,
+            "brier_score": 0.9200417345407501,
+            "mean_log_loss": 2.6047099162080456,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.31779714530051245,
+            "brier_score": 0.47816365040094133,
+            "mean_log_loss": 0.6709168174104939,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.0,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.7312242649235647,
+            "brier_score": 1.3815624050755257,
+            "mean_log_loss": 2.3821509168504287,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          },
+          "label_argmax_accuracy": 0.0,
+          "expected_value_mae": 9.037576387382959
+        }
+      },
+      "all_three_correct_case_count": 0,
+      "case_outcomes": [
+        {
+          "id": "mq-test-matched-006",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-007",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-008",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-009",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-010",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        }
+      ]
+    },
+    "food cooperatives": {
+      "case_count": 5,
+      "question_count": 15,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.4556814349357778,
+            "brier_score": 0.8960464421573772,
+            "mean_log_loss": 1.94448937713364,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.6,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.23325403644706505,
+            "brier_score": 0.5425950502203369,
+            "mean_log_loss": 0.7389602364189404,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.2,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.8024868825107846,
+            "brier_score": 1.4486232107367054,
+            "mean_log_loss": 2.7864841045264725,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          },
+          "label_argmax_accuracy": 0.2,
+          "expected_value_mae": 5.220281946092267
+        }
+      },
+      "all_three_correct_case_count": 0,
+      "case_outcomes": [
+        {
+          "id": "mq-test-matched-026",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-027",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-028",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-029",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-030",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        }
+      ]
+    },
+    "municipal permitting": {
+      "case_count": 5,
+      "question_count": 15,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.42765824696595345,
+            "brier_score": 0.8912338030614523,
+            "mean_log_loss": 1.890429195077622,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.2,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.49291686685336644,
+            "brier_score": 0.8128056294493137,
+            "mean_log_loss": 1.0874138526719888,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.8,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.503853074947891,
+            "brier_score": 0.5794461974223795,
+            "mean_log_loss": 0.8992035724966676,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          },
+          "label_argmax_accuracy": 0.8,
+          "expected_value_mae": 3.039969462980293
+        }
+      },
+      "all_three_correct_case_count": 1,
+      "case_outcomes": [
+        {
+          "id": "mq-test-matched-031",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-032",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-033",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-034",
+          "question_count": 3,
+          "correct_count": 3,
+          "all_questions_correct": true
+        },
+        {
+          "id": "mq-test-matched-035",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        }
+      ]
+    },
+    "museum conservation": {
+      "case_count": 5,
+      "question_count": 15,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.5455793674506996,
+            "brier_score": 1.0241498957745419,
+            "mean_log_loss": 2.030088283818192,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.5174411870882943,
+            "brier_score": 0.575367594579508,
+            "mean_log_loss": 0.7744760068738084,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.6812224232328903,
+            "brier_score": 1.001123211364323,
+            "mean_log_loss": 1.5794158478578582,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          },
+          "label_argmax_accuracy": 0.4,
+          "expected_value_mae": 7.973148608622959
+        }
+      },
+      "all_three_correct_case_count": 1,
+      "case_outcomes": [
+        {
+          "id": "mq-test-matched-036",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-037",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-038",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-039",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-040",
+          "question_count": 3,
+          "correct_count": 3,
+          "all_questions_correct": true
+        }
+      ]
+    },
+    "public libraries": {
+      "case_count": 5,
+      "question_count": 15,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.2,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.5415974159015347,
+            "brier_score": 1.0892458114881474,
+            "mean_log_loss": 1.9191963793913451,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.3522290863927613,
+            "brier_score": 0.6628318791086706,
+            "mean_log_loss": 0.9304732847875524,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.4791904203392814,
+            "brier_score": 0.9681501695607431,
+            "mean_log_loss": 2.2356259132118663,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          },
+          "label_argmax_accuracy": 0.4,
+          "expected_value_mae": 4.346056477384025
+        }
+      },
+      "all_three_correct_case_count": 1,
+      "case_outcomes": [
+        {
+          "id": "mq-test-matched-016",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-017",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-018",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-019",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-020",
+          "question_count": 3,
+          "correct_count": 3,
+          "all_questions_correct": true
+        }
+      ]
+    },
+    "regional farms": {
+      "case_count": 5,
+      "question_count": 15,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.645676447063827,
+            "brier_score": 0.9936956286765387,
+            "mean_log_loss": 2.3554892806511107,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.6,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.35839148111937036,
+            "brier_score": 0.5153402639386047,
+            "mean_log_loss": 0.7081654628353761,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.6,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.29315517476081815,
+            "brier_score": 0.6183179864620739,
+            "mean_log_loss": 1.1496077702076437,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          },
+          "label_argmax_accuracy": 0.6,
+          "expected_value_mae": 4.220840047207406
+        }
+      },
+      "all_three_correct_case_count": 1,
+      "case_outcomes": [
+        {
+          "id": "mq-test-matched-051",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-052",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-053",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-054",
+          "question_count": 3,
+          "correct_count": 3,
+          "all_questions_correct": true
+        },
+        {
+          "id": "mq-test-matched-055",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        }
+      ]
+    },
+    "regional transit": {
+      "case_count": 5,
+      "question_count": 15,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.45527218386802437,
+            "brier_score": 1.03854179632386,
+            "mean_log_loss": 2.0754607148473,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.3526568122204598,
+            "brier_score": 0.5341266540262887,
+            "mean_log_loss": 0.727207765580806,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.4802166164443963,
+            "brier_score": 0.881154417487725,
+            "mean_log_loss": 1.8550235117865739,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          },
+          "label_argmax_accuracy": 0.4,
+          "expected_value_mae": 7.414043482595569
+        }
+      },
+      "all_three_correct_case_count": 0,
+      "case_outcomes": [
+        {
+          "id": "mq-test-matched-011",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-012",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-013",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-014",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-015",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        }
+      ]
+    },
+    "small manufacturers": {
+      "case_count": 5,
+      "question_count": 15,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.2,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.5966269022996155,
+            "brier_score": 1.0362668921225082,
+            "mean_log_loss": 1.9870963034203597,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.28990122264898094,
+            "brier_score": 0.4469021436028172,
+            "mean_log_loss": 0.6336033606400682,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          }
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.4,
+          "calibration": {
+            "n": 5,
+            "ece_10_bins": 0.31001111621313915,
+            "brier_score": 0.8628295032996904,
+            "mean_log_loss": 1.48626366392759,
+            "basis": "question-local candidate distributions; top-label ECE and multiclass Brier with variable candidate counts",
+            "calibration_claim": "descriptive point estimate only; no calibration guarantee/interval claimed"
+          },
+          "label_argmax_accuracy": 0.4,
+          "expected_value_mae": 3.55128135330605
+        }
+      },
+      "all_three_correct_case_count": 0,
+      "case_outcomes": [
+        {
+          "id": "mq-test-matched-041",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-042",
+          "question_count": 3,
+          "correct_count": 1,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-043",
+          "question_count": 3,
+          "correct_count": 0,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-044",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        },
+        {
+          "id": "mq-test-matched-045",
+          "question_count": 3,
+          "correct_count": 2,
+          "all_questions_correct": false
+        }
+      ]
+    }
+  },
+  "question_count": 180,
+  "case_count": 60,
+  "all_three_correct_case_count": 6,
+  "all_test_cases_have_three_questions": true,
+  "family_overlap_count": 0,
+  "calibration_scope": "descriptive on matched held-out fixture only; no interval or guarantee"
+}

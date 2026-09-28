@@ -1,0 +1,4701 @@
+{
+  "fixture_sha256": "316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f",
+  "scorer_policy": "pre-existing full-train per-variant typed heads from metal/frozen-scorers; no fitting/tuning in this stage",
+  "primary_run": "../holdout-fresh60-prompt-study-20260924T000000Z",
+  "models": {
+    "qwen": {
+      "variants": {
+        "v2-baseline": {
+          "scorer_head_sha256": "5b7260f04f0b66784504b09526447b30a9f020a554abf611c57eb971f9fabd79",
+          "C": 1.0,
+          "per_type": {
+            "choice": {
+              "n": 60,
+              "correct": 29,
+              "accuracy": 0.48333333333333334,
+              "wilson_95_ci": [
+                0.36175049539732784,
+                0.6069218996740751
+              ],
+              "candidate_local_macro_f1": 0.1761111111111111
+            },
+            "noul": {
+              "n": 60,
+              "correct": 49,
+              "accuracy": 0.8166666666666667,
+              "wilson_95_ci": [
+                0.7008024625353194,
+                0.8944220311080237
+              ],
+              "candidate_local_macro_f1": 0.4083333333333333
+            },
+            "score": {
+              "n": 60,
+              "correct": 12,
+              "accuracy": 0.2,
+              "wilson_95_ci": [
+                0.11828505322897494,
+                0.317818058056279
+              ],
+              "candidate_local_macro_f1": 0.051666666666666666,
+              "expected_value_mae": 4.307540540231034,
+              "normalized_expected_value_mae": 0.3753783819289049
+            }
+          },
+          "type_balanced_accuracy": 0.5,
+          "type_macro_candidate_local_f1": 0.21203703703703702,
+          "all_three_correct": {
+            "correct": 5,
+            "n": 60,
+            "accuracy": 0.08333333333333333,
+            "wilson_95_ci": [
+              0.03612045660173077,
+              0.1806894201833441
+            ]
+          },
+          "per_family": {
+            "qf-00000029": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002a": {
+              "n": 18,
+              "correct": 6,
+              "accuracy": 0.3333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                }
+              }
+            },
+            "qf-0000002b": {
+              "n": 18,
+              "correct": 13,
+              "accuracy": 0.7222222222222222,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002c": {
+              "n": 18,
+              "correct": 3,
+              "accuracy": 0.16666666666666666,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "qf-0000002d": {
+              "n": 18,
+              "correct": 13,
+              "accuracy": 0.7222222222222222,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                }
+              }
+            },
+            "qf-0000002e": {
+              "n": 18,
+              "correct": 9,
+              "accuracy": 0.5,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            },
+            "qf-0000002f": {
+              "n": 18,
+              "correct": 12,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                }
+              }
+            },
+            "qf-00000030": {
+              "n": 18,
+              "correct": 5,
+              "accuracy": 0.2777777777777778,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                }
+              }
+            },
+            "qf-00000031": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                }
+              }
+            },
+            "qf-00000032": {
+              "n": 18,
+              "correct": 7,
+              "accuracy": 0.3888888888888889,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            }
+          },
+          "per_domain": {
+            "arts colleges": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "coastal research": {
+              "n": 15,
+              "correct": 5,
+              "accuracy": 0.3333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "community clinics": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "community energy": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                }
+              }
+            },
+            "credit unions": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "food cooperatives": {
+              "n": 15,
+              "correct": 5,
+              "accuracy": 0.3333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "municipal permitting": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "museum conservation": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "public libraries": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "regional farms": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "regional transit": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "small manufacturers": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            }
+          },
+          "prompt_only_fixed_v2_head_comparison": {
+            "type_balanced_accuracy": 0.5,
+            "type_macro_candidate_local_f1": 0.21203703703703702,
+            "all_three_correct": {
+              "correct": 5,
+              "n": 60,
+              "accuracy": 0.08333333333333333,
+              "wilson_95_ci": [
+                0.03612045660173077,
+                0.1806894201833441
+              ]
+            }
+          }
+        },
+        "readable-state": {
+          "scorer_head_sha256": "b3d19ab873b2ffa90a4f8af63833a3b3195e1d17a8976a107021aafa259e8436",
+          "C": 1.0,
+          "per_type": {
+            "choice": {
+              "n": 60,
+              "correct": 29,
+              "accuracy": 0.48333333333333334,
+              "wilson_95_ci": [
+                0.36175049539732784,
+                0.6069218996740751
+              ],
+              "candidate_local_macro_f1": 0.1761111111111111
+            },
+            "noul": {
+              "n": 60,
+              "correct": 44,
+              "accuracy": 0.7333333333333333,
+              "wilson_95_ci": [
+                0.6099128690331636,
+                0.8286735999671945
+              ],
+              "candidate_local_macro_f1": 0.36666666666666664
+            },
+            "score": {
+              "n": 60,
+              "correct": 12,
+              "accuracy": 0.2,
+              "wilson_95_ci": [
+                0.11828505322897494,
+                0.317818058056279
+              ],
+              "candidate_local_macro_f1": 0.05611111111111111,
+              "expected_value_mae": 4.394333902881267,
+              "normalized_expected_value_mae": 0.3705865738775437
+            }
+          },
+          "type_balanced_accuracy": 0.47222222222222215,
+          "type_macro_candidate_local_f1": 0.19962962962962963,
+          "all_three_correct": {
+            "correct": 4,
+            "n": 60,
+            "accuracy": 0.06666666666666667,
+            "wilson_95_ci": [
+              0.026228698724506214,
+              0.1592535731319717
+            ]
+          },
+          "per_family": {
+            "qf-00000029": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002a": {
+              "n": 18,
+              "correct": 7,
+              "accuracy": 0.3888888888888889,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                }
+              }
+            },
+            "qf-0000002b": {
+              "n": 18,
+              "correct": 13,
+              "accuracy": 0.7222222222222222,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002c": {
+              "n": 18,
+              "correct": 7,
+              "accuracy": 0.3888888888888889,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            },
+            "qf-0000002d": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            },
+            "qf-0000002e": {
+              "n": 18,
+              "correct": 9,
+              "accuracy": 0.5,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            },
+            "qf-0000002f": {
+              "n": 18,
+              "correct": 7,
+              "accuracy": 0.3888888888888889,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                }
+              }
+            },
+            "qf-00000030": {
+              "n": 18,
+              "correct": 7,
+              "accuracy": 0.3888888888888889,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                }
+              }
+            },
+            "qf-00000031": {
+              "n": 18,
+              "correct": 5,
+              "accuracy": 0.2777777777777778,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                }
+              }
+            },
+            "qf-00000032": {
+              "n": 18,
+              "correct": 8,
+              "accuracy": 0.4444444444444444,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            }
+          },
+          "per_domain": {
+            "arts colleges": {
+              "n": 15,
+              "correct": 6,
+              "accuracy": 0.4,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "coastal research": {
+              "n": 15,
+              "correct": 4,
+              "accuracy": 0.26666666666666666,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "community clinics": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "community energy": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                }
+              }
+            },
+            "credit unions": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "food cooperatives": {
+              "n": 15,
+              "correct": 4,
+              "accuracy": 0.26666666666666666,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "municipal permitting": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "museum conservation": {
+              "n": 15,
+              "correct": 10,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "public libraries": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "regional farms": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "regional transit": {
+              "n": 15,
+              "correct": 6,
+              "accuracy": 0.4,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "small manufacturers": {
+              "n": 15,
+              "correct": 10,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                }
+              }
+            }
+          },
+          "prompt_only_fixed_v2_head_comparison": {
+            "type_balanced_accuracy": 0.45555555555555555,
+            "type_macro_candidate_local_f1": 0.1936111111111111,
+            "all_three_correct": {
+              "correct": 5,
+              "n": 60,
+              "accuracy": 0.08333333333333333,
+              "wilson_95_ci": [
+                0.03612045660173077,
+                0.1806894201833441
+              ]
+            }
+          }
+        },
+        "rule-in-candidate": {
+          "scorer_head_sha256": "62a8f7f663465f082231c885de0e6fc439d734901bc51e90aafe23eb4685f9ca",
+          "C": 0.01,
+          "per_type": {
+            "choice": {
+              "n": 60,
+              "correct": 30,
+              "accuracy": 0.5,
+              "wilson_95_ci": [
+                0.3773502424155577,
+                0.6226497575844423
+              ],
+              "candidate_local_macro_f1": 0.1708333333333333
+            },
+            "noul": {
+              "n": 60,
+              "correct": 30,
+              "accuracy": 0.5,
+              "wilson_95_ci": [
+                0.3773502424155577,
+                0.6226497575844423
+              ],
+              "candidate_local_macro_f1": 0.25
+            },
+            "score": {
+              "n": 60,
+              "correct": 24,
+              "accuracy": 0.4,
+              "wilson_95_ci": [
+                0.2856949053488255,
+                0.5263394650795924
+              ],
+              "candidate_local_macro_f1": 0.1075,
+              "expected_value_mae": 3.4381893997378223,
+              "normalized_expected_value_mae": 0.30832814937150244
+            }
+          },
+          "type_balanced_accuracy": 0.4666666666666666,
+          "type_macro_candidate_local_f1": 0.1761111111111111,
+          "all_three_correct": {
+            "correct": 6,
+            "n": 60,
+            "accuracy": 0.1,
+            "wilson_95_ci": [
+              0.04664283447388416,
+              0.20149464723978772
+            ]
+          },
+          "per_family": {
+            "qf-00000029": {
+              "n": 18,
+              "correct": 12,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002a": {
+              "n": 18,
+              "correct": 7,
+              "accuracy": 0.3888888888888889,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "qf-0000002b": {
+              "n": 18,
+              "correct": 13,
+              "accuracy": 0.7222222222222222,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002c": {
+              "n": 18,
+              "correct": 5,
+              "accuracy": 0.2777777777777778,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                }
+              }
+            },
+            "qf-0000002d": {
+              "n": 18,
+              "correct": 12,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                }
+              }
+            },
+            "qf-0000002e": {
+              "n": 18,
+              "correct": 7,
+              "accuracy": 0.3888888888888889,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                }
+              }
+            },
+            "qf-0000002f": {
+              "n": 18,
+              "correct": 10,
+              "accuracy": 0.5555555555555556,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                }
+              }
+            },
+            "qf-00000030": {
+              "n": 18,
+              "correct": 4,
+              "accuracy": 0.2222222222222222,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            },
+            "qf-00000031": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                }
+              }
+            },
+            "qf-00000032": {
+              "n": 18,
+              "correct": 3,
+              "accuracy": 0.16666666666666666,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            }
+          },
+          "per_domain": {
+            "arts colleges": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "coastal research": {
+              "n": 15,
+              "correct": 10,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                }
+              }
+            },
+            "community clinics": {
+              "n": 15,
+              "correct": 3,
+              "accuracy": 0.2,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "community energy": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "credit unions": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "food cooperatives": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                }
+              }
+            },
+            "municipal permitting": {
+              "n": 15,
+              "correct": 5,
+              "accuracy": 0.3333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "museum conservation": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                }
+              }
+            },
+            "public libraries": {
+              "n": 15,
+              "correct": 5,
+              "accuracy": 0.3333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "regional farms": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                }
+              }
+            },
+            "regional transit": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "small manufacturers": {
+              "n": 15,
+              "correct": 6,
+              "accuracy": 0.4,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            }
+          },
+          "prompt_only_fixed_v2_head_comparison": {
+            "type_balanced_accuracy": 0.49444444444444446,
+            "type_macro_candidate_local_f1": 0.19814814814814818,
+            "all_three_correct": {
+              "correct": 5,
+              "n": 60,
+              "accuracy": 0.08333333333333333,
+              "wilson_95_ci": [
+                0.03612045660173077,
+                0.1806894201833441
+              ]
+            }
+          }
+        },
+        "joint-context-candidate": {
+          "scorer_head_sha256": "35fa698c58583def77da4db762a9b2504ebb0adacd8bfa63471128eed23daa54",
+          "C": 0.01,
+          "per_type": {
+            "choice": {
+              "n": 60,
+              "correct": 33,
+              "accuracy": 0.55,
+              "wilson_95_ci": [
+                0.4249193588533434,
+                0.6690634559324476
+              ],
+              "candidate_local_macro_f1": 0.1922222222222222
+            },
+            "noul": {
+              "n": 60,
+              "correct": 58,
+              "accuracy": 0.9666666666666667,
+              "wilson_95_ci": [
+                0.886362257256914,
+                0.9908106807438021
+              ],
+              "candidate_local_macro_f1": 0.48333333333333334
+            },
+            "score": {
+              "n": 60,
+              "correct": 15,
+              "accuracy": 0.25,
+              "wilson_95_ci": [
+                0.15776522530056675,
+                0.37232070077047824
+              ],
+              "candidate_local_macro_f1": 0.06444444444444446,
+              "expected_value_mae": 4.033532838284989,
+              "normalized_expected_value_mae": 0.3560141817735088
+            }
+          },
+          "type_balanced_accuracy": 0.5888888888888889,
+          "type_macro_candidate_local_f1": 0.24666666666666667,
+          "all_three_correct": {
+            "correct": 6,
+            "n": 60,
+            "accuracy": 0.1,
+            "wilson_95_ci": [
+              0.04664283447388416,
+              0.20149464723978772
+            ]
+          },
+          "per_family": {
+            "qf-00000029": {
+              "n": 18,
+              "correct": 10,
+              "accuracy": 0.5555555555555556,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002a": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002b": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002c": {
+              "n": 18,
+              "correct": 10,
+              "accuracy": 0.5555555555555556,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            },
+            "qf-0000002d": {
+              "n": 18,
+              "correct": 12,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                }
+              }
+            },
+            "qf-0000002e": {
+              "n": 18,
+              "correct": 10,
+              "accuracy": 0.5555555555555556,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            },
+            "qf-0000002f": {
+              "n": 18,
+              "correct": 10,
+              "accuracy": 0.5555555555555556,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                }
+              }
+            },
+            "qf-00000030": {
+              "n": 18,
+              "correct": 9,
+              "accuracy": 0.5,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                }
+              }
+            },
+            "qf-00000031": {
+              "n": 18,
+              "correct": 12,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                }
+              }
+            },
+            "qf-00000032": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            }
+          },
+          "per_domain": {
+            "arts colleges": {
+              "n": 15,
+              "correct": 11,
+              "accuracy": 0.7333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "coastal research": {
+              "n": 15,
+              "correct": 10,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "community clinics": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "community energy": {
+              "n": 15,
+              "correct": 10,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "credit unions": {
+              "n": 15,
+              "correct": 13,
+              "accuracy": 0.8666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                }
+              }
+            },
+            "food cooperatives": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "municipal permitting": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "museum conservation": {
+              "n": 15,
+              "correct": 6,
+              "accuracy": 0.4,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "public libraries": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                }
+              }
+            },
+            "regional farms": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "regional transit": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "small manufacturers": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            }
+          },
+          "prompt_only_fixed_v2_head_comparison": {
+            "type_balanced_accuracy": 0.43888888888888894,
+            "type_macro_candidate_local_f1": 0.17703703703703708,
+            "all_three_correct": {
+              "correct": 4,
+              "n": 60,
+              "accuracy": 0.06666666666666667,
+              "wilson_95_ci": [
+                0.026228698724506214,
+                0.1592535731319717
+              ]
+            }
+          }
+        }
+      },
+      "paired_head_vs_fixed_v2_prompt_only": {
+        "v2-baseline": {
+          "choice": {
+            "n": 60,
+            "variant_head_correct_only": 0,
+            "fixed_v2_head_correct_only": 0,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.0,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              0.0,
+              0.0
+            ]
+          },
+          "noul": {
+            "n": 60,
+            "variant_head_correct_only": 0,
+            "fixed_v2_head_correct_only": 0,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.0,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              0.0,
+              0.0
+            ]
+          },
+          "score": {
+            "n": 60,
+            "variant_head_correct_only": 0,
+            "fixed_v2_head_correct_only": 0,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.0,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "readable-state": {
+          "choice": {
+            "n": 60,
+            "variant_head_correct_only": 1,
+            "fixed_v2_head_correct_only": 0,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.016666666666666666,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.015726038732234018,
+              0.04905937206556735
+            ]
+          },
+          "noul": {
+            "n": 60,
+            "variant_head_correct_only": 3,
+            "fixed_v2_head_correct_only": 2,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.016666666666666666,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.056255037520831566,
+              0.08958837085416489
+            ]
+          },
+          "score": {
+            "n": 60,
+            "variant_head_correct_only": 2,
+            "fixed_v2_head_correct_only": 1,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.016666666666666666,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.03975523645910961,
+              0.07308856979244295
+            ]
+          }
+        },
+        "rule-in-candidate": {
+          "choice": {
+            "n": 60,
+            "variant_head_correct_only": 3,
+            "fixed_v2_head_correct_only": 6,
+            "mcnemar_exact_two_sided_p_descriptive": 0.5078125,
+            "paired_accuracy_delta": -0.05,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.14717811619670204,
+              0.047178116196702036
+            ]
+          },
+          "noul": {
+            "n": 60,
+            "variant_head_correct_only": 0,
+            "fixed_v2_head_correct_only": 9,
+            "mcnemar_exact_two_sided_p_descriptive": 0.00390625,
+            "paired_accuracy_delta": -0.15,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.24034987545079967,
+              -0.05965012454920031
+            ]
+          },
+          "score": {
+            "n": 60,
+            "variant_head_correct_only": 16,
+            "fixed_v2_head_correct_only": 9,
+            "mcnemar_exact_two_sided_p_descriptive": 0.2295229434967041,
+            "paired_accuracy_delta": 0.11666666666666667,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.043973786889230426,
+              0.27730712022256376
+            ]
+          }
+        },
+        "joint-context-candidate": {
+          "choice": {
+            "n": 60,
+            "variant_head_correct_only": 9,
+            "fixed_v2_head_correct_only": 6,
+            "mcnemar_exact_two_sided_p_descriptive": 0.60723876953125,
+            "paired_accuracy_delta": 0.05,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.07588096613612112,
+              0.17588096613612114
+            ]
+          },
+          "noul": {
+            "n": 60,
+            "variant_head_correct_only": 24,
+            "fixed_v2_head_correct_only": 1,
+            "mcnemar_exact_two_sided_p_descriptive": 1.5497207641601562e-06,
+            "paired_accuracy_delta": 0.38333333333333336,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              0.2519226025631779,
+              0.5147440641034888
+            ]
+          },
+          "score": {
+            "n": 60,
+            "variant_head_correct_only": 11,
+            "fixed_v2_head_correct_only": 10,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.016666666666666666,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.13296864085066062,
+              0.16630197418399395
+            ]
+          }
+        }
+      }
+    },
+    "harrier": {
+      "variants": {
+        "v2-baseline": {
+          "scorer_head_sha256": "5fb0727296cc89d41c9ebcec1664a7ef3a99e5c08c6da424d267f02ea6c22d30",
+          "C": 0.1,
+          "per_type": {
+            "choice": {
+              "n": 60,
+              "correct": 31,
+              "accuracy": 0.5166666666666667,
+              "wilson_95_ci": [
+                0.39307810032592494,
+                0.6382495046026722
+              ],
+              "candidate_local_macro_f1": 0.18916666666666665
+            },
+            "noul": {
+              "n": 60,
+              "correct": 57,
+              "accuracy": 0.95,
+              "wilson_95_ci": [
+                0.8629948352365147,
+                0.9828504978356043
+              ],
+              "candidate_local_macro_f1": 0.475
+            },
+            "score": {
+              "n": 60,
+              "correct": 13,
+              "accuracy": 0.21666666666666667,
+              "wilson_95_ci": [
+                0.13123044048190308,
+                0.33620027573194783
+              ],
+              "candidate_local_macro_f1": 0.05777777777777779,
+              "expected_value_mae": 4.623557467866809,
+              "normalized_expected_value_mae": 0.4251666130815487
+            }
+          },
+          "type_balanced_accuracy": 0.5611111111111112,
+          "type_macro_candidate_local_f1": 0.24064814814814814,
+          "all_three_correct": {
+            "correct": 8,
+            "n": 60,
+            "accuracy": 0.13333333333333333,
+            "wilson_95_ci": [
+              0.06914109480586972,
+              0.24165159676499615
+            ]
+          },
+          "per_family": {
+            "qf-00000029": {
+              "n": 18,
+              "correct": 13,
+              "accuracy": 0.7222222222222222,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002a": {
+              "n": 18,
+              "correct": 8,
+              "accuracy": 0.4444444444444444,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                }
+              }
+            },
+            "qf-0000002b": {
+              "n": 18,
+              "correct": 13,
+              "accuracy": 0.7222222222222222,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002c": {
+              "n": 18,
+              "correct": 9,
+              "accuracy": 0.5,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                }
+              }
+            },
+            "qf-0000002d": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "qf-0000002e": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                }
+              }
+            },
+            "qf-0000002f": {
+              "n": 18,
+              "correct": 13,
+              "accuracy": 0.7222222222222222,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-00000030": {
+              "n": 18,
+              "correct": 4,
+              "accuracy": 0.2222222222222222,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "qf-00000031": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                }
+              }
+            },
+            "qf-00000032": {
+              "n": 18,
+              "correct": 8,
+              "accuracy": 0.4444444444444444,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                }
+              }
+            }
+          },
+          "per_domain": {
+            "arts colleges": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "coastal research": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "community clinics": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "community energy": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "credit unions": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "food cooperatives": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "municipal permitting": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "museum conservation": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "public libraries": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "regional farms": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "regional transit": {
+              "n": 15,
+              "correct": 11,
+              "accuracy": 0.7333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "small manufacturers": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            }
+          },
+          "prompt_only_fixed_v2_head_comparison": {
+            "type_balanced_accuracy": 0.5611111111111112,
+            "type_macro_candidate_local_f1": 0.24064814814814814,
+            "all_three_correct": {
+              "correct": 8,
+              "n": 60,
+              "accuracy": 0.13333333333333333,
+              "wilson_95_ci": [
+                0.06914109480586972,
+                0.24165159676499615
+              ]
+            }
+          }
+        },
+        "readable-state": {
+          "scorer_head_sha256": "831a1558e197e3a949b02e667887abf8824c4196c2c31ab58ddb60ab1c83f49f",
+          "C": 1.0,
+          "per_type": {
+            "choice": {
+              "n": 60,
+              "correct": 31,
+              "accuracy": 0.5166666666666667,
+              "wilson_95_ci": [
+                0.39307810032592494,
+                0.6382495046026722
+              ],
+              "candidate_local_macro_f1": 0.19083333333333333
+            },
+            "noul": {
+              "n": 60,
+              "correct": 45,
+              "accuracy": 0.75,
+              "wilson_95_ci": [
+                0.6276792992295218,
+                0.8422347746994333
+              ],
+              "candidate_local_macro_f1": 0.375
+            },
+            "score": {
+              "n": 60,
+              "correct": 15,
+              "accuracy": 0.25,
+              "wilson_95_ci": [
+                0.15776522530056675,
+                0.37232070077047824
+              ],
+              "candidate_local_macro_f1": 0.06583333333333334,
+              "expected_value_mae": 4.069736078352978,
+              "normalized_expected_value_mae": 0.4369038050159896
+            }
+          },
+          "type_balanced_accuracy": 0.5055555555555555,
+          "type_macro_candidate_local_f1": 0.21055555555555552,
+          "all_three_correct": {
+            "correct": 11,
+            "n": 60,
+            "accuracy": 0.18333333333333332,
+            "wilson_95_ci": [
+              0.10557796889197638,
+              0.2991975374646805
+            ]
+          },
+          "per_family": {
+            "qf-00000029": {
+              "n": 18,
+              "correct": 12,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                }
+              }
+            },
+            "qf-0000002a": {
+              "n": 18,
+              "correct": 7,
+              "accuracy": 0.3888888888888889,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002b": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            },
+            "qf-0000002c": {
+              "n": 18,
+              "correct": 7,
+              "accuracy": 0.3888888888888889,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                }
+              }
+            },
+            "qf-0000002d": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                }
+              }
+            },
+            "qf-0000002e": {
+              "n": 18,
+              "correct": 8,
+              "accuracy": 0.4444444444444444,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                }
+              }
+            },
+            "qf-0000002f": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                }
+              }
+            },
+            "qf-00000030": {
+              "n": 18,
+              "correct": 5,
+              "accuracy": 0.2777777777777778,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "qf-00000031": {
+              "n": 18,
+              "correct": 12,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                }
+              }
+            },
+            "qf-00000032": {
+              "n": 18,
+              "correct": 7,
+              "accuracy": 0.3888888888888889,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            }
+          },
+          "per_domain": {
+            "arts colleges": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "coastal research": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "community clinics": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "community energy": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "credit unions": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "food cooperatives": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "municipal permitting": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "museum conservation": {
+              "n": 15,
+              "correct": 6,
+              "accuracy": 0.4,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "public libraries": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "regional farms": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "regional transit": {
+              "n": 15,
+              "correct": 10,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "small manufacturers": {
+              "n": 15,
+              "correct": 5,
+              "accuracy": 0.3333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            }
+          },
+          "prompt_only_fixed_v2_head_comparison": {
+            "type_balanced_accuracy": 0.5111111111111111,
+            "type_macro_candidate_local_f1": 0.20907407407407408,
+            "all_three_correct": {
+              "correct": 5,
+              "n": 60,
+              "accuracy": 0.08333333333333333,
+              "wilson_95_ci": [
+                0.03612045660173077,
+                0.1806894201833441
+              ]
+            }
+          }
+        },
+        "rule-in-candidate": {
+          "scorer_head_sha256": "c8b38381b695dc71269139171d1b4d83c6db641d8e6be4e581484b5d7b71ed4a",
+          "C": 0.1,
+          "per_type": {
+            "choice": {
+              "n": 60,
+              "correct": 36,
+              "accuracy": 0.6,
+              "wilson_95_ci": [
+                0.4736605349204075,
+                0.7143050946511744
+              ],
+              "candidate_local_macro_f1": 0.2175
+            },
+            "noul": {
+              "n": 60,
+              "correct": 52,
+              "accuracy": 0.8666666666666667,
+              "wilson_95_ci": [
+                0.7583484032350039,
+                0.9308589051941303
+              ],
+              "candidate_local_macro_f1": 0.43333333333333335
+            },
+            "score": {
+              "n": 60,
+              "correct": 13,
+              "accuracy": 0.21666666666666667,
+              "wilson_95_ci": [
+                0.13123044048190308,
+                0.33620027573194783
+              ],
+              "candidate_local_macro_f1": 0.052777777777777785,
+              "expected_value_mae": 4.542936778930651,
+              "normalized_expected_value_mae": 0.4139262642843387
+            }
+          },
+          "type_balanced_accuracy": 0.5611111111111112,
+          "type_macro_candidate_local_f1": 0.23453703703703707,
+          "all_three_correct": {
+            "correct": 7,
+            "n": 60,
+            "accuracy": 0.11666666666666667,
+            "wilson_95_ci": [
+              0.0576772064005603,
+              0.2217878802417086
+            ]
+          },
+          "per_family": {
+            "qf-00000029": {
+              "n": 18,
+              "correct": 10,
+              "accuracy": 0.5555555555555556,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                }
+              }
+            },
+            "qf-0000002a": {
+              "n": 18,
+              "correct": 9,
+              "accuracy": 0.5,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002b": {
+              "n": 18,
+              "correct": 13,
+              "accuracy": 0.7222222222222222,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                }
+              }
+            },
+            "qf-0000002c": {
+              "n": 18,
+              "correct": 10,
+              "accuracy": 0.5555555555555556,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            },
+            "qf-0000002d": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            },
+            "qf-0000002e": {
+              "n": 18,
+              "correct": 7,
+              "accuracy": 0.3888888888888889,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "qf-0000002f": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-00000030": {
+              "n": 18,
+              "correct": 10,
+              "accuracy": 0.5555555555555556,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                }
+              }
+            },
+            "qf-00000031": {
+              "n": 18,
+              "correct": 11,
+              "accuracy": 0.6111111111111112,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 4,
+                  "accuracy": 0.6666666666666666
+                }
+              }
+            },
+            "qf-00000032": {
+              "n": 18,
+              "correct": 9,
+              "accuracy": 0.5,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                }
+              }
+            }
+          },
+          "per_domain": {
+            "arts colleges": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "coastal research": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "community clinics": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "community energy": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "credit unions": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "food cooperatives": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "municipal permitting": {
+              "n": 15,
+              "correct": 10,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "museum conservation": {
+              "n": 15,
+              "correct": 5,
+              "accuracy": 0.3333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "public libraries": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "regional farms": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                }
+              }
+            },
+            "regional transit": {
+              "n": 15,
+              "correct": 9,
+              "accuracy": 0.6,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                }
+              }
+            },
+            "small manufacturers": {
+              "n": 15,
+              "correct": 11,
+              "accuracy": 0.7333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                }
+              }
+            }
+          },
+          "prompt_only_fixed_v2_head_comparison": {
+            "type_balanced_accuracy": 0.5222222222222223,
+            "type_macro_candidate_local_f1": 0.2098148148148148,
+            "all_three_correct": {
+              "correct": 7,
+              "n": 60,
+              "accuracy": 0.11666666666666667,
+              "wilson_95_ci": [
+                0.0576772064005603,
+                0.2217878802417086
+              ]
+            }
+          }
+        },
+        "joint-context-candidate": {
+          "scorer_head_sha256": "9673793192b590b964e1384ea29a45a554625f68cb4868b00210991c7981c8f5",
+          "C": 0.1,
+          "per_type": {
+            "choice": {
+              "n": 60,
+              "correct": 19,
+              "accuracy": 0.31666666666666665,
+              "wilson_95_ci": [
+                0.21305867552366523,
+                0.44233767026176773
+              ],
+              "candidate_local_macro_f1": 0.1297222222222222
+            },
+            "noul": {
+              "n": 60,
+              "correct": 60,
+              "accuracy": 1.0,
+              "wilson_95_ci": [
+                0.93982814785791,
+                0.9999999999999998
+              ],
+              "candidate_local_macro_f1": 0.5
+            },
+            "score": {
+              "n": 60,
+              "correct": 14,
+              "accuracy": 0.23333333333333334,
+              "wilson_95_ci": [
+                0.1443956173664283,
+                0.35436270377601964
+              ],
+              "candidate_local_macro_f1": 0.061944444444444455,
+              "expected_value_mae": 6.026422906135516,
+              "normalized_expected_value_mae": 0.49460309198125224
+            }
+          },
+          "type_balanced_accuracy": 0.5166666666666667,
+          "type_macro_candidate_local_f1": 0.23055555555555554,
+          "all_three_correct": {
+            "correct": 5,
+            "n": 60,
+            "accuracy": 0.08333333333333333,
+            "wilson_95_ci": [
+              0.03612045660173077,
+              0.1806894201833441
+            ]
+          },
+          "per_family": {
+            "qf-00000029": {
+              "n": 18,
+              "correct": 14,
+              "accuracy": 0.7777777777777778,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 5,
+                  "accuracy": 0.8333333333333334
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002a": {
+              "n": 18,
+              "correct": 6,
+              "accuracy": 0.3333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002b": {
+              "n": 18,
+              "correct": 8,
+              "accuracy": 0.4444444444444444,
+              "per_type": {
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "qf-0000002c": {
+              "n": 18,
+              "correct": 7,
+              "accuracy": 0.3888888888888889,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "qf-0000002d": {
+              "n": 18,
+              "correct": 9,
+              "accuracy": 0.5,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "qf-0000002e": {
+              "n": 18,
+              "correct": 8,
+              "accuracy": 0.4444444444444444,
+              "per_type": {
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "score": {
+                  "n": 6,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "qf-0000002f": {
+              "n": 18,
+              "correct": 12,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                }
+              }
+            },
+            "qf-00000030": {
+              "n": 18,
+              "correct": 10,
+              "accuracy": 0.5555555555555556,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                }
+              }
+            },
+            "qf-00000031": {
+              "n": 18,
+              "correct": 9,
+              "accuracy": 0.5,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 2,
+                  "accuracy": 0.3333333333333333
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                }
+              }
+            },
+            "qf-00000032": {
+              "n": 18,
+              "correct": 10,
+              "accuracy": 0.5555555555555556,
+              "per_type": {
+                "score": {
+                  "n": 6,
+                  "correct": 3,
+                  "accuracy": 0.5
+                },
+                "noul": {
+                  "n": 6,
+                  "correct": 6,
+                  "accuracy": 1.0
+                },
+                "choice": {
+                  "n": 6,
+                  "correct": 1,
+                  "accuracy": 0.16666666666666666
+                }
+              }
+            }
+          },
+          "per_domain": {
+            "arts colleges": {
+              "n": 15,
+              "correct": 10,
+              "accuracy": 0.6666666666666666,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 4,
+                  "accuracy": 0.8
+                }
+              }
+            },
+            "coastal research": {
+              "n": 15,
+              "correct": 6,
+              "accuracy": 0.4,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "community clinics": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "community energy": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "credit unions": {
+              "n": 15,
+              "correct": 12,
+              "accuracy": 0.8,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "food cooperatives": {
+              "n": 15,
+              "correct": 5,
+              "accuracy": 0.3333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "municipal permitting": {
+              "n": 15,
+              "correct": 8,
+              "accuracy": 0.5333333333333333,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 3,
+                  "accuracy": 0.6
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "museum conservation": {
+              "n": 15,
+              "correct": 6,
+              "accuracy": 0.4,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "public libraries": {
+              "n": 15,
+              "correct": 12,
+              "accuracy": 0.8,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                }
+              }
+            },
+            "regional farms": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "regional transit": {
+              "n": 15,
+              "correct": 6,
+              "accuracy": 0.4,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 1,
+                  "accuracy": 0.2
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            },
+            "small manufacturers": {
+              "n": 15,
+              "correct": 7,
+              "accuracy": 0.4666666666666667,
+              "per_type": {
+                "choice": {
+                  "n": 5,
+                  "correct": 2,
+                  "accuracy": 0.4
+                },
+                "noul": {
+                  "n": 5,
+                  "correct": 5,
+                  "accuracy": 1.0
+                },
+                "score": {
+                  "n": 5,
+                  "correct": 0,
+                  "accuracy": 0.0
+                }
+              }
+            }
+          },
+          "prompt_only_fixed_v2_head_comparison": {
+            "type_balanced_accuracy": 0.65,
+            "type_macro_candidate_local_f1": 0.26879629629629626,
+            "all_three_correct": {
+              "correct": 12,
+              "n": 60,
+              "accuracy": 0.2,
+              "wilson_95_ci": [
+                0.11828505322897494,
+                0.317818058056279
+              ]
+            }
+          }
+        }
+      },
+      "paired_head_vs_fixed_v2_prompt_only": {
+        "v2-baseline": {
+          "choice": {
+            "n": 60,
+            "variant_head_correct_only": 0,
+            "fixed_v2_head_correct_only": 0,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.0,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              0.0,
+              0.0
+            ]
+          },
+          "noul": {
+            "n": 60,
+            "variant_head_correct_only": 0,
+            "fixed_v2_head_correct_only": 0,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.0,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              0.0,
+              0.0
+            ]
+          },
+          "score": {
+            "n": 60,
+            "variant_head_correct_only": 0,
+            "fixed_v2_head_correct_only": 0,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.0,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "readable-state": {
+          "choice": {
+            "n": 60,
+            "variant_head_correct_only": 1,
+            "fixed_v2_head_correct_only": 3,
+            "mcnemar_exact_two_sided_p_descriptive": 0.625,
+            "paired_accuracy_delta": -0.03333333333333333,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.0981187441311347,
+              0.031452077464468035
+            ]
+          },
+          "noul": {
+            "n": 60,
+            "variant_head_correct_only": 12,
+            "fixed_v2_head_correct_only": 9,
+            "mcnemar_exact_two_sided_p_descriptive": 0.6636238098144531,
+            "paired_accuracy_delta": 0.05,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.09915913985802817,
+              0.1991591398580282
+            ]
+          },
+          "score": {
+            "n": 60,
+            "variant_head_correct_only": 4,
+            "fixed_v2_head_correct_only": 6,
+            "mcnemar_exact_two_sided_p_descriptive": 0.75390625,
+            "paired_accuracy_delta": -0.03333333333333333,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.13628759900534626,
+              0.06962093233867961
+            ]
+          }
+        },
+        "rule-in-candidate": {
+          "choice": {
+            "n": 60,
+            "variant_head_correct_only": 1,
+            "fixed_v2_head_correct_only": 7,
+            "mcnemar_exact_two_sided_p_descriptive": 0.0703125,
+            "paired_accuracy_delta": -0.1,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.18886130777968385,
+              -0.01113869222031616
+            ]
+          },
+          "noul": {
+            "n": 60,
+            "variant_head_correct_only": 12,
+            "fixed_v2_head_correct_only": 0,
+            "mcnemar_exact_two_sided_p_descriptive": 0.00048828125,
+            "paired_accuracy_delta": 0.2,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              0.09878789504946721,
+              0.3012121049505328
+            ]
+          },
+          "score": {
+            "n": 60,
+            "variant_head_correct_only": 8,
+            "fixed_v2_head_correct_only": 7,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.016666666666666666,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.10977815880271174,
+              0.14311149213604507
+            ]
+          }
+        },
+        "joint-context-candidate": {
+          "choice": {
+            "n": 60,
+            "variant_head_correct_only": 5,
+            "fixed_v2_head_correct_only": 30,
+            "mcnemar_exact_two_sided_p_descriptive": 2.2361520677804947e-05,
+            "paired_accuracy_delta": -0.4166666666666667,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.5786301936611701,
+              -0.2547031396721633
+            ]
+          },
+          "noul": {
+            "n": 60,
+            "variant_head_correct_only": 0,
+            "fixed_v2_head_correct_only": 0,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.0,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              0.0,
+              0.0
+            ]
+          },
+          "score": {
+            "n": 60,
+            "variant_head_correct_only": 10,
+            "fixed_v2_head_correct_only": 9,
+            "mcnemar_exact_two_sided_p_descriptive": 1.0,
+            "paired_accuracy_delta": 0.016666666666666666,
+            "paired_accuracy_delta_normal_95_ci_descriptive": [
+              -0.12565895107845537,
+              0.1589922844117887
+            ]
+          }
+        }
+      }
+    }
+  },
+  "test_used_for_fit_or_selection": false,
+  "secondary_vs_primary_warning": "This is a secondary comparison on the same already-seen fresh60 test. It is not an independent test and was not used to alter the train-only selection."
+}

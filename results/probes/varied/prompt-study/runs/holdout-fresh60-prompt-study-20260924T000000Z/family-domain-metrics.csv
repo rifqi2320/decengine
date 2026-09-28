@@ -1,0 +1,177 @@
+model,variant,group_type,group_id,n,correct,accuracy,choice_n,choice_correct,choice_accuracy,noul_n,noul_correct,noul_accuracy,score_n,score_correct,score_accuracy
+qwen,v2-baseline,family,qf-00000029,18,11,0.6111111111111112,6,5,0.8333333333333334,6,6,1.0,6,0,0.0
+qwen,v2-baseline,family,qf-0000002a,18,6,0.3333333333333333,6,2,0.3333333333333333,6,4,0.6666666666666666,6,0,0.0
+qwen,v2-baseline,family,qf-0000002b,18,13,0.7222222222222222,6,5,0.8333333333333334,6,6,1.0,6,2,0.3333333333333333
+qwen,v2-baseline,family,qf-0000002c,18,3,0.16666666666666666,6,1,0.16666666666666666,6,2,0.3333333333333333,6,0,0.0
+qwen,v2-baseline,family,qf-0000002d,18,13,0.7222222222222222,6,5,0.8333333333333334,6,5,0.8333333333333334,6,3,0.5
+qwen,v2-baseline,family,qf-0000002e,18,9,0.5,6,1,0.16666666666666666,6,6,1.0,6,2,0.3333333333333333
+qwen,v2-baseline,family,qf-0000002f,18,12,0.6666666666666666,6,4,0.6666666666666666,6,6,1.0,6,2,0.3333333333333333
+qwen,v2-baseline,family,qf-00000030,18,5,0.2777777777777778,6,1,0.16666666666666666,6,4,0.6666666666666666,6,0,0.0
+qwen,v2-baseline,family,qf-00000031,18,11,0.6111111111111112,6,3,0.5,6,6,1.0,6,2,0.3333333333333333
+qwen,v2-baseline,family,qf-00000032,18,7,0.3888888888888889,6,2,0.3333333333333333,6,4,0.6666666666666666,6,1,0.16666666666666666
+qwen,v2-baseline,domain,arts colleges,15,8,0.5333333333333333,5,3,0.6,5,4,0.8,5,1,0.2
+qwen,v2-baseline,domain,coastal research,15,5,0.3333333333333333,5,2,0.4,5,3,0.6,5,0,0.0
+qwen,v2-baseline,domain,community clinics,15,8,0.5333333333333333,5,3,0.6,5,4,0.8,5,1,0.2
+qwen,v2-baseline,domain,community energy,15,9,0.6,5,1,0.2,5,5,1.0,5,3,0.6
+qwen,v2-baseline,domain,credit unions,15,7,0.4666666666666667,5,4,0.8,5,3,0.6,5,0,0.0
+qwen,v2-baseline,domain,food cooperatives,15,5,0.3333333333333333,5,0,0.0,5,5,1.0,5,0,0.0
+qwen,v2-baseline,domain,municipal permitting,15,8,0.5333333333333333,5,3,0.6,5,4,0.8,5,1,0.2
+qwen,v2-baseline,domain,museum conservation,15,8,0.5333333333333333,5,3,0.6,5,3,0.6,5,2,0.4
+qwen,v2-baseline,domain,public libraries,15,7,0.4666666666666667,5,2,0.4,5,4,0.8,5,1,0.2
+qwen,v2-baseline,domain,regional farms,15,8,0.5333333333333333,5,3,0.6,5,5,1.0,5,0,0.0
+qwen,v2-baseline,domain,regional transit,15,8,0.5333333333333333,5,3,0.6,5,4,0.8,5,1,0.2
+qwen,v2-baseline,domain,small manufacturers,15,9,0.6,5,2,0.4,5,5,1.0,5,2,0.4
+qwen,readable-state,family,qf-00000029,18,11,0.6111111111111112,6,5,0.8333333333333334,6,6,1.0,6,0,0.0
+qwen,readable-state,family,qf-0000002a,18,6,0.3333333333333333,6,2,0.3333333333333333,6,3,0.5,6,1,0.16666666666666666
+qwen,readable-state,family,qf-0000002b,18,13,0.7222222222222222,6,5,0.8333333333333334,6,6,1.0,6,2,0.3333333333333333
+qwen,readable-state,family,qf-0000002c,18,7,0.3888888888888889,6,1,0.16666666666666666,6,4,0.6666666666666666,6,2,0.3333333333333333
+qwen,readable-state,family,qf-0000002d,18,10,0.5555555555555556,6,5,0.8333333333333334,6,3,0.5,6,2,0.3333333333333333
+qwen,readable-state,family,qf-0000002e,18,9,0.5,6,1,0.16666666666666666,6,6,1.0,6,2,0.3333333333333333
+qwen,readable-state,family,qf-0000002f,18,7,0.3888888888888889,6,4,0.6666666666666666,6,2,0.3333333333333333,6,1,0.16666666666666666
+qwen,readable-state,family,qf-00000030,18,7,0.3888888888888889,6,1,0.16666666666666666,6,6,1.0,6,0,0.0
+qwen,readable-state,family,qf-00000031,18,5,0.2777777777777778,6,2,0.3333333333333333,6,3,0.5,6,0,0.0
+qwen,readable-state,family,qf-00000032,18,7,0.3888888888888889,6,2,0.3333333333333333,6,4,0.6666666666666666,6,1,0.16666666666666666
+qwen,readable-state,domain,arts colleges,15,6,0.4,5,3,0.6,5,3,0.6,5,0,0.0
+qwen,readable-state,domain,coastal research,15,4,0.26666666666666666,5,2,0.4,5,2,0.4,5,0,0.0
+qwen,readable-state,domain,community clinics,15,8,0.5333333333333333,5,3,0.6,5,4,0.8,5,1,0.2
+qwen,readable-state,domain,community energy,15,8,0.5333333333333333,5,1,0.2,5,4,0.8,5,3,0.6
+qwen,readable-state,domain,credit unions,15,6,0.4,5,4,0.8,5,2,0.4,5,0,0.0
+qwen,readable-state,domain,food cooperatives,15,4,0.26666666666666666,5,0,0.0,5,4,0.8,5,0,0.0
+qwen,readable-state,domain,municipal permitting,15,7,0.4666666666666667,5,3,0.6,5,3,0.6,5,1,0.2
+qwen,readable-state,domain,museum conservation,15,8,0.5333333333333333,5,2,0.4,5,4,0.8,5,2,0.4
+qwen,readable-state,domain,public libraries,15,7,0.4666666666666667,5,2,0.4,5,5,1.0,5,0,0.0
+qwen,readable-state,domain,regional farms,15,7,0.4666666666666667,5,3,0.6,5,4,0.8,5,0,0.0
+qwen,readable-state,domain,regional transit,15,7,0.4666666666666667,5,3,0.6,5,4,0.8,5,0,0.0
+qwen,readable-state,domain,small manufacturers,15,10,0.6666666666666666,5,2,0.4,5,4,0.8,5,4,0.8
+qwen,rule-in-candidate,family,qf-00000029,18,11,0.6111111111111112,6,5,0.8333333333333334,6,6,1.0,6,0,0.0
+qwen,rule-in-candidate,family,qf-0000002a,18,6,0.3333333333333333,6,2,0.3333333333333333,6,1,0.16666666666666666,6,3,0.5
+qwen,rule-in-candidate,family,qf-0000002b,18,10,0.5555555555555556,6,3,0.5,6,6,1.0,6,1,0.16666666666666666
+qwen,rule-in-candidate,family,qf-0000002c,18,7,0.3888888888888889,6,2,0.3333333333333333,6,2,0.3333333333333333,6,3,0.5
+qwen,rule-in-candidate,family,qf-0000002d,18,13,0.7222222222222222,6,6,1.0,6,6,1.0,6,1,0.16666666666666666
+qwen,rule-in-candidate,family,qf-0000002e,18,7,0.3888888888888889,6,1,0.16666666666666666,6,3,0.5,6,3,0.5
+qwen,rule-in-candidate,family,qf-0000002f,18,12,0.6666666666666666,6,5,0.8333333333333334,6,6,1.0,6,1,0.16666666666666666
+qwen,rule-in-candidate,family,qf-00000030,18,4,0.2222222222222222,6,2,0.3333333333333333,6,2,0.3333333333333333,6,0,0.0
+qwen,rule-in-candidate,family,qf-00000031,18,14,0.7777777777777778,6,5,0.8333333333333334,6,6,1.0,6,3,0.5
+qwen,rule-in-candidate,family,qf-00000032,18,5,0.2777777777777778,6,2,0.3333333333333333,6,1,0.16666666666666666,6,2,0.3333333333333333
+qwen,rule-in-candidate,domain,arts colleges,15,7,0.4666666666666667,5,3,0.6,5,3,0.6,5,1,0.2
+qwen,rule-in-candidate,domain,coastal research,15,8,0.5333333333333333,5,3,0.6,5,3,0.6,5,2,0.4
+qwen,rule-in-candidate,domain,community clinics,15,5,0.3333333333333333,5,2,0.4,5,2,0.4,5,1,0.2
+qwen,rule-in-candidate,domain,community energy,15,7,0.4666666666666667,5,2,0.4,5,4,0.8,5,1,0.2
+qwen,rule-in-candidate,domain,credit unions,15,9,0.6,5,4,0.8,5,4,0.8,5,1,0.2
+qwen,rule-in-candidate,domain,food cooperatives,15,7,0.4666666666666667,5,1,0.2,5,4,0.8,5,2,0.4
+qwen,rule-in-candidate,domain,municipal permitting,15,8,0.5333333333333333,5,4,0.8,5,3,0.6,5,1,0.2
+qwen,rule-in-candidate,domain,museum conservation,15,9,0.6,5,3,0.6,5,3,0.6,5,3,0.6
+qwen,rule-in-candidate,domain,public libraries,15,6,0.4,5,2,0.4,5,3,0.6,5,1,0.2
+qwen,rule-in-candidate,domain,regional farms,15,8,0.5333333333333333,5,3,0.6,5,3,0.6,5,2,0.4
+qwen,rule-in-candidate,domain,regional transit,15,8,0.5333333333333333,5,3,0.6,5,4,0.8,5,1,0.2
+qwen,rule-in-candidate,domain,small manufacturers,15,7,0.4666666666666667,5,3,0.6,5,3,0.6,5,1,0.2
+qwen,joint-context-candidate,family,qf-00000029,18,11,0.6111111111111112,6,5,0.8333333333333334,6,6,1.0,6,0,0.0
+qwen,joint-context-candidate,family,qf-0000002a,18,4,0.2222222222222222,6,3,0.5,6,1,0.16666666666666666,6,0,0.0
+qwen,joint-context-candidate,family,qf-0000002b,18,10,0.5555555555555556,6,3,0.5,6,6,1.0,6,1,0.16666666666666666
+qwen,joint-context-candidate,family,qf-0000002c,18,3,0.16666666666666666,6,2,0.3333333333333333,6,0,0.0,6,1,0.16666666666666666
+qwen,joint-context-candidate,family,qf-0000002d,18,13,0.7222222222222222,6,4,0.6666666666666666,6,6,1.0,6,3,0.5
+qwen,joint-context-candidate,family,qf-0000002e,18,5,0.2777777777777778,6,1,0.16666666666666666,6,1,0.16666666666666666,6,3,0.5
+qwen,joint-context-candidate,family,qf-0000002f,18,10,0.5555555555555556,6,2,0.3333333333333333,6,6,1.0,6,2,0.3333333333333333
+qwen,joint-context-candidate,family,qf-00000030,18,3,0.16666666666666666,6,3,0.5,6,0,0.0,6,0,0.0
+qwen,joint-context-candidate,family,qf-00000031,18,13,0.7222222222222222,6,5,0.8333333333333334,6,6,1.0,6,2,0.3333333333333333
+qwen,joint-context-candidate,family,qf-00000032,18,7,0.3888888888888889,6,2,0.3333333333333333,6,3,0.5,6,2,0.3333333333333333
+qwen,joint-context-candidate,domain,arts colleges,15,7,0.4666666666666667,5,4,0.8,5,2,0.4,5,1,0.2
+qwen,joint-context-candidate,domain,coastal research,15,7,0.4666666666666667,5,2,0.4,5,4,0.8,5,1,0.2
+qwen,joint-context-candidate,domain,community clinics,15,7,0.4666666666666667,5,3,0.6,5,2,0.4,5,2,0.4
+qwen,joint-context-candidate,domain,community energy,15,9,0.6,5,3,0.6,5,4,0.8,5,2,0.4
+qwen,joint-context-candidate,domain,credit unions,15,7,0.4666666666666667,5,4,0.8,5,2,0.4,5,1,0.2
+qwen,joint-context-candidate,domain,food cooperatives,15,8,0.5333333333333333,5,3,0.6,5,4,0.8,5,1,0.2
+qwen,joint-context-candidate,domain,municipal permitting,15,6,0.4,5,3,0.6,5,3,0.6,5,0,0.0
+qwen,joint-context-candidate,domain,museum conservation,15,7,0.4666666666666667,5,2,0.4,5,3,0.6,5,2,0.4
+qwen,joint-context-candidate,domain,public libraries,15,5,0.3333333333333333,5,1,0.2,5,2,0.4,5,2,0.4
+qwen,joint-context-candidate,domain,regional farms,15,6,0.4,5,1,0.2,5,4,0.8,5,1,0.2
+qwen,joint-context-candidate,domain,regional transit,15,4,0.26666666666666666,5,2,0.4,5,2,0.4,5,0,0.0
+qwen,joint-context-candidate,domain,small manufacturers,15,6,0.4,5,2,0.4,5,3,0.6,5,1,0.2
+harrier,v2-baseline,family,qf-00000029,18,13,0.7222222222222222,6,5,0.8333333333333334,6,6,1.0,6,2,0.3333333333333333
+harrier,v2-baseline,family,qf-0000002a,18,8,0.4444444444444444,6,1,0.16666666666666666,6,5,0.8333333333333334,6,2,0.3333333333333333
+harrier,v2-baseline,family,qf-0000002b,18,13,0.7222222222222222,6,5,0.8333333333333334,6,6,1.0,6,2,0.3333333333333333
+harrier,v2-baseline,family,qf-0000002c,18,9,0.5,6,2,0.3333333333333333,6,6,1.0,6,1,0.16666666666666666
+harrier,v2-baseline,family,qf-0000002d,18,11,0.6111111111111112,6,5,0.8333333333333334,6,6,1.0,6,0,0.0
+harrier,v2-baseline,family,qf-0000002e,18,11,0.6111111111111112,6,2,0.3333333333333333,6,6,1.0,6,3,0.5
+harrier,v2-baseline,family,qf-0000002f,18,13,0.7222222222222222,6,6,1.0,6,6,1.0,6,1,0.16666666666666666
+harrier,v2-baseline,family,qf-00000030,18,4,0.2222222222222222,6,0,0.0,6,4,0.6666666666666666,6,0,0.0
+harrier,v2-baseline,family,qf-00000031,18,11,0.6111111111111112,6,4,0.6666666666666666,6,6,1.0,6,1,0.16666666666666666
+harrier,v2-baseline,family,qf-00000032,18,8,0.4444444444444444,6,1,0.16666666666666666,6,6,1.0,6,1,0.16666666666666666
+harrier,v2-baseline,domain,arts colleges,15,7,0.4666666666666667,5,3,0.6,5,4,0.8,5,0,0.0
+harrier,v2-baseline,domain,coastal research,15,7,0.4666666666666667,5,2,0.4,5,5,1.0,5,0,0.0
+harrier,v2-baseline,domain,community clinics,15,9,0.6,5,3,0.6,5,5,1.0,5,1,0.2
+harrier,v2-baseline,domain,community energy,15,9,0.6,5,2,0.4,5,5,1.0,5,2,0.4
+harrier,v2-baseline,domain,credit unions,15,9,0.6,5,3,0.6,5,5,1.0,5,1,0.2
+harrier,v2-baseline,domain,food cooperatives,15,9,0.6,5,3,0.6,5,5,1.0,5,1,0.2
+harrier,v2-baseline,domain,municipal permitting,15,8,0.5333333333333333,5,2,0.4,5,5,1.0,5,1,0.2
+harrier,v2-baseline,domain,museum conservation,15,9,0.6,5,2,0.4,5,5,1.0,5,2,0.4
+harrier,v2-baseline,domain,public libraries,15,7,0.4666666666666667,5,3,0.6,5,4,0.8,5,0,0.0
+harrier,v2-baseline,domain,regional farms,15,9,0.6,5,2,0.4,5,5,1.0,5,2,0.4
+harrier,v2-baseline,domain,regional transit,15,11,0.7333333333333333,5,4,0.8,5,5,1.0,5,2,0.4
+harrier,v2-baseline,domain,small manufacturers,15,7,0.4666666666666667,5,2,0.4,5,4,0.8,5,1,0.2
+harrier,readable-state,family,qf-00000029,18,13,0.7222222222222222,6,5,0.8333333333333334,6,5,0.8333333333333334,6,3,0.5
+harrier,readable-state,family,qf-0000002a,18,4,0.2222222222222222,6,0,0.0,6,3,0.5,6,1,0.16666666666666666
+harrier,readable-state,family,qf-0000002b,18,14,0.7777777777777778,6,6,1.0,6,6,1.0,6,2,0.3333333333333333
+harrier,readable-state,family,qf-0000002c,18,5,0.2777777777777778,6,2,0.3333333333333333,6,2,0.3333333333333333,6,1,0.16666666666666666
+harrier,readable-state,family,qf-0000002d,18,11,0.6111111111111112,6,5,0.8333333333333334,6,6,1.0,6,0,0.0
+harrier,readable-state,family,qf-0000002e,18,9,0.5,6,2,0.3333333333333333,6,4,0.6666666666666666,6,3,0.5
+harrier,readable-state,family,qf-0000002f,18,14,0.7777777777777778,6,6,1.0,6,6,1.0,6,2,0.3333333333333333
+harrier,readable-state,family,qf-00000030,18,4,0.2222222222222222,6,0,0.0,6,2,0.3333333333333333,6,2,0.3333333333333333
+harrier,readable-state,family,qf-00000031,18,14,0.7777777777777778,6,6,1.0,6,6,1.0,6,2,0.3333333333333333
+harrier,readable-state,family,qf-00000032,18,4,0.2222222222222222,6,1,0.16666666666666666,6,2,0.3333333333333333,6,1,0.16666666666666666
+harrier,readable-state,domain,arts colleges,15,8,0.5333333333333333,5,3,0.6,5,3,0.6,5,2,0.4
+harrier,readable-state,domain,coastal research,15,8,0.5333333333333333,5,3,0.6,5,5,1.0,5,0,0.0
+harrier,readable-state,domain,community clinics,15,9,0.6,5,3,0.6,5,4,0.8,5,2,0.4
+harrier,readable-state,domain,community energy,15,9,0.6,5,2,0.4,5,5,1.0,5,2,0.4
+harrier,readable-state,domain,credit unions,15,8,0.5333333333333333,5,3,0.6,5,3,0.6,5,2,0.4
+harrier,readable-state,domain,food cooperatives,15,7,0.4666666666666667,5,3,0.6,5,3,0.6,5,1,0.2
+harrier,readable-state,domain,municipal permitting,15,6,0.4,5,2,0.4,5,4,0.8,5,0,0.0
+harrier,readable-state,domain,museum conservation,15,6,0.4,5,3,0.6,5,2,0.4,5,1,0.2
+harrier,readable-state,domain,public libraries,15,9,0.6,5,4,0.8,5,3,0.6,5,2,0.4
+harrier,readable-state,domain,regional farms,15,8,0.5333333333333333,5,2,0.4,5,4,0.8,5,2,0.4
+harrier,readable-state,domain,regional transit,15,8,0.5333333333333333,5,3,0.6,5,3,0.6,5,2,0.4
+harrier,readable-state,domain,small manufacturers,15,6,0.4,5,2,0.4,5,3,0.6,5,1,0.2
+harrier,rule-in-candidate,family,qf-00000029,18,8,0.4444444444444444,6,6,1.0,6,1,0.16666666666666666,6,1,0.16666666666666666
+harrier,rule-in-candidate,family,qf-0000002a,18,8,0.4444444444444444,6,2,0.3333333333333333,6,6,1.0,6,0,0.0
+harrier,rule-in-candidate,family,qf-0000002b,18,8,0.4444444444444444,6,6,1.0,6,0,0.0,6,2,0.3333333333333333
+harrier,rule-in-candidate,family,qf-0000002c,18,9,0.5,6,2,0.3333333333333333,6,6,1.0,6,1,0.16666666666666666
+harrier,rule-in-candidate,family,qf-0000002d,18,11,0.6111111111111112,6,6,1.0,6,3,0.5,6,2,0.3333333333333333
+harrier,rule-in-candidate,family,qf-0000002e,18,12,0.6666666666666666,6,4,0.6666666666666666,6,6,1.0,6,2,0.3333333333333333
+harrier,rule-in-candidate,family,qf-0000002f,18,10,0.5555555555555556,6,6,1.0,6,2,0.3333333333333333,6,2,0.3333333333333333
+harrier,rule-in-candidate,family,qf-00000030,18,9,0.5,6,2,0.3333333333333333,6,6,1.0,6,1,0.16666666666666666
+harrier,rule-in-candidate,family,qf-00000031,18,10,0.5555555555555556,6,6,1.0,6,4,0.6666666666666666,6,0,0.0
+harrier,rule-in-candidate,family,qf-00000032,18,9,0.5,6,2,0.3333333333333333,6,6,1.0,6,1,0.16666666666666666
+harrier,rule-in-candidate,domain,arts colleges,15,9,0.6,5,4,0.8,5,4,0.8,5,1,0.2
+harrier,rule-in-candidate,domain,coastal research,15,6,0.4,5,4,0.8,5,2,0.4,5,0,0.0
+harrier,rule-in-candidate,domain,community clinics,15,7,0.4666666666666667,5,3,0.6,5,3,0.6,5,1,0.2
+harrier,rule-in-candidate,domain,community energy,15,10,0.6666666666666666,5,3,0.6,5,4,0.8,5,3,0.6
+harrier,rule-in-candidate,domain,credit unions,15,8,0.5333333333333333,5,4,0.8,5,4,0.8,5,0,0.0
+harrier,rule-in-candidate,domain,food cooperatives,15,7,0.4666666666666667,5,4,0.8,5,3,0.6,5,0,0.0
+harrier,rule-in-candidate,domain,municipal permitting,15,9,0.6,5,4,0.8,5,5,1.0,5,0,0.0
+harrier,rule-in-candidate,domain,museum conservation,15,9,0.6,5,3,0.6,5,3,0.6,5,3,0.6
+harrier,rule-in-candidate,domain,public libraries,15,9,0.6,5,3,0.6,5,4,0.8,5,2,0.4
+harrier,rule-in-candidate,domain,regional farms,15,6,0.4,5,3,0.6,5,3,0.6,5,0,0.0
+harrier,rule-in-candidate,domain,regional transit,15,8,0.5333333333333333,5,4,0.8,5,3,0.6,5,1,0.2
+harrier,rule-in-candidate,domain,small manufacturers,15,6,0.4,5,3,0.6,5,2,0.4,5,1,0.2
+harrier,joint-context-candidate,family,qf-00000029,18,13,0.7222222222222222,6,6,1.0,6,6,1.0,6,1,0.16666666666666666
+harrier,joint-context-candidate,family,qf-0000002a,18,8,0.4444444444444444,6,2,0.3333333333333333,6,6,1.0,6,0,0.0
+harrier,joint-context-candidate,family,qf-0000002b,18,14,0.7777777777777778,6,6,1.0,6,6,1.0,6,2,0.3333333333333333
+harrier,joint-context-candidate,family,qf-0000002c,18,11,0.6111111111111112,6,4,0.6666666666666666,6,6,1.0,6,1,0.16666666666666666
+harrier,joint-context-candidate,family,qf-0000002d,18,13,0.7222222222222222,6,5,0.8333333333333334,6,6,1.0,6,2,0.3333333333333333
+harrier,joint-context-candidate,family,qf-0000002e,18,12,0.6666666666666666,6,4,0.6666666666666666,6,6,1.0,6,2,0.3333333333333333
+harrier,joint-context-candidate,family,qf-0000002f,18,15,0.8333333333333334,6,6,1.0,6,6,1.0,6,3,0.5
+harrier,joint-context-candidate,family,qf-00000030,18,9,0.5,6,3,0.5,6,6,1.0,6,0,0.0
+harrier,joint-context-candidate,family,qf-00000031,18,13,0.7222222222222222,6,6,1.0,6,6,1.0,6,1,0.16666666666666666
+harrier,joint-context-candidate,family,qf-00000032,18,9,0.5,6,2,0.3333333333333333,6,6,1.0,6,1,0.16666666666666666
+harrier,joint-context-candidate,domain,arts colleges,15,13,0.8666666666666667,5,4,0.8,5,5,1.0,5,4,0.8
+harrier,joint-context-candidate,domain,coastal research,15,9,0.6,5,4,0.8,5,5,1.0,5,0,0.0
+harrier,joint-context-candidate,domain,community clinics,15,9,0.6,5,4,0.8,5,5,1.0,5,0,0.0
+harrier,joint-context-candidate,domain,community energy,15,11,0.7333333333333333,5,3,0.6,5,5,1.0,5,3,0.6
+harrier,joint-context-candidate,domain,credit unions,15,9,0.6,5,4,0.8,5,5,1.0,5,0,0.0
+harrier,joint-context-candidate,domain,food cooperatives,15,8,0.5333333333333333,5,3,0.6,5,5,1.0,5,0,0.0
+harrier,joint-context-candidate,domain,municipal permitting,15,8,0.5333333333333333,5,3,0.6,5,5,1.0,5,0,0.0
+harrier,joint-context-candidate,domain,museum conservation,15,11,0.7333333333333333,5,3,0.6,5,5,1.0,5,3,0.6
+harrier,joint-context-candidate,domain,public libraries,15,9,0.6,5,3,0.6,5,5,1.0,5,1,0.2
+harrier,joint-context-candidate,domain,regional farms,15,10,0.6666666666666666,5,5,1.0,5,5,1.0,5,0,0.0
+harrier,joint-context-candidate,domain,regional transit,15,11,0.7333333333333333,5,5,1.0,5,5,1.0,5,1,0.2
+harrier,joint-context-candidate,domain,small manufacturers,15,9,0.6,5,3,0.6,5,5,1.0,5,1,0.2

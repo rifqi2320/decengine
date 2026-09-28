@@ -1,0 +1,698 @@
+{
+  "evaluation": {
+    "by_question": {
+      "impact": {
+        "jev": {
+          "binary_scored_count": 100,
+          "brier_score": 0.15206899999999998,
+          "by_industry": {
+            "education": {
+              "correct": 6,
+              "incorrect": 4
+            },
+            "energy_utilities": {
+              "correct": 9,
+              "incorrect": 1
+            },
+            "financial_services": {
+              "correct": 9,
+              "incorrect": 1
+            },
+            "healthcare": {
+              "correct": 7,
+              "incorrect": 3
+            },
+            "hospitality": {
+              "correct": 9,
+              "incorrect": 1
+            },
+            "manufacturing": {
+              "correct": 7,
+              "incorrect": 3
+            },
+            "public_services": {
+              "correct": 9,
+              "incorrect": 1
+            },
+            "retail_ecommerce": {
+              "correct": 10
+            },
+            "software_saas": {
+              "correct": 6,
+              "incorrect": 4
+            },
+            "transport_logistics": {
+              "correct": 9,
+              "incorrect": 1
+            }
+          },
+          "by_predicted_value": {
+            "high": {
+              "correct": 29,
+              "incorrect": 1
+            },
+            "low": {
+              "correct": 31
+            },
+            "moderate": {
+              "correct": 21,
+              "incorrect": 18
+            }
+          },
+          "by_reference_value": {
+            "high": {
+              "correct": 29,
+              "incorrect": 8
+            },
+            "low": {
+              "correct": 31,
+              "incorrect": 10
+            },
+            "moderate": {
+              "correct": 21,
+              "incorrect": 1
+            }
+          },
+          "confidence_reported_count": 100,
+          "definitive_count": 100,
+          "exact_accuracy": 0.81,
+          "judgments": 100,
+          "labels": {
+            "correct": 81,
+            "incorrect": 19
+          }
+        },
+        "mlx": {
+          "binary_scored_count": 99,
+          "brier_score": 0.3412404584432189,
+          "by_industry": {
+            "education": {
+              "correct": 3,
+              "incorrect": 7
+            },
+            "energy_utilities": {
+              "correct": 6,
+              "incorrect": 4
+            },
+            "financial_services": {
+              "correct": 5,
+              "incorrect": 5
+            },
+            "healthcare": {
+              "correct": 5,
+              "incorrect": 5
+            },
+            "hospitality": {
+              "correct": 4,
+              "incorrect": 6
+            },
+            "manufacturing": {
+              "correct": 5,
+              "incorrect": 5
+            },
+            "public_services": {
+              "correct": 5,
+              "incorrect": 5
+            },
+            "retail_ecommerce": {
+              "correct": 6,
+              "incorrect": 4
+            },
+            "software_saas": {
+              "correct": 3,
+              "incorrect": 6,
+              "indeterminate": 1
+            },
+            "transport_logistics": {
+              "correct": 7,
+              "incorrect": 3
+            }
+          },
+          "by_predicted_value": {
+            "high": {
+              "correct": 34,
+              "incorrect": 42
+            },
+            "low": {
+              "correct": 15,
+              "incorrect": 8,
+              "indeterminate": 1
+            }
+          },
+          "by_reference_value": {
+            "high": {
+              "correct": 34,
+              "incorrect": 3
+            },
+            "low": {
+              "correct": 15,
+              "incorrect": 25,
+              "indeterminate": 1
+            },
+            "moderate": {
+              "incorrect": 22
+            }
+          },
+          "confidence_reported_count": 100,
+          "definitive_count": 99,
+          "exact_accuracy": 0.494949494949495,
+          "judgments": 100,
+          "labels": {
+            "correct": 49,
+            "incorrect": 50,
+            "indeterminate": 1
+          }
+        },
+        "relative_outcomes": {
+          "by_reference_value": {
+            "high": {
+              "jev": 2,
+              "mlx": 7,
+              "tie": 28
+            },
+            "low": {
+              "indeterminate": 1,
+              "jev": 20,
+              "mlx": 4,
+              "tie": 16
+            },
+            "moderate": {
+              "jev": 21,
+              "tie": 1
+            }
+          },
+          "judgments": 100,
+          "labels": {
+            "indeterminate": 1,
+            "jev": 43,
+            "mlx": 11,
+            "tie": 45
+          },
+          "outcomes": {
+            "indeterminate": 1,
+            "jev": 43,
+            "mlx": 11,
+            "tie": 45
+          }
+        }
+      },
+      "owner": {
+        "jev": {
+          "binary_scored_count": 100,
+          "brier_score": 0.11100299999999999,
+          "by_industry": {
+            "education": {
+              "correct": 9,
+              "incorrect": 1
+            },
+            "energy_utilities": {
+              "correct": 8,
+              "incorrect": 2
+            },
+            "financial_services": {
+              "correct": 8,
+              "incorrect": 2
+            },
+            "healthcare": {
+              "correct": 9,
+              "incorrect": 1
+            },
+            "hospitality": {
+              "correct": 8,
+              "incorrect": 2
+            },
+            "manufacturing": {
+              "correct": 10
+            },
+            "public_services": {
+              "correct": 8,
+              "incorrect": 2
+            },
+            "retail_ecommerce": {
+              "correct": 9,
+              "incorrect": 1
+            },
+            "software_saas": {
+              "correct": 6,
+              "incorrect": 4
+            },
+            "transport_logistics": {
+              "correct": 7,
+              "incorrect": 3
+            }
+          },
+          "by_predicted_value": {
+            "account_access": {
+              "correct": 5,
+              "incorrect": 2
+            },
+            "billing": {
+              "correct": 16,
+              "incorrect": 1
+            },
+            "operations": {
+              "correct": 16,
+              "incorrect": 5
+            },
+            "other": {
+              "correct": 2,
+              "incorrect": 3
+            },
+            "safety_compliance": {
+              "correct": 20,
+              "incorrect": 3
+            },
+            "sales": {
+              "correct": 8,
+              "incorrect": 1
+            },
+            "technical_support": {
+              "correct": 15,
+              "incorrect": 3
+            }
+          },
+          "by_reference_value": {
+            "account_access": {
+              "correct": 5,
+              "incorrect": 3
+            },
+            "billing": {
+              "correct": 16
+            },
+            "operations": {
+              "correct": 16,
+              "incorrect": 6
+            },
+            "other": {
+              "correct": 2,
+              "incorrect": 1
+            },
+            "safety_compliance": {
+              "correct": 20,
+              "incorrect": 2
+            },
+            "sales": {
+              "correct": 8,
+              "incorrect": 1
+            },
+            "technical_support": {
+              "correct": 15,
+              "incorrect": 5
+            }
+          },
+          "confidence_reported_count": 100,
+          "definitive_count": 100,
+          "exact_accuracy": 0.82,
+          "judgments": 100,
+          "labels": {
+            "correct": 82,
+            "incorrect": 18
+          }
+        },
+        "mlx": {
+          "binary_scored_count": 100,
+          "brier_score": 0.2773626916560205,
+          "by_industry": {
+            "education": {
+              "correct": 4,
+              "incorrect": 6
+            },
+            "energy_utilities": {
+              "correct": 6,
+              "incorrect": 4
+            },
+            "financial_services": {
+              "correct": 5,
+              "incorrect": 5
+            },
+            "healthcare": {
+              "correct": 6,
+              "incorrect": 4
+            },
+            "hospitality": {
+              "correct": 3,
+              "incorrect": 7
+            },
+            "manufacturing": {
+              "correct": 6,
+              "incorrect": 4
+            },
+            "public_services": {
+              "correct": 5,
+              "incorrect": 5
+            },
+            "retail_ecommerce": {
+              "correct": 2,
+              "incorrect": 8
+            },
+            "software_saas": {
+              "correct": 3,
+              "incorrect": 7
+            },
+            "transport_logistics": {
+              "correct": 5,
+              "incorrect": 5
+            }
+          },
+          "by_predicted_value": {
+            "account_access": {
+              "incorrect": 2
+            },
+            "billing": {
+              "correct": 15,
+              "incorrect": 10
+            },
+            "operations": {
+              "correct": 16,
+              "incorrect": 18
+            },
+            "other": {
+              "correct": 2,
+              "incorrect": 19
+            },
+            "safety_compliance": {
+              "correct": 6,
+              "incorrect": 4
+            },
+            "sales": {
+              "correct": 1
+            },
+            "technical_support": {
+              "correct": 5,
+              "incorrect": 2
+            }
+          },
+          "by_reference_value": {
+            "account_access": {
+              "incorrect": 8
+            },
+            "billing": {
+              "correct": 15,
+              "incorrect": 1
+            },
+            "operations": {
+              "correct": 16,
+              "incorrect": 6
+            },
+            "other": {
+              "correct": 2,
+              "incorrect": 1
+            },
+            "safety_compliance": {
+              "correct": 6,
+              "incorrect": 16
+            },
+            "sales": {
+              "correct": 1,
+              "incorrect": 8
+            },
+            "technical_support": {
+              "correct": 5,
+              "incorrect": 15
+            }
+          },
+          "confidence_reported_count": 100,
+          "definitive_count": 100,
+          "exact_accuracy": 0.45,
+          "judgments": 100,
+          "labels": {
+            "correct": 45,
+            "incorrect": 55
+          }
+        },
+        "relative_outcomes": {
+          "by_reference_value": {
+            "account_access": {
+              "jev": 5,
+              "tie": 3
+            },
+            "billing": {
+              "jev": 1,
+              "tie": 15
+            },
+            "operations": {
+              "jev": 3,
+              "mlx": 3,
+              "tie": 16
+            },
+            "other": {
+              "jev": 1,
+              "mlx": 1,
+              "tie": 1
+            },
+            "safety_compliance": {
+              "jev": 14,
+              "tie": 8
+            },
+            "sales": {
+              "jev": 7,
+              "tie": 2
+            },
+            "technical_support": {
+              "jev": 11,
+              "mlx": 1,
+              "tie": 8
+            }
+          },
+          "judgments": 100,
+          "labels": {
+            "jev": 42,
+            "mlx": 5,
+            "tie": 53
+          },
+          "outcomes": {
+            "jev": 42,
+            "mlx": 5,
+            "tie": 53
+          }
+        }
+      },
+      "urgent": {
+        "jev": {
+          "binary_scored_count": 0,
+          "brier_score": null,
+          "by_industry": {
+            "education": {
+              "correct": 9,
+              "incorrect": 1
+            },
+            "energy_utilities": {
+              "correct": 8,
+              "incorrect": 2
+            },
+            "financial_services": {
+              "correct": 10
+            },
+            "healthcare": {
+              "correct": 10
+            },
+            "hospitality": {
+              "correct": 10
+            },
+            "manufacturing": {
+              "correct": 9,
+              "incorrect": 1
+            },
+            "public_services": {
+              "correct": 10
+            },
+            "retail_ecommerce": {
+              "correct": 9,
+              "incorrect": 1
+            },
+            "software_saas": {
+              "correct": 10
+            },
+            "transport_logistics": {
+              "correct": 10
+            }
+          },
+          "by_predicted_value": {
+            "False": {
+              "correct": 52,
+              "incorrect": 3
+            },
+            "True": {
+              "correct": 43,
+              "incorrect": 2
+            }
+          },
+          "by_reference_value": {
+            "False": {
+              "correct": 52,
+              "incorrect": 2
+            },
+            "True": {
+              "correct": 43,
+              "incorrect": 3
+            }
+          },
+          "confidence_reported_count": 0,
+          "definitive_count": 100,
+          "exact_accuracy": 0.95,
+          "judgments": 100,
+          "labels": {
+            "correct": 95,
+            "incorrect": 5
+          }
+        },
+        "mlx": {
+          "binary_scored_count": 100,
+          "brier_score": 0.2756916930152105,
+          "by_industry": {
+            "education": {
+              "correct": 5,
+              "incorrect": 5
+            },
+            "energy_utilities": {
+              "correct": 4,
+              "incorrect": 6
+            },
+            "financial_services": {
+              "correct": 5,
+              "incorrect": 5
+            },
+            "healthcare": {
+              "correct": 5,
+              "incorrect": 5
+            },
+            "hospitality": {
+              "correct": 6,
+              "incorrect": 4
+            },
+            "manufacturing": {
+              "correct": 6,
+              "incorrect": 4
+            },
+            "public_services": {
+              "correct": 5,
+              "incorrect": 5
+            },
+            "retail_ecommerce": {
+              "correct": 4,
+              "incorrect": 6
+            },
+            "software_saas": {
+              "correct": 8,
+              "incorrect": 2
+            },
+            "transport_logistics": {
+              "correct": 5,
+              "incorrect": 5
+            }
+          },
+          "by_predicted_value": {
+            "True": {
+              "correct": 53,
+              "incorrect": 47
+            }
+          },
+          "by_reference_value": {
+            "False": {
+              "correct": 7,
+              "incorrect": 47
+            },
+            "True": {
+              "correct": 46
+            }
+          },
+          "confidence_reported_count": 100,
+          "definitive_count": 100,
+          "exact_accuracy": 0.53,
+          "judgments": 100,
+          "labels": {
+            "correct": 53,
+            "incorrect": 47
+          }
+        },
+        "relative_outcomes": {
+          "by_reference_value": {
+            "False": {
+              "jev": 45,
+              "tie": 9
+            },
+            "True": {
+              "mlx": 3,
+              "tie": 43
+            }
+          },
+          "judgments": 100,
+          "labels": {
+            "jev": 45,
+            "mlx": 3,
+            "tie": 52
+          },
+          "outcomes": {
+            "jev": 45,
+            "mlx": 3,
+            "tie": 52
+          }
+        }
+      }
+    },
+    "case_correctness": {
+      "jev": {
+        "correct": 65,
+        "incorrect": 1,
+        "partial": 34
+      },
+      "mlx": {
+        "correct": 14,
+        "incorrect": 19,
+        "partial": 67
+      }
+    },
+    "case_count": 100,
+    "case_winners": {
+      "jev": 68,
+      "mlx": 7,
+      "tie": 25
+    },
+    "expected_case_count": 100,
+    "judgment_count": 100,
+    "missing_case_ids": []
+  },
+  "interpretation_caveats": [
+    "Accuracy uses per-question correctness labels; denominator excludes indeterminate judgments and includes correct, partial, and incorrect labels. Exact accuracy numerator is correct only.",
+    "A partial judgment is included in the accuracy denominator but is not counted as exactly correct.",
+    "Relative outcome counts are human case/question winner labels, not inferred from correctness totals.",
+    "Latency summaries describe recorded per-case runner timings; mean and percentiles are descriptive for this single run, not repeated-run estimates.",
+    "Brier score uses only reported confidence with binary correct/incorrect judgments; partial and indeterminate cases are excluded and this is not a full calibration study."
+  ],
+  "latency": {
+    "decengine": {
+      "case_count": 100,
+      "milliseconds": {
+        "max": 212.036625,
+        "mean": 87.38868664,
+        "min": 75.011625,
+        "p50": 82.46614600000001,
+        "p95": 97.58171215
+      },
+      "status_counts": {
+        "ok": 100
+      },
+      "timed_count": 100
+    },
+    "jev": {
+      "case_count": 100,
+      "milliseconds": {
+        "max": 1384.742333,
+        "mean": 463.70174786,
+        "min": 349.868042,
+        "p50": 436.663958,
+        "p95": 613.9604229
+      },
+      "status_counts": {
+        "ok": 100
+      },
+      "timed_count": 100
+    }
+  },
+  "run": {
+    "archive": "cases.jsonl",
+    "archive_case_count": 100,
+    "run_hash": "sha256:f1510c938c9f9d8fb9a5a8c2d146e868fba72c36449b2a59f44499124a660c7a",
+    "run_id": "20260923T082226631235Z"
+  }
+}

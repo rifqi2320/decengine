@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "compared_decisions": 11,
+  "probability_atol": 1e-05,
+  "max_probability_abs_diff": 0.0,
+  "comparisons": [
+    {
+      "case_id": "mq-lora-fresh-001",
+      "question": "immediate_intervention",
+      "label_exact": true,
+      "max_probability_abs_diff": 0.0,
+      "probabilities_within_atol": true
+    },
+    {
+      "case_id": "mq-lora-fresh-001",
+      "question": "record_auditability",
+      "label_exact": true,
+      "max_probability_abs_diff": 0.0,
+      "probabilities_within_atol": true
+    },
+    {
+      "case_id": "mq-lora-fresh-001",
+      "question": "response_plan",
+      "label_exact": true,
+      "max_probability_abs_diff": 0.0,
+      "probabilities_within_atol": true
+    },
+    {
+      "case_id": "mq-lora-fresh-002",
+      "question": "immediate_intervention",
+      "label_exact": true,
+      "max_probability_abs_diff": 0.0,
+      "probabilities_within_atol": true
+    },
+    {
+      "case_id": "mq-lora-fresh-002",
+      "question": "record_auditability",
+      "label_exact": true,
+      "max_probability_abs_diff": 0.0,
+      "probabilities_within_atol": true
+    },
+    {
+      "case_id": "mq-lora-fresh-002",
+      "question": "response_plan",
+      "label_exact": true,
+      "max_probability_abs_diff": 0.0,
+      "probabilities_within_atol": true
+    },
+    {
+      "case_id": "mq-lora-fresh-003",
+      "question": "immediate_intervention",
+      "label_exact": true,
+      "max_probability_abs_diff": 0.0,
+      "probabilities_within_atol": true
+    },
+    {
+      "case_id": "mq-lora-fresh-003",
+      "question": "record_auditability",
+      "label_exact": true,
+      "max_probability_abs_diff": 0.0,
+      "probabilities_within_atol": true
+    },
+    {
+      "case_id": "mq-lora-fresh-003",
+      "question": "response_plan",
+      "label_exact": true,
+      "max_probability_abs_diff": 0.0,
+      "probabilities_within_atol": true
+    },
+    {
+      "case_id": "mq-lora-fresh-004",
+      "question": "immediate_intervention",
+      "label_exact": true,
+      "max_probability_abs_diff": 0.0,
+      "probabilities_within_atol": true
+    },
+    {
+      "case_id": "mq-lora-fresh-004",
+      "question": "response_plan",
+      "label_exact": true,
+      "max_probability_abs_diff": 0.0,
+      "probabilities_within_atol": true
+    }
+  ],
+  "partial_run": "/Users/IDSP35241/Documents/Code/decengine/results/laya/varied/runs/20260924T052807390692Z/raw-results.jsonl"
+}

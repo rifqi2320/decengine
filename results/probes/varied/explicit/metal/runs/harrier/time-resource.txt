@@ -1,0 +1,19 @@
+Metal inference 180 typed questions; model hashes 077962ae2a20dea890ee8e6566c4730023b1a3d11ff2ca1be567aa8e1462b32f 4cb002e1c29f5273ecc23fcdf742b093cb5433d661f5df0b50d209a534fb1409
+       26.24 real         5.98 user         1.42 sys
+          1418379264  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              164269  page reclaims
+                  13  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  29  voluntary context switches
+               46734  involuntary context switches
+         71287446886  instructions retired
+         22368011008  cycles elapsed
+          3934619568  peak memory footprint

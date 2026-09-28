@@ -1,0 +1,23 @@
+{
+  "approved_runs": {
+    "harrier": {
+      "C": 1.0,
+      "frozen_config_sha256": "6b47c976d02ddb97386740d1cd47ce914793f59d4f9fbfd7e6d12bf178f65551",
+      "metadata_sha256": "a9da966de3622ec92438e271125af0f9e228b77900ef4f50e6a56076d916dabb",
+      "model": "microsoft/harrier-oss-v1-0.6b",
+      "models_sha256": "092a29103348659299fdeec50b6634d5963a88d58774459c06ba2e526dec27c4",
+      "run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/eval/fresh60/headonly-same460/harrier",
+      "selection_status": "frozen"
+    },
+    "qwen": {
+      "C": 1.0,
+      "frozen_config_sha256": "fd21cd842b1876abcbcc4473edcc902d24d7f2f7ec0b4a7e92b98f08852dbb51",
+      "metadata_sha256": "1a4904820ddc2b5eabc44b53404e455167172205324504b46c0f32cdb4f392ce",
+      "model": "Qwen/Qwen3-Embedding-0.6B",
+      "models_sha256": "2d4d9f9a55b342af102a9c2442cf96ae5944b0738cfbbf97738aaec21db49a09",
+      "run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/eval/fresh60/headonly-same460/qwen",
+      "selection_status": "frozen"
+    }
+  },
+  "selection_status": "frozen"
+}

@@ -1,0 +1,341 @@
+{
+  "selected_variant": "v2-baseline",
+  "robust_improvement": false,
+  "baseline_metrics": {
+    "per_type": {
+      "choice": {
+        "n": 240,
+        "accuracy": 0.4,
+        "candidate_local_macro_f1": 0.13166666666666668
+      },
+      "noul": {
+        "n": 220,
+        "accuracy": 0.7227272727272728,
+        "candidate_local_macro_f1": 0.3613636363636364
+      },
+      "score": {
+        "n": 200,
+        "accuracy": 0.46,
+        "candidate_local_macro_f1": 0.12841666666666665,
+        "normalized_rubric_expected_value_mae": 0.29526140884683644
+      }
+    },
+    "macro_accuracy_by_type": 0.5275757575757576,
+    "macro_candidate_local_f1_by_type": 0.2071489898989899,
+    "balanced_accuracy_exact_match": 0.5275757575757576
+  },
+  "selected_metrics": {
+    "per_type": {
+      "choice": {
+        "n": 240,
+        "accuracy": 0.4,
+        "candidate_local_macro_f1": 0.13166666666666668
+      },
+      "noul": {
+        "n": 220,
+        "accuracy": 0.7227272727272728,
+        "candidate_local_macro_f1": 0.3613636363636364
+      },
+      "score": {
+        "n": 200,
+        "accuracy": 0.46,
+        "candidate_local_macro_f1": 0.12841666666666665,
+        "normalized_rubric_expected_value_mae": 0.29526140884683644
+      }
+    },
+    "macro_accuracy_by_type": 0.5275757575757576,
+    "macro_candidate_local_f1_by_type": 0.2071489898989899,
+    "balanced_accuracy_exact_match": 0.5275757575757576
+  },
+  "candidate_variants_that_passed": [],
+  "cost_accounting": {
+    "v2-baseline": {
+      "single": {
+        "question_records": 300,
+        "embedding_calls": 1288,
+        "query_plus_candidate_tokens": 71781,
+        "estimated_dense_embedding_flops_2pt": 86137200000000,
+        "feature_sha256": "844944b2028ce1cfe434b6a523316e39562e829277bb5c511aca28178151e069",
+        "manifest_sha256": "dd4ee2e8b5fe23f44328f99600f5211e4542fa09d6b2022fc914b69fade9c2aa",
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "profile_version": "1",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/v2-baseline"
+      },
+      "multi": {
+        "question_records": 360,
+        "embedding_calls": 1500,
+        "query_plus_candidate_tokens": 90793,
+        "estimated_dense_embedding_flops_2pt": 108951600000000,
+        "feature_sha256": "41af828d6b883f7d1987064ec5b8d0b52463d1de824c4be50c54f20d88b2a058",
+        "manifest_sha256": "8ec059d16f905271f0244c779b2935ac0a21f19c9cbe4617c5992ca7c224c726",
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "profile_version": "1",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/v2-baseline"
+      }
+    },
+    "readable-state": {
+      "single": {
+        "question_records": 300,
+        "embedding_calls": 1288,
+        "query_plus_candidate_tokens": 72181,
+        "estimated_dense_embedding_flops_2pt": 86617200000000,
+        "feature_sha256": "715e166816ddfc8bbfca4a20c4588101c3ce5846e566e8d78aa0fae7ff72eb2f",
+        "manifest_sha256": "c40fc156ab37b9e15445c0f1bf2e8942188e102d553e651bfda3e7cd0fe570db",
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "profile_version": "1",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/readable-state"
+      },
+      "multi": {
+        "question_records": 360,
+        "embedding_calls": 1500,
+        "query_plus_candidate_tokens": 92233,
+        "estimated_dense_embedding_flops_2pt": 110679600000000,
+        "feature_sha256": "5d2896203272faf46076d440fbf5d1513be2c3f954af8f996c15b2840ddc0910",
+        "manifest_sha256": "31fe6058e4773f05cfa34131b02ce9f7e443f9dac9f9efc828aafa1e6ed02735",
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "profile_version": "1",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/readable-state"
+      }
+    },
+    "rule-in-candidate": {
+      "single": {
+        "question_records": 300,
+        "embedding_calls": 1288,
+        "query_plus_candidate_tokens": 148583,
+        "estimated_dense_embedding_flops_2pt": 178299600000000,
+        "feature_sha256": "a5c09da2edff64683c29b46015f2b24fad614ffc142b72fbe77700c73c915dda",
+        "manifest_sha256": "905afcf8c3e338354fd77ce51519af4cf7d5f3c44dee73dc6e2beb892cb9c562",
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "profile_version": "1",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/rule-in-candidate"
+      },
+      "multi": {
+        "question_records": 360,
+        "embedding_calls": 1500,
+        "query_plus_candidate_tokens": 157455,
+        "estimated_dense_embedding_flops_2pt": 188946000000000,
+        "feature_sha256": "0cf183919159b12753088f31edbe8e99635edb9b0cff6626f32ffa7220cab594",
+        "manifest_sha256": "468fff642137145e806a37739534732e1b6fe97b454234d75c5cd771c9b21194",
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "profile_version": "1",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/rule-in-candidate"
+      }
+    },
+    "joint-context-candidate": {
+      "single": {
+        "question_records": 300,
+        "embedding_calls": 1288,
+        "query_plus_candidate_tokens": 199183,
+        "estimated_dense_embedding_flops_2pt": 239019600000000,
+        "feature_sha256": "0f739510fe3fbb05c25fb54a2c5a4943cab22984f1fe8790cf0a4978a8777661",
+        "manifest_sha256": "43b4e125c98939ebec08441841d2abe356eda6701d07d21c2d37e8df20fcc019",
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "profile_version": "1",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/joint-context-candidate"
+      },
+      "multi": {
+        "question_records": 360,
+        "embedding_calls": 1500,
+        "query_plus_candidate_tokens": 286886,
+        "estimated_dense_embedding_flops_2pt": 344263200000000,
+        "feature_sha256": "e483276b746d6ddea89346424eb755c0e13d08fc1e92547cc7a276af35f35947",
+        "manifest_sha256": "83e054ff708f60e241c6e81fd9fae913c0a00e80d282f4d24f9eb874b7e3a42e",
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "profile_version": "1",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+            "size": 727
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+            "size": 1191586416
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "size": 9706
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/joint-context-candidate"
+      }
+    }
+  }
+}

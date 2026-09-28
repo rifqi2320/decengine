@@ -1,0 +1,14 @@
+{
+  "arm": "lora",
+  "head_grad_norm": 0.19107306611321778,
+  "head_init_sha256": "ae37385a24d801632fc557bc2d4904ebb5b15f11794f925e43ea1409cce72f77",
+  "initial_logits_sha256": "d6610b8e4c9ffd61cd8cfb5c05709aae8ce6e536437b45b9d4016342d65569c0",
+  "lora_grad_norm": 0.0016754621331270076,
+  "loss_after": 1.363487958908081,
+  "loss_before": 1.3886113166809082,
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "process_peak_bytes": 2112407112,
+  "status": "gradient_smoke_passed",
+  "step": 1,
+  "system_swap_used_bytes": 1366294528
+}

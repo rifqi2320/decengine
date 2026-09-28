@@ -1,0 +1,93 @@
+{
+  "laya_mlx": {
+    "per_question": {
+      "next_step": {
+        "correct": 29,
+        "total": 60,
+        "accuracy": 0.48333333333333334
+      },
+      "human_gate": {
+        "correct": 39,
+        "total": 60,
+        "accuracy": 0.65
+      },
+      "evidence_readiness": {
+        "correct": 31,
+        "total": 60,
+        "accuracy": 0.5166666666666667
+      }
+    },
+    "all_three_correct": {
+      "correct": 13,
+      "total": 60,
+      "accuracy": 0.21666666666666667
+    }
+  },
+  "jev": {
+    "per_question": {
+      "next_step": {
+        "correct": 26,
+        "total": 60,
+        "accuracy": 0.43333333333333335
+      },
+      "human_gate": {
+        "correct": 22,
+        "total": 60,
+        "accuracy": 0.36666666666666664
+      },
+      "evidence_readiness": {
+        "correct": 20,
+        "total": 60,
+        "accuracy": 0.3333333333333333
+      }
+    },
+    "all_three_correct": {
+      "correct": 8,
+      "total": 60,
+      "accuracy": 0.13333333333333333
+    }
+  },
+  "scored_after_prediction_files": true,
+  "baseline_context": {
+    "Qwen": "9/60 all-three correct",
+    "Harrier": "1/60 all-three correct",
+    "caveat": "Existing probe baseline results are from their recorded inference pipelines; they are a contextual comparison, not a controlled model-equivalence claim."
+  },
+  "error_counts": {
+    "laya": 0,
+    "jev": 0
+  },
+  "total_errors": 0,
+  "timings": {
+    "laya_decision_ms": {
+      "evidence_readiness": {
+        "n": 60,
+        "mean": 38.08628531666666,
+        "min": 33.51925,
+        "max": 120.002834,
+        "median": 34.1005205
+      },
+      "human_gate": {
+        "n": 60,
+        "mean": 25.72730966666666,
+        "min": 23.410583,
+        "max": 46.578791,
+        "median": 24.35725
+      },
+      "next_step": {
+        "n": 60,
+        "mean": 41.55944795,
+        "min": 26.072542,
+        "max": 126.874667,
+        "median": 36.440520500000005
+      }
+    },
+    "jev_request_ms": {
+      "n": 60,
+      "mean": 501.49521381666676,
+      "min": 417.739292,
+      "max": 666.3535,
+      "median": 495.44968700000004
+    }
+  }
+}

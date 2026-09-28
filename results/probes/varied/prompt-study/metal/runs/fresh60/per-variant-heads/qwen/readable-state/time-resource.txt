@@ -1,0 +1,19 @@
+all-MLX readable-state/qwen: 60 cases 180 questions; bundle=97ef42c83f2188f0f61f376fb85b7dc774fc8545d33920f770e5dd095af3b281 fixture=316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f
+       21.36 real         4.31 user         0.97 sys
+          1430339584  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              164678  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+               38860  involuntary context switches
+         71377477083  instructions retired
+         19615588917  cycles elapsed
+          3823585080  peak memory footprint

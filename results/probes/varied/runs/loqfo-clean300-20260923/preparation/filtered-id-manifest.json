@@ -1,0 +1,60 @@
+{
+  "protocol": "LOQFO clean training subset",
+  "source_train_fixture": "benchmarks/cases/varied/train-400.jsonl",
+  "source_train_fixture_sha256": "684112f807773e486c2b553ea48ca0b33dca170d8bcb9f65112e1d8dda75dff0",
+  "source_train_count": 400,
+  "retained_train_count": 300,
+  "retained_family_count": 15,
+  "excluded_families": [
+    "qf-00000001",
+    "qf-00000002",
+    "qf-00000003",
+    "qf-00000004",
+    "qf-00000005"
+  ],
+  "excluded_case_count": 100,
+  "excluded_case_ids_sha256": "13a16aaae7192e3c0b29af63f907078b69c753e49a7841f70a7fb40ef62b202b",
+  "exclusion_rationale": "manifest.json documents exact scenario-context duplication across qf-00000001..qf-00000005 (100 rows, two contexts reused across those five families); removed all five entire families before CV to avoid cross-family scenario reuse.",
+  "retained_case_ids_sha256": "59c15b34f988696ffa144ae43bc56d812d6d5f1d9994bb7432a532f935a3cc3e",
+  "retained_family_ids": [
+    "qf-00000006",
+    "qf-00000007",
+    "qf-00000008",
+    "qf-00000009",
+    "qf-0000000a",
+    "qf-0000000b",
+    "qf-0000000c",
+    "qf-0000000d",
+    "qf-0000000e",
+    "qf-0000000f",
+    "qf-00000010",
+    "qf-00000011",
+    "qf-00000012",
+    "qf-00000013",
+    "qf-00000014"
+  ],
+  "filtered_train_fixture": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300.jsonl",
+  "filtered_train_fixture_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+  "feature_files": {
+    "qwen": {
+      "source_export": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-train-qwen.jsonl",
+      "source_export_sha256": "b2d133c2d57656e8e495fbc38ce6d85e30aef4170ff83b86101f9bc59e2a7810",
+      "source_export_manifest_sha256": "e008451e458906f8f7dd18f6bed89a342b53c3855d86ba9fa1a10e6247487b47",
+      "filtered_file": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300-qwen.jsonl",
+      "filtered_file_sha256": "22a5ecfd3180f892e0e83e32be1bcb17aa6807e93c46a78553ab38da7d1a694f",
+      "filtered_manifest_sha256": "65415dbf1272a01075315b80dced088b7e59d3a4bb34c12f790ebea86e6a1ff0",
+      "retained_ids_sha256": "59c15b34f988696ffa144ae43bc56d812d6d5f1d9994bb7432a532f935a3cc3e",
+      "record_count": 300
+    },
+    "harrier": {
+      "source_export": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-train-harrier.jsonl",
+      "source_export_sha256": "86a615efb853d75acbd1a5e1b528df063cab8af52dfa3382353e04e425b7579a",
+      "source_export_manifest_sha256": "a70ba719a03611f84ee314d2aa3704e925321d00efc9f46d0d8337c20fcfd33b",
+      "filtered_file": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300-harrier.jsonl",
+      "filtered_file_sha256": "30dc93596e1a145bc34858a0fea36a0a903c5e627e9402ef22070660db9a0deb",
+      "filtered_manifest_sha256": "060160804ce227333d852026bb1ab747c1a3baa0f3d8acf38cfc24ef271937d5",
+      "retained_ids_sha256": "59c15b34f988696ffa144ae43bc56d812d6d5f1d9994bb7432a532f935a3cc3e",
+      "record_count": 300
+    }
+  }
+}

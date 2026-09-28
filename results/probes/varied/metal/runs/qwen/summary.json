@@ -1,0 +1,62 @@
+{
+  "backend": "MLX Device(gpu, 0) / Metal; embeddings + 4096d pair features + scaler-folded linear scorer + softmax remain MLX arrays",
+  "case_count": 60,
+  "case_total_ms": {
+    "p50": 527.1455205,
+    "p95": 580.33999435
+  },
+  "hashes": {
+    "case_timings": "990a1bf89ad8a34d53d4a6829e028acebd384f306459e5db1c31a3a144f76ff3",
+    "checkpoint_files": {
+      "config.json": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+      "model.safetensors": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+      "tokenizer.json": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+      "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0"
+    },
+    "fixture": "48a057dd3ebedc6d76b7ca55f0782069f49cd31151576c2bc01932744a6ed614",
+    "frozen_metadata": "3003fa351ad1e4e92fbbf14002136fad11fdbe8c3a5c690c2920e30e0a89f1d0",
+    "frozen_models": "7ce3ecae127696bd1bbc929e84893f2e4ddb740106346910f43c84fe4cff6eb5",
+    "install_record": "3119bda70f4bbbdb76010002cbbabf248ebfd529b2fde39439a6dc51a230b5f2",
+    "predictions": "2cbacfa3e00da3357167165d27f3e0273615186c792a90a85862a578ede09ca9",
+    "profile": "2d77cfc9ff671884683718a42407fbe7d7e8bd7fb649efe5ca838e7a387b3033",
+    "question_timings": "d639bd1a967a254d39d4c2f5e4ae9e774475a02e35a51c9b7d989ffe0f06cf32",
+    "selection_freeze": "8323dbbf30c94fe561a6b0363bc709265f73e623db9b060ae43ecd6856083bf0"
+  },
+  "model_key": "qwen",
+  "parity": {
+    "max_probability_absolute_difference": 6.426153787986166e-07,
+    "max_score_expected_value_absolute_difference_float32": 2.3477503518165577e-05,
+    "selected_label_boolean_and_score_argmax_exact": true
+  },
+  "question_count": 180,
+  "runtime": {
+    "device": "Device(gpu, 0)",
+    "platform": "macOS-26.7-arm64-arm-64bit",
+    "process_resource_report_sha256": "bc21ef52c7133086fa966bfa8366c4f92101c1ccb742060c1dc8cb5ad95a2a53",
+    "python_not_in_inference": true,
+    "rustc_target": "aarch64-apple-darwin",
+    "whole_process_including_load_warmup": {
+      "maximum_resident_set_bytes": 1368817664,
+      "peak_memory_footprint_bytes": 3054520024,
+      "real_seconds": 35.17,
+      "system_seconds": 1.23,
+      "user_seconds": 4.91
+    }
+  },
+  "stages": {
+    "embedding": {
+      "p50": 174.864438,
+      "p95": 222.04980274999997
+    },
+    "gpu_scorer": {
+      "p50": 0.23375,
+      "p95": 0.8720333499999999
+    },
+    "question_total": {
+      "p50": 175.7188955,
+      "p95": 223.18375799999995
+    }
+  },
+  "timing_units": "milliseconds",
+  "warmup": "one full typed inference per type excluded; model load excluded"
+}

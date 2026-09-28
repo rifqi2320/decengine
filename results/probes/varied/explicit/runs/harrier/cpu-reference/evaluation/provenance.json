@@ -1,0 +1,58 @@
+{
+  "protocol": "frozen saved typed scorer; evaluation-only; no fitting/C selection",
+  "run_key": "harrier",
+  "selection_id": "train-only-baseline-typed-c-2026-09-23",
+  "approved_variant": {
+    "model": "microsoft/harrier-oss-v1-0.6b",
+    "run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/matched/frozen-harrier",
+    "models_sha256": "077962ae2a20dea890ee8e6566c4730023b1a3d11ff2ca1be567aa8e1462b32f",
+    "metadata_sha256": "3e37da1c7454e3401150d9a14e5e0c0cdb924284b24a3e6bc0160c9adce7b90d",
+    "selection_status": "frozen",
+    "C": 0.1,
+    "frozen_config_sha256": "02d233c8a32020e96bbb8d1f41684ec81dba75007fb8db196c76281b5701738d"
+  },
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "run_metadata_sha256": "3e37da1c7454e3401150d9a14e5e0c0cdb924284b24a3e6bc0160c9adce7b90d",
+  "models_sha256": "077962ae2a20dea890ee8e6566c4730023b1a3d11ff2ca1be567aa8e1462b32f",
+  "selection_freeze_sha256": "8323dbbf30c94fe561a6b0363bc709265f73e623db9b060ae43ecd6856083bf0",
+  "fixture_sha256": "4cb002e1c29f5273ecc23fcdf742b093cb5433d661f5df0b50d209a534fb1409",
+  "features_sha256": "3746fc6d41e450c02171ab84a6ac5ba4be8bc74a0de0a44f1a153d1315e16634",
+  "feature_manifest_sha256": "4c8cdc6449c2503d4ead4bafb4a1faddcb8e2e8fea89eb9cbdfaa656d682d459",
+  "feature_manifest_identity": {
+    "model": "microsoft/harrier-oss-v1-0.6b",
+    "profile_version": "2",
+    "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+    "text_version": "decengine-varied-pair-text-v2-generic-types",
+    "embedding_dimensions": 1024,
+    "normalization": "L2"
+  },
+  "raw_predictions_sha256": "692ed5f294ab5e4bddf8a1d06cf201157c545fe5d85360011b46ae95dd52ad9a",
+  "train_family_count": 15,
+  "family_overlap_count": 0,
+  "latency": {
+    "n": 180,
+    "unit": "seconds per question",
+    "scope": "numpy frozen-scorer only; excludes MLX export, file IO, feature parsing, reference scoring",
+    "mean": 6.781449999998524e-06,
+    "p50": 6.2919999999910825e-06,
+    "p95": 7.849700000012166e-06
+  },
+  "run_wall_seconds": 0.173676833,
+  "outputs_sha256": {
+    "predictions.jsonl": "692ed5f294ab5e4bddf8a1d06cf201157c545fe5d85360011b46ae95dd52ad9a",
+    "question_outcomes.jsonl": "f37a69d41c3baa0ff73ce2af5062ea4b34f6c70bf20a1219d3514019d1d3fdd1",
+    "case_outcomes.jsonl": "bfdc51872af9799afad258987af9b7bcf5af5bccb772141eaa2dc67980bd49cc",
+    "metrics.json": "19010b256376a2cbfd495e79023d2d3acfd29007c22a6a0d81d4a7a8dc9324f4"
+  },
+  "parity_checks": {
+    "candidate_permutation_logits": true,
+    "candidate_permutation_probabilities": true,
+    "unknown_type_fails_closed": true,
+    "noul_polarity_checked": true,
+    "score_label_argmax_and_expected_value": true
+  },
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "numpy": "2.0.2",
+  "runner_sha256": "92e791c9e1f105c43214316a9a92db64e710c53a9484bbef2b20ffd421e0d6ff",
+  "reference_policy": "references/labels were not accessed until raw predictions.jsonl had been written"
+}

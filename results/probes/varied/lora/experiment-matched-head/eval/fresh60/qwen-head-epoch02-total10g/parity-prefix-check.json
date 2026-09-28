@@ -1,0 +1,9 @@
+{
+  "status": "exact_first_7_cases_parity",
+  "case_count": 7,
+  "question_count": 21,
+  "references_read": false,
+  "raw_sha256": "5c758dc92448ef758bd033e5c8133704c1eccb71f7fdb465bafc7c03271ec147",
+  "predictions_sha256": "6fd46285dfa8e2f64493533d274da41057b514ecbda66754a92aea9f47e289db",
+  "comparison": "exact raw logits/probabilities/schema and normalized selections/probabilities/config/checkpoint provenance; timing ignored"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Isolated copy of the authorized clean300 single-question train fixture, sourced from the train-only preparation artifact; contains 300 records with exactly one named question each.",
+  "source": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300.jsonl",
+  "sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+  "record_count": 300,
+  "question_count": 300,
+  "questions_per_record": 1,
+  "use": "training input only"
+}

@@ -1,0 +1,258 @@
+{
+  "caveat": "The first Qwen all-MLX run is substantially slower than both repeats; those repeats cluster tightly with Harrier, despite identical p50 query+candidate token count (391). The initial run lacks a contemporaneous host-load snapshot, so the cause cannot be attributed to model architecture, cache, thermal, or host contention. Repetitions were sequential and on AC but snapshots show variable background activity and nonzero involuntary context switches; OS page cache was left intact. CPU instructions/cycles do not establish GPU clock/state. Treat the initial 527 ms p50 as an outlier, not a model-level Qwen-vs-Harrier performance difference.",
+  "prediction_determinism": {
+    "harrier": true,
+    "qwen": true
+  },
+  "preexisting_matched_encoder_flops_estimate": {
+    "per_three-question_case_p50_gflops": 904.71,
+    "per_three-question_case_p95_gflops": 945.46,
+    "scope_note": "Same matched60 fixture and query/candidate texts; encoder-only analytical estimate, not measured device FLOPs. The report's timed run was export + CPU scoring, so its latency is not compared to all-MLX timings.",
+    "source": "results/probes/varied/matched/compute-speed.md"
+  },
+  "protocol": {
+    "additional_repetitions_per_model": 2,
+    "cache": "OS page cache was not flushed; model/load and three typed warmups repeated each invocation; no concurrent MLX model loads",
+    "each_run": "fresh process, model loaded, one warmup per typed scorer excluded; every measured GPU stage synchronized",
+    "initial_run_conditions": "not captured; its time-resource.txt is retained",
+    "order": [
+      "replicate-1: harrier then qwen",
+      "replicate-2: qwen then harrier"
+    ],
+    "power": "AC power for every additional run; exact battery/load snapshot in each run conditions.txt",
+    "sequential": true
+  },
+  "runs": {
+    "harrier": {
+      "harrier": {
+        "case_count": 60,
+        "case_total_ms": {
+          "mean": 299.53020485,
+          "p50": 298.261938,
+          "p95": 319.10853095
+        },
+        "conditions": "initial-run environment snapshot unavailable",
+        "embedding_ms_per_1000_tokens": 254.96605117097025,
+        "embedding_ms_token_count_pearson": 0.6545742972503199,
+        "prediction_sha256": "9a277d1bdcda8db2cbb58932f5ebe2cc3ace52f134b851d90ea28e3712b323c2",
+        "process_including_load_warmup": {
+          "cycles_elapsed": 18553651517,
+          "instructions_retired": 66835645091,
+          "involuntary_context_switches": 40208,
+          "maximum_resident_set_bytes": 1371897856,
+          "peak_memory_footprint_bytes": 3053373168,
+          "real_seconds": 21.18
+        },
+        "query_plus_candidate_tokens_per_question": {
+          "mean": 388.56666666666666,
+          "p50": 391.0,
+          "p95": 421.04999999999995
+        },
+        "question_count": 180,
+        "question_embedding_ms": {
+          "mean": 99.07130861666667,
+          "p50": 97.565209,
+          "p95": 121.74906519999999
+        },
+        "question_gpu_scorer_ms": {
+          "mean": 0.2177775388888889,
+          "p50": 0.2152915,
+          "p95": 0.2868562499999999
+        }
+      },
+      "replicate-1/harrier": {
+        "case_count": 60,
+        "case_total_ms": {
+          "mean": 299.0967936166667,
+          "p50": 295.7641245,
+          "p95": 319.15806455
+        },
+        "conditions": "utc=2026-09-23T15:40:26Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t47%; charging; 1:43 remaining present: true\n23:40  up  9:06, 3 users, load averages: 3.79 3.49 3.30\n  788  40.9 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n 1416  25.2 /System/Library/CoreServices/ControlCenter.app/Contents/MacOS/ControlCenter\n 1654  17.1 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n39045  13.5 /Users/IDSP35241/.opencode/bin/opencode\n 9237  12.3 /Users/IDSP35241/.opencode/bin/opencode\n 2542   9.0 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n  804   7.4 /usr/sbin/coreaudiod\n 2719   6.8 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n",
+        "embedding_ms_per_1000_tokens": 254.6707931428898,
+        "embedding_ms_token_count_pearson": 0.6651404608159582,
+        "prediction_sha256": "9a277d1bdcda8db2cbb58932f5ebe2cc3ace52f134b851d90ea28e3712b323c2",
+        "process_including_load_warmup": {
+          "cycles_elapsed": 19242909076,
+          "instructions_retired": 69249792060,
+          "involuntary_context_switches": 38467,
+          "maximum_resident_set_bytes": 1429749760,
+          "peak_memory_footprint_bytes": 3083257656,
+          "real_seconds": 22.07
+        },
+        "query_plus_candidate_tokens_per_question": {
+          "mean": 388.56666666666666,
+          "p50": 391.0,
+          "p95": 421.04999999999995
+        },
+        "question_count": 180,
+        "question_embedding_ms": {
+          "mean": 98.95658118888889,
+          "p50": 97.7304795,
+          "p95": 121.76661114999999
+        },
+        "question_gpu_scorer_ms": {
+          "mean": 0.2202819,
+          "p50": 0.212208,
+          "p95": 0.32157020000000003
+        }
+      },
+      "replicate-2/harrier": {
+        "case_count": 60,
+        "case_total_ms": {
+          "mean": 297.44087155,
+          "p50": 297.48922949999996,
+          "p95": 314.31571045
+        },
+        "conditions": "utc=2026-09-23T15:41:30Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t47%; charging; 1:53 remaining present: true\n23:41  up  9:07, 3 users, load averages: 5.07 3.77 3.40\n52543  66.5 /System/Library/PrivateFrameworks/XprotectFramework.framework/Versions/A/XPCServices/XprotectService.xpc/Contents/MacOS/XprotectService\n56825  21.3 .venv/bin/python\n 1654   8.1 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n  788   7.7 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n 2542   6.5 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n 2719   4.7 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n  847   4.5 /usr/libexec/syspolicyd\n 9237   4.2 /Users/IDSP35241/.opencode/bin/opencode\n",
+        "embedding_ms_per_1000_tokens": 253.51930343713363,
+        "embedding_ms_token_count_pearson": 0.6606494087390662,
+        "prediction_sha256": "9a277d1bdcda8db2cbb58932f5ebe2cc3ace52f134b851d90ea28e3712b323c2",
+        "process_including_load_warmup": {
+          "cycles_elapsed": 19740643549,
+          "instructions_retired": 69171743392,
+          "involuntary_context_switches": 38378,
+          "maximum_resident_set_bytes": 1403797504,
+          "peak_memory_footprint_bytes": 3066627872,
+          "real_seconds": 20.88
+        },
+        "query_plus_candidate_tokens_per_question": {
+          "mean": 388.56666666666666,
+          "p50": 391.0,
+          "p95": 421.04999999999995
+        },
+        "question_count": 180,
+        "question_embedding_ms": {
+          "mean": 98.50915067222222,
+          "p50": 97.471833,
+          "p95": 120.85131255
+        },
+        "question_gpu_scorer_ms": {
+          "mean": 0.20511294444444444,
+          "p50": 0.1960625,
+          "p95": 0.27690384999999995
+        }
+      },
+      "replicate_pair_relative_spread": {
+        "case_total_ms_p50_pct": 0.5815744616927983,
+        "query_plus_candidate_tokens_per_question_p50_pct": 0.0,
+        "question_embedding_ms_p50_pct": 0.2650035203860585
+      }
+    },
+    "qwen": {
+      "qwen": {
+        "case_count": 60,
+        "case_total_ms": {
+          "mean": 518.0518897000001,
+          "p50": 527.1455205,
+          "p95": 580.33999435
+        },
+        "conditions": "initial-run environment snapshot unavailable",
+        "embedding_ms_per_1000_tokens": 441.9720740899603,
+        "embedding_ms_token_count_pearson": 0.4752384610658399,
+        "prediction_sha256": "2cbacfa3e00da3357167165d27f3e0273615186c792a90a85862a578ede09ca9",
+        "process_including_load_warmup": {
+          "cycles_elapsed": 19721697306,
+          "instructions_retired": 67342275063,
+          "involuntary_context_switches": 41874,
+          "maximum_resident_set_bytes": 1368817664,
+          "peak_memory_footprint_bytes": 3054520024,
+          "real_seconds": 35.17
+        },
+        "query_plus_candidate_tokens_per_question": {
+          "mean": 388.56666666666666,
+          "p50": 391.0,
+          "p95": 421.04999999999995
+        },
+        "question_count": 180,
+        "question_embedding_ms": {
+          "mean": 171.7356155888889,
+          "p50": 174.864438,
+          "p95": 222.04980274999997
+        },
+        "question_gpu_scorer_ms": {
+          "mean": 0.3125129833333333,
+          "p50": 0.23375,
+          "p95": 0.8720333499999999
+        }
+      },
+      "replicate-1/qwen": {
+        "case_count": 60,
+        "case_total_ms": {
+          "mean": 296.90302088333334,
+          "p50": 296.8247295,
+          "p95": 312.21283124999997
+        },
+        "conditions": "utc=2026-09-23T15:40:48Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t47%; charging; 1:43 remaining present: true\n23:40  up  9:07, 3 users, load averages: 3.16 3.37 3.26\n56682  34.2 /System/Library/PrivateFrameworks/AOSKit.framework/Helpers/AOSHeartbeat.app/Contents/MacOS/AOSHeartbeat\n56684  29.9 /usr/libexec/swcd\n 1218  21.3 /usr/libexec/secd\n45165  19.0 /System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/amsengagementd\n  756  17.2 /usr/libexec/opendirectoryd\n56687  13.9 /usr/libexec/mdmclient\n  788  12.6 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n45140  12.6 /System/Cryptexes/App/usr/libexec/AuthenticationServicesAgent\n",
+        "embedding_ms_per_1000_tokens": 253.15754133424838,
+        "embedding_ms_token_count_pearson": 0.6695456740619351,
+        "prediction_sha256": "2cbacfa3e00da3357167165d27f3e0273615186c792a90a85862a578ede09ca9",
+        "process_including_load_warmup": {
+          "cycles_elapsed": 19191261404,
+          "instructions_retired": 69200014011,
+          "involuntary_context_switches": 37666,
+          "maximum_resident_set_bytes": 1429536768,
+          "peak_memory_footprint_bytes": 3083044664,
+          "real_seconds": 20.82
+        },
+        "query_plus_candidate_tokens_per_question": {
+          "mean": 388.56666666666666,
+          "p50": 391.0,
+          "p95": 421.04999999999995
+        },
+        "question_count": 180,
+        "question_embedding_ms": {
+          "mean": 98.36858197777778,
+          "p50": 97.296813,
+          "p95": 121.1601026
+        },
+        "question_gpu_scorer_ms": {
+          "mean": 0.19495462222222223,
+          "p50": 0.188937,
+          "p95": 0.22500835
+        }
+      },
+      "replicate-2/qwen": {
+        "case_count": 60,
+        "case_total_ms": {
+          "mean": 296.80718121666666,
+          "p50": 295.408916,
+          "p95": 312.0107904
+        },
+        "conditions": "utc=2026-09-23T15:41:09Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t47%; charging; 1:43 remaining present: true\n23:41  up  9:07, 3 users, load averages: 2.91 3.31 3.24\n  743  69.2 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds\n 2719  10.3 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n  788   9.1 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n 2542   8.0 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n 1031   7.7 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds_stores\n 1654   6.9 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n 9237   4.4 /Users/IDSP35241/.opencode/bin/opencode\n 2563   2.3 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (GPU).app/Contents/MacOS/Beekeeper Studio Helper (GPU)\n",
+        "embedding_ms_per_1000_tokens": 253.05975363872923,
+        "embedding_ms_token_count_pearson": 0.6609854686907362,
+        "prediction_sha256": "2cbacfa3e00da3357167165d27f3e0273615186c792a90a85862a578ede09ca9",
+        "process_including_load_warmup": {
+          "cycles_elapsed": 19648521976,
+          "instructions_retired": 69165896914,
+          "involuntary_context_switches": 38269,
+          "maximum_resident_set_bytes": 1402961920,
+          "peak_memory_footprint_bytes": 3065988968,
+          "real_seconds": 20.87
+        },
+        "query_plus_candidate_tokens_per_question": {
+          "mean": 388.56666666666666,
+          "p50": 391.0,
+          "p95": 421.04999999999995
+        },
+        "question_count": 180,
+        "question_embedding_ms": {
+          "mean": 98.33058493888889,
+          "p50": 97.55175,
+          "p95": 121.3381107
+        },
+        "question_gpu_scorer_ms": {
+          "mean": 0.20017755555555555,
+          "p50": 0.1988335,
+          "p95": 0.23585449999999997
+        }
+      },
+      "replicate_pair_relative_spread": {
+        "case_total_ms_p50_pct": 0.47812666867472425,
+        "query_plus_candidate_tokens_per_question_p50_pct": 0.0,
+        "question_embedding_ms_p50_pct": 0.2616770645621833
+      }
+    }
+  },
+  "scope": "matched60 all-MLX frozen inference; no targets/references opened by this script"
+}

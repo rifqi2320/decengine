@@ -1,0 +1,6198 @@
+{
+  "baseline": {
+    "inference_errors": 0,
+    "development": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 22,
+          "total": 50,
+          "accuracy": 0.44
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 26,
+          "total": 50,
+          "accuracy": 0.52
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "safety_compliance",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "billing",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-004",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-006",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-010",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-048",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "high",
+            "reference": "low"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 72,
+        "total": 150,
+        "accuracy": 0.48
+      }
+    },
+    "archived_qwen_baseline_same_cases": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 22,
+          "total": 50,
+          "accuracy": 0.44
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 26,
+          "total": 50,
+          "accuracy": 0.52
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "safety_compliance",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "billing",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-004",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-006",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-010",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-048",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "high",
+            "reference": "low"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 72,
+        "total": 150,
+        "accuracy": 0.48
+      }
+    },
+    "timing_ms": {
+      "median": 77.808646,
+      "mean": 80.42825088
+    }
+  },
+  "official_format_task_instruction": {
+    "inference_errors": 0,
+    "development": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 22,
+          "total": 50,
+          "accuracy": 0.44
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 29,
+          "total": 50,
+          "accuracy": 0.58
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "safety_compliance",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-001",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "high",
+            "reference": "low"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 75,
+        "total": 150,
+        "accuracy": 0.5
+      }
+    },
+    "archived_qwen_baseline_same_cases": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 22,
+          "total": 50,
+          "accuracy": 0.44
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 26,
+          "total": 50,
+          "accuracy": 0.52
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "safety_compliance",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "billing",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-004",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-006",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-010",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-048",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "high",
+            "reference": "low"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 72,
+        "total": 150,
+        "accuracy": 0.48
+      }
+    },
+    "timing_ms": {
+      "median": 102.77954199999999,
+      "mean": 107.80230172
+    }
+  },
+  "choice_scope_candidates": {
+    "inference_errors": 0,
+    "development": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 13,
+          "total": 50,
+          "accuracy": 0.26
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 26,
+          "total": 50,
+          "accuracy": 0.52
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-003",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "operations",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-016",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "other",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-031",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-004",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-006",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-010",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-048",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "high",
+            "reference": "low"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 63,
+        "total": 150,
+        "accuracy": 0.42
+      }
+    },
+    "archived_qwen_baseline_same_cases": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 22,
+          "total": 50,
+          "accuracy": 0.44
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 26,
+          "total": 50,
+          "accuracy": 0.52
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "safety_compliance",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "billing",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-004",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-006",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-010",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-048",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "high",
+            "reference": "low"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 72,
+        "total": 150,
+        "accuracy": 0.48
+      }
+    },
+    "timing_ms": {
+      "median": 78.052333,
+      "mean": 85.04673416
+    }
+  },
+  "score_impact_candidates": {
+    "inference_errors": 0,
+    "development": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 22,
+          "total": 50,
+          "accuracy": 0.44
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 25,
+          "total": 50,
+          "accuracy": 0.5
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "safety_compliance",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "billing",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-001",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-004",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-031",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-032",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "high",
+            "reference": "low"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 71,
+        "total": 150,
+        "accuracy": 0.47333333333333333
+      }
+    },
+    "archived_qwen_baseline_same_cases": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 22,
+          "total": 50,
+          "accuracy": 0.44
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 26,
+          "total": 50,
+          "accuracy": 0.52
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "safety_compliance",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "billing",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-004",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-006",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-010",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-048",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "high",
+            "reference": "low"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 72,
+        "total": 150,
+        "accuracy": 0.48
+      }
+    },
+    "timing_ms": {
+      "median": 78.38137499999999,
+      "mean": 81.53234662
+    }
+  },
+  "urgency_no_risk_workaround": {
+    "inference_errors": 0,
+    "development": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 22,
+          "total": 50,
+          "accuracy": 0.44
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 26,
+          "total": 50,
+          "accuracy": 0.52
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "safety_compliance",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "billing",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-004",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-006",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-010",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-048",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "high",
+            "reference": "low"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 72,
+        "total": 150,
+        "accuracy": 0.48
+      }
+    },
+    "archived_qwen_baseline_same_cases": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 22,
+          "total": 50,
+          "accuracy": 0.44
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 26,
+          "total": 50,
+          "accuracy": 0.52
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "safety_compliance",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "billing",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-004",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-006",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-010",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-048",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "high",
+            "reference": "low"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 72,
+        "total": 150,
+        "accuracy": 0.48
+      }
+    },
+    "timing_ms": {
+      "median": 79.3262915,
+      "mean": 82.31736672
+    }
+  },
+  "task_candidates_combined": {
+    "inference_errors": 0,
+    "development": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 8,
+          "total": 50,
+          "accuracy": 0.16
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 21,
+          "total": 50,
+          "accuracy": 0.42
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-003",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-016",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "other",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-031",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-032",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-034",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-001",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-004",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-006",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-019",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-031",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-032",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-033",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-034",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "moderate",
+            "reference": "high"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 53,
+        "total": 150,
+        "accuracy": 0.35333333333333333
+      }
+    },
+    "archived_qwen_baseline_same_cases": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 22,
+          "total": 50,
+          "accuracy": 0.44
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 26,
+          "total": 50,
+          "accuracy": 0.52
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "safety_compliance",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "billing",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-004",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-006",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-010",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-048",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "high",
+            "reference": "low"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 72,
+        "total": 150,
+        "accuracy": 0.48
+      }
+    },
+    "timing_ms": {
+      "median": 103.38575,
+      "mean": 106.8172941
+    }
+  },
+  "task_candidates_spaced_query": {
+    "inference_errors": 0,
+    "development": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 8,
+          "total": 50,
+          "accuracy": 0.16
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 21,
+          "total": 50,
+          "accuracy": 0.42
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-003",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-016",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "other",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-031",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-032",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-034",
+            "predicted": "other",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-001",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-004",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-006",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-019",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-031",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-032",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-033",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-034",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "moderate",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "moderate",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "moderate",
+            "reference": "high"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 53,
+        "total": 150,
+        "accuracy": 0.35333333333333333
+      }
+    },
+    "archived_qwen_baseline_same_cases": {
+      "cases": 50,
+      "fields": {
+        "owner": {
+          "correct": 22,
+          "total": 50,
+          "accuracy": 0.44
+        },
+        "urgent": {
+          "correct": 24,
+          "total": 50,
+          "accuracy": 0.48
+        },
+        "impact": {
+          "correct": 26,
+          "total": 50,
+          "accuracy": 0.52
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-005",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-007",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-013",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "safety_compliance",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-015",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-022",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-023",
+            "predicted": "operations",
+            "reference": "billing"
+          },
+          {
+            "case_id": "case-024",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-025",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-026",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-029",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-036",
+            "predicted": "billing",
+            "reference": "operations"
+          },
+          {
+            "case_id": "case-037",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-039",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "case-043",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-047",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "other",
+            "reference": "sales"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-006",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-008",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-012",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-014",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-018",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-020",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-026",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-027",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-030",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-032",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-036",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-038",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-042",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-044",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-048",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "case-050",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-004",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-006",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-008",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-009",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-010",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-011",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-012",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-014",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-018",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-020",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-021",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-027",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-028",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-030",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-038",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-040",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-041",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-042",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-045",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "case-046",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-048",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "case-049",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "case-050",
+            "predicted": "high",
+            "reference": "low"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 72,
+        "total": 150,
+        "accuracy": 0.48
+      }
+    },
+    "timing_ms": {
+      "median": 102.977625,
+      "mean": 106.03808756
+    }
+  }
+}

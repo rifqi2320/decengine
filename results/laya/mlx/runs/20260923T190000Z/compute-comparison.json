@@ -1,0 +1,371 @@
+{
+  "case_set": {
+    "count": 300,
+    "ids": "test-001..test-300",
+    "fixture_sha256": "04d3eeb4b45709ac28c177961763a03cf036296466faf779a062e1303c30ff30",
+    "identical_fixture_in_both_runs": true
+  },
+  "accuracy": {
+    "Laya": {
+      "per_question": {
+        "owner": {
+          "correct": 177,
+          "total": 300,
+          "accuracy": 0.59
+        },
+        "urgent": {
+          "correct": 183,
+          "total": 300,
+          "accuracy": 0.61
+        },
+        "impact": {
+          "correct": 123,
+          "total": 300,
+          "accuracy": 0.41
+        }
+      },
+      "question_mean_accuracy": 0.5366666666666666,
+      "complete_case": {
+        "correct": 54,
+        "total": 300,
+        "accuracy": 0.18
+      }
+    },
+    "Qwen": {
+      "per_question": {
+        "owner": {
+          "correct": 134,
+          "total": 300,
+          "accuracy": 0.44666666666666666
+        },
+        "urgent": {
+          "correct": 127,
+          "total": 300,
+          "accuracy": 0.42333333333333334
+        },
+        "impact": {
+          "correct": 88,
+          "total": 300,
+          "accuracy": 0.29333333333333333
+        }
+      },
+      "question_mean_accuracy": 0.3877777777777778,
+      "complete_case": {
+        "correct": 37,
+        "total": 300,
+        "accuracy": 0.12333333333333334
+      }
+    },
+    "Harrier": {
+      "per_question": {
+        "owner": {
+          "correct": 135,
+          "total": 300,
+          "accuracy": 0.45
+        },
+        "urgent": {
+          "correct": 127,
+          "total": 300,
+          "accuracy": 0.42333333333333334
+        },
+        "impact": {
+          "correct": 127,
+          "total": 300,
+          "accuracy": 0.42333333333333334
+        }
+      },
+      "question_mean_accuracy": 0.43222222222222223,
+      "complete_case": {
+        "correct": 15,
+        "total": 300,
+        "accuracy": 0.05
+      }
+    },
+    "JEV": {
+      "per_question": {
+        "owner": {
+          "correct": 244,
+          "total": 300,
+          "accuracy": 0.8133333333333334
+        },
+        "urgent": {
+          "correct": 273,
+          "total": 300,
+          "accuracy": 0.91
+        },
+        "impact": {
+          "correct": 256,
+          "total": 300,
+          "accuracy": 0.8533333333333334
+        }
+      },
+      "question_mean_accuracy": 0.8588888888888889,
+      "complete_case": {
+        "correct": 195,
+        "total": 300,
+        "accuracy": 0.65
+      }
+    },
+    "probe-Qwen": {
+      "per_question": {
+        "owner": {
+          "correct": 198,
+          "total": 300,
+          "accuracy": 0.66
+        },
+        "urgent": {
+          "correct": 241,
+          "total": 300,
+          "accuracy": 0.8033333333333333
+        },
+        "impact": {
+          "correct": 192,
+          "total": 300,
+          "accuracy": 0.64
+        }
+      },
+      "question_mean_accuracy": 0.7011111111111111,
+      "complete_case": {
+        "correct": 113,
+        "total": 300,
+        "accuracy": 0.37666666666666665
+      }
+    },
+    "probe-Harrier": {
+      "per_question": {
+        "owner": {
+          "correct": 183,
+          "total": 300,
+          "accuracy": 0.61
+        },
+        "urgent": {
+          "correct": 257,
+          "total": 300,
+          "accuracy": 0.8566666666666667
+        },
+        "impact": {
+          "correct": 226,
+          "total": 300,
+          "accuracy": 0.7533333333333333
+        }
+      },
+      "question_mean_accuracy": 0.74,
+      "complete_case": {
+        "correct": 126,
+        "total": 300,
+        "accuracy": 0.42
+      }
+    }
+  },
+  "timing_ms": {
+    "Laya_three_separate_question_calls_per_case": {
+      "n": 300,
+      "mean_ms": 104.08959195,
+      "p50_ms": 95.71125,
+      "p95_ms": 123.58572315000013
+    },
+    "Laya_per_question": {
+      "owner": {
+        "n": 300,
+        "mean_ms": 39.162456256666665,
+        "p50_ms": 35.472021,
+        "p95_ms": 44.98277260000001
+      },
+      "urgent": {
+        "n": 300,
+        "mean_ms": 26.652274709999997,
+        "p50_ms": 24.989541000000003,
+        "p95_ms": 31.074687200000007
+      },
+      "impact": {
+        "n": 300,
+        "mean_ms": 38.27486098333333,
+        "p50_ms": 35.1179165,
+        "p95_ms": 39.32830415
+      }
+    },
+    "probe_comparison_new210_only": {
+      "qwen": {
+        "n": 210,
+        "mean_ms": 89.8141679095238,
+        "p50_ms": 84.516084,
+        "p95_ms": 104.407333
+      },
+      "harrier": {
+        "n": 210,
+        "mean_ms": 83.25212656666666,
+        "p50_ms": 81.036542,
+        "p95_ms": 92.966917
+      },
+      "jev": {
+        "n": 210,
+        "mean_ms": 441.0263470142857,
+        "p50_ms": 421.85325,
+        "p95_ms": 580.321
+      }
+    },
+    "sources": {
+      "Laya timings": "results/laya/mlx/runs/20260923T190000Z/raw-results.jsonl: decisions.{owner,urgent,impact}.inference_ms and case_inference_ms_sum_of_three_calls",
+      "Qwen/Harrier/JEV": "results/probes/comparisons/20260923T104208Z/raw-new210.jsonl: {qwen,harrier,jev}.timing_ms; only test-091..test-300; 210 rows"
+    }
+  },
+  "estimated_compute": {
+    "convention": "1 MAC=2 FLOPs; GFLOPs are arithmetic estimates, no sparsity/quantization discount; excludes softmax/norm/nonlinear/reductions unless explicitly head affine ops; not measured hardware FLOPs.",
+    "Laya": {
+      "mean_gflops_per_three_question_case": 354.38511491072,
+      "p50_gflops_per_three_question_case": 353.228073984,
+      "source_tokens": "raw-results.jsonl decisions.*.input_tokens (actual tokenizer length), 3 independent calls/case",
+      "config": {
+        "hidden_size": 1024,
+        "intermediate_size": 2624,
+        "layers": 28,
+        "layer_types": [
+          "full_attention",
+          "sliding_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "sliding_attention",
+          "full_attention",
+          "sliding_attention",
+          "sliding_attention",
+          "full_attention"
+        ],
+        "local_attention": 128,
+        "global_local_effective_pair_formula": "full layer N^2 pairs; sliding layer sum_i count(j: |i-j|<=local_attention/2); 2H FLOPs per pair"
+      },
+      "components_mean_gflops": {
+        "modernbert_dense_projections": 322.22142267392,
+        "encoder_attention": 3.3374132633599998,
+        "decision_head_including_attention_and_output_head": 25.48886571008
+      },
+      "limitation": "Laya layer types/window from pinned encoder config; output head estimate uses two full-attention transformer blocks, scorer and act affine layers; does not pretend parameter-count-only dense lower bound is full cost."
+    },
+    "Qwen_Harrier": {
+      "per_case": {
+        "Qwen": {
+          "three_task_queries": {
+            "mean_gflops": 216.78068247210666,
+            "p50_gflops": 214.62081536
+          },
+          "queries_plus_state_fourth_embedding": {
+            "mean_gflops": 245.06407862272,
+            "p50_gflops": 242.19135180799998
+          }
+        },
+        "Harrier": {
+          "three_task_queries": {
+            "mean_gflops": 216.78068247210666,
+            "p50_gflops": 214.62081536
+          },
+          "queries_plus_state_fourth_embedding": {
+            "mean_gflops": 245.06407862272,
+            "p50_gflops": 242.19135180799998
+          }
+        }
+      },
+      "compiled_token_lengths": {
+        "Qwen": {
+          "three_query_tokens_total_mean": 305.01,
+          "state_tokens_mean": 40.00333333333333,
+          "three_query_tokens_per_task_mean": {
+            "owner": 77.00333333333333,
+            "urgent": 121.00333333333333,
+            "impact": 107.00333333333333
+          }
+        },
+        "Harrier": {
+          "three_query_tokens_total_mean": 305.01,
+          "state_tokens_mean": 40.00333333333333,
+          "three_query_tokens_per_task_mean": {
+            "owner": 77.00333333333333,
+            "urgent": 121.00333333333333,
+            "impact": 107.00333333333333
+          }
+        }
+      },
+      "source": "fixture request.state/questions compiled with crates/decengine-compiler/src/lib.rs template logic and model manifests; tokenized using corresponding local tokenizer.json; full model config.json in model store.",
+      "config_basis": "hidden_size, num_hidden_layers, num_attention_heads, num_key_value_heads and intermediate_size; full causal attention; gated MLP.",
+      "limitation": "Three query embeddings represent task-specific probe query compute. Fourth state embedding counted separately only as optional/local-cosine context; probe classifier itself consumes only three task embeddings."
+    }
+  },
+  "caveats": [
+    "Probe comparator makes fresh local Qwen/Harrier (3 compiled query embeddings and local cosine baseline/context) and remote JEV HTTP calls only for 210 new cases; archived first 90 predictions have no fresh timing. Thus probe latency n=210 and cannot be directly matched to 300-case Laya latency.",
+    "Laya latency sums three separately timed inference forwards per case, excludes preprocessing; probe timing surrounds each full decision or remote request and is not comparable hardware/mode/work definition.",
+    "Accuracy counts recomputed against shared 300-case fixture references; includes probes plus local baseline Qwen/Harrier and JEV."
+  ],
+  "summary_table": [
+    {
+      "method": "Laya MLX",
+      "per_question_accuracy_mean": 0.5366666666666666,
+      "complete_case_accuracy": 0.18,
+      "median_latency_ms": 95.71125,
+      "latency_n": 300,
+      "estimated_gflops_per_case": 354.38511491072,
+      "latency_scope": "3 separate question calls"
+    },
+    {
+      "method": "Qwen local cosine",
+      "per_question_accuracy_mean": 0.3877777777777778,
+      "complete_case_accuracy": 0.12333333333333334,
+      "median_latency_ms": 84.516084,
+      "latency_n": 210,
+      "estimated_gflops_per_case": 216.78068247210666,
+      "latency_scope": "fresh test-091..300; embedding + local cosine/context"
+    },
+    {
+      "method": "Harrier local cosine",
+      "per_question_accuracy_mean": 0.43222222222222223,
+      "complete_case_accuracy": 0.05,
+      "median_latency_ms": 81.036542,
+      "latency_n": 210,
+      "estimated_gflops_per_case": 216.78068247210666,
+      "latency_scope": "fresh test-091..300; embedding + local cosine/context"
+    },
+    {
+      "method": "JEV HTTP",
+      "per_question_accuracy_mean": 0.8588888888888889,
+      "complete_case_accuracy": 0.65,
+      "median_latency_ms": 421.85325,
+      "latency_n": 210,
+      "estimated_gflops_per_case": null,
+      "latency_scope": "fresh remote HTTP test-091..300; compute not observable"
+    },
+    {
+      "method": "Qwen frozen probe",
+      "per_question_accuracy_mean": 0.7011111111111111,
+      "complete_case_accuracy": 0.37666666666666665,
+      "median_latency_ms": null,
+      "latency_n": 0,
+      "estimated_gflops_per_case": 216.78068247210666,
+      "latency_scope": "no per-case predictor latency archived; encoder cost shown for feature generation only"
+    },
+    {
+      "method": "Harrier frozen probe",
+      "per_question_accuracy_mean": 0.74,
+      "complete_case_accuracy": 0.42,
+      "median_latency_ms": null,
+      "latency_n": 0,
+      "estimated_gflops_per_case": 216.78068247210666,
+      "latency_scope": "no per-case predictor latency archived; encoder cost shown for feature generation only"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+/Users/IDSP35241/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[1/60] mq-lora-fresh-001: raw three-question predictions flushed
+[2/60] mq-lora-fresh-002: raw three-question predictions flushed
+[3/60] mq-lora-fresh-003: raw three-question predictions flushed
+[4/60] mq-lora-fresh-004: raw three-question predictions flushed
+[5/60] mq-lora-fresh-005: raw three-question predictions flushed
+[6/60] mq-lora-fresh-006: raw three-question predictions flushed
+[7/60] mq-lora-fresh-007: raw three-question predictions flushed
+[8/60] mq-lora-fresh-008: raw three-question predictions flushed
+[9/60] mq-lora-fresh-009: raw three-question predictions flushed
+[10/60] mq-lora-fresh-010: raw three-question predictions flushed
+[11/60] mq-lora-fresh-011: raw three-question predictions flushed
+[12/60] mq-lora-fresh-012: raw three-question predictions flushed
+[13/60] mq-lora-fresh-013: raw three-question predictions flushed
+[14/60] mq-lora-fresh-014: raw three-question predictions flushed
+[15/60] mq-lora-fresh-015: raw three-question predictions flushed
+[16/60] mq-lora-fresh-016: raw three-question predictions flushed
+[17/60] mq-lora-fresh-017: raw three-question predictions flushed
+[18/60] mq-lora-fresh-018: raw three-question predictions flushed
+[19/60] mq-lora-fresh-019: raw three-question predictions flushed
+[20/60] mq-lora-fresh-020: raw three-question predictions flushed
+[21/60] mq-lora-fresh-021: raw three-question predictions flushed
+[22/60] mq-lora-fresh-022: raw three-question predictions flushed
+[23/60] mq-lora-fresh-023: raw three-question predictions flushed
+[24/60] mq-lora-fresh-024: raw three-question predictions flushed
+[25/60] mq-lora-fresh-025: raw three-question predictions flushed
+[26/60] mq-lora-fresh-026: raw three-question predictions flushed
+[27/60] mq-lora-fresh-027: raw three-question predictions flushed
+[28/60] mq-lora-fresh-028: raw three-question predictions flushed
+[29/60] mq-lora-fresh-029: raw three-question predictions flushed
+[30/60] mq-lora-fresh-030: raw three-question predictions flushed
+[31/60] mq-lora-fresh-031: raw three-question predictions flushed
+[32/60] mq-lora-fresh-032: raw three-question predictions flushed
+[33/60] mq-lora-fresh-033: raw three-question predictions flushed
+[34/60] mq-lora-fresh-034: raw three-question predictions flushed
+[35/60] mq-lora-fresh-035: raw three-question predictions flushed
+[36/60] mq-lora-fresh-036: raw three-question predictions flushed
+[37/60] mq-lora-fresh-037: raw three-question predictions flushed
+[38/60] mq-lora-fresh-038: raw three-question predictions flushed
+[39/60] mq-lora-fresh-039: raw three-question predictions flushed
+[40/60] mq-lora-fresh-040: raw three-question predictions flushed
+[41/60] mq-lora-fresh-041: raw three-question predictions flushed
+[42/60] mq-lora-fresh-042: raw three-question predictions flushed
+[43/60] mq-lora-fresh-043: raw three-question predictions flushed
+[44/60] mq-lora-fresh-044: raw three-question predictions flushed
+[45/60] mq-lora-fresh-045: raw three-question predictions flushed
+[46/60] mq-lora-fresh-046: raw three-question predictions flushed
+[47/60] mq-lora-fresh-047: raw three-question predictions flushed
+[48/60] mq-lora-fresh-048: raw three-question predictions flushed
+[49/60] mq-lora-fresh-049: raw three-question predictions flushed
+[50/60] mq-lora-fresh-050: raw three-question predictions flushed
+[51/60] mq-lora-fresh-051: raw three-question predictions flushed
+[52/60] mq-lora-fresh-052: raw three-question predictions flushed
+[53/60] mq-lora-fresh-053: raw three-question predictions flushed
+[54/60] mq-lora-fresh-054: raw three-question predictions flushed
+[55/60] mq-lora-fresh-055: raw three-question predictions flushed
+[56/60] mq-lora-fresh-056: raw three-question predictions flushed
+[57/60] mq-lora-fresh-057: raw three-question predictions flushed
+[58/60] mq-lora-fresh-058: raw three-question predictions flushed
+[59/60] mq-lora-fresh-059: raw three-question predictions flushed
+[60/60] mq-lora-fresh-060: raw three-question predictions flushed
+{
+  "status": "predictions_frozen_before_reference_scoring",
+  "run_key": "harrier-head",
+  "predictions_sha256": "253bfd899c352060eb1f49bd75f445cb3f7ef7c8687de5f4fb7bf667e8f9e157",
+  "raw_sha256": "f741aac17d391c525f397b49967a3c8278636a22733dbe1291e3f3a4e94e6778",
+  "timing_scopes": {
+    "question_inference_ms": {
+      "scope": "sequential individual text forwards plus typed scorer; excludes model load, preflight and reference scoring",
+      "n": 180,
+      "p50": 123.892458,
+      "p95": 160.61943749999998
+    },
+    "three_question_case_sum_ms": {
+      "scope": "sum of 3 question forwards per case; excludes model load, preflight and reference scoring",
+      "n": 60,
+      "p50": 614.991104,
+      "p95": 655.8660249999999
+    }
+  },
+  "candidate_position_distribution": {
+    "choice": {
+      "0": 14,
+      "1": 29,
+      "2": 4,
+      "3": 7,
+      "4": 6
+    },
+    "noul": {
+      "0": 60
+    },
+    "score": {
+      "2": 40,
+      "4": 16,
+      "3": 4
+    }
+  },
+  "resources": {
+    "baseline_swap_bytes": 2289041408,
+    "max_process_peak_bytes": 2377189152,
+    "max_positive_swap_growth_observed_bytes": 0,
+    "max_process_peak_plus_swap_growth_bytes": 2377189152,
+    "early_stop_bytes": 6442450944,
+    "absolute_stop_bytes": 8589934592,
+    "standalone_swap_growth_stop_bytes": null,
+    "combined_stop_bytes": 10737418240,
+    "swap_zero_growth_required": false
+  }
+}

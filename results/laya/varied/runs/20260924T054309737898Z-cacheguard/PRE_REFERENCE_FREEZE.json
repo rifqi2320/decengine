@@ -1,0 +1,18 @@
+{
+  "status": "predictions_frozen_before_reference_scoring",
+  "frozen_at": "2026-09-24T05:43:40.462133+00:00",
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "completed_cases": 60,
+  "completed_decisions": 180,
+  "smoke_cases": 4,
+  "smoke_parity_passed": true,
+  "artifact_sha256": {
+    "raw-results.jsonl": "680e085f6968216fe87c141c0f5ef286277b9db3cd9836aced260385ee231816",
+    "laya-predictions.jsonl": "0273e0c8b9a453de8688f0542f1382820e984613dcaafe09aa1b8c348bd78181",
+    "timings.jsonl": "07e764cbb927930e8ef9a760314804b5f88b2e3568a2be8b34c2af1de97fb355",
+    "run-metadata.json": "dbcd6b545cb6dca1bd5330330534f226457e29dd3ebf0e1665d6926fcf3e993b",
+    "smoke-parity.json": "a33278c0e5a49fe3d7ec1ec64c36ccadf2dd4d74522825933c7321ff5d0269eb"
+  },
+  "scoring_stage": "not run before this freeze",
+  "post_freeze_provenance_note": "Raw results, predictions, timings, and smoke parity hashes above were verified unchanged after scoring. The runner later amended run-metadata.json with finish/completion/resource summary fields, so its current hash differs from the pre-scoring hash recorded in artifact_sha256; the current metadata hash is recorded in checksums.json."
+}

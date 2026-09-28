@@ -1,0 +1,51 @@
+{
+  "epoch": 9,
+  "metrics": {
+    "n": 200,
+    "per_type": {
+      "choice": {
+        "exact_accuracy": 0.33,
+        "mean_objective_loss": 1.7260512467473745,
+        "mean_selected_confidence": 0.5872377544641495,
+        "n": 100,
+        "predicted_candidate_index_hist": {
+          "0": 13,
+          "1": 65,
+          "2": 7,
+          "3": 3,
+          "4": 12
+        }
+      },
+      "noul": {
+        "exact_accuracy": 0.6666666666666666,
+        "mean_objective_loss": 1.0582763075828552,
+        "mean_selected_confidence": 0.7909319122632344,
+        "n": 60,
+        "predicted_candidate_index_hist": {
+          "0": 42,
+          "1": 18
+        }
+      },
+      "score": {
+        "exact_accuracy": 0.5,
+        "mean_objective_loss": 0.3809010088443756,
+        "mean_selected_confidence": 0.3114830695092678,
+        "n": 40,
+        "predicted_candidate_index_hist": {
+          "0": 13,
+          "2": 25,
+          "4": 2
+        }
+      }
+    },
+    "primary_macro_exact_accuracy": 0.4988888888888889,
+    "score_normalized_expected_value_mae": 0.31650317333017786,
+    "secondary_mean_objective_loss": 1.256688717417419
+  },
+  "selection_key": [
+    0.4988888888888889,
+    -1.256688717417419,
+    -0.31650317333017786,
+    -9
+  ]
+}

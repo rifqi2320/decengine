@@ -1,0 +1,71 @@
+{
+  "scope": "train-only runtime probes before full grouped CV; clean300 Qwen rows/features only",
+  "no_test_fixture_or_predictions_opened": true,
+  "sample": [
+    {
+      "variant": "baseline",
+      "question_type": "choice",
+      "question_count": 24,
+      "C": 1.0,
+      "runtime_seconds": 0.0063,
+      "iterations": 16,
+      "converged": true,
+      "relative_gradient_norm": 0.00095094
+    },
+    {
+      "variant": "noul_class_weighted",
+      "question_type": "noul",
+      "question_count": 24,
+      "class_counts": [12, 12],
+      "C": 1.0,
+      "runtime_seconds": 0.0116,
+      "iterations": 39,
+      "converged": true,
+      "relative_gradient_norm": 0.00071357,
+      "note": "Balanced sample means inverse-frequency weighting did not duplicate either class."
+    },
+    {
+      "variant": "score_ordinal_smooth_0.10",
+      "question_type": "score",
+      "question_count": 24,
+      "C": 0.01,
+      "runtime_seconds": 0.8776,
+      "iterations": 333,
+      "converged": true,
+      "relative_gradient_norm": 0.00097105
+    },
+    {
+      "variant": "score_ordinal_smooth_0.25",
+      "question_type": "score",
+      "question_count": 24,
+      "C": 0.01,
+      "runtime_seconds": 1.1437,
+      "iterations": 437,
+      "converged": true,
+      "relative_gradient_norm": 0.00079472
+    },
+    {
+      "variant": "score_ordinal_smooth_0.10",
+      "question_type": "score",
+      "question_count": 24,
+      "C": 0.1,
+      "runtime_seconds": 1.3555,
+      "converged": false,
+      "failure": "500-iteration cap; gradient norm 0.0348"
+    },
+    {
+      "variant": "score_ordinal_smooth_0.10",
+      "question_type": "score",
+      "question_count": 24,
+      "C": 1.0,
+      "runtime_seconds": 1.5013,
+      "converged": false,
+      "failure": "500-iteration cap; gradient norm 0.0458"
+    }
+  ],
+  "full_cv_runtime_seconds": {
+    "qwen": 9.8199,
+    "harrier": 11.5767
+  },
+  "interpretation": "Samples are development probes, not selection evidence. Full CV runtimes include 65 bounded fits per embedding model."
+}

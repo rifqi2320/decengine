@@ -1,0 +1,11 @@
+Protocol: shared v2-baseline frozen scorer arrays applied unchanged to every prompt variant.
+A preliminary launch was rejected by the input-hash guard before model load; its log is preserved under preflight-failures. After rebinding all bundles to the exact fixture hash, the actual timed executions below ran once each.
+Sequential isolated fresh processes (no concurrent MLX model loads); one warm-up per typed scorer each invocation:
+1 qwen/v2-baseline
+2 harrier/v2-baseline
+3 harrier/readable-state
+4 qwen/readable-state
+5 qwen/rule-in-candidate
+6 harrier/rule-in-candidate
+7 harrier/joint-context-candidate
+8 qwen/joint-context-candidate

@@ -1,0 +1,8 @@
+{
+  "best_dev_loss": 0.9594359870254994,
+  "best_epoch": 1,
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "scope": "train+grouped-dev only; no heldout accessed",
+  "status": "train_dev_complete",
+  "steps": 1380
+}

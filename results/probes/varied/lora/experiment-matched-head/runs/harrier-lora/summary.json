@@ -1,0 +1,50 @@
+{
+  "arm": "lora",
+  "best_epoch": 9,
+  "best_metrics": {
+    "n": 200,
+    "per_type": {
+      "choice": {
+        "exact_accuracy": 0.31,
+        "mean_objective_loss": 1.5590555769205094,
+        "mean_selected_confidence": 0.5767949002981186,
+        "n": 100,
+        "predicted_candidate_index_hist": {
+          "0": 12,
+          "1": 53,
+          "2": 26,
+          "3": 7,
+          "4": 2
+        }
+      },
+      "noul": {
+        "exact_accuracy": 0.6833333333333333,
+        "mean_objective_loss": 0.5879439254601796,
+        "mean_selected_confidence": 0.6942482391993204,
+        "n": 60,
+        "predicted_candidate_index_hist": {
+          "0": 49,
+          "1": 11
+        }
+      },
+      "score": {
+        "exact_accuracy": 0.575,
+        "mean_objective_loss": 0.3615628659725189,
+        "mean_selected_confidence": 0.33693436793982984,
+        "n": 40,
+        "predicted_candidate_index_hist": {
+          "0": 17,
+          "2": 23
+        }
+      }
+    },
+    "primary_macro_exact_accuracy": 0.5227777777777778,
+    "score_normalized_expected_value_mae": 0.29712282738958795,
+    "secondary_mean_objective_loss": 1.0282235392928123
+  },
+  "epochs": 9,
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "scope": "same grouped train/dev only; no heldout accessed",
+  "status": "complete",
+  "steps": 4140
+}

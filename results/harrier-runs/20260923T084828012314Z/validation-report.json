@@ -1,0 +1,165 @@
+{
+  "validation": "failed",
+  "run_id": "20260923T084828012314Z",
+  "merged_file": "/Users/IDSP35241/Documents/Code/decengine/results/harrier-runs/20260923T084828012314Z/judgments.jsonl",
+  "merged_record_count": 100,
+  "unique_case_id_count": 100,
+  "chunks": {
+    "expected_count": 10,
+    "found_count": 10,
+    "ordered_files": [
+      "chunk-001-010.jsonl",
+      "chunk-011-020.jsonl",
+      "chunk-021-030.jsonl",
+      "chunk-031-040.jsonl",
+      "chunk-041-050.jsonl",
+      "chunk-051-060.jsonl",
+      "chunk-061-070.jsonl",
+      "chunk-071-080.jsonl",
+      "chunk-081-090.jsonl",
+      "chunk-091-100.jsonl"
+    ],
+    "missing": [],
+    "unexpected": [],
+    "source_chunks_preserved": true
+  },
+  "case_ids": {
+    "duplicates": [],
+    "missing": [],
+    "unexpected": []
+  },
+  "archive_hashes": {
+    "actual_sha256": {
+      "harrier_cases": "4330a0461348a1349b9cccdaa2df5dc612461f1282cee9c22fcf92a36bf04da6",
+      "original_archive": "f1510c938c9f9d8fb9a5a8c2d146e868fba72c36449b2a59f44499124a660c7a"
+    },
+    "expected_sha256": {
+      "harrier_cases": "4330a0461348a1349b9cccdaa2df5dc612461f1282cee9c22fcf92a36bf04da6",
+      "original_archive": "f1510c938c9f9d8fb9a5a8c2d146e868fba72c36449b2a59f44499124a660c7a",
+      "run_metadata_original_archive": "f1510c938c9f9d8fb9a5a8c2d146e868fba72c36449b2a59f44499124a660c7a"
+    },
+    "chunk_reported_sha256": {
+      "harrier_cases": [
+        "4330a0461348a1349b9cccdaa2df5dc612461f1282cee9c22fcf92a36bf04da6"
+      ],
+      "original_archive": [
+        "f1510c938c9f9d8fb9a5a8c2d146e868fba72c36449b2a59f44499124a660c7a"
+      ]
+    },
+    "case_ids_without_embedded_hash_fields": [],
+    "checks": {
+      "harrier_cases_actual_matches_metrics": true,
+      "original_archive_actual_matches_metrics": true,
+      "original_archive_actual_matches_run_metadata": true,
+      "chunk_reported_harrier_cases_hashes_match": true,
+      "chunk_reported_original_archive_hashes_match": true
+    }
+  },
+  "metrics_cross_check": {
+    "comparison_metrics": "/Users/IDSP35241/Documents/Code/decengine/results/harrier-runs/20260923T084828012314Z/comparison-metrics.json",
+    "checked_fields": [
+      "reference",
+      "predictions",
+      "exact_matches",
+      "exact_match_totals",
+      "winner"
+    ],
+    "discrepancy_case_count": 3,
+    "discrepancy_case_ids": [
+      "case-095",
+      "case-097",
+      "case-099"
+    ],
+    "discrepancies": [
+      {
+        "case_id": "case-095",
+        "fields": [
+          "case_winner",
+          "exact_match.impact.jev",
+          "exact_match_total.jev",
+          "prediction.impact.jev"
+        ],
+        "details": {
+          "prediction.impact.jev": {
+            "chunk_value": "moderate",
+            "metrics_value": "high"
+          },
+          "exact_match.impact.jev": {
+            "chunk_value": false,
+            "metrics_value": true
+          },
+          "exact_match_total.jev": {
+            "chunk_value": 2,
+            "metrics_value": 3
+          },
+          "case_winner": {
+            "chunk_value": [
+              "harrier",
+              "qwen_mlx"
+            ],
+            "metrics_value": [
+              "harrier",
+              "jev",
+              "qwen_mlx"
+            ]
+          }
+        }
+      },
+      {
+        "case_id": "case-097",
+        "fields": [
+          "case_winner",
+          "exact_match.impact.jev",
+          "exact_match_total.jev",
+          "prediction.impact.jev"
+        ],
+        "details": {
+          "prediction.impact.jev": {
+            "chunk_value": "moderate",
+            "metrics_value": "high"
+          },
+          "exact_match.impact.jev": {
+            "chunk_value": false,
+            "metrics_value": true
+          },
+          "exact_match_total.jev": {
+            "chunk_value": 2,
+            "metrics_value": 3
+          },
+          "case_winner": {
+            "chunk_value": [
+              "qwen_mlx"
+            ],
+            "metrics_value": [
+              "jev",
+              "qwen_mlx"
+            ]
+          }
+        }
+      },
+      {
+        "case_id": "case-099",
+        "fields": [
+          "exact_match.impact.jev",
+          "exact_match_total.jev",
+          "prediction.impact.jev"
+        ],
+        "details": {
+          "prediction.impact.jev": {
+            "chunk_value": "moderate",
+            "metrics_value": "high"
+          },
+          "exact_match.impact.jev": {
+            "chunk_value": false,
+            "metrics_value": true
+          },
+          "exact_match_total.jev": {
+            "chunk_value": 1,
+            "metrics_value": 2
+          }
+        }
+      }
+    ]
+  },
+  "parse_errors": []
+}

@@ -1,0 +1,52 @@
+{
+  "run_id": "20260923T084903139978Z",
+  "timestamp": "2026-09-23T08:49:03.140525+00:00",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "engine": "MLX real inference",
+  "network_calls": false,
+  "dataset": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/decision-cases-100.jsonl",
+  "dataset_sha256": "a680e2e12648f314b19e3754271a504de07e6bb5c8aba9966576b34a539cd4b6",
+  "archive": "/Users/IDSP35241/Documents/Code/decengine/results/comparison-runs/20260923T082226631235Z/cases.jsonl",
+  "archive_sha256": "f1510c938c9f9d8fb9a5a8c2d146e868fba72c36449b2a59f44499124a660c7a",
+  "case_count": 100,
+  "split": "development case-001..050; untouched holdout case-051..100",
+  "variants": {
+    "baseline": {
+      "query_template": "Instruct: {instruction}\nQuery:{text}",
+      "candidate_template": "{text}",
+      "temperature": "unchanged manifest default 0.05"
+    },
+    "qwen_official_spaced": {
+      "query_template": "Instruct: {instruction}\nQuery: {text}",
+      "candidate_template": "{text}",
+      "temperature": "unchanged manifest default 0.05"
+    },
+    "binary_direct_rubric": {
+      "query_template": "Instruct: {instruction}\nQuery:{text}",
+      "candidate_template": "{text}",
+      "noul_unsupported": "No same-day action is needed to prevent likely harm, material interruption, or a near-term missed deadline.",
+      "noul_supported": "Same-day action is needed to prevent likely harm, material interruption, or a near-term missed deadline.",
+      "temperature": "unchanged manifest default 0.05"
+    },
+    "binary_decision_labels": {
+      "query_template": "Instruct: {instruction}\nQuery:{text}",
+      "candidate_template": "{text}",
+      "noul_unsupported": "No: this does not require same-day action.",
+      "noul_supported": "Yes: this requires same-day action.",
+      "temperature": "unchanged manifest default 0.05"
+    },
+    "passage_candidates": {
+      "query_template": "Instruct: {instruction}\nQuery:{text}",
+      "candidate_template": "Passage: {text}",
+      "temperature": "unchanged manifest default 0.05"
+    }
+  },
+  "baseline_noul_candidate_text": {
+    "unsupported": "unsupported false no absent not required can wait",
+    "supported": "supported true yes present urgent today immediate required"
+  },
+  "native_library": "/Users/IDSP35241/Documents/Code/decengine/target/release/libdecengine.dylib",
+  "model_store": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/decengine-model-store",
+  "python": "3.14.4",
+  "platform": "darwin"
+}

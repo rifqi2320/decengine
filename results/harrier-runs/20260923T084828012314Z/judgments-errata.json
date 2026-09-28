@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "method": "Use archived raw JEV impact probabilities; map probability index to same-index fixture score level.",
+  "tie_policy": "If max probabilities tie, choose the first level in fixture order; no ties occur in the affected cases.",
+  "not_subjective_review": true,
+  "source_judgments": "/Users/IDSP35241/Documents/Code/decengine/results/harrier-runs/20260923T084828012314Z/judgments.jsonl",
+  "corrected_judgments": "/Users/IDSP35241/Documents/Code/decengine/results/harrier-runs/20260923T084828012314Z/judgments-corrected.jsonl",
+  "fixture": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/decision-cases-100.jsonl",
+  "original_archive": "/Users/IDSP35241/Documents/Code/decengine/results/comparison-runs/20260923T082226631235Z/cases.jsonl",
+  "source_judgments_sha256": "2984e8ec1f98e859a1b3f3d4baea5e66fae57dbae16151d92bf1c034b1005f93",
+  "fixture_sha256": "a680e2e12648f314b19e3754271a504de07e6bb5c8aba9966576b34a539cd4b6",
+  "original_archive_sha256": "f1510c938c9f9d8fb9a5a8c2d146e868fba72c36449b2a59f44499124a660c7a",
+  "corrected_judgments_sha256": "96a58894a13edb58875cb8742d0fee59366ef3fcc17e8cb2a4b1b72090a38cb2",
+  "corrected_case_ids": [
+    "case-095",
+    "case-097",
+    "case-099"
+  ],
+  "changes": [
+    {
+      "case_id": "case-095",
+      "raw_jev_probabilities_by_level_index": {
+        "0": 0.0,
+        "1": 0.01,
+        "2": 0.99
+      },
+      "fixture_levels": [
+        "low",
+        "moderate",
+        "high"
+      ],
+      "argmax_level_indices": [
+        2
+      ],
+      "argmax_probability": 0.99,
+      "reference_impact": "high",
+      "changed_fields": {
+        "prediction": {
+          "before": "moderate",
+          "after": "high"
+        },
+        "exact_match": {
+          "before": false,
+          "after": true
+        },
+        "total_exact_matches": {
+          "before": 2,
+          "after": 3
+        },
+        "winner": {
+          "before": [
+            "harrier",
+            "qwen"
+          ],
+          "after": [
+            "harrier",
+            "qwen",
+            "jev"
+          ]
+        }
+      },
+      "recomputed_winners": [
+        "harrier",
+        "qwen",
+        "jev"
+      ]
+    },
+    {
+      "case_id": "case-097",
+      "raw_jev_probabilities_by_level_index": {
+        "0": 0.01,
+        "1": 0.05,
+        "2": 0.94
+      },
+      "fixture_levels": [
+        "low",
+        "moderate",
+        "high"
+      ],
+      "argmax_level_indices": [
+        2
+      ],
+      "argmax_probability": 0.94,
+      "reference_impact": "high",
+      "changed_fields": {
+        "prediction": {
+          "before": "moderate",
+          "after": "high"
+        },
+        "exact_match": {
+          "before": false,
+          "after": true
+        },
+        "total_exact_matches": {
+          "before": 2,
+          "after": 3
+        },
+        "winner": {
+          "before": [
+            "qwen"
+          ],
+          "after": [
+            "qwen",
+            "jev"
+          ]
+        }
+      },
+      "recomputed_winners": [
+        "qwen",
+        "jev"
+      ]
+    },
+    {
+      "case_id": "case-099",
+      "raw_jev_probabilities_by_level_index": {
+        "0": 0.01,
+        "1": 0.03,
+        "2": 0.96
+      },
+      "fixture_levels": [
+        "low",
+        "moderate",
+        "high"
+      ],
+      "argmax_level_indices": [
+        2
+      ],
+      "argmax_probability": 0.96,
+      "reference_impact": "high",
+      "changed_fields": {
+        "prediction": {
+          "before": "moderate",
+          "after": "high"
+        },
+        "exact_match": {
+          "before": false,
+          "after": true
+        },
+        "total_exact_matches": {
+          "before": 1,
+          "after": 2
+        }
+      },
+      "recomputed_winners": [
+        "qwen"
+      ]
+    }
+  ]
+}

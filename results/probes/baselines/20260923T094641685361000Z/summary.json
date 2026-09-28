@@ -1,0 +1,24 @@
+{
+  "run_id": "20260923T094641685361000Z",
+  "case_count": 90,
+  "failures": {
+    "models": {
+      "Qwen/Qwen3-Embedding-0.6B": 0,
+      "microsoft/harrier-oss-v1-0.6b": 0
+    },
+    "jev": 0
+  },
+  "model_successes": {
+    "Qwen/Qwen3-Embedding-0.6B": 90,
+    "microsoft/harrier-oss-v1-0.6b": 90
+  },
+  "jev_successes": 90,
+  "sha256": {
+    "cases.jsonl": "83a6a8c72be31f8dc7b7a3495f55585c4f68da0be32146553bfba5a7788b5ccb",
+    "harrier-predictions.jsonl": "f7a808c85345adaffcf4ea85421cd3fb452fc0562b0d1bfa9ba3ddce2b8f2ec0",
+    "jev-predictions.jsonl": "ad908fe488bdde4bbb5f0c51f2ae53148d0eb0ea8287c671739ad04bbe9246be",
+    "metadata.json": "88007d447ecba3bdda4d60102f14aec2c5f6347652f43f15dcf19adbbce0a897",
+    "metrics.json": "7d14394366e85f3d76f2f358cb50adb497bb3e7b983d0bd7fdf799b07fe22cc3",
+    "qwen-predictions.jsonl": "7b53a98ee3c256af938fde2762d6144b2b417d0f4a5c096a8653956d1964c71e"
+  }
+}

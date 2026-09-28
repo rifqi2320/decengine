@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "status": "predictions_frozen_reference_scoring_deferred",
+  "system_id": "qwen_head_epoch2_matched",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "arm": "head",
+  "selected_epoch": 2,
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "freeze_manifest_sha256": "ecb46f3a952d48a78a9004ad0213e70e57da0e9bd84e183fda31a5b63186eb1f",
+  "matched_policy_sha256": "1a9414f4647570f1f06de9e9e6ee8710caa0e9a4aff63fbbcfc14c2042b7ab11",
+  "matched_policy_id": "matched-head-fresh60-inference-extrapolation-512-total10g-v3",
+  "config_sha256": "841d0438a768817e2629138c7f1ebde83bbf5082ee3672be8327da60a07e1a04",
+  "best_checkpoint_sha256": "58bef9ac575faf62344d7e176e5c80910fff7370dd8314295cc2d9a23d0437b8",
+  "best_record_sha256": "acfe8828ccd186ffab49109405bc7f04e655e79add58b325d6011fac3979fd03",
+  "summary_sha256": "2e135d02098937870efd7912197473cc744938e7fb18701fb9c71b738d0bc696",
+  "model_or_adapter_sha256": "58bef9ac575faf62344d7e176e5c80910fff7370dd8314295cc2d9a23d0437b8",
+  "base_model_checkpoint_sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+  "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+  "profile_version": "1",
+  "text_version": "decengine-varied-pair-text-v2-generic-types",
+  "text_compiler_sha256": "3392fadabc4c7cc6d69acb31f152ab6e73ab83c12c16664b06f3ac6f46053d8e",
+  "evaluator_source_sha256": "d82716a0696143aa70abd021f05e3d9595ce0671b1d2f389f90bb58f75126100",
+  "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+  "training_token_limit": 288,
+  "observed_training_max_tokens": 266,
+  "inference_token_limit": 512,
+  "max_test_tokens": 375,
+  "truncation": false,
+  "predictions_sha256": "e11c257a90494e1b369ef9fab90510887efe460cf32ca86f41ffde6d5df069cf",
+  "raw_predictions_sha256": "570d2f91c189bbd48b69229b4fddf33c204142dea242900d1d3d88def7ada46f",
+  "parity_prefix_check_sha256": "5a5a8dff6613b91bb6502d0772b7dc7920831ed920a65d8511e8b270dc022448",
+  "parity_prefix": {
+    "status": "exact_first_7_cases_parity",
+    "case_count": 7,
+    "question_count": 21,
+    "references_read": false,
+    "raw_sha256": "5c758dc92448ef758bd033e5c8133704c1eccb71f7fdb465bafc7c03271ec147",
+    "predictions_sha256": "6fd46285dfa8e2f64493533d274da41057b514ecbda66754a92aea9f47e289db",
+    "comparison": "exact raw logits/probabilities/schema and normalized selections/probabilities/config/checkpoint provenance; timing ignored"
+  },
+  "candidate_position_distribution": {
+    "choice": {
+      "0": 13,
+      "1": 24,
+      "3": 6,
+      "2": 12,
+      "4": 5
+    },
+    "noul": {
+      "0": 60
+    },
+    "score": {
+      "2": 58,
+      "4": 2
+    }
+  },
+  "collapsed_types_in_partial_prefix": [
+    "noul"
+  ],
+  "timing_scopes": {
+    "question_inference_ms": {
+      "scope": "per question: individual query/candidate forwards plus typed scorer; excludes load/preflight/reference",
+      "n": 180,
+      "p50": 123.898646,
+      "p95": 160.69458575
+    },
+    "case_three_question_sum_ms": {
+      "scope": "sum of three question inference timings; excludes case cleanup/cache clear, load/preflight/reference",
+      "n": 60,
+      "p50": 387.8458335,
+      "p95": 426.80982950000003
+    }
+  },
+  "cache_policy": "mx.clear_cache() + gc.collect() after every completed case",
+  "resources": {
+    "baseline_swap_bytes": 1866926653,
+    "max_positive_swap_growth_bytes": 0,
+    "max_process_peak_bytes": 2376025864,
+    "max_process_peak_plus_positive_swap_growth_bytes": 2376025864,
+    "process_early_stop_bytes": 6442450944,
+    "absolute_process_cap_bytes": 8589934592,
+    "total_process_peak_plus_swap_cap_bytes": 10737418240,
+    "external_monitor_samples": 72,
+    "external_max_process_peak_bytes": 2376025864,
+    "external_max_swap_growth_bytes": 0
+  },
+  "reference_access_during_generation": false,
+  "reference_scoring_performed": false,
+  "fixture_reused_previously_scored": true,
+  "interpretation": "partial exploratory output; not eligible for full-score table",
+  "reference_access_during_inference": false
+}

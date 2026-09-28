@@ -1,0 +1,11 @@
+{
+  "run-metadata.json": "e6157602f76f9f116c376a8e93b3eb361d24eb33fa40e4994931dd55438b58db",
+  "metrics.json": "fecfcbd0dfcf10c4d8b8a3b321a931a307a52a5687ae42181c3c0dd69efc27da",
+  "report.md": "5753ae6354a8937b8ff01239195c3fe0476e12ec74289596e66d94fd3f600ff3",
+  "paired-flips.jsonl": "916c5945e27c85a06ad0713ea2d6bd9cd0ddf2c8e7c43418162e2325496256fe",
+  "timings.jsonl": "1b7dc13e49f0a74ebe586e8553e63645b604fcc79c7900fca6e65c14d695bf2c",
+  "fixture-integrity-validation.txt": "127452c9f336766dd64de77ca8740d7c7b1a85112d0bb6e6832be63f78b0c620",
+  "jev-predictions.jsonl": "594688e8150cf3a1e99b96305f2a8435b1a65caf210327b0a0b5b5f9976b6cbd",
+  "raw-results.jsonl": "e60bb2e5363f54c4fd6bcdfbd2c7ea8877b1893b1a3f567d8b352d3722220363",
+  "laya-predictions.jsonl": "5b66dc3b4b06b5d4470b3325bfd369f47e0414ddb56cef25016a4249124b501a"
+}

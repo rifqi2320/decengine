@@ -1,0 +1,11 @@
+{
+  "status": "aborted_resource_guard",
+  "reason": "system swap increased above evaluation baseline",
+  "baseline_swap_bytes": 1299185664,
+  "pid": 87681,
+  "process_footprint_bytes": 2353202952,
+  "process_peak_footprint_bytes": 2353235720,
+  "system_swap_used_bytes": 1333914501,
+  "mlx_active_bytes": 1194724968,
+  "mlx_peak_bytes": 1596531252
+}

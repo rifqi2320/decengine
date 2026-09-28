@@ -1,0 +1,3462 @@
+{
+  "schema_version": 1,
+  "method": {
+    "source": "recorded model outputs compared exactly with holdout fixture references; offline only",
+    "owner": "choice selected label",
+    "urgent": "true iff scalar value >= 0.5",
+    "impact": "unique argmax label from recorded probability distribution; null on missing/tied max",
+    "all_three_fully_correct": "true iff each model exactly matches all three reference decisions",
+    "confusion_matrix": "rows are reference labels; columns predictions; <missing> denotes unavailable/tied prediction"
+  },
+  "case_count": 60,
+  "zero_error_validation": {
+    "harrier": 0,
+    "qwen_mlx": 0,
+    "jev": 0
+  },
+  "overall": {
+    "harrier": {
+      "exact_matches": 75,
+      "decisions": 180,
+      "accuracy": 0.4166666666666667,
+      "fully_correct_cases": 3
+    },
+    "qwen_mlx": {
+      "exact_matches": 88,
+      "decisions": 180,
+      "accuracy": 0.4888888888888889,
+      "fully_correct_cases": 8
+    },
+    "jev": {
+      "exact_matches": 149,
+      "decisions": 180,
+      "accuracy": 0.8277777777777777,
+      "fully_correct_cases": 34
+    }
+  },
+  "all_three_fully_correct_cases": 0,
+  "by_question": {
+    "owner": {
+      "reference_count": 60,
+      "models": {
+        "harrier": {
+          "exact_matches": 25,
+          "decisions": 60,
+          "confusion": {
+            "account_access": {
+              "account_access": 2,
+              "technical_support": 1
+            },
+            "billing": {
+              "billing": 8,
+              "sales": 1
+            },
+            "operations": {
+              "sales": 3,
+              "operations": 3,
+              "technical_support": 4,
+              "account_access": 1
+            },
+            "other": {
+              "technical_support": 1,
+              "operations": 2,
+              "sales": 2
+            },
+            "safety_compliance": {
+              "technical_support": 13,
+              "safety_compliance": 1,
+              "sales": 2
+            },
+            "sales": {
+              "sales": 3
+            },
+            "technical_support": {
+              "technical_support": 8,
+              "operations": 2,
+              "sales": 1,
+              "account_access": 2
+            }
+          }
+        },
+        "qwen_mlx": {
+          "exact_matches": 24,
+          "decisions": 60,
+          "confusion": {
+            "account_access": {
+              "billing": 1,
+              "other": 2
+            },
+            "billing": {
+              "billing": 9
+            },
+            "operations": {
+              "operations": 5,
+              "other": 4,
+              "technical_support": 2
+            },
+            "other": {
+              "billing": 1,
+              "other": 3,
+              "operations": 1
+            },
+            "safety_compliance": {
+              "operations": 3,
+              "other": 5,
+              "billing": 1,
+              "safety_compliance": 6,
+              "technical_support": 1
+            },
+            "sales": {
+              "other": 3
+            },
+            "technical_support": {
+              "operations": 6,
+              "billing": 2,
+              "technical_support": 1,
+              "other": 1,
+              "account_access": 2,
+              "safety_compliance": 1
+            }
+          }
+        },
+        "jev": {
+          "exact_matches": 41,
+          "decisions": 60,
+          "confusion": {
+            "account_access": {
+              "account_access": 2,
+              "other": 1
+            },
+            "billing": {
+              "billing": 9
+            },
+            "operations": {
+              "operations": 5,
+              "other": 1,
+              "technical_support": 3,
+              "safety_compliance": 2
+            },
+            "other": {
+              "operations": 5
+            },
+            "safety_compliance": {
+              "safety_compliance": 13,
+              "technical_support": 2,
+              "operations": 1
+            },
+            "sales": {
+              "sales": 3
+            },
+            "technical_support": {
+              "technical_support": 9,
+              "account_access": 2,
+              "safety_compliance": 2
+            }
+          }
+        }
+      }
+    },
+    "urgent": {
+      "reference_count": 60,
+      "models": {
+        "harrier": {
+          "exact_matches": 27,
+          "decisions": 60,
+          "confusion": {
+            "False": {
+              "True": 33
+            },
+            "True": {
+              "True": 27
+            }
+          }
+        },
+        "qwen_mlx": {
+          "exact_matches": 27,
+          "decisions": 60,
+          "confusion": {
+            "False": {
+              "True": 33
+            },
+            "True": {
+              "True": 27
+            }
+          }
+        },
+        "jev": {
+          "exact_matches": 57,
+          "decisions": 60,
+          "confusion": {
+            "False": {
+              "False": 30,
+              "True": 3
+            },
+            "True": {
+              "True": 27
+            }
+          }
+        }
+      }
+    },
+    "impact": {
+      "reference_count": 60,
+      "models": {
+        "harrier": {
+          "exact_matches": 23,
+          "decisions": 60,
+          "confusion": {
+            "high": {
+              "moderate": 20,
+              "high": 4,
+              "low": 2
+            },
+            "low": {
+              "moderate": 13,
+              "low": 8
+            },
+            "moderate": {
+              "moderate": 11,
+              "low": 2
+            }
+          }
+        },
+        "qwen_mlx": {
+          "exact_matches": 37,
+          "decisions": 60,
+          "confusion": {
+            "high": {
+              "high": 26
+            },
+            "low": {
+              "high": 10,
+              "low": 11
+            },
+            "moderate": {
+              "high": 8,
+              "low": 5
+            }
+          }
+        },
+        "jev": {
+          "exact_matches": 51,
+          "decisions": 60,
+          "confusion": {
+            "high": {
+              "high": 23,
+              "moderate": 3
+            },
+            "low": {
+              "low": 17,
+              "moderate": 4
+            },
+            "moderate": {
+              "moderate": 11,
+              "low": 1,
+              "high": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "run_references": {
+    "holdout_run_id": "20260923T090938207411Z",
+    "harrier_model": "microsoft/harrier-oss-v1-0.6b",
+    "harrier_jev_run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/holdout-comparison-runs/20260923T090938207411Z",
+    "qwen_run_id": "20260923T090609039852Z",
+    "qwen_model": "Qwen/Qwen3-Embedding-0.6B",
+    "qwen_run_dir": "/Users/IDSP35241/Documents/Code/decengine/results/qwen-holdout/20260923T090609039852Z",
+    "fixture": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/decision-cases-holdout.jsonl",
+    "network_or_api_calls": false
+  },
+  "hashes_sha256": {
+    "fixture": "6139c028f6604a36c61db80484762a9e69ad56ca9a130507c01167823e5fe124",
+    "harrier_jev_cases": "228020a91f7267f6d9604058a3fb712b01d4b08228a0323dec37f4a1f5d925f8",
+    "harrier_jev_metadata": "483646ba6d3517e23f3bb385986d744aa44b8162e8f138d724c3810cf807148e",
+    "harrier_jev_summary": "db2159d25f4027c3be0bc5c901b025f4ec9aa492155ec2f56bfce128a54ca591",
+    "qwen_baseline": "5bbf0159ff4d229aa5e9d56f9f090f17b9e255b7c1fb4028d390ed67d0dab006",
+    "qwen_metadata": "5958b343a808992bda398abbc1dbbc3d6178281ce99012af5d3b671bfc27d3d2"
+  },
+  "per_case": [
+    {
+      "case_id": "holdout-001",
+      "reference": {
+        "owner": "operations",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "sales",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "operations",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "qwen_mlx": 1,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-002",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-003",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-004",
+      "reference": {
+        "owner": "operations",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "operations",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 1,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-005",
+      "reference": {
+        "owner": "billing",
+        "urgent": false,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "billing",
+          "urgent": false,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 1,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-006",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 1
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-007",
+      "reference": {
+        "owner": "billing",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "low"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "billing",
+          "urgent": false,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": false
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 2,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-008",
+      "reference": {
+        "owner": "account_access",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "account_access",
+          "urgent": true,
+          "impact": "high"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "account_access",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 3,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": true,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-009",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 3,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": true,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-010",
+      "reference": {
+        "owner": "other",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "operations",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "qwen_mlx": 1,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-011",
+      "reference": {
+        "owner": "billing",
+        "urgent": false,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "billing",
+          "urgent": false,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 1,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-012",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-013",
+      "reference": {
+        "owner": "sales",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "sales",
+          "urgent": true,
+          "impact": "low"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "sales",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 1,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-014",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-015",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "sales",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-016",
+      "reference": {
+        "owner": "operations",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "sales",
+          "urgent": true,
+          "impact": "low"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "other",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 1,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-017",
+      "reference": {
+        "owner": "operations",
+        "urgent": false,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "sales",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": false,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 1,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-018",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "sales",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-019",
+      "reference": {
+        "owner": "other",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "low"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "operations",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 1,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-020",
+      "reference": {
+        "owner": "operations",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 3,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": true,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-021",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": false,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "low"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "operations",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "qwen_mlx": 0,
+        "jev": 1
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-022",
+      "reference": {
+        "owner": "billing",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "billing",
+          "urgent": false,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": false
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-023",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": false,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 0,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-024",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 3,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": true,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-025",
+      "reference": {
+        "owner": "other",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "sales",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "operations",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "qwen_mlx": 1,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-026",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "account_access",
+          "urgent": true,
+          "impact": "high"
+        },
+        "qwen_mlx": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "account_access",
+          "urgent": true,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 3,
+        "jev": 1
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": true,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-027",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "sales",
+          "urgent": true,
+          "impact": "low"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-028",
+      "reference": {
+        "owner": "billing",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "low"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "billing",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-029",
+      "reference": {
+        "owner": "operations",
+        "urgent": false,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "account_access",
+          "urgent": true,
+          "impact": "low"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "qwen_mlx": 0,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-030",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 3,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": true,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-031",
+      "reference": {
+        "owner": "sales",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "sales",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "sales",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 0,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-032",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 3,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": true,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-033",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": false,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": false,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 0,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-034",
+      "reference": {
+        "owner": "billing",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "sales",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "billing",
+          "urgent": false,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": false
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "qwen_mlx": 2,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-035",
+      "reference": {
+        "owner": "operations",
+        "urgent": false,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": false,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 0,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-036",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 3,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": true,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-037",
+      "reference": {
+        "owner": "billing",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "billing",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-038",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 3,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": true,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-039",
+      "reference": {
+        "owner": "operations",
+        "urgent": false,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": false,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 0,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-040",
+      "reference": {
+        "owner": "account_access",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "other",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "qwen_mlx": 0,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-041",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": false,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": false
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 1,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-042",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-043",
+      "reference": {
+        "owner": "sales",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "sales",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "sales",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 0,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-044",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "high"
+        },
+        "qwen_mlx": {
+          "owner": "account_access",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "account_access",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 3,
+        "qwen_mlx": 2,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": true,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-045",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-046",
+      "reference": {
+        "owner": "account_access",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "account_access",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "account_access",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 0,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-047",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": false,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": false,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 0,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-048",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": true,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "account_access",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "account_access",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": false
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 1,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-049",
+      "reference": {
+        "owner": "other",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "sales",
+          "urgent": true,
+          "impact": "low"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "operations",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 1,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-050",
+      "reference": {
+        "owner": "operations",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-051",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "other",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-052",
+      "reference": {
+        "owner": "billing",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "billing",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 1,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-053",
+      "reference": {
+        "owner": "operations",
+        "urgent": false,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 1,
+        "jev": 1
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-054",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "low"
+        },
+        "qwen_mlx": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 3,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": true,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-055",
+      "reference": {
+        "owner": "other",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "low"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "operations",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 0,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-056",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 2,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-057",
+      "reference": {
+        "owner": "safety_compliance",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": false
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "qwen_mlx": 2,
+        "jev": 1
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-058",
+      "reference": {
+        "owner": "billing",
+        "urgent": false,
+        "impact": "low"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "low"
+        },
+        "qwen_mlx": {
+          "owner": "billing",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "billing",
+          "urgent": false,
+          "impact": "low"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 2,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-059",
+      "reference": {
+        "owner": "operations",
+        "urgent": false,
+        "impact": "moderate"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "operations",
+          "urgent": true,
+          "impact": "low"
+        },
+        "jev": {
+          "owner": "operations",
+          "urgent": false,
+          "impact": "moderate"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": false,
+          "impact": true
+        },
+        "qwen_mlx": {
+          "owner": true,
+          "urgent": false,
+          "impact": false
+        },
+        "jev": {
+          "owner": true,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 1,
+        "jev": 3
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": true
+      },
+      "all_three_fully_correct": false
+    },
+    {
+      "case_id": "holdout-060",
+      "reference": {
+        "owner": "technical_support",
+        "urgent": true,
+        "impact": "high"
+      },
+      "predictions": {
+        "harrier": {
+          "owner": "technical_support",
+          "urgent": true,
+          "impact": "moderate"
+        },
+        "qwen_mlx": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        },
+        "jev": {
+          "owner": "safety_compliance",
+          "urgent": true,
+          "impact": "high"
+        }
+      },
+      "correctness": {
+        "harrier": {
+          "owner": true,
+          "urgent": true,
+          "impact": false
+        },
+        "qwen_mlx": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        },
+        "jev": {
+          "owner": false,
+          "urgent": true,
+          "impact": true
+        }
+      },
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "qwen_mlx": 2,
+        "jev": 2
+      },
+      "fully_correct": {
+        "harrier": false,
+        "qwen_mlx": false,
+        "jev": false
+      },
+      "all_three_fully_correct": false
+    }
+  ]
+}

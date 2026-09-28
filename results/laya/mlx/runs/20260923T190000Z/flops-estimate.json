@@ -1,0 +1,10 @@
+{
+  "method": "2 * 421296830 parameters * measured input tokens per independent forward",
+  "parameter_count": 421296830,
+  "measured_forward_count": 900,
+  "measured_token_count_total": 140853,
+  "measured_tokens_per_forward_mean": 156.50333333333333,
+  "estimated_mean_flops_per_forward": 131868716435.53333,
+  "estimated_mean_gflops_per_forward": 131.86871643553332,
+  "caveat": "Dense projection estimate only; excludes attention quadratic terms, head, nonlinearity, and padding overhead."
+}

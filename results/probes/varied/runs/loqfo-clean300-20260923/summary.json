@@ -1,0 +1,1271 @@
+{
+  "protocol": "single-question clean LOQFO; train 300/15 families; test 200/10 fully held-out families",
+  "models": {
+    "qwen": {
+      "model": "Qwen/Qwen3-Embedding-0.6B",
+      "selected_C": 1.0,
+      "overall": {
+        "n": 200,
+        "accuracy": 0.495,
+        "macro_f1": 0.175,
+        "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+        "mean_log_loss": 2.358232721064451,
+        "score_expected_value_mae": 0.8418992786078707,
+        "mean_predictive_entropy_nats": 0.30634068407754655,
+        "mean_max_probability": 0.870162701003552,
+        "family_cluster_bootstrap_95_percentile": {
+          "macro_f1": [
+            0.13665624999999998,
+            0.21834374999999995
+          ],
+          "accuracy": [
+            0.43,
+            0.55
+          ],
+          "family_count": 10,
+          "replicates": 2000
+        }
+      },
+      "per_type": {
+        "choice": {
+          "n": 80,
+          "accuracy": 0.525,
+          "macro_f1": 0.15208333333333332,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.284072878506249
+        },
+        "noul": {
+          "n": 60,
+          "accuracy": 0.5166666666666667,
+          "macro_f1": 0.25833333333333336,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.0172841223155582
+        },
+        "score": {
+          "n": 60,
+          "accuracy": 0.43333333333333335,
+          "macro_f1": 0.12222222222222222,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 3.7980611098909445,
+          "score_expected_value_mae": 0.8418992786078707
+        }
+      },
+      "per_family": {
+        "qf-00000015": {
+          "n": 20,
+          "accuracy": 0.4,
+          "macro_f1": 0.1,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 3.2828059059877743
+        },
+        "qf-00000016": {
+          "n": 20,
+          "accuracy": 0.25,
+          "macro_f1": 0.0625,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 5.800003039479356,
+          "score_expected_value_mae": 1.0425374907143239
+        },
+        "qf-00000017": {
+          "n": 20,
+          "accuracy": 0.6,
+          "macro_f1": 0.3,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.1444653650980599
+        },
+        "qf-00000018": {
+          "n": 20,
+          "accuracy": 0.6,
+          "macro_f1": 0.16666666666666669,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.2364237050347735
+        },
+        "qf-00000019": {
+          "n": 20,
+          "accuracy": 0.55,
+          "macro_f1": 0.1375,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.131307026843108,
+          "score_expected_value_mae": 0.6022159577969404
+        },
+        "qf-0000001a": {
+          "n": 20,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.081373986843334
+        },
+        "qf-0000001b": {
+          "n": 20,
+          "accuracy": 0.5,
+          "macro_f1": 0.14166666666666666,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.838214898135178
+        },
+        "qf-0000001c": {
+          "n": 20,
+          "accuracy": 0.5,
+          "macro_f1": 0.16666666666666669,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 3.462873263350372,
+          "score_expected_value_mae": 0.8809443873123481
+        },
+        "qf-0000001d": {
+          "n": 20,
+          "accuracy": 0.6,
+          "macro_f1": 0.2,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.778847004867271
+        },
+        "qf-0000001e": {
+          "n": 20,
+          "accuracy": 0.45,
+          "macro_f1": 0.225,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.8260130150052806
+        }
+      },
+      "per_domain": {
+        "municipal water": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.770004963420776
+        },
+        "hospital pharmacy": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.965842032699272
+        },
+        "cloud infrastructure": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 6.3587574340206015
+        },
+        "food processing": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.6281845986063792
+        },
+        "public transit": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.778553407944934
+        },
+        "regional banking": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.15106898487989392
+        },
+        "university laboratory": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 4.761250973070093
+        },
+        "electric utility": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 5.5075867239127465
+        },
+        "online retail": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.9648062573096037
+        },
+        "agricultural irrigation": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.9420036840134425
+        },
+        "clinical research": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 8.04676564058407,
+          "score_expected_value_mae": 1.4511750797640286
+        },
+        "consumer lending": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 9.187317481843081,
+          "score_expected_value_mae": 1.4981163178725805
+        },
+        "environmental services": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 4.803168107356789,
+          "score_expected_value_mae": 0.9489586544239196
+        },
+        "aviation maintenance": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 4.446716533199084,
+          "score_expected_value_mae": 0.9341192928893278
+        },
+        "digital payments": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 4.3487911969161805,
+          "score_expected_value_mae": 1.216717376819968
+        },
+        "building safety": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 6.297672270345601,
+          "score_expected_value_mae": 0.9878654522807397
+        },
+        "telecommunications": {
+          "n": 12,
+          "accuracy": 0.5833333333333334,
+          "macro_f1": 0.18055555555555555,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.837705753608996,
+          "score_expected_value_mae": 0.00044761758026690135
+        },
+        "public procurement": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 3.7185559750025243,
+          "score_expected_value_mae": 0.9693768791107448
+        },
+        "food import control": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 12.887195248387846,
+          "score_expected_value_mae": 1.4557658967167082
+        },
+        "data protection office": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 4.261275415678178,
+          "score_expected_value_mae": 0.9628323396849532
+        },
+        "community clinic": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.9021544328536976
+        },
+        "air freight": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.7438730054245337
+        },
+        "chemical manufacturing": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.38548821914848014
+        },
+        "data center": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.3786099926732168
+        },
+        "water treatment": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.7852241518642313
+        },
+        "rail maintenance": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.2031983147213396
+        },
+        "school catering": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.76613138059337
+        },
+        "municipal fleet": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.456603891204366
+        },
+        "biobank": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.738044351688567
+        },
+        "construction site": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.085325910808796
+        },
+        "county library": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.16666666666666666,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.3580113920632908
+        },
+        "regional college": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 6.9543004072484145
+        },
+        "city services": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 3.7779310141567737
+        },
+        "regional transit": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.29166666666666663,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.04946511548237627
+        },
+        "community health": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.566575466393508
+        },
+        "employment office": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.29166666666666663,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.14366231467345422
+        },
+        "museum network": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.355260017044747
+        },
+        "utility customer care": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.868801051713615
+        },
+        "court administration": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 3.1610519557676384
+        },
+        "housing services": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.29166666666666663,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.12917831580391648
+        },
+        "online marketplace": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.8437539648396981,
+          "score_expected_value_mae": 0.31185336438794664
+        },
+        "regional broadband": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.4447172457563997,
+          "score_expected_value_mae": 0.6665881937309455
+        },
+        "retail banking": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.24356251547924523,
+          "score_expected_value_mae": 0.3259827636558998
+        },
+        "food delivery": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.1233795776643443,
+          "score_expected_value_mae": 1.3353800133932965
+        },
+        "public utilities": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.4620835133818235,
+          "score_expected_value_mae": 0.9069564488341619
+        },
+        "airline support": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 5.376297732303289,
+          "score_expected_value_mae": 0.5058355604916801
+        },
+        "digital health": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.08043265420564154,
+          "score_expected_value_mae": 0.2026540945598583
+        },
+        "municipal parking": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 4.246269764678994,
+          "score_expected_value_mae": 0.40304168207993396
+        },
+        "parcel carrier": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.9793177079173836,
+          "score_expected_value_mae": 0.4199580384329711
+        },
+        "education platform": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 5.513255592204256,
+          "score_expected_value_mae": 0.9439094184027107
+        },
+        "municipal IT": {
+          "n": 10,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.056664921533753
+        },
+        "digital banking": {
+          "n": 10,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.1060830521529152
+        },
+        "clinical laboratory": {
+          "n": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.10833333333333332,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.6140738049862713
+        },
+        "university research": {
+          "n": 10,
+          "accuracy": 0.6,
+          "macro_f1": 0.175,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.0623559912840845
+        },
+        "precision manufacturing": {
+          "n": 10,
+          "accuracy": 0.8,
+          "macro_f1": 0.2666666666666667,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.8072651552898207,
+          "score_expected_value_mae": 0.22568614281943994
+        },
+        "rail operations": {
+          "n": 10,
+          "accuracy": 0.2,
+          "macro_f1": 0.06666666666666667,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 5.1184813714109225,
+          "score_expected_value_mae": 1.5362026318052562
+        },
+        "cloud hosting": {
+          "n": 10,
+          "accuracy": 0.7,
+          "macro_f1": 0.2333333333333333,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.3529616104997881
+        },
+        "legal services": {
+          "n": 10,
+          "accuracy": 0.2,
+          "macro_f1": 0.1,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.1764811400118942
+        },
+        "construction": {
+          "n": 10,
+          "accuracy": 0.7,
+          "macro_f1": 0.35,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.4755448899986668
+        }
+      },
+      "cv": [
+        {
+          "C": 0.01,
+          "held_out_family_accuracy": [
+            0.48333333333333334,
+            0.6833333333333333,
+            0.36666666666666664,
+            0.31666666666666665,
+            0.4166666666666667
+          ],
+          "mean_family_accuracy": 0.4533333333333333
+        },
+        {
+          "C": 0.1,
+          "held_out_family_accuracy": [
+            0.6,
+            0.7,
+            0.38333333333333336,
+            0.35,
+            0.4166666666666667
+          ],
+          "mean_family_accuracy": 0.48999999999999994
+        },
+        {
+          "C": 1.0,
+          "held_out_family_accuracy": [
+            0.6333333333333333,
+            0.7,
+            0.4166666666666667,
+            0.3333333333333333,
+            0.4166666666666667
+          ],
+          "mean_family_accuracy": 0.5
+        },
+        {
+          "C": 10.0,
+          "held_out_family_accuracy": [
+            0.6166666666666667,
+            0.6833333333333333,
+            0.4166666666666667,
+            0.3333333333333333,
+            0.4166666666666667
+          ],
+          "mean_family_accuracy": 0.49333333333333335
+        }
+      ],
+      "split_audit": {
+        "family_overlap_count": 0,
+        "scenario_near_duplicate_threshold": 0.88,
+        "cross_split_scenario_near_duplicate_count": 0,
+        "within_train_cross_family_context_links": [],
+        "within_train_cv_component_count": 15,
+        "within_train_cross_family_context_link_count": 0,
+        "train_domain_count": 28,
+        "test_domain_count": 59,
+        "domain_overlap": [
+          "online retail",
+          "telecommunications"
+        ],
+        "domain_overlap_count": 2,
+        "domain_policy": "allowed by LOQFO design; this is not leave-one-domain-out evaluation"
+      },
+      "output_hashes": {
+        "predictions.jsonl": "b1da577f498df895c86173ac5757aaba05c6b2ac6ba6061c8710aadd9edc5e89",
+        "metrics.json": "851adc3e147b775d988b175fbcd3768ffd7254c4e44682d3cc795bdce90799e3",
+        "models.json": "662beca9ff0a414b0f1c90c8d3cf52ce3b569f29e7085ac151bbc577824f72c7"
+      },
+      "prediction_count": 200
+    },
+    "harrier": {
+      "model": "microsoft/harrier-oss-v1-0.6b",
+      "selected_C": 0.01,
+      "overall": {
+        "n": 200,
+        "accuracy": 0.465,
+        "macro_f1": 0.1708333333333333,
+        "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+        "mean_log_loss": 1.0706648163609516,
+        "score_expected_value_mae": 0.8398045104801943,
+        "mean_predictive_entropy_nats": 0.9127555376303311,
+        "mean_max_probability": 0.5584807587115636,
+        "family_cluster_bootstrap_95_percentile": {
+          "macro_f1": [
+            0.11665624999999998,
+            0.2354270833333333
+          ],
+          "accuracy": [
+            0.36,
+            0.58
+          ],
+          "family_count": 10,
+          "replicates": 2000
+        }
+      },
+      "per_type": {
+        "choice": {
+          "n": 80,
+          "accuracy": 0.45,
+          "macro_f1": 0.13229166666666664,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.1912623502576778
+        },
+        "noul": {
+          "n": 60,
+          "accuracy": 0.5666666666666667,
+          "macro_f1": 0.2833333333333333,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.7168706854293935
+        },
+        "score": {
+          "n": 60,
+          "accuracy": 0.38333333333333336,
+          "macro_f1": 0.10972222222222221,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.263662235430208,
+          "score_expected_value_mae": 0.8398045104801943
+        }
+      },
+      "per_family": {
+        "qf-00000015": {
+          "n": 20,
+          "accuracy": 0.35,
+          "macro_f1": 0.0875,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.530498539328265
+        },
+        "qf-00000016": {
+          "n": 20,
+          "accuracy": 0.4,
+          "macro_f1": 0.1,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.3376093311566684,
+          "score_expected_value_mae": 0.7516519628597129
+        },
+        "qf-00000017": {
+          "n": 20,
+          "accuracy": 0.8,
+          "macro_f1": 0.4,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.6260435546215037
+        },
+        "qf-00000018": {
+          "n": 20,
+          "accuracy": 0.2,
+          "macro_f1": 0.05833333333333333,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.437624063721027
+        },
+        "qf-00000019": {
+          "n": 20,
+          "accuracy": 0.25,
+          "macro_f1": 0.0625,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.5372153234290178,
+          "score_expected_value_mae": 0.9857262230918102
+        },
+        "qf-0000001a": {
+          "n": 20,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.7920493058237443
+        },
+        "qf-0000001b": {
+          "n": 20,
+          "accuracy": 0.6,
+          "macro_f1": 0.16666666666666669,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.106272081737783
+        },
+        "qf-0000001c": {
+          "n": 20,
+          "accuracy": 0.5,
+          "macro_f1": 0.16666666666666669,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.9161620517049386,
+          "score_expected_value_mae": 0.7820353454890603
+        },
+        "qf-0000001d": {
+          "n": 20,
+          "accuracy": 0.65,
+          "macro_f1": 0.21666666666666665,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.6906547162436366
+        },
+        "qf-0000001e": {
+          "n": 20,
+          "accuracy": 0.4,
+          "macro_f1": 0.2,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.7325191958429322
+        }
+      },
+      "per_domain": {
+        "municipal water": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.2079348423229468
+        },
+        "hospital pharmacy": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.295896569842429
+        },
+        "cloud infrastructure": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.33739161509451
+        },
+        "food processing": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.6745593998883597
+        },
+        "public transit": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.4058132027586963
+        },
+        "regional banking": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.4217872494451047
+        },
+        "university laboratory": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.8370042291619888
+        },
+        "electric utility": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.4172494600515417
+        },
+        "online retail": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.6245146622366903
+        },
+        "agricultural irrigation": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.0828341624803839
+        },
+        "clinical research": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.2375902149933602,
+          "score_expected_value_mae": 0.7548408849196173
+        },
+        "consumer lending": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.7278037272373314,
+          "score_expected_value_mae": 0.900076080881405
+        },
+        "environmental services": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.4479662873206236,
+          "score_expected_value_mae": 0.8098245009652936
+        },
+        "aviation maintenance": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.4413672947545204,
+          "score_expected_value_mae": 0.6694351512833638
+        },
+        "digital payments": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.7187626586680094,
+          "score_expected_value_mae": 0.9758804834473225
+        },
+        "building safety": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.0665744370560089,
+          "score_expected_value_mae": 0.5656892061968375
+        },
+        "telecommunications": {
+          "n": 12,
+          "accuracy": 0.5833333333333334,
+          "macro_f1": 0.19444444444444442,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.7657388230456276,
+          "score_expected_value_mae": 0.6465933564845019
+        },
+        "public procurement": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.2711293795442871,
+          "score_expected_value_mae": 0.14399917557208597
+        },
+        "food import control": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.757434786519652,
+          "score_expected_value_mae": 1.433741630760367
+        },
+        "data protection office": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.1383630316776494,
+          "score_expected_value_mae": 0.6164391580863341
+        },
+        "community clinic": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.6476168834306002
+        },
+        "air freight": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.5662605232622401
+        },
+        "chemical manufacturing": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.6116973979820121
+        },
+        "data center": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.5978597502954102
+        },
+        "water treatment": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.6738751931672329
+        },
+        "rail maintenance": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.6191129250957499
+        },
+        "school catering": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.6205260556124632
+        },
+        "municipal fleet": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.6666184320742362
+        },
+        "biobank": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.6368188996699763
+        },
+        "construction site": {
+          "n": 2,
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.6200494856251166
+        },
+        "county library": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.16666666666666666,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.9142911386636128
+        },
+        "regional college": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.16666666666666666,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.4830966713216638
+        },
+        "city services": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.553279800364904
+        },
+        "regional transit": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.8281806298418022
+        },
+        "community health": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.8073194752362212
+        },
+        "employment office": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.751953598053961
+        },
+        "museum network": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.2963757962113611
+        },
+        "utility customer care": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.814385372252058
+        },
+        "court administration": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.450822696969393
+        },
+        "housing services": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.4765354582952916
+        },
+        "online marketplace": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 2.4731306626570193,
+          "score_expected_value_mae": 0.7925518523961218
+        },
+        "regional broadband": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.5802738554219689,
+          "score_expected_value_mae": 0.9752580896013259
+        },
+        "retail banking": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.287768693323067,
+          "score_expected_value_mae": 1.453331039030004
+        },
+        "food delivery": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.6936962868916179,
+          "score_expected_value_mae": 1.6276849012080707
+        },
+        "public utilities": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.6116288792046642,
+          "score_expected_value_mae": 0.8058867653675211
+        },
+        "airline support": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.1327671564537845,
+          "score_expected_value_mae": 0.7268015647943699
+        },
+        "digital health": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.1647538850906087,
+          "score_expected_value_mae": 1.3376339720764252
+        },
+        "municipal parking": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.3794492834374168,
+          "score_expected_value_mae": 0.9175256667442261
+        },
+        "parcel carrier": {
+          "n": 2,
+          "accuracy": 0.5,
+          "macro_f1": 0.125,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.4652609948810018,
+          "score_expected_value_mae": 0.7828725823868516
+        },
+        "education platform": {
+          "n": 2,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.583423536929029,
+          "score_expected_value_mae": 0.43771579731318455
+        },
+        "municipal IT": {
+          "n": 10,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.7513499486222536
+        },
+        "digital banking": {
+          "n": 10,
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.832748663025235
+        },
+        "clinical laboratory": {
+          "n": 10,
+          "accuracy": 0.6,
+          "macro_f1": 0.15833333333333333,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.9603964774098227
+        },
+        "university research": {
+          "n": 10,
+          "accuracy": 0.6,
+          "macro_f1": 0.175,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.2521476860657432
+        },
+        "precision manufacturing": {
+          "n": 10,
+          "accuracy": 0.3,
+          "macro_f1": 0.1,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 1.0707382421895228,
+          "score_expected_value_mae": 0.8694185884279578
+        },
+        "rail operations": {
+          "n": 10,
+          "accuracy": 0.7,
+          "macro_f1": 0.2333333333333333,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.7615858612203543,
+          "score_expected_value_mae": 0.6946521025501626
+        },
+        "cloud hosting": {
+          "n": 10,
+          "accuracy": 0.6,
+          "macro_f1": 0.19999999999999998,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.7762431435915678
+        },
+        "legal services": {
+          "n": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.2,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.7482028825613658
+        },
+        "construction": {
+          "n": 10,
+          "accuracy": 0.4,
+          "macro_f1": 0.2,
+          "macro_f1_definition": "mean within-question macro F1 over local candidate labels; exact match contributes 1/K, otherwise 0",
+          "mean_log_loss": 0.7168355091244988
+        }
+      },
+      "cv": [
+        {
+          "C": 0.01,
+          "held_out_family_accuracy": [
+            0.5833333333333334,
+            0.7666666666666667,
+            0.5333333333333333,
+            0.45,
+            0.3
+          ],
+          "mean_family_accuracy": 0.5266666666666666
+        },
+        {
+          "C": 0.1,
+          "held_out_family_accuracy": [
+            0.6,
+            0.75,
+            0.5,
+            0.36666666666666664,
+            0.31666666666666665
+          ],
+          "mean_family_accuracy": 0.5066666666666666
+        },
+        {
+          "C": 1.0,
+          "held_out_family_accuracy": [
+            0.65,
+            0.65,
+            0.5,
+            0.31666666666666665,
+            0.2833333333333333
+          ],
+          "mean_family_accuracy": 0.48
+        },
+        {
+          "C": 10.0,
+          "held_out_family_accuracy": [
+            0.6333333333333333,
+            0.65,
+            0.5,
+            0.31666666666666665,
+            0.26666666666666666
+          ],
+          "mean_family_accuracy": 0.4733333333333333
+        }
+      ],
+      "split_audit": {
+        "family_overlap_count": 0,
+        "scenario_near_duplicate_threshold": 0.88,
+        "cross_split_scenario_near_duplicate_count": 0,
+        "within_train_cross_family_context_links": [],
+        "within_train_cv_component_count": 15,
+        "within_train_cross_family_context_link_count": 0,
+        "train_domain_count": 28,
+        "test_domain_count": 59,
+        "domain_overlap": [
+          "online retail",
+          "telecommunications"
+        ],
+        "domain_overlap_count": 2,
+        "domain_policy": "allowed by LOQFO design; this is not leave-one-domain-out evaluation"
+      },
+      "output_hashes": {
+        "predictions.jsonl": "7552c1d96b48fc225bae7e847398baf8641a97b42e8ae15769966a690a9c12fb",
+        "metrics.json": "6360d071d3d719d8e890352d7932a2a28034c91fcbeb2a6ec66eb32f1817cf1e",
+        "models.json": "b60dcc6a63b8fdfe81aa02631e80bcb2e443cd84c328ffb0d1fb97b2c569694d"
+      },
+      "prediction_count": 200
+    }
+  },
+  "artifact_hashes": {
+    "preparation/filtered-id-manifest.json": "45b723f9c3b6315bc885bba8c86a51489e61b1545f42082d315eaccdcc5a0d17",
+    "preparation/train-only-benchmark.json": "919595245dcba94f1ef84e69dafa4105279d7c9e1cc60d34bcb3be51c682b0f4",
+    "training-attempts.json": "94c746b9fbac223c5d995d26cdf9fde59128143e949f52e730865dce3a71f1a3"
+  },
+  "filtered_id_manifest_sha256": "45b723f9c3b6315bc885bba8c86a51489e61b1545f42082d315eaccdcc5a0d17"
+}

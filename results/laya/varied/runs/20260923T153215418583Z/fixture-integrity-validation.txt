@@ -1,0 +1,1 @@
+explicit fixture integrity checks passed: 60 cases / 180 unchanged questions and targets

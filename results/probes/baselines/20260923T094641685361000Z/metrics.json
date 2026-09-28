@@ -1,0 +1,71 @@
+{
+  "qwen": {
+    "successes": 90,
+    "errors": 0,
+    "per_question_exact_match": {
+      "owner": {
+        "correct": 38,
+        "total": 90,
+        "accuracy": 0.4222222222222222
+      },
+      "urgent": {
+        "correct": 31,
+        "total": 90,
+        "accuracy": 0.34444444444444444
+      },
+      "impact": {
+        "correct": 30,
+        "total": 90,
+        "accuracy": 0.3333333333333333
+      }
+    },
+    "all_three_exact_match": 11,
+    "case_count": 90
+  },
+  "harrier": {
+    "successes": 90,
+    "errors": 0,
+    "per_question_exact_match": {
+      "owner": {
+        "correct": 37,
+        "total": 90,
+        "accuracy": 0.4111111111111111
+      },
+      "urgent": {
+        "correct": 31,
+        "total": 90,
+        "accuracy": 0.34444444444444444
+      },
+      "impact": {
+        "correct": 41,
+        "total": 90,
+        "accuracy": 0.45555555555555555
+      }
+    },
+    "all_three_exact_match": 0,
+    "case_count": 90
+  },
+  "jev": {
+    "successes": 90,
+    "errors": 0,
+    "per_question_exact_match": {
+      "owner": {
+        "correct": 75,
+        "total": 90,
+        "accuracy": 0.8333333333333334
+      },
+      "urgent": {
+        "correct": 79,
+        "total": 90,
+        "accuracy": 0.8777777777777778
+      },
+      "impact": {
+        "correct": 82,
+        "total": 90,
+        "accuracy": 0.9111111111111111
+      }
+    },
+    "all_three_exact_match": 61,
+    "case_count": 90
+  }
+}

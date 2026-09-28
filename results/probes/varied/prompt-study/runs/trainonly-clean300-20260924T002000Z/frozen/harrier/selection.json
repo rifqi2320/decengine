@@ -1,0 +1,341 @@
+{
+  "selected_variant": "v2-baseline",
+  "robust_improvement": false,
+  "baseline_metrics": {
+    "per_type": {
+      "choice": {
+        "n": 240,
+        "accuracy": 0.49583333333333335,
+        "candidate_local_macro_f1": 0.16069444444444445
+      },
+      "noul": {
+        "n": 220,
+        "accuracy": 0.7545454545454545,
+        "candidate_local_macro_f1": 0.37727272727272726
+      },
+      "score": {
+        "n": 200,
+        "accuracy": 0.535,
+        "candidate_local_macro_f1": 0.14575,
+        "normalized_rubric_expected_value_mae": 0.25493454621941564
+      }
+    },
+    "macro_accuracy_by_type": 0.5951262626262627,
+    "macro_candidate_local_f1_by_type": 0.22790572390572392,
+    "balanced_accuracy_exact_match": 0.5951262626262627
+  },
+  "selected_metrics": {
+    "per_type": {
+      "choice": {
+        "n": 240,
+        "accuracy": 0.49583333333333335,
+        "candidate_local_macro_f1": 0.16069444444444445
+      },
+      "noul": {
+        "n": 220,
+        "accuracy": 0.7545454545454545,
+        "candidate_local_macro_f1": 0.37727272727272726
+      },
+      "score": {
+        "n": 200,
+        "accuracy": 0.535,
+        "candidate_local_macro_f1": 0.14575,
+        "normalized_rubric_expected_value_mae": 0.25493454621941564
+      }
+    },
+    "macro_accuracy_by_type": 0.5951262626262627,
+    "macro_candidate_local_f1_by_type": 0.22790572390572392,
+    "balanced_accuracy_exact_match": 0.5951262626262627
+  },
+  "candidate_variants_that_passed": [],
+  "cost_accounting": {
+    "v2-baseline": {
+      "single": {
+        "question_records": 300,
+        "embedding_calls": 1288,
+        "query_plus_candidate_tokens": 71781,
+        "estimated_dense_embedding_flops_2pt": 86137200000000,
+        "feature_sha256": "29f2a7df1db1b298597db790203ca53e8c93102e94e7c4eaeded211b40858b84",
+        "manifest_sha256": "2cf4020c9fbbe52e5ab830aabc51722762c0147ae9c0a2f154910c08a10e7f5f",
+        "model": "microsoft/harrier-oss-v1-0.6b",
+        "profile_version": "2",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+            "size": 1355
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+            "size": 1192133232
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+            "size": 5404
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/v2-baseline"
+      },
+      "multi": {
+        "question_records": 360,
+        "embedding_calls": 1500,
+        "query_plus_candidate_tokens": 90793,
+        "estimated_dense_embedding_flops_2pt": 108951600000000,
+        "feature_sha256": "6b8db357097a06b4933cd186439dc494a6b5728aa5e097eb8324eb604190819e",
+        "manifest_sha256": "d4792f43c2672df54c8ee46e2df65953dfc254f2b8df0de4503aef00b77acfa5",
+        "model": "microsoft/harrier-oss-v1-0.6b",
+        "profile_version": "2",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+            "size": 1355
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+            "size": 1192133232
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+            "size": 5404
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/v2-baseline"
+      }
+    },
+    "readable-state": {
+      "single": {
+        "question_records": 300,
+        "embedding_calls": 1288,
+        "query_plus_candidate_tokens": 72181,
+        "estimated_dense_embedding_flops_2pt": 86617200000000,
+        "feature_sha256": "50084037757c7dad1ab3065eeb04ecda0f20cb1e604bf15280a0e790637fdd55",
+        "manifest_sha256": "9f294351de1c77e3b15c8962c03e60d9cf66324541049e0cd270d2ce08675596",
+        "model": "microsoft/harrier-oss-v1-0.6b",
+        "profile_version": "2",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+            "size": 1355
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+            "size": 1192133232
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+            "size": 5404
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/readable-state"
+      },
+      "multi": {
+        "question_records": 360,
+        "embedding_calls": 1500,
+        "query_plus_candidate_tokens": 92233,
+        "estimated_dense_embedding_flops_2pt": 110679600000000,
+        "feature_sha256": "fa3f66d55f07a4b32e94771a1c723d8babdab69103fb824632454e5c8e547a48",
+        "manifest_sha256": "35f2922aededfca194d8ce0be54b9626054cf40f833292ce20b19aeac5121e8c",
+        "model": "microsoft/harrier-oss-v1-0.6b",
+        "profile_version": "2",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+            "size": 1355
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+            "size": 1192133232
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+            "size": 5404
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/readable-state"
+      }
+    },
+    "rule-in-candidate": {
+      "single": {
+        "question_records": 300,
+        "embedding_calls": 1288,
+        "query_plus_candidate_tokens": 148583,
+        "estimated_dense_embedding_flops_2pt": 178299600000000,
+        "feature_sha256": "2096bc01a3761cbebcc96751e9b29fa5cd47cd7a49c48dd7c0f55f1dda2bf2a7",
+        "manifest_sha256": "aa5e123689d076e89f76e825f3421c42853dbb0eca7738ad805ba8a05a0ea384",
+        "model": "microsoft/harrier-oss-v1-0.6b",
+        "profile_version": "2",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+            "size": 1355
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+            "size": 1192133232
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+            "size": 5404
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/rule-in-candidate"
+      },
+      "multi": {
+        "question_records": 360,
+        "embedding_calls": 1500,
+        "query_plus_candidate_tokens": 157455,
+        "estimated_dense_embedding_flops_2pt": 188946000000000,
+        "feature_sha256": "c5a09a92b19942e9e669a6a7b7998ed86c1ad044a6dd7916d9f53108c6b96f17",
+        "manifest_sha256": "f4e570c7700b3b42af52d601868f36d0f6d512fd5836fcca22ae666892498a65",
+        "model": "microsoft/harrier-oss-v1-0.6b",
+        "profile_version": "2",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+            "size": 1355
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+            "size": 1192133232
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+            "size": 5404
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/rule-in-candidate"
+      }
+    },
+    "joint-context-candidate": {
+      "single": {
+        "question_records": 300,
+        "embedding_calls": 1288,
+        "query_plus_candidate_tokens": 199183,
+        "estimated_dense_embedding_flops_2pt": 239019600000000,
+        "feature_sha256": "779e1fa486d004b909e5cfaa04b552c2ea5990951540b1509fda96a52b28b5b8",
+        "manifest_sha256": "d9473f02b7b052e82fceefbfb63ef4b86668447a5f36a2316e87e96e589d9e31",
+        "model": "microsoft/harrier-oss-v1-0.6b",
+        "profile_version": "2",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+            "size": 1355
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+            "size": 1192133232
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+            "size": 5404
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/joint-context-candidate"
+      },
+      "multi": {
+        "question_records": 360,
+        "embedding_calls": 1500,
+        "query_plus_candidate_tokens": 286886,
+        "estimated_dense_embedding_flops_2pt": 344263200000000,
+        "feature_sha256": "0d5bd6364c80131c932788c31de5f31949e514f9094f9ce25c620f296e218fd6",
+        "manifest_sha256": "8e9fddcf5d907e8428bdb442b802b4aad406a339ac8509755350a81057f68332",
+        "model": "microsoft/harrier-oss-v1-0.6b",
+        "profile_version": "2",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+            "size": 1355
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+            "size": 1192133232
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+            "size": 5404
+          }
+        ],
+        "text_version": "decengine-varied-pair-text-v2-generic-types/joint-context-candidate"
+      }
+    }
+  }
+}

@@ -1,0 +1,1018 @@
+{
+  "run_id": "20260923T090609039852Z",
+  "case_count": 60,
+  "baseline": {
+    "case_count": 60,
+    "question_exact_matches": 88,
+    "question_total": 180,
+    "micro_exact_accuracy": 0.4888888888888889,
+    "per_question": {
+      "owner": {
+        "exact_matches": 24,
+        "total": 60,
+        "exact_accuracy": 0.4,
+        "mean_reported_confidence": 0.20927219736666666,
+        "mean_confidence_correct": 0.26816601916666666,
+        "mean_confidence_incorrect": 0.1700096495,
+        "errors": [
+          {
+            "case_id": "holdout-002",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-003",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-004",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "holdout-006",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-008",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "holdout-009",
+            "predicted": "billing",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-010",
+            "predicted": "billing",
+            "reference": "other"
+          },
+          {
+            "case_id": "holdout-012",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-013",
+            "predicted": "other",
+            "reference": "sales"
+          },
+          {
+            "case_id": "holdout-014",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-015",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-016",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "holdout-018",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-021",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-023",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-027",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-029",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "holdout-031",
+            "predicted": "other",
+            "reference": "sales"
+          },
+          {
+            "case_id": "holdout-033",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-035",
+            "predicted": "technical_support",
+            "reference": "operations"
+          },
+          {
+            "case_id": "holdout-039",
+            "predicted": "technical_support",
+            "reference": "operations"
+          },
+          {
+            "case_id": "holdout-040",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "holdout-041",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-042",
+            "predicted": "technical_support",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-043",
+            "predicted": "other",
+            "reference": "sales"
+          },
+          {
+            "case_id": "holdout-044",
+            "predicted": "account_access",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-046",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "holdout-047",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-048",
+            "predicted": "account_access",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-050",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "holdout-051",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-055",
+            "predicted": "operations",
+            "reference": "other"
+          },
+          {
+            "case_id": "holdout-056",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-057",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-060",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          }
+        ]
+      },
+      "urgent": {
+        "exact_matches": 27,
+        "total": 60,
+        "exact_accuracy": 0.45,
+        "mean_reported_confidence": 0.43876574316666667,
+        "mean_confidence_correct": 0.4267616633333333,
+        "mean_confidence_incorrect": 0.44858726303030305,
+        "errors": [
+          {
+            "case_id": "holdout-001",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-005",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-007",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-011",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-013",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-017",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-019",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-021",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-025",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-029",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-031",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-033",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-035",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-037",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-039",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-041",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-043",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-047",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-049",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-052",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-053",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-055",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-058",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-059",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "urgent_reference_split": {
+          "reference_true_count": 27,
+          "reference_false_count": 33,
+          "accuracy_on_reference_true": 1.0,
+          "accuracy_on_reference_false": 0.0,
+          "confusion": {
+            "true_positive": 27,
+            "true_negative": 0,
+            "false_positive": 33,
+            "false_negative": 0
+          },
+          "precision": 0.45,
+          "recall": 1.0,
+          "f1": 0.6206896551724138
+        }
+      },
+      "impact": {
+        "exact_matches": 37,
+        "total": 60,
+        "exact_accuracy": 0.6166666666666667,
+        "mean_reported_confidence": 0.21210884641666666,
+        "mean_confidence_correct": 0.23990704227027027,
+        "mean_confidence_incorrect": 0.16739000960869566,
+        "errors": [
+          {
+            "case_id": "holdout-001",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "holdout-005",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-011",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-017",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-019",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "holdout-021",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-023",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-025",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "holdout-029",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-031",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "holdout-033",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-039",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-040",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "holdout-043",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "holdout-046",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "holdout-047",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-048",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-049",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "holdout-052",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "holdout-053",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-055",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "holdout-059",
+            "predicted": "low",
+            "reference": "moderate"
+          }
+        ]
+      }
+    },
+    "latency_ms": {
+      "median": 78.215271,
+      "mean": 80.74029653333334,
+      "p95": 89.217667
+    },
+    "inference_errors": 0
+  },
+  "locked_variant": {
+    "case_count": 60,
+    "question_exact_matches": 96,
+    "question_total": 180,
+    "micro_exact_accuracy": 0.5333333333333333,
+    "per_question": {
+      "owner": {
+        "exact_matches": 28,
+        "total": 60,
+        "exact_accuracy": 0.4666666666666667,
+        "mean_reported_confidence": 0.20067489301666666,
+        "mean_confidence_correct": 0.23258269214285715,
+        "mean_confidence_incorrect": 0.17275556878125,
+        "errors": [
+          {
+            "case_id": "holdout-002",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-003",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-006",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-008",
+            "predicted": "billing",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "holdout-009",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-012",
+            "predicted": "billing",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-013",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "holdout-014",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-016",
+            "predicted": "other",
+            "reference": "operations"
+          },
+          {
+            "case_id": "holdout-018",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-019",
+            "predicted": "operations",
+            "reference": "other"
+          },
+          {
+            "case_id": "holdout-021",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-023",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-027",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-031",
+            "predicted": "operations",
+            "reference": "sales"
+          },
+          {
+            "case_id": "holdout-033",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-035",
+            "predicted": "technical_support",
+            "reference": "operations"
+          },
+          {
+            "case_id": "holdout-039",
+            "predicted": "technical_support",
+            "reference": "operations"
+          },
+          {
+            "case_id": "holdout-040",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "holdout-041",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-042",
+            "predicted": "technical_support",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-043",
+            "predicted": "other",
+            "reference": "sales"
+          },
+          {
+            "case_id": "holdout-044",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-045",
+            "predicted": "other",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-046",
+            "predicted": "other",
+            "reference": "account_access"
+          },
+          {
+            "case_id": "holdout-047",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-048",
+            "predicted": "other",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-050",
+            "predicted": "safety_compliance",
+            "reference": "operations"
+          },
+          {
+            "case_id": "holdout-055",
+            "predicted": "operations",
+            "reference": "other"
+          },
+          {
+            "case_id": "holdout-056",
+            "predicted": "operations",
+            "reference": "technical_support"
+          },
+          {
+            "case_id": "holdout-057",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "holdout-060",
+            "predicted": "safety_compliance",
+            "reference": "technical_support"
+          }
+        ]
+      },
+      "urgent": {
+        "exact_matches": 27,
+        "total": 60,
+        "exact_accuracy": 0.45,
+        "mean_reported_confidence": 0.298429871,
+        "mean_confidence_correct": 0.2915358040740741,
+        "mean_confidence_incorrect": 0.3040704712121212,
+        "errors": [
+          {
+            "case_id": "holdout-001",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-004",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-005",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-007",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-010",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-011",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-013",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-016",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-017",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-019",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-021",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-022",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-023",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-025",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-028",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-029",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-031",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-033",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-034",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-035",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-037",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-039",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-040",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-041",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-043",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-046",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-047",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-049",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-052",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-053",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-055",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-058",
+            "predicted": true,
+            "reference": false
+          },
+          {
+            "case_id": "holdout-059",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "urgent_reference_split": {
+          "reference_true_count": 27,
+          "reference_false_count": 33,
+          "accuracy_on_reference_true": 1.0,
+          "accuracy_on_reference_false": 0.0,
+          "confusion": {
+            "true_positive": 27,
+            "true_negative": 0,
+            "false_positive": 33,
+            "false_negative": 0
+          },
+          "precision": 0.45,
+          "recall": 1.0,
+          "f1": 0.6206896551724138
+        }
+      },
+      "impact": {
+        "exact_matches": 41,
+        "total": 60,
+        "exact_accuracy": 0.6833333333333333,
+        "mean_reported_confidence": 0.12497776415,
+        "mean_confidence_correct": 0.13747345797560975,
+        "mean_confidence_incorrect": 0.09801337221052632,
+        "errors": [
+          {
+            "case_id": "holdout-002",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "holdout-005",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-006",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "holdout-011",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-015",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "holdout-017",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-018",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "holdout-019",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "holdout-021",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-027",
+            "predicted": "low",
+            "reference": "high"
+          },
+          {
+            "case_id": "holdout-029",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-033",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-035",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-039",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-043",
+            "predicted": "high",
+            "reference": "low"
+          },
+          {
+            "case_id": "holdout-047",
+            "predicted": "low",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-048",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-053",
+            "predicted": "high",
+            "reference": "moderate"
+          },
+          {
+            "case_id": "holdout-059",
+            "predicted": "low",
+            "reference": "moderate"
+          }
+        ]
+      }
+    },
+    "latency_ms": {
+      "median": 101.5654585,
+      "mean": 104.81921108333333,
+      "p95": 109.291625
+    },
+    "inference_errors": 0
+  },
+  "locked_minus_baseline": {
+    "micro_exact_accuracy_delta": 0.04444444444444445,
+    "exact_match_count_delta": 8,
+    "per_question_exact_match_delta": {
+      "owner": 4,
+      "urgent": 0,
+      "impact": 4
+    },
+    "urgent_true_class_accuracy_delta": 0.0,
+    "urgent_false_class_accuracy_delta": 0.0
+  },
+  "metadata": "metadata.json",
+  "predictions": {
+    "baseline": "baseline.jsonl",
+    "locked_variant": "official-format-task-instruction.jsonl"
+  }
+}

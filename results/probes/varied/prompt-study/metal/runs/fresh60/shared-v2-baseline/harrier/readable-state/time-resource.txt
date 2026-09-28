@@ -1,0 +1,19 @@
+all-MLX readable-state/harrier: 60 cases 180 questions; bundle=3efb4d42c3ccfcd96284ff33e5bf2834ade9a7e73935dd8f4f9245cda88043b1 fixture=316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f
+       21.35 real         4.28 user         0.96 sys
+          1422065664  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              164502  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   5  voluntary context switches
+               38635  involuntary context switches
+         71345704544  instructions retired
+         19536546507  cycles elapsed
+          3820603168  peak memory footprint

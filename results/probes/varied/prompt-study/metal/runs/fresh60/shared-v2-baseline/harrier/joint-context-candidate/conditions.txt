@@ -1,0 +1,12 @@
+utc=2026-09-23T17:16:42Z
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=47710307)	80%; AC attached; not charging present: true
+ 1:16  up 10:43, 3 users, load averages: 2.39 2.47 2.71
+ 7459  19.4 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/153.0.8010.49/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer)
+17404  17.3 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/153.0.8010.49/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer)
+73589  12.0 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/153.0.8010.49/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer)
+ 1656   9.9 /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+  788   8.5 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer
+ 2542   5.7 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)
+ 1654   5.3 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal
+ 1019   5.2 /Library/SystemExtensions/8D52699B-FC2F-488D-AD36-54D05FB5B433/com.whale.Xsentinel.SecurityAgent.systemextension/Contents/MacOS/com.whale.Xsentinel.SecurityAgent

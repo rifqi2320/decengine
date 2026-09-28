@@ -1,0 +1,39 @@
+{
+  "backend": "MLX/Metal",
+  "checkpoint_files": [
+    {
+      "path": "config.json",
+      "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+      "size": 727
+    },
+    {
+      "path": "model.safetensors",
+      "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+      "size": 1191586416
+    },
+    {
+      "path": "tokenizer.json",
+      "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+      "size": 11423705
+    },
+    {
+      "path": "tokenizer_config.json",
+      "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+      "size": 9706
+    }
+  ],
+  "embedding_dimensions": 1024,
+  "feature_transfer": "host vectors for offline training; not Metal-resident classifier",
+  "input_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+  "max_token_length": 32768,
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "normalization": "L2",
+  "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+  "profile_version": "1",
+  "question_record_count": 300,
+  "schema_version": 1,
+  "serialization": "UTF-8 JSONL, one row per named question; state canonicalized with serde_json compact sorted-key map order; query=profile.query_template(instruction=profile.query_instruction_template(prompt, kind_instruction), text='Decision: {prompt}\\nState: {canonical_state}'); candidate=profile.candidate_template(profile-specific candidate template). Choice/score preserve candidate order as serialized by JSON object/array; binary candidates contain the complete prompt proposition. Reference, target, rationale, and domain are never read into feature text.",
+  "text_lengths": "Exact tokenizer.json token counts and UTF-8 byte lengths are recorded for each query and candidate; each is checked nonempty and <= frozen profile max_length.",
+  "text_version": "decengine-varied-pair-text-v2-generic-types",
+  "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "started",
+  "started_at": "2026-09-24T05:43:09.739605+00:00",
+  "runner": "/Users/IDSP35241/Documents/Code/decengine/results/laya/varied/run_lora_fresh60_cacheguard.py",
+  "fixture": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/varied/multi/test-lora-fresh-60.jsonl",
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "checkpoint": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/laya-root/checkpoint",
+  "checkpoint_weights_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+  "requested_guard_bytes": {
+    "early_stop": 6442450944,
+    "absolute_stop": 8589934592,
+    "max_swap_growth_exclusive": 268435456
+  },
+  "attempt_policy": "single attempt; four-case smoke, parity gate, then continuation in same process only if smoke passes"
+}

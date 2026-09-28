@@ -1,0 +1,14 @@
+{
+  "expected": "results/probes/runs/20260923T094618Z/harrier/task-specific/predictions.jsonl",
+  "actual": "results/probes/runs/20260923T094618Z/harrier/task-specific/inference-test-predictions.jsonl",
+  "case_count": 90,
+  "task_predictions_compared": 270,
+  "probability_values_compared": 1080,
+  "labels_match_exactly": true,
+  "probabilities_bitwise_identical": false,
+  "maximum_absolute_probability_difference": 1.1102230246251565e-16,
+  "probabilities_within_absolute_tolerance": true,
+  "absolute_tolerance": 1e-12,
+  "pass": true,
+  "verification_uses_reference_labels": false
+}

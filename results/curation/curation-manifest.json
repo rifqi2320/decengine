@@ -1,0 +1,5968 @@
+{
+  "artifacts": {
+    "curated_jsonl": {
+      "path": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/decision-cases-curated-90.jsonl",
+      "sha256": "f29a35b88d506e14f5816d5facbd9d51b61edb7f3ae50b68c090fe090a60f0a5"
+    },
+    "selected_ids": {
+      "path": "selected-90-ids.json",
+      "sha256": "addc77e050a10089cff1416e0e0c7c7973004b8ab4458e4736725a346e54144f"
+    }
+  },
+  "counts": {
+    "excluded": 70,
+    "excluded_by_industry_and_label": {
+      "impact": {
+        "\"high\"": 27,
+        "\"low\"": 27,
+        "\"moderate\"": 16
+      },
+      "industry": {
+        "education": 7,
+        "energy_utilities": 7,
+        "financial_services": 7,
+        "healthcare": 7,
+        "hospitality": 7,
+        "manufacturing": 7,
+        "public_services": 7,
+        "retail_ecommerce": 7,
+        "software_saas": 7,
+        "transport_logistics": 7
+      },
+      "owner": {
+        "\"account_access\"": 5,
+        "\"billing\"": 11,
+        "\"operations\"": 15,
+        "\"other\"": 3,
+        "\"safety_compliance\"": 15,
+        "\"sales\"": 6,
+        "\"technical_support\"": 15
+      },
+      "urgent": {
+        "false": 38,
+        "true": 32
+      }
+    },
+    "excluded_by_source": {
+      "holdout": 23,
+      "original": 47
+    },
+    "excluded_by_source_and_industry_label": {
+      "holdout": {
+        "impact": {
+          "\"high\"": 11,
+          "\"low\"": 9,
+          "\"moderate\"": 3
+        },
+        "industry": {
+          "education": 2,
+          "energy_utilities": 2,
+          "financial_services": 3,
+          "healthcare": 2,
+          "hospitality": 2,
+          "manufacturing": 2,
+          "public_services": 2,
+          "retail_ecommerce": 3,
+          "software_saas": 3,
+          "transport_logistics": 2
+        },
+        "owner": {
+          "\"account_access\"": 2,
+          "\"billing\"": 5,
+          "\"operations\"": 4,
+          "\"other\"": 1,
+          "\"safety_compliance\"": 7,
+          "\"sales\"": 2,
+          "\"technical_support\"": 2
+        },
+        "urgent": {
+          "false": 12,
+          "true": 11
+        }
+      },
+      "original": {
+        "impact": {
+          "\"high\"": 16,
+          "\"low\"": 18,
+          "\"moderate\"": 13
+        },
+        "industry": {
+          "education": 5,
+          "energy_utilities": 5,
+          "financial_services": 4,
+          "healthcare": 5,
+          "hospitality": 5,
+          "manufacturing": 5,
+          "public_services": 5,
+          "retail_ecommerce": 4,
+          "software_saas": 4,
+          "transport_logistics": 5
+        },
+        "owner": {
+          "\"account_access\"": 3,
+          "\"billing\"": 6,
+          "\"operations\"": 11,
+          "\"other\"": 2,
+          "\"safety_compliance\"": 8,
+          "\"sales\"": 4,
+          "\"technical_support\"": 13
+        },
+        "urgent": {
+          "false": 26,
+          "true": 21
+        }
+      }
+    },
+    "input": 160,
+    "input_by_industry_and_label": {
+      "impact": {
+        "\"high\"": 63,
+        "\"low\"": 62,
+        "\"moderate\"": 35
+      },
+      "industry": {
+        "education": 16,
+        "energy_utilities": 16,
+        "financial_services": 16,
+        "healthcare": 16,
+        "hospitality": 16,
+        "manufacturing": 16,
+        "public_services": 16,
+        "retail_ecommerce": 16,
+        "software_saas": 16,
+        "transport_logistics": 16
+      },
+      "owner": {
+        "\"account_access\"": 11,
+        "\"billing\"": 25,
+        "\"operations\"": 33,
+        "\"other\"": 8,
+        "\"safety_compliance\"": 38,
+        "\"sales\"": 12,
+        "\"technical_support\"": 33
+      },
+      "urgent": {
+        "false": 87,
+        "true": 73
+      }
+    },
+    "input_by_source_and_industry_label": {
+      "holdout": {
+        "impact": {
+          "\"high\"": 26,
+          "\"low\"": 21,
+          "\"moderate\"": 13
+        },
+        "industry": {
+          "education": 6,
+          "energy_utilities": 6,
+          "financial_services": 6,
+          "healthcare": 6,
+          "hospitality": 6,
+          "manufacturing": 6,
+          "public_services": 6,
+          "retail_ecommerce": 6,
+          "software_saas": 6,
+          "transport_logistics": 6
+        },
+        "owner": {
+          "\"account_access\"": 3,
+          "\"billing\"": 9,
+          "\"operations\"": 11,
+          "\"other\"": 5,
+          "\"safety_compliance\"": 16,
+          "\"sales\"": 3,
+          "\"technical_support\"": 13
+        },
+        "urgent": {
+          "false": 33,
+          "true": 27
+        }
+      },
+      "original": {
+        "impact": {
+          "\"high\"": 37,
+          "\"low\"": 41,
+          "\"moderate\"": 22
+        },
+        "industry": {
+          "education": 10,
+          "energy_utilities": 10,
+          "financial_services": 10,
+          "healthcare": 10,
+          "hospitality": 10,
+          "manufacturing": 10,
+          "public_services": 10,
+          "retail_ecommerce": 10,
+          "software_saas": 10,
+          "transport_logistics": 10
+        },
+        "owner": {
+          "\"account_access\"": 8,
+          "\"billing\"": 16,
+          "\"operations\"": 22,
+          "\"other\"": 3,
+          "\"safety_compliance\"": 22,
+          "\"sales\"": 9,
+          "\"technical_support\"": 20
+        },
+        "urgent": {
+          "false": 54,
+          "true": 46
+        }
+      }
+    },
+    "selected": 90,
+    "selected_by_industry_and_label": {
+      "impact": {
+        "\"high\"": 36,
+        "\"low\"": 35,
+        "\"moderate\"": 19
+      },
+      "industry": {
+        "education": 9,
+        "energy_utilities": 9,
+        "financial_services": 9,
+        "healthcare": 9,
+        "hospitality": 9,
+        "manufacturing": 9,
+        "public_services": 9,
+        "retail_ecommerce": 9,
+        "software_saas": 9,
+        "transport_logistics": 9
+      },
+      "owner": {
+        "\"account_access\"": 6,
+        "\"billing\"": 14,
+        "\"operations\"": 18,
+        "\"other\"": 5,
+        "\"safety_compliance\"": 23,
+        "\"sales\"": 6,
+        "\"technical_support\"": 18
+      },
+      "urgent": {
+        "false": 49,
+        "true": 41
+      }
+    },
+    "selected_by_source": {
+      "holdout": 37,
+      "original": 53
+    },
+    "selected_by_source_and_industry_label": {
+      "holdout": {
+        "impact": {
+          "\"high\"": 15,
+          "\"low\"": 12,
+          "\"moderate\"": 10
+        },
+        "industry": {
+          "education": 4,
+          "energy_utilities": 4,
+          "financial_services": 3,
+          "healthcare": 4,
+          "hospitality": 4,
+          "manufacturing": 4,
+          "public_services": 4,
+          "retail_ecommerce": 3,
+          "software_saas": 3,
+          "transport_logistics": 4
+        },
+        "owner": {
+          "\"account_access\"": 1,
+          "\"billing\"": 4,
+          "\"operations\"": 7,
+          "\"other\"": 4,
+          "\"safety_compliance\"": 9,
+          "\"sales\"": 1,
+          "\"technical_support\"": 11
+        },
+        "urgent": {
+          "false": 21,
+          "true": 16
+        }
+      },
+      "original": {
+        "impact": {
+          "\"high\"": 21,
+          "\"low\"": 23,
+          "\"moderate\"": 9
+        },
+        "industry": {
+          "education": 5,
+          "energy_utilities": 5,
+          "financial_services": 6,
+          "healthcare": 5,
+          "hospitality": 5,
+          "manufacturing": 5,
+          "public_services": 5,
+          "retail_ecommerce": 6,
+          "software_saas": 6,
+          "transport_logistics": 5
+        },
+        "owner": {
+          "\"account_access\"": 5,
+          "\"billing\"": 10,
+          "\"operations\"": 11,
+          "\"other\"": 1,
+          "\"safety_compliance\"": 14,
+          "\"sales\"": 5,
+          "\"technical_support\"": 7
+        },
+        "urgent": {
+          "false": 28,
+          "true": 25
+        }
+      }
+    },
+    "selected_difficulty": {
+      "decisions_total": 810,
+      "exact_matches_out_of_3_by_model": {
+        "harrier": 88,
+        "jev": 210,
+        "qwen_mlx": 112
+      },
+      "exact_matches_total": 410,
+      "fully_solved_by_all_three": 0
+    }
+  },
+  "exclusions": [
+    {
+      "case_id": "case-003",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "operations",
+        "rationale": "Specimen integrity and a time-limited diagnostic workflow are at risk.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-005",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "A safety-critical clinical display is degraded even though ordering remains available.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-006",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "operations",
+        "rationale": "Scheduling change without clinical urgency.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-008",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "technical_support",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "A limited data gap warrants follow-up, but no acute condition is stated.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-009",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "A near-term access barrier could compromise an important visit and requires same-day coordination.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-013",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "A production integration is degraded with a time-bound financial operation.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-015",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Possible account compromise needs immediate fraud controls rather than generic billing explanation.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-016",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "Plan clarification with no evidence of error or deadline.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-017",
+      "combined_exact_matches": 9,
+      "exact_matches_out_of_3": {
+        "harrier": 3,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 0,
+      "predictions": {
+        "harrier": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "all_three_models_exact_3_of_3",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Potential control failure before funds release merits immediate compliance escalation.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-022",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "sales",
+        "rationale": "Pre-sale product inquiry.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-025",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Regulated battery shipment may be unsafe/noncompliant and is imminently dispatching.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-026",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "operations",
+        "rationale": "Routine policy-compliant return/exchange.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-028",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "Localized operational inconvenience with a workaround.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-031",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Vehicle safety issue; stop movement and escalate to qualified maintenance.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-033",
+      "combined_exact_matches": 8,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "operations",
+        "rationale": "Conflicting assignments threaten temperature-controlled delivery commitments.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-034",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "Charge appears contractually correct; routine explanation.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-035",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 3,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "Operational visibility is materially wrong but a safe workaround exists.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-039",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 0,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "Routing defect creates immediate collision/property-damage risk.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-042",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "account_access",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "account_access",
+        "rationale": "Routine account recovery.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-046",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "Workaround exists and no class is currently unattended.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-048",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "other",
+        "rationale": "Information request unrelated to a service failure.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-049",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "Time-sensitive coordination affects fair access to exams.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-050",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "sales",
+        "rationale": "Purchase inquiry without immediate execution deadline.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-051",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Guarding/interlock defect is a serious worker-safety risk; do not run the press.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-052",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "Supply planning issue with buffer and no immediate line stoppage.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-053",
+      "combined_exact_matches": 8,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "Quality telemetry is falsely reassuring and may allow nonconforming products through.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-056",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "operations",
+        "rationale": "Routine scheduling request.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-057",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "Intermittent localized fault with an available workaround.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-061",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Potential equipment fire/failure demands immediate control-room response.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-063",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 2,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "Incorrect restoration status at critical infrastructure can delay response.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-066",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "operations",
+        "rationale": "Routine scheduling change.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-067",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "technical_support",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "Localized telemetry gap with local operation intact.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-070",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "billing",
+        "rationale": "Potential billing integration issue, but no time-critical or safety impact.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-072",
+      "combined_exact_matches": 2,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "account_access",
+        "rationale": "Routine onboarding correction.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-076",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "other",
+        "rationale": "Product capability inquiry, no service failure.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-077",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 3,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "Integration degradation has a viable workaround but creates downstream reconciliation risk.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-080",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "sales",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "sales",
+        "rationale": "Commercial quote request with future deadline.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-082",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "operations",
+        "rationale": "Routine service request.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-083",
+      "combined_exact_matches": 8,
+      "exact_matches_out_of_3": {
+        "harrier": 3,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "billing",
+        "rationale": "Confirmed duplicate charge merits prompt correction, but no immediate safety issue.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-084",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "Localized failure with an operational workaround.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-086",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "sales",
+        "rationale": "Future booking request.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-088",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "Routine receipt request.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-091",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Immediate roadway hazard requiring emergency traffic control and infrastructure response.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-092",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "account_access",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "account_access",
+        "rationale": "Routine credential/card replacement.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-094",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "Explain the stated fee; no discrepancy identified.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-095",
+      "combined_exact_matches": 9,
+      "exact_matches_out_of_3": {
+        "harrier": 3,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 0,
+      "predictions": {
+        "harrier": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "all_three_models_exact_3_of_3",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Sensitive personal information remains exposed; disable access and invoke incident process.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-097",
+      "combined_exact_matches": 8,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "Monitoring outage during increasing flood risk is potentially life-critical.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "holdout-002",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "The equipment failure removes the only local diagnostic capacity for time-sensitive assessments today.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-005",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "billing",
+        "rationale": "A localized reimbursement record needs correction, but the functioning alternate submission route limits immediate disruption.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-007",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 0,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "The request concerns a routine charge with no imminent payment or account consequence.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-008",
+      "combined_exact_matches": 8,
+      "exact_matches_out_of_3": {
+        "harrier": 3,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "high",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "account_access",
+        "rationale": "A blocked authorized user and imminent cutoff threaten timely wage disbursement for the workforce.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-009",
+      "combined_exact_matches": 8,
+      "exact_matches_out_of_3": {
+        "harrier": 3,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Customer financial data left the controlled environment; immediate incident handling and containment are needed despite the recipient's statement.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-013",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "sales",
+        "rationale": "This is a routine pre-sale product question without a time-sensitive decision.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-016",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "operations",
+        "rationale": "This is an ordinary return request within the stated policy window.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-017",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "There is a contained order-data issue with an available correction window and no imminent customer impact.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-020",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "operations",
+        "rationale": "A time-sensitive temperature-controlled delivery is at risk, and the current vehicle cannot safely complete it.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-024",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "A potentially worsening structural hazard affects a planned near-term high-occupancy route and requires immediate assessment.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-028",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "The payment is settled and there is no near-term registration consequence.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-030",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "A critical pressure-protection control may not function on an operating pressurized vessel, creating immediate severe hazard.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-032",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Production is being urged to proceed despite a failed protective control, creating immediate severe injury risk.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-036",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "A suspected gas leak beside occupied housing presents an immediate fire, explosion, and exposure risk.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-037",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "Routine account-service assistance has no near-term consequence.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-038",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Smoke and electrical fault alarms at live infrastructure indicate an immediate hazard and possible broad service failure.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-043",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "sales",
+        "rationale": "This is a routine commercial document request with no near-term operational impact.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-044",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 3,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "account_access",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "A broad authentication outage blocks payroll approval on an imminent deadline for multiple customers.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-046",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "account_access",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "account_access",
+        "rationale": "A cosmetic profile change does not affect account access or service.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-049",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "other",
+        "rationale": "This is a routine amenity question with no immediate guest-service impact.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-054",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "An active alarm in an occupied room may indicate a life-threatening exposure and requires immediate protective action.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-058",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "The historical receipt request has no active financial dispute or deadline.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-059",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reason": "secondary_high_three_model_exact_match_total_low_discrimination",
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "The scheduling defect affects a localized service, with phone confirmation available as a workaround.",
+        "urgent": false
+      },
+      "source": "holdout"
+    }
+  ],
+  "inputs": {
+    "holdout_cases": {
+      "path": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/decision-cases-holdout.jsonl",
+      "sha256": "6139c028f6604a36c61db80484762a9e69ad56ca9a130507c01167823e5fe124"
+    },
+    "holdout_metrics": {
+      "path": "/Users/IDSP35241/Documents/Code/decengine/results/holdout-comparison-runs/20260923T090938207411Z/comparison-metrics.json",
+      "sha256": "17fb3ce06dc6894daeab546fe7136784f907f544cef46fb74dc8ab59618f22dc"
+    },
+    "original_cases": {
+      "path": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/decision-cases-100.jsonl",
+      "sha256": "a680e2e12648f314b19e3754271a504de07e6bb5c8aba9966576b34a539cd4b6"
+    },
+    "original_metrics": {
+      "path": "/Users/IDSP35241/Documents/Code/decengine/results/harrier-runs/20260923T084828012314Z/comparison-metrics.json",
+      "sha256": "e1c8b4f2685019658b309738a94db9de26584a036e0b8281dd49025c5021ff78"
+    }
+  },
+  "policy": {
+    "exclusions": 70,
+    "fully_solved_count": 2,
+    "fully_solved_ids": [
+      "case-017",
+      "case-095"
+    ],
+    "phase_1": "jointly solved: each of Harrier, Qwen MLX, and JEV has 3/3 exact matches; deterministic case_id order if more than the exclusion budget",
+    "phase_2": "descending sum of model exact matches (0..9), then ascending max-minus-min model score spread, then case_id; exclude high-scoring/low-discrimination cases first",
+    "representation_guard": "for every industry and individual owner/urgent/impact reference-label stratum, retain at least max(1, floor(90 * input_stratum_count / 160)) cases; input has 10 named industries",
+    "source_cases": 160,
+    "target_cases": 90
+  },
+  "provenance_note": "Selected JSONL rows are copied from the combined input without changing fixture labels/content. Existing fixtures and run archives are not modified.",
+  "schema_version": 1,
+  "selected_cases": [
+    {
+      "case_id": "case-001",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Conflicting medication instructions can cause harm; urgent clinician reconciliation is appropriate, not routine portal support.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-002",
+      "combined_exact_matches": 2,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 1,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "account_access",
+        "rationale": "No immediate care deadline or missing record is reported; this is routine access assistance.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-004",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "The issue is a non-urgent explanation of a billing discrepancy.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-007",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Potential disclosure of protected health information requires prompt privacy escalation; avoid requesting more PHI.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-010",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "Straightforward document request, no deadline or financial dispute.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-011",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "billing",
+        "rationale": "Potential duplicate high-value transfer with an imminent reversal window.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-012",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "Informational transaction question; no unauthorized-use claim.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-014",
+      "combined_exact_matches": 2,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "account_access",
+        "rationale": "Routine account onboarding without immediate business impact.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-018",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "Likely formatting/time-zone confusion, not a balance or funds issue.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-019",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 2,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "operations",
+        "rationale": "Large payroll may fail on a near-term deadline; operations investigation required.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-020",
+      "combined_exact_matches": 2,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "account_access",
+        "rationale": "Routine self-service document retrieval.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-021",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "Time-sensitive fulfillment exception, but no safety concern.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-023",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "No mismatch with stated promotion terms; explain calculation.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-024",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "Potential widespread defect causing duplicate charges and orders.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-027",
+      "combined_exact_matches": 2,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "high",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "safety_compliance",
+        "rationale": "Trust-and-safety review is needed, but no active imminent hazard is described.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-029",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Temperature excursion involving medication creates immediate safety risk.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-030",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "Clarification of disclosed payment timing.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-032",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "operations",
+        "rationale": "Ordinary tracking delay, no imminent commitment at risk.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-036",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "operations",
+        "rationale": "Routine document retrieval.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-037",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Customs declaration mismatch needs urgent compliance correction before export.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-038",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "Misdelivery investigation; modest impact and no imminent deadline.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-040",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "sales",
+        "rationale": "Pre-booking service question.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-041",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "account_access",
+        "rationale": "Near-term access barrier to an important student support process.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-043",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 0,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "Student records may be materially incorrect and could propagate to transcripts.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-044",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "Routine payment-method clarification.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-045",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 1,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 0,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "safety_compliance",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Possible student-data exposure requires privacy incident handling.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-047",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 0,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "Failure of an emergency communications control with a same-day drill.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-054",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "Minor reconciliation difference without evidence of broader discrepancy.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-055",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 1,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "safety_compliance",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Traceability error in material usage can affect product safety and recall scope.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-058",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 0,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "Production disruption needs staffing response, but no safety shortcut should be taken.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-059",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "safety_compliance",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "safety_compliance",
+        "rationale": "Routine documentation request, not a reported exposure or incident.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-060",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "sales",
+        "rationale": "Pre-sale product specification inquiry.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-062",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "operations",
+        "rationale": "Routine service-calendar question.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-064",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "Billing explanation needed; evidence currently supports the bill.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-065",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 0,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Switching ambiguity creates severe electrical hazard; verify before energization.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-068",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Immediate public electrical hazard despite no reported contact.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-069",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "sales",
+        "rationale": "Long-horizon commercial inquiry.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-071",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 1,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "account_access",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "Regional outage affecting access and likely broad customer impact.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-073",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "sales",
+        "rationale": "Retention concern and data integrity friction, but workaround exists and no immediate outage.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-074",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "Clarify contractual billing treatment before assuming an error.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-075",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "account_access",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Material auditability gap with a near-term compliance deadline.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-078",
+      "combined_exact_matches": 2,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "account_access",
+        "rationale": "Planned self-service account lifecycle request, not an immediate churn threat.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-079",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Credential exposure needs immediate containment/revocation and privacy-safe handling.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-081",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Life-safety monitoring impairment must be escalated despite no current alarm.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-085",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Undeclared allergen poses immediate risk to guests.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-087",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 1,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "Status defect risks privacy and guest safety, with staff appropriately pausing entry.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-089",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "Contained property issue with no immediate danger and response arranged.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-090",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "operations",
+        "rationale": "People are trapped; use emergency procedures and escalate immediately.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-093",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "Record integrity error could cause a wrong-site inspection; near-term correction needed.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-096",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "operations",
+        "rationale": "Standard scheduling request.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-098",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "other",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "other",
+        "rationale": "Information request with no imminent deadline.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-099",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "operations",
+        "rationale": "Essential medical access is at risk under imminent weather conditions.",
+        "urgent": true
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "case-100",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "sales",
+        "rationale": "Future procurement inquiry.",
+        "urgent": false
+      },
+      "source": "original"
+    },
+    {
+      "case_id": "holdout-001",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "operations",
+        "rationale": "Routine replenishment has a confirmed delivery and adequate supply buffer; no near-term interruption is indicated.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-003",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "A failed sterilization cycle may have affected instruments already sent for procedures, creating an immediate patient-safety and traceability risk.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-004",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "operations",
+        "rationale": "This is routine future scheduling with alternatives and no stated consequence from delay.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-006",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 1,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Potentially misleading clinical reports are under active use control and require same-day review to prevent unsafe interpretation.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-010",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "other",
+        "rationale": "The discrepancy is minor and the card remains usable; there is no documented transaction or access blockage.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-011",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "billing",
+        "rationale": "The report has a localized discrepancy, while ledger and payout continuity provide a meaningful workaround.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-012",
+      "combined_exact_matches": 7,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "A broad monitoring failure can delay response to active fraud and has no stated workaround.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-014",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "A critical shipping tool failure threatens a large same-day dispatch commitment with an imminent carrier cutoff.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-015",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "An exposed energized wire in a public area presents immediate injury risk and requires the area to be made safe.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-018",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "A live catalog pricing defect is affecting all sales of a featured product and creating ongoing substantial financial exposure.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-019",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "other",
+        "rationale": "This is a general information request with no operational disruption or near-term deadline.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-021",
+      "combined_exact_matches": 1,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 1,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "safety_compliance",
+        "rationale": "The vehicle defect needs inspection before use, but the van is parked and no current trip is affected.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-022",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "The issue is a minor record correction, while pass access and payment are unaffected.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-023",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "A localized system fault creates extra coordination work, with a viable manual control in place.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-025",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "other",
+        "rationale": "This is a routine information request well ahead of the event.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-026",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 1,
+        "qwen_mlx": 3
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "high",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "A campus-wide access failure is blocking a time-critical move-in process affecting many students.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-027",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Confidential accommodation information was broadly disclosed and needs prompt privacy and student-support response.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-029",
+      "combined_exact_matches": 2,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "The outage creates a meaningful access and scheduling challenge, but an alternate room is available before the exam.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-031",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "sales",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "sales",
+        "rationale": "This is a routine pre-sale information request with a distant deadline.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-033",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "A localized equipment fault increases manual effort, but a documented check preserves traceability and schedule.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-034",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "sales",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "This is a routine invoice discrepancy with no imminent payment deadline.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-035",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "safety_compliance",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "The standby asset requires maintenance before reliance, but current production has a functioning primary system.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-039",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "A building service issue is present, but a working backup supplies residents while repair is arranged.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-040",
+      "combined_exact_matches": 2,
+      "exact_matches_out_of_3": {
+        "harrier": 0,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "account_access",
+        "rationale": "The request is a minor account-record correction without access or payment impact.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-041",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "low",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "technical_support",
+        "rationale": "Meter data collection continues and the display issue has no immediate service impact.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-042",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "The facility lacks reliable monitoring of a critical treatment control while distribution continues, requiring immediate protective action.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-045",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "A live credential has been exposed publicly and should be revoked and investigated immediately.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-047",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 3,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 3,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "A contained data-export defect affects a single tenant, with source data intact and a practical rerun workaround.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-048",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 2,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "account_access",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "account_access",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "technical_support",
+        "rationale": "A multi-workspace recovery safeguard is impaired and a same-day certification is at risk, though live service continues and no data loss is reported.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-050",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "operations",
+        "rationale": "The failure removes essential access and may affect safe movement for current guests in a multi-floor occupied tower.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-051",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "other",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "A cross-room access control failure has occurred; immediate investigation is warranted even though the credential was disabled.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-052",
+      "combined_exact_matches": 5,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 3,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "billing",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "billing",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "billing",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "billing",
+        "rationale": "The request is a historical invoice-copy matter with no outstanding balance or deadline.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-053",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 1,
+        "qwen_mlx": 1
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "moderate",
+        "owner": "operations",
+        "rationale": "A localized equipment problem needs repair, but safe storage has been restored through an available alternate unit.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-055",
+      "combined_exact_matches": 3,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 2,
+        "qwen_mlx": 0
+      },
+      "model_score_spread": 2,
+      "predictions": {
+        "harrier": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "low",
+          "owner": "operations",
+          "urgent": false
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "low",
+        "owner": "other",
+        "rationale": "This is a routine information request well before the collection date.",
+        "urgent": false
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-056",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 0,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "A broad intake outage blocks access to urgent shelter assistance during an imminent weather hazard.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-057",
+      "combined_exact_matches": 4,
+      "exact_matches_out_of_3": {
+        "harrier": 1,
+        "jev": 1,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 1,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "operations",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "safety_compliance",
+        "rationale": "Discrepant tabulation across multiple active precincts threatens election integrity and requires immediate controlled reconciliation.",
+        "urgent": true
+      },
+      "source": "holdout"
+    },
+    {
+      "case_id": "holdout-060",
+      "combined_exact_matches": 6,
+      "exact_matches_out_of_3": {
+        "harrier": 2,
+        "jev": 2,
+        "qwen_mlx": 2
+      },
+      "model_score_spread": 0,
+      "predictions": {
+        "harrier": {
+          "impact": "moderate",
+          "owner": "technical_support",
+          "urgent": true
+        },
+        "jev": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        },
+        "qwen_mlx": {
+          "impact": "high",
+          "owner": "safety_compliance",
+          "urgent": true
+        }
+      },
+      "reference": {
+        "impact": "high",
+        "owner": "technical_support",
+        "rationale": "Sensor telemetry has failed during a rising-water event near an operational threshold, requiring immediate restoration or alternate monitoring.",
+        "urgent": true
+      },
+      "source": "holdout"
+    }
+  ],
+  "selected_ids": [
+    "case-001",
+    "case-002",
+    "case-004",
+    "case-007",
+    "case-010",
+    "case-011",
+    "case-012",
+    "case-014",
+    "case-018",
+    "case-019",
+    "case-020",
+    "case-021",
+    "case-023",
+    "case-024",
+    "case-027",
+    "case-029",
+    "case-030",
+    "case-032",
+    "case-036",
+    "case-037",
+    "case-038",
+    "case-040",
+    "case-041",
+    "case-043",
+    "case-044",
+    "case-045",
+    "case-047",
+    "case-054",
+    "case-055",
+    "case-058",
+    "case-059",
+    "case-060",
+    "case-062",
+    "case-064",
+    "case-065",
+    "case-068",
+    "case-069",
+    "case-071",
+    "case-073",
+    "case-074",
+    "case-075",
+    "case-078",
+    "case-079",
+    "case-081",
+    "case-085",
+    "case-087",
+    "case-089",
+    "case-090",
+    "case-093",
+    "case-096",
+    "case-098",
+    "case-099",
+    "case-100",
+    "holdout-001",
+    "holdout-003",
+    "holdout-004",
+    "holdout-006",
+    "holdout-010",
+    "holdout-011",
+    "holdout-012",
+    "holdout-014",
+    "holdout-015",
+    "holdout-018",
+    "holdout-019",
+    "holdout-021",
+    "holdout-022",
+    "holdout-023",
+    "holdout-025",
+    "holdout-026",
+    "holdout-027",
+    "holdout-029",
+    "holdout-031",
+    "holdout-033",
+    "holdout-034",
+    "holdout-035",
+    "holdout-039",
+    "holdout-040",
+    "holdout-041",
+    "holdout-042",
+    "holdout-045",
+    "holdout-047",
+    "holdout-048",
+    "holdout-050",
+    "holdout-051",
+    "holdout-052",
+    "holdout-053",
+    "holdout-055",
+    "holdout-056",
+    "holdout-057",
+    "holdout-060"
+  ]
+}

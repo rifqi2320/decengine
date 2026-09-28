@@ -1,0 +1,197 @@
+{
+  "protocol": "shared question-conditioned candidate scorer; independently train one model per embedding model",
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "train_count": 300,
+  "test_count": 200,
+  "train_family_count": 15,
+  "train_ids_sha256": "59c15b34f988696ffa144ae43bc56d812d6d5f1d9994bb7432a532f935a3cc3e",
+  "test_ids_sha256": "6d3f48f6c5142b9a3f3c540c5569af73c19c20dfa103cdd817d01dcdc232f449",
+  "train_test_split_audit": {
+    "family_overlap_count": 0,
+    "scenario_near_duplicate_threshold": 0.88,
+    "cross_split_scenario_near_duplicate_count": 0,
+    "within_train_cross_family_context_links": [],
+    "within_train_cv_component_count": 15,
+    "within_train_cross_family_context_link_count": 0,
+    "train_domain_count": 28,
+    "test_domain_count": 59,
+    "domain_overlap": [
+      "online retail",
+      "telecommunications"
+    ],
+    "domain_overlap_count": 2,
+    "domain_policy": "allowed by LOQFO design; this is not leave-one-domain-out evaluation"
+  },
+  "input_sha256": {
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300.jsonl": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+    "benchmarks/cases/varied/test-200.jsonl": "40bca19c7ccea48b93d16e32a555b6de0c2aebb11de00e946b60986845c9a18d",
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300-harrier.jsonl": "30dc93596e1a145bc34858a0fea36a0a903c5e627e9402ef22070660db9a0deb",
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-test-harrier.jsonl": "6e53f28a23b1fc70e52f399fa2f999f82e61e1aa2602c5c917ca922372345114"
+  },
+  "output_sha256": {
+    "predictions.jsonl": "fde98df7fd8a16eb76eea08d6d2ef59904fedf721c4e909fca837e6ea9f76353",
+    "metrics.json": "6360d071d3d719d8e890352d7932a2a28034c91fcbeb2a6ec66eb32f1817cf1e",
+    "models.json": "b60dcc6a63b8fdfe81aa02631e80bcb2e443cd84c328ffb0d1fb97b2c569694d"
+  },
+  "embedding_manifests": {
+    "train": {
+      "path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300-harrier.jsonl.manifest.json",
+      "sha256": "060160804ce227333d852026bb1ab747c1a3baa0f3d8acf38cfc24ef271937d5",
+      "contents": {
+        "backend": "MLX/Metal",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+            "size": 1355
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+            "size": 1192133232
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+            "size": 5404
+          }
+        ],
+        "embedding_dimensions": 1024,
+        "feature_transfer": "host vectors for offline training; not Metal-resident classifier",
+        "input_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+        "max_token_length": 32768,
+        "model": "microsoft/harrier-oss-v1-0.6b",
+        "normalization": "L2",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "profile_version": "2",
+        "record_count": 300,
+        "schema_version": 1,
+        "serialization": "UTF-8 JSON; state canonicalized with serde_json compact sorted-key map order; query=profile.query_template(instruction=profile.query_instruction_template(prompt, kind_instruction), text='Decision: {prompt}\\nState: {canonical_state}'); candidate=profile.candidate_template(profile-specific candidate template). Choice/score preserve candidate order as serialized by JSON object/array; binary candidates contain the complete prompt proposition. Reference, target, rationale, and domain are never read into feature text.",
+        "text_lengths": "Exact tokenizer.json token counts and UTF-8 byte lengths are recorded for each query and candidate; each is checked nonempty and <= frozen profile max_length.",
+        "text_version": "decengine-varied-pair-text-v1",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "derived_filter": {
+          "source_embeddings_path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-train-harrier.jsonl",
+          "source_embeddings_sha256": "86a615efb853d75acbd1a5e1b528df063cab8af52dfa3382353e04e425b7579a",
+          "retained_ids_sha256": "59c15b34f988696ffa144ae43bc56d812d6d5f1d9994bb7432a532f935a3cc3e",
+          "excluded_families": [
+            "qf-00000001",
+            "qf-00000002",
+            "qf-00000003",
+            "qf-00000004",
+            "qf-00000005"
+          ],
+          "method": "retain only records whose id is present in filtered train-clean-300 fixture; no embeddings recomputed"
+        }
+      }
+    },
+    "test": {
+      "path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-test-harrier.jsonl.manifest.json",
+      "sha256": "2ab5a5483e017e32677dfc36fb4189e465f43261ceea9a8d39e604e94f1b70fc",
+      "contents": {
+        "backend": "MLX/Metal",
+        "checkpoint_files": [
+          {
+            "path": "config.json",
+            "sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+            "size": 1355
+          },
+          {
+            "path": "model.safetensors",
+            "sha256": "6bb124227f33c3dbf7fbbd38119b2afa8be959e93666d3c9be7142b66708b66c",
+            "size": 1192133232
+          },
+          {
+            "path": "tokenizer.json",
+            "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+            "size": 11423705
+          },
+          {
+            "path": "tokenizer_config.json",
+            "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+            "size": 5404
+          }
+        ],
+        "embedding_dimensions": 1024,
+        "feature_transfer": "host vectors for offline training; not Metal-resident classifier",
+        "input_sha256": "7e4076ef9d1e7188c618b2393a70703f74554161505c15b9917b15b0e1195a85",
+        "max_token_length": 32768,
+        "model": "microsoft/harrier-oss-v1-0.6b",
+        "normalization": "L2",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "profile_version": "2",
+        "record_count": 200,
+        "schema_version": 1,
+        "serialization": "UTF-8 JSON; state canonicalized with serde_json compact sorted-key map order; query=profile.query_template(instruction=profile.query_instruction_template(prompt, kind_instruction), text='Decision: {prompt}\\nState: {canonical_state}'); candidate=profile.candidate_template(profile-specific candidate template). Choice/score preserve candidate order as serialized by JSON object/array; binary candidates contain the complete prompt proposition. Reference, target, rationale, and domain are never read into feature text.",
+        "text_lengths": "Exact tokenizer.json token counts and UTF-8 byte lengths are recorded for each query and candidate; each is checked nonempty and <= frozen profile max_length.",
+        "text_version": "decengine-varied-pair-text-v1",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a"
+      }
+    }
+  },
+  "trainer_sha256": "e39ba21a977d5497edabeb6e9da03e67fcf26ddefc1e133c07abc86a561b1a71",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "numpy": "2.0.2",
+  "selected_C": 0.01,
+  "cv": [
+    {
+      "C": 0.01,
+      "held_out_family_accuracy": [
+        0.5833333333333334,
+        0.7666666666666667,
+        0.5333333333333333,
+        0.45,
+        0.3
+      ],
+      "mean_family_accuracy": 0.5266666666666666
+    },
+    {
+      "C": 0.1,
+      "held_out_family_accuracy": [
+        0.6,
+        0.75,
+        0.5,
+        0.36666666666666664,
+        0.31666666666666665
+      ],
+      "mean_family_accuracy": 0.5066666666666666
+    },
+    {
+      "C": 1.0,
+      "held_out_family_accuracy": [
+        0.65,
+        0.65,
+        0.5,
+        0.31666666666666665,
+        0.2833333333333333
+      ],
+      "mean_family_accuracy": 0.48
+    },
+    {
+      "C": 10.0,
+      "held_out_family_accuracy": [
+        0.6333333333333333,
+        0.65,
+        0.5,
+        0.31666666666666665,
+        0.26666666666666666
+      ],
+      "mean_family_accuracy": 0.4733333333333333
+    }
+  ],
+  "cv_protocol": "deterministic shuffled 5-fold grouped CV; family groups connected by exact/near-duplicate state+prompt context are kept intact; C selected by mean held-out-fold exact-match accuracy",
+  "expected_count_enforced": true,
+  "complete_case": {
+    "one_question_per_case": true,
+    "test_question_count": 200,
+    "test_case_count": 200,
+    "all_test_cases_scored": true
+  },
+  "uncertainty": "reported metrics are point estimates; no interval with reliable family/domain inference is claimed at this sample size",
+  "limitations": "test family slices are held out; domains are intentionally shared under LOQFO and not a LODO estimate; one question per case; no claim fixed heads generalize; test labels used only for post-prediction metrics"
+}

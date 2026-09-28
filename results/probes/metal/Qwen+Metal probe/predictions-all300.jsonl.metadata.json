@@ -1,0 +1,37 @@
+{
+  "case_count": 300,
+  "checkpoint_files": [
+    {
+      "path": "config.json",
+      "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+      "size": 727
+    },
+    {
+      "path": "model.safetensors",
+      "sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+      "size": 1191586416
+    },
+    {
+      "path": "tokenizer.json",
+      "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+      "size": 11423705
+    },
+    {
+      "path": "tokenizer_config.json",
+      "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+      "size": 9706
+    }
+  ],
+  "execution": "Device(gpu, 0); tokenization CPU; normalized embedding, scaler, linear logits, and softmax are MLX arrays on GPU; only class probability vectors are read back",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "numeric_drift": "MLX f32 arithmetic versus sklearn CPU f64; compare probabilities at 1e-4 tolerance; labels must match exactly",
+  "probe_dir": "results/probes/runs/20260923T094618Z/qwen/task-specific",
+  "probe_models_sha256": "83c48674f747dbc4376a2cec10211485fec568ec7a56d47f883888349a25fcf4",
+  "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+  "text_version": "decengine-probe-text-v1",
+  "timings_path": "results/probes/metal/Qwen+Metal probe/predictions-all300.jsonl.timings.jsonl",
+  "warmup": "one first-case execution per owner/urgent/impact classifier after model load; all 300 per-case timings exclude model load and warmup",
+  "input_path": "benchmarks/cases/probe-test-300.jsonl",
+  "input_sha256": "04d3eeb4b45709ac28c177961763a03cf036296466faf779a062e1303c30ff30",
+  "prediction_sha256": "361a487ab4243613c9a78b363079f856ef38b92d4f4b69628faa754ec09e17df"
+}

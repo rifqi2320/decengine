@@ -1,0 +1,38 @@
+{
+  "best_weights_sha256": {
+    "harrier": "d6c240bc4860cd73b9d74b0e25a6bd9643936e74bd24271746ccbdf5bcd2ab1e",
+    "qwen": "092f809f33c18921daa8460b68a6eb93174586c1ba8ebe742a1aaa528d11d9ca"
+  },
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "inference_policy": {
+    "authorize_unseen_length_extrapolation": true,
+    "max_profile_length": 32768,
+    "max_tokens_per_text": 512,
+    "reason": "Explicit user instruction: preserve complete fresh60 inputs; permit inference-only limit 512, with separate hash-bound policy; do not alter training guard, profile, or weights.",
+    "reject_above_limit": true,
+    "truncate": false
+  },
+  "policy_id": "lora-fresh60-inference-extrapolation-512-v1",
+  "profile_identities": {
+    "harrier": {
+      "model": "microsoft/harrier-oss-v1-0.6b",
+      "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+      "profile_version": "2",
+      "text_version": "decengine-varied-pair-text-v2-generic-types"
+    },
+    "qwen": {
+      "model": "Qwen/Qwen3-Embedding-0.6B",
+      "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+      "profile_version": "1",
+      "text_version": "decengine-varied-pair-text-v2-generic-types"
+    }
+  },
+  "schema_version": 1,
+  "source_freeze_manifest_sha256": "5f7dd19638df1f7bdcb56ecd44a9371ae5a0ac32a6314538146e324ac8a2e48f",
+  "training_policy": {
+    "max_tokens_per_text": 288,
+    "selected_weights_unchanged": true,
+    "trainer_config_unchanged": true,
+    "unchanged": true
+  }
+}

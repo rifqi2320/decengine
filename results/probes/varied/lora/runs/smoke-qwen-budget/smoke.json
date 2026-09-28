@@ -1,0 +1,39 @@
+{
+  "case": "vq-102",
+  "gradient_norm": 0.2077946737638258,
+  "lora_gradient_norm": 0.006789750735733878,
+  "loss_after": 1.3557987213134766,
+  "loss_before": 1.383585810661316,
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "parity": {
+    "case_id": "vq-101",
+    "checks": [
+      {
+        "cosine": 0.9998220372630119,
+        "max_abs_diff": 0.003088739700615406,
+        "mlx_norm": 1.0000000138460532,
+        "role": "query",
+        "rust_norm": 0.9999999863551176
+      },
+      {
+        "cosine": 0.9998937646336327,
+        "max_abs_diff": 0.001961721107363701,
+        "mlx_norm": 1.000000011461115,
+        "role": "candidate",
+        "rust_norm": 1.0000000130325857
+      }
+    ],
+    "kind": "compiled profile text vs Rust MLX train export",
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "passed": true,
+    "profile_version": "1",
+    "question_key": "decision",
+    "thresholds": {
+      "max_abs_diff": 0.01,
+      "min_cosine": 0.9995
+    }
+  },
+  "question": "decision",
+  "status": "real_minibatch_gradient_and_decrease_passed",
+  "type": "choice"
+}

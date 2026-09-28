@@ -1,0 +1,36 @@
+{
+  "system": "Harrier+Metal probe",
+  "case_count": 300,
+  "scope": "300 unique cases after model load and one warmup per task; synchronized GPU stages",
+  "units": "milliseconds",
+  "stages": {
+    "end_to_end": {
+      "mean": 79.97347873999998,
+      "p50": 79.204666,
+      "p95": 88.972916
+    },
+    "tokenization": {
+      "mean": 0.4024193366666665,
+      "p50": 0.391666,
+      "p95": 0.470957
+    },
+    "embedding": {
+      "mean": 78.81108773333328,
+      "p50": 78.083293,
+      "p95": 87.601459
+    },
+    "classifier": {
+      "mean": 0.6781534833333331,
+      "p50": 0.673375,
+      "p95": 0.770209
+    }
+  },
+  "process_resources": {
+    "measurement": "whole CLI invocation including model load and warmup; process memory on macOS unified memory; not a GPU-only allocation counter",
+    "elapsed_seconds_including_load_warmup": 26.73,
+    "user_seconds": 4.53,
+    "system_seconds": 1.11,
+    "maximum_resident_set_bytes": 1358118912,
+    "peak_memory_footprint_bytes": 3858810560
+  }
+}

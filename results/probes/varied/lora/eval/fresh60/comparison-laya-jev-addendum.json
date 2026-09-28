@@ -1,0 +1,82 @@
+{
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "case_count": 60,
+  "case_ids": {
+    "first": "mq-lora-fresh-001",
+    "last": "mq-lora-fresh-060",
+    "exact_ordered_alignment_verified": true
+  },
+  "laya_root_mlx_float32": {
+    "per_question_type": {
+      "choice": {"correct": 18, "total": 60, "accuracy": 0.3},
+      "noul": {"correct": 33, "total": 60, "accuracy": 0.55},
+      "score": {"correct": 19, "total": 60, "accuracy": 0.31666666666666665}
+    },
+    "all_three_correct": {"correct": 1, "total": 60, "accuracy": 0.016666666666666666},
+    "score_expected_value_mae": null,
+    "score_ordinal_mae": null,
+    "latency_case_ms": {
+      "scope": "runner wall time from before the first question through case completion; includes forwards/evaluation, per-call footprint+swap sampling, cache cleanup/GC, and incremental artifact writes; excludes model load",
+      "n": 60,
+      "p50": 494.821063,
+      "p95": 520.72801875,
+      "mean": 494.0003382
+    },
+    "guard": {
+      "early_stop_bytes": 6442450944,
+      "absolute_stop_bytes": 8589934592,
+      "max_swap_growth_bytes_exclusive": 268435456,
+      "swap_baseline_bytes": 1517289472,
+      "max_swap_growth_observed_bytes": 0,
+      "max_process_peak_footprint_bytes": 4298246880
+    },
+    "smoke_parity": {
+      "smoke_cases": 4,
+      "compared_preserved_decisions": 11,
+      "exact_labels_and_probabilities": true,
+      "max_probability_absolute_difference": 0.0
+    },
+    "completed_cases": 60,
+    "completed_decisions": 180,
+    "error_count": 0,
+    "scored_after_freeze": true,
+    "run_dir": "results/laya/varied/runs/20260924T054309737898Z-cacheguard",
+    "raw_results_sha256": "680e085f6968216fe87c141c0f5ef286277b9db3cd9836aced260385ee231816",
+    "predictions_sha256": "0273e0c8b9a453de8688f0542f1382820e984613dcaafe09aa1b8c348bd78181",
+    "model_revision": "5e7b2b1b8ca2ecdd3f2322d94069c9b6ce7e844b",
+    "checkpoint_weights_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+    "runtime": "MLX 0.32.2 / Metal",
+    "dtype": "float32"
+  },
+  "jev_latest_separate_remote_system": {
+    "per_question_type": {
+      "choice": {"correct": 26, "total": 60, "accuracy": 0.43333333333333335},
+      "noul": {"correct": 56, "total": 60, "accuracy": 0.9333333333333333},
+      "score": {"correct": 14, "total": 60, "accuracy": 0.23333333333333334}
+    },
+    "all_three_correct": {"correct": 6, "total": 60, "accuracy": 0.1},
+    "score_expected_value_mae": null,
+    "score_ordinal_mae": null,
+    "latency_per_case_ms": {
+      "scope": "one remote API request containing all three questions; includes remote service and network effects",
+      "n": 60,
+      "p50": 1064.3935,
+      "p95": 2259.03654405,
+      "mean": 1276.7213604833332
+    },
+    "completed_cases": 60,
+    "completed_decisions": 180,
+    "error_count": 0,
+    "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+    "run_dir": "results/jev/varied/runs/20260924T042126036050Z",
+    "predictions_sha256": "b0f8e192e1b0effa0f9c7e5c665ccdd09a719dc6f1abe7188cf353e1693fa86f",
+    "freeze_note": "Reported metrics were regenerated after raw outputs were frozen, following an initial premature scoring pass; no inference was repeated and no tuning was performed."
+  },
+  "comparison_caveats": [
+    "The six local frozen-system results are preserved unchanged in comparison-core-six.json.",
+    "Laya and JEV score-label accuracies are comparable on the exact same case IDs and fixture hash; their expected-value and ordinal score MAEs are not supplied because the systems do not expose a comparable common quantity.",
+    "Laya case latency is guarded-runner wall time including guard subprocesses, cleanup, and persistence, while other scopes differ; timings are not normalized or used to claim a speed ranking.",
+    "LoRA inputs reached 375 tokens versus an observed training maximum of 266; configured training guard was 288 and inference cap was 512, with no truncation recorded.",
+    "Results do not support claiming LoRA improvement: the two LoRA systems scored 0/60 all-three correct; Laya scored 1/60."
+  ]
+}

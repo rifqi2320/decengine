@@ -1,0 +1,990 @@
+{
+  "case_count": 60,
+  "fixture_sha256": "316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f",
+  "models": {
+    "harrier": {
+      "joint-context-candidate": {
+        "C": 0.1,
+        "all_three_cases_exact": 60,
+        "conditions": "utc=2026-09-23T17:28:08Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t80%; AC attached; not charging present: true\n 1:28  up 10:54, 3 users, load averages: 2.86 3.62 3.73\n39045  11.6 /Users/IDSP35241/.opencode/bin/opencode\n 9237  10.3 /Users/IDSP35241/.opencode/bin/opencode\n 1654   9.3 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n  788   7.8 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n 2542   6.7 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n 2719   4.3 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n 2563   1.9 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (GPU).app/Contents/MacOS/Beekeeper Studio Helper (GPU)\n 2491   1.8 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper.app/Contents/MacOS/SeaTalk Helper\n",
+        "hashes": {
+          "conditions": "7b554c8813254fe18a9ed2c56548150f7bca12b0926448fad022cdc9df274333",
+          "cpu_predictions": "6b6de98b596aed8f0a8f9e32b3c8effd9ec251035442a380b01ca26a5adfabe8",
+          "gpu_case_timings": "fb862cfac2f0e07868756d8554065f3903ecbf892d42fa42432c5a551f9cb368",
+          "gpu_predictions": "d16df22c7776eb770eff48ebada3878883fef06d04a780d4324ca33ff579548a",
+          "gpu_question_timings": "9ff276f61ba64fb72d22c9fcea4cc09a9ecaff5c9800ad733cff0d1d959686e2",
+          "resource_log": "9d47d6dbd8003fb49bf2dfeaadb586957ad624b71e7a22c4b8b219a359e8735e",
+          "source_frozen_head": "9673793192b590b964e1384ea29a45a554625f68cb4868b00210991c7981c8f5",
+          "wrapper_bundle": "434e8d3122563d3c9d9716a9ce9d980a15060e356f791ea13f01fd584e3f5309"
+        },
+        "head_mode": "per-variant",
+        "max_probability_abs_diff": 5.944190743512046e-07,
+        "max_score_expected_value_abs_diff": 7.68074663604068e-06,
+        "per_type": {
+          "choice": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 5.944190743512046e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "noul": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 2.2726554749219474e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "score": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 4.936004451838727e-07,
+            "n": 60,
+            "score_argmax_exact": true,
+            "selected_exact": true
+          }
+        },
+        "process_including_load_warmup": {
+          "maximum_resident_set_bytes": 1418313728,
+          "peak_memory_footprint_bytes": 9796257760,
+          "real_seconds": 54.43,
+          "system_seconds": 2.34,
+          "user_seconds": 4.8
+        },
+        "scorer_array_sha256": {
+          "choice": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.1,
+              "expanded_case_count": 240,
+              "iterations": 88,
+              "relative_gradient_norm": 0.000889644368178036
+            },
+            "mean_sha256": "569ecc668df6f382c0cd18488591e683bc751ae34b047d6fb70ca4bbea2cd496",
+            "scale_sha256": "d1e0857af0257a001e4409fe4c4f2dfe5ebec31b17834f799ad154ee78d73ef4",
+            "weights_sha256": "1168a962c7d4ad6b0394277042b2a33a756b09d42756780048ce1b1e208cdb2a"
+          },
+          "noul": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.1,
+              "expanded_case_count": 220,
+              "iterations": 71,
+              "relative_gradient_norm": 0.0007462138641965052
+            },
+            "mean_sha256": "2d6a2b0748f1f52e8a1cc1159f5b03e7a2e48e0bda5f2adf079690053d15c769",
+            "scale_sha256": "2d798d46ee436d274de7b280a8457985ed61579f8a6f03895a2accdc27d94e79",
+            "weights_sha256": "b8e04732fd5a1a1f18f4ff80150c96304a668290f0058d4ebcc7812a5cd1cde2"
+          },
+          "score": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.1,
+              "expanded_case_count": 200,
+              "iterations": 96,
+              "relative_gradient_norm": 0.0009926958009342745
+            },
+            "mean_sha256": "7ec575bc0b9c2bcb42f6b856fa46c7c33f84f4c3dd545aea5f71ba6bbd85acc5",
+            "scale_sha256": "ce195798da41810e1f7fbf0c0d6cc2e6d560f536107308765eee091b780f0402",
+            "weights_sha256": "fa72076f99fbaa2cd6d0b0d696124312cb6afdcdd8c653a37635f99b75e0b07c"
+          }
+        },
+        "source_head_sha256": "9673793192b590b964e1384ea29a45a554625f68cb4868b00210991c7981c8f5",
+        "timing_ms": {
+          "case_total": {
+            "mean": 845.0637165666667,
+            "p50": 854.6412915000001,
+            "p95": 1014.1467246499999
+          },
+          "embedding_per_question": {
+            "mean": 280.36924818333335,
+            "p50": 260.455146,
+            "p95": 410.3207708499999
+          },
+          "gpu_scorer_per_question": {
+            "mean": 0.21941921666666667,
+            "p50": 0.216271,
+            "p95": 0.2586374999999999
+          }
+        },
+        "tokens": {
+          "estimated_dense_embedding_flops_2pt": 302175600000000,
+          "query_plus_candidate_per_case": {
+            "mean": 4196.883333333333,
+            "p50": 4233.5,
+            "p95": 5151.75
+          },
+          "query_plus_candidate_per_question": {
+            "mean": 1398.9611111111112,
+            "p50": 1325.0,
+            "p95": 2060.15
+          },
+          "total_tokens": 251813
+        },
+        "wrapped_gpu_bundle_sha256": "434e8d3122563d3c9d9716a9ce9d980a15060e356f791ea13f01fd584e3f5309"
+      },
+      "readable-state": {
+        "C": 1.0,
+        "all_three_cases_exact": 60,
+        "conditions": "utc=2026-09-23T17:25:58Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t80%; AC attached; not charging present: true\n 1:25  up 10:52, 3 users, load averages: 2.55 4.15 3.92\n  788   8.7 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n  994   6.9 /usr/local/bin/ws1etlm\n 2542   6.5 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n 1654   5.3 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n 9237   4.9 /Users/IDSP35241/.opencode/bin/opencode\n 2719   4.1 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n  756   3.3 /usr/libexec/opendirectoryd\n 2563   1.7 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (GPU).app/Contents/MacOS/Beekeeper Studio Helper (GPU)\n",
+        "hashes": {
+          "conditions": "f221e39ca09d007e528308a9563ed2f260fe7405d36bd59c096fc99c1154a851",
+          "cpu_predictions": "fb30af991ac4aa2a52983d327b72ba3b47f1e3a55c0d776ef7ffb43adf90bd19",
+          "gpu_case_timings": "b866d2a084848453f7b9f1fa0f2f29ae24347ddeb5e6498e61ffdf1bbbcace0e",
+          "gpu_predictions": "0a942019ed759348b37213304c986f01588dbd756992bb5fc6bfbbd3067647d8",
+          "gpu_question_timings": "f179dde1638edee44d3e0396e0ff50bc6c500b48cccb9e8de56ede53d6a49bda",
+          "resource_log": "a7444737e6b10e8ac92003024fd4e28a9264fbd7d219f33c043b4b9b9981ceb3",
+          "source_frozen_head": "831a1558e197e3a949b02e667887abf8824c4196c2c31ab58ddb60ab1c83f49f",
+          "wrapper_bundle": "45575545d62a7d65969c57f8e9d6fa6cd54cf203df37a8f5b07b8148020e6725"
+        },
+        "head_mode": "per-variant",
+        "max_probability_abs_diff": 8.244260223944089e-07,
+        "max_score_expected_value_abs_diff": 6.652834272813379e-06,
+        "per_type": {
+          "choice": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 2.926293338201269e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "noul": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 8.244260223944089e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "score": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 5.369227078499961e-07,
+            "n": 60,
+            "score_argmax_exact": true,
+            "selected_exact": true
+          }
+        },
+        "process_including_load_warmup": {
+          "maximum_resident_set_bytes": 1417134080,
+          "peak_memory_footprint_bytes": 3817654072,
+          "real_seconds": 21.35,
+          "system_seconds": 0.98,
+          "user_seconds": 4.31
+        },
+        "scorer_array_sha256": {
+          "choice": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 1.0,
+              "expanded_case_count": 240,
+              "iterations": 130,
+              "relative_gradient_norm": 0.0008567401088790383
+            },
+            "mean_sha256": "d4dcb29ea328d8e9238f87f1206a94cd27965e7495aa84c4cd333dadbb5b9cf8",
+            "scale_sha256": "0209222b576d74ced914ad6e4b626be079f961aef6ddfce6863fbbeb831551a6",
+            "weights_sha256": "ff7ffe8b23315e0794e5399f562fe7faae5c247717c5d1d713aefc8996df02e6"
+          },
+          "noul": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 1.0,
+              "expanded_case_count": 220,
+              "iterations": 73,
+              "relative_gradient_norm": 0.000753687678079055
+            },
+            "mean_sha256": "7ef34484189ac105179ab4df7be7447fdd35694623f040c29a81272d833a10e8",
+            "scale_sha256": "97897828a471a6cc0d95a73c37b5265d6d3bce8eb6709cdccf8c7f875147fed9",
+            "weights_sha256": "49e68365cf09ccb4fdf256306637b0ea3899dc9be65719f6b788a6784c556ea2"
+          },
+          "score": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 1.0,
+              "expanded_case_count": 200,
+              "iterations": 227,
+              "relative_gradient_norm": 0.0006498203965339486
+            },
+            "mean_sha256": "aeaf830ccfa435cd4a44afe4858d6ea0f23b4cd696b2ef07439450e061cc604a",
+            "scale_sha256": "c474c96b2b786af1245c2e53d0e0021e2d8dc6752245efe7c79c2cfc8430f3c2",
+            "weights_sha256": "ac96c72589d7f92680de84d094d2052b3d76e44a417542570716773c4916ec7f"
+          }
+        },
+        "source_head_sha256": "831a1558e197e3a949b02e667887abf8824c4196c2c31ab58ddb60ab1c83f49f",
+        "timing_ms": {
+          "case_total": {
+            "mean": 305.79064105,
+            "p50": 305.1856045,
+            "p95": 340.9727327
+          },
+          "embedding_per_question": {
+            "mean": 101.33671981111111,
+            "p50": 97.8086665,
+            "p95": 124.12133689999997
+          },
+          "gpu_scorer_per_question": {
+            "mean": 0.20185876666666666,
+            "p50": 0.198042,
+            "p95": 0.23767529999999995
+          }
+        },
+        "tokens": {
+          "estimated_dense_embedding_flops_2pt": 85306800000000,
+          "query_plus_candidate_per_case": {
+            "mean": 1184.8166666666666,
+            "p50": 1183.5,
+            "p95": 1261.05
+          },
+          "query_plus_candidate_per_question": {
+            "mean": 394.93888888888887,
+            "p50": 400.0,
+            "p95": 430.0
+          },
+          "total_tokens": 71089
+        },
+        "wrapped_gpu_bundle_sha256": "45575545d62a7d65969c57f8e9d6fa6cd54cf203df37a8f5b07b8148020e6725"
+      },
+      "rule-in-candidate": {
+        "C": 0.1,
+        "all_three_cases_exact": 60,
+        "conditions": "utc=2026-09-23T17:26:20Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t80%; AC attached; not charging present: true\n 1:26  up 10:52, 3 users, load averages: 2.11 3.95 3.85\n  788   9.1 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n 2542   7.0 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n 1654   5.1 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n 2719   4.4 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n 9237   3.4 /Users/IDSP35241/.opencode/bin/opencode\n 1037   2.4 /Library/SystemExtensions/2C285271-9BFA-454F-8B2F-1729F77C841C/com.ws1.hub.EndpointSecurity.systemextension/Contents/MacOS/com.ws1.hub.EndpointSecurity\n 1281   2.1 /System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd\n 2563   1.9 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (GPU).app/Contents/MacOS/Beekeeper Studio Helper (GPU)\n",
+        "hashes": {
+          "conditions": "8f0e1532d27481e561477881b01afbde129fd1645aa9f43b8c95a38ff244b571",
+          "cpu_predictions": "c75ad66ad87f7a90fb38ebee9e508c380d23163ed3add15f04411a6dd5486e0f",
+          "gpu_case_timings": "1b568a15f29989da030ed021e5ed5a0273354baa752b37f17ff832ac1ca140e8",
+          "gpu_predictions": "ab81ffb7555d6ac10d6bf2acc9cc68c0af5b972b0ec24f2583828d36d4181f07",
+          "gpu_question_timings": "099a7baeae5f76f848e2bec09cd8bbecd7115ddbf52c18c2deb7eb00f245e716",
+          "resource_log": "b97450b93c23491287b699b179493f1f6b0fd61a3486c0fea02735f54eaab8e6",
+          "source_frozen_head": "c8b38381b695dc71269139171d1b4d83c6db641d8e6be4e581484b5d7b71ed4a",
+          "wrapper_bundle": "9373dc9a5fd72bb54549b18b15f34dbccc2756d1a218962e8ee3f502d44ef0fd"
+        },
+        "head_mode": "per-variant",
+        "max_probability_abs_diff": 8.90373576867276e-07,
+        "max_score_expected_value_abs_diff": 1.2846920519393734e-05,
+        "per_type": {
+          "choice": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 6.141183787056193e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "noul": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 2.479422919754448e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "score": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 8.90373576867276e-07,
+            "n": 60,
+            "score_argmax_exact": true,
+            "selected_exact": true
+          }
+        },
+        "process_including_load_warmup": {
+          "maximum_resident_set_bytes": 1426669568,
+          "peak_memory_footprint_bytes": 4201351088,
+          "real_seconds": 27.17,
+          "system_seconds": 1.03,
+          "user_seconds": 4.36
+        },
+        "scorer_array_sha256": {
+          "choice": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.1,
+              "expanded_case_count": 240,
+              "iterations": 89,
+              "relative_gradient_norm": 0.0008554665867237595
+            },
+            "mean_sha256": "52f72c05efb35a6f10902b748c6b742ffe87e4003dc2f96ff781255ba47536d1",
+            "scale_sha256": "15e9c21fd484214e25cb1de1eaa48680a16d289ce71bb5c40f16d8db5f50defb",
+            "weights_sha256": "ffa1916c83708d0d24341b4d0d1e4c74ef5970d5647029b0f57afeb1c781a442"
+          },
+          "noul": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.1,
+              "expanded_case_count": 220,
+              "iterations": 57,
+              "relative_gradient_norm": 0.0009720320197861316
+            },
+            "mean_sha256": "edeedce558c7d1e76aceeef00ba230d7d93b771cc78407ac5f902b2656e31d85",
+            "scale_sha256": "99f4aebe354c1748fcac49eb9d7985c3ef7443368fdcb40f0163503460881db0",
+            "weights_sha256": "bc297804a77865c7e05d3edb87284fd53563ba34eaa39ab9e158d9de4657b9a9"
+          },
+          "score": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.1,
+              "expanded_case_count": 200,
+              "iterations": 131,
+              "relative_gradient_norm": 0.0009382820502048071
+            },
+            "mean_sha256": "45ac2ea317bacd74235f94bd80c389ad980859c34b426bb0d7d6a07e296b2475",
+            "scale_sha256": "faae9ee78500a88b35bd67b846e4f239100c07c654ae21e1aaeca194ca1134ba",
+            "weights_sha256": "7ecac9106beb75dce9fa253d53d3d05800266a0ce2a3035db7c20c1ccaede46c"
+          }
+        },
+        "source_head_sha256": "c8b38381b695dc71269139171d1b4d83c6db641d8e6be4e581484b5d7b71ed4a",
+        "timing_ms": {
+          "case_total": {
+            "mean": 400.5888125166667,
+            "p50": 402.994292,
+            "p95": 451.61711845
+          },
+          "embedding_per_question": {
+            "mean": 132.81813053333335,
+            "p50": 127.13704200000001,
+            "p95": 172.31005155
+          },
+          "gpu_scorer_per_question": {
+            "mean": 0.20918542222222222,
+            "p50": 0.2052505,
+            "p95": 0.24566489999999988
+          }
+        },
+        "tokens": {
+          "estimated_dense_embedding_flops_2pt": 119889600000000,
+          "query_plus_candidate_per_case": {
+            "mean": 1665.1333333333334,
+            "p50": 1675.0,
+            "p95": 1852.55
+          },
+          "query_plus_candidate_per_question": {
+            "mean": 555.0444444444445,
+            "p50": 529.0,
+            "p95": 693.0
+          },
+          "total_tokens": 99908
+        },
+        "wrapped_gpu_bundle_sha256": "9373dc9a5fd72bb54549b18b15f34dbccc2756d1a218962e8ee3f502d44ef0fd"
+      },
+      "v2-baseline": {
+        "C": 0.1,
+        "all_three_cases_exact": 60,
+        "conditions": "utc=2026-09-23T17:24:54Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t80%; AC attached; not charging present: true\n 1:24  up 10:51, 3 users, load averages: 3.89 4.73 4.09\n39045  19.0 /Users/IDSP35241/.opencode/bin/opencode\n 9237  13.8 /Users/IDSP35241/.opencode/bin/opencode\n 1654  13.5 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n  788   8.5 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n 2542   7.9 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n 2719   4.4 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n 1662   3.6 /Applications/AIS Switch.app/Contents/MacOS/ais-switch\n  992   2.4 /opt/cisco/secureclient/bin/vpnagentd\n",
+        "hashes": {
+          "conditions": "4ad86af5ff985a64fb74c424a33a97f8f6022f580412510c5ae02c7847e8e6fb",
+          "cpu_predictions": "61499d71e4064e4d1cbefe8b375143b4b034b03a2a945be17ca27c6e1b6527f7",
+          "gpu_case_timings": "840456f39035d97bd33432dbd874a62964b1fe4e6a6f60ec21edac4ed3bd6a4d",
+          "gpu_predictions": "f6b83b9f957ac967b5e21892cf24634751981a7273dae9619f769d21708cc3dc",
+          "gpu_question_timings": "f90ddc33d7aa1b1d44ea4d130e301f7bd36201a6ee3ef5a0098f0aa170e3d511",
+          "resource_log": "e308ee63ae212545ee3d5377297c92e7b976d23c692d83eb9c7b3fcf6aa60e53",
+          "source_frozen_head": "5fb0727296cc89d41c9ebcec1664a7ef3a99e5c08c6da424d267f02ea6c22d30",
+          "wrapper_bundle": "0ef5a204ceba350c190aecccf1285a0b71e37316f940a45ee3fa75f0b384326f"
+        },
+        "head_mode": "per-variant",
+        "max_probability_abs_diff": 4.2795370369663743e-07,
+        "max_score_expected_value_abs_diff": 7.822691291181627e-06,
+        "per_type": {
+          "choice": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 2.845794971895188e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "noul": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 3.1104429776274145e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "score": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 4.2795370369663743e-07,
+            "n": 60,
+            "score_argmax_exact": true,
+            "selected_exact": true
+          }
+        },
+        "process_including_load_warmup": {
+          "maximum_resident_set_bytes": 1426145280,
+          "peak_memory_footprint_bytes": 3890382624,
+          "real_seconds": 21.43,
+          "system_seconds": 0.98,
+          "user_seconds": 4.07
+        },
+        "scorer_array_sha256": {
+          "choice": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.1,
+              "expanded_case_count": 240,
+              "iterations": 118,
+              "relative_gradient_norm": 0.0009686055826305572
+            },
+            "mean_sha256": "f7108f356b46afd46649b44e484c89b3e79a2cf715c7d0895980f97f21288399",
+            "scale_sha256": "4c5167b5530114b6bbf41d84d59dbd0c41a0505348a7166f1d9c50f834e7cbfe",
+            "weights_sha256": "6c5f48198078d7cca6bee62c0a454eaacc1d1824a9c4c33b70a682757c811934"
+          },
+          "noul": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.1,
+              "expanded_case_count": 220,
+              "iterations": 55,
+              "relative_gradient_norm": 0.0006503858093099753
+            },
+            "mean_sha256": "978f933d842208ea2ea9d754f3ccc4380af993ae5b7928697adb268feca7198d",
+            "scale_sha256": "03cff8c2069f4707a9af53edb589577657da43a3ed8b6ef0a3743044e319a9d5",
+            "weights_sha256": "457c613b88aeda109756acd2c97d9e8086de4602290af3f0d6c1215101fefd5c"
+          },
+          "score": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.1,
+              "expanded_case_count": 200,
+              "iterations": 214,
+              "relative_gradient_norm": 0.0008939663748149141
+            },
+            "mean_sha256": "1e274727ca4c6a898892f1a340aa0c5c946a876d872c3b52abe971607f07447b",
+            "scale_sha256": "25d2f45dde826f5e5eb269ae07d5b2674d6d93bad92e8db2dd1991e899ba0397",
+            "weights_sha256": "a540b19a17dae00495702275a9525489ee8bf8e9e922ae6de60479ac8d37c819"
+          }
+        },
+        "source_head_sha256": "5fb0727296cc89d41c9ebcec1664a7ef3a99e5c08c6da424d267f02ea6c22d30",
+        "timing_ms": {
+          "case_total": {
+            "mean": 299.86884031666665,
+            "p50": 301.400646,
+            "p95": 332.3236806
+          },
+          "embedding_per_question": {
+            "mean": 99.40212731111112,
+            "p50": 96.3447295,
+            "p95": 118.9341344
+          },
+          "gpu_scorer_per_question": {
+            "mean": 0.19664880555555556,
+            "p50": 0.19433299999999998,
+            "p95": 0.23181524999999997
+          }
+        },
+        "tokens": {
+          "estimated_dense_embedding_flops_2pt": 83794800000000,
+          "query_plus_candidate_per_case": {
+            "mean": 1163.8166666666666,
+            "p50": 1162.5,
+            "p95": 1240.05
+          },
+          "query_plus_candidate_per_question": {
+            "mean": 387.93888888888887,
+            "p50": 393.0,
+            "p95": 423.0
+          },
+          "total_tokens": 69829
+        },
+        "wrapped_gpu_bundle_sha256": "0ef5a204ceba350c190aecccf1285a0b71e37316f940a45ee3fa75f0b384326f"
+      }
+    },
+    "qwen": {
+      "joint-context-candidate": {
+        "C": 0.01,
+        "all_three_cases_exact": 60,
+        "conditions": "utc=2026-09-23T17:27:14Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t80%; AC attached; not charging present: true\n 1:27  up 10:53, 3 users, load averages: 2.49 3.79 3.80\n  788   8.4 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n 2542   5.6 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n 1654   4.7 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n 2719   4.0 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n 9237   3.3 /Users/IDSP35241/.opencode/bin/opencode\n 2563   1.7 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (GPU).app/Contents/MacOS/Beekeeper Studio Helper (GPU)\n 2491   1.5 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper.app/Contents/MacOS/SeaTalk Helper\n 2854   1.5 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/153.0.8010.49/Helpers/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper\n",
+        "hashes": {
+          "conditions": "ce944720fda0df8b18793cb6f7695bd44bede0d5e6ffbf020b140848c10d315c",
+          "cpu_predictions": "62001dc59dcf5623db6205f69e9ed1bfe414d62f619668f13c26635d2208b58a",
+          "gpu_case_timings": "92e16e0fe3fd57f95cea8ab78e9ad266154570406b8909142e11b67ad73a7e0d",
+          "gpu_predictions": "778826c511d1a08ec4011b9432406839f8d51e62e6267fe5972f880b1ed86c2a",
+          "gpu_question_timings": "68f9f00193704d97aaa89443c093af1ef190d2b06855062f3b2a2aa1c2894065",
+          "resource_log": "43ffd90ae0dee3c2c44d42c789f2890c4c6d6dee709f585c5795ae039de8858b",
+          "source_frozen_head": "35fa698c58583def77da4db762a9b2504ebb0adacd8bfa63471128eed23daa54",
+          "wrapper_bundle": "9379b71f9cc36fe1d6ec55d8d2e89fd5544aceebd4157d2504a190428eb07490"
+        },
+        "head_mode": "per-variant",
+        "max_probability_abs_diff": 1.859036099505218e-07,
+        "max_score_expected_value_abs_diff": 2.486655990452391e-06,
+        "per_type": {
+          "choice": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 1.859036099505218e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "noul": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 1.2195924381508405e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "score": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 1.5670424108327197e-07,
+            "n": 60,
+            "score_argmax_exact": true,
+            "selected_exact": true
+          }
+        },
+        "process_including_load_warmup": {
+          "maximum_resident_set_bytes": 1418510336,
+          "peak_memory_footprint_bytes": 9801467872,
+          "real_seconds": 53.49,
+          "system_seconds": 2.68,
+          "user_seconds": 4.82
+        },
+        "scorer_array_sha256": {
+          "choice": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.01,
+              "expanded_case_count": 240,
+              "iterations": 54,
+              "relative_gradient_norm": 0.0008346930510396899
+            },
+            "mean_sha256": "694152791ccfacd14dfdffebdb9c3374e393ebe086199220fe08538be6710f63",
+            "scale_sha256": "f5f898f1b4f35965c01370e2fce80dba5677b52c731e690b164b4d50ffe02970",
+            "weights_sha256": "04e0930a4b00ab3c40fbb221a7a7d4b6976b878409725f66c64142278861e3a7"
+          },
+          "noul": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.01,
+              "expanded_case_count": 220,
+              "iterations": 27,
+              "relative_gradient_norm": 0.0007297531234855539
+            },
+            "mean_sha256": "65a5e73836f3fb413a8fe716b4e5c668bc23d75bb4a4acf015f2fda447d92a3e",
+            "scale_sha256": "f819d47214b7b5c7792c829ec6703139df9aea31b9b1e366b429bd377d8c5283",
+            "weights_sha256": "32219a83ce7e335bc689159a8fd38542e3d7db8a7b360c0da779c3c085bfa74e"
+          },
+          "score": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.01,
+              "expanded_case_count": 200,
+              "iterations": 72,
+              "relative_gradient_norm": 0.0008480229875174331
+            },
+            "mean_sha256": "00e9cf92bef8d7e9f198da713dff0a0754127c14a9dddbc7abe9f3e8d4179206",
+            "scale_sha256": "53c7fa476ec1e83ddbfd2aa7f7a81880020317805e5b22bb00f8c179e446d72d",
+            "weights_sha256": "a3696bb3e6472c71db8e06716e9113e0f25ddde2b34f245c0afd4db12e855de5"
+          }
+        },
+        "source_head_sha256": "35fa698c58583def77da4db762a9b2504ebb0adacd8bfa63471128eed23daa54",
+        "timing_ms": {
+          "case_total": {
+            "mean": 831.5382138833334,
+            "p50": 838.9112715,
+            "p95": 1008.5885303
+          },
+          "embedding_per_question": {
+            "mean": 275.8674120111111,
+            "p50": 260.384,
+            "p95": 399.37008844999997
+          },
+          "gpu_scorer_per_question": {
+            "mean": 0.21850836666666668,
+            "p50": 0.216583,
+            "p95": 0.27632324999999996
+          }
+        },
+        "tokens": {
+          "estimated_dense_embedding_flops_2pt": 302175600000000,
+          "query_plus_candidate_per_case": {
+            "mean": 4196.883333333333,
+            "p50": 4233.5,
+            "p95": 5151.75
+          },
+          "query_plus_candidate_per_question": {
+            "mean": 1398.9611111111112,
+            "p50": 1325.0,
+            "p95": 2060.15
+          },
+          "total_tokens": 251813
+        },
+        "wrapped_gpu_bundle_sha256": "9379b71f9cc36fe1d6ec55d8d2e89fd5544aceebd4157d2504a190428eb07490"
+      },
+      "readable-state": {
+        "C": 1.0,
+        "all_three_cases_exact": 60,
+        "conditions": "utc=2026-09-23T17:25:37Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t80%; AC attached; not charging present: true\n 1:25  up 10:51, 3 users, load averages: 2.58 4.29 3.96\n  788   8.2 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n 2542   6.4 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n 1654   4.9 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n 2719   3.9 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n 9237   3.9 /Users/IDSP35241/.opencode/bin/opencode\n 1037   2.5 /Library/SystemExtensions/2C285271-9BFA-454F-8B2F-1729F77C841C/com.ws1.hub.EndpointSecurity.systemextension/Contents/MacOS/com.ws1.hub.EndpointSecurity\n 1032   1.9 /Library/Application Support/Xsentinel/bin/xsentineld\n 2491   1.7 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper.app/Contents/MacOS/SeaTalk Helper\n",
+        "hashes": {
+          "conditions": "53eadf4ce97415dead3ecaff08e0b06dda88cc3b2b94bbe10dc9ce05c4fc3e4a",
+          "cpu_predictions": "7557d2dcf7a8b98513c17911d6166036636814dae223715337c9173a61d1814c",
+          "gpu_case_timings": "967c96f86359e77b162d74607444be43943e12671b20596bdc4f470442d4c6f4",
+          "gpu_predictions": "f228a7371d81fbf7a7ef5996ccb64dc10db3cf09e2d9190e2031589f60b6eecb",
+          "gpu_question_timings": "6d18fb37b26dd72b43a8658db98a7e31a4490dd307a6368c8f048ee8c9a27b5f",
+          "resource_log": "0ff6bfd83d5be69e866f2f090b08052c1041a021514d85b800dff7bcf8c33b3a",
+          "source_frozen_head": "b3d19ab873b2ffa90a4f8af63833a3b3195e1d17a8976a107021aafa259e8436",
+          "wrapper_bundle": "97ef42c83f2188f0f61f376fb85b7dc774fc8545d33920f770e5dd095af3b281"
+        },
+        "head_mode": "per-variant",
+        "max_probability_abs_diff": 7.643397404999419e-07,
+        "max_score_expected_value_abs_diff": 3.6755224073203863e-06,
+        "per_type": {
+          "choice": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 7.643397404999419e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "noul": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 5.653862291676859e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "score": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 5.197014768532071e-07,
+            "n": 60,
+            "score_argmax_exact": true,
+            "selected_exact": true
+          }
+        },
+        "process_including_load_warmup": {
+          "maximum_resident_set_bytes": 1430339584,
+          "peak_memory_footprint_bytes": 3823585080,
+          "real_seconds": 21.36,
+          "system_seconds": 0.97,
+          "user_seconds": 4.31
+        },
+        "scorer_array_sha256": {
+          "choice": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 1.0,
+              "expanded_case_count": 240,
+              "iterations": 121,
+              "relative_gradient_norm": 0.0009399594035790986
+            },
+            "mean_sha256": "f9a4aa72d7e820f952b3f8c8405b7618c6798915b15c956fc9ad8f0bf98e8a77",
+            "scale_sha256": "bb39f35f825fb4f59a7ccdba373284ce61608b2038de309d129b0e9f2c655967",
+            "weights_sha256": "720fa1267d610be3a2b7d88c086bf527c06c49dce849a5fb456f66aeabe181a5"
+          },
+          "noul": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 1.0,
+              "expanded_case_count": 220,
+              "iterations": 64,
+              "relative_gradient_norm": 0.0009644131430552055
+            },
+            "mean_sha256": "a030ae92a56f2513cd6199cbf6ee9335dd1198cc157db8679dbcc2e1d6e3ead2",
+            "scale_sha256": "2866415fe628b0f31fdf7c38484c05a3a154b8880c516e9b820b52921294e39f",
+            "weights_sha256": "ec8d808df8e9584cc9f21a374dee53ee28067f865d59a6ddc61f7de5578f69c7"
+          },
+          "score": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 1.0,
+              "expanded_case_count": 200,
+              "iterations": 173,
+              "relative_gradient_norm": 0.0008544477989193279
+            },
+            "mean_sha256": "c45b3323520e50cc8ebd89e04b8bf1b9038815fd3452c8c8873aec15d0308cc5",
+            "scale_sha256": "0461405dd7d3d25f21c31af5e7469310db26c822233e50b327ddc0fbcba90dcc",
+            "weights_sha256": "150b4c1ffc19f65de24ee354c9f0e5f2bf915eeecb5d389aca7ad82e40738515"
+          }
+        },
+        "source_head_sha256": "b3d19ab873b2ffa90a4f8af63833a3b3195e1d17a8976a107021aafa259e8436",
+        "timing_ms": {
+          "case_total": {
+            "mean": 305.6566228666667,
+            "p50": 305.312855,
+            "p95": 342.44065385
+          },
+          "embedding_per_question": {
+            "mean": 101.30087813888889,
+            "p50": 97.76174950000001,
+            "p95": 124.5809732
+          },
+          "gpu_scorer_per_question": {
+            "mean": 0.19848199444444445,
+            "p50": 0.1957085,
+            "p95": 0.23479825
+          }
+        },
+        "tokens": {
+          "estimated_dense_embedding_flops_2pt": 85306800000000,
+          "query_plus_candidate_per_case": {
+            "mean": 1184.8166666666666,
+            "p50": 1183.5,
+            "p95": 1261.05
+          },
+          "query_plus_candidate_per_question": {
+            "mean": 394.93888888888887,
+            "p50": 400.0,
+            "p95": 430.0
+          },
+          "total_tokens": 71089
+        },
+        "wrapped_gpu_bundle_sha256": "97ef42c83f2188f0f61f376fb85b7dc774fc8545d33920f770e5dd095af3b281"
+      },
+      "rule-in-candidate": {
+        "C": 0.01,
+        "all_three_cases_exact": 60,
+        "conditions": "utc=2026-09-23T17:26:47Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t80%; AC attached; not charging present: true\n 1:26  up 10:53, 3 users, load averages: 2.55 3.93 3.85\n  788   8.4 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n 2542   5.8 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n 1654   4.7 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n 2719   4.3 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n 9237   3.7 /Users/IDSP35241/.opencode/bin/opencode\n 1032   3.4 /Library/Application Support/Xsentinel/bin/xsentineld\n 1670   2.3 /Applications/Cisco/Cisco Secure Client.app/Contents/MacOS/Cisco Secure Client\n 2563   1.9 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (GPU).app/Contents/MacOS/Beekeeper Studio Helper (GPU)\n",
+        "hashes": {
+          "conditions": "9bf5e6d7a1a9b3c9f8c8649a6cea66e322b45bcca3cbaa42f8d0a8a229e018ed",
+          "cpu_predictions": "b0c2e28f58de37dda7d13c27b6668dc0297b48657c11afad414f846c4d451394",
+          "gpu_case_timings": "64e80674b8d0781090c7345c2481e1543c03a19c78cb6a3c73a55a521a282ce9",
+          "gpu_predictions": "21a8746e9ddfe792d7f08a9f5cc502ecab058bfbd27718b1238c0b47cb116c69",
+          "gpu_question_timings": "a39eb012ff38549bb07def5ce593425a47bc09252d7fab5cb66303d12945c72d",
+          "resource_log": "77a207beb19bef7ad9120d2ad86a3fbc7f095133bb713eabd95063a6bff8af14",
+          "source_frozen_head": "62a8f7f663465f082231c885de0e6fc439d734901bc51e90aafe23eb4685f9ca",
+          "wrapper_bundle": "70d72f4fbb62d220f9cbb8e42cc7239967e717007c4f0ccf1c710a91c55e78c2"
+        },
+        "head_mode": "per-variant",
+        "max_probability_abs_diff": 2.6423181676005214e-07,
+        "max_score_expected_value_abs_diff": 4.026006436674834e-06,
+        "per_type": {
+          "choice": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 1.8935343942816374e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "noul": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 2.6423181676005214e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "score": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 1.5666284652882112e-07,
+            "n": 60,
+            "score_argmax_exact": true,
+            "selected_exact": true
+          }
+        },
+        "process_including_load_warmup": {
+          "maximum_resident_set_bytes": 1432731648,
+          "peak_memory_footprint_bytes": 4203480960,
+          "real_seconds": 27.24,
+          "system_seconds": 1.06,
+          "user_seconds": 4.55
+        },
+        "scorer_array_sha256": {
+          "choice": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.01,
+              "expanded_case_count": 240,
+              "iterations": 66,
+              "relative_gradient_norm": 0.0007292669781958594
+            },
+            "mean_sha256": "5798e0db33a9dafe2de913875eb106616da38dab5a4a756b3cb4b26061859fa7",
+            "scale_sha256": "350360e0c34d393e03859970c3d645ac5df345e07d40c4871912788d7f9692ee",
+            "weights_sha256": "3ddb9c3c14af9d327a2675cde235a9d4c3875773509011de3afeb295529f9d92"
+          },
+          "noul": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.01,
+              "expanded_case_count": 220,
+              "iterations": 20,
+              "relative_gradient_norm": 0.0007201235284482179
+            },
+            "mean_sha256": "b8668c62840f02bbfcaef11ef72abbd7fe0885493ae5b69a8b94df274ff46320",
+            "scale_sha256": "eefa9e687db207377259fd390968932b226c85e848f61e832d93b44e6c94a244",
+            "weights_sha256": "5d4c39d172ef244dba5ef9992fb200baec6df95b6350c8345dcc24037e92c9ba"
+          },
+          "score": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 0.01,
+              "expanded_case_count": 200,
+              "iterations": 77,
+              "relative_gradient_norm": 0.0007195907481482167
+            },
+            "mean_sha256": "2a9562a7bd31e5010d5b76867c4488d1195c161a018bdba6252dd2d463ec36b0",
+            "scale_sha256": "8bf4ea79b48df22de57f0e522221e19351c35184a9dcd5bee55ca24830449f88",
+            "weights_sha256": "b6f86bb5c930e815b4f9c1cdd24080cbe2959fa1ee20a9d640c4181edb90ef4e"
+          }
+        },
+        "source_head_sha256": "62a8f7f663465f082231c885de0e6fc439d734901bc51e90aafe23eb4685f9ca",
+        "timing_ms": {
+          "case_total": {
+            "mean": 401.4547172833333,
+            "p50": 402.8275835,
+            "p95": 452.1714295
+          },
+          "embedding_per_question": {
+            "mean": 133.02740677222224,
+            "p50": 126.96481299999999,
+            "p95": 172.9203875
+          },
+          "gpu_scorer_per_question": {
+            "mean": 0.21472195555555557,
+            "p50": 0.206458,
+            "p95": 0.3059556
+          }
+        },
+        "tokens": {
+          "estimated_dense_embedding_flops_2pt": 119889600000000,
+          "query_plus_candidate_per_case": {
+            "mean": 1665.1333333333334,
+            "p50": 1675.0,
+            "p95": 1852.55
+          },
+          "query_plus_candidate_per_question": {
+            "mean": 555.0444444444445,
+            "p50": 529.0,
+            "p95": 693.0
+          },
+          "total_tokens": 99908
+        },
+        "wrapped_gpu_bundle_sha256": "70d72f4fbb62d220f9cbb8e42cc7239967e717007c4f0ccf1c710a91c55e78c2"
+      },
+      "v2-baseline": {
+        "C": 1.0,
+        "all_three_cases_exact": 60,
+        "conditions": "utc=2026-09-23T17:25:15Z\nNow drawing from 'AC Power'\n -InternalBattery-0 (id=47710307)\t80%; AC attached; not charging present: true\n 1:25  up 10:51, 3 users, load averages: 3.21 4.52 4.03\n  788   8.7 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer\n 2542   5.5 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)\n 1654   4.3 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n 2719   3.9 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)\n 9237   3.7 /Users/IDSP35241/.opencode/bin/opencode\n 2563   1.7 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (GPU).app/Contents/MacOS/Beekeeper Studio Helper (GPU)\n 2854   1.6 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/153.0.8010.49/Helpers/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper\n 2491   1.5 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper.app/Contents/MacOS/SeaTalk Helper\n",
+        "hashes": {
+          "conditions": "85908341a130f7aa6af8d1b1c0989fba74b2319930d7d7569bb7670f11e93f6d",
+          "cpu_predictions": "cf7143d61654bcee021562843498d542dd6efdfff0c7cd702f3486c4b904b200",
+          "gpu_case_timings": "748e77f23c18072ba25fd94b9f6baec6ffebd8179ae37434e4ac21d281a459dc",
+          "gpu_predictions": "122228307c099c06a4fb9c3a74cc5c871da01544a40eb2161927b32935077a53",
+          "gpu_question_timings": "99b6a946fb5b9201c8dc48d2f8447abd53ddc6b31948fd806862275f35de0100",
+          "resource_log": "13961cd7f2ffc3a4ab8002e0af239583a346e79cfedfa794c1f1b29634522e9c",
+          "source_frozen_head": "5b7260f04f0b66784504b09526447b30a9f020a554abf611c57eb971f9fabd79",
+          "wrapper_bundle": "2e3cda2ff1ef973e950dfa8984e7a11b86282b889969e27a91793f92c79539d8"
+        },
+        "head_mode": "per-variant",
+        "max_probability_abs_diff": 6.822442096821035e-07,
+        "max_score_expected_value_abs_diff": 3.5076806241818304e-06,
+        "per_type": {
+          "choice": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 3.383425533631801e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "noul": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 6.822442096821035e-07,
+            "n": 60,
+            "score_argmax_exact": null,
+            "selected_exact": true
+          },
+          "score": {
+            "label_or_boolean_exact": true,
+            "max_probability_abs_diff": 4.774960904452286e-07,
+            "n": 60,
+            "score_argmax_exact": true,
+            "selected_exact": true
+          }
+        },
+        "process_including_load_warmup": {
+          "maximum_resident_set_bytes": 1432633344,
+          "peak_memory_footprint_bytes": 3894462264,
+          "real_seconds": 21.14,
+          "system_seconds": 0.99,
+          "user_seconds": 4.23
+        },
+        "scorer_array_sha256": {
+          "choice": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 1.0,
+              "expanded_case_count": 240,
+              "iterations": 145,
+              "relative_gradient_norm": 0.0008384205138505922
+            },
+            "mean_sha256": "cb06c84c386ced730ec7c924fb07379338efb67be08687822edb4f5513387b2f",
+            "scale_sha256": "8f74543df2a3ec2f87a97b25343de3ba59fe3c56ed34ed7fa46b0e77c51b1a4c",
+            "weights_sha256": "9f0cc58d977350190da70286417a4dc5584cbfd7bc2cb8fbcfebe7e254eed6e9"
+          },
+          "noul": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 1.0,
+              "expanded_case_count": 220,
+              "iterations": 79,
+              "relative_gradient_norm": 0.0006682947091019812
+            },
+            "mean_sha256": "3a11d6e43cee1c7bbbc6fa9ca1960d1874a6c731457659bd270593a810085951",
+            "scale_sha256": "0d54e61f2509c69611cf94356becee866b7f64009eea13623faeba4656aa0727",
+            "weights_sha256": "de6ee8119b46e418e6290e6824a377f99e3faf7893b118363a7fa30120d6adbe"
+          },
+          "score": {
+            "dimension": 4096,
+            "fit_diagnostics": {
+              "converged": true,
+              "effective_C": 1.0,
+              "expanded_case_count": 200,
+              "iterations": 181,
+              "relative_gradient_norm": 0.0008881476981245575
+            },
+            "mean_sha256": "1400dadb639f9cc87eaa9e6c40d24d33438d2102d1da842ce5ca5033e15bdd83",
+            "scale_sha256": "9521450e634ce2ddbfd7dbabf2a72aff9c7dcd7a7ede4f8d4ce1370690a69997",
+            "weights_sha256": "ce70dd69e1e05a054e80e88782e3b02817812d236cc00531f447bc9618d0d8e4"
+          }
+        },
+        "source_head_sha256": "5b7260f04f0b66784504b09526447b30a9f020a554abf611c57eb971f9fabd79",
+        "timing_ms": {
+          "case_total": {
+            "mean": 299.7788229166667,
+            "p50": 301.3155415,
+            "p95": 333.87496935
+          },
+          "embedding_per_question": {
+            "mean": 99.35539639444444,
+            "p50": 96.42972950000001,
+            "p95": 118.87222645
+          },
+          "gpu_scorer_per_question": {
+            "mean": 0.20004706111111112,
+            "p50": 0.1962915,
+            "p95": 0.23584169999999996
+          }
+        },
+        "tokens": {
+          "estimated_dense_embedding_flops_2pt": 83794800000000,
+          "query_plus_candidate_per_case": {
+            "mean": 1163.8166666666666,
+            "p50": 1162.5,
+            "p95": 1240.05
+          },
+          "query_plus_candidate_per_question": {
+            "mean": 387.93888888888887,
+            "p50": 393.0,
+            "p95": 423.0
+          },
+          "total_tokens": 69829
+        },
+        "wrapped_gpu_bundle_sha256": "2e3cda2ff1ef973e950dfa8984e7a11b86282b889969e27a91793f92c79539d8"
+      }
+    }
+  },
+  "protocol": "per-variant full-train heads vs secondary pre-frozen CPU variant-head predictions",
+  "question_count": 180,
+  "run_order": "Protocol: each per-variant full-train head; original bundle SHA and all per-type weights/mean/scale fingerprints verified against GPU-VARIANT-HEAD-HANDOFF.json. Wrapper bundles add only explicit head-mode and exact fixture/checkpoint/profile provenance; scorer arrays remain byte-equivalent JSON values to original bundles.\nTwo preliminary launches were rejected by pre-inference hash/provenance guards before model load; logs are preserved under preflight-failures. Eight timed GPU executions below ran once each sequentially, no concurrent MLX loads; one warmup per typed scorer per process:\n1 harrier/v2-baseline\n2 qwen/v2-baseline\n3 qwen/readable-state\n4 harrier/readable-state\n5 harrier/rule-in-candidate\n6 qwen/rule-in-candidate\n7 qwen/joint-context-candidate\n8 harrier/joint-context-candidate\n",
+  "scope": "prediction-only parity; no fresh60 targets/labels read"
+}

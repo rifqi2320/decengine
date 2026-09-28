@@ -1,0 +1,49 @@
+{
+  "arm": "head",
+  "candidate_text_sha256": [
+    "7a748f317d7b73c8e1edd271b43af2dc8772a656be4e24b11cf180feeedccfb8",
+    "dcec48b544636f9c7921d5964ee8c4889caef4b9c10b39e9d4f58b279fb484c8",
+    "63af009616100d6e8e1b31c2fa0eaa3586d3adb570366dd4118c8cc5b7aeb3c5"
+  ],
+  "head_init_sha256": "ae37385a24d801632fc557bc2d4904ebb5b15f11794f925e43ea1409cce72f77",
+  "logits": [
+    -0.0387454591691494,
+    -0.03525938466191292,
+    -0.03230062127113342
+  ],
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "parity_report": {
+    "case_id": "vq-101",
+    "checks": [
+      {
+        "cosine": 0.9998220372630119,
+        "max_abs_diff": 0.003088739700615406,
+        "mlx_norm": 1.0000000138460532,
+        "role": "query",
+        "rust_norm": 0.9999999863551176
+      },
+      {
+        "cosine": 0.9998937646336327,
+        "max_abs_diff": 0.001961721107363701,
+        "mlx_norm": 1.000000011461115,
+        "role": "candidate",
+        "rust_norm": 1.0000000130325857
+      }
+    ],
+    "kind": "compiled profile text vs Rust MLX train export",
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "passed": true,
+    "profile_version": "1",
+    "question_key": "decision",
+    "thresholds": {
+      "max_abs_diff": 0.01,
+      "min_cosine": 0.9995
+    }
+  },
+  "profile_version": "1",
+  "query_sha256": "56540da1cb7a36e75c21fe9089dc3c7c22d9468c7e0dea684b427115d6facc57",
+  "sample_key": [
+    "vq-101",
+    "decision"
+  ]
+}

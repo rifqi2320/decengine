@@ -1,0 +1,6 @@
+{
+  "status": "invalid_aborted",
+  "reason": "The initial run accidentally exported benchmarks/cases/probe-train-300.jsonl, whose 300 records each contain three questions, instead of the clean300 single-question training fixture. The exporter completed several Qwen feature splits before this was detected. The process and orphan exporter were terminated before any CV or model selection. No heldout data was opened. Do not consume any features in this directory.",
+  "correct_train_source": "results/probes/varied/prompt-study/data/train-clean-300.jsonl",
+  "correct_train_source_sha256": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a"
+}

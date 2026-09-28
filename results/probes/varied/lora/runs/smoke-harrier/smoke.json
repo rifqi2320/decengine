@@ -1,0 +1,39 @@
+{
+  "case": "vq-102",
+  "gradient_norm": 0.18650047577684487,
+  "lora_gradient_norm": 0.0069939357710007205,
+  "loss_after": 1.3615788221359253,
+  "loss_before": 1.3861382007598877,
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "parity": {
+    "case_id": "vq-101",
+    "checks": [
+      {
+        "cosine": 0.9998967776963226,
+        "max_abs_diff": 0.0033594369888305664,
+        "mlx_norm": 0.9999999943216471,
+        "role": "query",
+        "rust_norm": 0.9999999859750787
+      },
+      {
+        "cosine": 0.9999418556643249,
+        "max_abs_diff": 0.0019637271761894226,
+        "mlx_norm": 1.000000025188739,
+        "role": "candidate",
+        "rust_norm": 1.0000000312329895
+      }
+    ],
+    "kind": "compiled profile text vs Rust MLX train export",
+    "model": "microsoft/harrier-oss-v1-0.6b",
+    "passed": true,
+    "profile_version": "2",
+    "question_key": "decision",
+    "thresholds": {
+      "max_abs_diff": 0.01,
+      "min_cosine": 0.9995
+    }
+  },
+  "question": "decision",
+  "status": "real_minibatch_gradient_and_decrease_passed",
+  "type": "choice"
+}

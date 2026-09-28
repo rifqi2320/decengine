@@ -1,0 +1,32 @@
+{
+  "per_question_type": {
+    "choice": {
+      "n": 80,
+      "accuracy": 0.5375,
+      "variable_candidate_counts": [
+        3,
+        4
+      ]
+    },
+    "noul": {
+      "n": 60,
+      "accuracy": 0.5333333333333333,
+      "variable_candidate_counts": [
+        2
+      ]
+    },
+    "score": {
+      "n": 60,
+      "accuracy": 0.38333333333333336,
+      "variable_candidate_counts": [
+        3,
+        4
+      ],
+      "expected_value_mae": 0.8723840805093336,
+      "label_argmax_accuracy": 0.38333333333333336
+    }
+  },
+  "question_count": 200,
+  "case_count": 200,
+  "evaluation": "separate single-question test200; never pooled with multi test60"
+}

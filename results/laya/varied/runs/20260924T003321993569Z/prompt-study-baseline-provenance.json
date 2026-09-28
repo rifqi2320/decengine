@@ -1,0 +1,84 @@
+{
+  "run": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z",
+  "fixture_sha256": "316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f",
+  "head_mode": "shared-v2-baseline",
+  "selected_variant": "v2-baseline",
+  "train_only_selection_retained": true,
+  "per_variant_head_results_used": false,
+  "holdout_metric_stage": "references opened after PRE_REFERENCE_FREEZE hashes verified",
+  "pre_reference_freeze_sha256": "a420edc7a85ced72c055ec59a82ab5b7658a26326757cce4132875ceb6ef32a0",
+  "parity_timing_report_sha256": "c0eae923f94cbcf80e135549b10966ec1e035455f142aa3ef1a12f4d02601fa5",
+  "models": {
+    "qwen": {
+      "model_id": "Qwen/Qwen3-Embedding-0.6B",
+      "C": 1.0,
+      "all_mlx_prediction_file": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/runs/fresh60/shared-v2-baseline/qwen/v2-baseline/predictions.jsonl",
+      "all_mlx_prediction_sha256": "f9643560798425d36ecfea6dc6d1a1bb2c9c35506c03d6b926f76627f47c5149",
+      "cpu_reference_prediction_file": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/predictions/qwen/v2-baseline.jsonl",
+      "cpu_reference_prediction_sha256": "98dd334f7ece0e052c9c6d5aa2fda2f58bb094951aeba98f125f8b11368afe27",
+      "cpu_reference_prediction_hash_matches_pre_reference_freeze": true,
+      "all_180_typed_outputs_exact_cpu_reference_parity": true,
+      "frozen_model_hash": "ce4873347a6fd0de6df98f9becc2f045d27af0308c189186a8dd73d4a89b27af",
+      "head_mode": "shared-v2-baseline",
+      "typed_parity": {
+        "choice": {
+          "label_boolean_exact": true,
+          "max_probability_abs_diff": 3.383425533631801e-07,
+          "n": 60,
+          "score_argmax_exact": null,
+          "selected_exact": true
+        },
+        "noul": {
+          "label_boolean_exact": true,
+          "max_probability_abs_diff": 6.822442096821035e-07,
+          "n": 60,
+          "score_argmax_exact": null,
+          "selected_exact": true
+        },
+        "score": {
+          "label_boolean_exact": true,
+          "max_probability_abs_diff": 4.774960904452286e-07,
+          "n": 60,
+          "score_argmax_exact": true,
+          "selected_exact": true
+        }
+      }
+    },
+    "harrier": {
+      "model_id": "microsoft/harrier-oss-v1-0.6b",
+      "C": 0.1,
+      "all_mlx_prediction_file": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/metal/runs/fresh60/shared-v2-baseline/harrier/v2-baseline/predictions.jsonl",
+      "all_mlx_prediction_sha256": "19ec345824d7c40235929ac6656f1243ebc9a00a1a5d689387b6ae3c6188f71b",
+      "cpu_reference_prediction_file": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z/predictions/harrier/v2-baseline.jsonl",
+      "cpu_reference_prediction_sha256": "c8c8ac19b3351e91577e8ab50077679b53c304e97ec756a6914a6433fe8219b6",
+      "cpu_reference_prediction_hash_matches_pre_reference_freeze": true,
+      "all_180_typed_outputs_exact_cpu_reference_parity": true,
+      "frozen_model_hash": "66fa11995f0c032d2c3169126071636bca6d2d3aca68a5df9a44ee7ef9ee1421",
+      "head_mode": "shared-v2-baseline",
+      "typed_parity": {
+        "choice": {
+          "label_boolean_exact": true,
+          "max_probability_abs_diff": 2.845794971895188e-07,
+          "n": 60,
+          "score_argmax_exact": null,
+          "selected_exact": true
+        },
+        "noul": {
+          "label_boolean_exact": true,
+          "max_probability_abs_diff": 3.1104429776274145e-07,
+          "n": 60,
+          "score_argmax_exact": null,
+          "selected_exact": true
+        },
+        "score": {
+          "label_boolean_exact": true,
+          "max_probability_abs_diff": 4.2795370369663743e-07,
+          "n": 60,
+          "score_argmax_exact": true,
+          "selected_exact": true
+        }
+      }
+    }
+  },
+  "comparison_note": "Read-only fresh60 baseline predictions; shared v2 head only. Other prompt variants/per-variant heads excluded from primary comparison."
+}

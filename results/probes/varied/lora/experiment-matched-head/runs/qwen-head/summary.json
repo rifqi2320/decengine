@@ -1,0 +1,48 @@
+{
+  "arm": "head",
+  "best_epoch": 2,
+  "best_metrics": {
+    "n": 200,
+    "per_type": {
+      "choice": {
+        "exact_accuracy": 0.35,
+        "mean_objective_loss": 1.370946227312088,
+        "mean_selected_confidence": 0.44390003114938736,
+        "n": 100,
+        "predicted_candidate_index_hist": {
+          "0": 14,
+          "1": 51,
+          "2": 22,
+          "3": 12,
+          "4": 1
+        }
+      },
+      "noul": {
+        "exact_accuracy": 0.5333333333333333,
+        "mean_objective_loss": 0.687974273165067,
+        "mean_selected_confidence": 0.5313259720802307,
+        "n": 60,
+        "predicted_candidate_index_hist": {
+          "0": 60
+        }
+      },
+      "score": {
+        "exact_accuracy": 0.325,
+        "mean_objective_loss": 0.3920443907380104,
+        "mean_selected_confidence": 0.2952183298766613,
+        "n": 40,
+        "predicted_candidate_index_hist": {
+          "2": 40
+        }
+      }
+    },
+    "primary_macro_exact_accuracy": 0.40277777777777773,
+    "score_normalized_expected_value_mae": 0.32909577852115035,
+    "secondary_mean_objective_loss": 0.9702742737531662
+  },
+  "epochs": 9,
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "scope": "same grouped train/dev only; no heldout accessed",
+  "status": "complete",
+  "steps": 4140
+}

@@ -1,0 +1,96 @@
+{
+  "protocol": "frozen train-only generic typed scorer; final per-type full-train refit",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "variant": "baseline",
+  "C": 1.0,
+  "per_type_C": {
+    "choice": 1.0,
+    "noul": 1.0,
+    "score": 1.0
+  },
+  "frozen_config_sha256": "e92149799df56666251533333aa2518ad93ec66f4397a81bc24a66b003087b54",
+  "train_case_count": 420,
+  "train_question_count": 660,
+  "clean_single_case_count": 300,
+  "multi_case_count": 120,
+  "train_family_count": 15,
+  "train_families": [
+    "qf-00000006",
+    "qf-00000007",
+    "qf-00000008",
+    "qf-00000009",
+    "qf-0000000a",
+    "qf-0000000b",
+    "qf-0000000c",
+    "qf-0000000d",
+    "qf-0000000e",
+    "qf-0000000f",
+    "qf-00000010",
+    "qf-00000011",
+    "qf-00000012",
+    "qf-00000013",
+    "qf-00000014"
+  ],
+  "cv_component_count": 9,
+  "family_overlap_count": 0,
+  "heldout_family_overlap_checked": false,
+  "heldout_evaluation_used_for_fit": false,
+  "train_inputs_sha256": {
+    "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/varied-loqfo-clean300/train-clean-300.jsonl": "fe8ec1ce7661f2ba483e79b96d6cacd97e3ad04da42d86524bc9e14b374c1e8a",
+    "benchmarks/cases/varied/multi/train-120.jsonl": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+    "results/probes/varied/runs/multi-qwen/train-clean-300.features.jsonl": "844944b2028ce1cfe434b6a523316e39562e829277bb5c511aca28178151e069",
+    "results/probes/varied/runs/multi-qwen/train-120.features.jsonl": "41af828d6b883f7d1987064ec5b8d0b52463d1de824c4be50c54f20d88b2a058"
+  },
+  "train_export_manifests_sha256": {
+    "results/probes/varied/runs/multi-qwen/train-clean-300.features.jsonl": "a7438e125ef024d3c28ae35e8b34d39974b9e827f4e224b786d7bc8fc29693fe",
+    "results/probes/varied/runs/multi-qwen/train-120.features.jsonl": "85b635315ef6896d0411727156089645f14ba02833291c306a4923060073a2c1"
+  },
+  "exporter_identity": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "profile_version": "1",
+    "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+    "text_version": "decengine-varied-pair-text-v2-generic-types",
+    "embedding_dimensions": 1024,
+    "normalization": "L2"
+  },
+  "feature_order": [
+    "query",
+    "candidate",
+    "query*candidate",
+    "abs(query-candidate)"
+  ],
+  "fit_diagnostics": {
+    "choice": {
+      "iterations": 145,
+      "converged": true,
+      "relative_gradient_norm": 0.0008384205138505922,
+      "expanded_case_count": 240,
+      "effective_C": 1.0
+    },
+    "noul": {
+      "iterations": 79,
+      "converged": true,
+      "relative_gradient_norm": 0.0006682947091019812,
+      "expanded_case_count": 220,
+      "effective_C": 1.0
+    },
+    "score": {
+      "iterations": 181,
+      "converged": true,
+      "relative_gradient_norm": 0.0008881476981245575,
+      "expanded_case_count": 200,
+      "effective_C": 1.0
+    }
+  },
+  "model_parameter_sha256": {
+    "choice": "7e54ddcf99ece71b18a586d564d1dc2b830b538f87a1dcbfce75ac0641d71539",
+    "noul": "aa6a80fd12d8cf5ebb35c502e0968a154f1b3d4a00d3033c826ffef69052643a",
+    "score": "4528d7efc2810f237dd3a6fff8b01ac39f5285cae358ddff3c1771977f779cbc"
+  },
+  "selection_record_sha256": "dc2fa28637791f4a8c7e835bd1e0771f86adecf8f8abccab0b556ed615818d73",
+  "frozen_config_file_sha256": "e92149799df56666251533333aa2518ad93ec66f4397a81bc24a66b003087b54",
+  "train_cv_script_sha256": "742fd95473f26781a50b7df972b414f8574727d310294c3d8307e848cfb11528",
+  "multi_train_scorer_sha256": "09799416fc2678be2511549637dd6176867de172e7d8433e9312baa757ee6a5d",
+  "fit_runtime_seconds": 1.127088583,
+  "prior_model_policy": "rejected old multi-qwen C=0.01 and refit at frozen C=1.0"
+}

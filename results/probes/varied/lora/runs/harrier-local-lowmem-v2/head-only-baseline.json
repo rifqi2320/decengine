@@ -1,0 +1,26 @@
+{
+  "baseline": "explicit_cached_embedding_pairwise_linear_C1",
+  "dev_n": 200,
+  "macro_accuracy_by_type": 0.6211111111111111,
+  "per_type": {
+    "choice": {
+      "accuracy": 0.38,
+      "cross_entropy": 2.205921680536738,
+      "n": 100
+    },
+    "noul": {
+      "accuracy": 0.8333333333333334,
+      "cross_entropy": 0.3167040288589845,
+      "n": 60
+    },
+    "score": {
+      "accuracy": 0.65,
+      "cross_entropy": 1.063134587596792,
+      "n": 40,
+      "normalized_rubric_expected_value_mae": 0.18555737654773768
+    }
+  },
+  "scope": "head-only comparator; cached embeddings are not used by LoRA training",
+  "split": "same grouped train/dev",
+  "training_n": 460
+}

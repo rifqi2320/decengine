@@ -1,0 +1,18 @@
+/Users/IDSP35241/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[1/60] mq-lora-fresh-001: raw three-question predictions flushed
+[2/60] mq-lora-fresh-002: raw three-question predictions flushed
+[3/60] mq-lora-fresh-003: raw three-question predictions flushed
+[4/60] mq-lora-fresh-004: raw three-question predictions flushed
+[5/60] mq-lora-fresh-005: raw three-question predictions flushed
+[6/60] mq-lora-fresh-006: raw three-question predictions flushed
+Traceback (most recent call last):
+  File "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/evaluate_frozen.py", line 1415, in <module>
+    raise SystemExit(main())
+  File "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/evaluate_frozen.py", line 942, in main
+    return run_matched_frozen(args)
+  File "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/evaluate_frozen.py", line 829, in run_matched_frozen
+    guard_matched_resources(snap, swap_baseline, args.out, policy)
+  File "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/lora/evaluate_frozen.py", line 272, in guard_matched_resources
+    raise MemoryError(f"{reason}: {marker}")
+MemoryError: 512 MiB system-swap growth ceiling reached: {'status': 'aborted_resource_guard', 'reason': '512 MiB system-swap growth ceiling reached', 'baseline_swap_bytes': 1258417029, 'positive_swap_growth_bytes': 608509624, 'process_peak_plus_swap_growth_bytes': 5251802560, 'pid': 2018, 'process_footprint_bytes': 4643260168, 'process_peak_footprint_bytes': 4643292936, 'system_swap_used_bytes': 1866926653, 'mlx_active_bytes': 1194724968, 'mlx_peak_bytes': 1609950520}

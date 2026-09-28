@@ -1,0 +1,4 @@
+{"id": "mq-lora-fresh-001", "immediate_intervention": true, "record_auditability": "workable", "response_plan": "plan_2"}
+{"id": "mq-lora-fresh-002", "immediate_intervention": false, "record_auditability": "workable", "response_plan": "plan_1"}
+{"id": "mq-lora-fresh-003", "immediate_intervention": true, "record_auditability": "workable", "response_plan": "plan_1"}
+{"id": "mq-lora-fresh-004", "immediate_intervention": true, "response_plan": "plan_2"}

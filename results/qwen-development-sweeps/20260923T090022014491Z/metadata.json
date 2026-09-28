@@ -1,0 +1,38 @@
+{
+  "run_id": "20260923T090022014491Z",
+  "timestamp": "2026-09-23T09:00:22.015840+00:00",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "backend": "real MLX inference",
+  "network_calls": false,
+  "evaluation_scope": "development cases 001-050 only",
+  "holdout_file_accessed": false,
+  "dataset": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/decision-cases-100.jsonl",
+  "development_fixture_prefix_sha256": "e97924a8978e8bb000500344021db96874bf36d73b6463b0ff138bb310ff4449",
+  "case_count": 2,
+  "archive": "/Users/IDSP35241/Documents/Code/decengine/results/comparison-runs/20260923T082226631235Z/cases.jsonl",
+  "development_archive_prefix_sha256": "0017db68a90f3a3fabf320d627501936784613cdf03f2c63b3047cb3c08e860b",
+  "base_manifest_sha256": "2d77cfc9ff671884683718a42407fbe7d7e8bd7fb649efe5ca838e7a387b3033",
+  "installed_record_sha256": "3119bda70f4bbbdb76010002cbbabf248ebfd529b2fde39439a6dc51a230b5f2",
+  "native_library": "/Users/IDSP35241/Documents/Code/decengine/target/release/libdecengine.dylib",
+  "model_store": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/decengine-model-store",
+  "temperature": 0.05,
+  "decision_threshold": 0.5,
+  "variant_configs": {
+    "baseline": {
+      "query_template": "Instruct: {instruction}\nQuery:{text}",
+      "candidate_template": "{text}"
+    },
+    "official_format_task_instruction": {
+      "query_template": "Instruct: {instruction}\nQuery:{text}",
+      "candidate_template": "{text}",
+      "query_instruction_template": "Task: {kind}\nQuestion: {prompt}"
+    }
+  },
+  "task_text": {
+    "choice": "choose the single best-matching option from the reported issue and candidate scopes; do not infer facts absent from the case",
+    "noul": "decide whether same-day action is needed to prevent likely harm, material interruption, or a near-term missed deadline; an available safe workaround or no concrete near-term consequence favors no; emphatic wording alone is not evidence",
+    "score": "select the highest impact supported if unresolved; distinguish routine/no concrete near-term risk, localized disruption or safe workaround, and credible immediate or broad serious risk"
+  },
+  "python": "3.14.4",
+  "platform": "darwin"
+}

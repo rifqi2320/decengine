@@ -1,0 +1,21 @@
+{
+  "status": "smoke_passed",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "case_id": "mq-lora-fresh-049",
+  "question_name": "record_auditability",
+  "inference_policy_sha256": "d1fb0c2e142c066e135705cdd7d77a313d65e5eb730d2b4ed6459f7ee044a32c",
+  "max_text_tokens": 375,
+  "training_guard_tokens": 288,
+  "inference_guard_tokens": 512,
+  "raw_prediction_sha256": "61a35a5192ef5f12554e89e9af20ccafb03f9ac5a3b6c02e731f1b893b3ee657",
+  "references_read": false,
+  "scoring_performed": false,
+  "resource_snapshot": {
+    "pid": 11202,
+    "process_footprint_bytes": 1908262712,
+    "process_peak_footprint_bytes": 1908295480,
+    "system_swap_used_bytes": 1087635456,
+    "mlx_active_bytes": 1194764544,
+    "mlx_peak_bytes": 1650667064
+  }
+}

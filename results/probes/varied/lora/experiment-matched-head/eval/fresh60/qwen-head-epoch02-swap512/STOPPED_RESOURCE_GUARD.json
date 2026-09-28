@@ -1,0 +1,13 @@
+{
+  "status": "aborted_resource_guard",
+  "reason": "512 MiB system-swap growth ceiling reached",
+  "baseline_swap_bytes": 1258417029,
+  "positive_swap_growth_bytes": 608509624,
+  "process_peak_plus_swap_growth_bytes": 5251802560,
+  "pid": 2018,
+  "process_footprint_bytes": 4643260168,
+  "process_peak_footprint_bytes": 4643292936,
+  "system_swap_used_bytes": 1866926653,
+  "mlx_active_bytes": 1194724968,
+  "mlx_peak_bytes": 1609950520
+}

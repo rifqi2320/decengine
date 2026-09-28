@@ -1,0 +1,27 @@
+{
+  "status": "variant-head predictions frozen before secondary reference scoring",
+  "fixture_sha256": "316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f",
+  "primary_freeze_sha256": "a420edc7a85ced72c055ec59a82ab5b7658a26326757cce4132875ceb6ef32a0",
+  "predictions": {
+    "qwen/v2-baseline": "cf7143d61654bcee021562843498d542dd6efdfff0c7cd702f3486c4b904b200",
+    "qwen/readable-state": "7557d2dcf7a8b98513c17911d6166036636814dae223715337c9173a61d1814c",
+    "qwen/rule-in-candidate": "b0c2e28f58de37dda7d13c27b6668dc0297b48657c11afad414f846c4d451394",
+    "qwen/joint-context-candidate": "62001dc59dcf5623db6205f69e9ed1bfe414d62f619668f13c26635d2208b58a",
+    "harrier/v2-baseline": "61499d71e4064e4d1cbefe8b375143b4b034b03a2a945be17ca27c6e1b6527f7",
+    "harrier/readable-state": "fb30af991ac4aa2a52983d327b72ba3b47f1e3a55c0d776ef7ffb43adf90bd19",
+    "harrier/rule-in-candidate": "c75ad66ad87f7a90fb38ebee9e508c380d23163ed3add15f04411a6dd5486e0f",
+    "harrier/joint-context-candidate": "6b6de98b596aed8f0a8f9e32b3c8effd9ec251035442a380b01ca26a5adfabe8"
+  },
+  "scorer_bundle_hashes": {
+    "qwen/v2-baseline": "5b7260f04f0b66784504b09526447b30a9f020a554abf611c57eb971f9fabd79",
+    "qwen/readable-state": "b3d19ab873b2ffa90a4f8af63833a3b3195e1d17a8976a107021aafa259e8436",
+    "qwen/rule-in-candidate": "62a8f7f663465f082231c885de0e6fc439d734901bc51e90aafe23eb4685f9ca",
+    "qwen/joint-context-candidate": "35fa698c58583def77da4db762a9b2504ebb0adacd8bfa63471128eed23daa54",
+    "harrier/v2-baseline": "5fb0727296cc89d41c9ebcec1664a7ef3a99e5c08c6da424d267f02ea6c22d30",
+    "harrier/readable-state": "831a1558e197e3a949b02e667887abf8824c4196c2c31ab58ddb60ab1c83f49f",
+    "harrier/rule-in-candidate": "c8b38381b695dc71269139171d1b4d83c6db641d8e6be4e581484b5d7b71ed4a",
+    "harrier/joint-context-candidate": "9673793192b590b964e1384ea29a45a554625f68cb4868b00210991c7981c8f5"
+  },
+  "all_variant_model_predictions_written": true,
+  "reference_scoring": "not started"
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "TRAIN_DEV_RUNS_COMPLETE_AND_FROZEN",
+  "scope": "train/dev only; no heldout, test, Laya, JEV, or API evaluation",
+  "comparison": "new typed head on a frozen BF16 backbone versus the same initialized typed head plus rank-2 final-layer q/v LoRA",
+  "models": [
+    "Qwen/Qwen3-Embedding-0.6B",
+    "microsoft/harrier-oss-v1-0.6b"
+  ],
+  "data": {
+    "train_questions": 460,
+    "dev_questions": 200,
+    "split": "same deterministic grouped split bound in ../SELECTION-FREEZE.json",
+    "text": "same model-specific profile-compiled generic text-v2 inputs; cached embedding arrays stripped and never consumed by either neural arm",
+    "max_tokens": 288,
+    "overflow": "reject; never truncate"
+  },
+  "matched_controls": {
+    "epochs_max": 9,
+    "reported_epochs": [1, 3, 6, 9],
+    "train_question_order": "same seed and deterministic epoch shuffle in both arms",
+    "optimizer": "AdamW with identical learning rate, weight decay, clipping, schedule, and microbatch=1",
+    "objective": "same per-type preference_loss from ../train.py",
+    "head": "4096 -> 192 GELU -> independent scalar choice/noul/score heads; FP32; seed=314159",
+    "lora": "only treatment difference: final decoder block q_proj/v_proj; rank=2, alpha=4; BF16 base and FP32 adapters",
+    "selection": "maximize equal-weight mean of choice/noul/score exact accuracy over the fixed 200-question dev set; tie-break lower mean objective loss, lower score normalized expected-value MAE, then earlier epoch",
+    "primary": "dev macro per-type exact accuracy",
+    "secondary": ["dev mean objective loss", "score normalized expected-value MAE"],
+    "initial_parity": "same initial head tensor SHA-256 and initial logits within 1e-6 on the same train-only example"
+  },
+  "resource_guards": {
+    "process_peak_early_stop_bytes": 6442450944,
+    "process_peak_absolute_bytes": 8589934592,
+    "swap": "abort if system swap exceeds the process-start baseline or 4 GiB",
+    "microbatch": 1,
+    "sequential": true,
+    "per_step_memory_logging": true
+  },
+  "interrupted_partial_attempts": [
+    {
+      "path": "runs/qwen-head-interrupted-attempt1/",
+      "status": "INVALID_PARTIAL_NOT_SELECTED",
+      "reason": "Stopped before any epoch completed to correct global L2 gradient-clipping geometry; preserved but excluded. All full arms restart into fresh directories."
+    }
+  ],
+  "corrected_smoke_suite": "smoke-corrected/{qwen,harrier}-{head,lora}/; all four one-update smokes passed after global L2 clipping was corrected",
+  "smoke_tests": {
+    "qwen": {
+      "head": {"path": "smoke-corrected/qwen-head/smoke.json", "head_grad_norm": 0.20874080306266452, "lora_grad_norm": 0.0, "loss_before": 1.3891260623931885, "loss_after": 1.3615412712097168, "process_peak_bytes": 2091910752, "swap_bytes": 1366294528},
+      "lora": {"path": "smoke-corrected/qwen-lora/smoke.json", "head_grad_norm": 0.20874080306266452, "lora_grad_norm": 0.0038403400274837542, "loss_before": 1.3891260623931885, "loss_after": 1.3614896535873413, "process_peak_bytes": 2114340472, "swap_bytes": 1366294528},
+      "head_init_hash_matches": true,
+      "initial_logits_match_atol_1e-6": true
+    },
+    "harrier": {
+      "head": {"path": "smoke-corrected/harrier-head/smoke.json", "head_grad_norm": 0.19107306611321778, "lora_grad_norm": 0.0, "loss_before": 1.3886113166809082, "loss_after": 1.3634982109069824, "process_peak_bytes": 2090518088, "swap_bytes": 1366294528},
+      "lora": {"path": "smoke-corrected/harrier-lora/smoke.json", "head_grad_norm": 0.19107306611321778, "lora_grad_norm": 0.0016754621331270076, "loss_before": 1.3886113166809082, "loss_after": 1.363487958908081, "process_peak_bytes": 2112407112, "swap_bytes": 1366294528},
+      "head_init_hash_matches": true,
+      "initial_logits_match_atol_1e-6": true
+    }
+  },
+  "output_contract": {
+    "runs": "runs/{qwen,harrier}-{head,lora}/",
+    "epoch_metrics": "epochs.jsonl and immutable epoch-NN.safetensors",
+    "per_step_metrics": "steps.jsonl",
+    "per_step_memory": "memory.jsonl",
+    "aggregate": "COMPARISON.json and COMPARISON.md",
+    "final_report": "TRAIN-ONLY-REPORT.md",
+    "train_only_freeze": "TRAIN-ONLY-FREEZE.json",
+    "best_checkpoint": "best.safetensors, selected only on train/dev"
+  }
+}

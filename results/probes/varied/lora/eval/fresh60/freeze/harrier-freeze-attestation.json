@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "run_id": "harrier-local-lowmem-v2",
+  "train_only_selection_frozen": true,
+  "reference_accessed": false,
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "source_freeze_manifest_sha256": "5f7dd19638df1f7bdcb56ecd44a9371ae5a0ac32a6314538146e324ac8a2e48f",
+  "text_compiler_sha256": "3392fadabc4c7cc6d69acb31f152ab6e73ab83c12c16664b06f3ac6f46053d8e",
+  "evaluator_sha256": "1f65bc41365acf99dc8340c6eca0de8c05169167be02e04a64db10cd425311ed",
+  "comparison_script_sha256": "54db4e064fc19056db1e96e2ad4feb0141caaeee1fecaa313f232d3a920fddd8",
+  "train_only_selection": {
+    "method": "minimum aggregate mean objective loss on the same grouped 200-question dev split; no hyperparameter sweep",
+    "scope": "train/dev only; no heldout/test labels, predictions, or hashes accessed",
+    "status": "train_dev_complete",
+    "heldout_accessed": false,
+    "completed_steps": 1380,
+    "selected_epoch": 1,
+    "best_dev_loss": 0.9483493425697088
+  },
+  "training_profile": {
+    "model": "microsoft/harrier-oss-v1-0.6b",
+    "profile_version": "2",
+    "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+    "text_version": "decengine-varied-pair-text-v2-generic-types"
+  },
+  "sha256": {
+    "config": "7088d7e77e374343240ae09e3b29068c8d7fdb9cb28077e1a48ee357889cea23",
+    "best_weights": "d6c240bc4860cd73b9d74b0e25a6bd9643936e74bd24271746ccbdf5bcd2ab1e",
+    "best_record": "3e0a378f57776e6dc6822b68b8afa4c029a5a04259660ec89a00036cffed4dd1",
+    "summary": "8123e9a80b9e8a9d21f49597a4d4de7e1831082df5c3de9b0e24d2b67e30192d"
+  },
+  "evaluation_policy_sha256": "d1fb0c2e142c066e135705cdd7d77a313d65e5eb730d2b4ed6459f7ee044a32c",
+  "evaluation_policy_id": "lora-fresh60-inference-extrapolation-512-v1"
+}

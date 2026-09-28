@@ -1,0 +1,31 @@
+{
+  "run_id": "20260923T132108188977Z",
+  "started_at": "2026-09-23T13:21:08.189927+00:00",
+  "fixture": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/varied/multi/test-60.jsonl",
+  "fixture_sha256": "66a858680dd1e6e16bf12859ac18d67b24db11accb0efe23542a9b9c81fbbac3",
+  "case_count": 60,
+  "adapter": "/Users/IDSP35241/Documents/Code/decengine/results/laya/varied/run_multi_test60.py",
+  "verified_runner": "/Users/IDSP35241/Documents/Code/decengine/results/laya/mlx/compare_300_mlx.py",
+  "model": "convaiinnovations/laya",
+  "model_revision": "5e7b2b1b8ca2ecdd3f2322d94069c9b6ce7e844b",
+  "checkpoint_weights_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+  "checkpoint_weight_bytes": 842609210,
+  "mlx_port_commit": "0a859518634112655cb97c745dbf04f5191aaf13",
+  "runtime": "mlx-metal",
+  "mlx_version": "0.32.2",
+  "device_actual": "Device(gpu, 0)",
+  "dtype": "float32",
+  "temperature_policy": "exact pinned root config values; no port clamp",
+  "laya_calls_per_case": 3,
+  "jev_requests_per_case": 1,
+  "jev_model": "jev-latest",
+  "jev_url": "https://api.typesafe.ai/v1/systemone",
+  "score_mapping": "argmax of ordinal probabilities maps to rubric label; never expected-value binning",
+  "reference_scoring": "deferred until raw predictions and JEV outcomes persisted",
+  "finished_at": "2026-09-23T13:21:45.275575+00:00",
+  "completed_cases": 60,
+  "error_counts": {
+    "laya": 0,
+    "jev": 0
+  }
+}

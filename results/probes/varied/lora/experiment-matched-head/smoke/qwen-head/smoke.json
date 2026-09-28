@@ -1,0 +1,14 @@
+{
+  "arm": "head",
+  "head_grad_norm": 0.20874080306266452,
+  "head_init_sha256": "ae37385a24d801632fc557bc2d4904ebb5b15f11794f925e43ea1409cce72f77",
+  "initial_logits_sha256": "5210595976de8380c6ad97f2a0ff7015eff91a5ef512e3e8bd7a5c6fafef208f",
+  "lora_grad_norm": 0.0,
+  "loss_after": 1.3615412712097168,
+  "loss_before": 1.3891260623931885,
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "process_peak_bytes": 2086274632,
+  "status": "gradient_smoke_passed",
+  "step": 1,
+  "system_swap_used_bytes": 1391460352
+}

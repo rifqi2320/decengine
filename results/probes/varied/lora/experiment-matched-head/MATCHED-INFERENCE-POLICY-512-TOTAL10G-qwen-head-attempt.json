@@ -1,0 +1,69 @@
+{
+  "adapter_sha256": "58614beb9551fd30c1458c68313e27ccf0b926b5522b620c6d2a3e24878e4edd",
+  "evaluator_sha256": "d82716a0696143aa70abd021f05e3d9595ce0671b1d2f389f90bb58f75126100",
+  "fixture_path": "benchmarks/cases/varied/multi/test-lora-fresh-60.jsonl",
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "freeze_manifest_sha256": "ecb46f3a952d48a78a9004ad0213e70e57da0e9bd84e183fda31a5b63186eb1f",
+  "inference": {
+    "caveat": "Previously accessed/scored fixture reused; table is exploratory, with no test-driven tuning.",
+    "fixture_max_tokens": 375,
+    "max_tokens_per_text": 512,
+    "reject_above_limit": true,
+    "truncate": false,
+    "unseen_length_extrapolation": true
+  },
+  "matched_trainer_sha256": "37245f34f0f54d546163fc9dad144c2a24617b7bb93b5ae371128b77c008519a",
+  "parity_baseline": {
+    "case_prefix_count": 7,
+    "comparison": "exact candidate schema, selected values, logits and probabilities; timing fields excluded",
+    "normalized_predictions_sha256": "6fd46285dfa8e2f64493533d274da41057b514ecbda66754a92aea9f47e289db",
+    "raw_predictions_sha256": "5c758dc92448ef758bd033e5c8133704c1eccb71f7fdb465bafc7c03271ec147",
+    "run_key": "qwen-head-epoch02-swap512"
+  },
+  "policy_id": "matched-head-fresh60-inference-extrapolation-512-total10g-v3",
+  "references_used_for_selection": false,
+  "resource_guard": {
+    "absolute_process_stop_bytes": 8589934592,
+    "independent_swap_growth_ceiling": null,
+    "positive_swap_growth_only": true,
+    "process_early_stop_bytes": 6442450944,
+    "process_peak_plus_positive_swap_growth_stop_bytes": 10737418240,
+    "sampling": "macOS process footprint and vm.swapusage; per question/case plus external 0.5s monitor"
+  },
+  "schema_version": 1,
+  "selected": {
+    "harrier-head": {
+      "arm": "head",
+      "best_checkpoint_sha256": "92145ec36c4eeec1d89e70818313f57a758bd696b121ddcd20d8cd1153b59c28",
+      "epoch": 9,
+      "model": "microsoft/harrier-oss-v1-0.6b"
+    },
+    "harrier-lora": {
+      "arm": "lora",
+      "best_checkpoint_sha256": "06f1f13eb90fb84ce8bfac8a444fad7af2312e53c2c23745342256aa567bc10f",
+      "epoch": 9,
+      "model": "microsoft/harrier-oss-v1-0.6b"
+    },
+    "qwen-head": {
+      "arm": "head",
+      "best_checkpoint_sha256": "58bef9ac575faf62344d7e176e5c80910fff7370dd8314295cc2d9a23d0437b8",
+      "epoch": 2,
+      "model": "Qwen/Qwen3-Embedding-0.6B"
+    },
+    "qwen-lora": {
+      "arm": "lora",
+      "best_checkpoint_sha256": "cc6ceb9cd13819cd162ec494630660c159aa27e2e37cf5b82391b36ef5f6bf06",
+      "epoch": 9,
+      "model": "Qwen/Qwen3-Embedding-0.6B"
+    }
+  },
+  "selection_was_train_dev_only": true,
+  "shared_trainer_sha256": "24cf1e2808e4f22fa043a0c83d8fa693e5e1cced77aadcad496e6735257a7564",
+  "text_compiler_sha256": "3392fadabc4c7cc6d69acb31f152ab6e73ab83c12c16664b06f3ac6f46053d8e",
+  "training": {
+    "max_tokens_per_text_guard": 288,
+    "no_training_artifacts_changed": true,
+    "observed_train_max_tokens": 266,
+    "unchanged": true
+  }
+}

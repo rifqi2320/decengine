@@ -1,0 +1,27 @@
+{
+  "result": "exact-compatible",
+  "source_run": "results/probes/varied/runs/multi-harrier",
+  "frozen_C": 0.1,
+  "saved_C": 0.1,
+  "train_input_hashes_match_frozen_config": true,
+  "exporter_manifest_hashes_match_frozen_config": true,
+  "max_abs_parameter_and_normalization_differences": {
+    "choice": {
+      "coefficients": 0.0,
+      "feature_mean": 0.0,
+      "feature_scale": 0.0
+    },
+    "noul": {
+      "coefficients": 0.0,
+      "feature_mean": 0.0,
+      "feature_scale": 0.0
+    },
+    "score": {
+      "coefficients": 0.0,
+      "feature_mean": 0.0,
+      "feature_scale": 0.0
+    }
+  },
+  "objective": "per-type per-question softmax cross-entropy + L2",
+  "variant": "baseline, no Noul class weighting, no score smoothing"
+}

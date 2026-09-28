@@ -1,0 +1,19 @@
+all-MLX v2-baseline/harrier: 60 cases 180 questions; bundle=0ef5a204ceba350c190aecccf1285a0b71e37316f940a45ee3fa75f0b384326f fixture=316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f
+       21.43 real         4.07 user         0.98 sys
+          1426145280  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              164460  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  19  voluntary context switches
+               38649  involuntary context switches
+         71442274234  instructions retired
+         19561754462  cycles elapsed
+          3890382624  peak memory footprint

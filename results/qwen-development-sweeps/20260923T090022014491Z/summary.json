@@ -1,0 +1,210 @@
+{
+  "baseline": {
+    "inference_errors": 0,
+    "development": {
+      "cases": 2,
+      "fields": {
+        "owner": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "urgent": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        },
+        "impact": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": []
+      },
+      "overall": {
+        "correct": 3,
+        "total": 6,
+        "accuracy": 0.5
+      }
+    },
+    "archived_qwen_baseline_same_cases": {
+      "cases": 2,
+      "fields": {
+        "owner": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "urgent": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        },
+        "impact": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": []
+      },
+      "overall": {
+        "correct": 3,
+        "total": 6,
+        "accuracy": 0.5
+      }
+    },
+    "timing_ms": {
+      "median": 144.63412449999998,
+      "mean": 144.63412449999998
+    }
+  },
+  "official_format_task_instruction": {
+    "inference_errors": 0,
+    "development": {
+      "cases": 2,
+      "fields": {
+        "owner": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "urgent": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        },
+        "impact": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": [
+          {
+            "case_id": "case-001",
+            "predicted": "moderate",
+            "reference": "high"
+          }
+        ]
+      },
+      "overall": {
+        "correct": 2,
+        "total": 6,
+        "accuracy": 0.3333333333333333
+      }
+    },
+    "archived_qwen_baseline_same_cases": {
+      "cases": 2,
+      "fields": {
+        "owner": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "urgent": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        },
+        "impact": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      },
+      "errors": {
+        "owner": [
+          {
+            "case_id": "case-001",
+            "predicted": "operations",
+            "reference": "safety_compliance"
+          },
+          {
+            "case_id": "case-002",
+            "predicted": "other",
+            "reference": "account_access"
+          }
+        ],
+        "urgent": [
+          {
+            "case_id": "case-002",
+            "predicted": true,
+            "reference": false
+          }
+        ],
+        "impact": []
+      },
+      "overall": {
+        "correct": 3,
+        "total": 6,
+        "accuracy": 0.5
+      }
+    },
+    "timing_ms": {
+      "median": 163.8169585,
+      "mean": 163.8169585
+    }
+  }
+}

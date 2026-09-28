@@ -1,0 +1,19 @@
+all-MLX joint-context-candidate/harrier: 60 cases 180 questions; bundle=01fdfa01dc8fe1b8ec28810f8722ee55ab822f7675a9bbad9531e350ad65eaa1 fixture=316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f
+       53.88 real         5.26 user         2.43 sys
+          1409040384  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              166172  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  13  voluntary context switches
+               41022  involuntary context switches
+         94389979148  instructions retired
+         26711903741  cycles elapsed
+          9789868000  peak memory footprint

@@ -1,0 +1,422 @@
+{
+  "protocol": "paired descriptive comparison of frozen matched-context vs explicit-context predictions; not a causal/unbiased transfer-gain estimate",
+  "readiness_manifest_sha256": "6c6bcca503770697f71e8a01664d72dc737d1772c14c8aac53d4251c9e3515f3",
+  "explicit_fixture_sha256": "4cb002e1c29f5273ecc23fcdf742b093cb5433d661f5df0b50d209a534fb1409",
+  "matched_predictions_sha256": "6983bfe6f1a3237bdede0ac3ddd56e43300ebd8d8bc9661dfaddc92fe1ea7fdf",
+  "explicit_predictions_sha256": "d183dc3b5a4cfb325bf4224f9b63dc1e2eee0847b6874507d54195d65ea3e85c",
+  "question_count": 180,
+  "case_count": 60,
+  "matched_all_three_correct_cases": 6,
+  "explicit_all_three_correct_cases": 8,
+  "all_three_correct_case_delta": 2,
+  "prediction_switches": 11,
+  "per_question_type": {
+    "choice": {
+      "matched_correct": 20,
+      "explicit_correct": 21,
+      "prediction_switches": 1,
+      "explicit_only_correct": 1,
+      "matched_only_correct": 0,
+      "both_correct": 20,
+      "both_wrong": 39,
+      "n": 60,
+      "matched_accuracy": 0.3333333333333333,
+      "explicit_accuracy": 0.35,
+      "accuracy_delta_explicit_minus_matched": 0.016666666666666663,
+      "prediction_switch_rate": 0.016666666666666666
+    },
+    "noul": {
+      "matched_correct": 29,
+      "explicit_correct": 35,
+      "prediction_switches": 6,
+      "explicit_only_correct": 6,
+      "matched_only_correct": 0,
+      "both_correct": 29,
+      "both_wrong": 25,
+      "n": 60,
+      "matched_accuracy": 0.48333333333333334,
+      "explicit_accuracy": 0.5833333333333334,
+      "accuracy_delta_explicit_minus_matched": 0.10000000000000003,
+      "prediction_switch_rate": 0.1
+    },
+    "score": {
+      "matched_correct": 21,
+      "explicit_correct": 24,
+      "prediction_switches": 4,
+      "explicit_only_correct": 3,
+      "matched_only_correct": 0,
+      "both_correct": 21,
+      "both_wrong": 36,
+      "n": 60,
+      "matched_accuracy": 0.35,
+      "explicit_accuracy": 0.4,
+      "accuracy_delta_explicit_minus_matched": 0.050000000000000044,
+      "prediction_switch_rate": 0.06666666666666667
+    }
+  },
+  "per_domain": {
+    "arts colleges": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "matched_accuracy": 0.6,
+          "explicit_accuracy": 0.6,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "noul": {
+          "n": 5,
+          "matched_accuracy": 0.4,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "score": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.2,
+          "prediction_switches": 1
+        }
+      },
+      "matched_all_three_correct": 0,
+      "explicit_all_three_correct": 1,
+      "all_three_correct_delta": 1
+    },
+    "coastal research": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "matched_accuracy": 0.4,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "noul": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.2,
+          "prediction_switches": 1
+        },
+        "score": {
+          "n": 5,
+          "matched_accuracy": 0.6,
+          "explicit_accuracy": 0.6,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        }
+      },
+      "matched_all_three_correct": 1,
+      "explicit_all_three_correct": 1,
+      "all_three_correct_delta": 0
+    },
+    "community clinics": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "matched_accuracy": 0.6,
+          "explicit_accuracy": 0.6,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "noul": {
+          "n": 5,
+          "matched_accuracy": 0.4,
+          "explicit_accuracy": 0.6,
+          "accuracy_delta": 0.2,
+          "prediction_switches": 1
+        },
+        "score": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.2,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        }
+      },
+      "matched_all_three_correct": 1,
+      "explicit_all_three_correct": 1,
+      "all_three_correct_delta": 0
+    },
+    "community energy": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.2,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "noul": {
+          "n": 5,
+          "matched_accuracy": 0.8,
+          "explicit_accuracy": 0.8,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "score": {
+          "n": 5,
+          "matched_accuracy": 0.6,
+          "explicit_accuracy": 0.6,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        }
+      },
+      "matched_all_three_correct": 0,
+      "explicit_all_three_correct": 0,
+      "all_three_correct_delta": 0
+    },
+    "credit unions": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.2,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "noul": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.2,
+          "prediction_switches": 1
+        },
+        "score": {
+          "n": 5,
+          "matched_accuracy": 0.4,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 1
+        }
+      },
+      "matched_all_three_correct": 0,
+      "explicit_all_three_correct": 0,
+      "all_three_correct_delta": 0
+    },
+    "food cooperatives": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.2,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "noul": {
+          "n": 5,
+          "matched_accuracy": 0.4,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "score": {
+          "n": 5,
+          "matched_accuracy": 0.4,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        }
+      },
+      "matched_all_three_correct": 1,
+      "explicit_all_three_correct": 1,
+      "all_three_correct_delta": 0
+    },
+    "municipal permitting": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "matched_accuracy": 0.4,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "noul": {
+          "n": 5,
+          "matched_accuracy": 0.6,
+          "explicit_accuracy": 0.8,
+          "accuracy_delta": 0.2,
+          "prediction_switches": 1
+        },
+        "score": {
+          "n": 5,
+          "matched_accuracy": 0.4,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        }
+      },
+      "matched_all_three_correct": 2,
+      "explicit_all_three_correct": 2,
+      "all_three_correct_delta": 0
+    },
+    "museum conservation": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "matched_accuracy": 0.4,
+          "explicit_accuracy": 0.6,
+          "accuracy_delta": 0.2,
+          "prediction_switches": 1
+        },
+        "noul": {
+          "n": 5,
+          "matched_accuracy": 0.6,
+          "explicit_accuracy": 0.8,
+          "accuracy_delta": 0.2,
+          "prediction_switches": 1
+        },
+        "score": {
+          "n": 5,
+          "matched_accuracy": 0.4,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        }
+      },
+      "matched_all_three_correct": 1,
+      "explicit_all_three_correct": 2,
+      "all_three_correct_delta": 1
+    },
+    "public libraries": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.2,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "noul": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.2,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "score": {
+          "n": 5,
+          "matched_accuracy": 0.0,
+          "explicit_accuracy": 0.2,
+          "accuracy_delta": 0.2,
+          "prediction_switches": 1
+        }
+      },
+      "matched_all_three_correct": 0,
+      "explicit_all_three_correct": 0,
+      "all_three_correct_delta": 0
+    },
+    "regional farms": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.2,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "noul": {
+          "n": 5,
+          "matched_accuracy": 0.4,
+          "explicit_accuracy": 0.6,
+          "accuracy_delta": 0.2,
+          "prediction_switches": 1
+        },
+        "score": {
+          "n": 5,
+          "matched_accuracy": 0.6,
+          "explicit_accuracy": 0.6,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        }
+      },
+      "matched_all_three_correct": 0,
+      "explicit_all_three_correct": 0,
+      "all_three_correct_delta": 0
+    },
+    "regional transit": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.2,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "noul": {
+          "n": 5,
+          "matched_accuracy": 0.6,
+          "explicit_accuracy": 0.6,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "score": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.2,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        }
+      },
+      "matched_all_three_correct": 0,
+      "explicit_all_three_correct": 0,
+      "all_three_correct_delta": 0
+    },
+    "small manufacturers": {
+      "case_count": 5,
+      "per_type": {
+        "choice": {
+          "n": 5,
+          "matched_accuracy": 0.4,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "noul": {
+          "n": 5,
+          "matched_accuracy": 1.0,
+          "explicit_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "prediction_switches": 0
+        },
+        "score": {
+          "n": 5,
+          "matched_accuracy": 0.2,
+          "explicit_accuracy": 0.4,
+          "accuracy_delta": 0.2,
+          "prediction_switches": 1
+        }
+      },
+      "matched_all_three_correct": 0,
+      "explicit_all_three_correct": 0,
+      "all_three_correct_delta": 0
+    }
+  },
+  "inference_backends": {
+    "embeddings": "MLX/Metal exporter",
+    "ranker": "NumPy CPU; parity/reference scorer only, not GPU-resident end-to-end"
+  },
+  "limitations": "Context change is descriptive on these paired cases only. No test-based tuning, weighting, significance claim, or unbiased transfer-gain interpretation is made.",
+  "explicit_readiness": {
+    "status": "complete (validated manifest counts and source alignment)",
+    "manifest_sha256": "6c6bcca503770697f71e8a01664d72dc737d1772c14c8aac53d4251c9e3515f3",
+    "fixture_sha256": "4cb002e1c29f5273ecc23fcdf742b093cb5433d661f5df0b50d209a534fb1409",
+    "features_sha256": "539815e6f30278d1b3c6715c3e6d36cb4dd5bd283bbb625caca82dd960fe28fd"
+  },
+  "paired_artifact_sha256": {
+    "paired_questions": "9cd56656671fcc8a2a9414f7837b0457fee83b948a15e2ea0cc825be3ca40797",
+    "paired_cases": "9c6bcf505cad9bef1b32bb1b83b8ab92ceb674254d3fc14bfa4343ea73be14dc"
+  }
+}

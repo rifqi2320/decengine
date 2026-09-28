@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "status": "predictions_frozen_reference_scoring_deferred",
+  "system_id": "qwen_lora_epoch9_matched",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "arm": "lora",
+  "selected_epoch": 9,
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "freeze_manifest_sha256": "ecb46f3a952d48a78a9004ad0213e70e57da0e9bd84e183fda31a5b63186eb1f",
+  "matched_policy_sha256": "a641c64ac7f8fda46d587422f0fe20b94fcd1353246eb9f0c3cd1051313177f7",
+  "matched_policy_id": "matched-head-fresh60-inference-extrapolation-512-total10g-v3",
+  "config_sha256": "3dd4876d0bd741078239cfd66905850fd5f840b134ab318c194b292a761d1371",
+  "best_checkpoint_sha256": "cc6ceb9cd13819cd162ec494630660c159aa27e2e37cf5b82391b36ef5f6bf06",
+  "best_record_sha256": "a52c4c3e890e9df33b3fa5e17a41b5c3d9d9acbf64e342fc53ef3f1bbbf11cd4",
+  "summary_sha256": "08e0dbfea306e0b642ef6aca5fb439e74433ebe946332d6d024b19fa6879598f",
+  "model_or_adapter_sha256": "cc6ceb9cd13819cd162ec494630660c159aa27e2e37cf5b82391b36ef5f6bf06",
+  "base_model_checkpoint_sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+  "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+  "profile_version": "1",
+  "text_version": "decengine-varied-pair-text-v2-generic-types",
+  "text_compiler_sha256": "3392fadabc4c7cc6d69acb31f152ab6e73ab83c12c16664b06f3ac6f46053d8e",
+  "evaluator_source_sha256": "009209e0727c25a89247493b5089b5e703d235aba21f03d73ea44cafe00b3b6e",
+  "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+  "training_token_limit": 288,
+  "observed_training_max_tokens": 266,
+  "inference_token_limit": 512,
+  "max_test_tokens": 375,
+  "truncation": false,
+  "predictions_sha256": "44bdad3bac19486e060fb21c67fc6f833bdde81a7f52621a350d9374639b8365",
+  "raw_predictions_sha256": "5f8d72dc7d02b9cdc9810eca2d3168a8d2a7cb0534f4ce9cc2876a5d09525001",
+  "candidate_position_distribution": {
+    "choice": {
+      "0": 19,
+      "1": 19,
+      "3": 6,
+      "4": 5,
+      "2": 11
+    },
+    "noul": {
+      "1": 31,
+      "0": 29
+    },
+    "score": {
+      "2": 58,
+      "4": 2
+    }
+  },
+  "collapsed_types_in_full_run": [],
+  "timing_scopes": {
+    "question_inference_ms": {
+      "scope": "per-question individual query/candidate forwards plus typed scorer; excludes model load/preflight/reference",
+      "n": 180,
+      "p50": 124.3370835,
+      "p95": 161.70642080000002
+    },
+    "case_three_question_sum_ms": {
+      "scope": "sum of three question inference times; excludes cache-clear overhead, load, preflight, references",
+      "n": 60,
+      "p50": 390.9686665,
+      "p95": 428.4255744
+    }
+  },
+  "cache_policy": "mx.clear_cache() + gc.collect() after every completed case",
+  "resources": {
+    "baseline_swap_bytes": 1858538045,
+    "max_positive_swap_growth_bytes": 447280579,
+    "max_process_peak_bytes": 2405861176,
+    "max_process_peak_plus_positive_swap_growth_bytes": 2853141755,
+    "process_early_stop_bytes": 6442450944,
+    "absolute_process_cap_bytes": 8589934592,
+    "total_process_peak_plus_swap_cap_bytes": 10737418240,
+    "external_monitor_samples": 73,
+    "external_max_process_peak_bytes": 2405861176,
+    "external_max_positive_swap_growth_bytes": 447280579
+  },
+  "reference_access_during_generation": false,
+  "reference_scoring_performed": false,
+  "fixture_reused_previously_scored": true,
+  "interpretation": "exploratory reused holdout; no test-driven tuning"
+}

@@ -1,0 +1,108 @@
+{
+  "run": "/Users/IDSP35241/Documents/Code/decengine/results/probes/varied/prompt-study/runs/holdout-fresh60-prompt-study-20260924T000000Z",
+  "fixture_sha256": "316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f",
+  "frozen_config_sha256": "305a124523f12e28686bd037d8be96719717ee36cbfc86bfc7b3f8c41b7fd325",
+  "prediction_files_verified": 8,
+  "features_verified": 8,
+  "checkpoint_files_verified": 8,
+  "question_records_verified": 1440,
+  "model_variant_provenance": {
+    "qwen": {
+      "model_id": "Qwen/Qwen3-Embedding-0.6B",
+      "final_fit_sha256": "ce4873347a6fd0de6df98f9becc2f045d27af0308c189186a8dd73d4a89b27af",
+      "variants": {
+        "v2-baseline": {
+          "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+          "text_version": "decengine-varied-pair-text-v2-generic-types/v2-baseline",
+          "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "features_sha256": "c90d772b30297b1531dd4c1b914697e14c7121cee886546d13517267945dc748",
+          "predictions_sha256": "98dd334f7ece0e052c9c6d5aa2fda2f58bb094951aeba98f125f8b11368afe27",
+          "embedding_calls": 750,
+          "tokens": 69829,
+          "measured_export_wall_seconds": 23.8963035
+        },
+        "readable-state": {
+          "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+          "text_version": "decengine-varied-pair-text-v2-generic-types/readable-state",
+          "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "features_sha256": "85b4684a07ad105f1731fe86651c9b550761a625c4e6f70c04fc9fedd0a75891",
+          "predictions_sha256": "cf92d46ff9722ce5f17857716ac3cd6c1d7d7664aee7fd4a87f6abfedc6122df",
+          "embedding_calls": 750,
+          "tokens": 71089,
+          "measured_export_wall_seconds": 24.549370542000002
+        },
+        "rule-in-candidate": {
+          "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+          "text_version": "decengine-varied-pair-text-v2-generic-types/rule-in-candidate",
+          "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "features_sha256": "7a0ca6bf05f462a92123e6aedb70282fbf4d39642fc45b03dd85505a28923ea6",
+          "predictions_sha256": "29c30d21b90d53f02445448b78dafc9d71c3699c591b06c173699ec61e54bef7",
+          "embedding_calls": 750,
+          "tokens": 99908,
+          "measured_export_wall_seconds": 30.288508125000007
+        },
+        "joint-context-candidate": {
+          "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+          "text_version": "decengine-varied-pair-text-v2-generic-types/joint-context-candidate",
+          "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "features_sha256": "169c5ae029099758e53a5a1053136f97980777baabf22b9c529982a3e26ccd21",
+          "predictions_sha256": "f4f2e48193c9eeee6b031d1e7c852af286236b1860ea7dc171199e01b5b38f81",
+          "embedding_calls": 750,
+          "tokens": 251813,
+          "measured_export_wall_seconds": 64.39758579099998
+        }
+      }
+    },
+    "harrier": {
+      "model_id": "microsoft/harrier-oss-v1-0.6b",
+      "final_fit_sha256": "66fa11995f0c032d2c3169126071636bca6d2d3aca68a5df9a44ee7ef9ee1421",
+      "variants": {
+        "v2-baseline": {
+          "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+          "text_version": "decengine-varied-pair-text-v2-generic-types/v2-baseline",
+          "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "features_sha256": "840b909a89aa43a98796be7d479bd77dd2c2e9049f649be56c6ba3fc18ac0ced",
+          "predictions_sha256": "c8c8ac19b3351e91577e8ab50077679b53c304e97ec756a6914a6433fe8219b6",
+          "embedding_calls": 750,
+          "tokens": 69829,
+          "measured_export_wall_seconds": 24.14586133399999
+        },
+        "readable-state": {
+          "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+          "text_version": "decengine-varied-pair-text-v2-generic-types/readable-state",
+          "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "features_sha256": "87c9ed67b602e8583a0fa48e15c28d53929516ae77d3201fc4414af79d0af014",
+          "predictions_sha256": "bcfe0ce26b2bbb2b5715dd59c686046cc716637440c0f20fd9f820e8b985fef1",
+          "embedding_calls": 750,
+          "tokens": 71089,
+          "measured_export_wall_seconds": 24.45601529199999
+        },
+        "rule-in-candidate": {
+          "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+          "text_version": "decengine-varied-pair-text-v2-generic-types/rule-in-candidate",
+          "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "features_sha256": "515f5334cdf93f212142fe397a691e9f74d64f35af4a881f7d2a27ca9532be2a",
+          "predictions_sha256": "66de8bd9f478bdb38286ba3d17c8a7c49beafac69d9f4ed05535312e81ac632d",
+          "embedding_calls": 750,
+          "tokens": 99908,
+          "measured_export_wall_seconds": 30.121061166000004
+        },
+        "joint-context-candidate": {
+          "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+          "text_version": "decengine-varied-pair-text-v2-generic-types/joint-context-candidate",
+          "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "features_sha256": "5cb19d077781382e50b8e357d39b6ad3270d4435c74f5940b00e16c5be0036a6",
+          "predictions_sha256": "168987507455f23606935e3e04e6846442fa727d98e763fb821aff37ea0e3fce",
+          "embedding_calls": 750,
+          "tokens": 251813,
+          "measured_export_wall_seconds": 60.980201333999986
+        }
+      }
+    }
+  },
+  "holdout_metrics_sha256": "72ec89b4b511a4a45b6881a07b5faf46edb01b9f374fa62b6c595d593f7321d3",
+  "report_sha256": "7d33e28158e82fac4b49740dc0c4486901ee906d07a23b6fb8250590ebc244d2",
+  "family_domain_csv_sha256": "2d313c8e6403c6ca91e5f1926d7f28a3f3ad8cac3db4822870e4e19f8e2ef063",
+  "evaluation_script_sha256_at_audit": "5fe6b621322fe2b09f4059ef5884cab153f896b7e6b46ef2fb6e6eabf263217c",
+  "integrity_auditor_sha256": "c6b8b2ce27e9b5446fbfa4c7936bd033c927af04910e4c0139e3811defec0d70"
+}

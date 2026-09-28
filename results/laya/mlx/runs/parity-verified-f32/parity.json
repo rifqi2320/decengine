@@ -1,0 +1,45 @@
+{
+  "reference": "/Users/IDSP35241/Documents/Code/decengine/results/laya/reference/cpu-reference.json",
+  "case_id": "test-001",
+  "compared": 1,
+  "tolerances": {
+    "raw_option_logits_atol": 0.0001,
+    "raw_act_logits_atol": 0.01
+  },
+  "decisions": {
+    "owner": {
+      "sequence_ids_exact": true,
+      "cpu_sequence_length": 180,
+      "mlx_sequence_length": 180,
+      "raw_option_logit_max_abs_diff": 8.732080459594727e-06,
+      "raw_act_logit_max_abs_diff": 0.001953125,
+      "sdk_output_exact": true,
+      "normalized_label": "other",
+      "option_logits_within_tolerance": true,
+      "action_logits_within_tolerance": true
+    },
+    "urgent": {
+      "sequence_ids_exact": true,
+      "cpu_sequence_length": 109,
+      "mlx_sequence_length": 109,
+      "raw_option_logit_max_abs_diff": 4.291534423828125e-06,
+      "raw_act_logit_max_abs_diff": 0.0009765625,
+      "sdk_output_exact": true,
+      "normalized_label": false,
+      "option_logits_within_tolerance": true,
+      "action_logits_within_tolerance": true
+    },
+    "impact": {
+      "sequence_ids_exact": true,
+      "cpu_sequence_length": 167,
+      "mlx_sequence_length": 167,
+      "raw_option_logit_max_abs_diff": 5.0067901611328125e-06,
+      "raw_act_logit_max_abs_diff": 0.000244140625,
+      "sdk_output_exact": true,
+      "normalized_label": "moderate",
+      "option_logits_within_tolerance": true,
+      "action_logits_within_tolerance": true
+    }
+  },
+  "passed": true
+}

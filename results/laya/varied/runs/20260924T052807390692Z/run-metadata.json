@@ -1,0 +1,31 @@
+{
+  "run_id": "20260924T052807390692Z",
+  "started_at": "2026-09-24T05:28:07.391616+00:00",
+  "fixture": "/Users/IDSP35241/Documents/Code/decengine/benchmarks/cases/varied/multi/test-lora-fresh-60.jsonl",
+  "fixture_sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "case_count": 60,
+  "question_count": 180,
+  "model": "convaiinnovations/laya",
+  "model_revision": "5e7b2b1b8ca2ecdd3f2322d94069c9b6ce7e844b",
+  "checkpoint_weights_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+  "checkpoint_weight_bytes": 842609210,
+  "verified_runner": "/Users/IDSP35241/Documents/Code/decengine/results/laya/mlx/compare_300_mlx.py",
+  "external_port": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/laya-mlx-port",
+  "external_port_commit": "0a859518634112655cb97c745dbf04f5191aaf13",
+  "runtime": "mlx-metal",
+  "mlx_version": "0.32.2",
+  "device_actual": "Device(gpu, 0)",
+  "dtype": "float32",
+  "temperature_policy": "exact pinned root config values; no laya-mlx clamp",
+  "calls_per_case": 3,
+  "inference_only": "Laya only; no JEV, no prompt tuning, no alternate prompt variants",
+  "input_fields": "fixture request.state and request.questions only; reference and metadata excluded",
+  "memory_policy_bytes": {
+    "early_stop": 6442450944,
+    "absolute_stop": 8589934592,
+    "max_swap_growth": 268435456,
+    "guard_metric": "max(process peak RSS, MLX peak allocation)"
+  },
+  "swap_used_at_start_bytes": 1070858240,
+  "reference_scoring": "deferred until raw results and predictions are hash-frozen"
+}

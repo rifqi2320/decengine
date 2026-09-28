@@ -1,0 +1,12 @@
+utc=2026-09-23T17:15:26Z
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=47710307)	80%; AC attached; not charging present: true
+ 1:15  up 10:41, 3 users, load averages: 2.31 2.43 2.71
+  788   8.7 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer
+ 2542   5.8 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper (Renderer).app/Contents/MacOS/SeaTalk Helper (Renderer)
+ 1654   5.0 /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal
+ 2719   4.1 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (Renderer).app/Contents/MacOS/Beekeeper Studio Helper (Renderer)
+ 9237   3.5 /Users/IDSP35241/.opencode/bin/opencode
+ 2563   1.7 /Applications/Beekeeper Studio.app/Contents/Frameworks/Beekeeper Studio Helper (GPU).app/Contents/MacOS/Beekeeper Studio Helper (GPU)
+ 2854   1.6 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/153.0.8010.49/Helpers/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper
+ 2491   1.5 /Applications/SeaTalk.app/Contents/Frameworks/SeaTalk Helper.app/Contents/MacOS/SeaTalk Helper

@@ -1,0 +1,8 @@
+{
+  "best_dev_loss": 0.9483493425697088,
+  "best_epoch": 1,
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "scope": "train+grouped-dev only; no heldout accessed",
+  "status": "train_dev_complete",
+  "steps": 1380
+}

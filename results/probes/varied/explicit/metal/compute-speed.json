@@ -1,0 +1,4608 @@
+{
+  "schema_version": 1,
+  "fixture": {
+    "explicit_path": "benchmarks/cases/varied/multi/test-explicit-60.jsonl",
+    "sha256": "4cb002e1c29f5273ecc23fcdf742b093cb5433d661f5df0b50d209a534fb1409",
+    "cases": 60,
+    "questions": 180,
+    "relationship": "Authored explicit-state intervention; differs from matched-state fixture. This is not independent holdout."
+  },
+  "system_scope": "Qwen/Harrier values are analytical arithmetic estimates for MLX/Metal encoder embedding of each actual query and candidate, not measured GPU FLOPs. Existing explicit Metal timing logs are used only as token-count records; no inference/API calls were made. Laya is analyzed from saved per-question input token lengths and pinned architecture; no output/label/target fields are used.",
+  "formula_qwen_harrier": "Same formula, config and omissions as results/probes/varied/matched/compute-speed.json; 1 MAC=2 FLOPs; sum independent unpadded query + all candidate strings.",
+  "qwen_harrier": {
+    "qwen": {
+      "model": "Qwen/Qwen3-Embedding-0.6B",
+      "timing_token_source": "results/probes/varied/explicit/metal/runs/qwen/predictions.jsonl.timings.jsonl",
+      "timing_source_sha256": "81a0ea1b1e89067046d65c7f3ee0e7df3bf11fca61979fee305d52b9a82099f2",
+      "feature_manifest": "results/probes/varied/explicit/runs/qwen/explicit.features.jsonl.manifest.json",
+      "feature_manifest_sha256": "83ecaba2cb452fbe1fe074b2e3f2800b8c561babcaa4b80efabca670b04b42cd",
+      "manifest_identity": {
+        "backend": "MLX/Metal",
+        "input_sha256": "4cb002e1c29f5273ecc23fcdf742b093cb5433d661f5df0b50d209a534fb1409",
+        "profile_version": "1",
+        "profile_sha256": "a008dee8e9e7e279486982b2f8128c664335f50203b8dfd58c68ac5b3f3700bc",
+        "text_version": "decengine-varied-pair-text-v2-generic-types",
+        "embedding_dimensions": 1024,
+        "normalization": "L2",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a"
+      },
+      "architecture_config_path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/decengine-model-store/models/Qwen--Qwen3-Embedding-0.6B/config.json",
+      "architecture_config_sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+      "architecture": {
+        "model_type": "qwen3",
+        "hidden_size": 1024,
+        "intermediate_size": 3072,
+        "num_hidden_layers": 28,
+        "num_attention_heads": 16,
+        "num_key_value_heads": 8,
+        "head_dim": 128
+      },
+      "compute_formula": "same as ../matched/compute-speed.json: per unpadded query/candidate string n, L*[n*(4H^2+4H*Hkv+6H*I) + 4H*n(n+1)/2], 1 MAC=2 FLOPs; sums all query/candidate strings per question/case.",
+      "metrics": {
+        "n_question_rows": 180,
+        "n_cases": 60,
+        "n_queries": 180,
+        "n_candidates": 534,
+        "n_embedding_texts": 714,
+        "query_tokens_total": 78705,
+        "candidate_tokens_total": 16833,
+        "all_tokens_total": 95538,
+        "mean_query_tokens": 437.25,
+        "mean_candidate_tokens": 31.52247191011236,
+        "query_token_p50_p95": [
+          437.0,
+          448.04999999999995
+        ],
+        "candidate_token_p50_p95": [
+          27.0,
+          51.0
+        ],
+        "candidate_count_per_question": {
+          "2": 75,
+          "3": 54,
+          "4": 33,
+          "5": 18
+        },
+        "question_gflops": {
+          "n": 180,
+          "unit": "GFLOPs/question",
+          "mean": 416.35029556337776,
+          "p50": 417.981906944,
+          "p95": 439.9792316416
+        },
+        "case_gflops": {
+          "n": 60,
+          "unit": "GFLOPs/case",
+          "mean": 1249.0508866901332,
+          "p50": 1247.9924961279999,
+          "p95": 1303.5728871424
+        },
+        "total_gflops_all_cases": 74943.053201408,
+        "per_question_name": {
+          "immediate_intervention": {
+            "n": 60,
+            "unit": "GFLOPs/question",
+            "mean": 420.3327968597334,
+            "p50": 419.612196864,
+            "p95": 430.05978050560003
+          },
+          "record_auditability": {
+            "n": 60,
+            "unit": "GFLOPs/question",
+            "mean": 418.1803229184,
+            "p50": 413.088743424,
+            "p95": 439.3627779072
+          },
+          "response_plan": {
+            "n": 60,
+            "unit": "GFLOPs/question",
+            "mean": 410.53776691200005,
+            "p50": 411.018051584,
+            "p95": 444.85912576000004
+          }
+        },
+        "delta_vs_matched": {
+          "question_gflops": {
+            "mean": {
+              "matched": 301.8201151715555,
+              "explicit": 416.35029556337776,
+              "delta": 114.53018039182223,
+              "delta_percent": 37.94650344186732
+            },
+            "p50": {
+              "matched": 303.53727488,
+              "explicit": 417.981906944,
+              "delta": 114.44463206400002,
+              "delta_percent": 37.70365010664486
+            },
+            "p95": {
+              "matched": 326.4902889472,
+              "explicit": 439.9792316416,
+              "delta": 113.48894269440001,
+              "delta_percent": 34.76028125073988
+            }
+          },
+          "case_gflops": {
+            "mean": {
+              "matched": 905.4603455146666,
+              "explicit": 1249.0508866901332,
+              "delta": 343.59054117546657,
+              "delta_percent": 37.94650344186731
+            },
+            "p50": {
+              "matched": 904.710955008,
+              "explicit": 1247.9924961279999,
+              "delta": 343.2815411199998,
+              "delta_percent": 37.94378074232165
+            },
+            "p95": {
+              "matched": 945.4556561408001,
+              "explicit": 1303.5728871424,
+              "delta": 358.1172310016,
+              "delta_percent": 37.877739550829666
+            }
+          },
+          "tokens": {
+            "matched_total_tokens": 69942,
+            "explicit_total_tokens": 95538,
+            "delta_tokens": 25596,
+            "delta_percent": 36.596036716136226,
+            "matched_query_tokens": 53109,
+            "explicit_query_tokens": 78705,
+            "matched_candidate_tokens": 16833,
+            "explicit_candidate_tokens": 16833
+          },
+          "by_question_name": {
+            "immediate_intervention": {
+              "p50": {
+                "matched": 305.2621824,
+                "explicit": 419.612196864,
+                "delta": 114.35001446400003,
+                "delta_percent": 37.459607202231695
+              },
+              "p95": {
+                "matched": 311.7198794752,
+                "explicit": 430.05978050560003,
+                "delta": 118.33990103040003,
+                "delta_percent": 37.963539967240045
+              },
+              "mean": {
+                "matched": 305.8178495829334,
+                "explicit": 420.3327968597334,
+                "delta": 114.5149472768,
+                "delta_percent": 37.44547528307211
+              },
+              "n": 60
+            },
+            "record_auditability": {
+              "p50": {
+                "matched": 298.975043584,
+                "explicit": 413.088743424,
+                "delta": 114.11369983999998,
+                "delta_percent": 38.168302769370975
+              },
+              "p95": {
+                "matched": 324.136730624,
+                "explicit": 439.3627779072,
+                "delta": 115.22604728319999,
+                "delta_percent": 35.548593046328556
+              },
+              "mean": {
+                "matched": 303.5609828010667,
+                "explicit": 418.1803229184,
+                "delta": 114.61934011733331,
+                "delta_percent": 37.75825834390814
+              },
+              "n": 60
+            },
+            "response_plan": {
+              "p50": {
+                "matched": 295.489445888,
+                "explicit": 411.018051584,
+                "delta": 115.528605696,
+                "delta_percent": 39.09737126103281
+              },
+              "p95": {
+                "matched": 328.88120688640004,
+                "explicit": 444.85912576000004,
+                "delta": 115.9779188736,
+                "delta_percent": 35.26438009991259
+              },
+              "mean": {
+                "matched": 296.0815131306667,
+                "explicit": 410.53776691200005,
+                "delta": 114.45625378133337,
+                "delta_percent": 38.65700785270627
+              },
+              "n": 60
+            }
+          }
+        }
+      },
+      "question_samples": [
+        {
+          "id": "mq-explicit-001",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 535,
+          "estimated_gflops": 419.612196864
+        },
+        {
+          "id": "mq-explicit-001",
+          "question_name": "record_auditability",
+          "candidate_count": 5,
+          "tokens_unpadded": 575,
+          "estimated_gflops": 450.375532544
+        },
+        {
+          "id": "mq-explicit-001",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 483,
+          "estimated_gflops": 379.508555776
+        },
+        {
+          "id": "mq-explicit-002",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 533,
+          "estimated_gflops": 417.98557696
+        },
+        {
+          "id": "mq-explicit-002",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 522,
+          "estimated_gflops": 409.831374848
+        },
+        {
+          "id": "mq-explicit-002",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 511,
+          "estimated_gflops": 400.929521664
+        },
+        {
+          "id": "mq-explicit-003",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 529,
+          "estimated_gflops": 414.733713408
+        },
+        {
+          "id": "mq-explicit-003",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 516,
+          "estimated_gflops": 404.948762624
+        },
+        {
+          "id": "mq-explicit-003",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 528,
+          "estimated_gflops": 413.642113024
+        },
+        {
+          "id": "mq-explicit-004",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 538,
+          "estimated_gflops": 422.05298688
+        },
+        {
+          "id": "mq-explicit-004",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 525,
+          "estimated_gflops": 412.274229248
+        },
+        {
+          "id": "mq-explicit-004",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 565,
+          "estimated_gflops": 442.37799424
+        },
+        {
+          "id": "mq-explicit-005",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 538,
+          "estimated_gflops": 421.963988992
+        },
+        {
+          "id": "mq-explicit-005",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 545,
+          "estimated_gflops": 427.46855424
+        },
+        {
+          "id": "mq-explicit-005",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 488,
+          "estimated_gflops": 383.387418624
+        },
+        {
+          "id": "mq-explicit-006",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 539,
+          "estimated_gflops": 422.866812928
+        },
+        {
+          "id": "mq-explicit-006",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 528,
+          "estimated_gflops": 414.71811584
+        },
+        {
+          "id": "mq-explicit-006",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 516,
+          "estimated_gflops": 405.042921472
+        },
+        {
+          "id": "mq-explicit-007",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 532,
+          "estimated_gflops": 417.084817408
+        },
+        {
+          "id": "mq-explicit-007",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 517,
+          "estimated_gflops": 405.762244608
+        },
+        {
+          "id": "mq-explicit-007",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 529,
+          "estimated_gflops": 414.454448128
+        },
+        {
+          "id": "mq-explicit-008",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 541,
+          "estimated_gflops": 424.494809088
+        },
+        {
+          "id": "mq-explicit-008",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 559,
+          "estimated_gflops": 438.439264256
+        },
+        {
+          "id": "mq-explicit-008",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 568,
+          "estimated_gflops": 444.818440192
+        },
+        {
+          "id": "mq-explicit-009",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 421.150507008
+        },
+        {
+          "id": "mq-explicit-009",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 544,
+          "estimated_gflops": 426.654384128
+        },
+        {
+          "id": "mq-explicit-009",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 485,
+          "estimated_gflops": 381.041360896
+        },
+        {
+          "id": "mq-explicit-010",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 536,
+          "estimated_gflops": 420.337139712
+        },
+        {
+          "id": "mq-explicit-010",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 521,
+          "estimated_gflops": 409.017319424
+        },
+        {
+          "id": "mq-explicit-010",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 511,
+          "estimated_gflops": 400.882843648
+        },
+        {
+          "id": "mq-explicit-011",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 421.23927552
+        },
+        {
+          "id": "mq-explicit-011",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 524,
+          "estimated_gflops": 411.45982976
+        },
+        {
+          "id": "mq-explicit-011",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 420.910579712
+        },
+        {
+          "id": "mq-explicit-012",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 535,
+          "estimated_gflops": 419.612196864
+        },
+        {
+          "id": "mq-explicit-012",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 522,
+          "estimated_gflops": 409.831374848
+        },
+        {
+          "id": "mq-explicit-012",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 562,
+          "estimated_gflops": 439.93858048
+        },
+        {
+          "id": "mq-explicit-013",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 533,
+          "estimated_gflops": 417.98557696
+        },
+        {
+          "id": "mq-explicit-013",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 542,
+          "estimated_gflops": 425.026387968
+        },
+        {
+          "id": "mq-explicit-013",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 483,
+          "estimated_gflops": 379.415887872
+        },
+        {
+          "id": "mq-explicit-014",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 418.798829568
+        },
+        {
+          "id": "mq-explicit-014",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 521,
+          "estimated_gflops": 409.017319424
+        },
+        {
+          "id": "mq-explicit-014",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 508,
+          "estimated_gflops": 398.583578624
+        },
+        {
+          "id": "mq-explicit-015",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.546507264
+        },
+        {
+          "id": "mq-explicit-015",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 550,
+          "estimated_gflops": 431.110701056
+        },
+        {
+          "id": "mq-explicit-015",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 535,
+          "estimated_gflops": 419.14507264
+        },
+        {
+          "id": "mq-explicit-016",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 551,
+          "estimated_gflops": 432.549691392
+        },
+        {
+          "id": "mq-explicit-016",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 536,
+          "estimated_gflops": 421.240193024
+        },
+        {
+          "id": "mq-explicit-016",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 576,
+          "estimated_gflops": 451.331342336
+        },
+        {
+          "id": "mq-explicit-017",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 531,
+          "estimated_gflops": 416.359415808
+        },
+        {
+          "id": "mq-explicit-017",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 540,
+          "estimated_gflops": 423.39885056
+        },
+        {
+          "id": "mq-explicit-017",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 478,
+          "estimated_gflops": 375.4913792
+        },
+        {
+          "id": "mq-explicit-018",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 531,
+          "estimated_gflops": 416.359415808
+        },
+        {
+          "id": "mq-explicit-018",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 518,
+          "estimated_gflops": 406.57584128
+        },
+        {
+          "id": "mq-explicit-018",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 506,
+          "estimated_gflops": 396.911771648
+        },
+        {
+          "id": "mq-explicit-019",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 421.150507008
+        },
+        {
+          "id": "mq-explicit-019",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 524,
+          "estimated_gflops": 411.45982976
+        },
+        {
+          "id": "mq-explicit-019",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 539,
+          "estimated_gflops": 422.443384832
+        },
+        {
+          "id": "mq-explicit-020",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 531,
+          "estimated_gflops": 416.359415808
+        },
+        {
+          "id": "mq-explicit-020",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 518,
+          "estimated_gflops": 406.57584128
+        },
+        {
+          "id": "mq-explicit-020",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 558,
+          "estimated_gflops": 436.687634432
+        },
+        {
+          "id": "mq-explicit-021",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 539,
+          "estimated_gflops": 422.866812928
+        },
+        {
+          "id": "mq-explicit-021",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 548,
+          "estimated_gflops": 429.911752704
+        },
+        {
+          "id": "mq-explicit-021",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 487,
+          "estimated_gflops": 382.761336832
+        },
+        {
+          "id": "mq-explicit-022",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.546507264
+        },
+        {
+          "id": "mq-explicit-022",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 548,
+          "estimated_gflops": 429.483393024
+        },
+        {
+          "id": "mq-explicit-022",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 506,
+          "estimated_gflops": 396.866125824
+        },
+        {
+          "id": "mq-explicit-023",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 421.23927552
+        },
+        {
+          "id": "mq-explicit-023",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 526,
+          "estimated_gflops": 413.088743424
+        },
+        {
+          "id": "mq-explicit-023",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 538,
+          "estimated_gflops": 421.770625024
+        },
+        {
+          "id": "mq-explicit-024",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.546507264
+        },
+        {
+          "id": "mq-explicit-024",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 517,
+          "estimated_gflops": 405.762244608
+        },
+        {
+          "id": "mq-explicit-024",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 557,
+          "estimated_gflops": 435.87518464
+        },
+        {
+          "id": "mq-explicit-025",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 536,
+          "estimated_gflops": 420.425678848
+        },
+        {
+          "id": "mq-explicit-025",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 545,
+          "estimated_gflops": 427.46855424
+        },
+        {
+          "id": "mq-explicit-025",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 488,
+          "estimated_gflops": 383.387418624
+        },
+        {
+          "id": "mq-explicit-026",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 542,
+          "estimated_gflops": 425.3089792
+        },
+        {
+          "id": "mq-explicit-026",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 529,
+          "estimated_gflops": 415.53297408
+        },
+        {
+          "id": "mq-explicit-026",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 517,
+          "estimated_gflops": 405.856632832
+        },
+        {
+          "id": "mq-explicit-027",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.546507264
+        },
+        {
+          "id": "mq-explicit-027",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 519,
+          "estimated_gflops": 407.38955264
+        },
+        {
+          "id": "mq-explicit-027",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 418.378842112
+        },
+        {
+          "id": "mq-explicit-028",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 532,
+          "estimated_gflops": 417.17243904
+        },
+        {
+          "id": "mq-explicit-028",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 519,
+          "estimated_gflops": 407.38955264
+        },
+        {
+          "id": "mq-explicit-028",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 559,
+          "estimated_gflops": 437.500198912
+        },
+        {
+          "id": "mq-explicit-029",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 540,
+          "estimated_gflops": 423.680753664
+        },
+        {
+          "id": "mq-explicit-029",
+          "question_name": "record_auditability",
+          "candidate_count": 5,
+          "tokens_unpadded": 580,
+          "estimated_gflops": 454.447529984
+        },
+        {
+          "id": "mq-explicit-029",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 490,
+          "estimated_gflops": 385.107623936
+        },
+        {
+          "id": "mq-explicit-030",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 548,
+          "estimated_gflops": 430.014513152
+        },
+        {
+          "id": "mq-explicit-030",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 531,
+          "estimated_gflops": 417.163034624
+        },
+        {
+          "id": "mq-explicit-030",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 518,
+          "estimated_gflops": 406.7180544
+        },
+        {
+          "id": "mq-explicit-031",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 545,
+          "estimated_gflops": 427.661574144
+        },
+        {
+          "id": "mq-explicit-031",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 532,
+          "estimated_gflops": 417.978236928
+        },
+        {
+          "id": "mq-explicit-031",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 545,
+          "estimated_gflops": 427.41981184
+        },
+        {
+          "id": "mq-explicit-032",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 532,
+          "estimated_gflops": 417.17243904
+        },
+        {
+          "id": "mq-explicit-032",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 519,
+          "estimated_gflops": 407.38955264
+        },
+        {
+          "id": "mq-explicit-032",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 559,
+          "estimated_gflops": 437.500198912
+        },
+        {
+          "id": "mq-explicit-033",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 539,
+          "estimated_gflops": 422.866812928
+        },
+        {
+          "id": "mq-explicit-033",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 548,
+          "estimated_gflops": 429.911752704
+        },
+        {
+          "id": "mq-explicit-033",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 487,
+          "estimated_gflops": 382.761336832
+        },
+        {
+          "id": "mq-explicit-034",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 533,
+          "estimated_gflops": 417.98557696
+        },
+        {
+          "id": "mq-explicit-034",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 520,
+          "estimated_gflops": 408.203378688
+        },
+        {
+          "id": "mq-explicit-034",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 507,
+          "estimated_gflops": 397.770784768
+        },
+        {
+          "id": "mq-explicit-035",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 538,
+          "estimated_gflops": 421.963988992
+        },
+        {
+          "id": "mq-explicit-035",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 523,
+          "estimated_gflops": 410.64554496
+        },
+        {
+          "id": "mq-explicit-035",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 536,
+          "estimated_gflops": 420.097441792
+        },
+        {
+          "id": "mq-explicit-036",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 544,
+          "estimated_gflops": 426.847289344
+        },
+        {
+          "id": "mq-explicit-036",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 560,
+          "estimated_gflops": 439.254122496
+        },
+        {
+          "id": "mq-explicit-036",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 569,
+          "estimated_gflops": 445.632151552
+        },
+        {
+          "id": "mq-explicit-037",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 418.798829568
+        },
+        {
+          "id": "mq-explicit-037",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 543,
+          "estimated_gflops": 425.840328704
+        },
+        {
+          "id": "mq-explicit-037",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 482,
+          "estimated_gflops": 378.695876608
+        },
+        {
+          "id": "mq-explicit-038",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 551,
+          "estimated_gflops": 432.458399744
+        },
+        {
+          "id": "mq-explicit-038",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 419.6089856
+        },
+        {
+          "id": "mq-explicit-038",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 520,
+          "estimated_gflops": 408.393990144
+        },
+        {
+          "id": "mq-explicit-039",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 529,
+          "estimated_gflops": 414.733713408
+        },
+        {
+          "id": "mq-explicit-039",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 516,
+          "estimated_gflops": 404.948762624
+        },
+        {
+          "id": "mq-explicit-039",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.17514752
+        },
+        {
+          "id": "mq-explicit-040",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 532,
+          "estimated_gflops": 417.17243904
+        },
+        {
+          "id": "mq-explicit-040",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 521,
+          "estimated_gflops": 409.017319424
+        },
+        {
+          "id": "mq-explicit-040",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 561,
+          "estimated_gflops": 439.125671936
+        },
+        {
+          "id": "mq-explicit-041",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 544,
+          "estimated_gflops": 426.937663488
+        },
+        {
+          "id": "mq-explicit-041",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 553,
+          "estimated_gflops": 433.986043904
+        },
+        {
+          "id": "mq-explicit-041",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 494,
+          "estimated_gflops": 388.362698752
+        },
+        {
+          "id": "mq-explicit-042",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.546507264
+        },
+        {
+          "id": "mq-explicit-042",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 517,
+          "estimated_gflops": 405.762244608
+        },
+        {
+          "id": "mq-explicit-042",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 502,
+          "estimated_gflops": 393.800286208
+        },
+        {
+          "id": "mq-explicit-043",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.546507264
+        },
+        {
+          "id": "mq-explicit-043",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 548,
+          "estimated_gflops": 429.483393024
+        },
+        {
+          "id": "mq-explicit-043",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.22102272
+        },
+        {
+          "id": "mq-explicit-044",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 418.798829568
+        },
+        {
+          "id": "mq-explicit-044",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 523,
+          "estimated_gflops": 410.64554496
+        },
+        {
+          "id": "mq-explicit-044",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 563,
+          "estimated_gflops": 440.751603712
+        },
+        {
+          "id": "mq-explicit-045",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 540,
+          "estimated_gflops": 423.502528512
+        },
+        {
+          "id": "mq-explicit-045",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 545,
+          "estimated_gflops": 427.46855424
+        },
+        {
+          "id": "mq-explicit-045",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 486,
+          "estimated_gflops": 381.854613504
+        },
+        {
+          "id": "mq-explicit-046",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 540,
+          "estimated_gflops": 423.680753664
+        },
+        {
+          "id": "mq-explicit-046",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 527,
+          "estimated_gflops": 413.903372288
+        },
+        {
+          "id": "mq-explicit-046",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 515,
+          "estimated_gflops": 404.228980736
+        },
+        {
+          "id": "mq-explicit-047",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 535,
+          "estimated_gflops": 419.523887104
+        },
+        {
+          "id": "mq-explicit-047",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 520,
+          "estimated_gflops": 408.203378688
+        },
+        {
+          "id": "mq-explicit-047",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 418.425176064
+        },
+        {
+          "id": "mq-explicit-048",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 533,
+          "estimated_gflops": 417.98557696
+        },
+        {
+          "id": "mq-explicit-048",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 522,
+          "estimated_gflops": 409.831374848
+        },
+        {
+          "id": "mq-explicit-048",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 562,
+          "estimated_gflops": 439.93858048
+        },
+        {
+          "id": "mq-explicit-049",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 527,
+          "estimated_gflops": 413.10846976
+        },
+        {
+          "id": "mq-explicit-049",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 536,
+          "estimated_gflops": 420.145152
+        },
+        {
+          "id": "mq-explicit-049",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 475,
+          "estimated_gflops": 373.008728064
+        },
+        {
+          "id": "mq-explicit-050",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 539,
+          "estimated_gflops": 422.866812928
+        },
+        {
+          "id": "mq-explicit-050",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 557,
+          "estimated_gflops": 436.80989184
+        },
+        {
+          "id": "mq-explicit-050",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 516,
+          "estimated_gflops": 404.948533248
+        },
+        {
+          "id": "mq-explicit-051",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 421.23927552
+        },
+        {
+          "id": "mq-explicit-051",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 524,
+          "estimated_gflops": 411.45982976
+        },
+        {
+          "id": "mq-explicit-051",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 420.910579712
+        },
+        {
+          "id": "mq-explicit-052",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 532,
+          "estimated_gflops": 417.17243904
+        },
+        {
+          "id": "mq-explicit-052",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 521,
+          "estimated_gflops": 409.017319424
+        },
+        {
+          "id": "mq-explicit-052",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 561,
+          "estimated_gflops": 439.125671936
+        },
+        {
+          "id": "mq-explicit-053",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 535,
+          "estimated_gflops": 419.612196864
+        },
+        {
+          "id": "mq-explicit-053",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 544,
+          "estimated_gflops": 426.654384128
+        },
+        {
+          "id": "mq-explicit-053",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 483,
+          "estimated_gflops": 379.508555776
+        },
+        {
+          "id": "mq-explicit-054",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 421.23927552
+        },
+        {
+          "id": "mq-explicit-054",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 524,
+          "estimated_gflops": 411.45982976
+        },
+        {
+          "id": "mq-explicit-054",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 510,
+          "estimated_gflops": 400.256303104
+        },
+        {
+          "id": "mq-explicit-055",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 538,
+          "estimated_gflops": 421.963988992
+        },
+        {
+          "id": "mq-explicit-055",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 523,
+          "estimated_gflops": 410.64554496
+        },
+        {
+          "id": "mq-explicit-055",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 538,
+          "estimated_gflops": 421.630246912
+        },
+        {
+          "id": "mq-explicit-056",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 549,
+          "estimated_gflops": 430.919860224
+        },
+        {
+          "id": "mq-explicit-056",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 536,
+          "estimated_gflops": 421.240193024
+        },
+        {
+          "id": "mq-explicit-056",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 576,
+          "estimated_gflops": 451.331342336
+        },
+        {
+          "id": "mq-explicit-057",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 524,
+          "estimated_gflops": 410.671464448
+        },
+        {
+          "id": "mq-explicit-057",
+          "question_name": "record_auditability",
+          "candidate_count": 5,
+          "tokens_unpadded": 564,
+          "estimated_gflops": 441.42723072
+        },
+        {
+          "id": "mq-explicit-057",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 472,
+          "estimated_gflops": 370.573099008
+        },
+        {
+          "id": "mq-explicit-058",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 539,
+          "estimated_gflops": 422.866812928
+        },
+        {
+          "id": "mq-explicit-058",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 526,
+          "estimated_gflops": 413.088743424
+        },
+        {
+          "id": "mq-explicit-058",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 512,
+          "estimated_gflops": 401.882923008
+        },
+        {
+          "id": "mq-explicit-059",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 418.798829568
+        },
+        {
+          "id": "mq-explicit-059",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 521,
+          "estimated_gflops": 409.017319424
+        },
+        {
+          "id": "mq-explicit-059",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 533,
+          "estimated_gflops": 417.704935424
+        },
+        {
+          "id": "mq-explicit-060",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 529,
+          "estimated_gflops": 414.733713408
+        },
+        {
+          "id": "mq-explicit-060",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 516,
+          "estimated_gflops": 404.948762624
+        },
+        {
+          "id": "mq-explicit-060",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 556,
+          "estimated_gflops": 435.062849536
+        }
+      ],
+      "case_samples": [
+        {
+          "id": "mq-explicit-001",
+          "tokens_unpadded": 1593,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1249.496285184
+        },
+        {
+          "id": "mq-explicit-002",
+          "tokens_unpadded": 1566,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1228.746473472
+        },
+        {
+          "id": "mq-explicit-003",
+          "tokens_unpadded": 1573,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1233.324589056
+        },
+        {
+          "id": "mq-explicit-004",
+          "tokens_unpadded": 1628,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1276.705210368
+        },
+        {
+          "id": "mq-explicit-005",
+          "tokens_unpadded": 1571,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1232.819961856
+        },
+        {
+          "id": "mq-explicit-006",
+          "tokens_unpadded": 1583,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1242.62785024
+        },
+        {
+          "id": "mq-explicit-007",
+          "tokens_unpadded": 1578,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1237.301510144
+        },
+        {
+          "id": "mq-explicit-008",
+          "tokens_unpadded": 1668,
+          "embedding_text_count": 14,
+          "estimated_gflops": 1307.752513536
+        },
+        {
+          "id": "mq-explicit-009",
+          "tokens_unpadded": 1566,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1228.846252032
+        },
+        {
+          "id": "mq-explicit-010",
+          "tokens_unpadded": 1568,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1230.237302784
+        },
+        {
+          "id": "mq-explicit-011",
+          "tokens_unpadded": 1598,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1253.609684992
+        },
+        {
+          "id": "mq-explicit-012",
+          "tokens_unpadded": 1619,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1269.382152192
+        },
+        {
+          "id": "mq-explicit-013",
+          "tokens_unpadded": 1558,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1222.4278528
+        },
+        {
+          "id": "mq-explicit-014",
+          "tokens_unpadded": 1563,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1226.399727616
+        },
+        {
+          "id": "mq-explicit-015",
+          "tokens_unpadded": 1615,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1265.80228096
+        },
+        {
+          "id": "mq-explicit-016",
+          "tokens_unpadded": 1663,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1305.121226752
+        },
+        {
+          "id": "mq-explicit-017",
+          "tokens_unpadded": 1549,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1215.249645568
+        },
+        {
+          "id": "mq-explicit-018",
+          "tokens_unpadded": 1555,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1219.847028736
+        },
+        {
+          "id": "mq-explicit-019",
+          "tokens_unpadded": 1600,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1255.0537216
+        },
+        {
+          "id": "mq-explicit-020",
+          "tokens_unpadded": 1607,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1259.62289152
+        },
+        {
+          "id": "mq-explicit-021",
+          "tokens_unpadded": 1574,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1235.539902464
+        },
+        {
+          "id": "mq-explicit-022",
+          "tokens_unpadded": 1584,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1241.896026112
+        },
+        {
+          "id": "mq-explicit-023",
+          "tokens_unpadded": 1601,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1256.098643968
+        },
+        {
+          "id": "mq-explicit-024",
+          "tokens_unpadded": 1604,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1257.183936512
+        },
+        {
+          "id": "mq-explicit-025",
+          "tokens_unpadded": 1569,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1231.281651712
+        },
+        {
+          "id": "mq-explicit-026",
+          "tokens_unpadded": 1588,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1246.698586112
+        },
+        {
+          "id": "mq-explicit-027",
+          "tokens_unpadded": 1583,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1241.314902016
+        },
+        {
+          "id": "mq-explicit-028",
+          "tokens_unpadded": 1610,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1262.062190592
+        },
+        {
+          "id": "mq-explicit-029",
+          "tokens_unpadded": 1610,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1263.235907584
+        },
+        {
+          "id": "mq-explicit-030",
+          "tokens_unpadded": 1597,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1253.895602176
+        },
+        {
+          "id": "mq-explicit-031",
+          "tokens_unpadded": 1622,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1273.059622912
+        },
+        {
+          "id": "mq-explicit-032",
+          "tokens_unpadded": 1610,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1262.062190592
+        },
+        {
+          "id": "mq-explicit-033",
+          "tokens_unpadded": 1574,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1235.539902464
+        },
+        {
+          "id": "mq-explicit-034",
+          "tokens_unpadded": 1560,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1223.959740416
+        },
+        {
+          "id": "mq-explicit-035",
+          "tokens_unpadded": 1597,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1252.706975744
+        },
+        {
+          "id": "mq-explicit-036",
+          "tokens_unpadded": 1673,
+          "embedding_text_count": 14,
+          "estimated_gflops": 1311.733563392
+        },
+        {
+          "id": "mq-explicit-037",
+          "tokens_unpadded": 1559,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1223.33503488
+        },
+        {
+          "id": "mq-explicit-038",
+          "tokens_unpadded": 1605,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1260.461375488
+        },
+        {
+          "id": "mq-explicit-039",
+          "tokens_unpadded": 1575,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1234.857623552
+        },
+        {
+          "id": "mq-explicit-040",
+          "tokens_unpadded": 1614,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1265.3154304
+        },
+        {
+          "id": "mq-explicit-041",
+          "tokens_unpadded": 1591,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1249.286406144
+        },
+        {
+          "id": "mq-explicit-042",
+          "tokens_unpadded": 1549,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1215.10903808
+        },
+        {
+          "id": "mq-explicit-043",
+          "tokens_unpadded": 1608,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1260.250923008
+        },
+        {
+          "id": "mq-explicit-044",
+          "tokens_unpadded": 1620,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1270.19597824
+        },
+        {
+          "id": "mq-explicit-045",
+          "tokens_unpadded": 1571,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1232.825696256
+        },
+        {
+          "id": "mq-explicit-046",
+          "tokens_unpadded": 1582,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1241.813106688
+        },
+        {
+          "id": "mq-explicit-047",
+          "tokens_unpadded": 1589,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1246.152441856
+        },
+        {
+          "id": "mq-explicit-048",
+          "tokens_unpadded": 1617,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1267.755532288
+        },
+        {
+          "id": "mq-explicit-049",
+          "tokens_unpadded": 1538,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1206.262349824
+        },
+        {
+          "id": "mq-explicit-050",
+          "tokens_unpadded": 1612,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1264.625238016
+        },
+        {
+          "id": "mq-explicit-051",
+          "tokens_unpadded": 1598,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1253.609684992
+        },
+        {
+          "id": "mq-explicit-052",
+          "tokens_unpadded": 1614,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1265.3154304
+        },
+        {
+          "id": "mq-explicit-053",
+          "tokens_unpadded": 1562,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1225.775136768
+        },
+        {
+          "id": "mq-explicit-054",
+          "tokens_unpadded": 1571,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1232.955408384
+        },
+        {
+          "id": "mq-explicit-055",
+          "tokens_unpadded": 1599,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1254.239780864
+        },
+        {
+          "id": "mq-explicit-056",
+          "tokens_unpadded": 1661,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1303.491395584
+        },
+        {
+          "id": "mq-explicit-057",
+          "tokens_unpadded": 1560,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1222.671794176
+        },
+        {
+          "id": "mq-explicit-058",
+          "tokens_unpadded": 1577,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1237.83847936
+        },
+        {
+          "id": "mq-explicit-059",
+          "tokens_unpadded": 1588,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1245.521084416
+        },
+        {
+          "id": "mq-explicit-060",
+          "tokens_unpadded": 1601,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1254.745325568
+        }
+      ]
+    },
+    "harrier": {
+      "model": "microsoft/harrier-oss-v1-0.6b",
+      "timing_token_source": "results/probes/varied/explicit/metal/runs/harrier/predictions.jsonl.timings.jsonl",
+      "timing_source_sha256": "cbe49423bb10c058906ca6b13abe619c81adc73cc93c726e1b720ed9aa82d002",
+      "feature_manifest": "results/probes/varied/explicit/runs/harrier/explicit.features.jsonl.manifest.json",
+      "feature_manifest_sha256": "4c8cdc6449c2503d4ead4bafb4a1faddcb8e2e8fea89eb9cbdfaa656d682d459",
+      "manifest_identity": {
+        "backend": "MLX/Metal",
+        "input_sha256": "4cb002e1c29f5273ecc23fcdf742b093cb5433d661f5df0b50d209a534fb1409",
+        "profile_version": "2",
+        "profile_sha256": "96ec8ee07b71d1e34a006f0f5ba8c4d42df77d9808d54b4d4beb8ce7b7112c4e",
+        "text_version": "decengine-varied-pair-text-v2-generic-types",
+        "embedding_dimensions": 1024,
+        "normalization": "L2",
+        "tokenizer_sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a"
+      },
+      "architecture_config_path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/decengine-model-store/models/microsoft--harrier-oss-v1-0.6b/config.json",
+      "architecture_config_sha256": "eb15983a1c7f53ecf3d3f1880e676a56967650b0c3c4ed2387c3851133f2d7ef",
+      "architecture": {
+        "model_type": "qwen3",
+        "hidden_size": 1024,
+        "intermediate_size": 3072,
+        "num_hidden_layers": 28,
+        "num_attention_heads": 16,
+        "num_key_value_heads": 8,
+        "head_dim": 128,
+        "layer_types": [
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention",
+          "full_attention"
+        ]
+      },
+      "compute_formula": "same as ../matched/compute-speed.json: per unpadded query/candidate string n, L*[n*(4H^2+4H*Hkv+6H*I) + 4H*n(n+1)/2], 1 MAC=2 FLOPs; sums all query/candidate strings per question/case.",
+      "metrics": {
+        "n_question_rows": 180,
+        "n_cases": 60,
+        "n_queries": 180,
+        "n_candidates": 534,
+        "n_embedding_texts": 714,
+        "query_tokens_total": 78705,
+        "candidate_tokens_total": 16833,
+        "all_tokens_total": 95538,
+        "mean_query_tokens": 437.25,
+        "mean_candidate_tokens": 31.52247191011236,
+        "query_token_p50_p95": [
+          437.0,
+          448.04999999999995
+        ],
+        "candidate_token_p50_p95": [
+          27.0,
+          51.0
+        ],
+        "candidate_count_per_question": {
+          "2": 75,
+          "3": 54,
+          "4": 33,
+          "5": 18
+        },
+        "question_gflops": {
+          "n": 180,
+          "unit": "GFLOPs/question",
+          "mean": 416.35029556337776,
+          "p50": 417.981906944,
+          "p95": 439.9792316416
+        },
+        "case_gflops": {
+          "n": 60,
+          "unit": "GFLOPs/case",
+          "mean": 1249.0508866901332,
+          "p50": 1247.9924961279999,
+          "p95": 1303.5728871424
+        },
+        "total_gflops_all_cases": 74943.053201408,
+        "per_question_name": {
+          "immediate_intervention": {
+            "n": 60,
+            "unit": "GFLOPs/question",
+            "mean": 420.3327968597334,
+            "p50": 419.612196864,
+            "p95": 430.05978050560003
+          },
+          "record_auditability": {
+            "n": 60,
+            "unit": "GFLOPs/question",
+            "mean": 418.1803229184,
+            "p50": 413.088743424,
+            "p95": 439.3627779072
+          },
+          "response_plan": {
+            "n": 60,
+            "unit": "GFLOPs/question",
+            "mean": 410.53776691200005,
+            "p50": 411.018051584,
+            "p95": 444.85912576000004
+          }
+        },
+        "delta_vs_matched": {
+          "question_gflops": {
+            "mean": {
+              "matched": 301.8201151715555,
+              "explicit": 416.35029556337776,
+              "delta": 114.53018039182223,
+              "delta_percent": 37.94650344186732
+            },
+            "p50": {
+              "matched": 303.53727488,
+              "explicit": 417.981906944,
+              "delta": 114.44463206400002,
+              "delta_percent": 37.70365010664486
+            },
+            "p95": {
+              "matched": 326.4902889472,
+              "explicit": 439.9792316416,
+              "delta": 113.48894269440001,
+              "delta_percent": 34.76028125073988
+            }
+          },
+          "case_gflops": {
+            "mean": {
+              "matched": 905.4603455146666,
+              "explicit": 1249.0508866901332,
+              "delta": 343.59054117546657,
+              "delta_percent": 37.94650344186731
+            },
+            "p50": {
+              "matched": 904.710955008,
+              "explicit": 1247.9924961279999,
+              "delta": 343.2815411199998,
+              "delta_percent": 37.94378074232165
+            },
+            "p95": {
+              "matched": 945.4556561408001,
+              "explicit": 1303.5728871424,
+              "delta": 358.1172310016,
+              "delta_percent": 37.877739550829666
+            }
+          },
+          "tokens": {
+            "matched_total_tokens": 69942,
+            "explicit_total_tokens": 95538,
+            "delta_tokens": 25596,
+            "delta_percent": 36.596036716136226,
+            "matched_query_tokens": 53109,
+            "explicit_query_tokens": 78705,
+            "matched_candidate_tokens": 16833,
+            "explicit_candidate_tokens": 16833
+          },
+          "by_question_name": {
+            "immediate_intervention": {
+              "p50": {
+                "matched": 305.2621824,
+                "explicit": 419.612196864,
+                "delta": 114.35001446400003,
+                "delta_percent": 37.459607202231695
+              },
+              "p95": {
+                "matched": 311.7198794752,
+                "explicit": 430.05978050560003,
+                "delta": 118.33990103040003,
+                "delta_percent": 37.963539967240045
+              },
+              "mean": {
+                "matched": 305.8178495829334,
+                "explicit": 420.3327968597334,
+                "delta": 114.5149472768,
+                "delta_percent": 37.44547528307211
+              },
+              "n": 60
+            },
+            "record_auditability": {
+              "p50": {
+                "matched": 298.975043584,
+                "explicit": 413.088743424,
+                "delta": 114.11369983999998,
+                "delta_percent": 38.168302769370975
+              },
+              "p95": {
+                "matched": 324.136730624,
+                "explicit": 439.3627779072,
+                "delta": 115.22604728319999,
+                "delta_percent": 35.548593046328556
+              },
+              "mean": {
+                "matched": 303.5609828010667,
+                "explicit": 418.1803229184,
+                "delta": 114.61934011733331,
+                "delta_percent": 37.75825834390814
+              },
+              "n": 60
+            },
+            "response_plan": {
+              "p50": {
+                "matched": 295.489445888,
+                "explicit": 411.018051584,
+                "delta": 115.528605696,
+                "delta_percent": 39.09737126103281
+              },
+              "p95": {
+                "matched": 328.88120688640004,
+                "explicit": 444.85912576000004,
+                "delta": 115.9779188736,
+                "delta_percent": 35.26438009991259
+              },
+              "mean": {
+                "matched": 296.0815131306667,
+                "explicit": 410.53776691200005,
+                "delta": 114.45625378133337,
+                "delta_percent": 38.65700785270627
+              },
+              "n": 60
+            }
+          }
+        }
+      },
+      "question_samples": [
+        {
+          "id": "mq-explicit-001",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 535,
+          "estimated_gflops": 419.612196864
+        },
+        {
+          "id": "mq-explicit-001",
+          "question_name": "record_auditability",
+          "candidate_count": 5,
+          "tokens_unpadded": 575,
+          "estimated_gflops": 450.375532544
+        },
+        {
+          "id": "mq-explicit-001",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 483,
+          "estimated_gflops": 379.508555776
+        },
+        {
+          "id": "mq-explicit-002",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 533,
+          "estimated_gflops": 417.98557696
+        },
+        {
+          "id": "mq-explicit-002",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 522,
+          "estimated_gflops": 409.831374848
+        },
+        {
+          "id": "mq-explicit-002",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 511,
+          "estimated_gflops": 400.929521664
+        },
+        {
+          "id": "mq-explicit-003",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 529,
+          "estimated_gflops": 414.733713408
+        },
+        {
+          "id": "mq-explicit-003",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 516,
+          "estimated_gflops": 404.948762624
+        },
+        {
+          "id": "mq-explicit-003",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 528,
+          "estimated_gflops": 413.642113024
+        },
+        {
+          "id": "mq-explicit-004",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 538,
+          "estimated_gflops": 422.05298688
+        },
+        {
+          "id": "mq-explicit-004",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 525,
+          "estimated_gflops": 412.274229248
+        },
+        {
+          "id": "mq-explicit-004",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 565,
+          "estimated_gflops": 442.37799424
+        },
+        {
+          "id": "mq-explicit-005",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 538,
+          "estimated_gflops": 421.963988992
+        },
+        {
+          "id": "mq-explicit-005",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 545,
+          "estimated_gflops": 427.46855424
+        },
+        {
+          "id": "mq-explicit-005",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 488,
+          "estimated_gflops": 383.387418624
+        },
+        {
+          "id": "mq-explicit-006",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 539,
+          "estimated_gflops": 422.866812928
+        },
+        {
+          "id": "mq-explicit-006",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 528,
+          "estimated_gflops": 414.71811584
+        },
+        {
+          "id": "mq-explicit-006",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 516,
+          "estimated_gflops": 405.042921472
+        },
+        {
+          "id": "mq-explicit-007",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 532,
+          "estimated_gflops": 417.084817408
+        },
+        {
+          "id": "mq-explicit-007",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 517,
+          "estimated_gflops": 405.762244608
+        },
+        {
+          "id": "mq-explicit-007",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 529,
+          "estimated_gflops": 414.454448128
+        },
+        {
+          "id": "mq-explicit-008",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 541,
+          "estimated_gflops": 424.494809088
+        },
+        {
+          "id": "mq-explicit-008",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 559,
+          "estimated_gflops": 438.439264256
+        },
+        {
+          "id": "mq-explicit-008",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 568,
+          "estimated_gflops": 444.818440192
+        },
+        {
+          "id": "mq-explicit-009",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 421.150507008
+        },
+        {
+          "id": "mq-explicit-009",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 544,
+          "estimated_gflops": 426.654384128
+        },
+        {
+          "id": "mq-explicit-009",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 485,
+          "estimated_gflops": 381.041360896
+        },
+        {
+          "id": "mq-explicit-010",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 536,
+          "estimated_gflops": 420.337139712
+        },
+        {
+          "id": "mq-explicit-010",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 521,
+          "estimated_gflops": 409.017319424
+        },
+        {
+          "id": "mq-explicit-010",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 511,
+          "estimated_gflops": 400.882843648
+        },
+        {
+          "id": "mq-explicit-011",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 421.23927552
+        },
+        {
+          "id": "mq-explicit-011",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 524,
+          "estimated_gflops": 411.45982976
+        },
+        {
+          "id": "mq-explicit-011",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 420.910579712
+        },
+        {
+          "id": "mq-explicit-012",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 535,
+          "estimated_gflops": 419.612196864
+        },
+        {
+          "id": "mq-explicit-012",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 522,
+          "estimated_gflops": 409.831374848
+        },
+        {
+          "id": "mq-explicit-012",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 562,
+          "estimated_gflops": 439.93858048
+        },
+        {
+          "id": "mq-explicit-013",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 533,
+          "estimated_gflops": 417.98557696
+        },
+        {
+          "id": "mq-explicit-013",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 542,
+          "estimated_gflops": 425.026387968
+        },
+        {
+          "id": "mq-explicit-013",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 483,
+          "estimated_gflops": 379.415887872
+        },
+        {
+          "id": "mq-explicit-014",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 418.798829568
+        },
+        {
+          "id": "mq-explicit-014",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 521,
+          "estimated_gflops": 409.017319424
+        },
+        {
+          "id": "mq-explicit-014",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 508,
+          "estimated_gflops": 398.583578624
+        },
+        {
+          "id": "mq-explicit-015",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.546507264
+        },
+        {
+          "id": "mq-explicit-015",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 550,
+          "estimated_gflops": 431.110701056
+        },
+        {
+          "id": "mq-explicit-015",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 535,
+          "estimated_gflops": 419.14507264
+        },
+        {
+          "id": "mq-explicit-016",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 551,
+          "estimated_gflops": 432.549691392
+        },
+        {
+          "id": "mq-explicit-016",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 536,
+          "estimated_gflops": 421.240193024
+        },
+        {
+          "id": "mq-explicit-016",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 576,
+          "estimated_gflops": 451.331342336
+        },
+        {
+          "id": "mq-explicit-017",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 531,
+          "estimated_gflops": 416.359415808
+        },
+        {
+          "id": "mq-explicit-017",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 540,
+          "estimated_gflops": 423.39885056
+        },
+        {
+          "id": "mq-explicit-017",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 478,
+          "estimated_gflops": 375.4913792
+        },
+        {
+          "id": "mq-explicit-018",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 531,
+          "estimated_gflops": 416.359415808
+        },
+        {
+          "id": "mq-explicit-018",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 518,
+          "estimated_gflops": 406.57584128
+        },
+        {
+          "id": "mq-explicit-018",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 506,
+          "estimated_gflops": 396.911771648
+        },
+        {
+          "id": "mq-explicit-019",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 421.150507008
+        },
+        {
+          "id": "mq-explicit-019",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 524,
+          "estimated_gflops": 411.45982976
+        },
+        {
+          "id": "mq-explicit-019",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 539,
+          "estimated_gflops": 422.443384832
+        },
+        {
+          "id": "mq-explicit-020",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 531,
+          "estimated_gflops": 416.359415808
+        },
+        {
+          "id": "mq-explicit-020",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 518,
+          "estimated_gflops": 406.57584128
+        },
+        {
+          "id": "mq-explicit-020",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 558,
+          "estimated_gflops": 436.687634432
+        },
+        {
+          "id": "mq-explicit-021",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 539,
+          "estimated_gflops": 422.866812928
+        },
+        {
+          "id": "mq-explicit-021",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 548,
+          "estimated_gflops": 429.911752704
+        },
+        {
+          "id": "mq-explicit-021",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 487,
+          "estimated_gflops": 382.761336832
+        },
+        {
+          "id": "mq-explicit-022",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.546507264
+        },
+        {
+          "id": "mq-explicit-022",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 548,
+          "estimated_gflops": 429.483393024
+        },
+        {
+          "id": "mq-explicit-022",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 506,
+          "estimated_gflops": 396.866125824
+        },
+        {
+          "id": "mq-explicit-023",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 421.23927552
+        },
+        {
+          "id": "mq-explicit-023",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 526,
+          "estimated_gflops": 413.088743424
+        },
+        {
+          "id": "mq-explicit-023",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 538,
+          "estimated_gflops": 421.770625024
+        },
+        {
+          "id": "mq-explicit-024",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.546507264
+        },
+        {
+          "id": "mq-explicit-024",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 517,
+          "estimated_gflops": 405.762244608
+        },
+        {
+          "id": "mq-explicit-024",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 557,
+          "estimated_gflops": 435.87518464
+        },
+        {
+          "id": "mq-explicit-025",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 536,
+          "estimated_gflops": 420.425678848
+        },
+        {
+          "id": "mq-explicit-025",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 545,
+          "estimated_gflops": 427.46855424
+        },
+        {
+          "id": "mq-explicit-025",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 488,
+          "estimated_gflops": 383.387418624
+        },
+        {
+          "id": "mq-explicit-026",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 542,
+          "estimated_gflops": 425.3089792
+        },
+        {
+          "id": "mq-explicit-026",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 529,
+          "estimated_gflops": 415.53297408
+        },
+        {
+          "id": "mq-explicit-026",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 517,
+          "estimated_gflops": 405.856632832
+        },
+        {
+          "id": "mq-explicit-027",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.546507264
+        },
+        {
+          "id": "mq-explicit-027",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 519,
+          "estimated_gflops": 407.38955264
+        },
+        {
+          "id": "mq-explicit-027",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 418.378842112
+        },
+        {
+          "id": "mq-explicit-028",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 532,
+          "estimated_gflops": 417.17243904
+        },
+        {
+          "id": "mq-explicit-028",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 519,
+          "estimated_gflops": 407.38955264
+        },
+        {
+          "id": "mq-explicit-028",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 559,
+          "estimated_gflops": 437.500198912
+        },
+        {
+          "id": "mq-explicit-029",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 540,
+          "estimated_gflops": 423.680753664
+        },
+        {
+          "id": "mq-explicit-029",
+          "question_name": "record_auditability",
+          "candidate_count": 5,
+          "tokens_unpadded": 580,
+          "estimated_gflops": 454.447529984
+        },
+        {
+          "id": "mq-explicit-029",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 490,
+          "estimated_gflops": 385.107623936
+        },
+        {
+          "id": "mq-explicit-030",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 548,
+          "estimated_gflops": 430.014513152
+        },
+        {
+          "id": "mq-explicit-030",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 531,
+          "estimated_gflops": 417.163034624
+        },
+        {
+          "id": "mq-explicit-030",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 518,
+          "estimated_gflops": 406.7180544
+        },
+        {
+          "id": "mq-explicit-031",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 545,
+          "estimated_gflops": 427.661574144
+        },
+        {
+          "id": "mq-explicit-031",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 532,
+          "estimated_gflops": 417.978236928
+        },
+        {
+          "id": "mq-explicit-031",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 545,
+          "estimated_gflops": 427.41981184
+        },
+        {
+          "id": "mq-explicit-032",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 532,
+          "estimated_gflops": 417.17243904
+        },
+        {
+          "id": "mq-explicit-032",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 519,
+          "estimated_gflops": 407.38955264
+        },
+        {
+          "id": "mq-explicit-032",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 559,
+          "estimated_gflops": 437.500198912
+        },
+        {
+          "id": "mq-explicit-033",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 539,
+          "estimated_gflops": 422.866812928
+        },
+        {
+          "id": "mq-explicit-033",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 548,
+          "estimated_gflops": 429.911752704
+        },
+        {
+          "id": "mq-explicit-033",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 487,
+          "estimated_gflops": 382.761336832
+        },
+        {
+          "id": "mq-explicit-034",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 533,
+          "estimated_gflops": 417.98557696
+        },
+        {
+          "id": "mq-explicit-034",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 520,
+          "estimated_gflops": 408.203378688
+        },
+        {
+          "id": "mq-explicit-034",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 507,
+          "estimated_gflops": 397.770784768
+        },
+        {
+          "id": "mq-explicit-035",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 538,
+          "estimated_gflops": 421.963988992
+        },
+        {
+          "id": "mq-explicit-035",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 523,
+          "estimated_gflops": 410.64554496
+        },
+        {
+          "id": "mq-explicit-035",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 536,
+          "estimated_gflops": 420.097441792
+        },
+        {
+          "id": "mq-explicit-036",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 544,
+          "estimated_gflops": 426.847289344
+        },
+        {
+          "id": "mq-explicit-036",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 560,
+          "estimated_gflops": 439.254122496
+        },
+        {
+          "id": "mq-explicit-036",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 569,
+          "estimated_gflops": 445.632151552
+        },
+        {
+          "id": "mq-explicit-037",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 418.798829568
+        },
+        {
+          "id": "mq-explicit-037",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 543,
+          "estimated_gflops": 425.840328704
+        },
+        {
+          "id": "mq-explicit-037",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 482,
+          "estimated_gflops": 378.695876608
+        },
+        {
+          "id": "mq-explicit-038",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 551,
+          "estimated_gflops": 432.458399744
+        },
+        {
+          "id": "mq-explicit-038",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 419.6089856
+        },
+        {
+          "id": "mq-explicit-038",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 520,
+          "estimated_gflops": 408.393990144
+        },
+        {
+          "id": "mq-explicit-039",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 529,
+          "estimated_gflops": 414.733713408
+        },
+        {
+          "id": "mq-explicit-039",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 516,
+          "estimated_gflops": 404.948762624
+        },
+        {
+          "id": "mq-explicit-039",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.17514752
+        },
+        {
+          "id": "mq-explicit-040",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 532,
+          "estimated_gflops": 417.17243904
+        },
+        {
+          "id": "mq-explicit-040",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 521,
+          "estimated_gflops": 409.017319424
+        },
+        {
+          "id": "mq-explicit-040",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 561,
+          "estimated_gflops": 439.125671936
+        },
+        {
+          "id": "mq-explicit-041",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 544,
+          "estimated_gflops": 426.937663488
+        },
+        {
+          "id": "mq-explicit-041",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 553,
+          "estimated_gflops": 433.986043904
+        },
+        {
+          "id": "mq-explicit-041",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 494,
+          "estimated_gflops": 388.362698752
+        },
+        {
+          "id": "mq-explicit-042",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.546507264
+        },
+        {
+          "id": "mq-explicit-042",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 517,
+          "estimated_gflops": 405.762244608
+        },
+        {
+          "id": "mq-explicit-042",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 502,
+          "estimated_gflops": 393.800286208
+        },
+        {
+          "id": "mq-explicit-043",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.546507264
+        },
+        {
+          "id": "mq-explicit-043",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 548,
+          "estimated_gflops": 429.483393024
+        },
+        {
+          "id": "mq-explicit-043",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 530,
+          "estimated_gflops": 415.22102272
+        },
+        {
+          "id": "mq-explicit-044",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 418.798829568
+        },
+        {
+          "id": "mq-explicit-044",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 523,
+          "estimated_gflops": 410.64554496
+        },
+        {
+          "id": "mq-explicit-044",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 563,
+          "estimated_gflops": 440.751603712
+        },
+        {
+          "id": "mq-explicit-045",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 540,
+          "estimated_gflops": 423.502528512
+        },
+        {
+          "id": "mq-explicit-045",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 545,
+          "estimated_gflops": 427.46855424
+        },
+        {
+          "id": "mq-explicit-045",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 486,
+          "estimated_gflops": 381.854613504
+        },
+        {
+          "id": "mq-explicit-046",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 540,
+          "estimated_gflops": 423.680753664
+        },
+        {
+          "id": "mq-explicit-046",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 527,
+          "estimated_gflops": 413.903372288
+        },
+        {
+          "id": "mq-explicit-046",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 515,
+          "estimated_gflops": 404.228980736
+        },
+        {
+          "id": "mq-explicit-047",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 535,
+          "estimated_gflops": 419.523887104
+        },
+        {
+          "id": "mq-explicit-047",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 520,
+          "estimated_gflops": 408.203378688
+        },
+        {
+          "id": "mq-explicit-047",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 418.425176064
+        },
+        {
+          "id": "mq-explicit-048",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 533,
+          "estimated_gflops": 417.98557696
+        },
+        {
+          "id": "mq-explicit-048",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 522,
+          "estimated_gflops": 409.831374848
+        },
+        {
+          "id": "mq-explicit-048",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 562,
+          "estimated_gflops": 439.93858048
+        },
+        {
+          "id": "mq-explicit-049",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 527,
+          "estimated_gflops": 413.10846976
+        },
+        {
+          "id": "mq-explicit-049",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 536,
+          "estimated_gflops": 420.145152
+        },
+        {
+          "id": "mq-explicit-049",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 475,
+          "estimated_gflops": 373.008728064
+        },
+        {
+          "id": "mq-explicit-050",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 539,
+          "estimated_gflops": 422.866812928
+        },
+        {
+          "id": "mq-explicit-050",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 557,
+          "estimated_gflops": 436.80989184
+        },
+        {
+          "id": "mq-explicit-050",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 516,
+          "estimated_gflops": 404.948533248
+        },
+        {
+          "id": "mq-explicit-051",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 421.23927552
+        },
+        {
+          "id": "mq-explicit-051",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 524,
+          "estimated_gflops": 411.45982976
+        },
+        {
+          "id": "mq-explicit-051",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 420.910579712
+        },
+        {
+          "id": "mq-explicit-052",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 532,
+          "estimated_gflops": 417.17243904
+        },
+        {
+          "id": "mq-explicit-052",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 521,
+          "estimated_gflops": 409.017319424
+        },
+        {
+          "id": "mq-explicit-052",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 561,
+          "estimated_gflops": 439.125671936
+        },
+        {
+          "id": "mq-explicit-053",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 535,
+          "estimated_gflops": 419.612196864
+        },
+        {
+          "id": "mq-explicit-053",
+          "question_name": "record_auditability",
+          "candidate_count": 4,
+          "tokens_unpadded": 544,
+          "estimated_gflops": 426.654384128
+        },
+        {
+          "id": "mq-explicit-053",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 483,
+          "estimated_gflops": 379.508555776
+        },
+        {
+          "id": "mq-explicit-054",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 537,
+          "estimated_gflops": 421.23927552
+        },
+        {
+          "id": "mq-explicit-054",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 524,
+          "estimated_gflops": 411.45982976
+        },
+        {
+          "id": "mq-explicit-054",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 510,
+          "estimated_gflops": 400.256303104
+        },
+        {
+          "id": "mq-explicit-055",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 538,
+          "estimated_gflops": 421.963988992
+        },
+        {
+          "id": "mq-explicit-055",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 523,
+          "estimated_gflops": 410.64554496
+        },
+        {
+          "id": "mq-explicit-055",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 538,
+          "estimated_gflops": 421.630246912
+        },
+        {
+          "id": "mq-explicit-056",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 549,
+          "estimated_gflops": 430.919860224
+        },
+        {
+          "id": "mq-explicit-056",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 536,
+          "estimated_gflops": 421.240193024
+        },
+        {
+          "id": "mq-explicit-056",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 576,
+          "estimated_gflops": 451.331342336
+        },
+        {
+          "id": "mq-explicit-057",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 524,
+          "estimated_gflops": 410.671464448
+        },
+        {
+          "id": "mq-explicit-057",
+          "question_name": "record_auditability",
+          "candidate_count": 5,
+          "tokens_unpadded": 564,
+          "estimated_gflops": 441.42723072
+        },
+        {
+          "id": "mq-explicit-057",
+          "question_name": "response_plan",
+          "candidate_count": 2,
+          "tokens_unpadded": 472,
+          "estimated_gflops": 370.573099008
+        },
+        {
+          "id": "mq-explicit-058",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 539,
+          "estimated_gflops": 422.866812928
+        },
+        {
+          "id": "mq-explicit-058",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 526,
+          "estimated_gflops": 413.088743424
+        },
+        {
+          "id": "mq-explicit-058",
+          "question_name": "response_plan",
+          "candidate_count": 3,
+          "tokens_unpadded": 512,
+          "estimated_gflops": 401.882923008
+        },
+        {
+          "id": "mq-explicit-059",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 534,
+          "estimated_gflops": 418.798829568
+        },
+        {
+          "id": "mq-explicit-059",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 521,
+          "estimated_gflops": 409.017319424
+        },
+        {
+          "id": "mq-explicit-059",
+          "question_name": "response_plan",
+          "candidate_count": 4,
+          "tokens_unpadded": 533,
+          "estimated_gflops": 417.704935424
+        },
+        {
+          "id": "mq-explicit-060",
+          "question_name": "immediate_intervention",
+          "candidate_count": 2,
+          "tokens_unpadded": 529,
+          "estimated_gflops": 414.733713408
+        },
+        {
+          "id": "mq-explicit-060",
+          "question_name": "record_auditability",
+          "candidate_count": 3,
+          "tokens_unpadded": 516,
+          "estimated_gflops": 404.948762624
+        },
+        {
+          "id": "mq-explicit-060",
+          "question_name": "response_plan",
+          "candidate_count": 5,
+          "tokens_unpadded": 556,
+          "estimated_gflops": 435.062849536
+        }
+      ],
+      "case_samples": [
+        {
+          "id": "mq-explicit-001",
+          "tokens_unpadded": 1593,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1249.496285184
+        },
+        {
+          "id": "mq-explicit-002",
+          "tokens_unpadded": 1566,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1228.746473472
+        },
+        {
+          "id": "mq-explicit-003",
+          "tokens_unpadded": 1573,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1233.324589056
+        },
+        {
+          "id": "mq-explicit-004",
+          "tokens_unpadded": 1628,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1276.705210368
+        },
+        {
+          "id": "mq-explicit-005",
+          "tokens_unpadded": 1571,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1232.819961856
+        },
+        {
+          "id": "mq-explicit-006",
+          "tokens_unpadded": 1583,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1242.62785024
+        },
+        {
+          "id": "mq-explicit-007",
+          "tokens_unpadded": 1578,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1237.301510144
+        },
+        {
+          "id": "mq-explicit-008",
+          "tokens_unpadded": 1668,
+          "embedding_text_count": 14,
+          "estimated_gflops": 1307.752513536
+        },
+        {
+          "id": "mq-explicit-009",
+          "tokens_unpadded": 1566,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1228.846252032
+        },
+        {
+          "id": "mq-explicit-010",
+          "tokens_unpadded": 1568,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1230.237302784
+        },
+        {
+          "id": "mq-explicit-011",
+          "tokens_unpadded": 1598,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1253.609684992
+        },
+        {
+          "id": "mq-explicit-012",
+          "tokens_unpadded": 1619,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1269.382152192
+        },
+        {
+          "id": "mq-explicit-013",
+          "tokens_unpadded": 1558,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1222.4278528
+        },
+        {
+          "id": "mq-explicit-014",
+          "tokens_unpadded": 1563,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1226.399727616
+        },
+        {
+          "id": "mq-explicit-015",
+          "tokens_unpadded": 1615,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1265.80228096
+        },
+        {
+          "id": "mq-explicit-016",
+          "tokens_unpadded": 1663,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1305.121226752
+        },
+        {
+          "id": "mq-explicit-017",
+          "tokens_unpadded": 1549,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1215.249645568
+        },
+        {
+          "id": "mq-explicit-018",
+          "tokens_unpadded": 1555,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1219.847028736
+        },
+        {
+          "id": "mq-explicit-019",
+          "tokens_unpadded": 1600,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1255.0537216
+        },
+        {
+          "id": "mq-explicit-020",
+          "tokens_unpadded": 1607,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1259.62289152
+        },
+        {
+          "id": "mq-explicit-021",
+          "tokens_unpadded": 1574,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1235.539902464
+        },
+        {
+          "id": "mq-explicit-022",
+          "tokens_unpadded": 1584,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1241.896026112
+        },
+        {
+          "id": "mq-explicit-023",
+          "tokens_unpadded": 1601,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1256.098643968
+        },
+        {
+          "id": "mq-explicit-024",
+          "tokens_unpadded": 1604,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1257.183936512
+        },
+        {
+          "id": "mq-explicit-025",
+          "tokens_unpadded": 1569,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1231.281651712
+        },
+        {
+          "id": "mq-explicit-026",
+          "tokens_unpadded": 1588,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1246.698586112
+        },
+        {
+          "id": "mq-explicit-027",
+          "tokens_unpadded": 1583,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1241.314902016
+        },
+        {
+          "id": "mq-explicit-028",
+          "tokens_unpadded": 1610,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1262.062190592
+        },
+        {
+          "id": "mq-explicit-029",
+          "tokens_unpadded": 1610,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1263.235907584
+        },
+        {
+          "id": "mq-explicit-030",
+          "tokens_unpadded": 1597,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1253.895602176
+        },
+        {
+          "id": "mq-explicit-031",
+          "tokens_unpadded": 1622,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1273.059622912
+        },
+        {
+          "id": "mq-explicit-032",
+          "tokens_unpadded": 1610,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1262.062190592
+        },
+        {
+          "id": "mq-explicit-033",
+          "tokens_unpadded": 1574,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1235.539902464
+        },
+        {
+          "id": "mq-explicit-034",
+          "tokens_unpadded": 1560,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1223.959740416
+        },
+        {
+          "id": "mq-explicit-035",
+          "tokens_unpadded": 1597,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1252.706975744
+        },
+        {
+          "id": "mq-explicit-036",
+          "tokens_unpadded": 1673,
+          "embedding_text_count": 14,
+          "estimated_gflops": 1311.733563392
+        },
+        {
+          "id": "mq-explicit-037",
+          "tokens_unpadded": 1559,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1223.33503488
+        },
+        {
+          "id": "mq-explicit-038",
+          "tokens_unpadded": 1605,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1260.461375488
+        },
+        {
+          "id": "mq-explicit-039",
+          "tokens_unpadded": 1575,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1234.857623552
+        },
+        {
+          "id": "mq-explicit-040",
+          "tokens_unpadded": 1614,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1265.3154304
+        },
+        {
+          "id": "mq-explicit-041",
+          "tokens_unpadded": 1591,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1249.286406144
+        },
+        {
+          "id": "mq-explicit-042",
+          "tokens_unpadded": 1549,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1215.10903808
+        },
+        {
+          "id": "mq-explicit-043",
+          "tokens_unpadded": 1608,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1260.250923008
+        },
+        {
+          "id": "mq-explicit-044",
+          "tokens_unpadded": 1620,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1270.19597824
+        },
+        {
+          "id": "mq-explicit-045",
+          "tokens_unpadded": 1571,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1232.825696256
+        },
+        {
+          "id": "mq-explicit-046",
+          "tokens_unpadded": 1582,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1241.813106688
+        },
+        {
+          "id": "mq-explicit-047",
+          "tokens_unpadded": 1589,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1246.152441856
+        },
+        {
+          "id": "mq-explicit-048",
+          "tokens_unpadded": 1617,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1267.755532288
+        },
+        {
+          "id": "mq-explicit-049",
+          "tokens_unpadded": 1538,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1206.262349824
+        },
+        {
+          "id": "mq-explicit-050",
+          "tokens_unpadded": 1612,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1264.625238016
+        },
+        {
+          "id": "mq-explicit-051",
+          "tokens_unpadded": 1598,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1253.609684992
+        },
+        {
+          "id": "mq-explicit-052",
+          "tokens_unpadded": 1614,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1265.3154304
+        },
+        {
+          "id": "mq-explicit-053",
+          "tokens_unpadded": 1562,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1225.775136768
+        },
+        {
+          "id": "mq-explicit-054",
+          "tokens_unpadded": 1571,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1232.955408384
+        },
+        {
+          "id": "mq-explicit-055",
+          "tokens_unpadded": 1599,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1254.239780864
+        },
+        {
+          "id": "mq-explicit-056",
+          "tokens_unpadded": 1661,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1303.491395584
+        },
+        {
+          "id": "mq-explicit-057",
+          "tokens_unpadded": 1560,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1222.671794176
+        },
+        {
+          "id": "mq-explicit-058",
+          "tokens_unpadded": 1577,
+          "embedding_text_count": 11,
+          "estimated_gflops": 1237.83847936
+        },
+        {
+          "id": "mq-explicit-059",
+          "tokens_unpadded": 1588,
+          "embedding_text_count": 12,
+          "estimated_gflops": 1245.521084416
+        },
+        {
+          "id": "mq-explicit-060",
+          "tokens_unpadded": 1601,
+          "embedding_text_count": 13,
+          "estimated_gflops": 1254.745325568
+        }
+      ]
+    }
+  },
+  "laya": {
+    "availability": "available",
+    "reason": "Both saved matched and explicit Laya runs have 60 rows of exact decisions.*.input_tokens, matching fixture hashes/case counts, pinned checkpoint hash/revision and GPU device metadata; verified encoder config and archived transparent FLOP formula are present. No labels/targets needed.",
+    "config": {
+      "path": "/private/var/folders/_c/j5jmxy5967sf4vqn028g6zj80000gq/T/opencode/laya-root/checkpoint/encoder/config.json",
+      "sha256": "bf3ab80598fdccf414855a2ce80f22859e4492d06ca8a62ddd1cfb63972f8979",
+      "model_type": "modernbert",
+      "hidden_size": 1024,
+      "intermediate_size": 2624,
+      "layers": 28,
+      "layer_types": [
+        "full_attention",
+        "sliding_attention",
+        "sliding_attention",
+        "full_attention",
+        "sliding_attention",
+        "sliding_attention",
+        "full_attention",
+        "sliding_attention",
+        "sliding_attention",
+        "full_attention",
+        "sliding_attention",
+        "sliding_attention",
+        "full_attention",
+        "sliding_attention",
+        "sliding_attention",
+        "full_attention",
+        "sliding_attention",
+        "sliding_attention",
+        "full_attention",
+        "sliding_attention",
+        "sliding_attention",
+        "full_attention",
+        "sliding_attention",
+        "sliding_attention",
+        "full_attention",
+        "sliding_attention",
+        "sliding_attention",
+        "full_attention"
+      ],
+      "local_attention": 128,
+      "config_architecture": "ModernBertForMaskedLM plus pinned two-block decision head from prior compute-comparison formula"
+    },
+    "formula": "Copied exactly from results/laya/mlx/compute_comparison.py: dense encoder MACs L*N*(4H^2+3H*I); encoder attention pairs sum per layer (full: N^2; sliding: sum_i[min(N-1,i+local)-max(0,i-local)+1], local=local_attention//2), cost pairs*2H MAC-equivalent; head MAC estimate 2*N*(4H^2+8H^2)+4N^2H+N*H^2+N*(H+4)*256+256*2. Multiply aggregate by 2 FLOPs/MAC. Per-question cost separately per saved actual input-token length, then sum 3 calls/case. Norms/activations/etc follow prior omissions; analytical arithmetic, not GPU counters.",
+    "runs": {
+      "matched": {
+        "run_id": "20260923T151228074560Z",
+        "run_metadata_path": "results/laya/varied/runs/20260923T151228074560Z/run-metadata.json",
+        "run_metadata_sha256": "f41f51e44c247a3740747765731acfdd3c473084148e0ed255dd3a8d0ff221be",
+        "raw_input_token_source": "results/laya/varied/runs/20260923T151228074560Z/raw-results.jsonl",
+        "raw_source_sha256": "a112ee9eb710bc8bad97dd9d1c339ed09106309d685703f9250a7f4cce51d911",
+        "fixture_sha256": "48a057dd3ebedc6d76b7ca55f0782069f49cd31151576c2bc01932744a6ed614",
+        "model": "convaiinnovations/laya",
+        "model_revision": "5e7b2b1b8ca2ecdd3f2322d94069c9b6ce7e844b",
+        "checkpoint_weights_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+        "device": "Device(gpu, 0)",
+        "call_count": 180,
+        "input_tokens_total": 66515,
+        "mean_tokens_per_question": 369.52777777777777,
+        "question_gflops": {
+          "n": 180,
+          "unit": "GFLOPs/question",
+          "mean": 283.17508422542227,
+          "p50": 294.07129190399996,
+          "p95": 327.6636254208
+        },
+        "case_gflops": {
+          "n": 60,
+          "unit": "GFLOPs/case",
+          "mean": 849.5252526762666,
+          "p50": 848.006795264,
+          "p95": 884.9802386432
+        },
+        "total_gflops": 50971.51516057601,
+        "question_token_stats": {
+          "immediate_intervention": {
+            "n": 60,
+            "total": 19165,
+            "mean": 319.4166666666667,
+            "p50": 319.0,
+            "p95": 329.0
+          },
+          "record_auditability": {
+            "n": 60,
+            "total": 24265,
+            "mean": 404.4166666666667,
+            "p50": 398.0,
+            "p95": 435.15
+          },
+          "response_plan": {
+            "n": 60,
+            "total": 23085,
+            "mean": 384.75,
+            "p50": 384.5,
+            "p95": 428.1
+          }
+        },
+        "mean_case_components_gflops": {
+          "immediate_intervention": {
+            "encoder_dense": 219.21341986133336,
+            "encoder_attention": 6.911665493333335,
+            "head": 17.750840081066663
+          },
+          "record_auditability": {
+            "encoder_dense": 277.5483241813333,
+            "encoder_attention": 10.250889898666662,
+            "head": 22.758186018133333
+          },
+          "response_plan": {
+            "encoder_dense": 264.0512286720001,
+            "encoder_attention": 9.447276544000001,
+            "head": 21.593421926399994
+          }
+        },
+        "case_samples": [
+          {
+            "id": "mq-test-matched-001",
+            "tokens": 1107,
+            "gflops": 848.491693056
+          },
+          {
+            "id": "mq-test-matched-002",
+            "tokens": 1103,
+            "gflops": 845.0401331200001
+          },
+          {
+            "id": "mq-test-matched-003",
+            "tokens": 1077,
+            "gflops": 824.6820587520001
+          },
+          {
+            "id": "mq-test-matched-004",
+            "tokens": 1162,
+            "gflops": 891.5290757119999
+          },
+          {
+            "id": "mq-test-matched-005",
+            "tokens": 1098,
+            "gflops": 841.216564224
+          },
+          {
+            "id": "mq-test-matched-006",
+            "tokens": 1065,
+            "gflops": 815.23855872
+          },
+          {
+            "id": "mq-test-matched-007",
+            "tokens": 1101,
+            "gflops": 843.50870016
+          },
+          {
+            "id": "mq-test-matched-008",
+            "tokens": 1192,
+            "gflops": 915.2349009919999
+          },
+          {
+            "id": "mq-test-matched-009",
+            "tokens": 1073,
+            "gflops": 821.60955904
+          },
+          {
+            "id": "mq-test-matched-010",
+            "tokens": 1086,
+            "gflops": 831.7006141439999
+          },
+          {
+            "id": "mq-test-matched-011",
+            "tokens": 1102,
+            "gflops": 844.296141824
+          },
+          {
+            "id": "mq-test-matched-012",
+            "tokens": 1139,
+            "gflops": 873.4447544320001
+          },
+          {
+            "id": "mq-test-matched-013",
+            "tokens": 1091,
+            "gflops": 835.725411328
+          },
+          {
+            "id": "mq-test-matched-014",
+            "tokens": 1083,
+            "gflops": 829.3444823039999
+          },
+          {
+            "id": "mq-test-matched-015",
+            "tokens": 1139,
+            "gflops": 873.47788288
+          },
+          {
+            "id": "mq-test-matched-016",
+            "tokens": 1163,
+            "gflops": 892.320154624
+          },
+          {
+            "id": "mq-test-matched-017",
+            "tokens": 1082,
+            "gflops": 828.670188544
+          },
+          {
+            "id": "mq-test-matched-018",
+            "tokens": 1057,
+            "gflops": 808.966157312
+          },
+          {
+            "id": "mq-test-matched-019",
+            "tokens": 1129,
+            "gflops": 865.507226624
+          },
+          {
+            "id": "mq-test-matched-020",
+            "tokens": 1124,
+            "gflops": 861.657213952
+          },
+          {
+            "id": "mq-test-matched-021",
+            "tokens": 1069,
+            "gflops": 818.4754227199999
+          },
+          {
+            "id": "mq-test-matched-022",
+            "tokens": 1110,
+            "gflops": 850.6652743679999
+          },
+          {
+            "id": "mq-test-matched-023",
+            "tokens": 1121,
+            "gflops": 859.2169338880001
+          },
+          {
+            "id": "mq-test-matched-024",
+            "tokens": 1106,
+            "gflops": 847.5218974719999
+          },
+          {
+            "id": "mq-test-matched-025",
+            "tokens": 1113,
+            "gflops": 852.991325184
+          },
+          {
+            "id": "mq-test-matched-026",
+            "tokens": 1087,
+            "gflops": 832.482747392
+          },
+          {
+            "id": "mq-test-matched-027",
+            "tokens": 1099,
+            "gflops": 841.9493488640001
+          },
+          {
+            "id": "mq-test-matched-028",
+            "tokens": 1124,
+            "gflops": 861.657213952
+          },
+          {
+            "id": "mq-test-matched-029",
+            "tokens": 1153,
+            "gflops": 884.635563008
+          },
+          {
+            "id": "mq-test-matched-030",
+            "tokens": 1092,
+            "gflops": 836.404030464
+          },
+          {
+            "id": "mq-test-matched-031",
+            "tokens": 1134,
+            "gflops": 869.433719808
+          },
+          {
+            "id": "mq-test-matched-032",
+            "tokens": 1129,
+            "gflops": 865.58134784
+          },
+          {
+            "id": "mq-test-matched-033",
+            "tokens": 1096,
+            "gflops": 839.6496435199999
+          },
+          {
+            "id": "mq-test-matched-034",
+            "tokens": 1092,
+            "gflops": 836.404030464
+          },
+          {
+            "id": "mq-test-matched-035",
+            "tokens": 1123,
+            "gflops": 860.7856240640001
+          },
+          {
+            "id": "mq-test-matched-036",
+            "tokens": 1147,
+            "gflops": 879.816246272
+          },
+          {
+            "id": "mq-test-matched-037",
+            "tokens": 1103,
+            "gflops": 845.145908224
+          },
+          {
+            "id": "mq-test-matched-038",
+            "tokens": 1108,
+            "gflops": 848.959056896
+          },
+          {
+            "id": "mq-test-matched-039",
+            "tokens": 1084,
+            "gflops": 830.1738014719999
+          },
+          {
+            "id": "mq-test-matched-040",
+            "tokens": 1132,
+            "gflops": 867.94878464
+          },
+          {
+            "id": "mq-test-matched-041",
+            "tokens": 1112,
+            "gflops": 852.20732416
+          },
+          {
+            "id": "mq-test-matched-042",
+            "tokens": 1058,
+            "gflops": 809.747602432
+          },
+          {
+            "id": "mq-test-matched-043",
+            "tokens": 1128,
+            "gflops": 864.8218245119999
+          },
+          {
+            "id": "mq-test-matched-044",
+            "tokens": 1138,
+            "gflops": 872.66448896
+          },
+          {
+            "id": "mq-test-matched-045",
+            "tokens": 1076,
+            "gflops": 823.961463808
+          },
+          {
+            "id": "mq-test-matched-046",
+            "tokens": 1079,
+            "gflops": 826.209854464
+          },
+          {
+            "id": "mq-test-matched-047",
+            "tokens": 1117,
+            "gflops": 856.0728688639999
+          },
+          {
+            "id": "mq-test-matched-048",
+            "tokens": 1117,
+            "gflops": 856.1646848
+          },
+          {
+            "id": "mq-test-matched-049",
+            "tokens": 1067,
+            "gflops": 816.9106647039999
+          },
+          {
+            "id": "mq-test-matched-050",
+            "tokens": 1148,
+            "gflops": 880.524061696
+          },
+          {
+            "id": "mq-test-matched-051",
+            "tokens": 1090,
+            "gflops": 834.880068608
+          },
+          {
+            "id": "mq-test-matched-052",
+            "tokens": 1147,
+            "gflops": 879.74025728
+          },
+          {
+            "id": "mq-test-matched-053",
+            "tokens": 1081,
+            "gflops": 827.8832384
+          },
+          {
+            "id": "mq-test-matched-054",
+            "tokens": 1088,
+            "gflops": 833.2651755520001
+          },
+          {
+            "id": "mq-test-matched-055",
+            "tokens": 1118,
+            "gflops": 856.860900352
+          },
+          {
+            "id": "mq-test-matched-056",
+            "tokens": 1153,
+            "gflops": 884.4589107200001
+          },
+          {
+            "id": "mq-test-matched-057",
+            "tokens": 1081,
+            "gflops": 828.096754688
+          },
+          {
+            "id": "mq-test-matched-058",
+            "tokens": 1103,
+            "gflops": 845.035021312
+          },
+          {
+            "id": "mq-test-matched-059",
+            "tokens": 1110,
+            "gflops": 850.573556736
+          },
+          {
+            "id": "mq-test-matched-060",
+            "tokens": 1109,
+            "gflops": 849.8770462719999
+          }
+        ],
+        "question_gflops_by_name": {
+          "immediate_intervention": {
+            "n": 60,
+            "unit": "GFLOPs/question",
+            "mean": 243.87592543573334,
+            "p50": 243.549182976,
+            "p95": 251.355278336
+          },
+          "record_auditability": {
+            "n": 60,
+            "unit": "GFLOPs/question",
+            "mean": 310.55740009813337,
+            "p50": 305.485263872,
+            "p95": 334.8230124544
+          },
+          "response_plan": {
+            "n": 60,
+            "unit": "GFLOPs/question",
+            "mean": 295.09192714240004,
+            "p50": 294.85779967999997,
+            "p95": 329.2451147776
+          }
+        }
+      },
+      "explicit": {
+        "run_id": "20260923T153215418583Z",
+        "run_metadata_path": "results/laya/varied/runs/20260923T153215418583Z/run-metadata.json",
+        "run_metadata_sha256": "e6157602f76f9f116c376a8e93b3eb361d24eb33fa40e4994931dd55438b58db",
+        "raw_input_token_source": "results/laya/varied/runs/20260923T153215418583Z/raw-results.jsonl",
+        "raw_source_sha256": "e60bb2e5363f54c4fd6bcdfbd2c7ea8877b1893b1a3f567d8b352d3722220363",
+        "fixture_sha256": "4cb002e1c29f5273ecc23fcdf742b093cb5433d661f5df0b50d209a534fb1409",
+        "model": "convaiinnovations/laya",
+        "model_revision": "5e7b2b1b8ca2ecdd3f2322d94069c9b6ce7e844b",
+        "checkpoint_weights_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+        "device": "Device(gpu, 0)",
+        "call_count": 180,
+        "input_tokens_total": 90245,
+        "mean_tokens_per_question": 501.3611111111111,
+        "question_gflops": {
+          "n": 180,
+          "unit": "GFLOPs/question",
+          "mean": 387.4581196686222,
+          "p50": 395.942822912,
+          "p95": 395.942822912
+        },
+        "case_gflops": {
+          "n": 60,
+          "unit": "GFLOPs/case",
+          "mean": 1162.3743590058666,
+          "p50": 1161.9099504639998,
+          "p95": 1174.3378837504
+        },
+        "total_gflops": 69742.461540352,
+        "question_token_stats": {
+          "immediate_intervention": {
+            "n": 60,
+            "total": 28859,
+            "mean": 480.98333333333335,
+            "p50": 480.0,
+            "p95": 495.1
+          },
+          "record_auditability": {
+            "n": 60,
+            "total": 30720,
+            "mean": 512.0,
+            "p50": 512.0,
+            "p95": 512.0
+          },
+          "response_plan": {
+            "n": 60,
+            "total": 30666,
+            "mean": 511.1,
+            "p50": 512.0,
+            "p95": 512.0
+          }
+        },
+        "mean_case_components_gflops": {
+          "immediate_intervention": {
+            "encoder_dense": 330.09549093546667,
+            "encoder_attention": 13.745816098133334,
+            "head": 27.366125738666664
+          },
+          "record_auditability": {
+            "encoder_dense": 351.38201190399957,
+            "encoder_attention": 15.300296703999978,
+            "head": 29.260514304000022
+          },
+          "response_plan": {
+            "encoder_dense": 350.7643482111996,
+            "encoder_attention": 15.254373171199981,
+            "head": 29.20538193920002
+          }
+        },
+        "case_samples": [
+          {
+            "id": "mq-explicit-001",
+            "tokens": 1510,
+            "gflops": 1167.0853376
+          },
+          {
+            "id": "mq-explicit-002",
+            "tokens": 1506,
+            "gflops": 1163.899984896
+          },
+          {
+            "id": "mq-explicit-003",
+            "tokens": 1498,
+            "gflops": 1157.53399808
+          },
+          {
+            "id": "mq-explicit-004",
+            "tokens": 1510,
+            "gflops": 1167.0853376
+          },
+          {
+            "id": "mq-explicit-005",
+            "tokens": 1503,
+            "gflops": 1161.508856832
+          },
+          {
+            "id": "mq-explicit-006",
+            "tokens": 1509,
+            "gflops": 1166.288851968
+          },
+          {
+            "id": "mq-explicit-007",
+            "tokens": 1498,
+            "gflops": 1157.53399808
+          },
+          {
+            "id": "mq-explicit-008",
+            "tokens": 1513,
+            "gflops": 1169.47538432
+          },
+          {
+            "id": "mq-explicit-009",
+            "tokens": 1496,
+            "gflops": 1155.926281216
+          },
+          {
+            "id": "mq-explicit-010",
+            "tokens": 1498,
+            "gflops": 1157.53399808
+          },
+          {
+            "id": "mq-explicit-011",
+            "tokens": 1512,
+            "gflops": 1168.6786037759998
+          },
+          {
+            "id": "mq-explicit-012",
+            "tokens": 1505,
+            "gflops": 1163.10389248
+          },
+          {
+            "id": "mq-explicit-013",
+            "tokens": 1506,
+            "gflops": 1163.899984896
+          },
+          {
+            "id": "mq-explicit-014",
+            "tokens": 1501,
+            "gflops": 1159.920505856
+          },
+          {
+            "id": "mq-explicit-015",
+            "tokens": 1501,
+            "gflops": 1159.920505856
+          },
+          {
+            "id": "mq-explicit-016",
+            "tokens": 1522,
+            "gflops": 1176.6508328959999
+          },
+          {
+            "id": "mq-explicit-017",
+            "tokens": 1493,
+            "gflops": 1153.53092608
+          },
+          {
+            "id": "mq-explicit-018",
+            "tokens": 1498,
+            "gflops": 1157.53399808
+          },
+          {
+            "id": "mq-explicit-019",
+            "tokens": 1507,
+            "gflops": 1164.696175616
+          },
+          {
+            "id": "mq-explicit-020",
+            "tokens": 1496,
+            "gflops": 1155.943484416
+          },
+          {
+            "id": "mq-explicit-021",
+            "tokens": 1512,
+            "gflops": 1168.6786037759998
+          },
+          {
+            "id": "mq-explicit-022",
+            "tokens": 1497,
+            "gflops": 1156.7386920959998
+          },
+          {
+            "id": "mq-explicit-023",
+            "tokens": 1509,
+            "gflops": 1166.288851968
+          },
+          {
+            "id": "mq-explicit-024",
+            "tokens": 1495,
+            "gflops": 1155.14837504
+          },
+          {
+            "id": "mq-explicit-025",
+            "tokens": 1508,
+            "gflops": 1165.49246464
+          },
+          {
+            "id": "mq-explicit-026",
+            "tokens": 1514,
+            "gflops": 1170.2722631679999
+          },
+          {
+            "id": "mq-explicit-027",
+            "tokens": 1500,
+            "gflops": 1159.12490496
+          },
+          {
+            "id": "mq-explicit-028",
+            "tokens": 1500,
+            "gflops": 1159.12490496
+          },
+          {
+            "id": "mq-explicit-029",
+            "tokens": 1514,
+            "gflops": 1170.2722631679999
+          },
+          {
+            "id": "mq-explicit-030",
+            "tokens": 1505,
+            "gflops": 1163.10389248
+          },
+          {
+            "id": "mq-explicit-031",
+            "tokens": 1521,
+            "gflops": 1175.853167616
+          },
+          {
+            "id": "mq-explicit-032",
+            "tokens": 1499,
+            "gflops": 1158.329402368
+          },
+          {
+            "id": "mq-explicit-033",
+            "tokens": 1512,
+            "gflops": 1168.6786037759998
+          },
+          {
+            "id": "mq-explicit-034",
+            "tokens": 1503,
+            "gflops": 1161.51200256
+          },
+          {
+            "id": "mq-explicit-035",
+            "tokens": 1505,
+            "gflops": 1163.10389248
+          },
+          {
+            "id": "mq-explicit-036",
+            "tokens": 1510,
+            "gflops": 1167.0853376
+          },
+          {
+            "id": "mq-explicit-037",
+            "tokens": 1505,
+            "gflops": 1163.098190848
+          },
+          {
+            "id": "mq-explicit-038",
+            "tokens": 1513,
+            "gflops": 1169.47538432
+          },
+          {
+            "id": "mq-explicit-039",
+            "tokens": 1497,
+            "gflops": 1156.7386920959998
+          },
+          {
+            "id": "mq-explicit-040",
+            "tokens": 1497,
+            "gflops": 1156.7386920959998
+          },
+          {
+            "id": "mq-explicit-041",
+            "tokens": 1523,
+            "gflops": 1177.44859648
+          },
+          {
+            "id": "mq-explicit-042",
+            "tokens": 1495,
+            "gflops": 1155.14837504
+          },
+          {
+            "id": "mq-explicit-043",
+            "tokens": 1500,
+            "gflops": 1159.12490496
+          },
+          {
+            "id": "mq-explicit-044",
+            "tokens": 1502,
+            "gflops": 1160.716205056
+          },
+          {
+            "id": "mq-explicit-045",
+            "tokens": 1494,
+            "gflops": 1154.332130304
+          },
+          {
+            "id": "mq-explicit-046",
+            "tokens": 1510,
+            "gflops": 1167.0853376
+          },
+          {
+            "id": "mq-explicit-047",
+            "tokens": 1504,
+            "gflops": 1162.307898368
+          },
+          {
+            "id": "mq-explicit-048",
+            "tokens": 1501,
+            "gflops": 1159.920505856
+          },
+          {
+            "id": "mq-explicit-049",
+            "tokens": 1483,
+            "gflops": 1145.56361216
+          },
+          {
+            "id": "mq-explicit-050",
+            "tokens": 1509,
+            "gflops": 1166.288851968
+          },
+          {
+            "id": "mq-explicit-051",
+            "tokens": 1511,
+            "gflops": 1167.881921536
+          },
+          {
+            "id": "mq-explicit-052",
+            "tokens": 1503,
+            "gflops": 1161.51200256
+          },
+          {
+            "id": "mq-explicit-053",
+            "tokens": 1501,
+            "gflops": 1159.911068672
+          },
+          {
+            "id": "mq-explicit-054",
+            "tokens": 1506,
+            "gflops": 1163.899984896
+          },
+          {
+            "id": "mq-explicit-055",
+            "tokens": 1502,
+            "gflops": 1160.716205056
+          },
+          {
+            "id": "mq-explicit-056",
+            "tokens": 1519,
+            "gflops": 1174.2581319679998
+          },
+          {
+            "id": "mq-explicit-057",
+            "tokens": 1477,
+            "gflops": 1140.785583104
+          },
+          {
+            "id": "mq-explicit-058",
+            "tokens": 1510,
+            "gflops": 1167.0853376
+          },
+          {
+            "id": "mq-explicit-059",
+            "tokens": 1503,
+            "gflops": 1161.51200256
+          },
+          {
+            "id": "mq-explicit-060",
+            "tokens": 1494,
+            "gflops": 1154.353363968
+          }
+        ],
+        "delta_vs_matched": {
+          "total_tokens": {
+            "matched": 66515,
+            "explicit": 90245,
+            "delta": 23730,
+            "delta_percent": 35.67616327144254
+          },
+          "question_gflops": {
+            "mean": {
+              "matched": 283.17508422542227,
+              "explicit": 387.4581196686222,
+              "delta": 104.28303544319994,
+              "delta_percent": 36.82634569649679
+            },
+            "p50": {
+              "matched": 294.07129190399996,
+              "explicit": 395.942822912,
+              "delta": 101.87153100800003,
+              "delta_percent": 34.64178034803076
+            },
+            "p95": {
+              "matched": 327.6636254208,
+              "explicit": 395.942822912,
+              "delta": 68.27919749120002,
+              "delta_percent": 20.83819874833921
+            }
+          },
+          "case_gflops": {
+            "mean": {
+              "matched": 849.5252526762666,
+              "explicit": 1162.3743590058666,
+              "delta": 312.8491063296,
+              "delta_percent": 36.82634569649681
+            },
+            "p50": {
+              "matched": 848.006795264,
+              "explicit": 1161.9099504639998,
+              "delta": 313.9031551999999,
+              "delta_percent": 37.016584885062876
+            },
+            "p95": {
+              "matched": 884.9802386432,
+              "explicit": 1174.3378837504,
+              "delta": 289.3576451071999,
+              "delta_percent": 32.6965091955981
+            }
+          }
+        },
+        "question_gflops_by_name": {
+          "immediate_intervention": {
+            "n": 60,
+            "unit": "GFLOPs/question",
+            "mean": 371.2074327722667,
+            "p50": 370.422252544,
+            "p95": 382.4522379264
+          },
+          "record_auditability": {
+            "n": 60,
+            "unit": "GFLOPs/question",
+            "mean": 395.9428229119998,
+            "p50": 395.942822912,
+            "p95": 395.942822912
+          },
+          "response_plan": {
+            "n": 60,
+            "unit": "GFLOPs/question",
+            "mean": 395.22410332159984,
+            "p50": 395.942822912,
+            "p95": 395.942822912
+          }
+        }
+      }
+    }
+  },
+  "comparability": "Explicit vs matched has different inputs; report FLOP/token deltas, not speedup or accuracy implication. FLOP estimates are not equivalent to effective hardware/GPU operations and cannot be compared as measured utilization.",
+  "cross_links": {
+    "matched_compute_json": "../../matched/compute-speed.json",
+    "matched_compute_report": "../../matched/compute-speed.md",
+    "this_report": "compute-speed.md"
+  },
+  "guardrails": [
+    "No model inference, API calls, fitting, parameter edits, or label/reference accesses.",
+    "Token lengths are read from saved explicit Metal timing logs for Qwen/Harrier and only decisions.*.input_tokens are selected from Laya raw results.",
+    "Model arithmetic is analytical from verified configs; do not call GFLOPs measured GPU FLOPs or imply equal effective operations across different architectures."
+  ]
+}

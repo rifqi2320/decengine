@@ -1,0 +1,49 @@
+{
+  "arm": "head",
+  "candidate_text_sha256": [
+    "7a748f317d7b73c8e1edd271b43af2dc8772a656be4e24b11cf180feeedccfb8",
+    "dcec48b544636f9c7921d5964ee8c4889caef4b9c10b39e9d4f58b279fb484c8",
+    "63af009616100d6e8e1b31c2fa0eaa3586d3adb570366dd4118c8cc5b7aeb3c5"
+  ],
+  "head_init_sha256": "ae37385a24d801632fc557bc2d4904ebb5b15f11794f925e43ea1409cce72f77",
+  "logits": [
+    -0.03722395747900009,
+    -0.03355753794312477,
+    -0.03559857979416847
+  ],
+  "model": "microsoft/harrier-oss-v1-0.6b",
+  "parity_report": {
+    "case_id": "vq-101",
+    "checks": [
+      {
+        "cosine": 0.9998967776963226,
+        "max_abs_diff": 0.0033594369888305664,
+        "mlx_norm": 0.9999999943216471,
+        "role": "query",
+        "rust_norm": 0.9999999859750787
+      },
+      {
+        "cosine": 0.9999418556643249,
+        "max_abs_diff": 0.0019637271761894226,
+        "mlx_norm": 1.000000025188739,
+        "role": "candidate",
+        "rust_norm": 1.0000000312329895
+      }
+    ],
+    "kind": "compiled profile text vs Rust MLX train export",
+    "model": "microsoft/harrier-oss-v1-0.6b",
+    "passed": true,
+    "profile_version": "2",
+    "question_key": "decision",
+    "thresholds": {
+      "max_abs_diff": 0.01,
+      "min_cosine": 0.9995
+    }
+  },
+  "profile_version": "2",
+  "query_sha256": "c16e6a71178c9a7706cdeefd9f8c57c3a586dd1619de177dba686a4a2e038bad",
+  "sample_key": [
+    "vq-101",
+    "decision"
+  ]
+}
