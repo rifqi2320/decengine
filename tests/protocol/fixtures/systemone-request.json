@@ -1,0 +1,31 @@
+{
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "state": {
+    "subject": "Refund charged twice",
+    "body": "Please help today"
+  },
+  "questions": {
+    "route": {
+      "type": "choice",
+      "prompt": "Which team should handle this?",
+      "options": {
+        "billing": "payments, charges, invoices, and refunds",
+        "technical": "bugs, outages, and integrations",
+        "sales": "pricing, purchasing, and contracts"
+      }
+    },
+    "urgent": {
+      "type": "noul",
+      "prompt": "Does this require attention today?"
+    },
+    "severity": {
+      "type": "score",
+      "prompt": "How severe is this?",
+      "levels": [
+        {"label": "low", "criterion": "minor inconvenience", "value": 0.0},
+        {"label": "medium", "criterion": "work is blocked", "value": 1.0},
+        {"label": "high", "criterion": "critical business impact", "value": 2.0}
+      ]
+    }
+  }
+}
