@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://decengine.invalid/benchmarks/varied-question-case.schema.json",
+  "title": "Varied question decision case",
+  "type": "object",
+  "required": ["id", "domain", "question_family_id", "request", "reference"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^vq-[0-9]{3,}$"},
+    "domain": {"type": "string", "minLength": 2},
+    "question_family_id": {"type": "string", "pattern": "^qf-[a-f0-9]{8}$"},
+    "request": {
+      "type": "object", "required": ["model", "state", "questions"], "additionalProperties": false,
+      "properties": {
+        "model": {"type": "string"}, "state": {"type": "object"},
+        "questions": {"type": "object", "minProperties": 1, "maxProperties": 1,
+          "additionalProperties": {"$ref": "#/$defs/question"}}
+      }
+    },
+    "reference": {
+      "type": "object", "required": ["target", "rationale"], "additionalProperties": false,
+      "properties": {
+        "target": {"type": "object"}, "rationale": {"type": "string", "minLength": 12}
+      }
+    }
+  },
+  "$defs": {
+    "question": {
+      "oneOf": [
+        {"type": "object", "required": ["type", "prompt", "options"], "additionalProperties": false,
+         "properties": {"type": {"const": "choice"}, "prompt": {"type": "string", "minLength": 12},
+           "options": {"type": "object", "minProperties": 2, "maxProperties": 16, "additionalProperties": {"type": "string", "minLength": 2}}}},
+        {"type": "object", "required": ["type", "prompt"], "additionalProperties": false,
+         "properties": {"type": {"const": "noul"}, "prompt": {"type": "string", "minLength": 12}}},
+        {"type": "object", "required": ["type", "prompt", "levels"], "additionalProperties": false,
+         "properties": {"type": {"const": "score"}, "prompt": {"type": "string", "minLength": 12},
+           "levels": {"type": "array", "minItems": 2, "maxItems": 16, "items": {"type": "object", "required": ["label", "criterion", "value"], "additionalProperties": false, "properties": {"label": {"type": "string"}, "criterion": {"type": "string"}, "value": {"type": "number"}}}}}}
+      ]
+    }
+  }
+}

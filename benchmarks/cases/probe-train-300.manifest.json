@@ -1,0 +1,118 @@
+{
+  "dataset": "probe-train-300",
+  "record_count": 300,
+  "id_sequence": {
+    "prefix": "train-",
+    "first": "train-001",
+    "last": "train-300",
+    "unique": true,
+    "sequential": true
+  },
+  "merge": {
+    "ordering": "chunk numeric range, then source line order",
+    "serialization": "original JSONL lines concatenated unchanged",
+    "chunks": [
+      {
+        "path": "benchmarks/cases/probe-train-chunks/chunk-001-050.jsonl",
+        "records": 50,
+        "sha256": "b5f428f96774066966d5b855c0a02e80cf3049af3372ebd02578a67d5e4c74b8"
+      },
+      {
+        "path": "benchmarks/cases/probe-train-chunks/chunk-051-100.jsonl",
+        "records": 50,
+        "sha256": "4458161b8465b66f5d236dc2289e60af193aadda1b333dfc56b5fa8fce0d43bc"
+      },
+      {
+        "path": "benchmarks/cases/probe-train-chunks/chunk-101-150.jsonl",
+        "records": 50,
+        "sha256": "0bdcb599e2353dca6065b5bd93477a60a60d4b93110bb3666a2afe92b30259ab"
+      },
+      {
+        "path": "benchmarks/cases/probe-train-chunks/chunk-151-200.jsonl",
+        "records": 50,
+        "sha256": "3078206b60ba4c17b2d503b14563dc4c4e53b39915469368805c07bf5e160f6f"
+      },
+      {
+        "path": "benchmarks/cases/probe-train-chunks/chunk-201-250.jsonl",
+        "records": 50,
+        "sha256": "5c4f37e98b7392b459a639ce583d6cca011dadb1f038bdeefe71df29198aa385"
+      },
+      {
+        "path": "benchmarks/cases/probe-train-chunks/chunk-251-300.jsonl",
+        "records": 50,
+        "sha256": "b17dfc100c612881a0f8e5a798fba62d1e9427d3692bfbe5de37ffaa74d5ce8d"
+      }
+    ]
+  },
+  "output": {
+    "path": "benchmarks/cases/probe-train-300.jsonl",
+    "sha256": "ae8c3cbbd58b1a38db65e72ff638728bd5e5bae7df8be5a78b2ebed9c9aba434"
+  },
+  "validation": {
+    "shared_questions_exact_match": "benchmarks/cases/decision-cases-100.jsonl",
+    "public_load_cases": "passed for all six chunks and merged fixture",
+    "reference_vocabularies": {
+      "owner": [
+        "account_access",
+        "billing",
+        "operations",
+        "other",
+        "safety_compliance",
+        "sales",
+        "technical_support"
+      ],
+      "urgent": [
+        false,
+        true
+      ],
+      "impact": [
+        "high",
+        "low",
+        "moderate"
+      ]
+    },
+    "invalid_labels": 0
+  },
+  "label_distributions": {
+    "owner": {
+      "account_access": 24,
+      "billing": 40,
+      "operations": 59,
+      "other": 18,
+      "safety_compliance": 71,
+      "sales": 28,
+      "technical_support": 60
+    },
+    "urgent": {
+      "false": 164,
+      "true": 136
+    },
+    "impact": {
+      "high": 122,
+      "low": 86,
+      "moderate": 92
+    }
+  },
+  "overlap_screen": {
+    "text_field": "scenario.summary only",
+    "normalization": "lowercase; non-alphanumeric runs replaced with spaces",
+    "conditions": "Jaccard token-set similarity >= 0.88 OR difflib.SequenceMatcher ratio >= 0.86",
+    "compared": {
+      "within_train": 300,
+      "held_out_test": 90,
+      "older_independent_benchmarks": {
+        "decision-cases-100": 100,
+        "decision-cases-holdout": 60,
+        "total": 160
+      }
+    },
+    "test_reference_labels_or_model_outputs_accessed": false,
+    "pairs_found": []
+  },
+  "provenance": {
+    "source": "six completed authored JSONL chunks; original benchmark used only for shared question definitions and reference vocabularies",
+    "older_benchmarks": "decision-cases-100.jsonl and decision-cases-holdout.jsonl; summaries only",
+    "test": "probe-test-90.jsonl; summaries only; no test references or model outputs read",
+    "authored_cases_modified": false
+  }
+}

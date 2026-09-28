@@ -1,0 +1,112 @@
+{
+  "dataset": "probe-test-300",
+  "record_count": 300,
+  "id_sequence": {
+    "prefix": "test-",
+    "first": "test-001",
+    "last": "test-300",
+    "unique": true,
+    "sequential": true
+  },
+  "merge": {
+    "ordering": "probe-test-90 followed by chunks in numeric range order; source line order within each",
+    "serialization": "original JSONL lines concatenated unchanged; final newline ensured",
+    "sources": [
+      {
+        "path": "benchmarks/cases/probe-test-90.jsonl",
+        "records": 90,
+        "sha256": "1ded62e864666e324a3154d86114ade18a816a2453b5e2ace1593a2c77d3f587"
+      },
+      {
+        "path": "benchmarks/cases/probe-test-chunks/chunk-091-160.jsonl",
+        "records": 70,
+        "sha256": "1329d78cc8d55704c213c2900d9ea8404dc3e477fbaa3dc34d39eb0a122d91d9"
+      },
+      {
+        "path": "benchmarks/cases/probe-test-chunks/chunk-161-230.jsonl",
+        "records": 70,
+        "sha256": "699c201ae9ba1b053659528647fa0daa1a4656634b4f287760ff4994025ac488"
+      },
+      {
+        "path": "benchmarks/cases/probe-test-chunks/chunk-231-300.jsonl",
+        "records": 70,
+        "sha256": "7aa7a917b7fa6d5413845008315cc72ef58d57c70c1b1159525bd8faa7ae4fc2"
+      }
+    ]
+  },
+  "output": {
+    "path": "benchmarks/cases/probe-test-300.jsonl",
+    "sha256": "04d3eeb4b45709ac28c177961763a03cf036296466faf779a062e1303c30ff30"
+  },
+  "validation": {
+    "utf8_jsonl": "passed",
+    "exact_record_count": 300,
+    "unique_sequential_ids": "passed",
+    "identical_question_definitions": "passed within merged test set (exact structural equality across all 300)",
+    "schema": "passed; consistent record/scenario/request/reference/metadata/state keys",
+    "reference_labels": "passed",
+    "reference_vocabularies": {
+      "owner": [
+        "account_access",
+        "billing",
+        "operations",
+        "other",
+        "safety_compliance",
+        "sales",
+        "technical_support"
+      ],
+      "urgent": [
+        false,
+        true
+      ],
+      "impact": [
+        "high",
+        "low",
+        "moderate"
+      ]
+    },
+    "invalid_reference_ids": []
+  },
+  "label_distributions": {
+    "owner": {
+      "account_access": 38,
+      "billing": 40,
+      "operations": 41,
+      "other": 39,
+      "safety_compliance": 60,
+      "sales": 39,
+      "technical_support": 43
+    },
+    "urgent": {
+      "false": 173,
+      "true": 127
+    },
+    "impact": {
+      "high": 88,
+      "low": 93,
+      "moderate": 119
+    }
+  },
+  "overlap_screen": {
+    "text_field": "scenario.summary only",
+    "normalization": "lowercase; non-alphanumeric runs replaced with spaces",
+    "conditions": "Jaccard token-set similarity >= 0.88 OR difflib.SequenceMatcher ratio >= 0.86",
+    "compared": {
+      "within_test": 300,
+      "test_pairs_checked": 44850,
+      "train_cases": 300,
+      "test_train_pairs_checked": 90000
+    },
+    "test_reference_labels_or_model_outputs_accessed": false,
+    "within_test_pairs_found": [],
+    "train_test_pairs_found": [],
+    "blocker_ids": []
+  },
+  "provenance": {
+    "source": "probe-test-90.jsonl followed by three authored test chunks; originals unchanged",
+    "training_overlap_fixture": "probe-train-300.jsonl; scenario summaries only used for screening",
+    "test_reference_labels_validated": true,
+    "model_outputs_read": false,
+    "authored_cases_modified": false
+  }
+}

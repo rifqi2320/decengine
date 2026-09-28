@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://decengine.local/benchmarks/evaluation/judgment.schema.json",
+  "title": "MLX vs JEV per-case, per-question judgment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "judgment_id", "case_id", "industry", "timestamp", "agent", "source_run", "reference", "outputs", "assessment", "comparison", "questions", "notes"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "judgment_id": {"type": "string", "minLength": 1},
+    "case_id": {"type": "string", "pattern": "^case-[0-9]{3}$"},
+    "industry": {"type": "string", "minLength": 1},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "agent": {"type": "object", "additionalProperties": false, "required": ["identity", "session_id"], "properties": {"identity": {"type": "string", "minLength": 1}, "session_id": {"type": "string", "minLength": 1}}},
+    "source_run": {"type": "object", "additionalProperties": false, "required": ["run_id", "run_hash"], "properties": {"run_id": {"type": "string", "minLength": 1}, "run_hash": {"type": "string", "minLength": 1}}},
+    "reference": {
+      "type": "object", "additionalProperties": false, "required": ["decision", "rationale"],
+      "properties": {
+        "decision": {"type": "object", "additionalProperties": false, "required": ["owner", "urgent", "impact"], "properties": {"owner": {"type": "string"}, "urgent": {"type": "boolean"}, "impact": {"type": "string"}}},
+        "rationale": {"type": "string", "minLength": 1}
+      }
+    },
+    "outputs": {"type": "object", "additionalProperties": false, "required": ["mlx", "jev"], "properties": {"mlx": {"$ref": "#/$defs/output"}, "jev": {"$ref": "#/$defs/output"}}},
+    "assessment": {"$ref": "#/$defs/pair_assessment"},
+    "comparison": {"$ref": "#/$defs/comparison"},
+    "questions": {"type": "object", "additionalProperties": false, "required": ["owner", "urgent", "impact"], "properties": {"owner": {"$ref": "#/$defs/question_judgment"}, "urgent": {"$ref": "#/$defs/question_judgment"}, "impact": {"$ref": "#/$defs/question_judgment"}}},
+    "notes": {"type": "string"}
+  },
+  "$defs": {
+    "output": {
+      "type": "object", "additionalProperties": false, "required": ["archive_ref", "status", "normalized_predictions", "error"],
+      "properties": {
+        "archive_ref": {"type": "string", "minLength": 1},
+        "status": {"enum": ["ok", "error", "missing"]},
+        "normalized_predictions": {"type": "object", "additionalProperties": false, "required": ["owner", "urgent", "impact"], "properties": {"owner": {"type": ["string", "null"]}, "urgent": {"type": ["boolean", "null"]}, "impact": {"type": ["string", "number", "null"]}}},
+        "error": {"type": ["string", "null"]}
+      }
+    },
+    "assessment": {
+      "type": "object", "additionalProperties": false, "required": ["correctness", "confidence", "confidence_basis", "rationale"],
+      "properties": {
+        "correctness": {"enum": ["correct", "partial", "incorrect", "indeterminate"]},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "confidence_basis": {"enum": ["reported", "unavailable"]},
+        "rationale": {"type": "string", "minLength": 1}
+      },
+      "allOf": [
+        {"if": {"properties": {"confidence_basis": {"const": "unavailable"}}}, "then": {"properties": {"confidence": {"type": "null"}}}},
+        {"if": {"properties": {"confidence_basis": {"const": "reported"}}}, "then": {"properties": {"confidence": {"type": "number", "minimum": 0, "maximum": 1}}}}
+      ]
+    },
+    "pair_assessment": {"type": "object", "additionalProperties": false, "required": ["mlx", "jev"], "properties": {"mlx": {"$ref": "#/$defs/assessment"}, "jev": {"$ref": "#/$defs/assessment"}}},
+    "comparison": {"type": "object", "additionalProperties": false, "required": ["outcome", "rationale"], "properties": {"outcome": {"enum": ["mlx", "jev", "tie", "indeterminate"]}, "rationale": {"type": "string", "minLength": 1}}},
+    "question_judgment": {"type": "object", "additionalProperties": false, "required": ["assessment", "comparison"], "properties": {"assessment": {"$ref": "#/$defs/pair_assessment"}, "comparison": {"$ref": "#/$defs/comparison"}}}
+  }
+}

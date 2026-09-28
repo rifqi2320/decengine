@@ -1,0 +1,138 @@
+{
+  "benchmark": "matched-domain / unseen-question-family multi-question split",
+  "fixture": "test-matched-60.jsonl",
+  "cases": 60,
+  "questions_per_case": 3,
+  "question_count": 180,
+  "split_identity": "Exactly the 12 normalized training domains, 5 cases per domain.",
+  "domains": {
+    "arts colleges": 5,
+    "coastal research": 5,
+    "community clinics": 5,
+    "community energy": 5,
+    "credit unions": 5,
+    "food cooperatives": 5,
+    "municipal permitting": 5,
+    "museum conservation": 5,
+    "public libraries": 5,
+    "regional farms": 5,
+    "regional transit": 5,
+    "small manufacturers": 5
+  },
+  "question_types": {
+    "choice": 60,
+    "noul": 60,
+    "score": 60
+  },
+  "family_ids": {
+    "qf-0000001f": {
+      "annotations": 18,
+      "construct": "allocation under a binding resource constraint"
+    },
+    "qf-00000020": {
+      "annotations": 18,
+      "construct": "provenance and denominator selection"
+    },
+    "qf-00000021": {
+      "annotations": 18,
+      "construct": "retention purpose and expiry governance"
+    },
+    "qf-00000022": {
+      "annotations": 18,
+      "construct": "dependency ordering and reversibility"
+    },
+    "qf-00000023": {
+      "annotations": 18,
+      "construct": "sampling coverage and selection bias"
+    },
+    "qf-00000024": {
+      "annotations": 18,
+      "construct": "authority boundary and escalation threshold"
+    },
+    "qf-00000025": {
+      "annotations": 18,
+      "construct": "counterfactual value of additional evidence"
+    },
+    "qf-00000026": {
+      "annotations": 18,
+      "construct": "fairness across competing stakeholders"
+    },
+    "qf-00000027": {
+      "annotations": 18,
+      "construct": "decision timing under asymmetric delay cost"
+    },
+    "qf-00000028": {
+      "annotations": 18,
+      "construct": "measurement uncertainty and confidence calibration"
+    }
+  },
+  "gold_balance": {
+    "choice_target_distribution": {
+      "Reserve the shared slot for the earlier eligible request and document the deadline trade-off.": 12,
+      "Hold both requests until one team withdraws, avoiding any priority decision.": 12,
+      "Refer the conflict to the accountable coordinator with both deadlines and coverage limits attached.": 12,
+      "Split the specialist window into two bounded reviews and ask the qualified alternate to verify one.": 12,
+      "Apply the published rotation, record the exception request, and schedule a checkpoint before the deadline.": 12
+    },
+    "noul": {
+      "true": 30,
+      "false": 30
+    },
+    "score": {
+      "limited": 20,
+      "qualified": 20,
+      "well_supported": 20
+    }
+  },
+  "distinct_score_scales": 17,
+  "near_duplicate_check": "Token-Jaccard comparison against multi train/test and sibling varied train/test states; threshold < 0.72.",
+  "max_state_token_jaccard": {
+    "multi/train-120.jsonl": 0.1768,
+    "multi/test-60.jsonl": 0.1087,
+    "train-400.jsonl": 0.1524,
+    "test-200.jsonl": 0.1087
+  },
+  "notes": "Prospective governance/planning states; no model, probe, or API access used; no prediction data read.",
+  "family_exclusivity": "qf-0000001f through qf-00000028 absent from both training fixtures and prior heldouts",
+  "family_exclusivity_checked": true,
+  "candidate_option_count_distribution": {
+    "2": 15,
+    "3": 15,
+    "4": 15,
+    "5": 15
+  },
+  "choice_gold_position_distribution": {
+    "1": 17,
+    "2": 22,
+    "3": 9,
+    "4": 9,
+    "5": 3
+  },
+  "score_rubric_level_count_distribution": {
+    "3": 39,
+    "4": 18,
+    "5": 3
+  },
+  "cross_fixture_max_state_token_jaccard": {
+    "multi-train": 0.176829,
+    "multi-heldout": 0.108696,
+    "varied-train": 0.152439,
+    "varied-heldout": 0.108696
+  },
+  "source_sha256": {
+    "multi-train": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+    "multi-heldout": "66a858680dd1e6e16bf12859ac18d67b24db11accb0efe23542a9b9c81fbbac3",
+    "varied-train": "684112f807773e486c2b553ea48ca0b33dca170d8bcb9f65112e1d8dda75dff0",
+    "varied-heldout": "40bca19c7ccea48b93d16e32a555b6de0c2aebb11de00e946b60986845c9a18d"
+  },
+  "fixture_sha256": "48a057dd3ebedc6d76b7ca55f0782069f49cd31151576c2bc01932744a6ed614",
+  "family_id_format": "hexadecimal 31..40 inclusive: qf-0000001f through qf-00000028",
+  "domain_normalization": "case-folded, whitespace-collapsed domain names match multi train-120.jsonl",
+  "choice_gold_text_distribution": {
+    "Reserve the shared slot for the earlier eligible request and document the deadline trade-off.": 12,
+    "Hold both requests until one team withdraws, avoiding any priority decision.": 12,
+    "Refer the conflict to the accountable coordinator with both deadlines and coverage limits attached.": 12,
+    "Split the specialist window into two bounded reviews and ask the qualified alternate to verify one.": 12,
+    "Apply the published rotation, record the exception request, and schedule a checkpoint before the deadline.": 12
+  }
+}

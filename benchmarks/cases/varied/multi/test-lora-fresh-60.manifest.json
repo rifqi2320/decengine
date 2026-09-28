@@ -1,0 +1,86 @@
+{
+  "fixture": "test-lora-fresh-60.jsonl",
+  "sha256": "2848d28c79120c2fcf3ab49b755c402386f60ff96d0ac69dce801a606df44629",
+  "source_sha256": {
+    "train-120.jsonl": "f26aaca6278274f6b3094737f8288dd3ad79ed1c70a49f93c1c9caaaf8a25c50",
+    "test-60.jsonl": "66a858680dd1e6e16bf12859ac18d67b24db11accb0efe23542a9b9c81fbbac3",
+    "test-matched-60.jsonl": "48a057dd3ebedc6d76b7ca55f0782069f49cd31151576c2bc01932744a6ed614",
+    "test-explicit-60.jsonl": "4cb002e1c29f5273ecc23fcdf742b093cb5433d661f5df0b50d209a534fb1409",
+    "test-prompt-fresh-60.jsonl": "316b3c2e1d0c5cf50356d0e236a5f4adf27fdac9ee6d6c6b56a14f5354ef6a9f",
+    "probe-train-300.jsonl": "ae8c3cbbd58b1a38db65e72ff638728bd5e5bae7df8be5a78b2ebed9c9aba434"
+  },
+  "case_count": 60,
+  "questions_per_case": 3,
+  "domains": {
+    "arts colleges": 5,
+    "coastal research": 5,
+    "community clinics": 5,
+    "community energy": 5,
+    "credit unions": 5,
+    "food cooperatives": 5,
+    "municipal permitting": 5,
+    "museum conservation": 5,
+    "public libraries": 5,
+    "regional farms": 5,
+    "regional transit": 5,
+    "small manufacturers": 5
+  },
+  "question_families": {
+    "qf-00000033": 18,
+    "qf-00000034": 18,
+    "qf-00000035": 18,
+    "qf-00000036": 18,
+    "qf-00000037": 18,
+    "qf-00000038": 18,
+    "qf-00000039": 18,
+    "qf-0000003a": 18,
+    "qf-0000003b": 18,
+    "qf-0000003c": 18
+  },
+  "answer_positions_by_option_count": {
+    "2:0": 8,
+    "2:1": 7,
+    "3:0": 5,
+    "3:1": 5,
+    "3:2": 5,
+    "4:0": 4,
+    "4:1": 4,
+    "4:2": 4,
+    "4:3": 3,
+    "5:0": 3,
+    "5:1": 3,
+    "5:2": 3,
+    "5:3": 3,
+    "5:4": 3
+  },
+  "boolean_outcomes": {
+    "false": 30,
+    "true": 30
+  },
+  "score_outcomes_by_numeric_value": {
+    "0": 12,
+    "25": 4,
+    "33": 4,
+    "50": 12,
+    "67": 8,
+    "75": 4,
+    "100": 16
+  },
+  "score_levels_per_question": {
+    "3": 20,
+    "4": 20,
+    "5": 20
+  },
+  "maximum_prior_state_token_jaccard": 0.2652,
+  "maximum_prior_prompt_token_jaccard": 0.3704,
+  "prior_fixtures_compared": [
+    "train-120.jsonl",
+    "test-60.jsonl",
+    "test-matched-60.jsonl",
+    "test-explicit-60.jsonl",
+    "test-prompt-fresh-60.jsonl",
+    "probe-train-300.jsonl"
+  ],
+  "annotation_note": "Targets and rationales are authored synthetic judgments, not externally adjudicated ground truth. Rationales/evidence_map are metadata and excluded from the request; no model predictions or training-derived labels were used.",
+  "seal_note": "Keep this fixture sealed until the orchestrator confirms the LoRA train-only configuration is frozen."
+}
