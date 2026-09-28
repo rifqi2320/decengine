@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "Qwen/Qwen3-Embedding-0.6B",
+  "family": "qwen3-0.6b",
+  "architecture": "Qwen3ForCausalLM",
+  "pooling": "last_token",
+  "normalize": "l2",
+  "padding_side": "left",
+  "query_template": "Instruct: {instruction}\nQuery:{text}",
+  "candidate_template": "{text}",
+  "temperature": 0.05,
+  "max_length": 32768,
+  "profile_version": "1",
+  "required_files": [
+    "config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ]
+}

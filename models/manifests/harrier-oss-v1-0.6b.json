@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "microsoft/harrier-oss-v1-0.6b",
+  "family": "qwen3-0.6b",
+  "architecture": "Qwen3Model",
+  "pooling": "last_token",
+  "normalize": "l2",
+  "padding_side": "left",
+  "query_template": "Instruct: {instruction}\nQuery: {text}",
+  "candidate_template": "{text}",
+  "temperature": 0.05,
+  "max_length": 32768,
+  "profile_version": "2",
+  "required_files": [
+    "config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ]
+}

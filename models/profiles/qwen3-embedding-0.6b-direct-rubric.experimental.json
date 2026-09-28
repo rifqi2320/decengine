@@ -1,0 +1,17 @@
+{
+  "profile_id": "Qwen/Qwen3-Embedding-0.6B+direct-binary-rubric-experimental",
+  "base_model_id": "Qwen/Qwen3-Embedding-0.6B",
+  "profile_version": "experimental-1",
+  "query_template": "Instruct: {instruction}\nQuery:{text}",
+  "candidate_template": "{text}",
+  "noul_unsupported": "No same-day action is needed to prevent likely harm, material interruption, or a near-term missed deadline.",
+  "noul_supported": "Same-day action is needed to prevent likely harm, material interruption, or a near-term missed deadline.",
+  "temperature": 0.05,
+  "evaluation": {
+    "development_cases": "case-001..case-050",
+    "holdout_cases": "case-051..case-100",
+    "holdout_overall_accuracy": 0.5,
+    "baseline_holdout_overall_accuracy": 0.46,
+    "note": "Experimental only: holdout gain is 6/150 fields, concentrated in urgency; owner and impact are unchanged. Confirm on a new independently labeled set before production use."
+  }
+}
