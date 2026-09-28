@@ -1,0 +1,31 @@
+[package]
+name = "decengine-ffi"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lib]
+name = "decengine"
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["fixture-engine"]
+fixture-engine = [
+    "decengine-engine/fixture-engine",
+    "decengine-runtime/fixture-engine",
+]
+mlx = ["dep:decengine-engine-mlx"]
+
+[dependencies]
+decengine-core = { path = "../decengine-core" }
+decengine-engine = { path = "../decengine-engine" }
+decengine-engine-mlx = { path = "../decengine-engine-mlx", optional = true }
+decengine-models = { path = "../decengine-models" }
+decengine-runtime = { path = "../decengine-runtime" }
+libc.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true

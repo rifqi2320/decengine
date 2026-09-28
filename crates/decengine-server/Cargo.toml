@@ -1,0 +1,30 @@
+[package]
+name = "decengine-server"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[features]
+default = []
+fixture-engine = [
+    "decengine-engine/fixture-engine",
+    "decengine-runtime/fixture-engine",
+]
+
+[dependencies]
+axum.workspace = true
+decengine-core = { path = "../decengine-core" }
+decengine-engine = { path = "../decengine-engine" }
+decengine-models = { path = "../decengine-models" }
+decengine-protocol = { path = "../decengine-protocol" }
+decengine-runtime = { path = "../decengine-runtime" }
+serde_json.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tower.workspace = true
+
+[lints]
+workspace = true

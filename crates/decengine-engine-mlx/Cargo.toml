@@ -1,0 +1,22 @@
+[package]
+name = "decengine-engine-mlx"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[features]
+default = []
+hardware-tests = []
+
+[dependencies]
+decengine-engine = { path = "../decengine-engine" }
+serde.workspace = true
+serde_json.workspace = true
+tokenizers = "=0.22.1"
+
+[target.'cfg(all(target_os = "macos", target_arch = "aarch64"))'.dependencies]
+mlx-rs = { version = "=0.32.0", features = ["metal", "safetensors"] }
+
+[lints]
+workspace = true
