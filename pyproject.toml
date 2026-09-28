@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "decengine"
+version = "0.1.0"
+description = "Pure-Python CFFI client for the local decengine decision runtime"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "decengine contributors" }]
+dependencies = ["cffi>=1.16,<2"]
+
+[project.optional-dependencies]
+dev = [
+    "mypy==1.18.2",
+    "pytest==8.4.2",
+    "pytest-cov==7.0.0",
+    "ruff==0.13.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["python/decengine"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers"
+testpaths = ["tests/python"]
+markers = [
+    "uat: developer acceptance tests",
+    "hardware: requires Apple Silicon, MLX, and local model files",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+src = ["python", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+files = ["python/decengine"]
