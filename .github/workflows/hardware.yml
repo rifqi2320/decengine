@@ -1,0 +1,20 @@
+name: apple-hardware-acceptance
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  model-parity:
+    runs-on: [self-hosted, macOS, ARM64, decengine-models]
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.88.0
+      - name: Run offline hardware gates
+        env:
+          DECENGINE_QWEN_DIR: ${{ vars.DECENGINE_QWEN_DIR }}
+          DECENGINE_HARRIER_DIR: ${{ vars.DECENGINE_HARRIER_DIR }}
+        run: bash tests/hardware/run.sh
